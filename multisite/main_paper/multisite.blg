@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: multisite.aux
+The style file: elsarticle-harv.bst
+Database file #1: cdansereau.bib
+Warning--empty booktitle in Dansereau2014
+Warning--can't use both volume and number fields in Dansereau2014
+Warning--empty booktitle in Dansereau2013
+Warning--can't use both volume and number fields in Dansereau2013
+You've used 62 entries,
+            2821 wiz_defined-function locations,
+            1128 strings with 27280 characters,
+and the built_in function-call counts, 43386 in all, are:
+= -- 3930
+> -- 3512
+< -- 12
++ -- 1324
+- -- 1248
+* -- 4650
+:= -- 7904
+add.period$ -- 188
+call.type$ -- 62
+change.case$ -- 729
+chr.to.int$ -- 60
+cite$ -- 66
+duplicate$ -- 1153
+empty$ -- 2193
+format.name$ -- 1440
+if$ -- 8212
+int.to.chr$ -- 3
+int.to.str$ -- 1
+missing$ -- 60
+newline$ -- 250
+num.names$ -- 248
+pop$ -- 681
+preamble$ -- 1
+purify$ -- 664
+quote$ -- 0
+skip$ -- 749
+stack$ -- 0
+substring$ -- 2220
+swap$ -- 219
+text.length$ -- 5
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 558
+warning$ -- 4
+while$ -- 297
+width$ -- 0
+write$ -- 743
+(There were 4 warnings)

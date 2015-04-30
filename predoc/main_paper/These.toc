@@ -1,0 +1,54 @@
+\contentsline {chapter}{\MakeUppercase {Abstract}}{iii}{section*.1}
+\contentsline {chapter}{\MakeUppercase {Contents}}{iv}{section*.2}
+\contentsline {chapter}{\MakeUppercase {List of Tables}}{vi}{section*.3}
+\contentsline {chapter}{\MakeUppercase {List of Figures}}{vii}{section*.4}
+\contentsline {chapter}{\numberline {\MakeUppercase {Chapter} 1:}\MakeUppercase {General context}}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Alzheimer's disease}{2}{section.1.1}
+\contentsline {section}{\numberline {1.2}Overview of functional magnetic resonance imaging}{5}{section.1.2}
+\contentsline {section}{\numberline {1.3}Preprocessing}{6}{section.1.3}
+\contentsline {section}{\numberline {1.4}Multi-site}{8}{section.1.4}
+\contentsline {section}{\numberline {1.5}Resting-state connectivity}{11}{section.1.5}
+\contentsline {section}{\numberline {1.6}Prediction}{16}{section.1.6}
+\contentsline {subsection}{\numberline {1.6.1}Prediction in the context of AD}{16}{subsection.1.6.1}
+\contentsline {subsection}{\numberline {1.6.2}Importance of preprocessing to improve classification}{17}{subsection.1.6.2}
+\contentsline {subsection}{\numberline {1.6.3}High dimensionality problem}{17}{subsection.1.6.3}
+\contentsline {subsection}{\numberline {1.6.4}Feature selection}{18}{subsection.1.6.4}
+\contentsline {subsection}{\numberline {1.6.5}Classification}{18}{subsection.1.6.5}
+\contentsline {section}{\numberline {1.7}Objectives}{19}{section.1.7}
+\contentsline {chapter}{\numberline {\MakeUppercase {Chapter} 2:}\MakeUppercase {Scrubbing and motion artefact correction}}{20}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introduction}{20}{section.2.1}
+\contentsline {section}{\numberline {2.2}Method}{22}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Dataset}{22}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Preprocessing}{22}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Statistical analysis}{23}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}Results}{24}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Motion distribution in different clinical cohorts}{24}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Default mode network in young adult and elderly population}{26}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Impact of scrubbing on the connectivity}{28}{subsection.2.3.3}
+\contentsline {paragraph}{\numberline {2.3.3.0.1}Global impact of scrubbing}{28}{paragraph.2.3.3.0.1}
+\contentsline {paragraph}{\numberline {2.3.3.0.2}Population specific impact of scrubbing}{30}{paragraph.2.3.3.0.2}
+\contentsline {subsection}{\numberline {2.3.4}Impact of scrubbing on our discriminative power between populations}{34}{subsection.2.3.4}
+\contentsline {paragraph}{\numberline {2.3.4.0.3}point to point connections}{34}{paragraph.2.3.4.0.3}
+\contentsline {paragraph}{\numberline {2.3.4.0.4}Detection power for every scrubbing strategy}{34}{paragraph.2.3.4.0.4}
+\contentsline {section}{\numberline {2.4}Conclusion}{36}{section.2.4}
+\contentsline {chapter}{\numberline {\MakeUppercase {Chapter} 3:}\MakeUppercase {Feasibility of multi-centric fMRI connectivity studies of Alzheimer's disease}}{37}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction}{37}{section.3.1}
+\contentsline {section}{\numberline {3.2}Method}{37}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Preprocessing}{37}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Feature selection}{38}{subsection.3.2.2}
+\contentsline {paragraph}{\numberline {3.2.2.0.5}The default-mode network}{39}{paragraph.3.2.2.0.5}
+\contentsline {paragraph}{\numberline {3.2.2.0.6}Literature review: Alzheimer's disease and resting-state fMRI}{39}{paragraph.3.2.2.0.6}
+\contentsline {paragraph}{\numberline {3.2.2.0.7}review: Alzheimer's disease and resting-state fMRI}{40}{paragraph.3.2.2.0.7}
+\contentsline {subsection}{\numberline {3.2.3}Simulations}{42}{subsection.3.2.3}
+\contentsline {paragraph}{\numberline {3.2.3.0.8}Dataset}{42}{paragraph.3.2.3.0.8}
+\contentsline {paragraph}{\numberline {3.2.3.0.9}Connectome}{42}{paragraph.3.2.3.0.9}
+\contentsline {paragraph}{\numberline {3.2.3.0.10}Effect size (cohen's d)}{42}{paragraph.3.2.3.0.10}
+\contentsline {paragraph}{\numberline {3.2.3.0.11}multi-site correction approaches}{43}{paragraph.3.2.3.0.11}
+\contentsline {section}{\numberline {3.3}Results}{44}{section.3.3}
+\contentsline {section}{\numberline {3.4}Conclusion}{54}{section.3.4}
+\contentsline {chapter}{\numberline {\MakeUppercase {Chapter} 4:}\MakeUppercase {Future development}}{55}{chapter.4}
+\contentsline {section}{\numberline {4.1}The connectome feature space}{55}{section.4.1}
+\contentsline {section}{\numberline {4.2}Feature selection and classification}{56}{section.4.2}
+\contentsline {section}{\numberline {4.3}Industry application and translational effort}{58}{section.4.3}
+\contentsline {section}{\numberline {4.4}Timeline}{58}{section.4.4}
+\contentsline {chapter}{\MakeUppercase {References}}{61}{section*.5}

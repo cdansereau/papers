@@ -1,0 +1,1385 @@
+\begin{thebibliography}{136}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Anand et~al.(2005)Anand, Li, Wang, Wu, Gao, Bukhari, Mathews, Kalnin,
+  and Lowe]{Anand2005}
+A.~Anand, Y.~Li, Y.~Wang, J.~Wu, S.~Gao, L.~Bukhari, V.~P. Mathews, A.~Kalnin,
+  and M.~J. Lowe.
+\newblock {Activity and connectivity of brain mood regulating circuit in
+  depression: a functional magnetic resonance study.}
+\newblock \emph{Biological psychiatry}, 57\penalty0 (10):\penalty0 1079--1088,
+  May 2005.
+\newblock ISSN 0006-3223.
+\newblock \doi{10.1016/j.biopsych.2005.02.021}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.biopsych.2005.02.021}.
+
+\bibitem[Andrews-Hanna et~al.(2010)Andrews-Hanna, Reidler, Sepulcre, Poulin,
+  and Buckner]{Andrews-Hanna2010a}
+Jessica~R. Andrews-Hanna, Jay~S. Reidler, Jorge Sepulcre, Renee Poulin, and
+  Randy~L. Buckner.
+\newblock {Functional-anatomic fractionation of the brain's default network.}
+\newblock \emph{Neuron}, 65\penalty0 (4):\penalty0 550--562, February 2010.
+\newblock ISSN 1097-4199.
+\newblock \doi{10.1016/j.neuron.2010.02.005}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.neuron.2010.02.005}.
+
+\bibitem[Baumgartner et~al.(1998)Baumgartner, Windischberger, and
+  Moser]{Baumgartner1998}
+R.~Baumgartner, C.~Windischberger, and E.~Moser.
+\newblock {Quantification in Functional Magnetic Resonance Imaging: Fuzzy
+  Clustering vs. Correlation Analysis}.
+\newblock \emph{Magnetic Resonance Imaging}, 16\penalty0 (2):\penalty0
+  115--125, February 1998.
+\newblock \doi{10.1016/S0730-725X(97)00277-4}.
+\newblock URL \url{http://dx.doi.org/10.1016/S0730-725X(97)00277-4}.
+
+\bibitem[Behzadi et~al.(2007)Behzadi, Restom, Liau, and Liu]{Behzadi2007}
+Yashar Behzadi, Khaled Restom, Joy Liau, and Thomas~T. Liu.
+\newblock {A component based noise correction method (CompCor) for BOLD and
+  perfusion based fMRI.}
+\newblock \emph{NeuroImage}, 37\penalty0 (1):\penalty0 90--101, August 2007.
+\newblock ISSN 1053-8119.
+\newblock \doi{10.1016/j.neuroimage.2007.04.042}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.neuroimage.2007.04.042}.
+
+\bibitem[Bellec et~al.(2010{\natexlab{a}})Bellec, Carbonell, Perlbarg, and
+  Evans]{Bellec2010}
+P.~Bellec, F.~Carbonell, V.~Perlbarg, and A.~C. Evans.
+\newblock \emph{{A neuroimaging analysis kit for Octave and Matlab}},
+  2010{\natexlab{a}}.
+\newblock URL \url{http://code.google.com/p/niak/}.
+
+\bibitem[Bellec(2006)]{Bellec2006}
+Pierre Bellec.
+\newblock \emph{{Longitudinal study of large-scale networks in the human brain
+  using fMRI : Methods and application to motor skill learning}}.
+\newblock PhD thesis, Universit\'{e} Paris XI, Orsay, Paris, February 2006.
+\newblock URL
+  \url{http://exocet.imed.jussieu.fr/\~{}pbellec/data/these\_bellec.pdf}.
+
+\bibitem[Bellec(2013)]{Bellec2013}
+Pierre Bellec.
+\newblock Mining the hierarchy of resting-state brain networks: selection of
+  representative clusters in a multiscale structure.
+\newblock In \emph{Pattern Recognition in Neuroimaging (PRNI), 2013
+  International Workshop on}, pages 54--57. IEEE, 2013.
+
+\bibitem[Bellec et~al.(2010{\natexlab{b}})Bellec, Rosa-Neto, Lyttelton, Benali,
+  and Evans]{Bellec2010c}
+Pierre Bellec, Pedro Rosa-Neto, Oliver~C. Lyttelton, Habib Benali, and Alan~C.
+  Evans.
+\newblock {Multi-level bootstrap analysis of stable clusters in resting-state
+  fMRI.}
+\newblock \emph{NeuroImage}, 51\penalty0 (3):\penalty0 1126--1139, July
+  2010{\natexlab{b}}.
+\newblock ISSN 1095-9572.
+\newblock \doi{10.1016/j.neuroimage.2010.02.082}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.neuroimage.2010.02.082}.
+
+\bibitem[Bellec et~al.(2012)Bellec, Lavoie-Courchesne, Dickinson, Lerch,
+  Zijdenbos, and Evans]{Bellec2012}
+Pierre Bellec, S\'{e}bastien Lavoie-Courchesne, Phil Dickinson, Jason~P. Lerch,
+  Alex~P. Zijdenbos, and Alan~C. Evans.
+\newblock {The pipeline system for Octave and Matlab (PSOM): a lightweight
+  scripting framework and execution engine for scientific workflows.}
+\newblock \emph{Frontiers in neuroinformatics}, 6, 2012.
+\newblock ISSN 1662-5196.
+\newblock \doi{10.3389/fninf.2012.00007}.
+\newblock URL \url{http://dx.doi.org/10.3389/fninf.2012.00007}.
+
+\bibitem[Bellman and Bellman(1961)]{Bellman1961}
+R.~Bellman and R.E. Bellman.
+\newblock \emph{Adaptive Control Processes: A Guided Tour}.
+\newblock 'Rand Corporation. Research studies. Princeton University Press,
+  1961.
+\newblock URL \url{http://books.google.ca/books?id=POAmAAAAMAAJ}.
+
+\bibitem[Biswal et~al.(1995)Biswal, Yetkin, Haughton, and Hyde]{Biswal1995}
+B.~Biswal, F.~Z. Yetkin, V.~M. Haughton, and J.~S. Hyde.
+\newblock {Functional connectivity in the motor cortex of resting human brain
+  using echo-planar MRI.}
+\newblock \emph{Magnetic resonance in medicine}, 34\penalty0 (4):\penalty0
+  537--541, October 1995.
+\newblock ISSN 0740-3194.
+\newblock URL \url{http://view.ncbi.nlm.nih.gov/pubmed/8524021}.
+
+\bibitem[Biswal et~al.(2010)Biswal, Mennes, Zuo, Gohel, Kelly, Smith, Beckmann,
+  Adelstein, Buckner, Colcombe, Dogonowski, Ernst, Fair, Hampson, Hoptman,
+  Hyde, Kiviniemi, K\"{o}tter, Li, Lin, Lowe, Mackay, Madden, Madsen,
+  Margulies, Mayberg, McMahon, Monk, Mostofsky, Nagel, Pekar, Peltier,
+  Petersen, Riedl, Rombouts, Rypma, Schlaggar, Schmidt, Seidler, Siegle, Sorg,
+  Teng, Veijola, Villringer, Walter, Wang, Weng, Whitfield-Gabrieli,
+  Williamson, Windischberger, Zang, Zhang, Castellanos, and Milham]{Biswal2010}
+Bharat~B. Biswal, Maarten Mennes, Xi-Nian~N. Zuo, Suril Gohel, Clare Kelly,
+  Steve~M. Smith, Christian~F. Beckmann, Jonathan~S. Adelstein, Randy~L.
+  Buckner, Stan Colcombe, Anne-Marie~M. Dogonowski, Monique Ernst, Damien Fair,
+  Michelle Hampson, Matthew~J. Hoptman, James~S. Hyde, Vesa~J. Kiviniemi, Rolf
+  K\"{o}tter, Shi-Jiang~J. Li, Ching-Po~P. Lin, Mark~J. Lowe, Clare Mackay,
+  David~J. Madden, Kristoffer~H. Madsen, Daniel~S. Margulies, Helen~S. Mayberg,
+  Katie McMahon, Christopher~S. Monk, Stewart~H. Mostofsky, Bonnie~J. Nagel,
+  James~J. Pekar, Scott~J. Peltier, Steven~E. Petersen, Valentin Riedl,
+  Serge~A. Rombouts, Bart Rypma, Bradley~L. Schlaggar, Sein Schmidt, Rachael~D.
+  Seidler, Greg~J. Siegle, Christian Sorg, Gao-Jun~J. Teng, Juha Veijola, Arno
+  Villringer, Martin Walter, Lihong Wang, Xu-Chu~C. Weng, Susan
+  Whitfield-Gabrieli, Peter Williamson, Christian Windischberger, Yu-Feng~F.
+  Zang, Hong-Ying~Y. Zhang, F.~Xavier Castellanos, and Michael~P. Milham.
+\newblock {Toward discovery science of human brain function.}
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America}, 107\penalty0 (10):\penalty0 4734--4739, March 2010.
+\newblock ISSN 1091-6490.
+\newblock \doi{10.1073/pnas.0911855107}.
+\newblock URL \url{http://dx.doi.org/10.1073/pnas.0911855107}.
+
+\bibitem[Buckner et~al.(2008)Buckner, Andrews-Hanna, and Schacter]{Buckner2008}
+Randy~L. Buckner, Jessica~R. Andrews-Hanna, and Daniel~L. Schacter.
+\newblock {The Brain's Default Network}.
+\newblock \emph{Annals of the New York Academy of Sciences}, 1124\penalty0
+  (1):\penalty0 1--38, March 2008.
+\newblock ISSN 0077-8923.
+\newblock \doi{10.1196/annals.1440.011}.
+\newblock URL \url{http://dx.doi.org/10.1196/annals.1440.011}.
+
+\bibitem[Buckner et~al.(2009)Buckner, Sepulcre, Talukdar, Krienen, Liu, Hedden,
+  Andrews-Hanna, Sperling, and Johnson]{Buckner2009}
+Randy~L. Buckner, Jorge Sepulcre, Tanveer Talukdar, Fenna~M. Krienen, Hesheng
+  Liu, Trey Hedden, Jessica~R. Andrews-Hanna, Reisa~A. Sperling, and Keith~A.
+  Johnson.
+\newblock {Cortical hubs revealed by intrinsic functional connectivity:
+  mapping, assessment of stability, and relation to Alzheimer's disease.}
+\newblock \emph{The Journal of neuroscience : the official journal of the
+  Society for Neuroscience}, 29\penalty0 (6):\penalty0 1860--1873, February
+  2009.
+\newblock ISSN 1529-2401.
+\newblock \doi{10.1523/JNEUROSCI.5062-08.2009}.
+\newblock URL \url{http://dx.doi.org/10.1523/JNEUROSCI.5062-08.2009}.
+
+\bibitem[Carbonell et~al.(2014)Carbonell, Bellec, and Shmuel]{Carbonell2014}
+F.~Carbonell, P.~Bellec, and A.~Shmuel.
+\newblock Quantification of the impact of a confounding variable on functional
+  connectivity confirms anti-correlated networks in the resting-state.
+\newblock \emph{Neuroimage}, 86:\penalty0 343--353, Feb 2014.
+\newblock \doi{10.1016/j.neuroimage.2013.10.013}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.neuroimage.2013.10.013}.
+
+\bibitem[Chen et~al.(2011)Chen, Ward, Xie, Li, Wu, Jones, Franczak, Antuono,
+  and Li]{Chen2011}
+Gang Chen, B.~Douglas Ward, Chunming Xie, Wenjun Li, Zhilin Wu, Jennifer~L.
+  Jones, Malgorzata Franczak, Piero Antuono, and Shi-Jiang Li.
+\newblock {Classification of Alzheimer Disease, Mild Cognitive Impairment, and
+  Normal Cognitive Status with Large-Scale Network Analysis Based on
+  Resting-State Functional MR Imaging}.
+\newblock \emph{Radiology}, 259\penalty0 (1):\penalty0 213--221, April 2011.
+\newblock \doi{10.1148/radiol.10100734}.
+\newblock URL \url{http://dx.doi.org/10.1148/radiol.10100734}.
+
+\bibitem[Chetelat et~al.(2003)Chetelat, Desgranges, de~la Sayette, Viader,
+  Eustache, and Baron]{Chetelat2003}
+G.~Chetelat, B.~Desgranges, V.~de~la Sayette, F.~Viader, F.~Eustache, and J-C.
+  Baron.
+\newblock Mild cognitive impairment: Can fdg-pet predict who is to rapidly
+  convert to alzheimer's disease?
+\newblock \emph{Neurology}, 60\penalty0 (8):\penalty0 1374--1377, Apr 2003.
+
+\bibitem[Cho et~al.(1998)Cho, Chung, Lim, and Wong]{Cho1998}
+Z.~H. Cho, S.~C. Chung, D.~W. Lim, and E.~K. Wong.
+\newblock Effects of the acoustic noise of the gradient systems on fmri: a
+  study on auditory, motor, and visual cortices.
+\newblock \emph{Magn Reson Med}, 39\penalty0 (2):\penalty0 331--335, Feb 1998.
+
+\bibitem[Collins et~al.(1998)Collins, Zijdenbos, Kollokian, Sled, Kabani,
+  Holmes, and Evans]{Collins1998}
+D.~L. Collins, A.~P. Zijdenbos, V.~Kollokian, J.~G. Sled, N.~J. Kabani, C.~J.
+  Holmes, and A.~C. Evans.
+\newblock {Design and construction of a realistic digital brain phantom.}
+\newblock \emph{IEEE Trans Med Imaging}, 17\penalty0 (3):\penalty0 463--468,
+  June 1998.
+\newblock ISSN 0278-0062.
+\newblock URL \url{http://view.ncbi.nlm.nih.gov/pubmed/9735909}.
+
+\bibitem[Cordes et~al.(2000)Cordes, Haughton, Arfanakis, Wendt, Turski, Moritz,
+  Quigley, and Meyerand]{Cordes2000}
+Dietmar Cordes, Victor~M. Haughton, Konstantinos Arfanakis, Gary~J. Wendt,
+  Patrick~A. Turski, Chad~H. Moritz, Michelle~A. Quigley, and M.~Elizabeth
+  Meyerand.
+\newblock {Mapping Functionally Related Regions of Brain with Functional
+  Connectivity MR Imaging}.
+\newblock \emph{American Journal of Neuroradiology}, 21\penalty0 (9):\penalty0
+  1636--1644, October 2000.
+\newblock URL \url{http://www.ajnr.org/content/21/9/1636.abstract}.
+
+\bibitem[Cordes et~al.(2001)Cordes, Haughton, Arfanakis, Carew, Turski, Moritz,
+  Quigley, and Meyerand]{Cordes2001}
+Dietmar Cordes, Victor~M. Haughton, Konstantinos Arfanakis, John~D. Carew,
+  Patrick~A. Turski, Chad~H. Moritz, Michelle~A. Quigley, and Elizabeth~M.
+  Meyerand.
+\newblock {Frequencies Contributing to Functional Connectivity in the Cerebral
+  Cortex in "Resting-state" Data}.
+\newblock \emph{AJNR Am J Neuroradiol}, 22\penalty0 (7):\penalty0 1326--1333,
+  August 2001.
+\newblock URL \url{http://www.ajnr.org/cgi/content/abstract/22/7/1326}.
+
+\bibitem[Cordes et~al.(2002)Cordes, Haughton, Carew, Arfanakis, and
+  Maravilla]{Cordes2002}
+Dietmar Cordes, Vic Haughton, John~D. Carew, Konstantinos Arfanakis, and Ken
+  Maravilla.
+\newblock {Hierarchical clustering to measure connectivity in fMRI
+  resting-state data}.
+\newblock \emph{Magnetic Resonance Imaging}, 20\penalty0 (4):\penalty0
+  305--317, May 2002.
+\newblock ISSN 0730725X.
+\newblock \doi{10.1016/S0730-725X(02)00503-9}.
+\newblock URL \url{http://dx.doi.org/10.1016/S0730-725X(02)00503-9}.
+
+\bibitem[Cortes and Vapnik(1995)]{Cortes1995}
+Corinna Cortes and Vladimir Vapnik.
+\newblock {Support-vector networks}.
+\newblock \emph{Machine Learning}, 20\penalty0 (3):\penalty0 273--297,
+  September 1995.
+\newblock ISSN 0885-6125.
+\newblock \doi{10.1007/BF00994018}.
+\newblock URL \url{http://dx.doi.org/10.1007/BF00994018}.
+
+\bibitem[Costafreda et~al.(2009)Costafreda, Khanna, Mourao-Miranda, and
+  Fu]{Costafreda2009}
+Sergi~G Costafreda, Akash Khanna, Janaina Mourao-Miranda, and Cynthia H~Y Fu.
+\newblock Neural correlates of sad faces predict clinical remission to
+  cognitive behavioural therapy in depression.
+\newblock \emph{Neuroreport}, 20\penalty0 (7):\penalty0 637--641, May 2009.
+\newblock \doi{10.1097/WNR.0b013e3283294159}.
+\newblock URL \url{http://dx.doi.org/10.1097/WNR.0b013e3283294159}.
+
+\bibitem[Cullen et~al.(2009)Cullen, Gee, Klimes-Dougan, Gabbay, Hulvershorn,
+  Mueller, Camchong, Bell, Houri, Kumra, Lim, Castellanos, and
+  Milham]{Cullen2009}
+Kathryn~R Cullen, Dylan~G Gee, Bonnie Klimes-Dougan, Vilma Gabbay, Leslie
+  Hulvershorn, Bryon~A Mueller, Jazmin Camchong, Christopher~J Bell, Alaa
+  Houri, Sanjiv Kumra, Kelvin~O Lim, F.~Xavier Castellanos, and Michael~P
+  Milham.
+\newblock A preliminary study of functional connectivity in comorbid adolescent
+  depression.
+\newblock \emph{Neurosci Lett}, 460\penalty0 (3):\penalty0 227--231, Sep 2009.
+\newblock \doi{10.1016/j.neulet.2009.05.022}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.neulet.2009.05.022}.
+
+\bibitem[Dai et~al.(2014)Dai, Yan, Li, Wang, Wang, Cao, Lin, Shu, Xia, Bi, and
+  He]{Dai2014}
+Zhengjia Dai, Chaogan Yan, Kuncheng Li, Zhiqun Wang, Jinhui Wang, Miao Cao,
+  Qixiang Lin, Ni~Shu, Mingrui Xia, Yanchao Bi, and Yong He.
+\newblock Identifying and mapping connectivity patterns of brain network hubs
+  in alzheimer's disease.
+\newblock \emph{Cereb Cortex}, Oct 2014.
+\newblock \doi{10.1093/cercor/bhu246}.
+\newblock URL \url{http://dx.doi.org/10.1093/cercor/bhu246}.
+
+\bibitem[D'Amelio and Rossini(2012)]{dAmelio2012}
+Marcello D'Amelio and Paolo~Maria Rossini.
+\newblock Brain excitability and connectivity of neuronal assemblies in
+  alzheimer's disease: from animal models to human findings.
+\newblock \emph{Progress in neurobiology}, 99\penalty0 (1):\penalty0 42--60,
+  October 2012.
+\newblock ISSN 1873-5118.
+\newblock URL \url{http://view.ncbi.nlm.nih.gov/pubmed/22789698}.
+
+\bibitem[Damoiseaux et~al.(2006)Damoiseaux, Rombouts, Barkhof, Scheltens, Stam,
+  Smith, and Beckmann]{Damoiseaux2006}
+J.~S. Damoiseaux, S.~A. R.~B. Rombouts, F.~Barkhof, P.~Scheltens, C.~J. Stam,
+  S.~M. Smith, and C.~F. Beckmann.
+\newblock {Consistent resting-state networks across healthy subjects}.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 103\penalty0
+  (37):\penalty0 13848--13853, September 2006.
+\newblock ISSN 1091-6490.
+\newblock \doi{10.1073/pnas.0601417103}.
+\newblock URL \url{http://dx.doi.org/10.1073/pnas.0601417103}.
+
+\bibitem[Damoiseaux et~al.(2012)Damoiseaux, Prater, Miller, and
+  Greicius]{Damoiseaux2012}
+Jessica~S. Damoiseaux, Katherine~E. Prater, Bruce~L. Miller, and Michael~D.
+  Greicius.
+\newblock {Functional connectivity tracks clinical deterioration in Alzheimer's
+  disease}.
+\newblock \emph{Neurobiology of Aging}, 33\penalty0 (4):\penalty0
+  828.e19--828.e30, April 2012.
+\newblock ISSN 01974580.
+\newblock \doi{10.1016/j.neurobiolaging.2011.06.024}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.neurobiolaging.2011.06.024}.
+
+\bibitem[Dansereau et~al.(2013)Dansereau, Risterucci, Pich, Arnold, and
+  Bellec]{Dansereau2013}
+Christian Dansereau, Celine Risterucci, Emilio~Merlo Pich, Douglas Arnold, and
+  Pierre Bellec.
+\newblock A power analysis for multisite studies in resting-state functional
+  connectivity, with an application to clinical trials in alzheimer's disease.
+\newblock volume~9, pages P248 -- P249, 2013.
+\newblock \doi{http://dx.doi.org/10.1016/j.jalz.2013.05.489}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S1552526013011461}.
+\newblock Alzheimer's Association International Conference 2013 Alzheimer's
+  Association International Conference 2013.
+
+\bibitem[Dansereau et~al.(2014{\natexlab{a}})Dansereau, Bellec, Lee, Pittau,
+  Gotman, and Grova]{Dansereau2014b}
+Christian Dansereau, Pierre Bellec, Kangjoo Lee, Francesca Pittau, Jean Gotman,
+  and Christophe Grova.
+\newblock Detection of abnormal resting-state networks in individual patients
+  suffering from focal epilepsy: An initial step toward individual connectivity
+  assessment.
+\newblock \emph{Frontiers in Neuroscience}, 8\penalty0 (419),
+  2014{\natexlab{a}}.
+\newblock ISSN 1662-453X.
+\newblock \doi{10.3389/fnins.2014.00419}.
+\newblock URL
+  \url{http://www.frontiersin.org/brain_imaging_methods/10.3389/fnins.2014.00419/abstract}.
+
+\bibitem[Dansereau et~al.(2014{\natexlab{b}})Dansereau, Orban, and
+  Bellec]{Dansereau2014}
+Christian Dansereau, Pierre Orban, and Pierre Bellec.
+\newblock Impact of motion on resting-state fmri connectivity in healthy aging
+  and alzheimer's disease, and possible remedies.
+\newblock volume~10, pages P49 --, 2014{\natexlab{b}}.
+\newblock \doi{http://dx.doi.org/10.1016/j.jalz.2014.05.091}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S1552526014007389}.
+\newblock Alzheimer's Association International Conference 2014 Alzheimer's
+  Association International Conference 2014.
+
+\bibitem[Desmond and Glover(2002)]{Desmond2002}
+John Desmond and Gary Glover.
+\newblock Estimating sample size in functional mri (fmri) neuroimaging studies:
+  Statistical power analyses.
+\newblock \emph{Journal of Neuroscience Methods}, 118\penalty0 (2):\penalty0
+  115--128, August 2002.
+\newblock ISSN 01650270.
+\newblock URL \url{http://dx.doi.org/10.1016/s0165-0270(02)00121-8}.
+
+\bibitem[Edward et~al.(2000)Edward, Windischberger, Cunnington, Erdler,
+  Lanzenberger, Mayer, Endl, and Beisteiner]{Edward2000}
+V.~Edward, C.~Windischberger, R.~Cunnington, M.~Erdler, R.~Lanzenberger,
+  D.~Mayer, W.~Endl, and R.~Beisteiner.
+\newblock Quantification of fmri artifact reduction by a novel plaster cast
+  head holder.
+\newblock \emph{Hum Brain Mapp}, 11\penalty0 (3):\penalty0 207--213, Nov 2000.
+
+\bibitem[Efron and Tibshirani(1994)]{Efron1994}
+Bradley Efron and R.~J. Tibshirani.
+\newblock \emph{{An Introduction to the Bootstrap (Chapman \& Hall/CRC
+  Monographs on Statistics \& Applied Probability)}}.
+\newblock Chapman and Hall/CRC, 1 edition, May 1994.
+\newblock ISBN 0412042312.
+\newblock URL \url{http://www.worldcat.org/isbn/0412042312}.
+
+\bibitem[Elliott et~al.(1999)Elliott, Bowtell, and Morris]{Elliott1999}
+M.~R. Elliott, R.~W. Bowtell, and P.~G. Morris.
+\newblock The effect of scanner sound in visual, motor, and auditory functional
+  mri.
+\newblock \emph{Magn Reson Med}, 41\penalty0 (6):\penalty0 1230--1235, Jun
+  1999.
+
+\bibitem[Fair et~al.(2012)Fair, Nigg, Iyer, Bathula, Mills, Dosenbach,
+  Schlaggar, Mennes, Gutman, Bangaru, Buitelaar, Dickstein, Martino, Kennedy,
+  Kelly, Luna, Schweitzer, Velanova, Wang, Mostofsky, Castellanos, and
+  Milham]{Fair2012}
+Damien~A Fair, Joel~T Nigg, Swathi Iyer, Deepti Bathula, Kathryn~L Mills, Nico
+  U~F Dosenbach, Bradley~L Schlaggar, Maarten Mennes, David Gutman, Saroja
+  Bangaru, Jan~K Buitelaar, Daniel~P Dickstein, Adriana~Di Martino, David~N
+  Kennedy, Clare Kelly, Beatriz Luna, Julie~B Schweitzer, Katerina Velanova,
+  Yu-Feng Wang, Stewart Mostofsky, F.~Xavier Castellanos, and Michael~P Milham.
+\newblock Distinct neural signatures detected for adhd subtypes after
+  controlling for micro-movements in resting state functional connectivity mri
+  data.
+\newblock \emph{Front Syst Neurosci}, 6:\penalty0 80, 2012.
+\newblock \doi{10.3389/fnsys.2012.00080}.
+\newblock URL \url{http://dx.doi.org/10.3389/fnsys.2012.00080}.
+
+\bibitem[Fan et~al.(2005)Fan, Shen, and Davatzikos]{Fan2005}
+Yong Fan, Dinggang Shen, and Christos Davatzikos.
+\newblock Classification of structural images via high-dimensional image
+  warping, robust feature extraction, and svm.
+\newblock \emph{Med Image Comput Comput Assist Interv}, 8\penalty0 (Pt
+  1):\penalty0 1--8, 2005.
+
+\bibitem[Fang et~al.(2007)Fang, Murray, and He]{Fang2007}
+Fang Fang, Scott~O Murray, and Sheng He.
+\newblock Duration-dependent fmri adaptation and distributed viewer-centered
+  face representation in human visual cortex.
+\newblock \emph{Cereb Cortex}, 17\penalty0 (6):\penalty0 1402--1411, Jun 2007.
+\newblock \doi{10.1093/cercor/bhl053}.
+\newblock URL \url{http://dx.doi.org/10.1093/cercor/bhl053}.
+
+\bibitem[Feinberg et~al.(2010)Feinberg, Moeller, Smith, Auerbach, Ramanna,
+  Gunther, Glasser, Miller, Ugurbil, and Yacoub]{Feinberg2010}
+David~A Feinberg, Steen Moeller, Stephen~M Smith, Edward Auerbach, Sudhir
+  Ramanna, Matthias Gunther, Matt~F Glasser, Karla~L Miller, Kamil Ugurbil, and
+  Essa Yacoub.
+\newblock Multiplexed echo planar imaging for sub-second whole brain fmri and
+  fast diffusion imaging.
+\newblock \emph{PLoS One}, 5\penalty0 (12):\penalty0 e15710, 2010.
+\newblock \doi{10.1371/journal.pone.0015710}.
+\newblock URL \url{http://dx.doi.org/10.1371/journal.pone.0015710}.
+
+\bibitem[Fonov et~al.(2011)Fonov, Evans, Botteron, Almli, McKinstry, Collins,
+  and {Brain Development Cooperative Group}]{Fonov2011}
+Vladimir Fonov, Alan~C. Evans, Kelly Botteron, C.~Robert Almli, Robert~C.
+  McKinstry, D.~Louis Collins, and {Brain Development Cooperative Group}.
+\newblock {Unbiased average age-appropriate atlases for pediatric studies.}
+\newblock \emph{NeuroImage}, 54\penalty0 (1):\penalty0 313--327, January 2011.
+\newblock ISSN 1095-9572.
+\newblock \doi{10.1016/j.neuroimage.2010.07.033}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.neuroimage.2010.07.033}.
+
+\bibitem[Fox and Raichle(2007)]{Fox2007}
+Michael~D. Fox and Marcus~E. Raichle.
+\newblock {Spontaneous fluctuations in brain activity observed with functional
+  magnetic resonance imaging}.
+\newblock \emph{Nat Rev Neurosci}, 8\penalty0 (9):\penalty0 700--711, September
+  2007.
+\newblock ISSN 1471-003X.
+\newblock \doi{10.1038/nrn2201}.
+\newblock URL \url{http://dx.doi.org/10.1038/nrn2201}.
+
+\bibitem[Fox et~al.(2009)Fox, Zhang, Snyder, and Raichle]{Fox2009}
+Michael~D Fox, Dongyang Zhang, Abraham~Z Snyder, and Marcus~E Raichle.
+\newblock The global signal and observed anticorrelated resting state brain
+  networks.
+\newblock \emph{J Neurophysiol}, 101\penalty0 (6):\penalty0 3270--3283, Jun
+  2009.
+\newblock \doi{10.1152/jn.90777.2008}.
+\newblock URL \url{http://dx.doi.org/10.1152/jn.90777.2008}.
+
+\bibitem[Freund and Schapire(1997)]{Freund1997}
+Yoav Freund and Robert~E Schapire.
+\newblock A decision-theoretic generalization of on-line learning and an
+  application to boosting.
+\newblock \emph{Journal of Computer and System Sciences}, 55\penalty0
+  (1):\penalty0 119 -- 139, 1997.
+\newblock ISSN 0022-0000.
+\newblock \doi{http://dx.doi.org/10.1006/jcss.1997.1504}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S002200009791504X}.
+
+\bibitem[Friedman and Glover(2006)]{Friedman2006a}
+Lee Friedman and Gary Glover.
+\newblock Report on a multicenter fmri quality assurance protocol.
+\newblock \emph{Journal of magnetic resonance imaging : JMRI}, 23\penalty0
+  (6):\penalty0 827--839, June 2006.
+\newblock ISSN 1053-1807.
+\newblock URL \url{http://dx.doi.org/10.1002/jmri.20583}.
+
+\bibitem[Friedman et~al.(2006)Friedman, Glover, and Consortium]{Friedman2006}
+Lee Friedman, Gary Glover, and The~FBIRN Consortium.
+\newblock Reducing interscanner variability of activation in a multicenter fmri
+  study: Controlling for signal-to-fluctuation-noise-ratio (sfnr) differences.
+\newblock \emph{NeuroImage}, 33\penalty0 (2):\penalty0 471--481, November 2006.
+\newblock ISSN 10538119.
+\newblock URL \url{http://dx.doi.org/10.1016/j.neuroimage.2006.07.012}.
+
+\bibitem[Fu et~al.(2008)Fu, Mourao-Miranda, Costafreda, Khanna, Marquand,
+  Williams, and Brammer]{Fu2008}
+Cynthia H~Y Fu, Janaina Mourao-Miranda, Sergi~G Costafreda, Akash Khanna,
+  Andre~F Marquand, Steve C~R Williams, and Michael~J Brammer.
+\newblock Pattern classification of sad facial processing: toward the
+  development of neurobiological markers in depression.
+\newblock \emph{Biol Psychiatry}, 63\penalty0 (7):\penalty0 656--662, Apr 2008.
+\newblock \doi{10.1016/j.biopsych.2007.08.020}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.biopsych.2007.08.020}.
+
+\bibitem[Gilad-Bachrach et~al.(2004)Gilad-Bachrach, Navot, and
+  Tishby]{Gilad-bachrach2004}
+Ran Gilad-Bachrach, Amir Navot, and Naftali Tishby.
+\newblock Margin based feature selection - theory and algorithms.
+\newblock In \emph{Proceedings of the Twenty-first International Conference on
+  Machine Learning}, ICML '04, pages 43--, New York, NY, USA, 2004. ACM.
+\newblock ISBN 1-58113-838-5.
+\newblock \doi{10.1145/1015330.1015352}.
+\newblock URL \url{http://doi.acm.org/10.1145/1015330.1015352}.
+
+\bibitem[Giove et~al.(2009)Giove, Gili, Iacovella, Macaluso, and
+  Maraviglia]{Giove2009}
+Federico Giove, Tommaso Gili, Vittorio Iacovella, Emiliano Macaluso, and Bruno
+  Maraviglia.
+\newblock {Images-based suppression of unwanted global signals in resting-state
+  functional connectivity studies.}
+\newblock \emph{Magnetic resonance imaging}, 27\penalty0 (8):\penalty0
+  1058--1064, October 2009.
+\newblock ISSN 1873-5894.
+\newblock \doi{10.1016/j.mri.2009.06.004}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.mri.2009.06.004}.
+
+\bibitem[Goveas et~al.(2011)Goveas, Xie, Ward, Wu, Li, Franczak, Jones,
+  Antuono, and Li]{Goveas2011}
+Joseph~S. Goveas, Chunming Xie, B.~Douglas Ward, Zhilin Wu, Wenjun Li,
+  Malgorzata Franczak, Jennifer~L. Jones, Piero~G. Antuono, and Shi-Jiang~J.
+  Li.
+\newblock {Recovery of hippocampal network connectivity correlates with
+  cognitive improvement in mild Alzheimer's disease patients treated with
+  donepezil assessed by resting-state fMRI.}
+\newblock \emph{Journal of magnetic resonance imaging : JMRI}, 34\penalty0
+  (4):\penalty0 764--773, October 2011.
+\newblock ISSN 1522-2586.
+\newblock \doi{10.1002/jmri.22662}.
+\newblock URL \url{http://dx.doi.org/10.1002/jmri.22662}.
+
+\bibitem[Greicius et~al.(2003)Greicius, Krasnow, Reiss, and
+  Menon]{Greicius2003}
+M.~D. Greicius, B.~Krasnow, A.~L. Reiss, and V.~Menon.
+\newblock {Functional connectivity in the resting brain: A network analysis of
+  the default mode hypothesis}.
+\newblock \emph{Proc. Natl. Acad. Sci.}, 100\penalty0 (1):\penalty0 253--258,
+  January 2003.
+\newblock ISSN 1091-6490.
+\newblock \doi{10.1073/pnas.0135058100}.
+\newblock URL \url{http://dx.doi.org/10.1073/pnas.0135058100}.
+
+\bibitem[Greicius et~al.(2004)Greicius, Srivastava, Reiss, and
+  Menon]{Greicius2004}
+Michael~D. Greicius, Gaurav Srivastava, Allan~L. Reiss, and Vinod Menon.
+\newblock {Default-mode network activity distinguishes Alzheimer's disease from
+  healthy aging: Evidence from functional MRI}.
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America}, 101\penalty0 (13):\penalty0 4637--4642, March 2004.
+\newblock ISSN 1091-6490.
+\newblock \doi{10.1073/pnas.0308627101}.
+\newblock URL \url{http://dx.doi.org/10.1073/pnas.0308627101}.
+
+\bibitem[Greicius et~al.(2007)Greicius, Flores, Menon, Glover, Solvason, Kenna,
+  Reiss, and Schatzberg]{Greicius2007}
+Michael~D. Greicius, Benjamin~H. Flores, Vinod Menon, Gary~H. Glover, Hugh~B.
+  Solvason, Heather Kenna, Allan~L. Reiss, and Alan~F. Schatzberg.
+\newblock {Resting-state functional connectivity in major depression:
+  abnormally increased contributions from subgenual cingulate cortex and
+  thalamus.}
+\newblock \emph{Biological psychiatry}, 62\penalty0 (5):\penalty0 429--437,
+  September 2007.
+\newblock ISSN 0006-3223.
+\newblock \doi{10.1016/j.biopsych.2006.09.020}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.biopsych.2006.09.020}.
+
+\bibitem[Greicius et~al.(2009)Greicius, Supekar, Menon, and
+  Dougherty]{Greicius2009}
+Michael~D. Greicius, Kaustubh Supekar, Vinod Menon, and Robert~F. Dougherty.
+\newblock {Resting-state functional connectivity reflects structural
+  connectivity in the default mode network.}
+\newblock \emph{Cerebral cortex (New York, N.Y. : 1991)}, 19\penalty0
+  (1):\penalty0 72--78, January 2009.
+\newblock ISSN 1460-2199.
+\newblock \doi{10.1093/cercor/bhn059}.
+\newblock URL \url{http://dx.doi.org/10.1093/cercor/bhn059}.
+
+\bibitem[Gusnard and Raichle(2001)]{Gusnard2001}
+D.~A. Gusnard and M.~E. Raichle.
+\newblock {Searching for a baseline: Functional imaging and the resting human
+  brain}.
+\newblock \emph{Nature Reviews Neuroscience}, 2\penalty0 (10):\penalty0
+  685--694, October 2001.
+\newblock ISSN 1471-003X.
+\newblock \doi{10.1038/35094500}.
+\newblock URL \url{http://dx.doi.org/10.1038/35094500}.
+
+\bibitem[Hahn et~al.(2011)Hahn, Marquand, Ehlis, Dresler, Kittel-Schneider,
+  Jarczok, Lesch, Jakob, Mourao-Miranda, Brammer, and Fallgatter]{Hahn2011}
+Tim Hahn, Andre~F Marquand, Ann-Christine Ehlis, Thomas Dresler, Sarah
+  Kittel-Schneider, Tomasz~A Jarczok, Klaus-Peter Lesch, Peter~M Jakob, Janaina
+  Mourao-Miranda, Michael~J Brammer, and Andreas~J Fallgatter.
+\newblock Integrating neurobiological markers of depression.
+\newblock \emph{Arch Gen Psychiatry}, 68\penalty0 (4):\penalty0 361--368, Apr
+  2011.
+\newblock \doi{10.1001/archgenpsychiatry.2010.178}.
+\newblock URL \url{http://dx.doi.org/10.1001/archgenpsychiatry.2010.178}.
+
+\bibitem[Hampson et~al.(2002)Hampson, Peterson, Skudlarski, Gatenby, and
+  Gore]{Hampson2002}
+M.~Hampson, B.~S. Peterson, P.~Skudlarski, J.~C. Gatenby, and J.~C. Gore.
+\newblock {Detection of functional connectivity using temporal correlations in
+  MR images.}
+\newblock \emph{Hum Brain Mapp}, 15\penalty0 (4):\penalty0 247--262, April
+  2002.
+\newblock ISSN 1065-9471.
+\newblock URL \url{http://view.ncbi.nlm.nih.gov/pubmed/11835612}.
+
+\bibitem[Hardy and Selkoe(2002)]{Hardy2002}
+John Hardy and Dennis~J Selkoe.
+\newblock The amyloid hypothesis of alzheimer's disease: progress and problems
+  on the road to therapeutics.
+\newblock \emph{Science}, 297\penalty0 (5580):\penalty0 353--356, Jul 2002.
+\newblock \doi{10.1126/science.1072994}.
+\newblock URL \url{http://dx.doi.org/10.1126/science.1072994}.
+
+\bibitem[Hartstra et~al.(2011)Hartstra, Kühn, Verguts, and
+  Brass]{Hartstra2011}
+Egbert Hartstra, Simone Kühn, Tom Verguts, and Marcel Brass.
+\newblock The implementation of verbal instructions: an fmri study.
+\newblock \emph{Hum Brain Mapp}, 32\penalty0 (11):\penalty0 1811--1824, Nov
+  2011.
+\newblock \doi{10.1002/hbm.21152}.
+\newblock URL \url{http://dx.doi.org/10.1002/hbm.21152}.
+
+\bibitem[He et~al.(2009)He, Chen, Gong, and Evans]{He2009}
+Yong He, Zhang Chen, Gaolang Gong, and Alan Evans.
+\newblock {Neuronal networks in Alzheimer's disease.}
+\newblock \emph{The Neuroscientist : a review journal bringing neurobiology,
+  neurology and psychiatry}, 15\penalty0 (4):\penalty0 333--350, August 2009.
+\newblock ISSN 1073-8584.
+\newblock \doi{10.1177/1073858409334423}.
+\newblock URL \url{http://dx.doi.org/10.1177/1073858409334423}.
+
+\bibitem[Heeger and Ress(2002)]{Heeger2002}
+David~J Heeger and David Ress.
+\newblock What does fmri tell us about neuronal activity?
+\newblock \emph{Nat Rev Neurosci}, 3\penalty0 (2):\penalty0 142--151, Feb 2002.
+\newblock \doi{10.1038/nrn730}.
+\newblock URL \url{http://dx.doi.org/10.1038/nrn730}.
+
+\bibitem[Hoge et~al.(1999)Hoge, Atkinson, Gill, Crelier, Marrett, and
+  Pike]{Hoge1999}
+R.~D. Hoge, J.~Atkinson, B.~Gill, G.~R. Crelier, S.~Marrett, and G.~B. Pike.
+\newblock Investigation of bold signal dependence on cerebral blood flow and
+  oxygen consumption: the deoxyhemoglobin dilution model.
+\newblock \emph{Magn Reson Med}, 42\penalty0 (5):\penalty0 849--863, Nov 1999.
+
+\bibitem[Hu et~al.(2010)Hu, Zhao, and Zhou]{Hu2010}
+James~X. Hu, Hongyu Zhao, and Harrison~H. Zhou.
+\newblock {False Discovery Rate Control With Groups.}
+\newblock \emph{Journal of the American Statistical Association}, 105\penalty0
+  (491):\penalty0 1215--1227, September 2010.
+\newblock ISSN 0162-1459.
+\newblock \doi{10.1198/jasa.2010.tm09329}.
+\newblock URL \url{http://dx.doi.org/10.1198/jasa.2010.tm09329}.
+
+\bibitem[Jack et~al.(1999)Jack, Petersen, Xu, O'Brien, Smith, Ivnik, Boeve,
+  Waring, Tangalos, and Kokmen]{Jack1999}
+C.~R. Jack, R.~C. Petersen, Y.~C. Xu, P.~C. O'Brien, G.~E. Smith, R.~J. Ivnik,
+  B.~F. Boeve, S.~C. Waring, E.~G. Tangalos, and E.~Kokmen.
+\newblock Prediction of ad with mri-based hippocampal volume in mild cognitive
+  impairment.
+\newblock \emph{Neurology}, 52\penalty0 (7):\penalty0 1397--1403, Apr 1999.
+
+\bibitem[Jack et~al.(2010)Jack, Knopman, Jagust, Shaw, Aisen, Weiner, Petersen,
+  and Trojanowski]{Jack2010}
+Clifford~R Jack, David~S Knopman, William~J Jagust, Leslie~M Shaw, Paul~S
+  Aisen, Michael~W Weiner, Ronald~C Petersen, and John~Q Trojanowski.
+\newblock Hypothetical model of dynamic biomarkers of the alzheimer's
+  pathological cascade.
+\newblock \emph{Lancet Neurol}, 9\penalty0 (1):\penalty0 119--128, Jan 2010.
+\newblock \doi{10.1016/S1474-4422(09)70299-6}.
+\newblock URL \url{http://dx.doi.org/10.1016/S1474-4422(09)70299-6}.
+
+\bibitem[Jeong(2004)]{Jeong2004}
+Jaeseung Jeong.
+\newblock Eeg dynamics in patients with alzheimer's disease.
+\newblock \emph{Clin Neurophysiol}, 115\penalty0 (7):\penalty0 1490--1505, Jul
+  2004.
+\newblock \doi{10.1016/j.clinph.2004.01.001}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.clinph.2004.01.001}.
+
+\bibitem[Jiang et~al.(2004)Jiang, He, Zang, and Weng]{Jiang2004}
+Tianzi Jiang, Yong He, Yufeng Zang, and Xuchu Weng.
+\newblock {Modulation of functional connectivity during the resting state and
+  the motor task}.
+\newblock \emph{Hum. Brain Mapp.}, 22\penalty0 (1):\penalty0 63--71, May 2004.
+\newblock ISSN 1065-9471.
+\newblock \doi{10.1002/hbm.20012}.
+\newblock URL \url{http://dx.doi.org/10.1002/hbm.20012}.
+
+\bibitem[Jiang et~al.(2014)Jiang, Zhang, and Zhu]{Jiang2014}
+Xi~Jiang, Xin Zhang, and Dajiang Zhu.
+\newblock Intrinsic functional component analysis via sparse representation on
+  alzheimer's disease neuroimaging initiative database.
+\newblock \emph{Brain Connect}, 4\penalty0 (8):\penalty0 575--586, Oct 2014.
+\newblock \doi{10.1089/brain.2013.0221}.
+\newblock URL \url{http://dx.doi.org/10.1089/brain.2013.0221}.
+
+\bibitem[Kawasaki et~al.(2007)Kawasaki, Suzuki, Kherif, Takahashi, Zhou,
+  Nakamura, Matsui, Sumiyoshi, Seto, and Kurachi]{Kawasaki2007}
+Yasuhiro Kawasaki, Michio Suzuki, Ferath Kherif, Tsutomu Takahashi, Shi-Yu
+  Zhou, Kazue Nakamura, Mie Matsui, Tomiki Sumiyoshi, Hikaru Seto, and
+  Masayoshi Kurachi.
+\newblock Multivariate voxel-based morphometry successfully differentiates
+  schizophrenia patients from healthy controls.
+\newblock \emph{Neuroimage}, 34\penalty0 (1):\penalty0 235--242, Jan 2007.
+\newblock \doi{10.1016/j.neuroimage.2006.08.018}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.neuroimage.2006.08.018}.
+
+\bibitem[Kelly et~al.(2012)Kelly, Toro, Di~Martino, Cox, Bellec, Castellanos,
+  and Milham]{Kelly2012}
+Clare Kelly, Roberto Toro, Adriana Di~Martino, Christine~L. Cox, Pierre Bellec,
+  F.~Xavier Castellanos, and Michael~P. Milham.
+\newblock {A convergent functional architecture of the insula emerges across
+  imaging modalities}.
+\newblock \emph{NeuroImage}, 61\penalty0 (4):\penalty0 1129--1142, July 2012.
+\newblock ISSN 10538119.
+\newblock \doi{10.1016/j.neuroimage.2012.03.021}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.neuroimage.2012.03.021}.
+
+\bibitem[Klarhofer et~al.(2002)Klarhofer, Barth, and Moser]{Klarhoefer2002}
+Markus Klarhofer, Markus Barth, and Ewald Moser.
+\newblock Comparison of multi-echo spiral and echo planar imaging in functional
+  mri.
+\newblock \emph{Magn Reson Imaging}, 20\penalty0 (4):\penalty0 359--364, May
+  2002.
+
+\bibitem[Kononenko et~al.(1997)Kononenko, Simec, and
+  Robnik-Sikonja]{Kononenko1997}
+Igor Kononenko, Edvard Simec, and Marko Robnik-Sikonja.
+\newblock Overcoming the myopia of inductive learning algorithms with relieff.
+\newblock \emph{Applied Intelligence}, 7:\penalty0 39--55, 1997.
+
+\bibitem[Kotsiantis(2007)]{Kotsiantis2007}
+S.~B. Kotsiantis.
+\newblock Supervised machine learning: A review of classification techniques.
+\newblock pages 3--24, 2007.
+\newblock URL \url{http://dl.acm.org/citation.cfm?id=1566770.1566773}.
+
+\bibitem[Lao et~al.(2004)Lao, Shen, Xue, Karacali, Resnick, and
+  Davatzikos]{Lao2004}
+Zhiqiang Lao, Dinggang Shen, Zhong Xue, Bilge Karacali, Susan~M Resnick, and
+  Christos Davatzikos.
+\newblock Morphological classification of brains via high-dimensional shape
+  transformations and machine learning methods.
+\newblock \emph{Neuroimage}, 21\penalty0 (1):\penalty0 46--57, Jan 2004.
+
+\bibitem[Liang et~al.(2006)Liang, Zhou, Jiang, Liu, Tian, Liu, and
+  Hao]{Liang2006}
+Meng Liang, Yuan Zhou, Tianzi Jiang, Zhening Liu, Lixia Tian, Haihong Liu, and
+  Yihui Hao.
+\newblock Widespread functional disconnectivity in schizophrenia with
+  resting-state functional magnetic resonance imaging.
+\newblock \emph{Neuroreport}, 17\penalty0 (2):\penalty0 209--213, Feb 2006.
+
+\bibitem[Lin et~al.(2005)Lin, Huang, Chen, Wang, Stufflebeam, Belliveau, Wald,
+  and Kwong]{Lin2005}
+Fa-Hsuan Lin, Teng-Yi Huang, Nan-Kuei Chen, Fu-Nien Wang, Steven~M Stufflebeam,
+  John~W Belliveau, Lawrence~L Wald, and Kenneth~K Kwong.
+\newblock Functional mri using regularized parallel imaging acquisition.
+\newblock \emph{Magn Reson Med}, 54\penalty0 (2):\penalty0 343--353, Aug 2005.
+\newblock \doi{10.1002/mrm.20555}.
+\newblock URL \url{http://dx.doi.org/10.1002/mrm.20555}.
+
+\bibitem[Liu et~al.(2007)Liu, Yu, Liang, Li, Tian, Zhou, Qin, Li, and
+  Jiang]{Liu2007}
+Yong Liu, Chunshui Yu, Meng Liang, Jun Li, Lixia Tian, Yuan Zhou, Wen Qin,
+  Kuncheng Li, and Tianzi Jiang.
+\newblock {Whole brain functional connectivity in the early blind}.
+\newblock \emph{Brain}, 130\penalty0 (8):\penalty0 2085--2096, August 2007.
+\newblock ISSN 1460-2156.
+\newblock \doi{10.1093/brain/awm121}.
+\newblock URL \url{http://dx.doi.org/10.1093/brain/awm121}.
+
+\bibitem[Lowe et~al.(2002)Lowe, Phillips, Lurito, Mattson, Dzemidzic, and
+  Mathews]{Lowe2002}
+Mark~J Lowe, Micheal~D Phillips, Joseph~T Lurito, David Mattson, Mario
+  Dzemidzic, and Vincent~P Mathews.
+\newblock Multiple sclerosis: low-frequency temporal blood oxygen
+  level-dependent fluctuations indicate reduced functional connectivity initial
+  results.
+\newblock \emph{Radiology}, 224\penalty0 (1):\penalty0 184--192, Jul 2002.
+\newblock \doi{10.1148/radiol.2241011005}.
+\newblock URL \url{http://dx.doi.org/10.1148/radiol.2241011005}.
+
+\bibitem[Lowe et~al.(1998)Lowe, Mock, and Sorenson]{Lowe1998}
+MJ~Lowe, BJ~Mock, and JA~Sorenson.
+\newblock Functional connectivity in single and multislice echoplanar imaging
+  using resting-state fluctuations.
+\newblock \emph{NeuroImage}, 7\penalty0 (2):\penalty0 119--132, February 1998.
+\newblock ISSN 1053-8119.
+\newblock URL \url{http://dx.doi.org/10.1006/nimg.1997.0315}.
+
+\bibitem[Lund et~al.(2006)Lund, Madsen, Sidaros, Luo, and Nichols]{Lund2006}
+Torben~E. Lund, Kristoffer~H. Madsen, Karam Sidaros, Wen-Lin Luo, and Thomas~E.
+  Nichols.
+\newblock {Non-white noise in fMRI: does modelling have an impact?}
+\newblock \emph{NeuroImage}, 29\penalty0 (1):\penalty0 54--66, January 2006.
+\newblock ISSN 1053-8119.
+\newblock \doi{10.1016/j.neuroimage.2005.07.005}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.neuroimage.2005.07.005}.
+
+\bibitem[Margulies et~al.(2009)Margulies, Vincent, Kelly, Lohmann, Uddin,
+  Biswal, Villringer, Castellanos, Milham, and Petrides]{Margulies2009}
+Daniel~S. Margulies, Justin~L. Vincent, Clare Kelly, Gabriele Lohmann,
+  Lucina~Q. Uddin, Bharat~B. Biswal, Arno Villringer, F.~Xavier Castellanos,
+  Michael~P. Milham, and Michael Petrides.
+\newblock {Precuneus shares intrinsic functional architecture in humans and
+  monkeys.}
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America}, November 2009.
+\newblock ISSN 1091-6490.
+\newblock \doi{10.1073/pnas.0905314106}.
+\newblock URL \url{http://dx.doi.org/10.1073/pnas.0905314106}.
+
+\bibitem[Marquand et~al.(2008)Marquand, Mourão-Miranda, Brammer, Cleare, and
+  Fu]{Marquand2008}
+Andre~F Marquand, Janaina Mourão-Miranda, Michael~J Brammer, Anthony~J Cleare,
+  and Cynthia H~Y Fu.
+\newblock Neuroanatomy of verbal working memory as a diagnostic biomarker for
+  depression.
+\newblock \emph{Neuroreport}, 19\penalty0 (15):\penalty0 1507--1511, Oct 2008.
+\newblock \doi{10.1097/WNR.0b013e328310425e}.
+\newblock URL \url{http://dx.doi.org/10.1097/WNR.0b013e328310425e}.
+
+\bibitem[Mattsson et~al.(2009)Mattsson, Zetterberg, Hansson, Andreasen,
+  Parnetti, Jonsson, Herukka, van~der Flier, Blankenstein, Ewers, Rich, Kaiser,
+  Verbeek, Tsolaki, Mulugeta, Rosén, Aarsland, Visser, Schröder, Marcusson,
+  de~Leon, Hampel, Scheltens, Pirttilä, Wallin, Jönhagen, Minthon, Winblad,
+  and Blennow]{Mattsson2009}
+Niklas Mattsson, Henrik Zetterberg, Oskar Hansson, Niels Andreasen, Lucilla
+  Parnetti, Michael Jonsson, Sanna-Kaisa Herukka, Wiesje~M van~der Flier,
+  Marinus~A Blankenstein, Michael Ewers, Kenneth Rich, Elmar Kaiser, Marcel
+  Verbeek, Magda Tsolaki, Ezra Mulugeta, Erik Rosén, Dag Aarsland,
+  Pieter~Jelle Visser, Johannes Schröder, Jan Marcusson, Mony de~Leon, Harald
+  Hampel, Philip Scheltens, Tuula Pirttilä, Anders Wallin, Maria~Eriksdotter
+  Jönhagen, Lennart Minthon, Bengt Winblad, and Kaj Blennow.
+\newblock Csf biomarkers and incipient alzheimer disease in patients with mild
+  cognitive impairment.
+\newblock \emph{JAMA}, 302\penalty0 (4):\penalty0 385--393, Jul 2009.
+\newblock \doi{10.1001/jama.2009.1064}.
+\newblock URL \url{http://dx.doi.org/10.1001/jama.2009.1064}.
+
+\bibitem[Mckeown et~al.(1998)Mckeown, Makeig, Brown, Jung, Kindermann, Bell,
+  and Sejnowski]{McKeown1998}
+M.~J. Mckeown, S.~Makeig, G.~G. Brown, T.~P. Jung, S.~S. Kindermann, A.~J.
+  Bell, and T.~J. Sejnowski.
+\newblock {Analysis of fMRI data by blind separation into independent spatial
+  components.}
+\newblock \emph{Hum Brain Mapp}, 6\penalty0 (3):\penalty0 160--188, 1998.
+\newblock ISSN 1065-9471.
+\newblock URL \url{http://view.ncbi.nlm.nih.gov/pubmed/9673671}.
+
+\bibitem[McKhann et~al.(1984)McKhann, Drachman, Folstein, Katzman, Price, and
+  Stadlan]{McKhann1984}
+G.~McKhann, D.~Drachman, M.~Folstein, R.~Katzman, D.~Price, and E.~M. Stadlan.
+\newblock {Clinical diagnosis of Alzheimer's disease: report of the
+  NINCDS-ADRDA Work Group under the auspices of Department of Health and Human
+  Services Task Force on Alzheimer's Disease.}
+\newblock \emph{Neurology}, 34\penalty0 (7):\penalty0 939--944, July 1984.
+\newblock ISSN 0028-3878.
+\newblock URL \url{http://www.neurology.org/content/34/7/939.abstract}.
+
+\bibitem[Menon et~al.(1997)Menon, Lim, Anderson, Johnson, and
+  Pfefferbaum]{Menon1997}
+V.~Menon, K.O. Lim, J.H. Anderson, J.~Johnson, and A.~Pfefferbaum.
+\newblock Design and efficacy of a head-coil bite bar for reducing
+  movement-related artifacts during functional mri scanning.
+\newblock \emph{Behavior Research Methods, Instruments, \& Computers},
+  29\penalty0 (4):\penalty0 589--594, 1997.
+\newblock ISSN 0743-3808.
+\newblock \doi{10.3758/BF03210613}.
+\newblock URL \url{http://dx.doi.org/10.3758/BF03210613}.
+
+\bibitem[Meyer-Baese et~al.(2004)Meyer-Baese, Wismueller, and
+  Lange]{Meyer-Baese2004}
+A.~Meyer-Baese, A.~Wismueller, and O.~Lange.
+\newblock {Comparison of two exploratory data analysis methods for fMRI:
+  unsupervised clustering versus independent component analysis.}
+\newblock \emph{IEEE Trans Inf Technol Biomed}, 8\penalty0 (3):\penalty0
+  387--398, September 2004.
+\newblock ISSN 1089-7771.
+\newblock URL \url{http://view.ncbi.nlm.nih.gov/pubmed/15484444}.
+
+\bibitem[Mikl et~al.(2008)Mikl, Marecek, Hlustík, Pavlicová, Drastich,
+  Chlebus, Brázdil, and Krupa]{Mikl2008}
+Michal Mikl, Radek Marecek, Petr Hlustík, Martina Pavlicová, Ales Drastich,
+  Pavel Chlebus, Milan Brázdil, and Petr Krupa.
+\newblock Effects of spatial smoothing on fmri group inferences.
+\newblock \emph{Magnetic resonance imaging}, 26\penalty0 (4):\penalty0
+  490--503, May 2008.
+\newblock ISSN 0730-725X.
+\newblock URL \url{http://view.ncbi.nlm.nih.gov/pubmed/18060720}.
+
+\bibitem[Morris(2005)]{Morris2005}
+John~C Morris.
+\newblock Early-stage and preclinical alzheimer disease.
+\newblock \emph{Alzheimer Dis Assoc Disord}, 19\penalty0 (3):\penalty0
+  163--165, 2005.
+
+\bibitem[Mourao-Miranda et~al.(2005)Mourao-Miranda, Bokde, Born, Hampel, and
+  Stetter]{Mourao-Miranda2005}
+Janaina Mourao-Miranda, Arun L~W Bokde, Christine Born, Harald Hampel, and
+  Martin Stetter.
+\newblock Classifying brain states and determining the discriminating
+  activation patterns: Support vector machine on functional mri data.
+\newblock \emph{Neuroimage}, 28\penalty0 (4):\penalty0 980--995, Dec 2005.
+\newblock \doi{10.1016/j.neuroimage.2005.06.070}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.neuroimage.2005.06.070}.
+
+\bibitem[Mueller et~al.(2005)Mueller, Weiner, Thal, Petersen, Jack, Jagust,
+  Trojanowski, Toga, and Beckett]{Mueller2005}
+Susanne~G Mueller, Michael~W Weiner, Leon~J Thal, Ronald~C Petersen, Clifford
+  Jack, William Jagust, John~Q Trojanowski, Arthur~W Toga, and Laurel Beckett.
+\newblock The alzheimer's disease neuroimaging initiative.
+\newblock \emph{Neuroimaging Clin N Am}, 15\penalty0 (4):\penalty0 869--77,
+  xi--xii, Nov 2005.
+\newblock \doi{10.1016/j.nic.2005.09.008}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.nic.2005.09.008}.
+
+\bibitem[Murphy et~al.(2009)Murphy, Birn, Handwerker, Jones, and
+  Bandettini]{Murphy2009}
+Kevin Murphy, Rasmus~M. Birn, Daniel~A. Handwerker, Tyler~B. Jones, and
+  Peter~A. Bandettini.
+\newblock {The impact of global signal regression on resting state
+  correlations: are anti-correlated networks introduced?}
+\newblock \emph{NeuroImage}, 44\penalty0 (3):\penalty0 893--905, February 2009.
+\newblock ISSN 1095-9572.
+\newblock \doi{10.1016/j.neuroimage.2008.09.036}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.neuroimage.2008.09.036}.
+
+\bibitem[Nielsen et~al.(2013)Nielsen, Zielinski, Fletcher, Alexander, Lange,
+  Bigler, Lainhart, and Anderson]{Nielsen2013}
+Jared Nielsen, Brandon Zielinski, Thomas Fletcher, Andrew Alexander, Nicholas
+  Lange, Erin Bigler, Janet Lainhart, and Jeffrey Anderson.
+\newblock Multisite functional connectivity mri classification of autism: Abide
+  results.
+\newblock \emph{Frontiers in human neuroscience}, 7:\penalty0 --, 2013.
+\newblock ISSN 1662-5161.
+\newblock URL \url{http://view.ncbi.nlm.nih.gov/pubmed/24093016}.
+
+\bibitem[Nouretdinov et~al.(2011)Nouretdinov, Costafreda, Gammerman,
+  Chervonenkis, Vovk, Vapnik, and Fu]{Nouretdinov2011}
+Ilia Nouretdinov, Sergi Costafreda, Alexander Gammerman, Alexey Chervonenkis,
+  Vladimir Vovk, Vladimir Vapnik, and Cynthia Fu.
+\newblock Machine learning classification with confidence: Application of
+  transductive conformal predictors to mri-based diagnostic and prognostic
+  markers in depression.
+\newblock \emph{NeuroImage}, 56\penalty0 (2):\penalty0 809--813, May 2011.
+\newblock ISSN 10538119.
+\newblock URL \url{http://dx.doi.org/10.1016/j.neuroimage.2010.05.023}.
+
+\bibitem[Ogawa et~al.(1990)Ogawa, Lee, Kay, and Tank]{Ogawa1990}
+S.~Ogawa, T.~M. Lee, A.~R. Kay, and D.~W. Tank.
+\newblock {Brain magnetic resonance imaging with contrast dependent on blood
+  oxygenation}.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 87\penalty0
+  (24):\penalty0 9868--9872, December 1990.
+\newblock ISSN 1091-6490.
+\newblock \doi{10.1073/pnas.87.24.9868}.
+\newblock URL \url{http://dx.doi.org/10.1073/pnas.87.24.9868}.
+
+\bibitem[Petersen(2004)]{Petersen2004}
+R.~C. Petersen.
+\newblock Mild cognitive impairment as a diagnostic entity.
+\newblock \emph{J Intern Med}, 256\penalty0 (3):\penalty0 183--194, Sep 2004.
+\newblock \doi{10.1111/j.1365-2796.2004.01388.x}.
+\newblock URL \url{http://dx.doi.org/10.1111/j.1365-2796.2004.01388.x}.
+
+\bibitem[Power et~al.(2011)Power, Cohen, Nelson, Wig, Barnes, Church, Vogel,
+  Laumann, Miezin, Schlaggar, and Petersen]{Power2011}
+Jonathan~D. Power, Alexander~L. Cohen, Steven~M. Nelson, Gagan~S. Wig, Kelly~A.
+  Barnes, Jessica~A. Church, Alecia~C. Vogel, Timothy~O. Laumann, Fran~M.
+  Miezin, Bradley~L. Schlaggar, and Steven~E. Petersen.
+\newblock {Functional Network Organization of the Human Brain}.
+\newblock \emph{Neuron}, 72\penalty0 (4):\penalty0 665--678, November 2011.
+\newblock ISSN 08966273.
+\newblock \doi{10.1016/j.neuron.2011.09.006}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.neuron.2011.09.006}.
+
+\bibitem[Power et~al.(2012)Power, Barnes, Snyder, Schlaggar, and
+  Petersen]{Power2012}
+Jonathan~D. Power, Kelly~A. Barnes, Abraham~Z. Snyder, Bradley~L. Schlaggar,
+  and Steven~E. Petersen.
+\newblock {Spurious but systematic correlations in functional connectivity MRI
+  networks arise from subject motion.}
+\newblock \emph{NeuroImage}, 59\penalty0 (3):\penalty0 2142--2154, February
+  2012.
+\newblock ISSN 1095-9572.
+\newblock \doi{10.1016/j.neuroimage.2011.10.018}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.neuroimage.2011.10.018}.
+
+\bibitem[Power et~al.(2014)Power, Mitra, Laumann, Snyder, Schlaggar, and
+  Petersen]{Power2014}
+Jonathan~D. Power, Anish Mitra, Timothy~O. Laumann, Abraham~Z. Snyder,
+  Bradley~L. Schlaggar, and Steven~E. Petersen.
+\newblock {Methods to detect, characterize, and remove motion artifact in
+  resting state fMRI}.
+\newblock \emph{NeuroImage}, 84:\penalty0 320--341, January 2014.
+\newblock \doi{10.1016/j.neuroimage.2013.08.048}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.neuroimage.2013.08.048}.
+
+\bibitem[Rorden et~al.(2007)Rorden, Karnath, and Bonilha]{Rorden2007}
+Chris Rorden, Hans-Otto Karnath, and Leonardo Bonilha.
+\newblock Improving lesion-symptom mapping.
+\newblock \emph{J Cogn Neurosci}, 19\penalty0 (7):\penalty0 1081--1088, Jul
+  2007.
+\newblock \doi{10.1162/jocn.2007.19.7.1081}.
+\newblock URL \url{http://dx.doi.org/10.1162/jocn.2007.19.7.1081}.
+
+\bibitem[Saad et~al.(2012)Saad, Gotts, Murphy, Chen, Jo, Martin, and
+  Cox]{Saad2012}
+Ziad~S. Saad, Stephen~J. Gotts, Kevin Murphy, Gang Chen, Hang Joon~J. Jo, Alex
+  Martin, and Robert~W. Cox.
+\newblock {Trouble at rest: how correlation patterns and group differences
+  become distorted after global signal regression.}
+\newblock \emph{Brain connectivity}, 2\penalty0 (1):\penalty0 25--32, 2012.
+\newblock ISSN 2158-0022.
+\newblock \doi{10.1089/brain.2012.0080}.
+\newblock URL \url{http://dx.doi.org/10.1089/brain.2012.0080}.
+
+\bibitem[Salvador et~al.(2005)Salvador, Suckling, Coleman, Pickard, Menon, and
+  Bullmore]{Salvador2005}
+R.~Salvador, J.~Suckling, M.~R. Coleman, J.~D. Pickard, D.~Menon, and
+  E.~Bullmore.
+\newblock {Neurophysiological architecture of functional magnetic resonance
+  images of human brain.}
+\newblock \emph{Cereb Cortex}, 15\penalty0 (9):\penalty0 1332--1342, September
+  2005.
+\newblock ISSN 1047-3211.
+\newblock URL \url{http://view.ncbi.nlm.nih.gov/pubmed/15635061}.
+
+\bibitem[Salvador et~al.(2007)Salvador, Mart\'{\i}nez, Pomarol-Clotet,
+  Sarr\'{o}, Suckling, and Bullmore]{Salvador2007}
+R.~Salvador, A.~Mart\'{\i}nez, E.~Pomarol-Clotet, S.~Sarr\'{o}, J.~Suckling,
+  and E.~Bullmore.
+\newblock {Frequency based mutual information measures between clusters of
+  brain regions in functional magnetic resonance imaging.}
+\newblock \emph{NeuroImage}, 35\penalty0 (1):\penalty0 83--88, March 2007.
+\newblock ISSN 1053-8119.
+\newblock \doi{10.1016/j.neuroimage.2006.12.001}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.neuroimage.2006.12.001}.
+
+\bibitem[Schapire et~al.(1998)Schapire, Freund, Bartlett, and
+  Lee]{Schapire1998}
+Robert~E. Schapire, Yoav Freund, Peter Bartlett, and Wee~Sun Lee.
+\newblock Boosting the margin: a new explanation for the effectiveness of
+  voting methods.
+\newblock \emph{The Annals of Statistics}, 26\penalty0 (5):\penalty0
+  1651--1686, 10 1998.
+\newblock \doi{10.1214/aos/1024691352}.
+\newblock URL \url{http://dx.doi.org/10.1214/aos/1024691352}.
+
+\bibitem[Shankar et~al.(2008)Shankar, Li, Mehta, Garcia-Munoz, Shepardson,
+  Smith, Brett, Farrell, Rowan, Lemere, Regan, Walsh, Sabatini, and
+  Selkoe]{Shankar2008}
+Ganesh~M Shankar, Shaomin Li, Tapan~H Mehta, Amaya Garcia-Munoz, Nina~E
+  Shepardson, Imelda Smith, Francesca~M Brett, Michael~A Farrell, Michael~J
+  Rowan, Cynthia~A Lemere, Ciaran~M Regan, Dominic~M Walsh, Bernardo~L
+  Sabatini, and Dennis~J Selkoe.
+\newblock Amyloid-beta protein dimers isolated directly from alzheimer's brains
+  impair synaptic plasticity and memory.
+\newblock \emph{Nat Med}, 14\penalty0 (8):\penalty0 837--842, Aug 2008.
+\newblock \doi{10.1038/nm1782}.
+\newblock URL \url{http://dx.doi.org/10.1038/nm1782}.
+
+\bibitem[Shehzad et~al.(2009)Shehzad, Kelly, Reiss, Gee, Gotimer, Uddin, Lee,
+  Margulies, Roy, Biswal, Petkova, Castellanos, and Milham]{Shehzad2009}
+Zarrar Shehzad, Clare~M. Kelly, Philip~T. Reiss, Dylan~G. Gee, Kristin Gotimer,
+  Lucina~Q. Uddin, Sang Han~H. Lee, Daniel~S. Margulies, Amy Krain~K. Roy,
+  Bharat~B. Biswal, Eva Petkova, F.~Xavier Castellanos, and Michael~P. Milham.
+\newblock {The resting brain: unconstrained yet reliable.}
+\newblock \emph{Cerebral cortex (New York, N.Y. : 1991)}, 19\penalty0
+  (10):\penalty0 2209--2229, October 2009.
+\newblock ISSN 1460-2199.
+\newblock \doi{10.1093/cercor/bhn256}.
+\newblock URL \url{http://dx.doi.org/10.1093/cercor/bhn256}.
+
+\bibitem[Sheline and Raichle(2013)]{Sheline2013}
+Yvette Sheline and Marcus Raichle.
+\newblock Resting state functional connectivity in preclinical alzheimer’s
+  disease.
+\newblock \emph{Biological Psychiatry}, 74\penalty0 (5):\penalty0 340--347,
+  September 2013.
+\newblock ISSN 00063223.
+\newblock URL \url{http://dx.doi.org/10.1016/j.biopsych.2012.11.028}.
+
+\bibitem[Sperling et~al.(2011)Sperling, Aisen, Beckett, Bennett, Craft, Fagan,
+  Iwatsubo, Jack, Kaye, Montine, Park, Reiman, Rowe, Siemers, Stern, Yaffe,
+  Carrillo, Thies, Morrison-Bogorad, Wagster, and Phelps]{Sperling2011}
+Reisa~A. Sperling, Paul~S. Aisen, Laurel~A. Beckett, David~A. Bennett, Suzanne
+  Craft, Anne~M. Fagan, Takeshi Iwatsubo, Clifford~R. Jack, Jeffrey Kaye,
+  Thomas~J. Montine, Denise~C. Park, Eric~M. Reiman, Christopher~C. Rowe, Eric
+  Siemers, Yaakov Stern, Kristine Yaffe, Maria~C. Carrillo, Bill Thies,
+  Marcelle Morrison-Bogorad, Molly~V. Wagster, and Creighton~H. Phelps.
+\newblock {Toward defining the preclinical stages of Alzheimer's disease:
+  Recommendations from the National Institute on Aging-Alzheimer's Association
+  workgroups on diagnostic guidelines for Alzheimer's disease}.
+\newblock \emph{Alzheimer's \& Dementia}, 7\penalty0 (3):\penalty0 280--292,
+  May 2011.
+\newblock \doi{10.1016/j.jalz.2011.03.003}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.jalz.2011.03.003}.
+
+\bibitem[Tian et~al.(2007)Tian, Jiang, Liang, Li, He, Wang, Cao, and
+  Jiang]{Tian2007}
+Lixia Tian, Tianzi Jiang, Meng Liang, Xiaobo Li, Yong He, Kun Wang, Bingli Cao,
+  and Tao Jiang.
+\newblock Stabilities of negative correlations between blood oxygen
+  level-dependent signals associated with sensory and motor cortices.
+\newblock \emph{Hum Brain Mapp}, 28\penalty0 (7):\penalty0 681--690, Jul 2007.
+\newblock \doi{10.1002/hbm.20300}.
+\newblock URL \url{http://dx.doi.org/10.1002/hbm.20300}.
+
+\bibitem[Tomasi and Volkow(2010)]{Tomasi2010}
+Dardo Tomasi and Nora~D. Volkow.
+\newblock {Functional connectivity density mapping}.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 107\penalty0
+  (21):\penalty0 9885--9890, May 2010.
+\newblock \doi{10.1073/pnas.1001414107}.
+\newblock URL \url{http://dx.doi.org/10.1073/pnas.1001414107}.
+
+\bibitem[Tzourio-Mazoyer et~al.(2002)Tzourio-Mazoyer, Landeau, Papathanassiou,
+  Crivello, Etard, Delcroix, Mazoyer, and Joliot]{Tzourio-Mazoyer2002}
+N.~Tzourio-Mazoyer, B.~Landeau, D.~Papathanassiou, F.~Crivello, O.~Etard,
+  N.~Delcroix, B.~Mazoyer, and M.~Joliot.
+\newblock {Automated anatomical labeling of activations in SPM using a
+  macroscopic anatomical parcellation of the MNI MRI single-subject brain.}
+\newblock \emph{NeuroImage}, 15\penalty0 (1):\penalty0 273--289, January 2002.
+\newblock ISSN 1053-8119.
+\newblock \doi{10.1006/nimg.2001.0978}.
+\newblock URL \url{http://dx.doi.org/10.1006/nimg.2001.0978}.
+
+\bibitem[van~den Heuvel et~al.(2008)van~den Heuvel, Mandl, and
+  Hulshoff~Pol]{Heuvel2008}
+Martijn van~den Heuvel, Rene Mandl, and Hilleke Hulshoff~Pol.
+\newblock {Normalized Cut Group Clustering of Resting-State fMRI Data}.
+\newblock \emph{PLoS ONE}, 3\penalty0 (4):\penalty0 e2001+, April 2008.
+\newblock \doi{10.1371/journal.pone.0002001}.
+\newblock URL \url{http://dx.doi.org/10.1371/journal.pone.0002001}.
+
+\bibitem[van~den Heuvel et~al.(2009)van~den Heuvel, Mandl, Kahn, and
+  Hulshoff~Pol]{Heuvel2009}
+Martijn~P. van~den Heuvel, Ren\'{e}~C. Mandl, Ren\'{e}~S. Kahn, and Hilleke~E.
+  Hulshoff~Pol.
+\newblock {Functionally linked resting-state networks reflect the underlying
+  structural connectivity architecture of the human brain.}
+\newblock \emph{Human brain mapping}, 30\penalty0 (10):\penalty0 3127--3141,
+  October 2009.
+\newblock ISSN 1097-0193.
+\newblock \doi{10.1002/hbm.20737}.
+\newblock URL \url{http://dx.doi.org/10.1002/hbm.20737}.
+
+\bibitem[Van~Dijk et~al.(2010)Van~Dijk, Hedden, Venkataraman, Evans, Lazar, and
+  Buckner]{VanDijk2010}
+Koene~R. Van~Dijk, Trey Hedden, Archana Venkataraman, Karleyton~C. Evans,
+  Sara~W. Lazar, and Randy~L. Buckner.
+\newblock {Intrinsic functional connectivity as a tool for human connectomics:
+  theory, properties, and optimization.}
+\newblock \emph{Journal of neurophysiology}, 103\penalty0 (1):\penalty0
+  297--321, January 2010.
+\newblock ISSN 1522-1598.
+\newblock \doi{10.1152/jn.00783.2009}.
+\newblock URL \url{http://dx.doi.org/10.1152/jn.00783.2009}.
+
+\bibitem[Vanhoutte et~al.(2006)Vanhoutte, Verhoye, and der
+  Linden]{Vanhoutte2006}
+G.~Vanhoutte, M.~Verhoye, and A.~Van der Linden.
+\newblock Changing body temperature affects the t2* signal in the rat brain and
+  reveals hypothalamic activity.
+\newblock \emph{Magn Reson Med}, 55\penalty0 (5):\penalty0 1006--1012, May
+  2006.
+\newblock \doi{10.1002/mrm.20861}.
+\newblock URL \url{http://dx.doi.org/10.1002/mrm.20861}.
+
+\bibitem[Venkataraman et~al.(2010)Venkataraman, Kubicki, Westin, and
+  Golland]{Venkataraman2010}
+Archana Venkataraman, Marek Kubicki, Carl-Fredrik Westin, and Polina Golland.
+\newblock Robust feature selection in resting-state fmri connectivity based on
+  population studies.
+\newblock \emph{Conf Comput Vis Pattern Recognit Workshops}, pages 63--70,
+  2010.
+\newblock \doi{10.1109/CVPRW.2010.5543446}.
+\newblock URL \url{http://dx.doi.org/10.1109/CVPRW.2010.5543446}.
+
+\bibitem[Waites et~al.(2006)Waites, Briellmann, Saling, Abbott, and
+  Jackson]{Waites2006}
+Anthony~B. Waites, Regula~S. Briellmann, Michael~M. Saling, David~F. Abbott,
+  and Graeme~D. Jackson.
+\newblock {Functional connectivity networks are disrupted in left temporal lobe
+  epilepsy.}
+\newblock \emph{Annals of neurology}, 59\penalty0 (2):\penalty0 335--343,
+  February 2006.
+\newblock \doi{10.1002/ana.20733}.
+\newblock URL \url{http://dx.doi.org/10.1002/ana.20733}.
+
+\bibitem[Wang et~al.(2007)Wang, Liang, Wang, Tian, Zhang, Li, and
+  Jiang]{Wang2007a}
+Kun Wang, Meng Liang, Liang Wang, Lixia Tian, Xinqing Zhang, Kuncheng Li, and
+  Tianzi Jiang.
+\newblock {Altered functional connectivity in early Alzheimer's disease: a
+  resting-state fMRI study.}
+\newblock \emph{Human brain mapping}, 28\penalty0 (10):\penalty0 967--978,
+  October 2007.
+\newblock ISSN 1065-9471.
+\newblock \doi{10.1002/hbm.20324}.
+\newblock URL \url{http://dx.doi.org/10.1002/hbm.20324}.
+
+\bibitem[Wang et~al.(2006)Wang, Zang, He, Liang, Zhang, Tian, Wu, Jiang, and
+  Li]{Wang2006a}
+Liang Wang, Yufeng Zang, Yong He, Meng Liang, Xinqing Zhang, Lixia Tian, Tao
+  Wu, Tianzi Jiang, and Kuncheng Li.
+\newblock {Changes in hippocampal connectivity in the early stages of
+  Alzheimer's disease: evidence from resting state fMRI.}
+\newblock \emph{NeuroImage}, 31\penalty0 (2):\penalty0 496--504, June 2006.
+\newblock ISSN 1053-8119.
+\newblock \doi{10.1016/j.neuroimage.2005.12.033}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.neuroimage.2005.12.033}.
+
+\bibitem[Willer et~al.(2010)Willer, Li, and Abecasis]{Willer2010}
+Cristen~J. Willer, Yun Li, and Gon\c{c}alo~R. Abecasis.
+\newblock {METAL: fast and efficient meta-analysis of genomewide association
+  scans}.
+\newblock \emph{Bioinformatics}, 26\penalty0 (17):\penalty0 2190--2191,
+  September 2010.
+\newblock \doi{10.1093/bioinformatics/btq340}.
+\newblock URL \url{http://dx.doi.org/10.1093/bioinformatics/btq340}.
+
+\bibitem[Wink and Roerdink(2006)]{Wink2006}
+A.~M. Wink and J.~B. T.~M. Roerdink.
+\newblock {BOLD noise assumptions in fMRI}.
+\newblock \emph{Int. J. Biomed. Imaging}, 2006, 2006.
+\newblock \doi{10.1155/IJBI/2006/12014}.
+\newblock URL \url{http://dx.doi.org/10.1155/IJBI/2006/12014}.
+
+\bibitem[Worsley and Friston(1995)]{Worsley1995}
+K.~J. Worsley and K.~J. Friston.
+\newblock {Analysis of fMRI Time-Series Revisited---Again}.
+\newblock \emph{NeuroImage}, 2\penalty0 (3):\penalty0 173--181, September 1995.
+\newblock ISSN 10538119.
+\newblock \doi{10.1006/nimg.1995.1023}.
+\newblock URL \url{http://dx.doi.org/10.1006/nimg.1995.1023}.
+
+\bibitem[Yan et~al.(2013{\natexlab{a}})Yan, Cheung, Kelly, Colcombe, Craddock,
+  Di~Martino, Li, Zuo, Castellanos, and Milham]{Yan2013}
+Chao-Gan Yan, Brian Cheung, Clare Kelly, Stan Colcombe, R.~Cameron Craddock,
+  Adriana Di~Martino, Qingyang Li, Xi-Nian Zuo, F.~Xavier Castellanos, and
+  Michael~P. Milham.
+\newblock {A comprehensive assessment of regional variation in the impact of
+  head micromovements on functional connectomics}.
+\newblock \emph{NeuroImage}, 76:\penalty0 183--201, August 2013{\natexlab{a}}.
+\newblock \doi{10.1016/j.neuroimage.2013.03.004}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.neuroimage.2013.03.004}.
+
+\bibitem[Yan et~al.(2013{\natexlab{b}})Yan, Craddock, Zuo, Zang, and
+  Milham]{Yan2013a}
+Chao-Gan~G. Yan, Cameron~C. Craddock, Xi-Nian~N. Zuo, Yu-Feng~F. Zang, and
+  Michael~P. Milham.
+\newblock {Standardizing the intrinsic brain: towards robust measurement of
+  inter-individual variation in 1000 functional connectomes.}
+\newblock \emph{NeuroImage}, 80:\penalty0 246--262, October 2013{\natexlab{b}}.
+\newblock URL \url{http://view.ncbi.nlm.nih.gov/pubmed/23631983}.
+
+\bibitem[Yan et~al.(2009)Yan, Liu, He, Zou, Zhu, Zuo, Long, and Zang]{Yan2009}
+Chaogan Yan, Dongqiang Liu, Yong He, Qihong Zou, Chaozhe Zhu, Xinian Zuo,
+  Xiangyu Long, and Yufeng Zang.
+\newblock {Spontaneous Brain Activity in the Default Mode Network Is Sensitive
+  to Different Resting-State Conditions with Limited Cognitive Load}.
+\newblock \emph{PLoS ONE}, 4\penalty0 (5):\penalty0 e5743+, May 2009.
+\newblock ISSN 1932-6203.
+\newblock \doi{10.1371/journal.pone.0005743}.
+\newblock URL \url{http://dx.doi.org/10.1371/journal.pone.0005743}.
+
+\bibitem[Yang et~al.(2007)Yang, Long, Yang, Yan, Zhu, Zhou, Zang, and
+  Gong]{Yang2007}
+Hong Yang, Xiang-Yu Long, Yihong Yang, Hao Yan, Chao-Zhe Zhu, Xiang-Ping Zhou,
+  Yu-Feng Zang, and Qi-Yong Gong.
+\newblock Amplitude of low frequency fluctuation within visual areas revealed
+  by resting-state functional mri.
+\newblock \emph{Neuroimage}, 36\penalty0 (1):\penalty0 144--152, May 2007.
+\newblock \doi{10.1016/j.neuroimage.2007.01.054}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.neuroimage.2007.01.054}.
+
+\bibitem[Yu et~al.(2007)Yu, Wong, and Wang]{Yu2007}
+Zhiwen Yu, Hau-San Wong, and Hongqiang Wang.
+\newblock {Graph-based consensus clustering for class discovery from gene
+  expression data}.
+\newblock \emph{Bioinformatics}, 23\penalty0 (21):\penalty0 2888--2896,
+  November 2007.
+\newblock \doi{10.1093/bioinformatics/btm463}.
+\newblock URL \url{http://dx.doi.org/10.1093/bioinformatics/btm463}.
+
+\bibitem[Yuan et~al.(2009)Yuan, Gu, and Wei]{Yuan2009}
+Y.~Yuan, Z-X. Gu, and W-S. Wei.
+\newblock Fluorodeoxyglucose-positron-emission tomography, single-photon
+  emission tomography, and structural mr imaging for prediction of rapid
+  conversion to alzheimer disease in patients with mild cognitive impairment: a
+  meta-analysis.
+\newblock \emph{AJNR Am J Neuroradiol}, 30\penalty0 (2):\penalty0 404--410, Feb
+  2009.
+\newblock \doi{10.3174/ajnr.A1357}.
+\newblock URL \url{http://dx.doi.org/10.3174/ajnr.A1357}.
+
+\bibitem[Zang et~al.(2007)Zang, He, Zhu, Cao, Sui, Liang, Tian, Jiang, and
+  Wang]{Zang2007}
+Yu-Feng~F. Zang, Yong He, Chao-Zhe~Z. Zhu, Qing-Jiu~J. Cao, Man-Qiu~Q. Sui,
+  Meng Liang, Li-Xia~X. Tian, Tian-Zi~Z. Jiang, and Yu-Feng~F. Wang.
+\newblock {Altered baseline brain activity in children with ADHD revealed by
+  resting-state functional MRI.}
+\newblock \emph{Brain \& development}, 29\penalty0 (2):\penalty0 83--91, March
+  2007.
+\newblock ISSN 0387-7604.
+\newblock \doi{10.1016/j.braindev.2006.07.002}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.braindev.2006.07.002}.
+
+\bibitem[Zhang et~al.(2009)Zhang, Wang, Xing, Liu, Ma, Yang, Zhang, and
+  Teng]{Zhang2009a}
+H.~Zhang, S.~Wang, J.~Xing, B.~Liu, Z.~Ma, M.~Yang, Z.~Zhang, and G.~Teng.
+\newblock {Detection of PCC functional connectivity characteristics in
+  resting-state fMRI in mild Alzheimer's disease}.
+\newblock \emph{Behavioural Brain Research}, 197\penalty0 (1):\penalty0
+  103--108, January 2009.
+\newblock ISSN 01664328.
+\newblock \doi{10.1016/j.bbr.2008.08.012}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.bbr.2008.08.012}.
+
+\bibitem[Zhang et~al.(2010)Zhang, Zuo, Ma, Zang, Milham, and Zhu]{Zhang2010}
+Han Zhang, Xi-Nian Zuo, Shuang-Ye Ma, Yu-Feng Zang, Michael~P. Milham, and
+  Chao-Zhe Zhu.
+\newblock {Subject Order-Independent Group ICA (SOI-GICA) for Functional MRI
+  Data Analysis}.
+\newblock \emph{NeuroImage}, March 2010.
+\newblock ISSN 10538119.
+\newblock \doi{10.1016/j.neuroimage.2010.03.039}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.neuroimage.2010.03.039}.
+
+\bibitem[Zhong et~al.(2009)Zhong, Wang, Lu, Zhang, Jiao, and Liu]{Zhong2009}
+Yuan Zhong, Huinan Wang, Guangming Lu, Zhiqiang Zhang, Qing Jiao, and Yijun
+  Liu.
+\newblock {Detecting Functional Connectivity in fMRI Using PCA and Regression
+  Analysis}.
+\newblock \emph{Brain Topography}, 22\penalty0 (2):\penalty0 134--144,
+  September 2009.
+\newblock ISSN 0896-0267.
+\newblock \doi{10.1007/s10548-009-0095-4}.
+\newblock URL \url{http://dx.doi.org/10.1007/s10548-009-0095-4}.
+
+\bibitem[Zhou et~al.(2007)Zhou, Liang, Tian, Wang, Hao, Liu, Liu, and
+  Jiang]{Zhou2007}
+Yuan Zhou, Meng Liang, Lixia Tian, Kun Wang, Yihui Hao, Haihong Liu, Zhening
+  Liu, and Tianzi Jiang.
+\newblock Functional disintegration in paranoid schizophrenia using
+  resting-state fmri.
+\newblock \emph{Schizophr Res}, 97\penalty0 (1-3):\penalty0 194--205, Dec 2007.
+\newblock \doi{10.1016/j.schres.2007.05.029}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.schres.2007.05.029}.
+
+\bibitem[Zhou et~al.(2008)Zhou, Shu, Liu, Song, Hao, Liu, Yu, Liu, and
+  Jiang]{Zhou2008}
+Yuan Zhou, Ni~Shu, Yong Liu, Ming Song, Yihui Hao, Haihong Liu, Chunshui Yu,
+  Zhening Liu, and Tianzi Jiang.
+\newblock Altered resting-state functional connectivity and anatomical
+  connectivity of hippocampus in schizophrenia.
+\newblock \emph{Schizophr Res}, 100\penalty0 (1-3):\penalty0 120--132, Mar
+  2008.
+\newblock \doi{10.1016/j.schres.2007.11.039}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.schres.2007.11.039}.
+
+\bibitem[Zijdenbos et~al.(2002)Zijdenbos, Forghani, and Evans]{Zijdenbos2002}
+A.~P. Zijdenbos, R.~Forghani, and A.~C. Evans.
+\newblock {Automatic "pipeline" analysis of 3-D MRI data for clinical trials:
+  application to multiple sclerosis}.
+\newblock \emph{IEEE Transactions on Medical Imaging}, 21\penalty0
+  (10):\penalty0 1280--1291, October 2002.
+\newblock ISSN 0278-0062.
+\newblock \doi{10.1109/TMI.2002.806283}.
+\newblock URL \url{http://dx.doi.org/10.1109/TMI.2002.806283}.
+
+\bibitem[Zuo et~al.(2012)Zuo, Xu, Jiang, Yang, Cao, He, Zang, Castellanos, and
+  Milham]{Zuo2012}
+Xi-Nian Zuo, Ting Xu, Lili Jiang, Zhi Yang, Xiao-Yan Cao, Yong He, Yu-Feng
+  Zang, F.~Xavier Castellanos, and Michael~P. Milham.
+\newblock {Toward reliable characterization of functional homogeneity in the
+  human brain: Preprocessing, scan duration, imaging resolution and
+  computational space}.
+\newblock \emph{NeuroImage}, October 2012.
+\newblock ISSN 10538119.
+\newblock \doi{10.1016/j.neuroimage.2012.10.017}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.neuroimage.2012.10.017}.
+
+\end{thebibliography}

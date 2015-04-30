@@ -1,0 +1,257 @@
+
+\chapter{Feasibility of multi-centric fMRI connectivity studies of Alzheimer's disease}
+
+My second on-going project investigates the multi-site bias in connectivity measures, and the methods that can be used to reduce this bias. Part of this work was publised in the proceedings of the Alzheimer's Association International Conference (AAIC) \cite{Dansereau2013}, and a full-length manuscript is currently in preparation. 
+
+\section{Introduction}
+Resting-state (RS) connectivity in fMRI is a promising biomarker for a variety of neurological diseases. Typically, in a clinical trial, a large cohort is recruited and evaluated at multiple sites spread over countries or even continents. The main potential issue with that approach is the lack of consistency in the multi-site RS connectivity acquisitions that may obscure clinically relevant information. Therefore the aims of the study were to: (1) characterize the amplitude of the site bias, i.e. the systematic differences in rs-fMRI connectivity across different acquisition sites; (2) Quantify the impact of the between-site variance on the power of statistical tests in resting-state fMRI.
+
+\section{Method}
+
+\subsection{Preprocessing}\label{Preprocessing}
+The datasets were analysed using the NeuroImaging Analysis Kit (NIAK\footnote{\url{http://www.nitrc.org/projects/niak/}}) version 0.12.14, under CentOS version 6.3 with Octave\footnote{\url{http://gnu.octave.org}} version 3.8.1 and the Minc toolkit\footnote{\url{http://www.bic.mni.mcgill.ca/ServicesSoftware/ServicesSoftwareMincToolKit}} version 0.3.18. Analyses were executed in parallel on the "Mammouth" supercomputer\footnote{\url{http://www.calculquebec.ca/index.php/en/resources/compute-servers/mammouth-parallele-ii}}, using the pipeline system for Octave and Matlab \citep{Bellec2010}, version 1.0.2. Brain map visualizations were created using MRICron software \cite{Rorden2007}. Each fMRI dataset was corrected of inter-slice difference in acquisition time and the parameters of a rigid-body motion was estimated for each time frame. Rigid-body motion was estimated within as well as between runs, using the median volume of the first run as a target. The median volume of one selected fMRI run for each subject 
+was 
+coregistered with a T1 individual scan using Minctracc \citep{Collins1998}, which was itself non-linearly transformed to the Montreal Neurological Institute (MNI) template \citep{Fonov2011} using the CIVET pipeline \citep{Zijdenbos2002}. The MNI symmetric template was generated from the ICBM152 sample of 152 young adults, after 40 iterations of non-linear coregistration. The rigid-body transform, fMRI-to-T1 transform and T1-to-stereotaxic transform were all combined, and the functional volumes were resampled in the MNI space at a 3 mm isotropic resolution. The a censoring method described in \citep{Power2012} called "scrubbing" was used to remove the volumes with excessive motion using a cut-off value of $FD\geq0.5$. A minimum number of 50 unscrubbed volumes per run, corresponding to $\sim 125$ s of acquisition for a TR of 2.5 seconds, was then required for further analysis. The following nuisance parameters were regressed out from the time series at each voxel: slow time drifts (basis of discrete cosines 
+with a 0.01 Hz high-pass cut-off), average signals in conservative masks of the white matter and the lateral ventricles as well as the first principal components (95\% energy) of the six rigid-body motion parameters and their squares \citep{Lund2006},\citep{Giove2009}. The fMRI volumes were finally spatially smoothed with a 6 mm isotropic Gaussian blurring kernel. 
+
+\subsection{Feature selection}
+Regions are routinely defined using an anatomical parcellation \citep{He2009}, such as the AAL template \citep{Tzourio-Mazoyer2002}. Anatomical parcels may however not well match the organization of resting-state networks. The BASC method was used to generate data-driven functional decomposition into resting-state networks based on the coherence of BOLD activity at the individual or group level \citep{Bellec2006,Bellec2010c,Bellec2013}. When a low number of networks (or scale) is used, the brain got decomposed into distributed large-scale networks, such as the DMN. At high scales (large number of networks), the BASC identified subnetworks and functional regions \citep{Kelly2012}. We generated a BASC parcellation in 100 clusters on the Cambridge sample, including $\sim 200$ young adults from the 1000 functional connectome database \citep{Biswal2010} and used it to generate the rs-fMRI outcome measures.
+
+\paragraph{The default-mode network}
+Since the seminal work of \cite{Greicius2004}, many rs-fMRI studies in AD focused on the default-mode network (DMN), a group of regions consistently more active at rest than during a broad range of different tasks \citep{Gusnard2001}. The DMN was notably reported to largely overlap with the regions that show high amyloid-beta deposition in patients with DAT \citep{Buckner2009}. It includes the posterior cingulate cortex (PCC) / Precuneus (PCUN) area, the inferior parietal lobule (IPL), the anterior cingulate cortex / medial prefrontal cortex (MPFC) \citep{Greicius2003}. Other structures such as the medial temporal cortex or the superior frontal gyrus are also generally regarded as part of different subnetworks of the DMN \citep{Margulies2009, Andrews-Hanna2010a}.
+
+\paragraph{Literature review: Alzheimer's disease and resting-state fMRI}
+We performed a literature review to select candidate connections that have been shown to be prominently impacted in Alzheimer's disease. There is no single authoritative reference on the effect of a DAT on rs-fMRI connectivity, and the field has been dominated thus far by studies with small samples (n\textasciitilde20) and limited statistical power, see \cite{Sheline2013} for a recent review. Because the DMN has been most extensively studied, we decided to focus on this network and to run a meta-analysis on six papers that (1) used some analogue of seed-based connectivity maps in resting-state fMRI using one or multiple seeds in the DMN (2) investigated abnormalities in resting-state functional connectivity in patients suffering of a dementia of the Alzheimer's type and (3) provided tables of coordinates in stereotaxic space for the results.
+
+\paragraph{review: Alzheimer's disease and resting-state fMRI} 
+\begin{itemize}
+\item \cite{Zhang2009a} used functional connectivity maps with a seed in the posterior cingulate cortex (PCC) to explore the differences between a group of elderly cognitively normal subjects (CNE, n=16) and patients with a mild dementia of the Alzheimer's type (DAT, n=18).
+\item \cite{Zhang2010} generalized the \cite{Zhang2009a} study with CNE (n=16) and a larger group of patients with DAT (n=46). Patients were separated in three groups (mild, moderate, severe DAT), and each group of patients was contrasted against the CNE.
+\item \cite{Wang2006a} used functional connectivity maps with a seed in the hippocampi to explore the differences between a group of CNE (n=13) and patients with a mild DAT (n=13). All results included in the meta-analysis are from Table 2, seeded in the right hippocampus. Seeds were manually delineated on an individual basis.
+\item \cite{Wang2007a} used functional connectivity maps with a seed in the posterior cingulate cortex (PCC) as well as full brain point-to-point correlations (based on an AAL parcellation) to explore the differences between a group of elderly cognitively normal subjects (CNE, n=14) and patients with a very mild to mild dementia of the Alzheimer's type (DAT, n=14). Only the results based on the PCC seed were included in the meta-analysis.
+\item \cite{Goveas2011} used functional connectivity maps with a seed in the hippocampi to explore the differences between a group of elderly cognitively normal subjects (CNE, n=18) and patients with a mild dementia of the Alzheimer's type (DAT, n=14) before and after donepezil treatment. Seeds were manually delineated on an individual basis, before and after treatment.
+\item \cite{Damoiseaux2012} used dual-regression independent component analysis to explore longitudinal differences between a group of CNE (n=18) and patients with DAT (n=21). All results included in the meta-analysis are from Table 3 (differences at baseline) and Table 4 (interaction with time). The authors used three components representing the Anterior DMN, Ventral DMN and Posterior DMN.
+\end{itemize}
+
+To assess the degree of consistency of the findings across studies, we counted the number of coordinates located in each one of the BASC regions. The resulting map is presented in Figure \ref{fig_freq_sel}. As can be seen, there is a lot of variability across studies, with only a limited number of regions reaching a score above 3 (i.e. reported in at least 3 of the contrasts in the six studies). Note that we did not select connections with the hippocampus, although this region was frequently reported. The rationale was that the drug effects on this area are expected to be minimal in patients with a moderate DAT, because the very severe atrophy of the structure cannot be recovered. In the regions showing the most consistency (score of 3 or more), there were many regions located in the DMN, such as the PCC, the PCUN, the IPL (a bilateral node), the right superior frontal gyrus (SFGr), as well as two dorsal MPFC cortex (dMPFC and dMPFC2) and an anterior MPFC parcel (aMPFC). Three parcels were found in the 
+visual network: the lingual gyrus (LING), the fusiform gyrus (FUS) and a dorso-medial occipital (DMO) parcel. Two parcels were found in the dorsal attentional network: the intra-parietal sulcus (IPS) and the motor part of the precuneus (PCUNm, see \cite{Margulies2009}). One parcel was found in the premotor cortex (PMC), associated with the sensorimotor network, one parcel in the left dorsolateral prefrontal cortex (rDLPFC), associated with the fronto-parietal task-control network, as well as a parcel in the dMPFC (dMPFC3) associated with the cingulo-opercular cortex. Finally, a parcel included the temporal poles (TPo) bilaterally. Note that the nomenclature for distributed networks was based on \citep{Power2011}. 
+
+The TRT reliability study was based on the publicly available NYU-TRT database. The database included 25 young healthy adults, and each subject had three rs-fMRI run: two in a single session (separated by 45 mns) and another run $5-16$ months latter. Several outcome measures were generated in key regions impacted by AD. Using the three runs, one intra-class correlation (ICC) was generated intra-session, and two ICCs were generated inter-session for each outcome measures. The outcome measures were ranked based on average of intra- and inter-session ICCs. 
+
+\subsection{Simulations}
+\paragraph{Dataset}
+In order to simulate various scenarios within the context of a multi-site setting, a cohort of subjects acquired at a single-site was selected to act as our reference dataset and for the multi-site configuration a cohort from a collection of 7 small sites, roughly totalling the same sample size as the reference dataset, was used. The cohort used for the study contains 385 participants from the 1000 Functional Connectomes Project \citep{Biswal2010} (150 males, age range = 18-46 yrs) composed of 1 large site (Cambridge n=\textasciitilde200) and 7 small sites (n=\textasciitilde20/site for a total \textasciitilde200). The fMRI datasets were preprocessed with the Neuro-Imaging Analysis Kit (NIAK) as described earlier in Section \ref{Preprocessing}.
+
+\paragraph{Connectome}
+Using a brain partition of $R$ networks obtain from BASC procedure described in \cite{Bellec2010c}, and taking each pair of distinct networks $i$ and $j$, the between-network connectivity $y_{i,j}$ is measured by the Fisher transform of the Pearson's correlation between the average time series of the network. The within-network connectivity $y_{i,i}$ is the Fisher transform of the average correlation between time series of every pair of distinct voxels inside network $i$. The connectome $\mathbf{Y}=(y_{i,j})_{i,j=1}^R$ is thus a $R\times R$ matrix. Each column $j$ (or row, as the matrix is symmetric) codes for the connectivity between network $j$ and all other brain networks (full brain functional connectivity map). For a scale with $R$ parcels, there are exactly $L=R(R+1)/2$ distinct elements in an individual connectome $\mathbf{Y}$. 
+
+\paragraph{Effect size (cohen's d)}
+For each site and each sample, half of the subjects were randomly assigned to a "treatment" group and a Monte-Carlo simulation was used to estimate the detection power in the single-site and in multi-site setting.
+
+The normalized Cohen's d was used to estimate the effect size and it is defined as the difference between two means $\bar{x_{1}},\bar{x_{2}}$ divided by a standard deviation from the data $s$.
+
+\begin{equation}\label{cohen's d}
+    \begin{array}{l l}
+      s = \sqrt{\frac{(n_{1}-1)s_{1}^{2}+(n_{2}-1)s_{2}^{2}}{n_{1}+n_{2}-2}} \\
+      d = \frac{\bar{x_{1}}-\bar{x_{2}}}{s}
+    \end{array}
+\end{equation}
+
+$n_{1}$ and $n_{2}$ are the respective number of subject in each group. In order to introduce the same effect-size across the single-site and multi-site dataset we are taking the standard deviation from the single-site cohort as the reference.  The connection $y_{i,j}$ of the randomly affected subjects ("treatment" group) are therefore calculated $y_{i,j} = y_{i,j} + d\times s_{i,j}$. The significance of the difference between the control and 'treatment' group was assessed by a $t$-test in a linear model, including a covariate to model the motion. The study was repeated for various effect sizes (0 to 0.8 with a step of 0.01) with a $p$-value threshold of $0.05$ on the $t$-test.
+
+\paragraph{multi-site correction approaches} 
+
+For the multi-site three flavours were computed: multi-site no correction, multi-site with dummy variables and multi-site with METAL correction.
+Depending on the multi-site configuration and distribution of the subject we proposed two corrective approaches that can be applied as shown in the simulations of Figure \ref{fig_simu_50pct}. The first one is the introduction of dummy variables (binary vectors $1\times N$) who code for each site in the GLM model \ref{dummy variable equation}.
+
+The variables are corrected to have a zero mean across subjects, and an intercept (i.e. a column filled with 1) is added to $\mathbf{X}$. The GLM relies on the following stochastic model:
+ \begin{equation}
+ \label{eq_glm}
+  \mathbf{Y} = \mathbf{X}\mathbf{\beta} + \mathbf{E}
+ \end{equation}
+where $\mathbf{\beta}$ is an unknown $C\times L$ matrix of linear regression coefficients and $\mathbf{E}$ is a $N\times L$ random (noise) multivariate Gaussian variable. %As data generated from different subjects are statistically independent, and under an homoscedasticity assumption, the regression coefficients $\mathbf{B}$ can be estimated with ordinary least squares.
+To apply the correction $v-1$ dummy-variables are added to the model \ref{dummy variable equation} with $v$ being the total number of sites used in the study.
+
+\begin{equation}
+    y_{i,j} = \beta x+\beta_{i=1,\dots,v-1}x_{i=1,\dots,v-1}+e
+    \label{dummy variable equation}
+\end{equation}
+
+The second approach is to compute the GLM independently on each site and then combine the statistical results from each site in a global score. This model averaging technique called METAL from \cite{Willer2010} model site specific bias by running a GLM analysis on each site resulting in $v$ beta vectors that are weighted proportionally to the standard error of each site and finally averaged as shown in equation \ref{METAL}. This is the most flexible way to account for multi-site effect wile keeping the analysis simple and robust to unbalanced sites.
+
+
+\begin{equation}
+	\beta_{v} \text{, effect size estimate for site \textit{v}.}
+\end{equation}
+\begin{equation}
+	se_{v} \text{, standard error for site}\textit{v}.
+\end{equation}
+\begin{equation}
+ 	w_{v}=\frac{1}{se_{v}^{2}} \text{, weight estimate for site \textit{v}.}
+ \end{equation}
+ \begin{equation}
+ 	SE=\sqrt{\frac{1}{\Sigma_{v}w_{v}}} \text{, Global standard error.}
+ \end{equation}
+ \begin{equation}
+ 	\beta=\frac{\Sigma_{v}\beta_{v}w_{v}}{\Sigma_{v}w_{v}} \text{, Global }\beta.
+ \end{equation}
+\begin{equation}\label{METAL}
+	Z=\frac{\beta}{SE} \text{, global Z score.}
+\end{equation}
+\begin{equation}
+	p=2(1-\phi(\vert Z \vert) \text{, p-value.}
+\end{equation}
+
+\section{Results}
+
+The Figure \ref{fig_icc} presents the results of the ICC analysis for the point-to-point correlations, 
+%(a), regional clustering (b), regional degree centrality (c), global summary such as the average clustering, average efficiency and modularity (d) and local efficiency (e). 
+only the connections with an average ICC above 0.5 are represented. The results were consistent with \citep{Shehzad2009}, with a mean ICC over all connections of \textasciitilde0.3 and 23 connections scoring a moderate-to-good level of ICC ($>0.5$). 
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=\linewidth]{../figures/fig_icc.png}
+\end{center}
+\caption[ICC scores]{
+  ICC scores for pairs of connections passing the $>0.5$ threshold on the NYU-TRT dataset.
+}
+\label{fig_icc}
+\end{figure}
+
+Average connectivity maps associated with the DMN nodes as well as the nodes outside the DMN that passed the TRT selection are presented in Figures \ref{fig_nodes_DMN} and \ref{fig_nodes_none_DMN}. The involvement of the sensorimotor, visual and attentional networks mainly came from contrasts reporting a decrease of negative correlations in patients, that was interpreted as a compensation mechanism by some authors. These connections are potentially very valuable to monitor the effect of a drug. Considering that we pooled studies of the DMN, we decided to select as candidates all connections of parcels within the DMN, as well as connections between a parcel inside the DMN and a parcel outside the DMN. The final selection of target measures was based on test-retest reliability. All the parcels and associated labels and networks are listed in Table \ref{tab_point-to-point}.
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=\linewidth]{../figures/fig_freq_sel_dat.png}
+\end{center}
+\caption[Cited region frequency]{
+  Frequency of reported regions showing functional differences based on a literature review of 6 papers.
+}
+\label{fig_freq_sel}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=\linewidth]{../figures/fig_nodes_DMN.png}
+\end{center}
+\caption[Selected region inside DMN]{
+  Selected nodes inside the DMN who passed the TRT selection.
+}
+\label{fig_nodes_DMN}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=\linewidth]{../figures/fig_nodes_non_DMN.png}
+\end{center}
+\caption[Selected region outside DMN]{
+	  Selected nodes outside the DMN who passed the TRT selection.
+}
+\label{fig_nodes_none_DMN}
+\end{figure}
+%Regarding the graph measures, there is a growing arsenal of metrics that have been proposed in the literature, see \citep{Bullmore2009} for a review, notably box 2 for a summary of measures. We selected some of the most standard metrics that have been shown (or suggested) to be impacted by a disease of the Alzheimer type. Regarding local measures, \cite{Buckner2009} noted the similarity of the “degree centrality”, or “hubs” maps in young adults and the patterns of deposition of amyloid-beta in patients suffering of a DAT. This work (or subsequent work as far as we know) did not test directly the relationship between degree centrality and the presence/progress of DAT. An important paper for our purposes is \cite{Supekar2008}, that showed that both local and global clustering coefficients (but not efficiency) are impacted by a DAT. By contrast, \cite{Sanz-Arigita2010} reported that global efficiency (and not global clustering) was impacted by DAT. This inconsistency may simply reflect the low 
+%statistical power shared by both studies (18 ECN, 21 patients with mild DAT for the former paper, and 21 ECN, 18 patients with mild DAT for the latter), or methodological differences. Finally, we also included the measure of modularity \citep{Rubinov2011}, a promising tool that has not been used yet in DAT. We used the implementation of the metrics described in \cite{Rubinov2011}. Note that all the metrics first require to binarize the functional connectome of each participant, which was achieved with a density-based threshold (top 20\% positive connections, see the test-retest section below for a rationale).
+
+%In total, the literature review identified 7 nodes in the DMN (21 point-to-point correlations within the DMN) and 9 seeds in networks outside of the DMN (63 point-to-point correlations between a node in the DMN and a node outside of the DMN). We included three local network properties in the DMN (21 measures), as well as two global properties. That's a total of 107 candidate measures, based on a fairly conservative literature review. We further analyzed the test-retest reliability of these measures to narrow the selection down to about 10 measures. 
+
+%The literature on TRT reliability of graph measures is much more difficult to interpret: \cite{Braun2012} for example has included many possible strategies to generate graph properties, resulting into almost the full range of possible ICC values for every metric ! Because no processing strategy was an obvious winner across all metrics, we selected the middle thresholding (20\% density) of \cite{Braun2012}. The relatively low ICC for graph measures (only a few measures with $ICC>0.5$, many measures with $ICC < 0.2$), was consistent with the results of \citep{Wang2011}.
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{l l l l}
+\bfseries{Network} & \bfseries{Label} & \bfseries{Name} & \bfseries{Cambridge100}\\
+\hline
+ & PCC & posterior cingulate cortex & 1\\
+ & dMPFC & dorsomedial prefrontal cortex & 12\\
+ & dMPFC2 & dorsomedial prefrontal cortex & 46\\
+Default-mode network & aMPFC & anterior medial prefrontal cortex & 42\\
+ & IPL & inferior parietal lobule & 49\\
+ & PCUN & precuneus & 53\\
+ & MTL & medial temporal lobe & 39\\
+ & SFGr & right superior frontal gyrus & 76\\
+\hline
+Visual network & FUS & fusiformgyrus & 71\\
+\hline
+Dorsal attentional & PCUMm & precuneus (motor) & 94\\
+\hline
+Cingulo-opercular network & dMPFC3 & dorsmedial prefrontal cortex & 90\\
+\end{tabular}
+\end{center}
+\caption{Regions selected in the literature review, the region number correspond to the number in the Cambridge 100 partition.}
+\label{tab_point-to-point}
+\end{table}
+
+For point-to-point correlations within the DMN, we selected the connections with highest ICC for each node (all average ICC > 0.5):
+\begin{itemize}
+\item PCC x PCUN
+\item dMPFC x dMPFC2
+\item IPL x SFGr
+\item aMPFC x PCUN
+\end{itemize}
+For each point-to-point correlation between the DMN and another network, we selected the connections with highest ICC and ICC > 0.5:
+\begin{itemize}
+\item FUS x SFGr
+\item PCC x PCUNm
+\item IPL x dMPFC3
+\end{itemize}
+% The only graph properties that satisfied the above criteria were:
+% \begin{itemize}
+% \item[•] average clustering
+% \item[•] clustering PCUN
+% \item[•] local efficiency PCUN
+% \end{itemize}
+
+
+The first assessment perform on the dataset was to verify the distribution of the variance in functional connectivity among each site and across sites in order to see if they are of the same order of magnitude or not. This analysis of Figure \ref{fig_site_variability} shows the distribution of the standard deviation of connectivity across subjects (the distribution is over the full brain connectome, with several 1000s connections) at the 8 sites against the inter-sites standard deviation of connectomes (average at each site). as we can see the inter-site (between site) variability is smaller than the intra-site (between subjects) variability.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=\linewidth]{../figures/inter_vs_intra_3tonly.png}
+\end{center}
+\caption[inter vs. intra site variability]{
+  Distribution of intra-site (between-subject) standard deviation vs. inter-site (between-site) standard deviation, based on the standard deviation of the connectivity matrices from 8 sites from the 1000 functional connectome dataset.
+}
+\label{fig_site_variability}
+\end{figure}
+
+In order to verify how spatial structure vary across sites the average standard deviation and the average connectivity map of the DMN was extracted for each site and displayed in Figure \ref{fig_DMN_variability}. In order to ease the reading we selected only 4 representative sites, although we reached the same conclusion on all the sites. As we can see in the intersection between two sites the difference in standard deviation between-sites was illustrated (red set of brain cuts). First the mean DMN at each site is consistent with the expected spatial ditribution reported in other studies. As we can see the amplitude of inter-site bias is about 3-fold smaller than the within-site standard deviation (red \textasciitilde0.06 vs. orange \textasciitilde0.18). The most salient changes between-sites are located in the mesio-frontal region associated with the anterior part of the DMN. This last finding may be associated with motion artefact as previously reported in \cite{Dansereau2014}.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=\linewidth]{../figures/mult_center_dm_voxel_seed_3tonly.pdf}
+\end{center}
+\caption[DMN variability across sites]{
+Functional connectivity maps of the default-mode network at multiple sites. The average connectivity map for 4 sites (Baltimore, Cambridge, Newark and New-Yorkb at 3T) are presented on the diagonal (left). The standard deviation across subjects and within site is presented next to it (diagonal squares, right part). Each off-diagonal block represent the absolute difference between the average functional connectivity maps between two sites (called the inter-site bias).
+}
+\label{fig_DMN_variability}
+\end{figure}
+
+We also showed using Monte-Carlo simulations that the power of detecting an effect is marginally affected by the site acquisition configuration (single site or multi-site, see Figure3.2 for an illustration of a power analysis on three different seeds) where the sites are balanced in term of the amount of subject with and without the effect. 
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=\linewidth]{../figures/simu_results_multisite.pdf}
+\end{center}
+\caption[Detection power]{
+Power analysis for a resting-state fMRI study. A Monte-Carlo simulation was implemented to evaluate the power of a resting-state multi-site study, based on real values of three connections in the default-mode network PCC/MFC, rHIP/vMFC and lIPC-rDLPFC. For each site and each sample, half of the subjects were randomly assigned to a 'treatment' group. For the subjects in this group, a value was added to achieve a given relative effect size (Cohen's d, i.e. the mean of the two groups divided by the standard deviation of all sites). The significance of the difference between the control and 'treatment' group was assessed by a $t$-test in a linear model, including covariates to model site-specific bias. The study was repeated for various effect sizes (0 to 0.8 with a step of 0.01) at a threshold of 0.05 on the p-value in the $t$-test. For a p of 0.05, a statistical power of 0.
+95 can be achieved for as low as a 0.47 effect size. The simulation was based on a scenario with 8 sites and 385 subjects, and no homogeneization of acquisition protocol whatsoever. The multi-site (with and without correction) is based on 187 subjects from 7 sites and the SingleSite is based on one site of 198 subjects. 
+}
+\label{fig_detection_power}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=\linewidth]{../figures/multisite_simulation_50pct.pdf}
+\end{center}
+\caption[Detection power 2]{
+Power analysis for a resting-state fMRI study. A Monte-Carlo simulation was implemented to evaluate the power of a resting-state multi-site study. For each site and each sample, half of the subjects were randomly assigned to a 'treatment' group. For the subjects in this group, a value was added to achieve a given relative effect size (Cohen's d, i.e. the mean of the two groups divided by the standard deviation of all sites). The significance of the difference between the control and 'treatment' group was assessed by a $t$-test in a linear model. To correct for site-specific bias two correction are presented the dummy variables and METAL. The study was repeated for various effect sizes (0 to 0.8 with a step of 0.01) at a threshold of 0.05 on the p-value in the $t$-test. The simulation was based on a scenario with 8 sites and 385 subjects, and no homogeneization of acquisition protocol whatsoever. The multi-site (with and without correction) is based on 187 subjects from 7 sites and the Single-site is based on 
+one site of 198 subjects. 
+}
+\label{fig_simu_50pct}
+\end{figure}
+
+
+\section{Conclusion}
+
+We confirmed that multi-site acquisition introduce some variability in the dataset although a single-site study with 200 subjects had only a marginally superior statistical power than an analysis pooling 7 sites for an equivalent number of subjects, see Figure \ref{fig_detection_power}. In both cases, a high sensitivity ($>0.95$) could be achieved for the effect size observed by \cite{Goveas2011} which reported an effect equivalent to 1. We can therefore conclude that it is feasible to acquire rs-fMRI data in across multiple sites and correct for this topology.

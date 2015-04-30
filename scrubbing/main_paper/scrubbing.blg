@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: scrubbing.aux
+The style file: elsarticle-harv.bst
+Database file #1: cdansereau.bib
+Warning--I didn't find a database entry for "Bell"
+Warning--I didn't find a database entry for "Rorden2007"
+Warning--I didn't find a database entry for "?"
+You've used 28 entries,
+            2821 wiz_defined-function locations,
+            864 strings with 14914 characters,
+and the built_in function-call counts, 20205 in all, are:
+= -- 1791
+> -- 1715
+< -- 2
++ -- 640
+- -- 612
+* -- 2215
+:= -- 3718
+add.period$ -- 84
+call.type$ -- 28
+change.case$ -- 344
+chr.to.int$ -- 28
+cite$ -- 28
+duplicate$ -- 499
+empty$ -- 982
+format.name$ -- 696
+if$ -- 3773
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 27
+newline$ -- 119
+num.names$ -- 112
+pop$ -- 321
+preamble$ -- 1
+purify$ -- 316
+quote$ -- 0
+skip$ -- 313
+stack$ -- 0
+substring$ -- 1031
+swap$ -- 84
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 252
+warning$ -- 0
+while$ -- 133
+width$ -- 0
+write$ -- 339
+(There were 3 warnings)

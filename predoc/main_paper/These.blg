@@ -1,0 +1,57 @@
+This is BibTeX, Version 0.99d (TeX Live 2014)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: These.aux
+A level-1 auxiliary file: abstract.aux
+A level-1 auxiliary file: chap1.aux
+A level-1 auxiliary file: chap2.aux
+A level-1 auxiliary file: chap3.aux
+A level-1 auxiliary file: chap4.aux
+The style file: plainnat.bst
+Database file #1: cdansereau.bib
+Warning--empty booktitle in Dansereau2013
+Warning--can't use both volume and number fields in Dansereau2013
+Warning--empty booktitle in Dansereau2014
+Warning--can't use both volume and number fields in Dansereau2014
+Warning--empty journal in Kotsiantis2007
+You've used 136 entries,
+            2773 wiz_defined-function locations,
+            1807 strings with 56469 characters,
+and the built_in function-call counts, 94358 in all, are:
+= -- 8380
+> -- 7947
+< -- 29
++ -- 2656
+- -- 2517
+* -- 9615
+:= -- 15195
+add.period$ -- 703
+call.type$ -- 136
+change.case$ -- 1244
+chr.to.int$ -- 133
+cite$ -- 277
+duplicate$ -- 2881
+empty$ -- 5519
+format.name$ -- 2683
+if$ -- 18919
+int.to.chr$ -- 4
+int.to.str$ -- 1
+missing$ -- 136
+newline$ -- 980
+num.names$ -- 544
+pop$ -- 1971
+preamble$ -- 1
+purify$ -- 1111
+quote$ -- 0
+skip$ -- 2447
+stack$ -- 0
+substring$ -- 3505
+swap$ -- 312
+text.length$ -- 8
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 1486
+warning$ -- 5
+while$ -- 656
+width$ -- 0
+write$ -- 2357
+(There were 5 warnings)

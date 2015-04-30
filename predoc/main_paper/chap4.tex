@@ -1,0 +1,67 @@
+
+
+\chapter{Future development}
+
+\section{The connectome feature space} Once the data is preprocessed properly, we need to derive some metric of brain connectivity. One of the most common metric is the Pearson correlation, and is usually represented as a $n\times n$ connectivity matrix of every voxel in the gray matter. As there are in the order of $10^4$ voxels, there is an overwhelming number of $5\times10^7$ possible connections to examine as a potential diagnostic tool. We therefore have a very large number of features, but only few of them are potentially relevant for diagnostic purposes. Unfortunately, only a quite limited number of examples are available in a typical neuroimaging study to learn which connections are the most informative ($<10^3$). Even state-of-the-art classification algorithms (e.g. SVM \citep{Cortes1995}) cannot overcome the presence of large number of weakly relevant and redundant features. This is usually attributed to "the curse of dimensionality" \citep{Bellman1961}, or to the fact that irrelevant features 
+decrease the ability of the learner to discriminate between classes. Moreover, many machine-learning algorithms become computationally intractable when the dimension is high. On the other hand once a reduce set of features has been chosen even the most basic classifiers can achieve high performance classification.
+
+In order to reduce that feature space and to have a clinically meaningful representation of functional structures, a number of solutions have been proposed that take advantage of the underlying structure of the brain \citep{Heuvel2009}. Regions are routinely defined using an anatomical parcellation \citep{He2009}, such as the AAL template \citep{Tzourio-Mazoyer2002}. Anatomical parcels may however not well match the organization of resting-state networks. We use a framework to generate data-driven functional decomposition into resting-state networks based on the coherence of fMRI time series at the individual or group level \citep{Bellec2006,Bellec2010c}. When a low number of networks (or scale) are used, this technique, called bootstrap analysis of stable clusters (BASC), generates decompositions of the brain into distributed large-scale networks, such as the default mode network (DMN). At high scales, it identifies sub-networks and functional regions \citep{Kelly2012}. We can therefore use those 
+parcellation units to reduce the feature space.
+Correlation is a good approach to asses connectivity but can be highly variable in noisy dataset. This motivated me to investigate another metric called "stability" based on evidence accumulation of clustering on bootstrap samples, that could potentially be more consistent across subjects and scanning session resulting in improved prediction power and generalizability. The stability metric was design in an attempt to reduce the variance in the acquisition and extract the most consistent functional structures in the underling data by bootstrapping temporal blocks to identify the regions that are most often clustered together even though the temporal block are re-sampled. In an attempt to extend my current work I will use the simulations that I have design to evaluate the multi-site effect (1000 functional connectome dataset composed of one large site and 7 smaller sites) in order to evaluate if the detection power is improved or not using a stability metric instead of a correlation metric and if it is robust 
+to various multi-site scenarios.
+
+
+\section{Feature selection and classification} 
+A crucial point of our study is to identify the most discriminant features to use in the prediction model and account for various confounding factors (e.g. age, gender, education, multi-site effect and motion). This is future work that will be conducted in the next year and a half. I will particularly focus on the stability of the features selected, in order to obtain robust and consistent markers of the disease. In order to estimate stability of the selection I plan to use a Monte-Carlo estimation of the selection using bootstrap resampling \citep{Efron1994,Bellec2010c} on the training dataset inside a 10-fold cross-validation. The large feature space that will be fed to this procedure will be a correlation matrix of network at multiple scales. As an example, let's take 3 parcellations (e.g. scales 10, 50, 100) of the functional brains obtained from an independent dataset of normal subjects using the method describe in the previous section (Large feature space). Using the time-series of every parcellation I 
+will obtain a correlation matrix $A$ of size $R\times R$ and $R=10+50+100=160$ resulting in a vectorized form of this matrix of size $L=R(R+1)/2=12880$ unique features. The idea behind this strategy is to capture interaction of small networks with larger networks instead of just looking at the interaction of large network with large network or small network with small network which could miss some important interaction. An example of previously mentioned interaction of larger network with smaller ones is the known decrease in connectivity between the hippocampal structure (small regions) with the default mode (a large and extended network). This procedure could potentially capture those interactions that would in term maximize the prediction accuracy as well as controlling for stability by only retaining the most stable features identified by the feature selection therefore enforcing generalizability. \cite{Venkataraman2010} as used stability measures with Gini importance metric and found a good performance 
+distinguishing between patients with schizophrenia and normal control.
+\par
+More work also needs to be done in finding the appropriate classification method and investigating several standard alternatives in conjunction with novel feature selection methods will also be part of my project in the next year. I will notably consider the Linear Discriminant Analysis (LDA) because it is straightforward to include covariates in the model in order to account for confounding effects. I will also evaluate SVM since it is a very popular method, and I will more particularly investigate the margin optimisation criteria for feature selection \citep{Gilad-bachrach2004,Kononenko1997}. One last approach will be to use ensemble techniques like AdaBoost \citep{Freund1997} to improve generalization performance. AdaBoost as been proved to be remarkably resistant to overfitting \citep{Schapire1998}. An interesting point is that \cite{Schapire1998} has shown using a slightly different definition of the margin that AdaBoost also "boosts" the margins, meaning that it finds the decision boundary that is 
+further away from the instances of all classes. By margin Schapire refers to the difference between the total vote AdaBoost receives from correctly identifying classifiers and the maximum vote received by any incorrect class. 
+
+The evaluation of the classification pipeline will be done using two datasets namely: 1) the Cobre dataset composed of 74 control and 72 schizophrenic subjects and 2) the enhanced Nathan Kline Institute-Rockland Sample (NKI-RS) a large community sample representing $>500$ subjects. The Cobre dataset will be use to study the ability of the method to identify discriminative features of schizophrenia (previous univariate analysis have shown large effect on the same dataset). We will also use the NKI-RS to predic the effect of age. Another interesting aspect of the NKI-RS is that every subject has been scanned with different fMRI protocol (scanner parameters) on the same scanner. We can use this information to have a pseudo multi-site data set and explore the generalization of the trained classifier on the same  with a different scanning protocol.
+
+%An other approach would be to use ensemble techniques like AdaBoost \citep{Freund1997} to improve generalization performance. AdaBoost as been proved to be remarkably resistant to overfitting \citep{Schapire1998}. An interesting point is that \cite{Schapire1998} has shown using a slightly different definition of the margin that AdaBoost also "boosts" the margins, meaning that it finds the decision boundary that is further away from the instances of all classes. 
+%By margin Schapire reffer to the difference between the total vote AdaBoost receives from correctly identifying classifiers and the maximum vote received by any incorrect class. As mention, more work need to be done in finding the appropriate classification method and it will be part of my focus in the next year.
+
+
+%High-dimensional datasets are becoming more and more abundant in classification problems. A variety of feature selection methods have been developed to tackle the issue of high dimensionality. The major challenge in these applications is to extract a set of features, as small as possible, that accurately classifies the learning examples. \citep{Kalousis2007}
+%I would also like to look at the ensemble-based method \citep{Polikar2006} like Ada-boost to combine multiple week learners together (this could be an excellent fit to combine learners trained at multiple network scales).
+
+\section{Industry application and translational effort}
+I am involved in the industry (through my consulting work with the companies NeuroRX and Biospective), I'm advising on the fMRI analysis of multiple clinical trials and looking at the feasibility of using fMRI in multicentric pharmaceutical trials (some of these work have lead to publications). I'm also doing statistical analysis and proposing biomarkers tailored to the clinical questions of the pharmaceutical sponsors. I'm also starting to get involved with the biomarker unit of the Canadian Consortium on Neurodegeneration in Aging (CCNA) who wants to propose new biomarker for Alzheimer disease that would be use systematically in the clinical assessment of Alzheimer disease across Canada. These efforts and collaborations are perfectly in line with the objectives of my PhD. and are greatly contributing to translational findings and application of my research in pharmaceutical trials as well as addressing concrete question in the field of neuroimaging.
+
+\section{Timeline}
+I have identified three major points that I will address in my PhD:
+
+\begin{itemize}
+\item Investigate motion impact on functional connectivity
+I'm currently writing a manuscript that should be submitted at the end of this year (2014) on that specific topic. The results have been presented (poster format) at the Organization for Human Brain Mapping conference 2013 (OHBM) and at the Alzheimer's Association International Conference 2014 (AAIC).
+
+\item Feasibility of multi-site connectivity analysis (inter-site normalization)
+Most of the analyses are completed and some of the results have been presented in two conferences (poster format), namely OHBM2013 and AAIC2013. I'm planning to submit the manuscript for this study mid 2015.
+
+\item Prediction 
+\begin{itemize}
+\item I'm currently experimenting with some standard machine learning tools and I will start by testing the pipeline on simple simulations and verify is the stability metric is more resistant to structured noise.
+\item  Then on a real dataset I will apply the pipeline on Cobre and NKI-RS.
+\item Finally I will apply the pipeline on a dataset that I have compiled in the past year, this dataset is composed of 313 elderly adults with and without cognitive impairment of the Alzheimer type collected across 5 studies: ADNI2 study and 4 other studies based in Montreal, Canada, for a 
+grand total of 126 CNE participants, 133 patients with MCI, and 54 patients with DAT. I will try to classify the various population in a cross sectional analysis. I am also planning to use a subset of the data namely the ADNI2 dataset who is a longitudinal study to assess the potential of the method to predict time of conversion from pMCI to pDAT. I plan to be done with those analyses in the winter of 2016 and publish the results in the following months.
+
+\end{itemize}
+
+\item Finally I plan to submit my theses at the end of 2016 (see Timeline \ref{timeline})
+
+\end{itemize}
+
+\begin{table}[H]\label{timeline}
+\centering
+\begin{tabular}{lllllllll}
+ & \multicolumn{2}{l}{2013}& \multicolumn{2}{l}{2014}& \multicolumn{2}{l}{2015}& \multicolumn{2}{l}{2016}\\
+ Motion & \cellcolor{black!25}& \cellcolor{black!25}&  \cellcolor{black!25}& \cellcolor{black!25}& & & & \\
+ Multisite & \cellcolor{black!25}& \cellcolor{black!25}&  \cellcolor{black!25} & \cellcolor{black!25}& \cellcolor{black!25}& & & \\
+ Prediction & & & & \cellcolor{black!25}& \cellcolor{black!25}&  \cellcolor{black!25}& \cellcolor{black!25}& \\
+ Theses & & & & & & & & \cellcolor{black!25} \\
+\end{tabular}
+\end{table}
+

@@ -1,0 +1,63 @@
+Comments on These_v1.pdf
+
+COMMENTS CHAP 1
+
+  /* "In order to further improve the signal to noise ratio (SNR), multiple academic groups are collaborating to pool their dataset to increase the sample size of the study." p. 8. What does the sample size have to do with the SNR ?
+  /* p. 8 end of first paragraph. Beyond site normalization, talk about the necessity to assess the robustness of a classifier to multi-site acquisition, and ways to increase it ?
+  /* p. 8 "functional dysfunction" weird. 
+  /* 5.10^7 instead of 10^8.
+  /* There needs some overall goal at the end of p. 1.
+  /* "a current research hot topic in the neurosciences community." -> "currently a hot topic in clinical neuroscience research."
+  /* p. 10 "evens" -> "events"
+  /* "The proposed premise suggests" simplify
+  /* "interstitial Aβ proteins" A\beta is normal. Plaques are (to some degree) not.
+  * "a systemic problem" -> "synaptic death"
+  /* "fMRI (orange curve) precedes" -> "a viable hypothesis is that fMRI ..."
+  /* explain atrophy, and structural measures.
+  /* "fMRI introduction" -> "Overview of connectivity analysis in functional magnetic resonance imaging"
+  /* par 1.2 "In fMRI" -> "In functional magnetic resonance imaging (fMRI)"
+  /* "that areas showing decreased deoxyhemoglobin concentration are due to sustained brain activity" NO !! the increase in deoxyhemoglobin is more than compensated by an increase in oxyhemoglobin. The fMRI signal increases when the neuronal activity increases (while with increased deoxy the BOLD signal would go down). 
+  /* "The fMRI signal is the result of competing effects and fortunately these effects do not cancel out, allowing the detection of a net signal increase. We call the interrelation of theses effects the blood oxygenation level dependent (BOLD) effect." Unclear. This whole paragraph should be simplified a bit.
+  /* Expand the legend of Figure 1.2.
+  /* "A series of standard preprocessing steps is usually applied in an attempt to correct for various artefacts that would perturb the subsequent analysis" You also need to introduce the need for spatial normalization at this stage. It is important, and a potential additional source of confounds.
+  /* "Therefore, analyzing directly raw rs-fMRI data with seed-based connectivity or with a data driven technique (like ICA or clustering) will more likely result in the identification of noise related structures spread everywhere within the brain" I find this statement exagerated. There are artefacts, which can be dominant in some subjects, but connectivity maps work pretty well even on minimally-preprocessed data in many instances.
+  /* "Therefore, preprocessing methods were designed in an attempt to remove specifically the so-called physiological noise and motion artefacts from the raw fMRI data." Well, there are other potential sources of noise related to the MRI, e.g. scanner distortions, instability of a coil, etc. That's why we ended up calling CORSICA correction of *structured* noise, rather than correction of physiological noise.
+  /* p. 7, steps of preprocessing -> add a schematic (it's available in the NIAK user guide). 
+  /* Also add a figure for motion estimation (again, available in the NIAK user guide). 
+  /* ". (3)" then ", (4)" be consistent. I suggest to go with "; (3)"
+  /* Actually, for the preprocessing, it would be better to have a \begin{enumerate} \item ... \item ... \end{enumerate} block.
+  /* l. 242 "some corrective procedure" -> "some additional corrective procedure"
+  /* l. 249 FYI the smoothing in NIAK adjusts for partial voluming at the edges of the mask. Also, the effect size is relative to the baseline, so I don't believe this is an actual concern.
+  /* l. 252: this is a copy/paste from traditional activation study. Please adapt to the case of group level testing on connectomes. 
+  * l. 254: I don't understand. My understanding is that point (2) is a definition of statistical power, which does not make sense as a point that influences statistical power ...
+  /* l. 256 suggestion "investigator, hence why an increasing number of researchers share multicentric, sometimes multiprotocol, data".
+  /* l. 266 "Although they may be" -> "Although these centers may be"
+  /* l. 267 "tuning and brand" -> "software version, specific add-on to the scanners, and, most importantly, vendors"
+  /* l. 268 "Between" -> ",between"  
+  /* l. 271 "are feasible" -> explain what you mean 
+  /* l. 272 "bias introduce" -> "bias introduced"
+  /* l. 272 "variability factor" -> "factors of variability across sites,"
+  /* l. 274-276: again, use enumerate
+  /* l. 279: add a . (or a new number) before Experimental.
+  /* l. 290: "world, noteworthy" -> "world. A noteworthy"
+  /* l. 292 "methodologies while" -> "methodologies, while"
+  /* l. 293 (first half) I don't understand. Also, I believe most researchers did not share additional data to protect their competitive advantage. That's what we did with the ICBM sample.
+  /* l. 296: ") althoguh" -> "). Although
+  /* l. 297 "was used" -> "was used,"
+  /* l. 300: glitch in brain-behaviour
+  /* l. 305 "buy" -> "by"
+  /* l. 305 "An other" -> "Another"
+  /* l. 312 "connectivity" -> "Resting-state connectivity"
+  /* l. 313 "consists in studying" -> "captures"
+  /* l. 315 define BOLD. Do you need to use BOLD ? less acronyms = better.
+  /* l. 323: change the parenthesis into a separate sentence.
+  * Legend of Figure 1.3: get rid of abbreviations, unless you are actually using them elsewhere. // christian: they correspond to the notation in the figure …
+  /* l. 331: add at the end of the first sentence ", just by looking at spontaneous fluctuations in brain activity"
+  /* l. 333: "highly reproducible" "with good reproducibility". It's not even highly reproducible within subject...
+  /* Fig 1.4: title should be "Functional connectomes". Replace the ; by either : or .
+  /* Fig 1.4: "on left" -> "on the left"
+  /* Fig 1.4: a . is missing at the end of the caption.
+  * l. 364: You are missing a central point: why do we care about networks ??!! we have a crazy high number of features, BUT they are highly correlated. The objective of your work is to leverage the spatial correlation to extract low-dimensional biomarkers. It's also helping to (finally) give a machine learning flavor to your text. I'm sending you an important review for you to read (Meskadji 2013). 
+  /* Fig 1.5: define BASC (both the acronym, and, in a few words, what it does. You're not mentioning it in the main text.
+  /* l. 368: the objective is to predict in the prodromal or even asymptomatic stage.
+  
