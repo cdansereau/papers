@@ -26,6 +26,10 @@
 %\pdfoptionpdfminorversion 6
 \pdfminorversion=5
 
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{mwe}
+
 \begin{document}
 
 % Title must be 150 words or less
@@ -398,15 +402,29 @@ The first assessment perform on the dataset was to verify the distribution of th
 
 In order to verify how spatial structure vary across sites the average standard deviation and the average connectivity map of the DMN was extracted for each site and displayed in Figure \ref{fig_DMN_variability}. In order to ease the reading we selected only 4 representative sites, although we reached the same conclusion on all the sites. As we can see in the intersection between two sites the difference in standard deviation between-sites was illustrated (red set of brain cuts). First the mean DMN at each site is consistent with the expected spatial ditribution reported in other studies. As we can see the amplitude of inter-site bias is about 3-fold smaller than the within-site standard deviation (red \textasciitilde0.06 vs. orange \textasciitilde0.18). The most salient changes between-sites are located in the mesio-frontal region associated with the anterior part of the DMN. This last finding may be associated with motion artefact as previously reported in \cite{Dansereau2014}.
 
+
+
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=\linewidth]{../figures/mult_center_dm_voxel_seed_3tonly.pdf}
+\includegraphics[width=\linewidth]{../figures/pccmap_multisite.png}
 \end{center}
 \caption[DMN variability across sites]{
 Functional connectivity maps of the default-mode network at multiple sites. The average connectivity map for 4 sites (Baltimore, Cambridge, Newark and New-Yorkb at 3T) are presented on the diagonal (left). The standard deviation across subjects and within site is presented next to it (diagonal squares, right part). Each off-diagonal block represent the absolute difference between the average functional connectivity maps between two sites (called the inter-site bias).
 }
 \label{fig_DMN_variability}
 \end{figure}
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=\linewidth]{../figures/connectome_multisite.png}
+\end{center}
+\caption[Connectome variability across sites]{
+Functional connectome for multiple sites. The average connectome of 7 sites (Baltimore, Cambridge, Newark and New-Yorkb, Oxford, Queenland, SaintLouis at 3T) are presented on the diagonal (left). The standard deviation across subjects and within site is presented next to it (diagonal squares, right part). Each off-diagonal block represent the absolute difference between the average functional connectivity maps between two sites (called the inter-site bias).
+}
+\label{fig_DMN_variability}
+\end{figure}
+
 
 We also showed using Monte-Carlo simulations that the power of detecting an effect is marginally affected by the site acquisition configuration (single site or multi-site, see Figure3.2 for an illustration of a power analysis on three different seeds) where the sites are balanced in term of the amount of subject with and without the effect. 
 
@@ -432,6 +450,224 @@ one site of 198 subjects.
 \label{fig_simu_50pct}
 \end{figure}
 
+
+
+
+\begin{figure*}
+        \centering
+        \begin{subfigure}[b]{0.31\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{../figures/realdata_detect_pow_s40_50pct.pdf}
+            %\caption[]%
+            {{\tiny 40 subjects}}    
+            \label{fig:mean and std of net14}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.31\textwidth}  
+            \centering 
+            \includegraphics[width=\textwidth]{../figures/realdata_detect_pow_s80_50pct.pdf}
+            %\caption[]%
+            {{\tiny 80 subjects}}    
+            \label{fig:mean and std of net24}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.31\textwidth}   
+            \centering 
+            \includegraphics[width=\textwidth]{../figures/realdata_detect_pow_s120_50pct.pdf}
+            %\caption[]%
+            {{\tiny 120 subjects}}    
+            \label{fig:mean and std of net34}
+        \end{subfigure}
+        \caption[]
+        {\small Simulation on real data of the detection power of two groups balanced 50\%-50\% between 7 sites. All plot show four scenario, one monosite, 7 sites with no correction for differences in variability between sites, 7 sites with correction for multisite differences using dummy variables and 7 sites with correction for multisite differences using METAL weighted average. Each plot show the detection power in function of the effect size for 3 different sample size 40, 80 and 120 subjects in total.} 
+        \label{fig:real_sim_samplesize_5050}
+    \end{figure*}
+    
+    
+\begin{figure*}
+        \centering
+        \begin{subfigure}[b]{0.31\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{../figures/realdata_detect_pow_s120_50pct.pdf}
+            %\caption[]%
+            {{\tiny balancing 50\%}}    
+            \label{fig:mean and std of net14}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.31\textwidth}  
+            \centering 
+            \includegraphics[width=\textwidth]{../figures/realdata_detect_pow_s120_30pct.pdf}
+            %\caption[]%
+            {{\tiny balancing 30\%}}    
+            \label{fig:mean and std of net24}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.31\textwidth}   
+            \centering 
+            \includegraphics[width=\textwidth]{../figures/realdata_detect_pow_s120_15pct.pdf}
+            %\caption[]%
+            {{\tiny balancing 15\%}}    
+            \label{fig:mean and std of net34}
+        \end{subfigure}
+        \caption[]
+        {\small Simulation on real data of the detection power of two groups for a total of 120 subject between 7 sites. All plot show four scenario, one monosite, 7 sites with no correction for differences in variability between sites, 7 sites with correction for multisite differences using dummy variables and 7 sites with correction for multisite differences using METAL weighted average.} 
+        \label{fig:real_sim_samplesize_varbalancing}
+    \end{figure*}
+    
+\begin{figure*}
+        \centering
+        \begin{subfigure}[b]{0.31\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{../figures/realdata_detect_pow_sitepatho_s120_50pct.pdf}
+            %\caption[]%
+            {{\tiny balancing 50\%}}    
+            \label{fig:mean and std of net14}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.31\textwidth}  
+            \centering 
+            \includegraphics[width=\textwidth]{../figures/realdata_detect_pow_sitepatho_s120_30pct.pdf}
+            %\caption[]%
+            {{\tiny balancing 30\%}}    
+            \label{fig:mean and std of net24}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.31\textwidth}   
+            \centering 
+            \includegraphics[width=\textwidth]{../figures/realdata_detect_pow_sitepatho_s120_15pct.pdf}
+            %\caption[]%
+            {{\tiny balancing 15\%}}    
+            \label{fig:mean and std of net34}
+        \end{subfigure}
+        \caption[]
+        {\small Simulation on real data of the detection power of two groups for a total of 120 subject between 7 sites. All plot show four scenario, one monosite, 7 sites with no correction for differences in variability between sites, 7 sites with correction for multisite differences using dummy variables and 7 sites with correction for multisite differences using METAL weighted average.}
+         
+        \label{fig:real_sim_samplesize_5050}
+\end{figure*}
+    
+\begin{figure*}
+        \centering
+        \begin{subfigure}[b]{0.475\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{../figures/detect_pow_bal5050_var0_site0.pdf}
+            %\caption[]% 
+            {{\tiny No site effect}}    
+            \label{fig:mean and std of net14}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.475\textwidth}  
+            \centering 
+            \includegraphics[width=\textwidth]{../figures/detect_pow_bal5050_var0_site05.pdf}
+            %\caption[]%
+            {{\tiny Site effect of 0.5}}    
+            \label{fig:mean and std of net24}
+        \end{subfigure}
+        \vskip\baselineskip
+        \begin{subfigure}[b]{0.475\textwidth}   
+            \centering 
+            \includegraphics[width=\textwidth]{../figures/detect_pow_bal5050_var2_site0.pdf}
+            %\caption[]%
+            {{\tiny Patho effect in function of site}}    
+            \label{fig:mean and std of net34}
+        \end{subfigure}
+        \quad
+        \begin{subfigure}[b]{0.475\textwidth}   
+            \centering 
+            \includegraphics[width=\textwidth]{../figures/detect_pow_bal5050_var2_site05.pdf}
+            %\caption[]%
+            {{\tiny Patho effect in function of site + site effect}}    
+            \label{fig:mean and std of net44}
+        \end{subfigure}
+        \caption[]
+        {\small Simulation of the detection power of two groups balanced 50\%-50\% between two sites. All plot show four scenario, one monosite, two sites with no correction for differences in variability between sites, two sites with correction for multisite differences using dummy variables and two sites with correction for multisite differences using METAL weighted average. The plots show the detection power when the variability is greater in one side then the other for the pathology group (twice the reference variability in one site and half the reference variability in the other one)} 
+        \label{fig:sim_5050}
+    \end{figure*}
+    
+    
+    
+\begin{figure*}
+        \centering
+        \begin{subfigure}[b]{0.475\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{../figures/detect_pow_bal7030_var0_site0.pdf}
+            %\caption[]%
+            {{\tiny No site effect}}    
+            \label{fig:mean and std of net14}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.475\textwidth}  
+            \centering 
+            \includegraphics[width=\textwidth]{../figures/detect_pow_bal7030_var0_site05.pdf}
+            %\caption[]%
+            {{\tiny Site effect of 0.5}}    
+            \label{fig:mean and std of net24}
+        \end{subfigure}
+        \vskip\baselineskip
+        \begin{subfigure}[b]{0.475\textwidth}   
+            \centering 
+            \includegraphics[width=\textwidth]{../figures/detect_pow_bal7030_var2_site0.pdf}
+            %\caption[]%
+            {{\tiny Patho effect in function of site}}    
+            \label{fig:mean and std of net34}
+        \end{subfigure}
+        \quad
+        \begin{subfigure}[b]{0.475\textwidth}   
+            \centering 
+            \includegraphics[width=\textwidth]{../figures/detect_pow_bal7030_var2_site05.pdf}
+            %\caption[]%
+            {{\tiny Patho effect in function of site + site effect}}    
+            \label{fig:mean and std of net44}
+        \end{subfigure}
+        \caption[]
+        {\small balance 70\%-30\%} 
+        \label{fig:mean and std of nets}
+    \end{figure*}
+    
+    
+\begin{figure*}
+        \centering
+        \begin{subfigure}[b]{0.475\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{../figures/detect_pow_2080bal5050_var2_site0.pdf}
+            %\caption[]%
+            {\tiny{ Patho effect in function of site}}    
+            \label{fig:2080 bal5050 var2 site0}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.475\textwidth}  
+            \centering 
+            \includegraphics[width=\textwidth]{../figures/detect_pow_2080bal5050_var2_site05.pdf}
+            %\caption[]%
+            {{\tiny Patho effect in function of site + site effect}}    
+            \label{fig:2080 bal5050 var2 site05}
+        \end{subfigure}
+        \caption[]
+        {\small Small and big site, balance 50\%-50\%} 
+        \label{fig:mean and std of nets}
+    \end{figure*}
+
+
+\begin{figure*}
+        \centering
+        \begin{subfigure}[b]{0.475\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{../figures/detect_pow_2080bal7030_var2_site0.pdf}
+            %\caption[]%
+            {\tiny{ Patho effect in function of site}}    
+            \label{fig:2080 bal7030 var2 site0}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.475\textwidth}  
+            \centering 
+            \includegraphics[width=\textwidth]{../figures/detect_pow_2080bal7030_var2_site05.pdf}
+            %\caption[]%
+            {{\tiny Patho effect in function of site + site effect}}    
+            \label{fig:2080 bal7030 var2 site05}
+        \end{subfigure}
+        \caption[]
+        {\small Small and big site, balance 70\%-30\%} 
+        \label{fig:mean and std of nets}
+    \end{figure*}
 
 \section{Conclusion}
 
