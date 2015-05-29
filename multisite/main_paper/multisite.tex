@@ -26,9 +26,13 @@
 %\pdfoptionpdfminorversion 6
 \pdfminorversion=5
 
-\usepackage{graphicx}
-\usepackage{subcaption}
-\usepackage{mwe}
+%\usepackage{graphicx}
+%\usepackage{subcaption}
+%\usepackage{mwe}
+\usepackage{subfig}
+\usepackage{caption}
+%\usepackage{subcaption}
+\usepackage{setspace}
 
 \begin{document}
 
@@ -90,6 +94,28 @@ others. In clinical trial the justification for multicentric acquisition is more
 the data should be applied to reduce the bias introduced by multi-site analysis. Among the factor of variability across sites, we can list the following 3 categories described in \citep{Yan2013a}:
 
 
+
+\textbf{How can we increase the statistical power?}
+\begin{itemize}
+\item Number of subject mechanically increase the statistical power (sensitivity) of a study.
+\item Collecting a large sample size is very expensive.
+\item Recruitment may be difficult at a single site.
+\item Large sample size can be achieved in multisite study.
+\item Multisite studies come with problems of their own.
+\end{itemize}
+
+
+
+%\frametitle{Source of variance across sites}
+\begin{itemize}
+\item \textbf{Inclusion/exclusion criteria.}
+\item \textbf{Socio-cultural characteristics of recruiting sites} \\(e.g., ethnicity, language, diet, socioeconomic status).
+\item \textbf{Acquisition-related factors} \\(e.g., scanner make and model, sequence type, coil type, repetition time, flip angle, acquisition volume, etc).
+\item \textbf{Experimental design-related variations} \\(e.g., eyes-open/closed, experiment duration, instruction to participant).
+\item \textbf{Environmental-related variations} \\(e.g., sound, room temperature, head-motion restraint).
+\end{itemize}
+
+
 \textit{
 \begin{enumerate}
 \item Acquisition-related variations:
@@ -113,6 +139,14 @@ the data should be applied to reduce the bias introduced by multi-site analysis.
 \end{enumerate}
 }
 
+
+\begin{enumerate}
+\item Characterize the amplitude of inter-site bias.
+\item Quantify the impact of inter-site biases on the detection power of a rs-fMRI effect.
+\item Evaluate our ability to correct for inter-site variance using a statistical model.
+\end{enumerate}
+
+
 In 2009, the publicly released 1000 Functional Connectomes Project (FCP) and International Neuroimaging Data-sharing Initiative (INDI) provided a glimpse of the variability in imaging methodologies employed by the neuroimaging field. The dataset includes rs-fMRI samples independently collected at imaging sites around the world. A noteworthy aspect of this dataset is the variation in almost every parameter of the imaging acquisition methodologies, while the majority of subject-related variables are not reported (due in most cases, to the fact that they were not thoroughly recorded). 
 Despite justifiable scepticism, feasibility analyses demonstrated that meaningful explorations of the aggregate dataset, composed of 24 imaging sites for a grand total of 1093 subjects, could be performed \citep{Biswal2010}. Although no explicit correction for multi-site variability was used, they only use global signal correction (GSC) to normalize subjects which may introduce anti-correlation in the data \citep{Fox2009, Murphy2009, Saad2012, Carbonell2014, Power2014}. After accounting for site-related differences, the analysis showed brain-behaviour relationships with phenotypic variables such as age, gender, and diagnostic label, and confirmed a variety of prior hypotheses \citep{Biswal2010, Fair2012, Tomasi2010, Zuo2012}. While encouraging, many uncontrolled and unknown factors in the 1000 FCP remain a source of concern, as they spread beyond simple site effects and can limit the datasets utility as highlighted by \cite{Yan2013}.
 An other compelling proof of multi-site bias is the study reported by \cite{Nielsen2013} where they did an analysis on a single site dataset and a multi-site dataset of subject with autism and concluded that the multi-site autism study classification accuracy significantly outperformed chance but was much lower for multi-site prediction than for previous single site results \citep{Nielsen2013}. We therefore need to keep in mind that the site effect must be taken in account in the analysis or we may reduce our detection power.
@@ -131,9 +165,21 @@ An other compelling proof of multi-site bias is the study reported by \cite{Niel
 \section{Method}
 
 \subsection{Data samples} 
+
+
+\begin{itemize}
+\item 1000 Functional Connectomes Project
+\begin{itemize}
+\item Total of $\sim$350 subjects (150M, age = 18-46)
+\item 1 large site $\sim 200$ (Cambridge)
+\item 7 small sites $\sim 20$ /site
+%\item 70\% random sub-sampling of the data
+\end{itemize}
+\end{itemize}
+
+
 \paragraph{Participants}
-The paper studies 313 elderly adults with and without cognitive impairment of the Alzheimer type collected across 5 studies: ADNI2 study and 4 other studies based in Montreal, Canada (from the ADMTL dataset), for a grand total of 126 CNE participants (51 males, age range = 57-94 yrs), 133 patients with MCI (70 males, age range = 55-89 yrs), and 54 patients with DAT (22 males, age range = 55-88 yrs) (see table \ref{tab_retention}).
-We have also included 355 cognitively normal young adults (CNY) from the 1000 functional connectome project\footnote{\url{http://fcon_1000.projects.nitrc.org/}} (150 males, age range = 18-46 yrs) as a reference dataset.
+The paper studies 355 cognitively normal young adults (CNY) from the 1000 functional connectome project\footnote{\url{http://fcon_1000.projects.nitrc.org/}} (150 males, age range = 18-46 yrs) as a reference dataset. One of the particularity of this dataset is the presence of one large site of $\sim 200$ subjects and 7 small sites of $\sim 20$ subjects per site. We are therefore able to simulate realistic scenarios where we model the variability of a real monosite and the variability introduce by combining small sites into a large sample of the same total sample size.
 
 \paragraph{Acquisition} %Resting-state scans were acquired on a 3T Siemens TrioTim for all datasets. One single run was obtained per subject for either the SCHIZO or BLIND dataset while two runs were acquired in each subject for the MOTOR dataset, one immediately preceding and one following the practice on a motor task. 
 %For the 1000 functional connectom dataset, 150 EPI volumes were recorded in 6 mins 40 s (TR = 2.65s, TE = 30ms, FA = 90\textdegree, 43 slices, voxel size = 3.4x3.4x3 mm$^3$, gap = 10\%, matrix size = 64x64, FOV = 220x220 mm$^2$), and a structural image was acquired using a MPRAGE sequence (TR = 2.3~s, TE = 2.98~ms, FA = 9\textdegree, 176 slices, voxel size = 1x1x1 mm$^3$, matrix size = 256x256, FOV = 256x256 mm$^2$).
@@ -152,6 +198,7 @@ Since the seminal work of \cite{Greicius2004}, many rs-fMRI studies in AD focuse
 
 \paragraph{Literature review: Alzheimer's disease and resting-state fMRI}
 We performed a literature review to select candidate connections that have been shown to be prominently impacted in Alzheimer's disease. There is no single authoritative reference on the effect of a DAT on rs-fMRI connectivity, and the field has been dominated thus far by studies with small samples (n\textasciitilde20) and limited statistical power, see \cite{Sheline2013} for a recent review. Because the DMN has been most extensively studied, we decided to focus on this network and to run a meta-analysis on six papers that (1) used some analogue of seed-based connectivity maps in resting-state fMRI using one or multiple seeds in the DMN (2) investigated abnormalities in resting-state functional connectivity in patients suffering of a dementia of the Alzheimer's type and (3) provided tables of coordinates in stereotaxic space for the results.
+TO DO SITE NATURE PAPER
 
 \paragraph{review: Alzheimer's disease and resting-state fMRI} 
 \begin{itemize}
@@ -293,93 +340,50 @@ The Figure \ref{fig_icc} presents the results of the ICC analysis for the point-
 %(a), regional clustering (b), regional degree centrality (c), global summary such as the average clustering, average efficiency and modularity (d) and local efficiency (e). 
 only the connections with an average ICC above 0.5 are represented. The results were consistent with \citep{Shehzad2009}, with a mean ICC over all connections of \textasciitilde0.3 and 23 connections scoring a moderate-to-good level of ICC ($>0.5$). 
 
-\begin{figure}[H]
-\begin{center}
-\includegraphics[width=\linewidth]{../figures/fig_icc.png}
-\end{center}
-\caption[ICC scores]{
-  ICC scores for pairs of connections passing the $>0.5$ threshold on the NYU-TRT dataset.
-}
-\label{fig_icc}
-\end{figure}
 
-Average connectivity maps associated with the DMN nodes as well as the nodes outside the DMN that passed the TRT selection are presented in Figures \ref{fig_nodes_DMN} and \ref{fig_nodes_none_DMN}. The involvement of the sensorimotor, visual and attentional networks mainly came from contrasts reporting a decrease of negative correlations in patients, that was interpreted as a compensation mechanism by some authors. These connections are potentially very valuable to monitor the effect of a drug. Considering that we pooled studies of the DMN, we decided to select as candidates all connections of parcels within the DMN, as well as connections between a parcel inside the DMN and a parcel outside the DMN. The final selection of target measures was based on test-retest reliability. All the parcels and associated labels and networks are listed in Table \ref{tab_point-to-point}.
-
-
-\begin{figure}[H]
-\begin{center}
-\includegraphics[width=\linewidth]{../figures/fig_freq_sel_dat.png}
-\end{center}
-\caption[Cited region frequency]{
-  Frequency of reported regions showing functional differences based on a literature review of 6 papers.
-}
-\label{fig_freq_sel}
-\end{figure}
-
-\begin{figure}[H]
-\begin{center}
-\includegraphics[width=\linewidth]{../figures/fig_nodes_DMN.png}
-\end{center}
-\caption[Selected region inside DMN]{
-  Selected nodes inside the DMN who passed the TRT selection.
-}
-\label{fig_nodes_DMN}
-\end{figure}
-
-\begin{figure}[H]
-\begin{center}
-\includegraphics[width=\linewidth]{../figures/fig_nodes_non_DMN.png}
-\end{center}
-\caption[Selected region outside DMN]{
-	  Selected nodes outside the DMN who passed the TRT selection.
-}
-\label{fig_nodes_none_DMN}
-\end{figure}
-%Regarding the graph measures, there is a growing arsenal of metrics that have been proposed in the literature, see \citep{Bullmore2009} for a review, notably box 2 for a summary of measures. We selected some of the most standard metrics that have been shown (or suggested) to be impacted by a disease of the Alzheimer type. Regarding local measures, \cite{Buckner2009} noted the similarity of the “degree centrality”, or “hubs” maps in young adults and the patterns of deposition of amyloid-beta in patients suffering of a DAT. This work (or subsequent work as far as we know) did not test directly the relationship between degree centrality and the presence/progress of DAT. An important paper for our purposes is \cite{Supekar2008}, that showed that both local and global clustering coefficients (but not efficiency) are impacted by a DAT. By contrast, \cite{Sanz-Arigita2010} reported that global efficiency (and not global clustering) was impacted by DAT. This inconsistency may simply reflect the low 
-%statistical power shared by both studies (18 ECN, 21 patients with mild DAT for the former paper, and 21 ECN, 18 patients with mild DAT for the latter), or methodological differences. Finally, we also included the measure of modularity \citep{Rubinov2011}, a promising tool that has not been used yet in DAT. We used the implementation of the metrics described in \cite{Rubinov2011}. Note that all the metrics first require to binarize the functional connectome of each participant, which was achieved with a density-based threshold (top 20\% positive connections, see the test-retest section below for a rationale).
 
 %In total, the literature review identified 7 nodes in the DMN (21 point-to-point correlations within the DMN) and 9 seeds in networks outside of the DMN (63 point-to-point correlations between a node in the DMN and a node outside of the DMN). We included three local network properties in the DMN (21 measures), as well as two global properties. That's a total of 107 candidate measures, based on a fairly conservative literature review. We further analyzed the test-retest reliability of these measures to narrow the selection down to about 10 measures. 
 
 %The literature on TRT reliability of graph measures is much more difficult to interpret: \cite{Braun2012} for example has included many possible strategies to generate graph properties, resulting into almost the full range of possible ICC values for every metric ! Because no processing strategy was an obvious winner across all metrics, we selected the middle thresholding (20\% density) of \cite{Braun2012}. The relatively low ICC for graph measures (only a few measures with $ICC>0.5$, many measures with $ICC < 0.2$), was consistent with the results of \citep{Wang2011}.
-
-\begin{table}[H]
-\begin{center}
-\begin{tabular}{l l l l}
-\bfseries{Network} & \bfseries{Label} & \bfseries{Name} & \bfseries{Cambridge100}\\
-\hline
- & PCC & posterior cingulate cortex & 1\\
- & dMPFC & dorsomedial prefrontal cortex & 12\\
- & dMPFC2 & dorsomedial prefrontal cortex & 46\\
-Default-mode network & aMPFC & anterior medial prefrontal cortex & 42\\
- & IPL & inferior parietal lobule & 49\\
- & PCUN & precuneus & 53\\
- & MTL & medial temporal lobe & 39\\
- & SFGr & right superior frontal gyrus & 76\\
-\hline
-Visual network & FUS & fusiformgyrus & 71\\
-\hline
-Dorsal attentional & PCUMm & precuneus (motor) & 94\\
-\hline
-Cingulo-opercular network & dMPFC3 & dorsmedial prefrontal cortex & 90\\
-\end{tabular}
-\end{center}
-\caption{Regions selected in the literature review, the region number correspond to the number in the Cambridge 100 partition.}
-\label{tab_point-to-point}
-\end{table}
-
-For point-to-point correlations within the DMN, we selected the connections with highest ICC for each node (all average ICC > 0.5):
-\begin{itemize}
-\item PCC x PCUN
-\item dMPFC x dMPFC2
-\item IPL x SFGr
-\item aMPFC x PCUN
-\end{itemize}
-For each point-to-point correlation between the DMN and another network, we selected the connections with highest ICC and ICC > 0.5:
-\begin{itemize}
-\item FUS x SFGr
-\item PCC x PCUNm
-\item IPL x dMPFC3
-\end{itemize}
+% 
+% \begin{table}[H]
+% \begin{center}
+% \begin{tabular}{l l l l}
+% \bfseries{Network} & \bfseries{Label} & \bfseries{Name} & \bfseries{Cambridge100}\\
+% \hline
+%  & PCC & posterior cingulate cortex & 1\\
+%  & dMPFC & dorsomedial prefrontal cortex & 12\\
+%  & dMPFC2 & dorsomedial prefrontal cortex & 46\\
+% Default-mode network & aMPFC & anterior medial prefrontal cortex & 42\\
+%  & IPL & inferior parietal lobule & 49\\
+%  & PCUN & precuneus & 53\\
+%  & MTL & medial temporal lobe & 39\\
+%  & SFGr & right superior frontal gyrus & 76\\
+% \hline
+% Visual network & FUS & fusiformgyrus & 71\\
+% \hline
+% Dorsal attentional & PCUMm & precuneus (motor) & 94\\
+% \hline
+% Cingulo-opercular network & dMPFC3 & dorsmedial prefrontal cortex & 90\\
+% \end{tabular}
+% \end{center}
+% \caption{Regions selected in the literature review, the region number correspond to the number in the Cambridge 100 partition.}
+% \label{tab_point-to-point}
+% \end{table}
+% 
+% For point-to-point correlations within the DMN, we selected the connections with highest ICC for each node (all average ICC > 0.5):
+% \begin{itemize}
+% \item PCC x PCUN
+% \item dMPFC x dMPFC2
+% \item IPL x SFGr
+% \item aMPFC x PCUN
+% \end{itemize}
+% For each point-to-point correlation between the DMN and another network, we selected the connections with highest ICC and ICC > 0.5:
+% \begin{itemize}
+% \item FUS x SFGr
+% \item PCC x PCUNm
+% \item IPL x dMPFC3
+% \end{itemize}
 % The only graph properties that satisfied the above criteria were:
 % \begin{itemize}
 % \item[•] average clustering
@@ -458,226 +462,360 @@ one site of 198 subjects.
 \label{fig_p2p}
 \end{figure}
 
+% 
+% \begin{figure*}
+%         \centering
+%         \begin{subfigure}[b]{0.31\textwidth}
+%             \centering
+%             \includegraphics[width=\textwidth]{../figures/realdata_detect_pow_s40_50pct.pdf}
+%             %\caption[]%
+%             {{\tiny 40 subjects}}    
+%             \label{fig:mean and std of net14}
+%         \end{subfigure}
+%         \hfill
+%         \begin{subfigure}[b]{0.31\textwidth}  
+%             \centering 
+%             \includegraphics[width=\textwidth]{../figures/realdata_detect_pow_s80_50pct.pdf}
+%             %\caption[]%
+%             {{\tiny 80 subjects}}    
+%             \label{fig:mean and std of net24}
+%         \end{subfigure}
+%         \hfill
+%         \begin{subfigure}[b]{0.31\textwidth}   
+%             \centering 
+%             \includegraphics[width=\textwidth]{../figures/realdata_detect_pow_s120_50pct.pdf}
+%             %\caption[]%
+%             {{\tiny 120 subjects}}    
+%             \label{fig:mean and std of net34}
+%         \end{subfigure}
+%         \caption[]
+%         {\small Simulation on real data of the detection power of two groups balanced 50\%-50\% between 7 sites. All plot show four scenario, one monosite, 7 sites with no correction for differences in variability between sites, 7 sites with correction for multisite differences using dummy variables and 7 sites with correction for multisite differences using METAL weighted average. Each plot show the detection power in function of the effect size for 3 different sample size 40, 80 and 120 subjects in total.} 
+%         \label{fig:real_sim_samplesize_5050}
+%     \end{figure*}
+%     
+%     
+% \begin{figure*}
+%         \centering
+%         \begin{subfigure}[b]{0.31\textwidth}
+%             \centering
+%             \includegraphics[width=\textwidth]{../figures/realdata_detect_pow_s120_50pct.pdf}
+%             %\caption[]%
+%             {{\tiny balancing 50\%}}    
+%             \label{fig:mean and std of net14}
+%         \end{subfigure}
+%         \hfill
+%         \begin{subfigure}[b]{0.31\textwidth}  
+%             \centering 
+%             \includegraphics[width=\textwidth]{../figures/realdata_detect_pow_s120_30pct.pdf}
+%             %\caption[]%
+%             {{\tiny balancing 30\%}}    
+%             \label{fig:mean and std of net24}
+%         \end{subfigure}
+%         \hfill
+%         \begin{subfigure}[b]{0.31\textwidth}   
+%             \centering 
+%             \includegraphics[width=\textwidth]{../figures/realdata_detect_pow_s120_15pct.pdf}
+%             %\caption[]%
+%             {{\tiny balancing 15\%}}    
+%             \label{fig:mean and std of net34}
+%         \end{subfigure}
+%         \caption[]
+%         {\small Simulation on real data of the detection power of two groups for a total of 120 subject between 7 sites. All plot show four scenario, one monosite, 7 sites with no correction for differences in variability between sites, 7 sites with correction for multisite differences using dummy variables and 7 sites with correction for multisite differences using METAL weighted average.} 
+%         \label{fig:real_sim_samplesize_varbalancing}
+%     \end{figure*}
+%     
+% \begin{figure*}
+%         \centering
+%         \begin{subfigure}[b]{0.31\textwidth}
+%             \centering
+%             \includegraphics[width=\textwidth]{../figures/realdata_detect_pow_sitepatho_s120_50pct.pdf}
+%             %\caption[]%
+%             {{\tiny balancing 50\%}}    
+%             \label{fig:mean and std of net14}
+%         \end{subfigure}
+%         \hfill
+%         \begin{subfigure}[b]{0.31\textwidth}  
+%             \centering 
+%             \includegraphics[width=\textwidth]{../figures/realdata_detect_pow_sitepatho_s120_30pct.pdf}
+%             %\caption[]%
+%             {{\tiny balancing 30\%}}    
+%             \label{fig:mean and std of net24}
+%         \end{subfigure}
+%         \hfill
+%         \begin{subfigure}[b]{0.31\textwidth}   
+%             \centering 
+%             \includegraphics[width=\textwidth]{../figures/realdata_detect_pow_sitepatho_s120_15pct.pdf}
+%             %\caption[]%
+%             {{\tiny balancing 15\%}}    
+%             \label{fig:mean and std of net34}
+%         \end{subfigure}
+%         \caption[]
+%         {\small Simulation on real data of the detection power of two groups for a total of 120 subject between 7 sites. All plot show four scenario, one monosite, 7 sites with no correction for differences in variability between sites, 7 sites with correction for multisite differences using dummy variables and 7 sites with correction for multisite differences using METAL weighted average.}
+%          
+%         \label{fig:real_sim_samplesize_5050}
+% \end{figure*}
+%     
+% \begin{figure*}
+%         \centering
+%         \begin{subfigure}[b]{0.475\textwidth}
+%             \centering
+%             \includegraphics[width=\textwidth]{../figures/detect_pow_bal5050_var0_site0.pdf}
+%             %\caption[]% 
+%             {{\tiny No site effect}}    
+%             \label{fig:mean and std of net14}
+%         \end{subfigure}
+%         \hfill
+%         \begin{subfigure}[b]{0.475\textwidth}  
+%             \centering 
+%             \includegraphics[width=\textwidth]{../figures/detect_pow_bal5050_var0_site05.pdf}
+%             %\caption[]%
+%             {{\tiny Site effect of 0.5}}    
+%             \label{fig:mean and std of net24}
+%         \end{subfigure}
+%         \vskip\baselineskip
+%         \begin{subfigure}[b]{0.475\textwidth}   
+%             \centering 
+%             \includegraphics[width=\textwidth]{../figures/detect_pow_bal5050_var2_site0.pdf}
+%             %\caption[]%
+%             {{\tiny Patho effect in function of site}}    
+%             \label{fig:mean and std of net34}
+%         \end{subfigure}
+%         \quad
+%         \begin{subfigure}[b]{0.475\textwidth}   
+%             \centering 
+%             \includegraphics[width=\textwidth]{../figures/detect_pow_bal5050_var2_site05.pdf}
+%             %\caption[]%
+%             {{\tiny Patho effect in function of site + site effect}}    
+%             \label{fig:mean and std of net44}
+%         \end{subfigure}
+%         \caption[]
+%         {\small Simulation of the detection power of two groups balanced 50\%-50\% between two sites. All plot show four scenario, one monosite, two sites with no correction for differences in variability between sites, two sites with correction for multisite differences using dummy variables and two sites with correction for multisite differences using METAL weighted average. The plots show the detection power when the variability is greater in one side then the other for the pathology group (twice the reference variability in one site and half the reference variability in the other one)} 
+%         \label{fig:sim_5050}
+%     \end{figure*}
+%     
+%     
+%     
+% \begin{figure*}
+%         \centering
+%         \begin{subfigure}[b]{0.475\textwidth}
+%             \centering
+%             \includegraphics[width=\textwidth]{../figures/detect_pow_bal7030_var0_site0.pdf}
+%             %\caption[]%
+%             {{\tiny No site effect}}    
+%             \label{fig:mean and std of net14}
+%         \end{subfigure}
+%         \hfill
+%         \begin{subfigure}[b]{0.475\textwidth}  
+%             \centering 
+%             \includegraphics[width=\textwidth]{../figures/detect_pow_bal7030_var0_site05.pdf}
+%             %\caption[]%
+%             {{\tiny Site effect of 0.5}}    
+%             \label{fig:mean and std of net24}
+%         \end{subfigure}
+%         \vskip\baselineskip
+%         \begin{subfigure}[b]{0.475\textwidth}   
+%             \centering 
+%             \includegraphics[width=\textwidth]{../figures/detect_pow_bal7030_var2_site0.pdf}
+%             %\caption[]%
+%             {{\tiny Patho effect in function of site}}    
+%             \label{fig:mean and std of net34}
+%         \end{subfigure}
+%         \quad
+%         \begin{subfigure}[b]{0.475\textwidth}   
+%             \centering 
+%             \includegraphics[width=\textwidth]{../figures/detect_pow_bal7030_var2_site05.pdf}
+%             %\caption[]%
+%             {{\tiny Patho effect in function of site + site effect}}    
+%             \label{fig:mean and std of net44}
+%         \end{subfigure}
+%         \caption[]
+%         {\small balance 70\%-30\%} 
+%         \label{fig:mean and std of nets}
+%     \end{figure*}
+%     
+%     
+% \begin{figure*}
+%         \centering
+%         \begin{subfigure}[b]{0.475\textwidth}
+%             \centering
+%             \includegraphics[width=\textwidth]{../figures/detect_pow_2080bal5050_var2_site0.pdf}
+%             %\caption[]%
+%             {\tiny{ Patho effect in function of site}}    
+%             \label{fig:2080 bal5050 var2 site0}
+%         \end{subfigure}
+%         \hfill
+%         \begin{subfigure}[b]{0.475\textwidth}  
+%             \centering 
+%             \includegraphics[width=\textwidth]{../figures/detect_pow_2080bal5050_var2_site05.pdf}
+%             %\caption[]%
+%             {{\tiny Patho effect in function of site + site effect}}    
+%             \label{fig:2080 bal5050 var2 site05}
+%         \end{subfigure}
+%         \caption[]
+%         {\small Small and big site, balance 50\%-50\%} 
+%         \label{fig:mean and std of nets}
+%     \end{figure*}
+% 
+% 
+% \begin{figure*}
+%         \centering
+%         \begin{subfigure}[b]{0.475\textwidth}
+%             \centering
+%             \includegraphics[width=\textwidth]{../figures/detect_pow_2080bal7030_var2_site0.pdf}
+%             %\caption[]%
+%             {\tiny{ Patho effect in function of site}}    
+%             \label{fig:2080 bal7030 var2 site0}
+%         \end{subfigure}
+%         \hfill
+%         \begin{subfigure}[b]{0.475\textwidth}  
+%             \centering 
+%             \includegraphics[width=\textwidth]{../figures/detect_pow_2080bal7030_var2_site05.pdf}
+%             %\caption[]%
+%             {{\tiny Patho effect in function of site + site effect}}    
+%             \label{fig:2080 bal7030 var2 site05}
+%         \end{subfigure}
+%         \caption[]
+%         {\small Small and big site, balance 70\%-30\%} 
+%         \label{fig:mean and std of nets}
+%     \end{figure*}
+% 
+% \section{Conclusion}
+% 
+% We confirmed that multi-site acquisition introduce some variability in the dataset although a single-site study with 200 subjects had only a marginally superior statistical power than an analysis pooling 7 sites for an equivalent number of subjects, see Figure \ref{fig_detection_power}. In both cases, a high sensitivity ($>0.95$) could be achieved for the effect size observed by \cite{Goveas2011} which reported an effect equivalent to 1. We can therefore conclude that it is feasible to acquire rs-fMRI data in across multiple sites and correct for this topology.
+% 
 
-\begin{figure*}
-        \centering
-        \begin{subfigure}[b]{0.31\textwidth}
-            \centering
-            \includegraphics[width=\textwidth]{../figures/realdata_detect_pow_s40_50pct.pdf}
-            %\caption[]%
-            {{\tiny 40 subjects}}    
-            \label{fig:mean and std of net14}
-        \end{subfigure}
-        \hfill
-        \begin{subfigure}[b]{0.31\textwidth}  
-            \centering 
-            \includegraphics[width=\textwidth]{../figures/realdata_detect_pow_s80_50pct.pdf}
-            %\caption[]%
-            {{\tiny 80 subjects}}    
-            \label{fig:mean and std of net24}
-        \end{subfigure}
-        \hfill
-        \begin{subfigure}[b]{0.31\textwidth}   
-            \centering 
-            \includegraphics[width=\textwidth]{../figures/realdata_detect_pow_s120_50pct.pdf}
-            %\caption[]%
-            {{\tiny 120 subjects}}    
-            \label{fig:mean and std of net34}
-        \end{subfigure}
-        \caption[]
-        {\small Simulation on real data of the detection power of two groups balanced 50\%-50\% between 7 sites. All plot show four scenario, one monosite, 7 sites with no correction for differences in variability between sites, 7 sites with correction for multisite differences using dummy variables and 7 sites with correction for multisite differences using METAL weighted average. Each plot show the detection power in function of the effect size for 3 different sample size 40, 80 and 120 subjects in total.} 
-        \label{fig:real_sim_samplesize_5050}
-    \end{figure*}
-    
-    
-\begin{figure*}
-        \centering
-        \begin{subfigure}[b]{0.31\textwidth}
-            \centering
-            \includegraphics[width=\textwidth]{../figures/realdata_detect_pow_s120_50pct.pdf}
-            %\caption[]%
-            {{\tiny balancing 50\%}}    
-            \label{fig:mean and std of net14}
-        \end{subfigure}
-        \hfill
-        \begin{subfigure}[b]{0.31\textwidth}  
-            \centering 
-            \includegraphics[width=\textwidth]{../figures/realdata_detect_pow_s120_30pct.pdf}
-            %\caption[]%
-            {{\tiny balancing 30\%}}    
-            \label{fig:mean and std of net24}
-        \end{subfigure}
-        \hfill
-        \begin{subfigure}[b]{0.31\textwidth}   
-            \centering 
-            \includegraphics[width=\textwidth]{../figures/realdata_detect_pow_s120_15pct.pdf}
-            %\caption[]%
-            {{\tiny balancing 15\%}}    
-            \label{fig:mean and std of net34}
-        \end{subfigure}
-        \caption[]
-        {\small Simulation on real data of the detection power of two groups for a total of 120 subject between 7 sites. All plot show four scenario, one monosite, 7 sites with no correction for differences in variability between sites, 7 sites with correction for multisite differences using dummy variables and 7 sites with correction for multisite differences using METAL weighted average.} 
-        \label{fig:real_sim_samplesize_varbalancing}
-    \end{figure*}
-    
-\begin{figure*}
-        \centering
-        \begin{subfigure}[b]{0.31\textwidth}
-            \centering
-            \includegraphics[width=\textwidth]{../figures/realdata_detect_pow_sitepatho_s120_50pct.pdf}
-            %\caption[]%
-            {{\tiny balancing 50\%}}    
-            \label{fig:mean and std of net14}
-        \end{subfigure}
-        \hfill
-        \begin{subfigure}[b]{0.31\textwidth}  
-            \centering 
-            \includegraphics[width=\textwidth]{../figures/realdata_detect_pow_sitepatho_s120_30pct.pdf}
-            %\caption[]%
-            {{\tiny balancing 30\%}}    
-            \label{fig:mean and std of net24}
-        \end{subfigure}
-        \hfill
-        \begin{subfigure}[b]{0.31\textwidth}   
-            \centering 
-            \includegraphics[width=\textwidth]{../figures/realdata_detect_pow_sitepatho_s120_15pct.pdf}
-            %\caption[]%
-            {{\tiny balancing 15\%}}    
-            \label{fig:mean and std of net34}
-        \end{subfigure}
-        \caption[]
-        {\small Simulation on real data of the detection power of two groups for a total of 120 subject between 7 sites. All plot show four scenario, one monosite, 7 sites with no correction for differences in variability between sites, 7 sites with correction for multisite differences using dummy variables and 7 sites with correction for multisite differences using METAL weighted average.}
-         
-        \label{fig:real_sim_samplesize_5050}
-\end{figure*}
-    
-\begin{figure*}
-        \centering
-        \begin{subfigure}[b]{0.475\textwidth}
-            \centering
-            \includegraphics[width=\textwidth]{../figures/detect_pow_bal5050_var0_site0.pdf}
-            %\caption[]% 
-            {{\tiny No site effect}}    
-            \label{fig:mean and std of net14}
-        \end{subfigure}
-        \hfill
-        \begin{subfigure}[b]{0.475\textwidth}  
-            \centering 
-            \includegraphics[width=\textwidth]{../figures/detect_pow_bal5050_var0_site05.pdf}
-            %\caption[]%
-            {{\tiny Site effect of 0.5}}    
-            \label{fig:mean and std of net24}
-        \end{subfigure}
-        \vskip\baselineskip
-        \begin{subfigure}[b]{0.475\textwidth}   
-            \centering 
-            \includegraphics[width=\textwidth]{../figures/detect_pow_bal5050_var2_site0.pdf}
-            %\caption[]%
-            {{\tiny Patho effect in function of site}}    
-            \label{fig:mean and std of net34}
-        \end{subfigure}
-        \quad
-        \begin{subfigure}[b]{0.475\textwidth}   
-            \centering 
-            \includegraphics[width=\textwidth]{../figures/detect_pow_bal5050_var2_site05.pdf}
-            %\caption[]%
-            {{\tiny Patho effect in function of site + site effect}}    
-            \label{fig:mean and std of net44}
-        \end{subfigure}
-        \caption[]
-        {\small Simulation of the detection power of two groups balanced 50\%-50\% between two sites. All plot show four scenario, one monosite, two sites with no correction for differences in variability between sites, two sites with correction for multisite differences using dummy variables and two sites with correction for multisite differences using METAL weighted average. The plots show the detection power when the variability is greater in one side then the other for the pathology group (twice the reference variability in one site and half the reference variability in the other one)} 
-        \label{fig:sim_5050}
-    \end{figure*}
-    
-    
-    
-\begin{figure*}
-        \centering
-        \begin{subfigure}[b]{0.475\textwidth}
-            \centering
-            \includegraphics[width=\textwidth]{../figures/detect_pow_bal7030_var0_site0.pdf}
-            %\caption[]%
-            {{\tiny No site effect}}    
-            \label{fig:mean and std of net14}
-        \end{subfigure}
-        \hfill
-        \begin{subfigure}[b]{0.475\textwidth}  
-            \centering 
-            \includegraphics[width=\textwidth]{../figures/detect_pow_bal7030_var0_site05.pdf}
-            %\caption[]%
-            {{\tiny Site effect of 0.5}}    
-            \label{fig:mean and std of net24}
-        \end{subfigure}
-        \vskip\baselineskip
-        \begin{subfigure}[b]{0.475\textwidth}   
-            \centering 
-            \includegraphics[width=\textwidth]{../figures/detect_pow_bal7030_var2_site0.pdf}
-            %\caption[]%
-            {{\tiny Patho effect in function of site}}    
-            \label{fig:mean and std of net34}
-        \end{subfigure}
-        \quad
-        \begin{subfigure}[b]{0.475\textwidth}   
-            \centering 
-            \includegraphics[width=\textwidth]{../figures/detect_pow_bal7030_var2_site05.pdf}
-            %\caption[]%
-            {{\tiny Patho effect in function of site + site effect}}    
-            \label{fig:mean and std of net44}
-        \end{subfigure}
-        \caption[]
-        {\small balance 70\%-30\%} 
-        \label{fig:mean and std of nets}
-    \end{figure*}
-    
-    
-\begin{figure*}
-        \centering
-        \begin{subfigure}[b]{0.475\textwidth}
-            \centering
-            \includegraphics[width=\textwidth]{../figures/detect_pow_2080bal5050_var2_site0.pdf}
-            %\caption[]%
-            {\tiny{ Patho effect in function of site}}    
-            \label{fig:2080 bal5050 var2 site0}
-        \end{subfigure}
-        \hfill
-        \begin{subfigure}[b]{0.475\textwidth}  
-            \centering 
-            \includegraphics[width=\textwidth]{../figures/detect_pow_2080bal5050_var2_site05.pdf}
-            %\caption[]%
-            {{\tiny Patho effect in function of site + site effect}}    
-            \label{fig:2080 bal5050 var2 site05}
-        \end{subfigure}
-        \caption[]
-        {\small Small and big site, balance 50\%-50\%} 
-        \label{fig:mean and std of nets}
-    \end{figure*}
+
+%\frametitle{Effect of sample size: \\real data 50\%-50\% debalancing}
+\begin{figure}
+\centering
+\captionsetup[subfloat]{labelformat=empty}
+\subfloat[][40 subjects]{\includegraphics[width=0.32\textwidth]{../figures/realdata_detect_pow_s40_50pct.pdf}}
+\hspace{1mm}
+\subfloat[][80 subjects]{\includegraphics[width=0.32\textwidth]{../figures/realdata_detect_pow_s80_50pct.pdf}}
+\hspace{1mm}
+\subfloat[][120 subjects]{\includegraphics[width=0.32\textwidth]{../figures/realdata_detect_pow_s120_50pct.pdf}}
+\hspace{1mm}
+\tiny Simulation on real data, detection power of two groups balanced 50\%-50\% between 7 sites. Two scenarios, 1) monosite and 2) multisite 7 sites with correction for multisite differences using dummy variables. Each plot show the detection power in function of the effect size for 3 different sample size 40, 80 and 120 subjects in total.
+\end{figure}
+\tiny Dansereau et al. manuscript in preparation
 
 
-\begin{figure*}
-        \centering
-        \begin{subfigure}[b]{0.475\textwidth}
-            \centering
-            \includegraphics[width=\textwidth]{../figures/detect_pow_2080bal7030_var2_site0.pdf}
-            %\caption[]%
-            {\tiny{ Patho effect in function of site}}    
-            \label{fig:2080 bal7030 var2 site0}
-        \end{subfigure}
-        \hfill
-        \begin{subfigure}[b]{0.475\textwidth}  
-            \centering 
-            \includegraphics[width=\textwidth]{../figures/detect_pow_2080bal7030_var2_site05.pdf}
-            %\caption[]%
-            {{\tiny Patho effect in function of site + site effect}}    
-            \label{fig:2080 bal7030 var2 site05}
-        \end{subfigure}
-        \caption[]
-        {\small Small and big site, balance 70\%-30\%} 
-        \label{fig:mean and std of nets}
-    \end{figure*}
 
-\section{Conclusion}
+%\frametitle{Debalancing effect: \\real data 120 subjects total}
+\begin{figure}
+\centering
+\captionsetup[subfloat]{labelformat=empty}
+\subfloat[][Debalancing 50\%]{\includegraphics[width=0.32\textwidth]{../figures/realdata_detect_pow_s120_50pct.pdf}}
+\hspace{1mm}
+\subfloat[][Debalancing 30\%]{\includegraphics[width=0.32\textwidth]{../figures/realdata_detect_pow_s120_30pct.pdf}}
+\hspace{1mm}
+\subfloat[][Debalancing 15\%]{\includegraphics[width=0.32\textwidth]{../figures/realdata_detect_pow_s120_15pct.pdf}}
+\hspace{1mm}
+\tiny Simulation on real data, detection power of two groups for a total of 120 subject between 7 sites. All plot show two scenarios, 1) monosite and 2) multisite 7 sites with correction for multisite differences using dummy variables.
+\end{figure}
+\tiny Dansereau et al. manuscript in preparation
 
-We confirmed that multi-site acquisition introduce some variability in the dataset although a single-site study with 200 subjects had only a marginally superior statistical power than an analysis pooling 7 sites for an equivalent number of subjects, see Figure \ref{fig_detection_power}. In both cases, a high sensitivity ($>0.95$) could be achieved for the effect size observed by \cite{Goveas2011} which reported an effect equivalent to 1. We can therefore conclude that it is feasible to acquire rs-fMRI data in across multiple sites and correct for this topology.
+
+
+%\frametitle{Debalancing effect + interaction site-patho: \\real data 120 subjects total}
+\begin{figure}
+\centering
+\captionsetup[subfloat]{labelformat=empty}
+\subfloat[][Debalancing 50\%]{\includegraphics[width=0.32\textwidth]{../figures/realdata_detect_pow_sitepatho_s120_50pct.pdf}}
+\hspace{1mm}
+\subfloat[][Debalancing 30\%]{\includegraphics[width=0.32\textwidth]{../figures/realdata_detect_pow_sitepatho_s120_30pct.pdf}}
+\hspace{1mm}
+\subfloat[][Debalancing 15\%]{\includegraphics[width=0.32\textwidth]{../figures/realdata_detect_pow_sitepatho_s120_15pct.pdf}}
+\hspace{1mm}
+\tiny Simulation on real data, detection power of two groups for a total of 120 subject between 7 sites. All plot show two scenarios, 1) monosite and 2) multisite 7 sites with correction for multisite differences using dummy variables.
+\end{figure}
+\tiny Dansereau et al. manuscript in preparation
+
+
+%\begin{frame} \frametitle{50-50 subjects, 50\%-50\% debalancing effect}
+ \begin{figure}[t]
+   \centering
+    \captionsetup[subfloat]{labelformat=empty}
+    \subfloat[]{ \includegraphics[width=0.19\textwidth]{../figures/prop_5050subj_5050.pdf}}
+     \subfloat[\tiny No site effect]{ \includegraphics[width=0.39\textwidth]{../figures/detect_pow_bal5050_var0_site0.pdf}} 
+     \subfloat[\tiny Site effect of 0.5]{\includegraphics[width=0.39\textwidth]{../figures/detect_pow_bal5050_var0_site05.pdf}}\\[-2.7ex] 
+     \hspace*{6.8em}
+     \subfloat[\tiny Inter site-patho, no site effect]{ \includegraphics[width=0.39\textwidth]{../figures/detect_pow_bal5050_var2_site0.pdf}}
+     \subfloat[\tiny Inter site-patho + site effect]{ \includegraphics[width=0.39\textwidth]{../figures/detect_pow_bal5050_var2_site05.pdf}}\\
+     %\tiny Simulation of the detection power of two groups balanced 50\%-50\% between two sites. All plot show four scenario, one monosite and two sites with correction for multisite differences using dummy variables. The plots show the detection power when the variability is greater in one side then the other for the pathology group (twice the reference variability in one site and half the reference variability in the other one)
+ \end{figure}
+ 
+
+%
+%\begin{frame} \frametitle{50-50 subjects, 70\%-30\% debalancing effect}
+ \begin{figure}[t]
+   \centering
+    \captionsetup[subfloat]{labelformat=empty}
+    \subfloat[]{ \includegraphics[width=0.19\textwidth]{../figures/prop_5050subj_7030.pdf}}
+     \subfloat[\tiny No site effect]{\label{} \includegraphics[width=0.39\textwidth]{../figures/detect_pow_bal7030_var0_site0.pdf}} 
+     \subfloat[\tiny Site effect of 0.5]{\label{} \includegraphics[width=0.39\textwidth]{../figures/detect_pow_bal7030_var0_site05.pdf}}\\[-2.7ex]
+     \hspace*{6.8em}
+     \subfloat[\tiny Interac site-patho, no site effect]{\label{} \includegraphics[width=0.39\textwidth]{../figures/detect_pow_bal7030_var2_site0.pdf}}
+     \subfloat[\tiny Interac site-patho + site effect]{\label{} \includegraphics[width=0.39\textwidth]{../figures/detect_pow_bal7030_var2_site05.pdf}}\\
+     %\tiny Simulation of the detection power of two groups unbalanced 70\%-30\% between two sites. All plot show four scenario, one monosite and two sites with correction for multisite differences using dummy variables. The plots show the detection power when the variability is greater in one side then the other for the pathology group (twice the reference variability in one site and half the reference variability in the other one)
+ \end{figure}
+ 
+
+
+%\frametitle{20-80 subjects, 50\%-50\% debalancing effect}
+ \begin{figure}[t]
+   \centering
+    \captionsetup[subfloat]{labelformat=empty}
+    \subfloat[]{ \includegraphics[width=0.19\textwidth]{../figures/prop_2080subj_5050.pdf}}
+     \subfloat[\tiny No site effect]{\label{} \includegraphics[width=0.39\textwidth]{../figures/detect_pow_2080bal5050_var0_site0.pdf}} 
+     \subfloat[\tiny Site effect of 0.5]{\label{} \includegraphics[width=0.39\textwidth]{../figures/detect_pow_2080bal5050_var0_site05.pdf}}\\[-2.7ex]
+     \hspace*{6.8em}
+     \subfloat[\tiny Interac site-patho, no site effect]{\label{} \includegraphics[width=0.39\textwidth]{../figures/detect_pow_2080bal5050_var2_site0.pdf}} 
+     \subfloat[\tiny Interac site-patho + site effect]{\label{} \includegraphics[width=0.39\textwidth]{../figures/detect_pow_2080bal5050_var2_site05.pdf}}\\
+     %\tiny Simulation of the detection power of two groups balanced 70\%-30\% between two sites, one small site of 20 subjects and one large of 80 subjects. All plot show four scenario, one monosite and two sites with correction for multisite differences using dummy variables. The plots show the detection power when the variability is greater in one side then the other for the pathology group (twice the reference variability in one site and half the reference variability in the other one)
+ \end{figure}
+ 
+
+
+
+%\begin{frame} \frametitle{20-80 subjects, 70\%-30\% debalancing effect}
+ \begin{figure}[t]
+   \centering
+    \captionsetup[subfloat]{labelformat=empty}
+    \subfloat[]{ \includegraphics[width=0.19\textwidth]{../figures/prop_2080subj_7030.pdf}}
+     \subfloat[\tiny No site effect]{\label{} \includegraphics[width=0.39\textwidth]{../figures/detect_pow_2080bal7030_var0_site0.pdf}} 
+     \subfloat[\tiny Site effect of 0.5]{\label{} \includegraphics[width=0.39\textwidth]{../figures/detect_pow_2080bal7030_var0_site05.pdf}}\\[-2.7ex]
+     \hspace*{6.8em}
+     \subfloat[\tiny Interac site-patho, no site effect]{\label{} \includegraphics[width=0.39\textwidth]{../figures/detect_pow_2080bal7030_var2_site0.pdf}} 
+     \subfloat[\tiny Interac site-patho + site effect]{\label{} \includegraphics[width=0.39\textwidth]{../figures/detect_pow_2080bal7030_var2_site05.pdf}}\\
+     %\tiny Simulation of the detection power of two groups balanced 70\%-30\% between two sites, one small site of 20 subjects and one large of 80 subjects. All plot show four scenario, one monosite and two sites with correction for multisite differences using dummy variables. The plots show the detection power when the variability is greater in one side then the other for the pathology group (twice the reference variability in one site and half the reference variability in the other one)
+ \end{figure}
+ 
+
+
+%\begin{frame} \frametitle{80-20 subjects, 70\%-30\% debalancing effect}
+ \begin{figure}[t]
+   \centering
+    \captionsetup[subfloat]{labelformat=empty}
+    \subfloat[]{ \includegraphics[width=0.19\textwidth]{../figures/prop_8020subj_7030.pdf}}
+     \subfloat[\tiny No site effect]{\label{} \includegraphics[width=0.39\textwidth]{../figures/detect_pow_8020bal7030_var0_site0.pdf}} 
+     \subfloat[\tiny Site effect of 0.5]{\label{} \includegraphics[width=0.39\textwidth]{../figures/detect_pow_8020bal7030_var0_site05.pdf}}\\[-2.7ex]
+     \hspace*{6.8em}
+     \subfloat[\tiny Interac site-patho, no site effect]{\label{} \includegraphics[width=0.39\textwidth]{../figures/detect_pow_8020bal7030_var2_site0.pdf}} 
+     \subfloat[\tiny Interac site-patho + site effect]{\label{} \includegraphics[width=0.39\textwidth]{../figures/detect_pow_8020bal7030_var2_site05.pdf}}\\
+     %\tiny Simulation of the detection power of two groups balanced 70\%-30\% between two sites, one small site of 20 subjects and one large of 80 subjects. All plot show four scenario, one monosite and two sites with correction for multisite differences using dummy variables. The plots show the detection power when the variability is greater in one side then the other for the pathology group (twice the reference variability in one site and half the reference variability in the other one)
+ \end{figure}
+ 
+
+
+%\frametitle{Inter-site variance of the DMN}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=\linewidth]{../figures/pccmap_multisite.png}
+\end{center}
+\tiny{DMN variability across sites, FDR corrected 0.01 (Dansereau et al. manuscript in preparation)
+}
+\end{figure}
 
 
 
@@ -694,20 +832,29 @@ Parts of this work were presented at the 2013 annual meetings of the organizatio
 
 \pagebreak
 
-\section{Figure Legends}
-\begin{figure}[!ht]
-\begin{center}
-\includegraphics[width=\linewidth]{../figures/figure_fd_distrib.pdf}
-\end{center}
-\caption{
-Distribution of the frame displacement (FD) for 3 groups (CNE, pMCI, pDAT) when scrubbing is applied at various levels (no scrubbing, scrubbing of $FD>0.5$ and scrubbing of $FD>0.2$). The figures on the right depict a boxplot representation of the distributions with there associated statistical differences $t$-test (marked with a {\bf *} for a $p<0.05$).
-}
-\label{fig_dist}
-\end{figure}
 
 
 
 \section{Table Legend}
+
+
+
+\begin{table}[h]
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{llllllllll}
+\textbf{Site}         & \textbf{Magnet} & \textbf{Scaner brand} & \textbf{Channels} & \textbf{N} & \textbf{Sex} & \textbf{Age} & \textbf{TR} & \textbf{\# Slices} & \textbf{\# Frames} \\
+Baltimore, USA        & 3T              & N/A                   & N/A               & 23         & 8M/15F       & 20-40        & 2.5         & 47                 & 123                \\
+Berlin, Germany       & 3T              & Siemens Tim Trio      & 12                & 26         & 13M/13F      & 23-44        & 2.3         & 34                 & 195                \\
+Cambridge, USA        & 3T              & Siemens Tim Trio      & 12                & 198        & 75M/123F     & 18-30        & 3           & 47                 & 119                \\
+Newark, USA           & 3T              & N/A                   & N/A               & 19         & 9M/10F       & 21-39        & 2           & 32                 & 135                \\
+NewYork\_b, USA       & 3T              & Siemens               & N/A               & 20         & 8M/12F       & 18-46        & 2           & 33                 & 175                \\
+Oxford, UK            & 3T              & Siemens Tim Trio      & 12                & 22         & 12M/10F      & 20-35        & 2           & 34                 & 175                \\
+Queensland, Australia & 4T              & Bruker                & 1                 & 19         & 11M/8F       & 20-34        & 2.1         & 36                 & 190                \\
+SaintLouis, USA       & 3T              & Siemens Tim Trio      & 12                & 31         & 14M/17F      & 21-29        & 2.5         & 32                 & 127               
+\end{tabular}
+}
+\end{table}
+
 
 \clearpage
 \appendix
@@ -747,43 +894,57 @@ For all questions regarding the paper, please address correspondence to Pierre B
 
 
 \pagebreak
+% 
+% \begin{figure}[!ht]
+% \begin{center}
+% \includegraphics[width=\linewidth]{../figures/figure_comp_cny.pdf}
+% \end{center}
+% \caption{
+% {\bf Differences in functional connectivity for the default mode network (seed in the PCC). Differences in connectivity between all the CNY with scrubbing ($FD>0.5$ and $FD>0.2$), CompCor, and GSC. The mask used depict only significant result of the $t$-test (FDR correction $q<0.05$) only the two scrubbing procedures use the union of there respective mask (common mask).}
+% }
+% \label{fig_sup_scrubbimpact_cny}
+% \end{figure}
+% 
+% \begin{figure}[!ht]
+% \begin{center}
+% \includegraphics[width=0.75\linewidth]{../figures/scrubbing_impact_cne_mci_dat_all.pdf}
+% \end{center}
+% \caption{
+% {\bf Differences in functional connectivity for the default mode network (seed in the PCC). Differences in connectivity for each group (CNE, pMCI, pDAT) compared to basedline (standard preprocessing) with and without scrubbing ($FD>0.5$ and $FD>0.2$) (FDR correction $q<0.05$) for all voxels showing a significant effect in at least one of the contrast.}
+% }
+% \label{fig_sup_impact_on_groups}
+% \end{figure}
 
-\begin{figure}[!ht]
+
+
+%\frametitle{Inter-site vs intra-site variability}
+% \begin{figure}[H]
+% \begin{center}
+% \includegraphics[width=0.6\linewidth]{../figures/inter_vs_intra_3tonly.png}
+% \end{center}
+% \tiny{Dansereau et al. manuscript in preparation}
+% \end{figure}
+% 
+
+
+
+
+
+
+%\frametitle{Inter-site variance of the connectome}
+\begin{figure}[H]
 \begin{center}
-\includegraphics[width=\linewidth]{../figures/figure_comp_cny.pdf}
+\includegraphics[width=0.65\linewidth]{../figures/connectome_multisite.png}
 \end{center}
-\caption{
-{\bf Differences in functional connectivity for the default mode network (seed in the PCC). Differences in connectivity between all the CNY with scrubbing ($FD>0.5$ and $FD>0.2$), CompCor, and GSC. The mask used depict only significant result of the $t$-test (FDR correction $q<0.05$) only the two scrubbing procedures use the union of there respective mask (common mask).}
+\tiny{Connectome variability across sites, FDR corrected 0.01 (Dansereau et al. manuscript in preparation)
 }
-\label{fig_sup_scrubbimpact_cny}
 \end{figure}
 
-\begin{figure}[!ht]
-\begin{center}
-\includegraphics[width=0.75\linewidth]{../figures/scrubbing_impact_cne_mci_dat_all.pdf}
-\end{center}
-\caption{
-{\bf Differences in functional connectivity for the default mode network (seed in the PCC). Differences in connectivity for each group (CNE, pMCI, pDAT) compared to basedline (standard preprocessing) with and without scrubbing ($FD>0.5$ and $FD>0.2$) (FDR correction $q<0.05$) for all voxels showing a significant effect in at least one of the contrast.}
-}
-\label{fig_sup_impact_on_groups}
-\end{figure}
 
 
-\begin{table}[h]
-\resizebox{\columnwidth}{!}{%
-\begin{tabular}{llllllllll}
-\textbf{Site}         & \textbf{Magnet} & \textbf{Scaner brand} & \textbf{Channels} & \textbf{N} & \textbf{Sex} & \textbf{Age} & \textbf{TR} & \textbf{\# Slices} & \textbf{\# Frames} \\
-Baltimore, USA        & 3T              & N/A                   & N/A               & 23         & 8M/15F       & 20-40        & 2.5         & 47                 & 123                \\
-Berlin, Germany       & 3T              & Siemens Tim Trio      & 12                & 26         & 13M/13F      & 23-44        & 2.3         & 34                 & 195                \\
-Cambridge, USA        & 3T              & Siemens Tim Trio      & 12                & 198        & 75M/123F     & 18-30        & 3           & 47                 & 119                \\
-Newark, USA           & 3T              & N/A                   & N/A               & 19         & 9M/10F       & 21-39        & 2           & 32                 & 135                \\
-NewYork\_b, USA       & 3T              & Siemens               & N/A               & 20         & 8M/12F       & 18-46        & 2           & 33                 & 175                \\
-Oxford, UK            & 3T              & Siemens Tim Trio      & 12                & 22         & 12M/10F      & 20-35        & 2           & 34                 & 175                \\
-Queensland, Australia & 4T              & Bruker                & 1                 & 19         & 11M/8F       & 20-34        & 2.1         & 36                 & 190                \\
-SaintLouis, USA       & 3T              & Siemens Tim Trio      & 12                & 31         & 14M/17F      & 21-29        & 2.5         & 32                 & 127               
-\end{tabular}
-}
-\end{table}
+
+
+
 % \begin{table}[!ht]
 % \begin{center}
 % \includegraphics[width=\linewidth]{../figures/tab_fdr.pdf}
@@ -794,15 +955,6 @@ SaintLouis, USA       & 3T              & Siemens Tim Trio      & 12            
 % \label{tab_fdr}
 % \end{table}
 
-\begin{table}[H]
-\begin{center}
-\includegraphics[width=0.75\linewidth]{../figures/table_retention.pdf}
-\end{center}
-\caption[Retention table after scrubbing]{
-Retention rate for CNY, CNE, pMCI and pDAT at various scrubbing levels (standard, scrubbing $FD>0.5$ and scrubbing $FD >0.2$).
-}
-\label{tab_retention}
-\end{table}
 
 
 \end{document}
