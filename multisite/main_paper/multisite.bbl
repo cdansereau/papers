@@ -1,27 +1,14 @@
-\begin{thebibliography}{62}
+\begin{thebibliography}{58}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{\texttt{#1}}\fi
 \expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
-
-\bibitem[{Andrews-Hanna et~al.(2010)Andrews-Hanna, Reidler, Sepulcre, Poulin,
-  and Buckner}]{Andrews-Hanna2010a}
-Andrews-Hanna, J.~R., Reidler, J.~S., Sepulcre, J., Poulin, R., Buckner, R.~L.,
-  Feb. 2010. {Functional-anatomic fractionation of the brain's default
-  network.} Neuron 65~(4), 550--562.
-\newline\urlprefix\url{http://dx.doi.org/10.1016/j.neuron.2010.02.005}
 
 \bibitem[{Bellec(2006)}]{Bellec2006}
 Bellec, P., Feb. 2006. {Longitudinal study of large-scale networks in the human
   brain using fMRI : Methods and application to motor skill learning}. Ph.D.
   thesis, Universit\'{e} Paris XI, Orsay, Paris.
 \newline\urlprefix\url{http://exocet.imed.jussieu.fr/\~{}pbellec/data/these\_bellec.pdf}
-
-\bibitem[{Bellec(2013)}]{Bellec2013}
-Bellec, P., 2013. Mining the hierarchy of resting-state brain networks:
-  selection of representative clusters in a multiscale structure. In: Pattern
-  Recognition in Neuroimaging (PRNI), 2013 International Workshop on. IEEE, pp.
-  54--57.
 
 \bibitem[{Bellec et~al.(2010{\natexlab{a}})Bellec, Carbonell, Perlbarg, and
   Evans}]{Bellec2010}
@@ -59,21 +46,21 @@ Biswal, B.~B., Mennes, M., Zuo, X.-N.~N., Gohel, S., Kelly, C., Smith, S.~M.,
   Academy of Sciences of the United States of America 107~(10), 4734--4739.
 \newline\urlprefix\url{http://dx.doi.org/10.1073/pnas.0911855107}
 
-\bibitem[{Buckner et~al.(2009)Buckner, Sepulcre, Talukdar, Krienen, Liu,
-  Hedden, Andrews-Hanna, Sperling, and Johnson}]{Buckner2009}
-Buckner, R.~L., Sepulcre, J., Talukdar, T., Krienen, F.~M., Liu, H., Hedden,
-  T., Andrews-Hanna, J.~R., Sperling, R.~A., Johnson, K.~A., Feb. 2009.
-  {Cortical hubs revealed by intrinsic functional connectivity: mapping,
-  assessment of stability, and relation to Alzheimer's disease.} The Journal of
-  neuroscience : the official journal of the Society for Neuroscience 29~(6),
-  1860--1873.
-\newline\urlprefix\url{http://dx.doi.org/10.1523/JNEUROSCI.5062-08.2009}
-
 \bibitem[{Carbonell et~al.(2014)Carbonell, Bellec, and Shmuel}]{Carbonell2014}
 Carbonell, F., Bellec, P., Shmuel, A., Feb 2014. Quantification of the impact
   of a confounding variable on functional connectivity confirms anti-correlated
   networks in the resting-state. Neuroimage 86, 343--353.
 \newline\urlprefix\url{http://dx.doi.org/10.1016/j.neuroimage.2013.10.013}
+
+\bibitem[{Cheng et~al.(2015)Cheng, Palaniyappan, Li, Kendrick, Zhang, Luo, Liu,
+  Yu, Deng, Wang, Ma, Guo, Francis, Liddle, Mayer, Schumann, Li, and
+  Feng}]{Cheng2015}
+Cheng, W., Palaniyappan, L., Li, M., Kendrick, K.~M., Zhang, J., Luo, Q., Liu,
+  Z., Yu, R., Deng, W., Wang, Q., Ma, X., Guo, W., Francis, S., Liddle, P.,
+  Mayer, A.~R., Schumann, G., Li, T., Feng, J., May 2015. Voxel-based,
+  brain-wide association study of aberrant functional connectivity in
+  schizophrenia implicates thalamocortical circuitry. Npj Schizophrenia 1, --.
+\newline\urlprefix\url{http://dx.doi.org/10.1038/npjschz.2015.16}
 
 \bibitem[{Cho et~al.(1998)Cho, Chung, Lim, and Wong}]{Cho1998}
 Cho, Z.~H., Chung, S.~C., Lim, D.~W., Wong, E.~K., Feb 1998. Effects of the
@@ -104,6 +91,14 @@ Damoiseaux, J.~S., Prater, K.~E., Miller, B.~L., Greicius, M.~D., Apr. 2012.
   disease}. Neurobiology of Aging 33~(4), 828.e19--828.e30.
 \newline\urlprefix\url{http://dx.doi.org/10.1016/j.neurobiolaging.2011.06.024}
 
+\bibitem[{Damoiseaux et~al.(2006)Damoiseaux, Rombouts, Barkhof, Scheltens,
+  Stam, Smith, and Beckmann}]{Damoiseaux2006}
+Damoiseaux, J.~S., Rombouts, S. A. R.~B., Barkhof, F., Scheltens, P., Stam,
+  C.~J., Smith, S.~M., Beckmann, C.~F., Sep. 2006. {Consistent resting-state
+  networks across healthy subjects}. Proceedings of the National Academy of
+  Sciences 103~(37), 13848--13853.
+\newline\urlprefix\url{http://dx.doi.org/10.1073/pnas.0601417103}
+
 \bibitem[{Dansereau et~al.(2014)Dansereau, Orban, and Bellec}]{Dansereau2014}
 Dansereau, C., Orban, P., Bellec, P., 2014. Impact of motion on resting-state
   fmri connectivity in healthy aging and alzheimer's disease, and possible
@@ -119,6 +114,14 @@ Dansereau, C., Risterucci, C., Pich, E.~M., Arnold, D., Bellec, P., 2013. A
   Vol.~9. pp. P248 -- P249, alzheimer's Association International Conference
   2013 Alzheimer's Association International Conference 2013.
 \newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S1552526013011461}
+
+\bibitem[{De~Luca et~al.(2006)De~Luca, Beckmann, De~Stefano, Matthews, and
+  Smith}]{DeLuca2006}
+De~Luca, M., Beckmann, C.~F., De~Stefano, N., Matthews, P.~M., Smith, S.~M.,
+  Feb. 2006. {fMRI resting state networks define distinct modes of
+  long-distance interactions in the human brain}. NeuroImage 29~(4),
+  1359--1367.
+\newline\urlprefix\url{http://dx.doi.org/10.1016/j.neuroimage.2005.08.035}
 
 \bibitem[{Desmond and Glover(2002)}]{Desmond2002}
 Desmond, J., Glover, G., Aug. 2002. Estimating sample size in functional mri
@@ -208,27 +211,6 @@ Goveas, J.~S., Xie, C., Ward, B.~D., Wu, Z., Li, W., Franczak, M., Jones,
   fMRI.} Journal of magnetic resonance imaging : JMRI 34~(4), 764--773.
 \newline\urlprefix\url{http://dx.doi.org/10.1002/jmri.22662}
 
-\bibitem[{Greicius et~al.(2003)Greicius, Krasnow, Reiss, and
-  Menon}]{Greicius2003}
-Greicius, M.~D., Krasnow, B., Reiss, A.~L., Menon, V., Jan. 2003. {Functional
-  connectivity in the resting brain: A network analysis of the default mode
-  hypothesis}. Proc. Natl. Acad. Sci. 100~(1), 253--258.
-\newline\urlprefix\url{http://dx.doi.org/10.1073/pnas.0135058100}
-
-\bibitem[{Greicius et~al.(2004)Greicius, Srivastava, Reiss, and
-  Menon}]{Greicius2004}
-Greicius, M.~D., Srivastava, G., Reiss, A.~L., Menon, V., Mar. 2004.
-  {Default-mode network activity distinguishes Alzheimer's disease from healthy
-  aging: Evidence from functional MRI}. Proceedings of the National Academy of
-  Sciences of the United States of America 101~(13), 4637--4642.
-\newline\urlprefix\url{http://dx.doi.org/10.1073/pnas.0308627101}
-
-\bibitem[{Gusnard and Raichle(2001)}]{Gusnard2001}
-Gusnard, D.~A., Raichle, M.~E., Oct. 2001. {Searching for a baseline:
-  Functional imaging and the resting human brain}. Nature Reviews Neuroscience
-  2~(10), 685--694.
-\newline\urlprefix\url{http://dx.doi.org/10.1038/35094500}
-
 \bibitem[{Hartstra et~al.(2011)Hartstra, Kühn, Verguts, and
   Brass}]{Hartstra2011}
 Hartstra, E., Kühn, S., Verguts, T., Brass, M., Nov 2011. The implementation
@@ -241,12 +223,11 @@ He, Y., Chen, Z., Gong, G., Evans, A., Aug. 2009. {Neuronal networks in
   neurobiology, neurology and psychiatry 15~(4), 333--350.
 \newline\urlprefix\url{http://dx.doi.org/10.1177/1073858409334423}
 
-\bibitem[{Kelly et~al.(2012)Kelly, Toro, Di~Martino, Cox, Bellec, Castellanos,
-  and Milham}]{Kelly2012}
-Kelly, C., Toro, R., Di~Martino, A., Cox, C.~L., Bellec, P., Castellanos,
-  F.~X., Milham, M.~P., Jul. 2012. {A convergent functional architecture of the
-  insula emerges across imaging modalities}. NeuroImage 61~(4), 1129--1142.
-\newline\urlprefix\url{http://dx.doi.org/10.1016/j.neuroimage.2012.03.021}
+\bibitem[{Jafri et~al.(2007)Jafri, Pearlson, Stevens, and Calhoun}]{Jafri2007}
+Jafri, M. J.~J., Pearlson, G. D.~D., Stevens, M., Calhoun, V. D.~D., Nov. 2007.
+  {A method for functional network connectivity among spatially independent
+  resting-state components in schizophrenia.} Neuroimage.
+\newline\urlprefix\url{http://dx.doi.org/10.1016/j.neuroimage.2007.11.001}
 
 \bibitem[{Klarhofer et~al.(2002)Klarhofer, Barth, and Moser}]{Klarhoefer2002}
 Klarhofer, M., Barth, M., Moser, E., May 2002. Comparison of multi-echo spiral
@@ -260,20 +241,24 @@ Lin, F.-H., Huang, T.-Y., Chen, N.-K., Wang, F.-N., Stufflebeam, S.~M.,
   regularized parallel imaging acquisition. Magn Reson Med 54~(2), 343--353.
 \newline\urlprefix\url{http://dx.doi.org/10.1002/mrm.20555}
 
+\bibitem[{Lu et~al.(2003)Lu, Jiang, and Zang}]{Lu2003}
+Lu, Y., Jiang, T., Zang, Y., Sep. 2003. {Region growing method for the analysis
+  of functional MRI data}. NeuroImage 20~(1), 455--465.
+\newline\urlprefix\url{http://dx.doi.org/10.1016/S1053-8119(03)00352-5}
+
 \bibitem[{Lund et~al.(2006)Lund, Madsen, Sidaros, Luo, and Nichols}]{Lund2006}
 Lund, T.~E., Madsen, K.~H., Sidaros, K., Luo, W.-L., Nichols, T.~E., Jan. 2006.
   {Non-white noise in fMRI: does modelling have an impact?} NeuroImage 29~(1),
   54--66.
 \newline\urlprefix\url{http://dx.doi.org/10.1016/j.neuroimage.2005.07.005}
 
-\bibitem[{Margulies et~al.(2009)Margulies, Vincent, Kelly, Lohmann, Uddin,
-  Biswal, Villringer, Castellanos, Milham, and Petrides}]{Margulies2009}
-Margulies, D.~S., Vincent, J.~L., Kelly, C., Lohmann, G., Uddin, L.~Q., Biswal,
-  B.~B., Villringer, A., Castellanos, F.~X., Milham, M.~P., Petrides, M., Nov.
-  2009. {Precuneus shares intrinsic functional architecture in humans and
-  monkeys.} Proceedings of the National Academy of Sciences of the United
-  States of America.
-\newline\urlprefix\url{http://dx.doi.org/10.1073/pnas.0905314106}
+\bibitem[{Marrelec et~al.(2008)Marrelec, Bellec, Krainik, Duffau,
+  P\'{e}l\'{e}grini-Issac, Leh\'{e}ricy, Benali, and Doyon}]{Marrelec2008}
+Marrelec, G., Bellec, P., Krainik, A., Duffau, H., P\'{e}l\'{e}grini-Issac, M.,
+  Leh\'{e}ricy, S., Benali, H., Doyon, J., Feb. 2008. {Regions, systems, and
+  the brain: Hierarchical measures of functional integration in fMRI.} Medical
+  image analysis.
+\newline\urlprefix\url{http://dx.doi.org/10.1016/j.media.2008.02.002}
 
 \bibitem[{Menon et~al.(1997)Menon, Lim, Anderson, Johnson, and
   Pfefferbaum}]{Menon1997}
@@ -314,14 +299,6 @@ Power, J.~D., Barnes, K.~A., Snyder, A.~Z., Schlaggar, B.~L., Petersen, S.~E.,
   MRI networks arise from subject motion.} NeuroImage 59~(3), 2142--2154.
 \newline\urlprefix\url{http://dx.doi.org/10.1016/j.neuroimage.2011.10.018}
 
-\bibitem[{Power et~al.(2011)Power, Cohen, Nelson, Wig, Barnes, Church, Vogel,
-  Laumann, Miezin, Schlaggar, and Petersen}]{Power2011}
-Power, J.~D., Cohen, A.~L., Nelson, S.~M., Wig, G.~S., Barnes, K.~A., Church,
-  J.~A., Vogel, A.~C., Laumann, T.~O., Miezin, F.~M., Schlaggar, B.~L.,
-  Petersen, S.~E., Nov. 2011. {Functional Network Organization of the Human
-  Brain}. Neuron 72~(4), 665--678.
-\newline\urlprefix\url{http://dx.doi.org/10.1016/j.neuron.2011.09.006}
-
 \bibitem[{Power et~al.(2014)Power, Mitra, Laumann, Snyder, Schlaggar, and
   Petersen}]{Power2014}
 Power, J.~D., Mitra, A., Laumann, T.~O., Snyder, A.~Z., Schlaggar, B.~L.,
@@ -351,10 +328,11 @@ Shehzad, Z., Kelly, C.~M., Reiss, P.~T., Gee, D.~G., Gotimer, K., Uddin, L.~Q.,
   2209--2229.
 \newline\urlprefix\url{http://dx.doi.org/10.1093/cercor/bhn256}
 
-\bibitem[{Sheline and Raichle(2013)}]{Sheline2013}
-Sheline, Y., Raichle, M., Sep. 2013. Resting state functional connectivity in
-  preclinical alzheimer’s disease. Biological Psychiatry 74~(5), 340--347.
-\newline\urlprefix\url{http://dx.doi.org/10.1016/j.biopsych.2012.11.028}
+\bibitem[{Thirion et~al.(2006)Thirion, Dodel, and Poline}]{Thirion2006}
+Thirion, B., Dodel, S., Poline, J.~B., Jan. 2006. {Detection of signal
+  synchronizations in resting-state fMRI datasets.} Neuroimage 29~(1),
+  321--327.
+\newline\urlprefix\url{http://dx.doi.org/10.1016/j.neuroimage.2005.06.054}
 
 \bibitem[{Tomasi and Volkow(2010)}]{Tomasi2010}
 Tomasi, D., Volkow, N.~D., May 2010. {Functional connectivity density mapping}.
@@ -398,12 +376,6 @@ Wang, L., Zang, Y., He, Y., Liang, M., Zhang, X., Tian, L., Wu, T., Jiang, T.,
   of Alzheimer's disease: evidence from resting state fMRI.} NeuroImage 31~(2),
   496--504.
 \newline\urlprefix\url{http://dx.doi.org/10.1016/j.neuroimage.2005.12.033}
-
-\bibitem[{Willer et~al.(2010)Willer, Li, and Abecasis}]{Willer2010}
-Willer, C.~J., Li, Y., Abecasis, G.~R., Sep. 2010. {METAL: fast and efficient
-  meta-analysis of genomewide association scans}. Bioinformatics 26~(17),
-  2190--2191.
-\newline\urlprefix\url{http://dx.doi.org/10.1093/bioinformatics/btq340}
 
 \bibitem[{Yan et~al.(2009)Yan, Liu, He, Zou, Zhu, Zuo, Long, and
   Zang}]{Yan2009}
