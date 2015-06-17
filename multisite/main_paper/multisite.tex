@@ -61,7 +61,7 @@
 
 %-- 
 \begin{keyword}
-fmri \sep general linear model \sep effect size \sep multiple comparison \sep multisite \sep clinical trial analysis
+fmri \sep effect size \sep multisite \sep clinical trial \sep AD biomarker
 \end{keyword}
 \end{frontmatter}
 
@@ -83,10 +83,8 @@ fmri \sep general linear model \sep effect size \sep multiple comparison \sep mu
 \section{Introduction}
 
 % Magic paragraph
-Resting-state (RS) connectivity in fMRI is a promising biomarker for a variety of neurological diseases. Typically, in a clinical trial, a large cohort is recruited and evaluated at multiple sites spread over countries or even continents. The main potential issue with that approach is the lack of consistency in the multi-site RS connectivity acquisitions that may obscure clinically relevant information. Therefore the aims of the study were to: (1) characterize the amplitude of the site bias, i.e. the systematic differences in rs-fMRI connectivity across different acquisition sites; (2) Quantify the impact of the between-site variance on the power of statistical tests in resting-state fMRI.
+Resting-state (RS) connectivity in fMRI is a promising biomarker for a variety of neurological diseases. Typically, in a clinical trial, a large cohort is recruited and evaluated at multiple sites spread over countries or even continents. In academia the budget allowed per investigator for scanning is generally of the order of 30 to 50 subjects leading two small cohorts, one problem with small sample size is the difficulty to detect small and consistent effect (differences) between groups. A solution that can help on this from is to increase the number of subject by pooling small RS cohorts acquired on the same scanner or on different scanners, this approach is referred to has multi-site . The main potential issue with that approach is the lack of consistency in the multi-site RS connectivity acquisitions that may obscure clinically relevant information. Therefore the aims of the study were to: (1) characterize the amplitude of the site bias, i.e. the systematic differences in rs-fMRI connectivity across different acquisition sites; (2) Quantify the impact of the between-site variance on the power of statistical tests in resting-state fMRI.
 
-The number of Canadians suffering from Alzheimer's disease (AD) is rapidly increasing, with tremendous social and economic impact. Despite the emergence of promising drugs, the recent clinical trials with demented patients have failed. Dementia however comes very late in the development of the disease, at a stage where the degeneration of neural tissues has likely gone beyond repair. In order to be efficient, therapies should be initiated in the decades predating dementia, in a preclinical stage where patients experience no or very mild symptoms (see chapter $1.1$). There are unfortunately no biomarker(s) that are currently predictive of AD in this preclinical stage, and could help identify the individuals that could benefit from such interventions. A promising technique is resting-state functional magnetic resonance imaging (rs-fMRI), which may be able to capture the early synaptic dysfunction seen in AD (see chapter $1.2$). I order to be able to apply statistical analysis and machine learning methods we 
-need to preprocess the data to remove as much as possible the effect of various artefacts (hardware and physiological). The preprocessing reduces the variability of the data and therefore provides more relevant and discriminative features (see chapter $1.3$). In order to further improve the statistical power of there analysis, multiple academic groups are collaborating to pool their dataset to increase the sample size of the study. Unfortunately the gain in sample size comes with a new source of variability introduced by the multicentric acquisition. Site-specific MRI set-ups may bias the fMRI measures, and I am thus developing procedures for inter-site normalization. Account for these sources of variance are important since they may bias the predictive potential of rs-functional connectivity in a multi-site, in line with this last assumption we want to quantify the robustness of the feature selection and classifier to multi-site acquisition (see chapter $1.4$).
 
 In most experiments conducted in neuroimaging, the main factors that influence power are: (1) the size of the effect, determined by the difference of the mean connectivity of one group versus a control group and the variability of this difference across subjects and groups; and (2) the sample size, i.e. the number of subjects in the study \citep{Desmond2002}. This last factor is usually the only one controlled by the investigator, hence why an increasing number of researchers share multicentric, sometimes multiprotocol, data suitable to statistical analysis. In research it is very difficult to obtain a grant large enough to scan a cohort larger than ~80 subjects, therefore researcher and consortium initiatives have started to pool their resources together to make initiative composed of publicly available large cohorts of subjects like the 1000 functional connectome \citep{Biswal2010}, ADNI \citep{
 Mueller2005}, among 
@@ -95,9 +93,8 @@ the data should be applied to reduce the bias introduced by multi-site analysis.
 
 
 
-\textbf{How can we increase the statistical power?}
+\textbf{Difficulty of increasing the sample size}
 \begin{itemize}
-\item Number of subject mechanically increase the statistical power (sensitivity) of a study.
 \item Collecting a large sample size is very expensive.
 \item Recruitment may be difficult at a single site.
 \item Large sample size can be achieved in multisite study.
@@ -105,7 +102,7 @@ the data should be applied to reduce the bias introduced by multi-site analysis.
 \end{itemize}
 
 
-
+\paragraph{Source of variance across sites} 
 %\frametitle{Source of variance across sites}
 \begin{itemize}
 \item \textbf{Inclusion/exclusion criteria.}
@@ -140,11 +137,8 @@ the data should be applied to reduce the bias introduced by multi-site analysis.
 }
 
 
-\begin{enumerate}
-\item Characterize the amplitude of inter-site bias.
-\item Quantify the impact of inter-site biases on the detection power of a rs-fMRI effect.
-\item Evaluate our ability to correct for inter-site variance using a statistical model.
-\end{enumerate}
+
+
 
 
 In 2009, the publicly released 1000 Functional Connectomes Project (FCP) and International Neuroimaging Data-sharing Initiative (INDI) provided a glimpse of the variability in imaging methodologies employed by the neuroimaging field. The dataset includes rs-fMRI samples independently collected at imaging sites around the world. A noteworthy aspect of this dataset is the variation in almost every parameter of the imaging acquisition methodologies, while the majority of subject-related variables are not reported (due in most cases, to the fact that they were not thoroughly recorded). 
@@ -154,15 +148,19 @@ An other compelling proof of multi-site bias is the study reported by \cite{Niel
 \paragraph{Specific objectives} 
 
 \begin{itemize}
- \item Propose methods to account for multisite variance in a general linear model analysis
- \item Amount of variance intra-site and inter-site
- \item How group balancing in multi-centric topology impact sensitivity
- \item How sample size in multi-centric topology impact sensitivity
- \item Interaction of 
+ \item Propose a method to account for multisite variance in a general linear model analysis. %Evaluate our ability to correct for inter-site variance using a statistical model.
+ \item Amount of variance intra-site and inter-site. %Characterize the amplitude of inter-site bias.
+ \item Quantify the impact of inter-site biases on the detection power of a rs-fMRI effect.
+ \begin{itemize}
+ \item How sample size in multi-centric topology impact sensitivity.
+ \item How group balancing in multi-centric topology impact sensitivity.
+ \item Interaction of site-pathology and it's impact on detection power.
+ \end{itemize}
 \end{itemize}
 
 
-cite for the urgence of using pool mutisite data for neuro imaging analysis \cite{Cheng2015}.
+\paragraph{Other info} 
+Cite for the urgency of using pool mutisite data for neuro-imaging analysis \cite{Cheng2015}.
 
 
 \section{Method}
@@ -187,7 +185,7 @@ with a 0.01 Hz high-pass cut-off), average signals in conservative masks of the 
 \subsection{Functional networks}
 
 \paragraph{Functional parcellation}
-Regions are routinely defined using an anatomical parcellation \citep{He2009}, such as the AAL template \citep{Tzourio-Mazoyer2002}. Anatomical parcels may however not well match the brain functional organization. In this work, we used functional brain parcellations, aimed at defining groups of brain regions with homogeneous time series. A number of algorithms have been proposed with additional spatial constraints, to ensure that the resulting parcels are spatially connected \citep{Lu2003,Thirion2006,Craddock2012}. We can achive this aime and To reduce the computational burden of the analysis using a region-growing algorithm \cite{Bellec2006},  resulting in more homogenius regions composed of temporaly similar and contigus voxels. The spatial dimension was selected arbitrarily by setting the size where the growing process stopped (a threshold of 1000 mm3 resulted into R=957 regions) from a reference dataset of healthy adults from the 1000 functional connectome project (Cambridge cohort \citep{Biswal2010}, parcelation available here \ref{}). The regions were built to maximize the homogeneity of the time series within the region, i.e. the average correlation between the time series associated with any pair of voxels of the region. The region growing was applied on the time series concatenated across all subjects (after correction to zero mean and unit variance), such that the homogeneity was maximized on average for all subjects, and the small homogeneous regions are identical for all subjects. Because of the temporal concatenation of time series, we had to limit the memory demand, and the region-growing was thus applied independently in each of the 116 areas of the AAL template \citep{Tzourio-Mazoyer2002}. See \cite{Bellec2006} for more details regarding the implementation of the region-growing algorithm. Overall, this process reduced the dataset of each subject into a (T x R) data array, where T is the number of time samples and R is the number of regions.
+Regions are routinely defined using an anatomical parcellation \citep{He2009}, such as the AAL template \citep{Tzourio-Mazoyer2002}. Anatomical parcels may however not well match the brain functional organization. In this work, we used functional brain parcellations, aimed at defining groups of brain regions with homogeneous time series. A number of algorithms have been proposed with additional spatial constraints, to ensure that the resulting parcels are spatially connected \citep{Lu2003,Thirion2006,Craddock2012}. We can achieve this aim and reduce the computational burden of the analysis using a region-growing algorithm \cite{Bellec2006},  resulting in more homogeneous regions composed of temporally similar and contiguous voxels. The spatial dimension was selected arbitrarily by setting the size where the growing process stopped (a threshold of 1000 mm3 resulted into R=957 regions) from a reference dataset of healthy adults from the 1000 functional connectome project (Cambridge cohort \citep{Biswal2010}, parcellation available here \ref{}). The regions were built to maximize the homogeneity of the time series within the region, i.e. the average correlation between the time series associated with any pair of voxels of the region. The region growing was applied on the time series concatenated across all subjects (after correction to zero mean and unit variance), such that the homogeneity was maximized on average for all subjects, and the small homogeneous regions are identical for all subjects. Because of the temporal concatenation of time series, we had to limit the memory demand, and the region-growing was thus applied independently in each of the 116 areas of the AAL template \citep{Tzourio-Mazoyer2002}. See \cite{Bellec2006} for more details regarding the implementation of the region-growing algorithm. Overall, this process reduced the dataset of each subject into a (T x R) data array, where T is the number of time samples and R is the number of regions.
 
 \paragraph{Functional network decomposition}
 From a pure functional viewpoint, the spatial constraint seems somewhat arbitrary, as functional units in the brain at low resolution encompass distributed networks of brain regions with homotopic regions often being part of a single parcel \citep{DeLuca2006,Damoiseaux2006}. Some works have thus used distributed parcels as the spatial units to measure functional brain connectivity, e.g. \citep{Jafri2007,Marrelec2008}. We relied on a recent method called “Bootstrap Analysis of Stable Clusters” (BASC), which can identify consistent functional networks for a group of subjects \citep{Biswal2010}. using a hierarchical cluster with Ward’s criterion both at the individual and the group levels. The functional networks can be generated at any arbitrary scale (within the range of the fMRI resolution), and we considered only networks generated at the group level, which were non-overlapping and not necessarily spatially contiguous. In the present work we generated a BASC decomposition in 100 networks.
@@ -202,7 +200,7 @@ Using a brain partition of $R$ networks obtain from BASC procedure described in 
 \paragraph{Power analysis for a resting-state fMRI study}
 A Monte-Carlo simulation was implemented to evaluate the power of a resting-state multi-site study. For each site and each sample, $B\%$ of the subjects were randomly assigned to a 'treatment' group. For the subjects in this group, a value was added to achieve a given relative effect size (Cohen's d, i.e. the mean of the two groups divided by the standard deviation of all sites). The significance of the difference between the control and 'treatment' group was assessed by a $t$-test in a linear model. To account for site-specific bias we have included dummy variables in the GLM model. The study was repeated for various effect sizes (0 to 1.5 with a step of 0.01) at a threshold of 0.001 on the p-value in the $t$-test.
 
-In order to simulate various scenarios within the context of a multi-site setting, a cohort of subjects acquired at a single-site was selected to act as our reference dataset and for the multi-site configuration a cohort from a collection of small sites, roughly totalling the same sample size as the reference dataset, was used. The simulation was based on a scenario with 8 sites for a total of 345 subjects, and no homogeneization of acquisition protocol whatsoever. The multi-site (with correction) is based on 150 subjects from 7 sites and the monosite is based on 
+In order to simulate various scenarios within the context of a multi-site setting, a cohort of subjects acquired at a single-site was selected to act as our reference dataset and for the multi-site configuration a cohort from a collection of small sites, roughly totalling the same sample size as the reference dataset, was used. The simulation was based on a scenario with 8 sites for a total of 345 subjects, and no homogenization of acquisition protocol whatsoever. The multi-site (with correction) is based on 150 subjects from 7 sites and the monosite is based on 
 one site of 195 subjects.  
 
 
@@ -233,11 +231,11 @@ where $s_{i,j}$ is the standard deviation between region $i$ and $j$ for the ref
 
 In order to introduce the same effect-size across the single-site and multi-site dataset we are taking the standard deviation from the single-site cohort as the reference.  The connection $y_{i,j}$ of the randomly affected subjects ("treatment" group) are therefore calculated $y_{i,j} = y_{i,j} + d\times s_{i,j}$. 
 
-\paragraph{multi-site correction approache} 
+\paragraph{multi-site correction approach} 
 
 %For the multi-site three flavours were computed: multi-site no correction, multi-site with dummy variables and multi-site with METAL correction.
 %Depending on the multi-site configuration and distribution of the subject we proposed two corrective approaches that can be applied as shown in the simulations of Figure \ref{fig_simu_50pct}. 
-In order to obtain an unbiased method to combine sites and do group analysis on them we are using dummy variables (binary vectors $1\times S$) who code for each site in the GLM model ilustrated in Equation\ref{eq_glm_dummy}. The variables are corrected to have a zero mean across subjects, and an intercept (i.e. a column filled with 1) is added to $\mathbf{X}$. The GLM relies on the following stochastic model:
+In order to obtain an unbiased method to combine sites and do group analysis on them we are using dummy variables (binary vectors $1\times S$) who code for each site in the GLM model illustrated in Equation\ref{eq_glm_dummy}. The variables are corrected to have a zero mean across subjects, and an intercept (i.e. a column filled with 1) is added to $\mathbf{X}$. The GLM relies on the following stochastic model:
 
 \begin{equation}
  \label{eq_glm_dummy}
@@ -301,9 +299,9 @@ with
 
 \section{Results}
 
-The Figure \ref{fig_icc} presents the results of the ICC analysis for the point-to-point correlations, 
+%The Figure \ref{fig_icc} presents the results of the ICC analysis for the point-to-point correlations, 
 %(a), regional clustering (b), regional degree centrality (c), global summary such as the average clustering, average efficiency and modularity (d) and local efficiency (e). 
-only the connections with an average ICC above 0.5 are represented. The results were consistent with \citep{Shehzad2009}, with a mean ICC over all connections of \textasciitilde0.3 and 23 connections scoring a moderate-to-good level of ICC ($>0.5$). 
+%only the connections with an average ICC above 0.5 are represented. The results were consistent with \citep{Shehzad2009}, with a mean ICC over all connections of \textasciitilde0.3 and 23 connections scoring a moderate-to-good level of ICC ($>0.5$). 
 
 %In total, the literature review identified 7 nodes in the DMN (21 point-to-point correlations within the DMN) and 9 seeds in networks outside of the DMN (63 point-to-point correlations between a node in the DMN and a node outside of the DMN). We included three local network properties in the DMN (21 measures), as well as two global properties. That's a total of 107 candidate measures, based on a fairly conservative literature review. We further analyzed the test-retest reliability of these measures to narrow the selection down to about 10 measures. 
 
@@ -355,7 +353,7 @@ only the connections with an average ICC above 0.5 are represented. The results 
 % \end{itemize}
 
 
-The first assessment perform on the dataset was to verify the distribution of the variance in functional connectivity among each site and across sites in order to see if they are of the same order of magnitude or not. This analysis of Figure \ref{fig_site_variability} shows the distribution of the standard deviation of connectivity across subjects (the distribution is over the full brain connectome, with several 1000s connections) at the 8 sites against the inter-sites standard deviation of connectomes (average at each site). as we can see the inter-site (between site) variability is smaller than the intra-site (between subjects) variability.
+The first assessment perform on the dataset was to verify the distribution of the variance in functional connectivity among each site and across sites in order to see if they are of the same order of magnitude or not. This analysis of Figure \ref{fig_site_variability} shows the distribution of the standard deviation of connectivity across subjects (the distribution is over the full brain connectome, with several 1000s connections) at the 8 sites against the inter-sites standard deviation of connectomes (average at each site). as we can see the inter-site (between site) variability is smaller than the intra-site (between subjects) variability. As we can see the amplitude of inter-site bias is about 3-fold smaller than the within-site standard deviation (red \textasciitilde0.06 vs. orange \textasciitilde0.18).
 
 \begin{figure}[H!]
 \begin{center}
@@ -367,12 +365,7 @@ The first assessment perform on the dataset was to verify the distribution of th
 \label{fig_site_variability}
 \end{figure}
 
-In order to verify how spatial structure vary across sites the average standard deviation and the average connectivity map of the DMN was extracted for each site and displayed in Figure \ref{fig_DMN_variability}. In order to ease the reading we selected only 4 representative sites, although we reached the same conclusion on all the sites. As we can see in the intersection between two sites the difference in standard deviation between-sites was illustrated (red set of brain cuts). First the mean DMN at each site is consistent with the expected spatial ditribution reported in other studies. As we can see the amplitude of inter-site bias is about 3-fold smaller than the within-site standard deviation (red \textasciitilde0.06 vs. orange \textasciitilde0.18). The most salient changes between-sites are located in the mesio-frontal region associated with the anterior part of the DMN. This last finding may be associated with motion artefact as previously reported in \cite{Dansereau2014}.
-
-
-The findings can be generalized on the full connectome see Figure \ref{fig_connectome_variability}.
-
-
+In order to verify how spatial structure vary across sites the average standard deviation and the average connectivity map of the DMN were extracted for each site and reported in Figure \ref{fig_DMN_variability}. As we can see in the intersection between two sites the difference in average connectivity between-sites is illustrated (red set of brain cuts). First the mean DMN at each site is consistent with the expected spatial distribution reported in other studies \citep{Damoiseaux2006,Dansereau2014,Yan2013a}. The most salient changes between-sites are located in the mesio-frontal region associated with the anterior part of the DMN. In order to verify if significant changes are not only found in the DMN we have look at the other connectivity patterns and the findings can be generalized to the full connectome see Figure \ref{fig_connectome_variability}.
 
 \begin{figure}[H!]
 \begin{center}
@@ -396,8 +389,10 @@ Functional connectome for multiple sites. The average connectome of 8 sites (Bal
 \end{figure}
 
 
-We also showed using Monte-Carlo simulations that the power of detecting an effect is marginally affected by the site acquisition configuration (single site or multi-site, see Figure3.2 for an illustration of a power analysis on three different seeds) where the sites are balanced in term of the amount of subject with and without the effect. 
+We also showed using Monte-Carlo simulations that the power of detecting an effect is marginally affected by the site acquisition configuration (single site or multi-site, see Figure) where the sites are balanced in term of the amount of subject with and without the effect. 
 
+
+Figure \ref{fig_p2p} show the pair of regions used in (TODO ORBAN2015) as candidate marker for functional connectivity changes in Alzheimer disease based on a literature review. We will use the correlation between those regions to estimate the variability across subject and induce some effect in our simulations.
 
 \begin{figure}[H!]
 \begin{center}
@@ -626,9 +621,8 @@ We also showed using Monte-Carlo simulations that the power of detecting an effe
 % 
 % \section{Conclusion}
 % 
-% We confirmed that multi-site acquisition introduce some variability in the dataset although a single-site study with 200 subjects had only a marginally superior statistical power than an analysis pooling 7 sites for an equivalent number of subjects, see Figure \ref{fig_detection_power}. In both cases, a high sensitivity ($>0.95$) could be achieved for the effect size observed by \cite{Goveas2011} which reported an effect equivalent to 1. We can therefore conclude that it is feasible to acquire rs-fMRI data in across multiple sites and correct for this topology.
-% 
 
+In Figure \ref{fig_real_sim_samplesize} we show the effect of the sample size on the detection power. As expected we are able to detect smaller and smaller effect size as we increase the sample size. For an effect size of 1 which is considered a large effect we are able to detect significant changes in only 20\% of the cases at 40 subjects, 80\% at 80 subjects and almost 95\% at 120\% subjects.
 
 %\frametitle{Effect of sample size: \\real data 50\%-50\% debalancing}
 \begin{figure}[H!]
@@ -641,9 +635,10 @@ We also showed using Monte-Carlo simulations that the power of detecting an effe
 \subfloat[][120 subjects]{\includegraphics[width=0.32\textwidth]{../figures/realdata_detect_pow_s120_50pct.pdf}}
 \hspace{1mm}
 \tiny Simulation on real data, detection power of two groups balanced 50\%-50\% between 7 sites. Two scenarios, 1) monosite and 2) multisite 7 sites with correction for multisite differences using dummy variables. Each plot show the detection power in function of the effect size for 3 different sample size 40, 80 and 120 subjects in total.
+\label{fig_real_sim_samplesize}
 \end{figure}
-\tiny Dansereau et al. manuscript in preparation
 
+Figure \ref{fig_real_sim_debalancing} show the effect of debalancing the two groups at various ratio (50\%-50\% , 30\%-70\% and 15\%-85\%) for a total sample size of 120 subjects. Has the debalancing increase our ability to detect effect is diminished. As an example for an effect size of 1 we would detect the effect in 95\% of the cases in a 50 balanced scenario, this would go down to 90\% in a 30\%-70\% scenario and to 60\% in a 15\%-85\% debalancing. 
 
 
 %\frametitle{Debalancing effect: \\real data 120 subjects total}
@@ -657,9 +652,10 @@ We also showed using Monte-Carlo simulations that the power of detecting an effe
 \subfloat[][Debalancing 15\%]{\includegraphics[width=0.32\textwidth]{../figures/realdata_detect_pow_s120_15pct.pdf}}
 \hspace{1mm}
 \tiny Simulation on real data, detection power of two groups for a total of 120 subject between 7 sites. All plot show two scenarios, 1) monosite and 2) multisite 7 sites with correction for multisite differences using dummy variables.
+\label{fig_real_sim_debalancing}
 \end{figure}
-\tiny Dansereau et al. manuscript in preparation
 
+Figure \ref{fig_real_sim_debalancing_interact} show the effect of debalancing the two groups at various ratio (50\%-50\% , 30\%-70\% and 15\%-85\%) with an interaction site-pathology for a total sample size of 120 subjects. Has the debalancing increase our ability to detect effect is diminished. As an example for an effect size of 1 we would detect the effect in 98\% of the cases in a 50 balanced scenario, this would go down to 95\% in a 30\%-70\% scenario and to 75\% in a 15\%-85\% debalancing. The particularity of this experiment is the fact that the multisite configuration perform better then the single site meanning that it is better to have interaction of various amplitude across small sites than an average interaction on one large site.
 
 
 %\frametitle{Debalancing effect + interaction site-patho: \\real data 120 subjects total}
@@ -673,19 +669,21 @@ We also showed using Monte-Carlo simulations that the power of detecting an effe
 \subfloat[][Debalancing 15\%]{\includegraphics[width=0.32\textwidth]{../figures/realdata_detect_pow_sitepatho_s120_15pct.pdf}}
 \hspace{1mm}
 \tiny Simulation on real data, detection power of two groups for a total of 120 subject between 7 sites. All plot show two scenarios, 1) monosite and 2) multisite 7 sites with correction for multisite differences using dummy variables.
+\label{fig_real_sim_debalancing_interact}
 \end{figure}
 
+Figure \ref{fig_real_sim_debalancing_2sites} show a scenario of two site one large (80 subjects) and one small ($\sim20$ subjects) unbalanced at 30\%-70\% and the inverse. As we can see the multisite configuration is as good as the monosite.
 
-  \begin{figure}[t]
-   \centering
-    \captionsetup[subfloat]{labelformat=empty}
-     \subfloat[\tiny 30\%-70\%]{\label{} \includegraphics[width=0.39\textwidth]{../figures/realdata_detect_pow_sitepatho2site_s100_30pct.pdf}} 
-     \subfloat[\tiny 70\%-30\%]{\label{} \includegraphics[width=0.39\textwidth]{../figures/realdata_detect_pow_sitepatho2site_s100_70pct.pdf}}\\
-
-     \tiny Simulation on real data, detection power of two groups for a total of 100 subject between 2 sites, one small site of 20 subjects and one large of 80 subjects. All plot show two scenarios, 1) monosite and 2) multisite 2 sites with correction for multisite differences using dummy variables. Simulation of the detection power of two groups balanced 30\% and 70\% between 2 sites.
- \end{figure}
+\begin{figure}[t]
+\centering
+\captionsetup[subfloat]{labelformat=empty}
+\subfloat[\tiny 30\%-70\%]{\label{} \includegraphics[width=0.39\textwidth]{../figures/realdata_detect_pow_sitepatho2site_s100_30pct.pdf}} 
+\subfloat[\tiny 70\%-30\%]{\label{} \includegraphics[width=0.39\textwidth]{../figures/realdata_detect_pow_sitepatho2site_s100_70pct.pdf}}\\
+\tiny Simulation on real data, detection power of two groups for a total of 100 subject between 2 sites, one small site of 20 subjects and one large of 80 subjects. All plot show two scenarios, 1) monosite and 2) multisite 2 sites with correction for multisite differences using dummy variables. Simulation of the detection power of two groups balanced 30\% and 70\% between 2 sites.
+\label{fig_real_sim_debalancing_2sites}
+\end{figure}
  
- 
+In order to obtain more control on each of the parameter of the simulation and see if we are able to reproduce previous findings we have used a synthetic model using only synthetic data and the average standard deviation of the Cambridge site connectivity. All plots show four scenarios: The top left plot represent the two configurations one monosite and two sites with correction for multisite differences using dummy variables without site effect. Has expected there is no difference between using 1 large site than combining two site of half the size. The plot on the upper right corner represent the detection power when we apply a site effect on balanced sites, here again not much differences an additive effect is fully compensated by the dummy variables corrective method. the lower left plot represent no site effect but an interaction between site and pathology. An the last plot on the lower right corner show the detection power with a site effect of 0.5 and a interation site pathology.
 
 %\begin{frame} \frametitle{50-50 subjects, 50\%-50\% debalancing effect}
  \begin{figure}[t]
@@ -697,7 +695,8 @@ We also showed using Monte-Carlo simulations that the power of detecting an effe
      \hspace*{6.8em}
      \subfloat[\tiny Inter site-patho, no site effect]{ \includegraphics[width=0.39\textwidth]{../figures/detect_pow_bal5050_var2_site0.pdf}}
      \subfloat[\tiny Inter site-patho + site effect]{ \includegraphics[width=0.39\textwidth]{../figures/detect_pow_bal5050_var2_site05.pdf}}\\
-     %\tiny Simulation of the detection power of two groups balanced 50\%-50\% between two sites. All plot show four scenario, one monosite and two sites with correction for multisite differences using dummy variables. The plots show the detection power when the variability is greater in one side then the other for the pathology group (twice the reference variability in one site and half the reference variability in the other one)
+     \tiny Simulation of the detection power of two groups balanced 50\%-50\% between two sites. All plots show four scenarios in two configuration one monosite and two sites with correction for multisite differences using dummy variables. The first column represent scenarios without site effect and the second column show with a site effect the first row show simulation with out interaction site-pathology and the second row show with interaction.
+\label{fig_full_sim_site_effect}
  \end{figure}
  
 
@@ -712,7 +711,8 @@ We also showed using Monte-Carlo simulations that the power of detecting an effe
      \hspace*{6.8em}
      \subfloat[\tiny Interac site-patho, no site effect]{\label{} \includegraphics[width=0.39\textwidth]{../figures/detect_pow_bal7030_var2_site0.pdf}}
      \subfloat[\tiny Interac site-patho + site effect]{\label{} \includegraphics[width=0.39\textwidth]{../figures/detect_pow_bal7030_var2_site05.pdf}}\\
-     %\tiny Simulation of the detection power of two groups unbalanced 70\%-30\% between two sites. All plot show four scenario, one monosite and two sites with correction for multisite differences using dummy variables. The plots show the detection power when the variability is greater in one side then the other for the pathology group (twice the reference variability in one site and half the reference variability in the other one)
+     \tiny Simulation of the detection power of two groups unbalanced 70\%-30\% between two sites. All plots show four scenarios in two configuration one monosite and two sites with correction for multisite differences using dummy variables. The first column represent scenarios without site effect and the second column show with a site effect the first row show simulation with out interaction site-pathology and the second row show with interaction.
+     \label{fig_full_sim_debalancing}
  \end{figure}
  
 
@@ -727,11 +727,11 @@ We also showed using Monte-Carlo simulations that the power of detecting an effe
      \hspace*{6.8em}
      \subfloat[\tiny Interac site-patho, no site effect]{\label{} \includegraphics[width=0.39\textwidth]{../figures/detect_pow_2080bal5050_var2_site0.pdf}} 
      \subfloat[\tiny Interac site-patho + site effect]{\label{} \includegraphics[width=0.39\textwidth]{../figures/detect_pow_2080bal5050_var2_site05.pdf}}\\
-     %\tiny Simulation of the detection power of two groups balanced 70\%-30\% between two sites, one small site of 20 subjects and one large of 80 subjects. All plot show four scenario, one monosite and two sites with correction for multisite differences using dummy variables. The plots show the detection power when the variability is greater in one side then the other for the pathology group (twice the reference variability in one site and half the reference variability in the other one)
+     \tiny Simulation of the detection power of two groups unbalanced 50\%-50\% between two sites, one small site of 20 subjects and one large of 80 subjects. All plots show four scenarios in two configuration one monosite and two sites with correction for multisite differences using dummy variables. The first column represent scenarios without site effect and the second column show with a site effect the first row show simulation with out interaction site-pathology and the second row show with interaction.
+     \label{fig_full_sim_2sites_balanced}
  \end{figure}
  
-
-
+Figure \ref{fig_full_sim_2sites_debalancing_inv} show the same configuration but the sample size are inverted. Has we can see we have the same pattern as in the real data with...
 
 %\begin{frame} \frametitle{20-80 subjects, 70\%-30\% debalancing effect}
  \begin{figure}[t]
@@ -743,8 +743,10 @@ We also showed using Monte-Carlo simulations that the power of detecting an effe
      \hspace*{6.8em}
      \subfloat[\tiny Interac site-patho, no site effect]{\label{} \includegraphics[width=0.39\textwidth]{../figures/detect_pow_2080bal7030_var2_site0.pdf}} 
      \subfloat[\tiny Interac site-patho + site effect]{\label{} \includegraphics[width=0.39\textwidth]{../figures/detect_pow_2080bal7030_var2_site05.pdf}}\\
-     %\tiny Simulation of the detection power of two groups balanced 70\%-30\% between two sites, one small site of 20 subjects and one large of 80 subjects. All plot show four scenario, one monosite and two sites with correction for multisite differences using dummy variables. The plots show the detection power when the variability is greater in one side then the other for the pathology group (twice the reference variability in one site and half the reference variability in the other one)
+     \tiny Simulation of the detection power of two groups unbalanced 70\%-30\% between two sites, one small site of 20 subjects and one large of 80 subjects. All plots show four scenarios in two configuration one monosite and two sites with correction for multisite differences using dummy variables. The first column represent scenarios without site effect and the second column show with a site effect the first row show simulation with out interaction site-pathology and the second row show with interaction.
+     \label{fig_full_sim_2sites_debalancing}
  \end{figure}
+ 
  
 
 
@@ -758,20 +760,32 @@ We also showed using Monte-Carlo simulations that the power of detecting an effe
      \hspace*{6.8em}
      \subfloat[\tiny Interac site-patho, no site effect]{\label{} \includegraphics[width=0.39\textwidth]{../figures/detect_pow_8020bal7030_var2_site0.pdf}} 
      \subfloat[\tiny Interac site-patho + site effect]{\label{} \includegraphics[width=0.39\textwidth]{../figures/detect_pow_8020bal7030_var2_site05.pdf}}\\
-     %\tiny Simulation of the detection power of two groups balanced 70\%-30\% between two sites, one small site of 20 subjects and one large of 80 subjects. All plot show four scenario, one monosite and two sites with correction for multisite differences using dummy variables. The plots show the detection power when the variability is greater in one side then the other for the pathology group (twice the reference variability in one site and half the reference variability in the other one)
+     \tiny Simulation of the detection power of two groups unbalanced 70\%-30\% between two sites, one small site of 20 subjects and one large of 80 subjects. All plots show four scenarios in two configuration one monosite and two sites with correction for multisite differences using dummy variables. The first column represent scenarios without site effect and the second column show with a site effect the first row show simulation with out interaction site-pathology and the second row show with interaction.
+     \label{fig_full_sim_2sites_debalancing_inv}
  \end{figure}
  
+Figure \ref{fig_full_sim_50sites_rnd_debalancing} show a more realistic case in clinical trials where the number of scanning sites is very large and the number of subjects per site is small. There is usually no control on the exact balancing of those sites therefore we have randomly assign debalancing for each site (between 10\% and 90\%) and have randomly assigned a number of subject to each site (between 2 and 15 subjects).
 
 \begin{figure}[t]
    \centering
     \captionsetup[subfloat]{labelformat=empty}
      \subfloat[\tiny No interaction site-patho]{\label{} \includegraphics[width=0.39\textwidth]{../figures/detect_pow_rndsubj0215_50sites_rndbal1090_var0_siternd0005.pdf}} 
      \subfloat[\tiny Site effect of 0.5]{\label{} \includegraphics[width=0.39\textwidth]{../figures/detect_pow_rndsubj0215_50sites_rndbal1090_varrnd02_siternd0005.pdf}}\\
-     \tiny Simulation of the detection power of two groups balanced randomly between 10\%-90\% between 50 sites, one small site of 20 subjects and one large of 80 subjects. All plot show four scenario, one monosite and two sites with correction for multisite differences using dummy variables. The plots show the detection power when the variability is greater in one side then the other for the pathology group (twice the reference variability in one site and half the reference variability in the other one)
+     \tiny Simulation of the detection power of two groups balanced randomly between 10\%-90\% between 50 sites, the number of subject per site is randomly assigned between 2 and 15. All plot show four scenario, one monosite and two sites with correction for multisite differences using dummy variables. The plots show the detection power when the variability is greater in one side then the other for the pathology group (twice the reference variability in one site and half the reference variability in the other one)
+     \label{fig_full_sim_50sites_rnd_debalancing}
 \end{figure}
 
+\section{Discussion}
 
+Connectivity bias that can impact interpretation.\\
 
+Type of scanner most of them are Siemens we may have more variability if combining various brand\\
+
+Talk about the impact in small acquisition 40 subjects total and the importance of pooling data among PI.\\
+
+Talk about the impact in clinical trial and best practice.\\
+
+\section{Conclusion}
 
  
 \section{Table Legend}
