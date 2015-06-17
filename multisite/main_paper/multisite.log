@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  17 JUN 2015 10:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  17 JUN 2015 12:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1600,7 +1600,7 @@ Here is how much of TeX's memory you used:
  13665 multiletter control sequences out of 15000+600000
  13125 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,10n,47p,2028b,521s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,10n,47p,2030b,521s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.7} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1643,7 +1643,7 @@ ist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2014/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2014/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2014/texmf-dist/f
 onts/type1/public/cm-super/sfrm1000.pfb>
-Output written on multisite.pdf (30 pages, 1749648 bytes).
+Output written on multisite.pdf (30 pages, 1749652 bytes).
 PDF statistics:
  2163 PDF objects out of 2487 (max. 8388607)
  802 compressed objects within 9 object streams
