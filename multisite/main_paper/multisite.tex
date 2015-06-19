@@ -38,7 +38,13 @@
 
 % Title must be 150 words or less
 \begin{frontmatter}
-\title{Feasibility of multi-centric fMRI connectivity studies of Alzheimer's disease}
+%\title{Feasibility of multi-centric fMRI connectivity studies of Alzheimer's disease}
+%\title{Feasibility of multi-centric fMRI connectivity and impact }
+
+%\title{Measurement bias and statistical power in multi-centric resting-state fMRI connectivity}
+\title{Statistical power and measurement bias in multi-centric resting-state fMRI connectivity}
+
+
 %\title{A power analysis for multisite studies in resting-state functional connectivity, with an application to clinical trials in Alzheimer's disease}
 
 \author[a,b]{Christian~Dansereau}
@@ -61,7 +67,8 @@
 
 %-- 
 \begin{keyword}
-fmri \sep effect size \sep multisite \sep clinical trial \sep AD biomarker
+multisite \sep multiprotocol \sep bias \sep statistical power \sep sample size \sep resting-state \sep fMRI, connectivity
+%fmri \sep effect size \sep multisite \sep clinical trial \sep AD biomarker
 \end{keyword}
 \end{frontmatter}
 
@@ -81,87 +88,78 @@ fmri \sep effect size \sep multisite \sep clinical trial \sep AD biomarker
 \end{itemize}
 
 \section{Introduction}
+%Resting-state (RS) connectivity in fMRI is a promising biomarker for a variety of neurological diseases. Typically, in a clinical trial, a large cohort is recruited and evaluated at multiple sites spread over countries or even continents. In academia the budget allowed per investigator for scanning is generally of the order of 30 to 50 subjects leading to small cohorts, one problem with small sample size is the difficulty to detect small and consistent effect (differences) between groups. A solution that can help on this front is to increase the number of subject by pooling small RS cohorts acquired on the same scanner or on different scanners, this approach is referred to has multisite acquisition.
+
 
 % Magic paragraph
-Resting-state (RS) connectivity in fMRI is a promising biomarker for a variety of neurological diseases. Typically, in a clinical trial, a large cohort is recruited and evaluated at multiple sites spread over countries or even continents. In academia the budget allowed per investigator for scanning is generally of the order of 30 to 50 subjects leading two small cohorts, one problem with small sample size is the difficulty to detect small and consistent effect (differences) between groups. A solution that can help on this from is to increase the number of subject by pooling small RS cohorts acquired on the same scanner or on different scanners, this approach is referred to has multi-site . The main potential issue with that approach is the lack of consistency in the multi-site RS connectivity acquisitions that may obscure clinically relevant information. Therefore the aims of the study were to: (1) characterize the amplitude of the site bias, i.e. the systematic differences in rs-fMRI connectivity across different acquisition sites; (2) Quantify the impact of the between-site variance on the power of statistical tests in resting-state fMRI.
+Resting-state (RS) connectivity in fMRI is a promising biomarker for a variety of neurological diseases. Although, there is increasing concern about the reliability and reproducibility of scientific research and findings. One major source of concern within neuroscience is the low statistical power of many published studies, given that this increases the proportion of published findings that are false and can create unwanted biases or difficulty to detect small and consistent effect (differences) between groups. These worries have increased pressure to amass larger samples, but in many cases this is not feasible due to recruitment constraints (for example, when the number of subjects with a particular disorder in any geographical area is limited) or financial limitations. A solution to that problem is to increase the number of subject by pooling small RS cohorts acquired on the same scanner or on different scanners, this approach is referred to has multisite acquisition. Multi-site study are more and more common in fMRI and a lot of initiative have started to emerge to provide public data acquired at multiple sites. Has reported by \cite{Cheng2015} there is an urgent need to use methods that will allow large-scale pooling of data to both reduce the impact of heterogeneity between studies and allow the study of stratified subgroups. Nevertheless, multi-centric studies come with there share of advantages and disadvantages. The main advantages are the rapid recruitment of large sample-size across multiple sites and potentially distant geographically. This parallel recruitment provide better generalization due to more diversity in the scanners used although result in potential new sources of variance. This bias in measurement originating from the various acquisitions sites may decrease the benefit of a large sample-size due to the added variability in the data. We are therefore taking advantage of a public fMRI resource that incorporate these kind of variabilities to address this question and several others.
+
+% Poldrack
+%Reducing the cost of doing science. Making data available can greatly reduce the cost of scientific research when those data are relevant to new questions. Not all questions of interest can be answered using existing data sets, but to the degree that they can, the use of these shared data instead of collecting redundant new data could be a significant source of savings for researchers, allowing more money to be spent on personnel involved in data analysis.
+\paragraph{Mutisite}
+In most experiments conducted in neuroimaging, the main factors that influence power are: (1) the size of the effect, determined by the difference of the mean connectivity of one group versus a control group and the variability of this difference across subjects and groups; and (2) the sample size, i.e. the number of subjects in the study \citep{Desmond2002}. This last factor is usually the only one controlled by the investigator, hence why an increasing number of researchers share data. Multisite studies can be classified in two categories, the first one is independent studies that we would like to pool together even though the acquisition protocol are heterogeneous like the 1000 functional connectome project. The second category is the standardised studies across multiple sites, were a strict protocol is in place to harmonize the sites and an effort to homogenize the scanner parameters et acquisition protocols as been done like the ADNI dataset. Various reasons can justify multisite analysis, in research it is very difficult to obtain a grant large enough to scan a cohort larger than ~80 subjects, therefore researcher and consortium initiatives have started to pool their resources together to make initiative composed of publicly available large cohorts of subjects like the 1000 functional connectome \citep{Biswal2010}, ADNI \citep{Mueller2005}, among 
+others. In clinical trial the justification for multicentric acquisition is more of a logistical one then a financial reason; they need to recruit a large amount of subject in a short period of time. In order to achieve this goal they mandate the recruitment to multiple clinical centers across the globe which accelerate the evaluation time of a drug. Although these centers may be similar by their scanner protocols, scanners will have difference in their software version, specific add-on to the scanners, and, most importantly, vendors (even field strength may differ in some cases). Unfortunately between studies, MR acquisition methodologies are among the most commonly cited sources of measurement variation \citep{Friedman2006}. This is why it is important to assess if multi-site resting-state connectivity analysis are feasible (we can combine the data from multiple sources while introducing a reasonable amount of variance which is still acceptable to detect effects in the data) and what corrective measure on the data should be applied to reduce the bias introduced by multisite analysis. 
+
+%grosse etude multicentrique pour les grosse étude 
+%CORR, ADHD200, INDI 
+%(1000 functional connectome project, CORR, ABIDE, ...)
+%datasharing d'étude multiple 
 
 
-In most experiments conducted in neuroimaging, the main factors that influence power are: (1) the size of the effect, determined by the difference of the mean connectivity of one group versus a control group and the variability of this difference across subjects and groups; and (2) the sample size, i.e. the number of subjects in the study \citep{Desmond2002}. This last factor is usually the only one controlled by the investigator, hence why an increasing number of researchers share multicentric, sometimes multiprotocol, data suitable to statistical analysis. In research it is very difficult to obtain a grant large enough to scan a cohort larger than ~80 subjects, therefore researcher and consortium initiatives have started to pool their resources together to make initiative composed of publicly available large cohorts of subjects like the 1000 functional connectome \citep{Biswal2010}, ADNI \citep{
-Mueller2005}, among 
-others. In clinical trial the justification for multicentric acquisition is more of a logistical one then a financial reason; they need to recruit a large amount of subject in a short period of time. In order to achieve this goal they mandate the recruitment to multiple clinical centers across the globe which accelerate the evaluation time of a drug. Although these centers may be similar by their scanner protocols, scanners will have difference in their software version, specific add-on to the scanners, and, most importantly, vendors (even field strength may differ in some cases). Unfortunately between studies, MR acquisition methodologies are among the most commonly cited sources of measurement variation \citep{Friedman2006}. This is why it is important to assess if multi-site resting-state connectivity analysis are feasible (we can combine the data from multiple sources while introducing a reasonable amount of variance which is still acceptable to detect effects in the data) and what corrective measure on 
-the data should be applied to reduce the bias introduced by multi-site analysis. Among the factor of variability across sites, we can list the following 3 categories described in \citep{Yan2013a}:
+%\textbf{Difficulty of increasing the sample size}
+%\begin{itemize}
+%\item Collecting a large sample size is very expensive.
+%\item Recruitment may be difficult at a single site.
+%\item Large sample size can be achieved in multisite study.
+%\item Multisite studies come with problems of their own.
+%\end{itemize}
 
 
+\paragraph{Sources of variance across sites}
+%%\frametitle{Source of variance across sites}
+%\begin{itemize}
+%\item \textbf{Inclusion/exclusion criteria.}
+%\item \textbf{Socio-cultural characteristics of recruiting sites} \\(e.g., ethnicity, language, diet, socioeconomic status).
+%\item \textbf{Acquisition-related factors} \\(e.g., scanner make and model, sequence type, coil type, repetition time, flip angle, acquisition volume, etc).
+%\item \textbf{Experimental design-related variations} \\(e.g., eyes-open/closed, experiment duration, instruction to participant).
+%\item \textbf{Environmental-related variations} \\(e.g., sound, room temperature, head-motion restraint).
+%\end{itemize}
+%
+%
+%\textit{
+%\begin{enumerate}
+%\item Acquisition-related variations:
+%\begin{enumerate}
+%\item Scanner make and model \citep{Friedman2006}
+%\item Sequence type (spiral vs. echo planar; single-echo vs. multi-echo) \citep{Klarhoefer2002}, parallel vs. conventional acquisition \citep{Feinberg2010} \citep{Lin2005}
+%\item Coil type (surface vs. volume, number of channels, orientation).
+%\item Acquisition parameters: repetition time, number of repetitions, flip angle, echo time, and acquisition volume (field of view, voxel size, slice thickness/gaps, slice prescription) \citep{Friedman2006a}.
+%\end{enumerate}
+%\item Experimental-related variations: 
+%\begin{enumerate}
+%\item Participant instructions \citep{Hartstra2011}, eyes-open/eyes-closed \citep{Yan2009} \citep{Yang2007}, visual displays, experiment duration \citep{Fang2007} \citep{VanDijk2010}.
+%\end{enumerate}
+%\item Environment-related variations: 
+%\begin{enumerate}
+%\item Sound attenuation measures \citep{Cho1998} \citep{Elliott1999}.
+%\item Attempts to improve participant comfort during scans (e.g., music, videos) \citep{Cullen2009}.
+%\item Head-motion restraint techniques (e.g., vacuum pad, foam pad, bite-bar, plaster cast head holder) \citep{Edward2000} \citep{Menon1997}.
+%\item Room temperature and moisture \citep{Vanhoutte2006}.
+%\end{enumerate}
+%\end{enumerate}
+%}
 
-\textbf{Difficulty of increasing the sample size}
-\begin{itemize}
-\item Collecting a large sample size is very expensive.
-\item Recruitment may be difficult at a single site.
-\item Large sample size can be achieved in multisite study.
-\item Multisite studies come with problems of their own.
-\end{itemize}
+% Sources of variance
+Beyond small sample sizes resulting in low statistical power \citep{Kelly2012a} and inconsistency in the results, there are other methodological differences that may compromise the comparison of results across independent studies. For example, the criteria for recruiting subjects may differ among studies. Different study samples may also reflect different socio-cultural characteristics of recruiting sites, e.g., ethnicity, language, diet, socioeconomic status. The fMRI measurements themselves can also be affected by differences in details of the image acquisition such as scanner make and model \citep{Friedman2006}, sequence parameters such as repetition time, flip angle, or acquisition volume \citep{Friedman2006a}, experimental design such as eyes-open/eyes-closed \citep{Yan2009} or experiment duration \citep{VanDijk2010}, and scanning environment such as sound attenuation measures \citep{Elliott1999}, room temperature \citep{Vanhoutte2006}, or head-motion restraint techniques \citep{Edward2000}. 
+% Transition to the main question and the dataset used
+Knowing that there is several sources of variance, the question is how much do they affect our analysis and does the trade-off of pooling datasets in exchange for increase variance and sample size worth it. Fortunately some resources exist that allow us to evaluate this question  empirically. 
 
+\paragraph{Evaluation dataset} In 2009, the publicly released 1000 Functional Connectomes Project (FCP) and International Neuroimaging Data-sharing Initiative (INDI) provided a glimpse of the variability in imaging methodologies employed by the neuroimaging field. The dataset includes rs-fMRI samples independently collected at imaging sites around the world. A noteworthy aspect of this dataset is the variation in almost every parameter of the imaging acquisition methodologies, while the majority of subject-related variables are not reported (due in most cases, to the fact that they were not thoroughly recorded). 
+Despite justifiable scepticism, feasibility analyses demonstrated that meaningful explorations of the aggregate dataset, composed of 24 imaging sites for a grand total of 1093 subjects, could be performed \citep{Biswal2010}. Although no explicit correction for multi-site variability was used, they only use global signal correction (GSC) to normalize subjects which may introduce anti-correlation in the data \citep{Fox2009, Murphy2009, Saad2012, Carbonell2014, Power2014}. After accounting for site-related differences, the analysis showed brain-behaviour relationships with phenotypic variables such as age, gender, and diagnostic label, and confirmed a variety of prior hypotheses \citep{Biswal2010, Fair2012, Tomasi2010, Zuo2012}. While encouraging, many uncontrolled and unknown factors in the 1000 FCP remain a source of concern, as they spread beyond simple site effects and can limit the datasets utility as highlighted by \cite{Yan2013}. An other compelling proof of multi-site bias is the study reported by \cite{Nielsen2013} where they did an analysis on a single site dataset and a multi-site dataset of subject with autism and concluded that the multi-site autism study classification accuracy significantly outperformed chance but was much lower for multi-site prediction than for previous single site results \citep{Nielsen2013}. We therefore need to keep in mind that the site effect must be taken in account in the analysis or we may reduce our detection power.
 
-\paragraph{Source of variance across sites} 
-%\frametitle{Source of variance across sites}
-\begin{itemize}
-\item \textbf{Inclusion/exclusion criteria.}
-\item \textbf{Socio-cultural characteristics of recruiting sites} \\(e.g., ethnicity, language, diet, socioeconomic status).
-\item \textbf{Acquisition-related factors} \\(e.g., scanner make and model, sequence type, coil type, repetition time, flip angle, acquisition volume, etc).
-\item \textbf{Experimental design-related variations} \\(e.g., eyes-open/closed, experiment duration, instruction to participant).
-\item \textbf{Environmental-related variations} \\(e.g., sound, room temperature, head-motion restraint).
-\end{itemize}
-
-
-\textit{
-\begin{enumerate}
-\item Acquisition-related variations:
-\begin{enumerate}
-\item Scanner make and model \citep{Friedman2006}
-\item Sequence type (spiral vs. echo planar; single-echo vs. multi-echo) \citep{Klarhoefer2002}, parallel vs. conventional acquisition \citep{Feinberg2010} \citep{Lin2005}
-\item Coil type (surface vs. volume, number of channels, orientation).
-\item Acquisition parameters: repetition time, number of repetitions, flip angle, echo time, and acquisition volume (field of view, voxel size, slice thickness/gaps, slice prescription) \citep{Friedman2006a}.
-\end{enumerate}
-\item Experimental-related variations: 
-\begin{enumerate}
-\item Participant instructions \citep{Hartstra2011}, eyes-open/eyes-closed \citep{Yan2009} \citep{Yang2007}, visual displays, experiment duration \citep{Fang2007} \citep{VanDijk2010}.
-\end{enumerate}
-\item Environment-related variations: 
-\begin{enumerate}
-\item Sound attenuation measures \citep{Cho1998} \citep{Elliott1999}.
-\item Attempts to improve participant comfort during scans (e.g., music, videos) \citep{Cullen2009}.
-\item Head-motion restraint techniques (e.g., vacuum pad, foam pad, bite-bar, plaster cast head holder) \citep{Edward2000} \citep{Menon1997}.
-\item Room temperature and moisture \citep{Vanhoutte2006}.
-\end{enumerate}
-\end{enumerate}
-}
-
-
-
-
-
-
-In 2009, the publicly released 1000 Functional Connectomes Project (FCP) and International Neuroimaging Data-sharing Initiative (INDI) provided a glimpse of the variability in imaging methodologies employed by the neuroimaging field. The dataset includes rs-fMRI samples independently collected at imaging sites around the world. A noteworthy aspect of this dataset is the variation in almost every parameter of the imaging acquisition methodologies, while the majority of subject-related variables are not reported (due in most cases, to the fact that they were not thoroughly recorded). 
-Despite justifiable scepticism, feasibility analyses demonstrated that meaningful explorations of the aggregate dataset, composed of 24 imaging sites for a grand total of 1093 subjects, could be performed \citep{Biswal2010}. Although no explicit correction for multi-site variability was used, they only use global signal correction (GSC) to normalize subjects which may introduce anti-correlation in the data \citep{Fox2009, Murphy2009, Saad2012, Carbonell2014, Power2014}. After accounting for site-related differences, the analysis showed brain-behaviour relationships with phenotypic variables such as age, gender, and diagnostic label, and confirmed a variety of prior hypotheses \citep{Biswal2010, Fair2012, Tomasi2010, Zuo2012}. While encouraging, many uncontrolled and unknown factors in the 1000 FCP remain a source of concern, as they spread beyond simple site effects and can limit the datasets utility as highlighted by \cite{Yan2013}.
-An other compelling proof of multi-site bias is the study reported by \cite{Nielsen2013} where they did an analysis on a single site dataset and a multi-site dataset of subject with autism and concluded that the multi-site autism study classification accuracy significantly outperformed chance but was much lower for multi-site prediction than for previous single site results \citep{Nielsen2013}. We therefore need to keep in mind that the site effect must be taken in account in the analysis or we may reduce our detection power.
 
 \paragraph{Specific objectives} 
-
-\begin{itemize}
- \item Propose a method to account for multisite variance in a general linear model analysis. %Evaluate our ability to correct for inter-site variance using a statistical model.
- \item Amount of variance intra-site and inter-site. %Characterize the amplitude of inter-site bias.
- \item Quantify the impact of inter-site biases on the detection power of a rs-fMRI effect.
- \begin{itemize}
- \item How sample size in multi-centric topology impact sensitivity.
- \item How group balancing in multi-centric topology impact sensitivity.
- \item Interaction of site-pathology and it's impact on detection power.
- \end{itemize}
-\end{itemize}
-
-
-\paragraph{Other info} 
-Cite for the urgency of using pool mutisite data for neuro-imaging analysis \cite{Cheng2015}.
-
+The main potential issue with that approach is the lack of consistency in the multisite RS connectivity acquisitions that may obscure clinically relevant information. Therefore the aims of the study were to: (1) characterize the amplitude of the intra-site and inter-site connectivity bias, i.e. the systematic differences in rs-fMRI connectivity across different acquisition sites; (2) Quantify the impact of the inter-site variance on the detection power of a rs-fMRI effect. More specifically how sample size, group balancing and interaction of site-pathology in multi-centric topology impact sensitivity.
 
 \section{Method}
 
@@ -173,7 +171,7 @@ The paper studies 345 cognitively normal young adults (CNY) from the 1000 functi
 \paragraph{Acquisition} %Resting-state scans were acquired on a 3T Siemens TrioTim for all datasets. One single run was obtained per subject for either the SCHIZO or BLIND dataset while two runs were acquired in each subject for the MOTOR dataset, one immediately preceding and one following the practice on a motor task. 
 %For the 1000 functional connectom dataset, 150 EPI volumes were recorded in 6 mins 40 s (TR = 2.65s, TE = 30ms, FA = 90\textdegree, 43 slices, voxel size = 3.4x3.4x3 mm$^3$, gap = 10\%, matrix size = 64x64, FOV = 220x220 mm$^2$), and a structural image was acquired using a MPRAGE sequence (TR = 2.3~s, TE = 2.98~ms, FA = 9\textdegree, 176 slices, voxel size = 1x1x1 mm$^3$, matrix size = 256x256, FOV = 256x256 mm$^2$).
 
-We need to discuss how to present this data (I dont have the details for each site...)
+We need to discuss how to present this data (I don't have the details for each site...)
 
 \subsection{Preprocessing}\label{Preprocessing}
 The datasets were analysed using the NeuroImaging Analysis Kit (NIAK\footnote{\url{http://www.nitrc.org/projects/niak/}}) version 0.12.14, under CentOS version 6.3 with Octave\footnote{\url{http://gnu.octave.org}} version 3.8.1 and the Minc toolkit\footnote{\url{http://www.bic.mni.mcgill.ca/ServicesSoftware/ServicesSoftwareMincToolKit}} version 0.3.18. Analyses were executed in parallel on the "Mammouth" supercomputer\footnote{\url{http://www.calculquebec.ca/index.php/en/resources/compute-servers/mammouth-parallele-ii}}, using the pipeline system for Octave and Matlab \citep{Bellec2010}, version 1.0.2. Brain map visualizations were created using MRICron software \cite{Rorden2007}. Each fMRI dataset was corrected of inter-slice difference in acquisition time and the parameters of a rigid-body motion was estimated for each time frame. Rigid-body motion was estimated within as well as between runs, using the median volume of the first run as a target. The median volume of one selected fMRI run for each subject 
@@ -280,21 +278,21 @@ with $N$ the number of subjects, $K$ the number of explainable variables and $S$
 
 
 
-\paragraph{Framewise displacement (FD)}
-Index measure of head motion from one frame to the other. It is calculated as the sum of the absolute values of the differentiated realignment estimates at every time point \citep{Power2012} this measure give us an approximation of the motion frame by frame in millimeter. We are using this measure as an index of motion estimation.
-
-\begin{equation}
-    FD_{i} = \vert \triangle d_{x}(t) \vert + \vert \triangle d_{y}(t) \vert + \vert \triangle d_{z}(t) \vert + \vert \triangle r_x(t) \vert + \vert \triangle r_y(t) \vert + \vert \triangle r_z(t) \vert,
-\end{equation}
-\begin{equation}
-  r_x(t) = 50\left(\frac{2\pi\alpha_x(t)}{360}\right),
-\end{equation}
-with 
-\begin{itemize}
- \item ($d_x(t),d_{y}(t),d_{z}(t)$) translation parameters (mm),
- \item ($\alpha_x(t),\alpha_y(t),\alpha_z(t)$) rotation parameters (degres),
- \item $\triangle$ difference between time $t$ et $t-1$.
-\end{itemize}
+%\paragraph{Framewise displacement (FD)}
+%Index measure of head motion from one frame to the other. It is calculated as the sum of the absolute values of the differentiated realignment estimates at every time point \citep{Power2012} this measure give us an approximation of the motion frame by frame in millimeter. We are using this measure as an index of motion estimation.
+%
+%\begin{equation}
+%    FD_{i} = \vert \triangle d_{x}(t) \vert + \vert \triangle d_{y}(t) \vert + \vert \triangle d_{z}(t) \vert + \vert \triangle r_x(t) \vert + \vert \triangle r_y(t) \vert + \vert \triangle r_z(t) \vert,
+%\end{equation}
+%\begin{equation}
+%  r_x(t) = 50\left(\frac{2\pi\alpha_x(t)}{360}\right),
+%\end{equation}
+%with 
+%\begin{itemize}
+% \item ($d_x(t),d_{y}(t),d_{z}(t)$) translation parameters (mm),
+% \item ($\alpha_x(t),\alpha_y(t),\alpha_z(t)$) rotation parameters (degres),
+% \item $\triangle$ difference between time $t$ et $t-1$.
+%\end{itemize}
 
 
 \section{Results}
