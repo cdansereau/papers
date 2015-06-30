@@ -168,6 +168,25 @@ The main potential issue with that approach is the lack of consistency in the mu
 \paragraph{Participants}
 The paper studies 345 cognitively normal young adults (CNY) from the 1000 functional connectome project\footnote{\url{http://fcon_1000.projects.nitrc.org/}} (150 males, age range = 18-46 yrs) as a reference dataset. One of the particularity of this dataset is the presence of one large site of $\sim200$ subjects and 7 small sites of $\sim20$ subjects per site. We are therefore able to simulate realistic scenarios where we model the variability of a real monosite and the variability introduce by combining small sites into a large sample of the same total sample size, see Table \ref{table_dataset} for more details on each site. The experimental protocols for all datasets were approved by there respective ethic boards.
 
+
+\begin{table}[tbp]
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lllllllllll}
+\textbf{Site}         & \textbf{Magnet} & \textbf{Scaner brand} & \textbf{Channels} & \textbf{N} & \textbf{N final} & \textbf{Sex} & \textbf{Age} & \textbf{TR} & \textbf{\# Slices} & \textbf{\# Frames} \\
+Baltimore, USA        & 3T              & N/A                   & N/A               & 23   & 21         & 8M/15F       & 20-40        & 2.5         & 47                 & 123                \\
+Berlin, Germany       & 3T              & Siemens Tim Trio      & 12                & 26   & 26         & 13M/13F      & 23-44        & 2.3         & 34                 & 195                \\
+Cambridge, USA        & 3T              & Siemens Tim Trio      & 12                & 198  & 195        & 75M/123F     & 18-30        & 3           & 47                 & 119                \\
+Newark, USA           & 3T              & N/A                   & N/A               & 19   & 17         & 9M/10F       & 21-39        & 2           & 32                 & 135                \\
+NewYork\_b, USA       & 3T              & Siemens               & N/A               & 20   & 18         & 8M/12F       & 18-46        & 2           & 33                 & 175                \\
+Oxford, UK            & 3T              & Siemens Tim Trio      & 12                & 22   & 20         & 12M/10F      & 20-35        & 2           & 34                 & 175                \\
+Queensland, Australia & 4T              & Bruker                & 1                 & 19   & 17         & 11M/8F       & 20-34        & 2.1         & 36                 & 190                \\
+SaintLouis, USA       & 3T              & Siemens Tim Trio      & 12                & 31   & 31         & 14M/17F      & 21-29        & 2.5         & 32                 & 127               
+\end{tabular}
+}
+\caption{Site selected from the 1000 functional connectome dataset.} 
+\label{table_dataset}
+\end{table}
+
 \paragraph{Acquisition} %Resting-state scans were acquired on a 3T Siemens TrioTim for all datasets. One single run was obtained per subject for either the SCHIZO or BLIND dataset while two runs were acquired in each subject for the MOTOR dataset, one immediately preceding and one following the practice on a motor task. 
 %For the 1000 functional connectom dataset, 150 EPI volumes were recorded in 6 mins 40 s (TR = 2.65s, TE = 30ms, FA = 90\textdegree, 43 slices, voxel size = 3.4x3.4x3 mm$^3$, gap = 10\%, matrix size = 64x64, FOV = 220x220 mm$^2$), and a structural image was acquired using a MPRAGE sequence (TR = 2.3~s, TE = 2.98~ms, FA = 9\textdegree, 176 slices, voxel size = 1x1x1 mm$^3$, matrix size = 256x256, FOV = 256x256 mm$^2$).
 
@@ -195,6 +214,7 @@ Using a brain partition of $R$ networks obtain from BASC procedure described in 
 
 \subsection{Simulations}
 
+% 
 \paragraph{Power analysis for a resting-state fMRI study}
 A Monte-Carlo simulation was implemented to evaluate the power of a resting-state multi-site study. For each site and each sample, $B\%$ of the subjects were randomly assigned to a 'treatment' group. For the subjects in this group, a value was added to achieve a given relative effect size (Cohen's d, i.e. the mean of the two groups divided by the standard deviation of all sites). The significance of the difference between the control and 'treatment' group was assessed by a $t$-test in a linear model. To account for site-specific bias we have included dummy variables in the GLM model. The study was repeated for various effect sizes (0 to 1.5 with a step of 0.01) at a threshold of 0.001 on the p-value in the $t$-test.
 
@@ -350,10 +370,10 @@ with $N$ the number of subjects, $K$ the number of explainable variables and $S$
 % \item[•] local efficiency PCUN
 % \end{itemize}
 
+\subsection{Inter-site variability}
+The first assessment perform on the dataset was to verify the distribution of the variance in functional connectivity among each site and across sites in order to see if they are of the same order of magnitude or not. This analysis of Figure \ref{fig_site_variability} shows the distribution of the standard deviation in connectivity across subjects (the distribution is over the full brain connectome, with several 1000s connections) at the 8 sites against the inter-sites standard deviation of connectomes (average at each site). As we can see the inter-site (between-site) variability is smaller than the intra-site (between subjects) variability, in fact the amplitude of inter-site bias is about 3-fold smaller than the within-site standard deviation (red $\sim 0.06$ vs. orange $\sim 0.18$).
 
-The first assessment perform on the dataset was to verify the distribution of the variance in functional connectivity among each site and across sites in order to see if they are of the same order of magnitude or not. This analysis of Figure \ref{fig_site_variability} shows the distribution of the standard deviation of connectivity across subjects (the distribution is over the full brain connectome, with several 1000s connections) at the 8 sites against the inter-sites standard deviation of connectomes (average at each site). as we can see the inter-site (between site) variability is smaller than the intra-site (between subjects) variability. As we can see the amplitude of inter-site bias is about 3-fold smaller than the within-site standard deviation (red \textasciitilde0.06 vs. orange \textasciitilde0.18).
-
-\begin{figure}[H!]
+\begin{figure}[tbp]
 \begin{center}
 \includegraphics[width=\linewidth]{../figures/inter_vs_intra_3tonly.png}
 \end{center}
@@ -363,267 +383,51 @@ The first assessment perform on the dataset was to verify the distribution of th
 \label{fig_site_variability}
 \end{figure}
 
-In order to verify how spatial structure vary across sites the average standard deviation and the average connectivity map of the DMN were extracted for each site and reported in Figure \ref{fig_DMN_variability}. As we can see in the intersection between two sites the difference in average connectivity between-sites is illustrated (red set of brain cuts). First the mean DMN at each site is consistent with the expected spatial distribution reported in other studies \citep{Damoiseaux2006,Dansereau2014,Yan2013a}. The most salient changes between-sites are located in the mesio-frontal region associated with the anterior part of the DMN. In order to verify if significant changes are not only found in the DMN we have look at the other connectivity patterns and the findings can be generalized to the full connectome see Figure \ref{fig_connectome_variability}.
+In order to verify how spatial structure vary across sites the average standard deviation and the average connectivity map of the DMN were extracted for each site and reported in Figure \ref{fig_DMN_variability}. As we can see in the intersection between two sites the difference in average connectivity between-sites is illustrated (red set of brain cuts). First the mean DMN at each site is consistent with the expected spatial distribution reported in other studies \citep{Damoiseaux2006,Dansereau2014,Yan2013a}. The most salient changes between-sites are located in the mesio-frontal region associated with the anterior part of the DMN. In order to verify if significant changes are not only found in the DMN we have computed the entier connectome in order to obtain the other connectivity patterns and the findings can be generalized to the full connectome see Figure \ref{fig_connectome_variability}.
 
-\begin{figure}[H!]
+\begin{figure}[tbp]
 \begin{center}
 \includegraphics[width=\linewidth]{../figures/pccmap_multisite.png}
 \end{center}
 \caption[DMN variability across sites]{
-Functional connectivity maps of the default-mode network at multiple sites. The average connectivity map are shown on the diagonal (left). The standard deviation across subjects and within site is shown on the first column. Each off-diagonal block represent the significant differences between the average functional connectivity maps between two sites (called the inter-site bias).
+Functional connectivity maps of the default-mode network at multiple sites. The average connectivity map are shown on the diagonal. The standard deviation across subjects and within site is shown on the first column. Each off-diagonal block represent the significant differences between the average functional connectivity maps between two sites (called the inter-site bias).
 }
 \label{fig_DMN_variability}
 \end{figure}
 
 
-\begin{figure}[H!]
+\begin{figure}[tbp]
 \begin{center}
 \includegraphics[width=\linewidth]{../figures/connectome_multisite.png}
 \end{center}
 \caption[Connectome variability across sites]{
-Functional connectome for multiple sites. The average connectome of 8 sites (Baltimore, Newark, Berlin, Cambridge, New-Yorkb, Oxford, Queenland and SaintLouis at 3T) are shown on the diagonal (left). The standard deviation across subjects and within site is shown on the first column. Each off-diagonal block represent the absolute difference between the average functional connectivity maps between two sites (called the inter-site bias).
+Functional connectome for multiple sites. The average connectome of 8 sites (Baltimore, Newark, Berlin, Cambridge, New-Yorkb, Oxford, Queenland and SaintLouis at 3T) are shown on the diagonal. The standard deviation across subjects and within site is shown on the first column. Each off-diagonal block represent the absolute difference between the average functional connectivity maps between two sites (called the inter-site bias).
 }
 \label{fig_connectome_variability}
 \end{figure}
 
+\subsection{Simulation on real data}
+% introduction of simulation intro the objectives...
 
-We also showed using Monte-Carlo simulations that the power of detecting an effect is marginally affected by the site acquisition configuration (single site or multi-site, see Figure) where the sites are balanced in term of the amount of subject with and without the effect. 
-
+In order to evaluate the impact of multisite configuration on our ability to detect changes in rs-functional connectivity studies we performed various simulation on real fMRI data. For each site and each sample, $B\%$ of the subjects were randomly assigned to a 'treatment' group. For the subjects in this group, a value was added to achieve a given relative effect size expressed in Cohen's d. The significance of the difference between the control and 'treatment' group was assessed by a $t$-test in a linear model. To account for site-specific bias we have included dummy variables in the GLM model. The study was repeated for various effect sizes (0 to 1.5 with a step of 0.01) at a threshold of 0.001 on the p-value.
 
 Figure \ref{fig_p2p} show the pair of regions used in (TODO ORBAN2015) as candidate marker for functional connectivity changes in Alzheimer disease based on a literature review. We will use the correlation between those regions to estimate the variability across subject and induce some effect in our simulations.
 
-\begin{figure}[H!]
+\begin{figure}[tbp]
 \begin{center}
 \includegraphics[width=0.5\linewidth]{../figures/p2p_seeds.pdf}
 \end{center}
-\tiny{Connexions pair based on a literature review}
+\caption{
+Connexions pair based on a literature review.
+}
 \label{fig_p2p}
 \end{figure}
 
-% 
-% \begin{figure*}
-%         \centering
-%         \begin{subfigure}[b]{0.31\textwidth}
-%             \centering
-%             \includegraphics[width=\textwidth]{../figures/realdata_detect_pow_s40_50pct.pdf}
-%             %\caption[]%
-%             {{\tiny 40 subjects}}    
-%             \label{fig:mean and std of net14}
-%         \end{subfigure}
-%         \hfill
-%         \begin{subfigure}[b]{0.31\textwidth}  
-%             \centering 
-%             \includegraphics[width=\textwidth]{../figures/realdata_detect_pow_s80_50pct.pdf}
-%             %\caption[]%
-%             {{\tiny 80 subjects}}    
-%             \label{fig:mean and std of net24}
-%         \end{subfigure}
-%         \hfill
-%         \begin{subfigure}[b]{0.31\textwidth}   
-%             \centering 
-%             \includegraphics[width=\textwidth]{../figures/realdata_detect_pow_s120_50pct.pdf}
-%             %\caption[]%
-%             {{\tiny 120 subjects}}    
-%             \label{fig:mean and std of net34}
-%         \end{subfigure}
-%         \caption[]
-%         {\small Simulation on real data of the detection power of two groups balanced 50\%-50\% between 7 sites. All plot show four scenario, one monosite, 7 sites with no correction for differences in variability between sites, 7 sites with correction for multisite differences using dummy variables and 7 sites with correction for multisite differences using METAL weighted average. Each plot show the detection power in function of the effect size for 3 different sample size 40, 80 and 120 subjects in total.} 
-%         \label{fig:real_sim_samplesize_5050}
-%     \end{figure*}
-%     
-%     
-% \begin{figure*}
-%         \centering
-%         \begin{subfigure}[b]{0.31\textwidth}
-%             \centering
-%             \includegraphics[width=\textwidth]{../figures/realdata_detect_pow_s120_50pct.pdf}
-%             %\caption[]%
-%             {{\tiny balancing 50\%}}    
-%             \label{fig:mean and std of net14}
-%         \end{subfigure}
-%         \hfill
-%         \begin{subfigure}[b]{0.31\textwidth}  
-%             \centering 
-%             \includegraphics[width=\textwidth]{../figures/realdata_detect_pow_s120_30pct.pdf}
-%             %\caption[]%
-%             {{\tiny balancing 30\%}}    
-%             \label{fig:mean and std of net24}
-%         \end{subfigure}
-%         \hfill
-%         \begin{subfigure}[b]{0.31\textwidth}   
-%             \centering 
-%             \includegraphics[width=\textwidth]{../figures/realdata_detect_pow_s120_15pct.pdf}
-%             %\caption[]%
-%             {{\tiny balancing 15\%}}    
-%             \label{fig:mean and std of net34}
-%         \end{subfigure}
-%         \caption[]
-%         {\small Simulation on real data of the detection power of two groups for a total of 120 subject between 7 sites. All plot show four scenario, one monosite, 7 sites with no correction for differences in variability between sites, 7 sites with correction for multisite differences using dummy variables and 7 sites with correction for multisite differences using METAL weighted average.} 
-%         \label{fig:real_sim_samplesize_varbalancing}
-%     \end{figure*}
-%     
-% \begin{figure*}
-%         \centering
-%         \begin{subfigure}[b]{0.31\textwidth}
-%             \centering
-%             \includegraphics[width=\textwidth]{../figures/realdata_detect_pow_sitepatho_s120_50pct.pdf}
-%             %\caption[]%
-%             {{\tiny balancing 50\%}}    
-%             \label{fig:mean and std of net14}
-%         \end{subfigure}
-%         \hfill
-%         \begin{subfigure}[b]{0.31\textwidth}  
-%             \centering 
-%             \includegraphics[width=\textwidth]{../figures/realdata_detect_pow_sitepatho_s120_30pct.pdf}
-%             %\caption[]%
-%             {{\tiny balancing 30\%}}    
-%             \label{fig:mean and std of net24}
-%         \end{subfigure}
-%         \hfill
-%         \begin{subfigure}[b]{0.31\textwidth}   
-%             \centering 
-%             \includegraphics[width=\textwidth]{../figures/realdata_detect_pow_sitepatho_s120_15pct.pdf}
-%             %\caption[]%
-%             {{\tiny balancing 15\%}}    
-%             \label{fig:mean and std of net34}
-%         \end{subfigure}
-%         \caption[]
-%         {\small Simulation on real data of the detection power of two groups for a total of 120 subject between 7 sites. All plot show four scenario, one monosite, 7 sites with no correction for differences in variability between sites, 7 sites with correction for multisite differences using dummy variables and 7 sites with correction for multisite differences using METAL weighted average.}
-%          
-%         \label{fig:real_sim_samplesize_5050}
-% \end{figure*}
-%     
-% \begin{figure*}
-%         \centering
-%         \begin{subfigure}[b]{0.475\textwidth}
-%             \centering
-%             \includegraphics[width=\textwidth]{../figures/detect_pow_bal5050_var0_site0.pdf}
-%             %\caption[]% 
-%             {{\tiny No site effect}}    
-%             \label{fig:mean and std of net14}
-%         \end{subfigure}
-%         \hfill
-%         \begin{subfigure}[b]{0.475\textwidth}  
-%             \centering 
-%             \includegraphics[width=\textwidth]{../figures/detect_pow_bal5050_var0_site05.pdf}
-%             %\caption[]%
-%             {{\tiny Site effect of 0.5}}    
-%             \label{fig:mean and std of net24}
-%         \end{subfigure}
-%         \vskip\baselineskip
-%         \begin{subfigure}[b]{0.475\textwidth}   
-%             \centering 
-%             \includegraphics[width=\textwidth]{../figures/detect_pow_bal5050_var2_site0.pdf}
-%             %\caption[]%
-%             {{\tiny Patho effect in function of site}}    
-%             \label{fig:mean and std of net34}
-%         \end{subfigure}
-%         \quad
-%         \begin{subfigure}[b]{0.475\textwidth}   
-%             \centering 
-%             \includegraphics[width=\textwidth]{../figures/detect_pow_bal5050_var2_site05.pdf}
-%             %\caption[]%
-%             {{\tiny Patho effect in function of site + site effect}}    
-%             \label{fig:mean and std of net44}
-%         \end{subfigure}
-%         \caption[]
-%         {\small Simulation of the detection power of two groups balanced 50\%-50\% between two sites. All plot show four scenario, one monosite, two sites with no correction for differences in variability between sites, two sites with correction for multisite differences using dummy variables and two sites with correction for multisite differences using METAL weighted average. The plots show the detection power when the variability is greater in one side then the other for the pathology group (twice the reference variability in one site and half the reference variability in the other one)} 
-%         \label{fig:sim_5050}
-%     \end{figure*}
-%     
-%     
-%     
-% \begin{figure*}
-%         \centering
-%         \begin{subfigure}[b]{0.475\textwidth}
-%             \centering
-%             \includegraphics[width=\textwidth]{../figures/detect_pow_bal7030_var0_site0.pdf}
-%             %\caption[]%
-%             {{\tiny No site effect}}    
-%             \label{fig:mean and std of net14}
-%         \end{subfigure}
-%         \hfill
-%         \begin{subfigure}[b]{0.475\textwidth}  
-%             \centering 
-%             \includegraphics[width=\textwidth]{../figures/detect_pow_bal7030_var0_site05.pdf}
-%             %\caption[]%
-%             {{\tiny Site effect of 0.5}}    
-%             \label{fig:mean and std of net24}
-%         \end{subfigure}
-%         \vskip\baselineskip
-%         \begin{subfigure}[b]{0.475\textwidth}   
-%             \centering 
-%             \includegraphics[width=\textwidth]{../figures/detect_pow_bal7030_var2_site0.pdf}
-%             %\caption[]%
-%             {{\tiny Patho effect in function of site}}    
-%             \label{fig:mean and std of net34}
-%         \end{subfigure}
-%         \quad
-%         \begin{subfigure}[b]{0.475\textwidth}   
-%             \centering 
-%             \includegraphics[width=\textwidth]{../figures/detect_pow_bal7030_var2_site05.pdf}
-%             %\caption[]%
-%             {{\tiny Patho effect in function of site + site effect}}    
-%             \label{fig:mean and std of net44}
-%         \end{subfigure}
-%         \caption[]
-%         {\small balance 70\%-30\%} 
-%         \label{fig:mean and std of nets}
-%     \end{figure*}
-%     
-%     
-% \begin{figure*}
-%         \centering
-%         \begin{subfigure}[b]{0.475\textwidth}
-%             \centering
-%             \includegraphics[width=\textwidth]{../figures/detect_pow_2080bal5050_var2_site0.pdf}
-%             %\caption[]%
-%             {\tiny{ Patho effect in function of site}}    
-%             \label{fig:2080 bal5050 var2 site0}
-%         \end{subfigure}
-%         \hfill
-%         \begin{subfigure}[b]{0.475\textwidth}  
-%             \centering 
-%             \includegraphics[width=\textwidth]{../figures/detect_pow_2080bal5050_var2_site05.pdf}
-%             %\caption[]%
-%             {{\tiny Patho effect in function of site + site effect}}    
-%             \label{fig:2080 bal5050 var2 site05}
-%         \end{subfigure}
-%         \caption[]
-%         {\small Small and big site, balance 50\%-50\%} 
-%         \label{fig:mean and std of nets}
-%     \end{figure*}
-% 
-% 
-% \begin{figure*}
-%         \centering
-%         \begin{subfigure}[b]{0.475\textwidth}
-%             \centering
-%             \includegraphics[width=\textwidth]{../figures/detect_pow_2080bal7030_var2_site0.pdf}
-%             %\caption[]%
-%             {\tiny{ Patho effect in function of site}}    
-%             \label{fig:2080 bal7030 var2 site0}
-%         \end{subfigure}
-%         \hfill
-%         \begin{subfigure}[b]{0.475\textwidth}  
-%             \centering 
-%             \includegraphics[width=\textwidth]{../figures/detect_pow_2080bal7030_var2_site05.pdf}
-%             %\caption[]%
-%             {{\tiny Patho effect in function of site + site effect}}    
-%             \label{fig:2080 bal7030 var2 site05}
-%         \end{subfigure}
-%         \caption[]
-%         {\small Small and big site, balance 70\%-30\%} 
-%         \label{fig:mean and std of nets}
-%     \end{figure*}
-% 
-% \section{Conclusion}
-% 
 
 In Figure \ref{fig_real_sim_samplesize} we show the effect of the sample size on the detection power. As expected we are able to detect smaller and smaller effect size as we increase the sample size. For an effect size of 1 which is considered a large effect we are able to detect significant changes in only 20\% of the cases at 40 subjects, 80\% at 80 subjects and almost 95\% at 120\% subjects.
 
 %\frametitle{Effect of sample size: \\real data 50\%-50\% debalancing}
-\begin{figure}[H!]
+\begin{figure}[tbp]
 \centering
 \captionsetup[subfloat]{labelformat=empty}
 \subfloat[][40 subjects]{\includegraphics[width=0.32\textwidth]{../figures/realdata_detect_pow_s40_50pct.pdf}}
@@ -632,7 +436,9 @@ In Figure \ref{fig_real_sim_samplesize} we show the effect of the sample size on
 \hspace{1mm}
 \subfloat[][120 subjects]{\includegraphics[width=0.32\textwidth]{../figures/realdata_detect_pow_s120_50pct.pdf}}
 \hspace{1mm}
-\tiny Simulation on real data, detection power of two groups balanced 50\%-50\% between 7 sites. Two scenarios, 1) monosite and 2) multisite 7 sites with correction for multisite differences using dummy variables. Each plot show the detection power in function of the effect size for 3 different sample size 40, 80 and 120 subjects in total.
+\caption{
+Simulation on real data, detection power of two groups balanced 50\%-50\% between 7 sites. Two scenarios, 1) monosite and 2) multisite 7 sites with correction for multisite differences using dummy variables. Each plot show the detection power in function of the effect size for 3 different sample size 40, 80 and 120 subjects in total.
+}
 \label{fig_real_sim_samplesize}
 \end{figure}
 
@@ -640,7 +446,7 @@ Figure \ref{fig_real_sim_debalancing} show the effect of debalancing the two gro
 
 
 %\frametitle{Debalancing effect: \\real data 120 subjects total}
-\begin{figure}[H!]
+\begin{figure}[tbp]
 \centering
 \captionsetup[subfloat]{labelformat=empty}
 \subfloat[][Debalancing 50\%]{\includegraphics[width=0.32\textwidth]{../figures/realdata_detect_pow_s120_50pct.pdf}}
@@ -649,15 +455,17 @@ Figure \ref{fig_real_sim_debalancing} show the effect of debalancing the two gro
 \hspace{1mm}
 \subfloat[][Debalancing 15\%]{\includegraphics[width=0.32\textwidth]{../figures/realdata_detect_pow_s120_15pct.pdf}}
 \hspace{1mm}
-\tiny Simulation on real data, detection power of two groups for a total of 120 subject between 7 sites. All plot show two scenarios, 1) monosite and 2) multisite 7 sites with correction for multisite differences using dummy variables.
+\caption{
+Simulation on real data, detection power of two groups for a total of 120 subject between 7 sites. All plot show two scenarios, 1) monosite and 2) multisite 7 sites with correction for multisite differences using dummy variables.
+}
 \label{fig_real_sim_debalancing}
 \end{figure}
 
-Figure \ref{fig_real_sim_debalancing_interact} show the effect of debalancing the two groups at various ratio (50\%-50\% , 30\%-70\% and 15\%-85\%) with an interaction site-pathology for a total sample size of 120 subjects. Has the debalancing increase our ability to detect effect is diminished. As an example for an effect size of 1 we would detect the effect in 98\% of the cases in a 50 balanced scenario, this would go down to 95\% in a 30\%-70\% scenario and to 75\% in a 15\%-85\% debalancing. The particularity of this experiment is the fact that the multisite configuration perform better then the single site meanning that it is better to have interaction of various amplitude across small sites than an average interaction on one large site.
+Figure \ref{fig_real_sim_debalancing_interact} show the effect of debalancing the two groups at various ratio (50\%-50\% , 30\%-70\% and 15\%-85\%) with an interaction site-pathology (0.5 Cohen's d) for a total sample size of 120 subjects. Has the debalancing increase our ability to detect effect is diminished. As an example for an effect size of 1 we would detect the effect in 98\% of the cases in a 50 balanced scenario, this would go down to 95\% in a 30\%-70\% scenario and to 75\% in a 15\%-85\% debalancing. The particularity of this experiment is the fact that the multisite configuration perform better then the single site meanning that it is better to have interaction of various amplitude across small sites than an average interaction on one large site.
 
 
 %\frametitle{Debalancing effect + interaction site-patho: \\real data 120 subjects total}
-\begin{figure}
+\begin{figure}[tbp]
 \centering
 \captionsetup[subfloat]{labelformat=empty}
 \subfloat[][Debalancing 50\%]{\includegraphics[width=0.32\textwidth]{../figures/realdata_detect_pow_sitepatho_s120_50pct.pdf}}
@@ -666,25 +474,34 @@ Figure \ref{fig_real_sim_debalancing_interact} show the effect of debalancing th
 \hspace{1mm}
 \subfloat[][Debalancing 15\%]{\includegraphics[width=0.32\textwidth]{../figures/realdata_detect_pow_sitepatho_s120_15pct.pdf}}
 \hspace{1mm}
-\tiny Simulation on real data, detection power of two groups for a total of 120 subject between 7 sites. All plot show two scenarios, 1) monosite and 2) multisite 7 sites with correction for multisite differences using dummy variables.
+\caption{
+Simulation on real data, detection power of two groups for a total of 120 subject between 7 sites with a site-pathology interaction at 0.5. All plot show two scenarios, 1) monosite and 2) multisite 7 sites with correction for multisite differences using dummy variables.
+}
 \label{fig_real_sim_debalancing_interact}
 \end{figure}
 
 Figure \ref{fig_real_sim_debalancing_2sites} show a scenario of two site one large (80 subjects) and one small ($\sim20$ subjects) unbalanced at 30\%-70\% and the inverse. As we can see the multisite configuration is as good as the monosite.
 
-\begin{figure}[t]
+\begin{figure}[tbp]
 \centering
 \captionsetup[subfloat]{labelformat=empty}
 \subfloat[\tiny 30\%-70\%]{\label{} \includegraphics[width=0.39\textwidth]{../figures/realdata_detect_pow_sitepatho2site_s100_30pct.pdf}} 
 \subfloat[\tiny 70\%-30\%]{\label{} \includegraphics[width=0.39\textwidth]{../figures/realdata_detect_pow_sitepatho2site_s100_70pct.pdf}}\\
-\tiny Simulation on real data, detection power of two groups for a total of 100 subject between 2 sites, one small site of 20 subjects and one large of 80 subjects. All plot show two scenarios, 1) monosite and 2) multisite 2 sites with correction for multisite differences using dummy variables. Simulation of the detection power of two groups balanced 30\% and 70\% between 2 sites.
+\caption{
+Simulation on real data, detection power of two groups for a total of 100 subject between 2 sites, one small site of 20 subjects and one large of 80 subjects. All plot show two scenarios, 1) monosite and 2) multisite 2 sites with correction for multisite differences using dummy variables. Simulation of the detection power of two groups balanced 30\% and 70\% between 2 sites.
+}
 \label{fig_real_sim_debalancing_2sites}
 \end{figure}
+
+Using this Monte-Carlo simulations we have shown that the power of detecting an effect is marginally affected by the site acquisition configuration (single site or multi-site) when the sites are balanced in term of the amount of subject with and without the effect. 
+
+
+\subsection{Simulation on synthetic data}
  
-In order to obtain more control on each of the parameter of the simulation and see if we are able to reproduce previous findings we have used a synthetic model using only synthetic data and the average standard deviation of the Cambridge site connectivity. All plots show four scenarios: The top left plot represent the two configurations one monosite and two sites with correction for multisite differences using dummy variables without site effect. Has expected there is no difference between using 1 large site than combining two site of half the size. The plot on the upper right corner represent the detection power when we apply a site effect on balanced sites, here again not much differences an additive effect is fully compensated by the dummy variables corrective method. the lower left plot represent no site effect but an interaction between site and pathology. An the last plot on the lower right corner show the detection power with a site effect of 0.5 and a interation site pathology.
+In order to obtain more control on each of the parameter of the simulation and simulate some configuration that were not possible to do with the real data (like the simulation of 2 medium size sites of of 40 and 60 subjects per site, and the size of the site effect) we have therefore used a synthetic model using only synthetic data and the average standard deviation of the Cambridge site connectivity. All plots show four scenarios: The top left plot represent the two configurations one monosite and two sites with correction for multisite differences using dummy variables without site effect. Has expected there is no difference between using 1 large site than combining two site of half the size. The plot on the upper right corner represent the detection power when we apply a site effect on balanced sites, here again not much differences an additive effect is fully compensated by the dummy variables corrective method. the lower left plot represent no site effect but an interaction between site and pathology. An the last plot on the lower right corner show the detection power with a site effect of 0.5 and a interation site pathology.
 
 %\begin{frame} \frametitle{50-50 subjects, 50\%-50\% debalancing effect}
- \begin{figure}[t]
+ \begin{figure}[tbp]
    \centering
     \captionsetup[subfloat]{labelformat=empty}
     \subfloat[]{ \includegraphics[width=0.19\textwidth]{../figures/prop_5050subj_5050.pdf}}
@@ -693,14 +510,16 @@ In order to obtain more control on each of the parameter of the simulation and s
      \hspace*{6.8em}
      \subfloat[\tiny Inter site-patho, no site effect]{ \includegraphics[width=0.39\textwidth]{../figures/detect_pow_bal5050_var2_site0.pdf}}
      \subfloat[\tiny Inter site-patho + site effect]{ \includegraphics[width=0.39\textwidth]{../figures/detect_pow_bal5050_var2_site05.pdf}}\\
-     \tiny Simulation of the detection power of two groups balanced 50\%-50\% between two sites. All plots show four scenarios in two configuration one monosite and two sites with correction for multisite differences using dummy variables. The first column represent scenarios without site effect and the second column show with a site effect the first row show simulation with out interaction site-pathology and the second row show with interaction.
+     \caption{
+     Simulation of the detection power of two groups balanced 50\%-50\% between two sites. All plots show four scenarios in two configuration one monosite and two sites with correction for multisite differences using dummy variables. The first column represent scenarios without site effect and the second column show with a site effect the first row show simulation with out interaction site-pathology and the second row show with interaction.
+}
 \label{fig_full_sim_site_effect}
  \end{figure}
  
 
 %
 %\begin{frame} \frametitle{50-50 subjects, 70\%-30\% debalancing effect}
- \begin{figure}[t]
+ \begin{figure}[tbp]
    \centering
     \captionsetup[subfloat]{labelformat=empty}
     \subfloat[]{ \includegraphics[width=0.19\textwidth]{../figures/prop_5050subj_7030.pdf}}
@@ -709,14 +528,16 @@ In order to obtain more control on each of the parameter of the simulation and s
      \hspace*{6.8em}
      \subfloat[\tiny Interac site-patho, no site effect]{\label{} \includegraphics[width=0.39\textwidth]{../figures/detect_pow_bal7030_var2_site0.pdf}}
      \subfloat[\tiny Interac site-patho + site effect]{\label{} \includegraphics[width=0.39\textwidth]{../figures/detect_pow_bal7030_var2_site05.pdf}}\\
-     \tiny Simulation of the detection power of two groups unbalanced 70\%-30\% between two sites. All plots show four scenarios in two configuration one monosite and two sites with correction for multisite differences using dummy variables. The first column represent scenarios without site effect and the second column show with a site effect the first row show simulation with out interaction site-pathology and the second row show with interaction.
+     \caption{
+     Simulation of the detection power of two groups unbalanced 70\%-30\% between two sites. All plots show four scenarios in two configuration one monosite and two sites with correction for multisite differences using dummy variables. The first column represent scenarios without site effect and the second column show with a site effect the first row show simulation with out interaction site-pathology and the second row show with interaction.
+}
      \label{fig_full_sim_debalancing}
  \end{figure}
  
 
 
 %\frametitle{20-80 subjects, 50\%-50\% debalancing effect}
- \begin{figure}[t]
+ \begin{figure}[tbp]
    \centering
     \captionsetup[subfloat]{labelformat=empty}
     \subfloat[]{ \includegraphics[width=0.19\textwidth]{../figures/prop_2080subj_5050.pdf}}
@@ -725,14 +546,16 @@ In order to obtain more control on each of the parameter of the simulation and s
      \hspace*{6.8em}
      \subfloat[\tiny Interac site-patho, no site effect]{\label{} \includegraphics[width=0.39\textwidth]{../figures/detect_pow_2080bal5050_var2_site0.pdf}} 
      \subfloat[\tiny Interac site-patho + site effect]{\label{} \includegraphics[width=0.39\textwidth]{../figures/detect_pow_2080bal5050_var2_site05.pdf}}\\
-     \tiny Simulation of the detection power of two groups unbalanced 50\%-50\% between two sites, one small site of 20 subjects and one large of 80 subjects. All plots show four scenarios in two configuration one monosite and two sites with correction for multisite differences using dummy variables. The first column represent scenarios without site effect and the second column show with a site effect the first row show simulation with out interaction site-pathology and the second row show with interaction.
-     \label{fig_full_sim_2sites_balanced}
- \end{figure}
+     \caption{
+     Simulation of the detection power of two groups unbalanced 50\%-50\% between two sites, one small site of 20 subjects and one large of 80 subjects. All plots show four scenarios in two configuration one monosite and two sites with correction for multisite differences using dummy variables. The first column represent scenarios without site effect and the second column show with a site effect the first row show simulation with out interaction site-pathology and the second row show with interaction.
+}
+\label{fig_full_sim_2sites_balanced}
+\end{figure}
  
 Figure \ref{fig_full_sim_2sites_debalancing_inv} show the same configuration but the sample size are inverted. Has we can see we have the same pattern as in the real data with...
 
 %\begin{frame} \frametitle{20-80 subjects, 70\%-30\% debalancing effect}
- \begin{figure}[t]
+ \begin{figure}[tbp]
    \centering
     \captionsetup[subfloat]{labelformat=empty}
     \subfloat[]{ \includegraphics[width=0.19\textwidth]{../figures/prop_2080subj_7030.pdf}}
@@ -741,7 +564,9 @@ Figure \ref{fig_full_sim_2sites_debalancing_inv} show the same configuration but
      \hspace*{6.8em}
      \subfloat[\tiny Interac site-patho, no site effect]{\label{} \includegraphics[width=0.39\textwidth]{../figures/detect_pow_2080bal7030_var2_site0.pdf}} 
      \subfloat[\tiny Interac site-patho + site effect]{\label{} \includegraphics[width=0.39\textwidth]{../figures/detect_pow_2080bal7030_var2_site05.pdf}}\\
-     \tiny Simulation of the detection power of two groups unbalanced 70\%-30\% between two sites, one small site of 20 subjects and one large of 80 subjects. All plots show four scenarios in two configuration one monosite and two sites with correction for multisite differences using dummy variables. The first column represent scenarios without site effect and the second column show with a site effect the first row show simulation with out interaction site-pathology and the second row show with interaction.
+     \caption{
+     Simulation of the detection power of two groups unbalanced 70\%-30\% between two sites, one small site of 20 subjects and one large of 80 subjects. All plots show four scenarios in two configuration one monosite and two sites with correction for multisite differences using dummy variables. The first column represent scenarios without site effect and the second column show with a site effect the first row show simulation with out interaction site-pathology and the second row show with interaction.
+}
      \label{fig_full_sim_2sites_debalancing}
  \end{figure}
  
@@ -749,7 +574,7 @@ Figure \ref{fig_full_sim_2sites_debalancing_inv} show the same configuration but
 
 
 %\begin{frame} \frametitle{80-20 subjects, 70\%-30\% debalancing effect}
- \begin{figure}[t]
+ \begin{figure}[tbp]
    \centering
     \captionsetup[subfloat]{labelformat=empty}
     \subfloat[]{ \includegraphics[width=0.19\textwidth]{../figures/prop_8020subj_7030.pdf}}
@@ -758,18 +583,22 @@ Figure \ref{fig_full_sim_2sites_debalancing_inv} show the same configuration but
      \hspace*{6.8em}
      \subfloat[\tiny Interac site-patho, no site effect]{\label{} \includegraphics[width=0.39\textwidth]{../figures/detect_pow_8020bal7030_var2_site0.pdf}} 
      \subfloat[\tiny Interac site-patho + site effect]{\label{} \includegraphics[width=0.39\textwidth]{../figures/detect_pow_8020bal7030_var2_site05.pdf}}\\
-     \tiny Simulation of the detection power of two groups unbalanced 70\%-30\% between two sites, one small site of 20 subjects and one large of 80 subjects. All plots show four scenarios in two configuration one monosite and two sites with correction for multisite differences using dummy variables. The first column represent scenarios without site effect and the second column show with a site effect the first row show simulation with out interaction site-pathology and the second row show with interaction.
+     \caption{
+     Simulation of the detection power of two groups unbalanced 70\%-30\% between two sites, one small site of 20 subjects and one large of 80 subjects. All plots show four scenarios in two configuration one monosite and two sites with correction for multisite differences using dummy variables. The first column represent scenarios without site effect and the second column show with a site effect the first row show simulation with out interaction site-pathology and the second row show with interaction.
+}
      \label{fig_full_sim_2sites_debalancing_inv}
  \end{figure}
  
 Figure \ref{fig_full_sim_50sites_rnd_debalancing} show a more realistic case in clinical trials where the number of scanning sites is very large and the number of subjects per site is small. There is usually no control on the exact balancing of those sites therefore we have randomly assign debalancing for each site (between 10\% and 90\%) and have randomly assigned a number of subject to each site (between 2 and 15 subjects).
 
-\begin{figure}[t]
+\begin{figure}[tbp]
    \centering
     \captionsetup[subfloat]{labelformat=empty}
      \subfloat[\tiny No interaction site-patho]{\label{} \includegraphics[width=0.39\textwidth]{../figures/detect_pow_rndsubj0215_50sites_rndbal1090_var0_siternd0005.pdf}} 
      \subfloat[\tiny Site effect of 0.5]{\label{} \includegraphics[width=0.39\textwidth]{../figures/detect_pow_rndsubj0215_50sites_rndbal1090_varrnd02_siternd0005.pdf}}\\
-     \tiny Simulation of the detection power of two groups balanced randomly between 10\%-90\% between 50 sites, the number of subject per site is randomly assigned between 2 and 15. All plot show four scenario, one monosite and two sites with correction for multisite differences using dummy variables. The plots show the detection power when the variability is greater in one side then the other for the pathology group (twice the reference variability in one site and half the reference variability in the other one)
+     \caption{
+     Simulation of the detection power of two groups balanced randomly between 10\%-90\% between 50 sites, the number of subject per site is randomly assigned between 2 and 15. All plot show four scenario, one monosite and two sites with correction for multisite differences using dummy variables. The plots show the detection power when the variability is greater in one side then the other for the pathology group (twice the reference variability in one site and half the reference variability in the other one).
+}
      \label{fig_full_sim_50sites_rnd_debalancing}
 \end{figure}
 
@@ -782,34 +611,15 @@ Type of scanner most of them are Siemens we may have more variability if combini
 Talk about the impact in small acquisition 40 subjects total and the importance of pooling data among PI.\\
 
 Talk about the impact in clinical trial and best practice.\\
+	most of the time we cannot correct for site with one population only or with too few subjects per site. Although these kind of multisite studies generally sum-up to large dataset of more than 200 subjects. has we demonstrated in the synthetic simulation such configuration are comparable to single site analysis for this range of sample size.
+
+It is better to have interaction of various amplitude across small sites than an average interaction on one large site\\
 
 \section{Conclusion}
 
- 
-\section{Table Legend}
-
-
-\begin{table}[h]
-\resizebox{\columnwidth}{!}{%
-\begin{tabular}{lllllllllll}
-\textbf{Site}         & \textbf{Magnet} & \textbf{Scaner brand} & \textbf{Channels} & \textbf{N} & \textbf{N final} & \textbf{Sex} & \textbf{Age} & \textbf{TR} & \textbf{\# Slices} & \textbf{\# Frames} \\
-Baltimore, USA        & 3T              & N/A                   & N/A               & 23   & 21         & 8M/15F       & 20-40        & 2.5         & 47                 & 123                \\
-Berlin, Germany       & 3T              & Siemens Tim Trio      & 12                & 26   & 26         & 13M/13F      & 23-44        & 2.3         & 34                 & 195                \\
-Cambridge, USA        & 3T              & Siemens Tim Trio      & 12                & 198  & 195        & 75M/123F     & 18-30        & 3           & 47                 & 119                \\
-Newark, USA           & 3T              & N/A                   & N/A               & 19   & 17         & 9M/10F       & 21-39        & 2           & 32                 & 135                \\
-NewYork\_b, USA       & 3T              & Siemens               & N/A               & 20   & 18         & 8M/12F       & 18-46        & 2           & 33                 & 175                \\
-Oxford, UK            & 3T              & Siemens Tim Trio      & 12                & 22   & 20         & 12M/10F      & 20-35        & 2           & 34                 & 175                \\
-Queensland, Australia & 4T              & Bruker                & 1                 & 19   & 17         & 11M/8F       & 20-34        & 2.1         & 36                 & 190                \\
-SaintLouis, USA       & 3T              & Siemens Tim Trio      & 12                & 31   & 31         & 14M/17F      & 21-29        & 2.5         & 32                 & 127               
-\end{tabular}
-}
-\caption{1000 funcitonal connectome dataset} 
-\label{table_dataset}
-\end{table}
-
 
 \section{Acknowledgments}
-Parts of this work were presented at the 2013 annual meetings of the organization for human brain mapping \citep{Dansereau2013}, as well as the  Alzheimer's Association International Conference (AAIC) (2013) (Boston) \citep{Dansereau2013a}. The authors are grateful to the members of the 1000 functional connectome consortium for publicly releasing there dataset. The computational resources used to perform the data analysis were provided by ComputeCanada\footnote{\url{https://computecanada.org/}} and CLUMEQ\footnote{\url{http://www.clumeq.mcgill.ca/}}, which is funded in part by NSERC (MRS), FQRNT, and McGill University. This project was funded by NSERC grant number RN000028, a salary award from ``Fonds de recherche du Qu\'ebec -- Sant\'e'' to PB as well as a salary award by the Canadian Institute of Health Research to CD.
+Parts of this work were presented at the 2013 annual meetings of the organization for human brain mapping \citep{Dansereau2013a}, as well as the  Alzheimer's Association International Conference (AAIC) (2013) (Boston) \citep{Dansereau2013b}. The authors are grateful to the members of the 1000 functional connectome consortium for publicly releasing there dataset. The computational resources used to perform the data analysis were provided by ComputeCanada\footnote{\url{https://computecanada.org/}} and CLUMEQ\footnote{\url{http://www.clumeq.mcgill.ca/}}, which is funded in part by NSERC (MRS), FQRNT, and McGill University. This project was funded by NSERC grant number RN000028, a salary award from ``Fonds de recherche du Qu\'ebec -- Sant\'e'' to PB as well as a salary award by the Canadian Institute of Health Research to CD.
 
 \section*{References}
 

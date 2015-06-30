@@ -1,4 +1,4 @@
-\begin{thebibliography}{49}
+\begin{thebibliography}{48}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{\texttt{#1}}\fi
@@ -91,15 +91,6 @@ Dansereau, C., Bellec, P., Lee, K., Pittau, F., Gotman, J., Grova, C., 2014.
   from focal epilepsy: An initial step toward individual connectivity
   assessment. Frontiers in Neuroscience 8~(419).
 \newline\urlprefix\url{http://www.frontiersin.org/brain_imaging_methods/10.3389/fnins.2014.00419/abstract}
-
-\bibitem[{Dansereau et~al.(2013)Dansereau, Risterucci, Pich, Arnold, and
-  Bellec}]{Dansereau2013}
-Dansereau, C., Risterucci, C., Pich, E.~M., Arnold, D., Bellec, P., 2013. A
-  power analysis for multisite studies in resting-state functional
-  connectivity, with an application to clinical trials in alzheimer's disease.
-  Vol.~9. pp. P248 -- P249, alzheimer's Association International Conference
-  2013 Alzheimer's Association International Conference 2013.
-\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S1552526013011461}
 
 \bibitem[{De~Luca et~al.(2006)De~Luca, Beckmann, De~Stefano, Matthews, and
   Smith}]{DeLuca2006}
