@@ -214,13 +214,59 @@ Using a brain partition of $R$ networks obtain from BASC procedure described in 
 
 \subsection{Simulations}
 
-% 
-\paragraph{Power analysis for a resting-state fMRI study}
-A Monte-Carlo simulation was implemented to evaluate the power of a resting-state multi-site study. For each site and each sample, $B\%$ of the subjects were randomly assigned to a 'treatment' group. For the subjects in this group, a value was added to achieve a given relative effect size (Cohen's d, i.e. the mean of the two groups divided by the standard deviation of all sites). The significance of the difference between the control and 'treatment' group was assessed by a $t$-test in a linear model. To account for site-specific bias we have included dummy variables in the GLM model. The study was repeated for various effect sizes (0 to 1.5 with a step of 0.01) at a threshold of 0.001 on the p-value in the $t$-test.
-
 In order to simulate various scenarios within the context of a multi-site setting, a cohort of subjects acquired at a single-site was selected to act as our reference dataset and for the multi-site configuration a cohort from a collection of small sites, roughly totalling the same sample size as the reference dataset, was used. The simulation was based on a scenario with 8 sites for a total of 345 subjects, and no homogenization of acquisition protocol whatsoever. The multi-site (with correction) is based on 150 subjects from 7 sites and the monosite is based on 
 one site of 195 subjects.  
 
+
+To test our hypothesis and estimate how the connectivity bias affect our ability to detect effects at the group level we d
+
+Using this data we are sub-sampling the two datasets (monosite and multisite) to obtain multiple samples. For each of the sample a Monte-Carlo simulation was implemented to evaluate the power of a resting-state multi-site study. For each site and each sample, $B\%$ of the subjects were randomly assigned to a 'treatment' group. For the subjects in this group, a value was added to achieve a given relative effect size (Cohen's d, i.e. the mean of the two groups divided by the standard deviation of all sites). The significance of the difference between the control and 'treatment' group was assessed by a $t$-test in a linear model. To account for site-specific bias we have included dummy variables in the GLM model. The study was repeated for various effect sizes (0 to 1.5 with a step of 0.01) at a threshold of 0.001 on the p-value in the $t$-test. Equation \ref{eq_data_generation_model} show the additive model used in the simulations.
+
+\begin{equation}
+ \label{eq_data_generation_model}
+  \mathbf{Y_samp} = \mathbf{Y_sub_sample}\mathbf{\beta} + \mathbf{V}\mathbf{\gamma}+ \mathbf{E},
+\end{equation}
+
+
+% data genereating process
+\paragraph{Data generation process}
+% list of parameters for generation (connections, effect-size, sample size, )
+FOr each 
+
+% statistical detection and sensitivity
+
+% homoscedastic hypo (voir glm-connectome revision 2 sur svn)
+
+% the scenarios and the 3 sections
+We first evaluated if a bias can be detected between sites. To do so we have computed the average connectome of each site along with the standard deviation matrix for each site. We then computed the statistically significant differences between each sites (FDR correction XX, ttest at p<XX) to have an idea of the size and spread of the functional bias.
+
+
+\paragraph{Power analysis for a resting-state fMRI study}
+
+
+
+
+\paragraph{multi-site correction approach} 
+
+
+%For the multi-site three flavours were computed: multi-site no correction, multi-site with dummy variables and multi-site with METAL correction.
+%Depending on the multi-site configuration and distribution of the subject we proposed two corrective approaches that can be applied as shown in the simulations of Figure \ref{fig_simu_50pct}. 
+In order to obtain an unbiased method to combine sites and do group analysis on them we are using dummy variables (binary vectors $1\times S$) who code for each site in the GLM model illustrated in Equation\ref{eq_glm_dummy}. The variables are corrected to have a zero mean across subjects, and an intercept (i.e. a column filled with 1) is added to $\mathbf{X}$. The GLM relies on the following stochastic model:
+
+\begin{equation}
+ \label{eq_glm_dummy}
+  \mathbf{Y} = \mathbf{X}\mathbf{\beta} + \mathbf{V}\mathbf{\gamma}+ \mathbf{E},
+\end{equation}
+\begin{itemize}
+  \item $\mathbf{Y}$: $N\times 1$, connectivity value for the pair ($i,j$),
+  \item $\mathbf{X}$: $N\times K$, explainable variables,
+  \item $\mathbf{\beta}$: $1 \times K$, regression values for each explainable variable,
+  \item $\mathbf{V}$: $N\times S$, each column code for a site (0/1),
+  \item $\mathbf{\gamma}$: $1\times S$, site average connectivity,
+  \item $\mathbf{E}$: $N\times 1$, residual values from the regression,
+\end{itemize}
+ 
+with $N$ the number of subjects, $K$ the number of explainable variables and $S$ the number of sites. Where $\mathbf{\beta}$ is an unknown $1\times K$ vector of linear regression coefficients, $\mathbf{\gamma}$ is a $1\times S$ vector of linear regression coefficients representing the contribution of each site and $\mathbf{E}$ is a $N\times 1$ random (noise) multivariate Gaussian variable. As data generated from different subjects are statistically independent, and under an homoscedasticity assumption, the regression coefficients $\mathbf{\beta}$ can be estimated with ordinary least squares. To apply the correction $S-1$ dummy-variables are added to the model in Equation\ref{eq_glm_dummy} with $S$ being the total number of sites used in the study.
 
 \paragraph{Estimation of the detection sensitivity}
 Based on the literature review previously described in (TODO: cite the NATURE paper of Orban2015) reporting 10 reproducible pair of regions reported to be affected by Alzheimer disease progression and displayed connectivity changes between cognitively normal subjects and patient with dementia of the Alzheimer type. The following confounding variables were modelled in the general linear model (GLM) analysis: frame displacement (FD). Significance of the results is obtain with a Student $t$-test and the sensitivity of the test is evaluated by sub-sampling 70\% of the dataset ($B=10^3$ random samples). For each sample $b$, we have a $p$-value $p^{*}_b$ and the detection sensitivity is estimated by the probability of $p^{*}_b$ being inferior to $0.001$.
@@ -249,26 +295,7 @@ where $s_{i,j}$ is the standard deviation between region $i$ and $j$ for the ref
 
 In order to introduce the same effect-size across the single-site and multi-site dataset we are taking the standard deviation from the single-site cohort as the reference.  The connection $y_{i,j}$ of the randomly affected subjects ("treatment" group) are therefore calculated $y_{i,j} = y_{i,j} + d\times s_{i,j}$. 
 
-\paragraph{multi-site correction approach} 
 
-%For the multi-site three flavours were computed: multi-site no correction, multi-site with dummy variables and multi-site with METAL correction.
-%Depending on the multi-site configuration and distribution of the subject we proposed two corrective approaches that can be applied as shown in the simulations of Figure \ref{fig_simu_50pct}. 
-In order to obtain an unbiased method to combine sites and do group analysis on them we are using dummy variables (binary vectors $1\times S$) who code for each site in the GLM model illustrated in Equation\ref{eq_glm_dummy}. The variables are corrected to have a zero mean across subjects, and an intercept (i.e. a column filled with 1) is added to $\mathbf{X}$. The GLM relies on the following stochastic model:
-
-\begin{equation}
- \label{eq_glm_dummy}
-  \mathbf{Y} = \mathbf{X}\mathbf{\beta} + \mathbf{V}\mathbf{\gamma}+ \mathbf{E},
-\end{equation}
-\begin{itemize}
-  \item $\mathbf{Y}$: $N\times 1$, connectivity value for the pair ($i,j$),
-  \item $\mathbf{X}$: $N\times K$, explainable variables,
-  \item $\mathbf{\beta}$: $1 \times K$, regression values for each explainable variable,
-  \item $\mathbf{V}$: $N\times S$, each column code for a site (0/1),
-  \item $\mathbf{\gamma}$: $1\times S$, site average connectivity,
-  \item $\mathbf{E}$: $N\times 1$, residual values from the regression,
-\end{itemize}
- 
-with $N$ the number of subjects, $K$ the number of explainable variables and $S$ the number of sites. Where $\mathbf{\beta}$ is an unknown $1\times K$ vector of linear regression coefficients, $\mathbf{\gamma}$ is a $1\times S$ vector of linear regression coefficients representing the contribution of each site and $\mathbf{E}$ is a $N\times 1$ random (noise) multivariate Gaussian variable. As data generated from different subjects are statistically independent, and under an homoscedasticity assumption, the regression coefficients $\mathbf{\beta}$ can be estimated with ordinary least squares. To apply the correction $S-1$ dummy-variables are added to the model in Equation\ref{eq_glm_dummy} with $S$ being the total number of sites used in the study.
 
 
  
