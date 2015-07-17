@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  30 JUN 2015 12:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  16 JUL 2015 15:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -706,86 +706,118 @@ Missing character: There is no ù in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- [6] [7]
-<../figures/inter_vs_intra_3tonly.png, id=289, 365.6862pt x 311.2428pt>
+ [6] [7] [8]
+<../figures/inter_vs_intra_3tonly.png, id=299, 365.6862pt x 311.2428pt>
 File: ../figures/inter_vs_intra_3tonly.png Graphic file (type png)
 
 <use ../figures/inter_vs_intra_3tonly.png>
 Package pdftex.def Info: ../figures/inter_vs_intra_3tonly.png used on input lin
-e 378.
+e 403.
 (pdftex.def)             Requested size: 345.0pt x 293.65582pt.
- [8] [9 <../figures/inter_vs_intra_3tonly.png (PNG copy)>]
-<../figures/pccmap_multisite.png, id=310, 880.28876pt x 512.91624pt>
+
+<../figures/pccmap_multisite.png, id=308, 880.28876pt x 512.91624pt>
 File: ../figures/pccmap_multisite.png Graphic file (type png)
 
 <use ../figures/pccmap_multisite.png>
-Package pdftex.def Info: ../figures/pccmap_multisite.png used on input line 390
+Package pdftex.def Info: ../figures/pccmap_multisite.png used on input line 415
 .
 (pdftex.def)             Requested size: 345.0pt x 201.01483pt.
 
-<../figures/connectome_multisite.png, id=312, 625.33624pt x 614.295pt>
+<../figures/connectome_multisite.png, id=310, 625.33624pt x 614.295pt>
 File: ../figures/connectome_multisite.png Graphic file (type png)
 
 <use ../figures/connectome_multisite.png>
 Package pdftex.def Info: ../figures/connectome_multisite.png used on input line
- 401.
+ 426.
 (pdftex.def)             Requested size: 345.0pt x 338.9131pt.
- [10 <../figures/pccmap_multisite.png>] [11 <../figures/connectome_multisite.pn
-g>]
-<../figures/p2p_seeds.pdf, id=328, 209.95047pt x 246.46632pt>
+
+<../figures/p2p_seeds.pdf, id=312, 209.95047pt x 246.46632pt>
 File: ../figures/p2p_seeds.pdf Graphic file (type pdf)
 
 <use ../figures/p2p_seeds.pdf>
-Package pdftex.def Info: ../figures/p2p_seeds.pdf used on input line 418.
+Package pdftex.def Info: ../figures/p2p_seeds.pdf used on input line 443.
 (pdftex.def)             Requested size: 172.5pt x 202.51361pt.
-
-<../figures/realdata_detect_pow_s40_50pct.pdf, id=330, 361.35pt x 361.35pt>
+ [9] [10 <../figures/inter_vs_intra_3tonly.png (PNG copy)>]
+<../figures/realdata_detect_pow_s40_50pct.pdf, id=329, 361.35pt x 361.35pt>
 File: ../figures/realdata_detect_pow_s40_50pct.pdf Graphic file (type pdf)
 
 <use ../figures/realdata_detect_pow_s40_50pct.pdf>
 Package pdftex.def Info: ../figures/realdata_detect_pow_s40_50pct.pdf used on i
-nput line 433.
+nput line 458.
 (pdftex.def)             Requested size: 110.40253pt x 110.40181pt.
 
-<../figures/realdata_detect_pow_s80_50pct.pdf, id=331, 361.35pt x 361.35pt>
+<../figures/realdata_detect_pow_s80_50pct.pdf, id=330, 361.35pt x 361.35pt>
 File: ../figures/realdata_detect_pow_s80_50pct.pdf Graphic file (type pdf)
 
 <use ../figures/realdata_detect_pow_s80_50pct.pdf>
 Package pdftex.def Info: ../figures/realdata_detect_pow_s80_50pct.pdf used on i
-nput line 435.
+nput line 460.
 (pdftex.def)             Requested size: 110.40253pt x 110.40181pt.
 
-<../figures/realdata_detect_pow_s120_50pct.pdf, id=332, 361.35pt x 361.35pt>
+<../figures/realdata_detect_pow_s120_50pct.pdf, id=331, 361.35pt x 361.35pt>
 File: ../figures/realdata_detect_pow_s120_50pct.pdf Graphic file (type pdf)
 
 <use ../figures/realdata_detect_pow_s120_50pct.pdf>
 Package pdftex.def Info: ../figures/realdata_detect_pow_s120_50pct.pdf used on 
-input line 437.
+input line 462.
 (pdftex.def)             Requested size: 110.40253pt x 110.40181pt.
 File: ../figures/realdata_detect_pow_s120_50pct.pdf Graphic file (type pdf)
 
 <use ../figures/realdata_detect_pow_s120_50pct.pdf>
 Package pdftex.def Info: ../figures/realdata_detect_pow_s120_50pct.pdf used on 
-input line 452.
+input line 477.
 (pdftex.def)             Requested size: 110.40253pt x 110.40181pt.
 
-<../figures/realdata_detect_pow_s120_30pct.pdf, id=334, 361.35pt x 361.35pt>
+<../figures/realdata_detect_pow_s120_30pct.pdf, id=333, 361.35pt x 361.35pt>
 File: ../figures/realdata_detect_pow_s120_30pct.pdf Graphic file (type pdf)
 
 <use ../figures/realdata_detect_pow_s120_30pct.pdf>
 Package pdftex.def Info: ../figures/realdata_detect_pow_s120_30pct.pdf used on 
-input line 454.
+input line 479.
 (pdftex.def)             Requested size: 110.40253pt x 110.40181pt.
 
-<../figures/realdata_detect_pow_s120_15pct.pdf, id=335, 361.35pt x 361.35pt>
+<../figures/realdata_detect_pow_s120_15pct.pdf, id=334, 361.35pt x 361.35pt>
 File: ../figures/realdata_detect_pow_s120_15pct.pdf Graphic file (type pdf)
 
 <use ../figures/realdata_detect_pow_s120_15pct.pdf>
 Package pdftex.def Info: ../figures/realdata_detect_pow_s120_15pct.pdf used on 
-input line 456.
+input line 481.
 (pdftex.def)             Requested size: 110.40253pt x 110.40181pt.
- [12 <../figures/p2p_seeds.pdf>] [13 <../figures/realdata_detect_pow_s40_50pct.
-pdf> <../figures/realdata_detect_pow_s80_50pct.pdf
+
+<../figures/realdata_detect_pow_sitepatho_s120_50pct.pdf, id=336, 361.35pt x 36
+1.35pt>
+File: ../figures/realdata_detect_pow_sitepatho_s120_50pct.pdf Graphic file (typ
+e pdf)
+ <use ../figures/realdata_detect_pow_sitepatho_s120_50pct.pdf>
+Package pdftex.def Info: ../figures/realdata_detect_pow_sitepatho_s120_50pct.pd
+f used on input line 496.
+(pdftex.def)             Requested size: 110.40253pt x 110.40181pt.
+
+<../figures/realdata_detect_pow_sitepatho_s120_30pct.pdf, id=337, 361.35pt x 36
+1.35pt>
+File: ../figures/realdata_detect_pow_sitepatho_s120_30pct.pdf Graphic file (typ
+e pdf)
+ <use ../figures/realdata_detect_pow_sitepatho_s120_30pct.pdf>
+Package pdftex.def Info: ../figures/realdata_detect_pow_sitepatho_s120_30pct.pd
+f used on input line 498.
+(pdftex.def)             Requested size: 110.40253pt x 110.40181pt.
+
+<../figures/realdata_detect_pow_sitepatho_s120_15pct.pdf, id=338, 361.35pt x 36
+1.35pt>
+File: ../figures/realdata_detect_pow_sitepatho_s120_15pct.pdf Graphic file (typ
+e pdf)
+ <use ../figures/realdata_detect_pow_sitepatho_s120_15pct.pdf>
+Package pdftex.def Info: ../figures/realdata_detect_pow_sitepatho_s120_15pct.pd
+f used on input line 500.
+(pdftex.def)             Requested size: 110.40253pt x 110.40181pt.
+ [11 <../figures/pccmap_multisite.png>] [12 <../figures/connectome_multisite.pn
+g>]
+[13 <../figures/p2p_seeds.pdf> <../figures/realdata_detect_pow_s40_50pct.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ../figures/realdata_detect_pow_s40_5
+0pct.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
+ge
+> <../figures/realdata_detect_pow_s80_50pct.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ../figures/realdata_detect_pow_s80_5
 0pct.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
@@ -795,286 +827,18 @@ ge
 pdfTeX warning: /usr/texbin/pdflatex (file ../figures/realdata_detect_pow_s120_
 50pct.pdf): PDF inclusion: multiple pdfs with page group included in a single p
 age
-> <../figures/realdata_detect_pow_s120_30pct.pdf
-
-pdfTeX warning: /usr/texbin/pdflatex (file ../figures/realdata_detect_pow_s120_
-30pct.pdf): PDF inclusion: multiple pdfs with page group included in a single p
-age
-> <../figures/realdata_detect_pow_s120_15pct.pdf
+>] [14 <../figures/realdata_detect_pow_s120_30pct.pdf> <../figures/realdata_det
+ect_pow_s120_15pct.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ../figures/realdata_detect_pow_s120_
 15pct.pdf): PDF inclusion: multiple pdfs with page group included in a single p
 age
->]
-<../figures/realdata_detect_pow_sitepatho_s120_50pct.pdf, id=586, 361.35pt x 36
-1.35pt>
-File: ../figures/realdata_detect_pow_sitepatho_s120_50pct.pdf Graphic file (typ
-e pdf)
- <use ../figures/realdata_detect_pow_sitepatho_s120_50pct.pdf>
-Package pdftex.def Info: ../figures/realdata_detect_pow_sitepatho_s120_50pct.pd
-f used on input line 471.
-(pdftex.def)             Requested size: 110.40253pt x 110.40181pt.
+> <../figures/realdata_detect_pow_sitepatho_s120_50pct.pdf
 
-<../figures/realdata_detect_pow_sitepatho_s120_30pct.pdf, id=587, 361.35pt x 36
-1.35pt>
-File: ../figures/realdata_detect_pow_sitepatho_s120_30pct.pdf Graphic file (typ
-e pdf)
- <use ../figures/realdata_detect_pow_sitepatho_s120_30pct.pdf>
-Package pdftex.def Info: ../figures/realdata_detect_pow_sitepatho_s120_30pct.pd
-f used on input line 473.
-(pdftex.def)             Requested size: 110.40253pt x 110.40181pt.
-
-<../figures/realdata_detect_pow_sitepatho_s120_15pct.pdf, id=588, 361.35pt x 36
-1.35pt>
-File: ../figures/realdata_detect_pow_sitepatho_s120_15pct.pdf Graphic file (typ
-e pdf)
- <use ../figures/realdata_detect_pow_sitepatho_s120_15pct.pdf>
-Package pdftex.def Info: ../figures/realdata_detect_pow_sitepatho_s120_15pct.pd
-f used on input line 475.
-(pdftex.def)             Requested size: 110.40253pt x 110.40181pt.
-
-<../figures/realdata_detect_pow_sitepatho2site_s100_30pct.pdf, id=590, 361.35pt
- x 361.35pt>
-File: ../figures/realdata_detect_pow_sitepatho2site_s100_30pct.pdf Graphic file
- (type pdf)
-
-<use ../figures/realdata_detect_pow_sitepatho2site_s100_30pct.pdf>
-Package pdftex.def Info: ../figures/realdata_detect_pow_sitepatho2site_s100_30p
-ct.pdf used on input line 488.
-(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
-
-<../figures/realdata_detect_pow_sitepatho2site_s100_70pct.pdf, id=591, 361.35pt
- x 361.35pt>
-File: ../figures/realdata_detect_pow_sitepatho2site_s100_70pct.pdf Graphic file
- (type pdf)
-
-<use ../figures/realdata_detect_pow_sitepatho2site_s100_70pct.pdf>
-Package pdftex.def Info: ../figures/realdata_detect_pow_sitepatho2site_s100_70p
-ct.pdf used on input line 489.
-(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
-
-<../figures/prop_5050subj_5050.pdf, id=592, 144.54pt x 144.54pt>
-File: ../figures/prop_5050subj_5050.pdf Graphic file (type pdf)
-
-<use ../figures/prop_5050subj_5050.pdf>
-Package pdftex.def Info: ../figures/prop_5050subj_5050.pdf used on input line 5
-07.
-(pdftex.def)             Requested size: 65.55084pt x 65.54965pt.
-
-<../figures/detect_pow_bal5050_var0_site0.pdf, id=593, 361.35pt x 361.35pt>
-File: ../figures/detect_pow_bal5050_var0_site0.pdf Graphic file (type pdf)
-
-<use ../figures/detect_pow_bal5050_var0_site0.pdf>
-Package pdftex.def Info: ../figures/detect_pow_bal5050_var0_site0.pdf used on i
-nput line 508.
-(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
-
-<../figures/detect_pow_bal5050_var0_site05.pdf, id=594, 361.35pt x 361.35pt>
-File: ../figures/detect_pow_bal5050_var0_site05.pdf Graphic file (type pdf)
-
-<use ../figures/detect_pow_bal5050_var0_site05.pdf>
-Package pdftex.def Info: ../figures/detect_pow_bal5050_var0_site05.pdf used on 
-input line 509.
-(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
-
-<../figures/detect_pow_bal5050_var2_site0.pdf, id=595, 361.35pt x 361.35pt>
-File: ../figures/detect_pow_bal5050_var2_site0.pdf Graphic file (type pdf)
-
-<use ../figures/detect_pow_bal5050_var2_site0.pdf>
-Package pdftex.def Info: ../figures/detect_pow_bal5050_var2_site0.pdf used on i
-nput line 511.
-(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
-
-<../figures/detect_pow_bal5050_var2_site05.pdf, id=596, 361.35pt x 361.35pt>
-File: ../figures/detect_pow_bal5050_var2_site05.pdf Graphic file (type pdf)
-
-<use ../figures/detect_pow_bal5050_var2_site05.pdf>
-Package pdftex.def Info: ../figures/detect_pow_bal5050_var2_site05.pdf used on 
-input line 512.
-(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
-
-Overfull \hbox (0.98857pt too wide) in paragraph at lines 510--512
- []|  [][][][] 
- []
-
-<../figures/prop_5050subj_7030.pdf, id=597, 144.54pt x 144.54pt>
-File: ../figures/prop_5050subj_7030.pdf Graphic file (type pdf)
-
-<use ../figures/prop_5050subj_7030.pdf>
-Package pdftex.def Info: ../figures/prop_5050subj_7030.pdf used on input line 5
-25.
-(pdftex.def)             Requested size: 65.55084pt x 65.54965pt.
-
-<../figures/detect_pow_bal7030_var0_site0.pdf, id=598, 361.35pt x 361.35pt>
-File: ../figures/detect_pow_bal7030_var0_site0.pdf Graphic file (type pdf)
-
-<use ../figures/detect_pow_bal7030_var0_site0.pdf>
-Package pdftex.def Info: ../figures/detect_pow_bal7030_var0_site0.pdf used on i
-nput line 526.
-(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
-
-<../figures/detect_pow_bal7030_var0_site05.pdf, id=599, 361.35pt x 361.35pt>
-File: ../figures/detect_pow_bal7030_var0_site05.pdf Graphic file (type pdf)
-
-<use ../figures/detect_pow_bal7030_var0_site05.pdf>
-Package pdftex.def Info: ../figures/detect_pow_bal7030_var0_site05.pdf used on 
-input line 527.
-(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
-
-<../figures/detect_pow_bal7030_var2_site0.pdf, id=600, 361.35pt x 361.35pt>
-File: ../figures/detect_pow_bal7030_var2_site0.pdf Graphic file (type pdf)
-
-<use ../figures/detect_pow_bal7030_var2_site0.pdf>
-Package pdftex.def Info: ../figures/detect_pow_bal7030_var2_site0.pdf used on i
-nput line 529.
-(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
-
-<../figures/detect_pow_bal7030_var2_site05.pdf, id=601, 361.35pt x 361.35pt>
-File: ../figures/detect_pow_bal7030_var2_site05.pdf Graphic file (type pdf)
-
-<use ../figures/detect_pow_bal7030_var2_site05.pdf>
-Package pdftex.def Info: ../figures/detect_pow_bal7030_var2_site05.pdf used on 
-input line 530.
-(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
-
-Overfull \hbox (0.98857pt too wide) in paragraph at lines 528--530
- []|  [][][][] 
- []
-
-<../figures/prop_2080subj_5050.pdf, id=602, 144.54pt x 144.54pt>
-File: ../figures/prop_2080subj_5050.pdf Graphic file (type pdf)
-
-<use ../figures/prop_2080subj_5050.pdf>
-Package pdftex.def Info: ../figures/prop_2080subj_5050.pdf used on input line 5
-43.
-(pdftex.def)             Requested size: 65.55084pt x 65.54965pt.
-
-<../figures/detect_pow_2080bal5050_var0_site0.pdf, id=603, 361.35pt x 361.35pt>
-File: ../figures/detect_pow_2080bal5050_var0_site0.pdf Graphic file (type pdf)
-<use ../figures/detect_pow_2080bal5050_var0_site0.pdf>
-Package pdftex.def Info: ../figures/detect_pow_2080bal5050_var0_site0.pdf used 
-on input line 544.
-(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
-
-<../figures/detect_pow_2080bal5050_var0_site05.pdf, id=604, 361.35pt x 361.35pt
->
-File: ../figures/detect_pow_2080bal5050_var0_site05.pdf Graphic file (type pdf)
-
- <use ../figures/detect_pow_2080bal5050_var0_site05.pdf>
-Package pdftex.def Info: ../figures/detect_pow_2080bal5050_var0_site05.pdf used
- on input line 545.
-(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
-
-<../figures/detect_pow_2080bal5050_var2_site0.pdf, id=605, 361.35pt x 361.35pt>
-File: ../figures/detect_pow_2080bal5050_var2_site0.pdf Graphic file (type pdf)
-<use ../figures/detect_pow_2080bal5050_var2_site0.pdf>
-Package pdftex.def Info: ../figures/detect_pow_2080bal5050_var2_site0.pdf used 
-on input line 547.
-(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
-
-<../figures/detect_pow_2080bal5050_var2_site05.pdf, id=606, 361.35pt x 361.35pt
->
-File: ../figures/detect_pow_2080bal5050_var2_site05.pdf Graphic file (type pdf)
-
- <use ../figures/detect_pow_2080bal5050_var2_site05.pdf>
-Package pdftex.def Info: ../figures/detect_pow_2080bal5050_var2_site05.pdf used
- on input line 548.
-(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
-
-Overfull \hbox (0.98857pt too wide) in paragraph at lines 546--548
- []|  [][][][] 
- []
-
-<../figures/prop_2080subj_7030.pdf, id=608, 144.54pt x 144.54pt>
-File: ../figures/prop_2080subj_7030.pdf Graphic file (type pdf)
-
-<use ../figures/prop_2080subj_7030.pdf>
-Package pdftex.def Info: ../figures/prop_2080subj_7030.pdf used on input line 5
-61.
-(pdftex.def)             Requested size: 65.55084pt x 65.54965pt.
-
-<../figures/detect_pow_2080bal7030_var0_site0.pdf, id=609, 361.35pt x 361.35pt>
-File: ../figures/detect_pow_2080bal7030_var0_site0.pdf Graphic file (type pdf)
-<use ../figures/detect_pow_2080bal7030_var0_site0.pdf>
-Package pdftex.def Info: ../figures/detect_pow_2080bal7030_var0_site0.pdf used 
-on input line 562.
-(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
-
-<../figures/detect_pow_2080bal7030_var0_site05.pdf, id=610, 361.35pt x 361.35pt
->
-File: ../figures/detect_pow_2080bal7030_var0_site05.pdf Graphic file (type pdf)
-
- <use ../figures/detect_pow_2080bal7030_var0_site05.pdf>
-Package pdftex.def Info: ../figures/detect_pow_2080bal7030_var0_site05.pdf used
- on input line 563.
-(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
-
-<../figures/detect_pow_2080bal7030_var2_site0.pdf, id=611, 361.35pt x 361.35pt>
-File: ../figures/detect_pow_2080bal7030_var2_site0.pdf Graphic file (type pdf)
-<use ../figures/detect_pow_2080bal7030_var2_site0.pdf>
-Package pdftex.def Info: ../figures/detect_pow_2080bal7030_var2_site0.pdf used 
-on input line 565.
-(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
-
-<../figures/detect_pow_2080bal7030_var2_site05.pdf, id=612, 361.35pt x 361.35pt
->
-File: ../figures/detect_pow_2080bal7030_var2_site05.pdf Graphic file (type pdf)
-
- <use ../figures/detect_pow_2080bal7030_var2_site05.pdf>
-Package pdftex.def Info: ../figures/detect_pow_2080bal7030_var2_site05.pdf used
- on input line 566.
-(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
-
-Overfull \hbox (0.98857pt too wide) in paragraph at lines 564--566
- []|  [][][][] 
- []
-
-<../figures/prop_8020subj_7030.pdf, id=613, 144.54pt x 144.54pt>
-File: ../figures/prop_8020subj_7030.pdf Graphic file (type pdf)
-
-<use ../figures/prop_8020subj_7030.pdf>
-Package pdftex.def Info: ../figures/prop_8020subj_7030.pdf used on input line 5
-80.
-(pdftex.def)             Requested size: 65.55084pt x 65.54965pt.
-
-<../figures/detect_pow_8020bal7030_var0_site0.pdf, id=614, 361.35pt x 361.35pt>
-File: ../figures/detect_pow_8020bal7030_var0_site0.pdf Graphic file (type pdf)
-<use ../figures/detect_pow_8020bal7030_var0_site0.pdf>
-Package pdftex.def Info: ../figures/detect_pow_8020bal7030_var0_site0.pdf used 
-on input line 581.
-(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
-
-<../figures/detect_pow_8020bal7030_var0_site05.pdf, id=615, 361.35pt x 361.35pt
->
-File: ../figures/detect_pow_8020bal7030_var0_site05.pdf Graphic file (type pdf)
-
- <use ../figures/detect_pow_8020bal7030_var0_site05.pdf>
-Package pdftex.def Info: ../figures/detect_pow_8020bal7030_var0_site05.pdf used
- on input line 582.
-(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
-
-<../figures/detect_pow_8020bal7030_var2_site0.pdf, id=616, 361.35pt x 361.35pt>
-File: ../figures/detect_pow_8020bal7030_var2_site0.pdf Graphic file (type pdf)
-<use ../figures/detect_pow_8020bal7030_var2_site0.pdf>
-Package pdftex.def Info: ../figures/detect_pow_8020bal7030_var2_site0.pdf used 
-on input line 584.
-(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
-
-<../figures/detect_pow_8020bal7030_var2_site05.pdf, id=617, 361.35pt x 361.35pt
->
-File: ../figures/detect_pow_8020bal7030_var2_site05.pdf Graphic file (type pdf)
-
- <use ../figures/detect_pow_8020bal7030_var2_site05.pdf>
-Package pdftex.def Info: ../figures/detect_pow_8020bal7030_var2_site05.pdf used
- on input line 585.
-(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
-
-Overfull \hbox (0.98857pt too wide) in paragraph at lines 583--585
- []|  [][][][] 
- []
-
-[14 <../figures/realdata_detect_pow_sitepatho_s120_50pct.pdf> <../figures/reald
-ata_detect_pow_sitepatho_s120_30pct.pdf
+pdfTeX warning: /usr/texbin/pdflatex (file ../figures/realdata_detect_pow_sitep
+atho_s120_50pct.pdf): PDF inclusion: multiple pdfs with page group included in 
+a single page
+> <../figures/realdata_detect_pow_sitepatho_s120_30pct.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ../figures/realdata_detect_pow_sitep
 atho_s120_30pct.pdf): PDF inclusion: multiple pdfs with page group included in 
@@ -1085,53 +849,245 @@ pdfTeX warning: /usr/texbin/pdflatex (file ../figures/realdata_detect_pow_sitep
 atho_s120_15pct.pdf): PDF inclusion: multiple pdfs with page group included in 
 a single page
 >]
-<../figures/detect_pow_rndsubj0215_50sites_rndbal1090_var0_siternd0005.pdf, id=
-750, 361.35pt x 361.35pt>
-File: ../figures/detect_pow_rndsubj0215_50sites_rndbal1090_var0_siternd0005.pdf
- Graphic file (type pdf)
+<../figures/realdata_detect_pow_sitepatho2site_s100_30pct.pdf, id=722, 361.35pt
+ x 361.35pt>
+File: ../figures/realdata_detect_pow_sitepatho2site_s100_30pct.pdf Graphic file
+ (type pdf)
 
-<use ../figures/detect_pow_rndsubj0215_50sites_rndbal1090_var0_siternd0005.pdf>
-Package pdftex.def Info: ../figures/detect_pow_rndsubj0215_50sites_rndbal1090_v
-ar0_siternd0005.pdf used on input line 597.
+<use ../figures/realdata_detect_pow_sitepatho2site_s100_30pct.pdf>
+Package pdftex.def Info: ../figures/realdata_detect_pow_sitepatho2site_s100_30p
+ct.pdf used on input line 513.
 (pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
 
-<../figures/detect_pow_rndsubj0215_50sites_rndbal1090_varrnd02_siternd0005.pdf,
- id=751, 361.35pt x 361.35pt>
-File: ../figures/detect_pow_rndsubj0215_50sites_rndbal1090_varrnd02_siternd0005
-.pdf Graphic file (type pdf)
+<../figures/realdata_detect_pow_sitepatho2site_s100_70pct.pdf, id=723, 361.35pt
+ x 361.35pt>
+File: ../figures/realdata_detect_pow_sitepatho2site_s100_70pct.pdf Graphic file
+ (type pdf)
 
-<use ../figures/detect_pow_rndsubj0215_50sites_rndbal1090_varrnd02_siternd0005.
-pdf>
-Package pdftex.def Info: ../figures/detect_pow_rndsubj0215_50sites_rndbal1090_v
-arrnd02_siternd0005.pdf used on input line 598.
+<use ../figures/realdata_detect_pow_sitepatho2site_s100_70pct.pdf>
+Package pdftex.def Info: ../figures/realdata_detect_pow_sitepatho2site_s100_70p
+ct.pdf used on input line 514.
 (pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 607--608
+<../figures/prop_5050subj_5050.pdf, id=724, 144.54pt x 144.54pt>
+File: ../figures/prop_5050subj_5050.pdf Graphic file (type pdf)
 
+<use ../figures/prop_5050subj_5050.pdf>
+Package pdftex.def Info: ../figures/prop_5050subj_5050.pdf used on input line 5
+32.
+(pdftex.def)             Requested size: 65.55084pt x 65.54965pt.
+
+<../figures/detect_pow_bal5050_var0_site0.pdf, id=725, 361.35pt x 361.35pt>
+File: ../figures/detect_pow_bal5050_var0_site0.pdf Graphic file (type pdf)
+
+<use ../figures/detect_pow_bal5050_var0_site0.pdf>
+Package pdftex.def Info: ../figures/detect_pow_bal5050_var0_site0.pdf used on i
+nput line 533.
+(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
+
+<../figures/detect_pow_bal5050_var0_site05.pdf, id=726, 361.35pt x 361.35pt>
+File: ../figures/detect_pow_bal5050_var0_site05.pdf Graphic file (type pdf)
+
+<use ../figures/detect_pow_bal5050_var0_site05.pdf>
+Package pdftex.def Info: ../figures/detect_pow_bal5050_var0_site05.pdf used on 
+input line 534.
+(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
+
+<../figures/detect_pow_bal5050_var2_site0.pdf, id=727, 361.35pt x 361.35pt>
+File: ../figures/detect_pow_bal5050_var2_site0.pdf Graphic file (type pdf)
+
+<use ../figures/detect_pow_bal5050_var2_site0.pdf>
+Package pdftex.def Info: ../figures/detect_pow_bal5050_var2_site0.pdf used on i
+nput line 536.
+(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
+
+<../figures/detect_pow_bal5050_var2_site05.pdf, id=728, 361.35pt x 361.35pt>
+File: ../figures/detect_pow_bal5050_var2_site05.pdf Graphic file (type pdf)
+
+<use ../figures/detect_pow_bal5050_var2_site05.pdf>
+Package pdftex.def Info: ../figures/detect_pow_bal5050_var2_site05.pdf used on 
+input line 537.
+(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
+
+Overfull \hbox (0.98857pt too wide) in paragraph at lines 535--537
+ []|  [][][][] 
  []
 
+<../figures/prop_5050subj_7030.pdf, id=729, 144.54pt x 144.54pt>
+File: ../figures/prop_5050subj_7030.pdf Graphic file (type pdf)
 
-Underfull \hbox (badness 10000) in paragraph at lines 609--610
+<use ../figures/prop_5050subj_7030.pdf>
+Package pdftex.def Info: ../figures/prop_5050subj_7030.pdf used on input line 5
+50.
+(pdftex.def)             Requested size: 65.55084pt x 65.54965pt.
 
+<../figures/detect_pow_bal7030_var0_site0.pdf, id=730, 361.35pt x 361.35pt>
+File: ../figures/detect_pow_bal7030_var0_site0.pdf Graphic file (type pdf)
+
+<use ../figures/detect_pow_bal7030_var0_site0.pdf>
+Package pdftex.def Info: ../figures/detect_pow_bal7030_var0_site0.pdf used on i
+nput line 551.
+(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
+
+<../figures/detect_pow_bal7030_var0_site05.pdf, id=731, 361.35pt x 361.35pt>
+File: ../figures/detect_pow_bal7030_var0_site05.pdf Graphic file (type pdf)
+
+<use ../figures/detect_pow_bal7030_var0_site05.pdf>
+Package pdftex.def Info: ../figures/detect_pow_bal7030_var0_site05.pdf used on 
+input line 552.
+(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
+
+<../figures/detect_pow_bal7030_var2_site0.pdf, id=732, 361.35pt x 361.35pt>
+File: ../figures/detect_pow_bal7030_var2_site0.pdf Graphic file (type pdf)
+
+<use ../figures/detect_pow_bal7030_var2_site0.pdf>
+Package pdftex.def Info: ../figures/detect_pow_bal7030_var2_site0.pdf used on i
+nput line 554.
+(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
+
+<../figures/detect_pow_bal7030_var2_site05.pdf, id=733, 361.35pt x 361.35pt>
+File: ../figures/detect_pow_bal7030_var2_site05.pdf Graphic file (type pdf)
+
+<use ../figures/detect_pow_bal7030_var2_site05.pdf>
+Package pdftex.def Info: ../figures/detect_pow_bal7030_var2_site05.pdf used on 
+input line 555.
+(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
+
+Overfull \hbox (0.98857pt too wide) in paragraph at lines 553--555
+ []|  [][][][] 
  []
 
+<../figures/prop_2080subj_5050.pdf, id=734, 144.54pt x 144.54pt>
+File: ../figures/prop_2080subj_5050.pdf Graphic file (type pdf)
 
-Underfull \hbox (badness 10000) in paragraph at lines 611--612
+<use ../figures/prop_2080subj_5050.pdf>
+Package pdftex.def Info: ../figures/prop_2080subj_5050.pdf used on input line 5
+68.
+(pdftex.def)             Requested size: 65.55084pt x 65.54965pt.
 
+<../figures/detect_pow_2080bal5050_var0_site0.pdf, id=735, 361.35pt x 361.35pt>
+File: ../figures/detect_pow_2080bal5050_var0_site0.pdf Graphic file (type pdf)
+<use ../figures/detect_pow_2080bal5050_var0_site0.pdf>
+Package pdftex.def Info: ../figures/detect_pow_2080bal5050_var0_site0.pdf used 
+on input line 569.
+(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
+
+<../figures/detect_pow_2080bal5050_var0_site05.pdf, id=736, 361.35pt x 361.35pt
+>
+File: ../figures/detect_pow_2080bal5050_var0_site05.pdf Graphic file (type pdf)
+
+ <use ../figures/detect_pow_2080bal5050_var0_site05.pdf>
+Package pdftex.def Info: ../figures/detect_pow_2080bal5050_var0_site05.pdf used
+ on input line 570.
+(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
+
+<../figures/detect_pow_2080bal5050_var2_site0.pdf, id=737, 361.35pt x 361.35pt>
+File: ../figures/detect_pow_2080bal5050_var2_site0.pdf Graphic file (type pdf)
+<use ../figures/detect_pow_2080bal5050_var2_site0.pdf>
+Package pdftex.def Info: ../figures/detect_pow_2080bal5050_var2_site0.pdf used 
+on input line 572.
+(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
+
+<../figures/detect_pow_2080bal5050_var2_site05.pdf, id=738, 361.35pt x 361.35pt
+>
+File: ../figures/detect_pow_2080bal5050_var2_site05.pdf Graphic file (type pdf)
+
+ <use ../figures/detect_pow_2080bal5050_var2_site05.pdf>
+Package pdftex.def Info: ../figures/detect_pow_2080bal5050_var2_site05.pdf used
+ on input line 573.
+(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
+
+Overfull \hbox (0.98857pt too wide) in paragraph at lines 571--573
+ []|  [][][][] 
  []
 
+<../figures/prop_2080subj_7030.pdf, id=740, 144.54pt x 144.54pt>
+File: ../figures/prop_2080subj_7030.pdf Graphic file (type pdf)
 
-Underfull \hbox (badness 10000) in paragraph at lines 616--617
+<use ../figures/prop_2080subj_7030.pdf>
+Package pdftex.def Info: ../figures/prop_2080subj_7030.pdf used on input line 5
+86.
+(pdftex.def)             Requested size: 65.55084pt x 65.54965pt.
 
+<../figures/detect_pow_2080bal7030_var0_site0.pdf, id=741, 361.35pt x 361.35pt>
+File: ../figures/detect_pow_2080bal7030_var0_site0.pdf Graphic file (type pdf)
+<use ../figures/detect_pow_2080bal7030_var0_site0.pdf>
+Package pdftex.def Info: ../figures/detect_pow_2080bal7030_var0_site0.pdf used 
+on input line 587.
+(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
+
+<../figures/detect_pow_2080bal7030_var0_site05.pdf, id=742, 361.35pt x 361.35pt
+>
+File: ../figures/detect_pow_2080bal7030_var0_site05.pdf Graphic file (type pdf)
+
+ <use ../figures/detect_pow_2080bal7030_var0_site05.pdf>
+Package pdftex.def Info: ../figures/detect_pow_2080bal7030_var0_site05.pdf used
+ on input line 588.
+(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
+
+<../figures/detect_pow_2080bal7030_var2_site0.pdf, id=743, 361.35pt x 361.35pt>
+File: ../figures/detect_pow_2080bal7030_var2_site0.pdf Graphic file (type pdf)
+<use ../figures/detect_pow_2080bal7030_var2_site0.pdf>
+Package pdftex.def Info: ../figures/detect_pow_2080bal7030_var2_site0.pdf used 
+on input line 590.
+(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
+
+<../figures/detect_pow_2080bal7030_var2_site05.pdf, id=744, 361.35pt x 361.35pt
+>
+File: ../figures/detect_pow_2080bal7030_var2_site05.pdf Graphic file (type pdf)
+
+ <use ../figures/detect_pow_2080bal7030_var2_site05.pdf>
+Package pdftex.def Info: ../figures/detect_pow_2080bal7030_var2_site05.pdf used
+ on input line 591.
+(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
+
+Overfull \hbox (0.98857pt too wide) in paragraph at lines 589--591
+ []|  [][][][] 
  []
 
+<../figures/prop_8020subj_7030.pdf, id=745, 144.54pt x 144.54pt>
+File: ../figures/prop_8020subj_7030.pdf Graphic file (type pdf)
 
-Package natbib Warning: Citation `Dansereau2013a' on page 15 undefined on input
- line 622.
+<use ../figures/prop_8020subj_7030.pdf>
+Package pdftex.def Info: ../figures/prop_8020subj_7030.pdf used on input line 6
+05.
+(pdftex.def)             Requested size: 65.55084pt x 65.54965pt.
 
+<../figures/detect_pow_8020bal7030_var0_site0.pdf, id=746, 361.35pt x 361.35pt>
+File: ../figures/detect_pow_8020bal7030_var0_site0.pdf Graphic file (type pdf)
+<use ../figures/detect_pow_8020bal7030_var0_site0.pdf>
+Package pdftex.def Info: ../figures/detect_pow_8020bal7030_var0_site0.pdf used 
+on input line 606.
+(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
 
-Package natbib Warning: Citation `Dansereau2013b' on page 15 undefined on input
- line 622.
+<../figures/detect_pow_8020bal7030_var0_site05.pdf, id=747, 361.35pt x 361.35pt
+>
+File: ../figures/detect_pow_8020bal7030_var0_site05.pdf Graphic file (type pdf)
+
+ <use ../figures/detect_pow_8020bal7030_var0_site05.pdf>
+Package pdftex.def Info: ../figures/detect_pow_8020bal7030_var0_site05.pdf used
+ on input line 607.
+(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
+
+<../figures/detect_pow_8020bal7030_var2_site0.pdf, id=748, 361.35pt x 361.35pt>
+File: ../figures/detect_pow_8020bal7030_var2_site0.pdf Graphic file (type pdf)
+<use ../figures/detect_pow_8020bal7030_var2_site0.pdf>
+Package pdftex.def Info: ../figures/detect_pow_8020bal7030_var2_site0.pdf used 
+on input line 609.
+(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
+
+<../figures/detect_pow_8020bal7030_var2_site05.pdf, id=749, 361.35pt x 361.35pt
+>
+File: ../figures/detect_pow_8020bal7030_var2_site05.pdf Graphic file (type pdf)
+
+ <use ../figures/detect_pow_8020bal7030_var2_site05.pdf>
+Package pdftex.def Info: ../figures/detect_pow_8020bal7030_var2_site05.pdf used
+ on input line 610.
+(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
+
+Overfull \hbox (0.98857pt too wide) in paragraph at lines 608--610
+ []|  [][][][] 
+ []
 
 [15 <../figures/realdata_detect_pow_sitepatho2site_s100_30pct.pdf> <../figures/
 realdata_detect_pow_sitepatho2site_s100_70pct.pdf
@@ -1244,26 +1200,76 @@ e page
 pdfTeX warning: /usr/texbin/pdflatex (file ../figures/detect_pow_8020bal7030_va
 r2_site05.pdf): PDF inclusion: multiple pdfs with page group included in a sing
 le page
->] (./multisite.bbl [21 <../figures/detect_pow_rndsubj0215_50sites_rndbal1090_v
-ar0_siternd0005.pdf> <../figures/detect_pow_rndsubj0215_50sites_rndbal1090_varr
-nd02_siternd0005.pdf
+>]
+<../figures/detect_pow_rndsubj0215_50sites_rndbal1090_var0_siternd0005.pdf, id=
+1848, 361.35pt x 361.35pt>
+File: ../figures/detect_pow_rndsubj0215_50sites_rndbal1090_var0_siternd0005.pdf
+ Graphic file (type pdf)
+
+<use ../figures/detect_pow_rndsubj0215_50sites_rndbal1090_var0_siternd0005.pdf>
+Package pdftex.def Info: ../figures/detect_pow_rndsubj0215_50sites_rndbal1090_v
+ar0_siternd0005.pdf used on input line 622.
+(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
+
+<../figures/detect_pow_rndsubj0215_50sites_rndbal1090_varrnd02_siternd0005.pdf,
+ id=1849, 361.35pt x 361.35pt>
+File: ../figures/detect_pow_rndsubj0215_50sites_rndbal1090_varrnd02_siternd0005
+.pdf Graphic file (type pdf)
+
+<use ../figures/detect_pow_rndsubj0215_50sites_rndbal1090_varrnd02_siternd0005.
+pdf>
+Package pdftex.def Info: ../figures/detect_pow_rndsubj0215_50sites_rndbal1090_v
+arrnd02_siternd0005.pdf used on input line 623.
+(pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 632--633
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 634--635
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 636--637
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 641--642
+
+ []
+
+[21 <../figures/detect_pow_rndsubj0215_50sites_rndbal1090_var0_siternd0005.pdf>
+ <../figures/detect_pow_rndsubj0215_50sites_rndbal1090_varrnd02_siternd0005.pdf
+
 
 pdfTeX warning: /usr/texbin/pdflatex (file ../figures/detect_pow_rndsubj0215_50
 sites_rndbal1090_varrnd02_siternd0005.pdf): PDF inclusion: multiple pdfs with p
 age group included in a single page
->] [22]
+>]
+
+Package natbib Warning: Citation `Dansereau2013a' on page 22 undefined on input
+ line 647.
+
+
+Package natbib Warning: Citation `Dansereau2013b' on page 22 undefined on input
+ line 647.
+
+(./multisite.bbl [22]
 Underfull \hbox (badness 10000) in paragraph at lines 89--94
 \OT1/cmr/m/n/10 URL []$\OT1/cmtt/m/n/10 http : / / www . frontiersin . org / br
 ain _ imaging _ methods / 10 . 3389 /
  []
 
 [23] [24] [25] [26]) [27]
-Underfull \hbox (badness 10000) in paragraph at lines 652--656
+Underfull \hbox (badness 10000) in paragraph at lines 677--681
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 657--658
+Underfull \hbox (badness 10000) in paragraph at lines 682--683
 
  []
 
@@ -1283,7 +1289,7 @@ Missing character: There is no ô in font cmr10!
 
 
 ]
-Overfull \hbox (0.38843pt too wide) in paragraph at lines 667--668
+Overfull \hbox (0.38843pt too wide) in paragraph at lines 692--693
 \OT1/cmr/m/n/10 anal-y-sis to ex-plore lon-gi-tu-di-nal dif-fer-ences be-tween 
 a group of CNE (n=18)
  []
@@ -1292,27 +1298,27 @@ a group of CNE (n=18)
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 720.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 720.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 745.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 745.
 (./multisite.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 720.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 720.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 745.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 745.
 Package rerunfilecheck Info: File `multisite.out' has not changed.
 (rerunfilecheck)             Checksum: EE6E1116F5EF6E8A74E578D8424A88EB;745.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 720.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 745.
  ) 
 Here is how much of TeX's memory you used:
- 10538 strings out of 493117
- 161094 string characters out of 6135433
- 265846 words of memory out of 5000000
- 13635 multiletter control sequences out of 15000+600000
+ 10541 strings out of 493117
+ 161143 string characters out of 6135433
+ 262884 words of memory out of 5000000
+ 13636 multiletter control sequences out of 15000+600000
  13125 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,10n,47p,2071b,509s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,10n,47p,2071b,499s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.7} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1336,29 +1342,30 @@ pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<
 /usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></
-usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
-sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/
-local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/lo
-cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
-l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/
-texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/tex
-live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texliv
-e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2
-014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2014/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/texmf
--dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/local/texlive/2014/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2014/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2014/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2014/texmf-dist/f
-onts/type1/public/cm-super/sfrm1000.pfb>
-Output written on multisite.pdf (29 pages, 1737083 bytes).
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr
+/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/
+local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/lo
+cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loca
+l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/
+texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texli
+ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/
+2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/201
+4/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2014/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/local/texlive/2014/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2014/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2014/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2014/texmf-dist/fon
+ts/type1/public/cm-super/sfrm1000.pfb>
+Output written on multisite.pdf (29 pages, 1746917 bytes).
 PDF statistics:
- 2148 PDF objects out of 2487 (max. 8388607)
- 789 compressed objects within 8 object streams
- 176 named destinations out of 1000 (max. 500000)
+ 2154 PDF objects out of 2487 (max. 8388607)
+ 794 compressed objects within 8 object streams
+ 178 named destinations out of 1000 (max. 500000)
  310 words of extra memory for PDF output out of 10000 (max. 10000000)
 
