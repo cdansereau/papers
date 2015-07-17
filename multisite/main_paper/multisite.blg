@@ -1,53 +1,50 @@
-This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2014)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: multisite.aux
 The style file: elsarticle-harv.bst
 Database file #1: cdansereau.bib
 Warning--I didn't find a database entry for "Craddock2012"
 Warning--I didn't find a database entry for "Dansereau2013a"
-Warning--empty booktitle in Dansereau2014
-Warning--can't use both volume and number fields in Dansereau2014
-Warning--empty booktitle in Dansereau2013
-Warning--can't use both volume and number fields in Dansereau2013
-You've used 58 entries,
+Warning--I didn't find a database entry for "Dansereau2013b"
+You've used 48 entries,
             2821 wiz_defined-function locations,
-            1096 strings with 26874 characters,
-and the built_in function-call counts, 41068 in all, are:
-= -- 3678
-> -- 3421
-< -- 8
-+ -- 1290
-- -- 1218
-* -- 4432
-:= -- 7520
-add.period$ -- 175
-call.type$ -- 58
-change.case$ -- 697
-chr.to.int$ -- 56
-cite$ -- 62
-duplicate$ -- 1071
-empty$ -- 2019
-format.name$ -- 1396
-if$ -- 7730
+            1017 strings with 22856 characters,
+and the built_in function-call counts, 33578 in all, are:
+= -- 2990
+> -- 2847
+< -- 4
++ -- 1070
+- -- 1014
+* -- 3647
+:= -- 6203
+add.period$ -- 143
+call.type$ -- 48
+change.case$ -- 577
+chr.to.int$ -- 46
+cite$ -- 48
+duplicate$ -- 856
+empty$ -- 1620
+format.name$ -- 1162
+if$ -- 6272
 int.to.chr$ -- 3
 int.to.str$ -- 1
-missing$ -- 56
-newline$ -- 235
-num.names$ -- 232
-pop$ -- 654
+missing$ -- 46
+newline$ -- 197
+num.names$ -- 192
+pop$ -- 540
 preamble$ -- 1
-purify$ -- 638
+purify$ -- 530
 quote$ -- 0
-skip$ -- 691
+skip$ -- 538
 stack$ -- 0
-substring$ -- 2028
-swap$ -- 200
-text.length$ -- 4
+substring$ -- 1608
+swap$ -- 145
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 522
-warning$ -- 4
-while$ -- 274
+type$ -- 432
+warning$ -- 0
+while$ -- 224
 width$ -- 0
-write$ -- 694
-(There were 6 warnings)
+write$ -- 574
+(There were 3 warnings)
