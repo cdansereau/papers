@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.2.3)  9 JUN 2015 17:29
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.2.3)  10 JUN 2015 13:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -680,10 +680,6 @@ Overfull \hbox (8.55519pt too wide) in paragraph at lines 150--153
 INDI) pro-vided a glimpse
  []
 
-
-Package natbib Warning: Citation `Cheng2015' on page 4 undefined on input line 
-165.
-
 [4]
 Underfull \hbox (badness 10000) in paragraph at lines 181--181
 [][][]$\OT1/cmtt/m/n/8 http : / / www . calculquebec . ca / index . php / en / 
@@ -708,7 +704,7 @@ Missing character: There is no ™ in font cmr10!
 
 LaTeX Warning: Reference `fig_icc' on page 9 undefined on input line 304.
 
-[9] <../figures/inter_vs_intra_3tonly.png, id=327, 365.6862pt x 311.2428pt>
+[9] <../figures/inter_vs_intra_3tonly.png, id=330, 365.6862pt x 311.2428pt>
 File: ../figures/inter_vs_intra_3tonly.png Graphic file (type png)
 
 <use ../figures/inter_vs_intra_3tonly.png>
@@ -716,7 +712,7 @@ Package pdftex.def Info: ../figures/inter_vs_intra_3tonly.png used on input lin
 e 362.
 (pdftex.def)             Requested size: 345.0pt x 293.65582pt.
 
-<../figures/pccmap_multisite.png, id=332, 880.28876pt x 512.91624pt>
+<../figures/pccmap_multisite.png, id=335, 880.28876pt x 512.91624pt>
 File: ../figures/pccmap_multisite.png Graphic file (type png)
 
 <use ../figures/pccmap_multisite.png>
@@ -724,7 +720,7 @@ Package pdftex.def Info: ../figures/pccmap_multisite.png used on input line 379
 .
 (pdftex.def)             Requested size: 345.0pt x 201.01483pt.
 
-<../figures/connectome_multisite.png, id=334, 625.33624pt x 614.295pt>
+<../figures/connectome_multisite.png, id=337, 625.33624pt x 614.295pt>
 File: ../figures/connectome_multisite.png Graphic file (type png)
 
 <use ../figures/connectome_multisite.png>
@@ -732,14 +728,14 @@ Package pdftex.def Info: ../figures/connectome_multisite.png used on input line
  390.
 (pdftex.def)             Requested size: 345.0pt x 338.9131pt.
 
-<../figures/p2p_seeds.pdf, id=335, 209.95047pt x 246.46632pt>
+<../figures/p2p_seeds.pdf, id=338, 209.95047pt x 246.46632pt>
 File: ../figures/p2p_seeds.pdf Graphic file (type pdf)
 
 <use ../figures/p2p_seeds.pdf>
 Package pdftex.def Info: ../figures/p2p_seeds.pdf used on input line 404.
 (pdftex.def)             Requested size: 172.5pt x 202.51361pt.
 
-<../figures/realdata_detect_pow_s40_50pct.pdf, id=336, 361.35pt x 361.35pt>
+<../figures/realdata_detect_pow_s40_50pct.pdf, id=339, 361.35pt x 361.35pt>
 File: ../figures/realdata_detect_pow_s40_50pct.pdf Graphic file (type pdf)
 
 <use ../figures/realdata_detect_pow_s40_50pct.pdf>
@@ -747,7 +743,7 @@ Package pdftex.def Info: ../figures/realdata_detect_pow_s40_50pct.pdf used on i
 nput line 637.
 (pdftex.def)             Requested size: 110.40253pt x 110.40181pt.
 
-<../figures/realdata_detect_pow_s80_50pct.pdf, id=337, 361.35pt x 361.35pt>
+<../figures/realdata_detect_pow_s80_50pct.pdf, id=340, 361.35pt x 361.35pt>
 File: ../figures/realdata_detect_pow_s80_50pct.pdf Graphic file (type pdf)
 
 <use ../figures/realdata_detect_pow_s80_50pct.pdf>
@@ -755,7 +751,7 @@ Package pdftex.def Info: ../figures/realdata_detect_pow_s80_50pct.pdf used on i
 nput line 639.
 (pdftex.def)             Requested size: 110.40253pt x 110.40181pt.
 
-<../figures/realdata_detect_pow_s120_50pct.pdf, id=338, 361.35pt x 361.35pt>
+<../figures/realdata_detect_pow_s120_50pct.pdf, id=341, 361.35pt x 361.35pt>
 File: ../figures/realdata_detect_pow_s120_50pct.pdf Graphic file (type pdf)
 
 <use ../figures/realdata_detect_pow_s120_50pct.pdf>
@@ -769,7 +765,7 @@ Package pdftex.def Info: ../figures/realdata_detect_pow_s120_50pct.pdf used on
 input line 653.
 (pdftex.def)             Requested size: 110.40253pt x 110.40181pt.
 
-<../figures/realdata_detect_pow_s120_30pct.pdf, id=339, 361.35pt x 361.35pt>
+<../figures/realdata_detect_pow_s120_30pct.pdf, id=342, 361.35pt x 361.35pt>
 File: ../figures/realdata_detect_pow_s120_30pct.pdf Graphic file (type pdf)
 
 <use ../figures/realdata_detect_pow_s120_30pct.pdf>
@@ -777,7 +773,7 @@ Package pdftex.def Info: ../figures/realdata_detect_pow_s120_30pct.pdf used on
 input line 655.
 (pdftex.def)             Requested size: 110.40253pt x 110.40181pt.
 
-<../figures/realdata_detect_pow_s120_15pct.pdf, id=340, 361.35pt x 361.35pt>
+<../figures/realdata_detect_pow_s120_15pct.pdf, id=343, 361.35pt x 361.35pt>
 File: ../figures/realdata_detect_pow_s120_15pct.pdf Graphic file (type pdf)
 
 <use ../figures/realdata_detect_pow_s120_15pct.pdf>
@@ -785,7 +781,7 @@ Package pdftex.def Info: ../figures/realdata_detect_pow_s120_15pct.pdf used on
 input line 657.
 (pdftex.def)             Requested size: 110.40253pt x 110.40181pt.
 
-<../figures/realdata_detect_pow_sitepatho_s120_50pct.pdf, id=341, 361.35pt x 36
+<../figures/realdata_detect_pow_sitepatho_s120_50pct.pdf, id=344, 361.35pt x 36
 1.35pt>
 File: ../figures/realdata_detect_pow_sitepatho_s120_50pct.pdf Graphic file (typ
 e pdf)
@@ -794,7 +790,7 @@ Package pdftex.def Info: ../figures/realdata_detect_pow_sitepatho_s120_50pct.pd
 f used on input line 669.
 (pdftex.def)             Requested size: 110.40253pt x 110.40181pt.
 
-<../figures/realdata_detect_pow_sitepatho_s120_30pct.pdf, id=342, 361.35pt x 36
+<../figures/realdata_detect_pow_sitepatho_s120_30pct.pdf, id=345, 361.35pt x 36
 1.35pt>
 File: ../figures/realdata_detect_pow_sitepatho_s120_30pct.pdf Graphic file (typ
 e pdf)
@@ -803,7 +799,7 @@ Package pdftex.def Info: ../figures/realdata_detect_pow_sitepatho_s120_30pct.pd
 f used on input line 671.
 (pdftex.def)             Requested size: 110.40253pt x 110.40181pt.
 
-<../figures/realdata_detect_pow_sitepatho_s120_15pct.pdf, id=343, 361.35pt x 36
+<../figures/realdata_detect_pow_sitepatho_s120_15pct.pdf, id=346, 361.35pt x 36
 1.35pt>
 File: ../figures/realdata_detect_pow_sitepatho_s120_15pct.pdf Graphic file (typ
 e pdf)
@@ -812,7 +808,7 @@ Package pdftex.def Info: ../figures/realdata_detect_pow_sitepatho_s120_15pct.pd
 f used on input line 673.
 (pdftex.def)             Requested size: 110.40253pt x 110.40181pt.
 
-<../figures/realdata_detect_pow_sitepatho2site_s100_30pct.pdf, id=344, 361.35pt
+<../figures/realdata_detect_pow_sitepatho2site_s100_30pct.pdf, id=347, 361.35pt
  x 361.35pt>
 File: ../figures/realdata_detect_pow_sitepatho2site_s100_30pct.pdf Graphic file
  (type pdf)
@@ -822,7 +818,7 @@ Package pdftex.def Info: ../figures/realdata_detect_pow_sitepatho2site_s100_30p
 ct.pdf used on input line 682.
 (pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
 
-<../figures/realdata_detect_pow_sitepatho2site_s100_70pct.pdf, id=345, 361.35pt
+<../figures/realdata_detect_pow_sitepatho2site_s100_70pct.pdf, id=348, 361.35pt
  x 361.35pt>
 File: ../figures/realdata_detect_pow_sitepatho2site_s100_70pct.pdf Graphic file
  (type pdf)
@@ -832,7 +828,7 @@ Package pdftex.def Info: ../figures/realdata_detect_pow_sitepatho2site_s100_70p
 ct.pdf used on input line 683.
 (pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
 
-<../figures/prop_5050subj_5050.pdf, id=346, 144.54pt x 144.54pt>
+<../figures/prop_5050subj_5050.pdf, id=349, 144.54pt x 144.54pt>
 File: ../figures/prop_5050subj_5050.pdf Graphic file (type pdf)
 
 <use ../figures/prop_5050subj_5050.pdf>
@@ -840,7 +836,7 @@ Package pdftex.def Info: ../figures/prop_5050subj_5050.pdf used on input line 6
 94.
 (pdftex.def)             Requested size: 65.55084pt x 65.54965pt.
 
-<../figures/detect_pow_bal5050_var0_site0.pdf, id=347, 361.35pt x 361.35pt>
+<../figures/detect_pow_bal5050_var0_site0.pdf, id=350, 361.35pt x 361.35pt>
 File: ../figures/detect_pow_bal5050_var0_site0.pdf Graphic file (type pdf)
 
 <use ../figures/detect_pow_bal5050_var0_site0.pdf>
@@ -848,7 +844,7 @@ Package pdftex.def Info: ../figures/detect_pow_bal5050_var0_site0.pdf used on i
 nput line 695.
 (pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
 
-<../figures/detect_pow_bal5050_var0_site05.pdf, id=348, 361.35pt x 361.35pt>
+<../figures/detect_pow_bal5050_var0_site05.pdf, id=351, 361.35pt x 361.35pt>
 File: ../figures/detect_pow_bal5050_var0_site05.pdf Graphic file (type pdf)
 
 <use ../figures/detect_pow_bal5050_var0_site05.pdf>
@@ -856,7 +852,7 @@ Package pdftex.def Info: ../figures/detect_pow_bal5050_var0_site05.pdf used on
 input line 696.
 (pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
 
-<../figures/detect_pow_bal5050_var2_site0.pdf, id=349, 361.35pt x 361.35pt>
+<../figures/detect_pow_bal5050_var2_site0.pdf, id=352, 361.35pt x 361.35pt>
 File: ../figures/detect_pow_bal5050_var2_site0.pdf Graphic file (type pdf)
 
 <use ../figures/detect_pow_bal5050_var2_site0.pdf>
@@ -864,7 +860,7 @@ Package pdftex.def Info: ../figures/detect_pow_bal5050_var2_site0.pdf used on i
 nput line 698.
 (pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
 
-<../figures/detect_pow_bal5050_var2_site05.pdf, id=350, 361.35pt x 361.35pt>
+<../figures/detect_pow_bal5050_var2_site05.pdf, id=353, 361.35pt x 361.35pt>
 File: ../figures/detect_pow_bal5050_var2_site05.pdf Graphic file (type pdf)
 
 <use ../figures/detect_pow_bal5050_var2_site05.pdf>
@@ -876,7 +872,7 @@ Overfull \hbox (0.98857pt too wide) in paragraph at lines 697--699
  []|  [][][][] 
  []
 
-<../figures/prop_5050subj_7030.pdf, id=351, 144.54pt x 144.54pt>
+<../figures/prop_5050subj_7030.pdf, id=354, 144.54pt x 144.54pt>
 File: ../figures/prop_5050subj_7030.pdf Graphic file (type pdf)
 
 <use ../figures/prop_5050subj_7030.pdf>
@@ -884,7 +880,7 @@ Package pdftex.def Info: ../figures/prop_5050subj_7030.pdf used on input line 7
 09.
 (pdftex.def)             Requested size: 65.55084pt x 65.54965pt.
 
-<../figures/detect_pow_bal7030_var0_site0.pdf, id=352, 361.35pt x 361.35pt>
+<../figures/detect_pow_bal7030_var0_site0.pdf, id=355, 361.35pt x 361.35pt>
 File: ../figures/detect_pow_bal7030_var0_site0.pdf Graphic file (type pdf)
 
 <use ../figures/detect_pow_bal7030_var0_site0.pdf>
@@ -892,7 +888,7 @@ Package pdftex.def Info: ../figures/detect_pow_bal7030_var0_site0.pdf used on i
 nput line 710.
 (pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
 
-<../figures/detect_pow_bal7030_var0_site05.pdf, id=353, 361.35pt x 361.35pt>
+<../figures/detect_pow_bal7030_var0_site05.pdf, id=356, 361.35pt x 361.35pt>
 File: ../figures/detect_pow_bal7030_var0_site05.pdf Graphic file (type pdf)
 
 <use ../figures/detect_pow_bal7030_var0_site05.pdf>
@@ -900,7 +896,7 @@ Package pdftex.def Info: ../figures/detect_pow_bal7030_var0_site05.pdf used on
 input line 711.
 (pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
 
-<../figures/detect_pow_bal7030_var2_site0.pdf, id=354, 361.35pt x 361.35pt>
+<../figures/detect_pow_bal7030_var2_site0.pdf, id=357, 361.35pt x 361.35pt>
 File: ../figures/detect_pow_bal7030_var2_site0.pdf Graphic file (type pdf)
 
 <use ../figures/detect_pow_bal7030_var2_site0.pdf>
@@ -908,7 +904,7 @@ Package pdftex.def Info: ../figures/detect_pow_bal7030_var2_site0.pdf used on i
 nput line 713.
 (pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
 
-<../figures/detect_pow_bal7030_var2_site05.pdf, id=355, 361.35pt x 361.35pt>
+<../figures/detect_pow_bal7030_var2_site05.pdf, id=358, 361.35pt x 361.35pt>
 File: ../figures/detect_pow_bal7030_var2_site05.pdf Graphic file (type pdf)
 
 <use ../figures/detect_pow_bal7030_var2_site05.pdf>
@@ -920,7 +916,7 @@ Overfull \hbox (0.98857pt too wide) in paragraph at lines 712--714
  []|  [][][][] 
  []
 
-<../figures/prop_2080subj_5050.pdf, id=356, 144.54pt x 144.54pt>
+<../figures/prop_2080subj_5050.pdf, id=359, 144.54pt x 144.54pt>
 File: ../figures/prop_2080subj_5050.pdf Graphic file (type pdf)
 
 <use ../figures/prop_2080subj_5050.pdf>
@@ -928,14 +924,14 @@ Package pdftex.def Info: ../figures/prop_2080subj_5050.pdf used on input line 7
 24.
 (pdftex.def)             Requested size: 65.55084pt x 65.54965pt.
 
-<../figures/detect_pow_2080bal5050_var0_site0.pdf, id=357, 361.35pt x 361.35pt>
+<../figures/detect_pow_2080bal5050_var0_site0.pdf, id=360, 361.35pt x 361.35pt>
 File: ../figures/detect_pow_2080bal5050_var0_site0.pdf Graphic file (type pdf)
 <use ../figures/detect_pow_2080bal5050_var0_site0.pdf>
 Package pdftex.def Info: ../figures/detect_pow_2080bal5050_var0_site0.pdf used 
 on input line 725.
 (pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
 
-<../figures/detect_pow_2080bal5050_var0_site05.pdf, id=358, 361.35pt x 361.35pt
+<../figures/detect_pow_2080bal5050_var0_site05.pdf, id=361, 361.35pt x 361.35pt
 >
 File: ../figures/detect_pow_2080bal5050_var0_site05.pdf Graphic file (type pdf)
 
@@ -944,14 +940,14 @@ Package pdftex.def Info: ../figures/detect_pow_2080bal5050_var0_site05.pdf used
  on input line 726.
 (pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
 
-<../figures/detect_pow_2080bal5050_var2_site0.pdf, id=359, 361.35pt x 361.35pt>
+<../figures/detect_pow_2080bal5050_var2_site0.pdf, id=362, 361.35pt x 361.35pt>
 File: ../figures/detect_pow_2080bal5050_var2_site0.pdf Graphic file (type pdf)
 <use ../figures/detect_pow_2080bal5050_var2_site0.pdf>
 Package pdftex.def Info: ../figures/detect_pow_2080bal5050_var2_site0.pdf used 
 on input line 728.
 (pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
 
-<../figures/detect_pow_2080bal5050_var2_site05.pdf, id=360, 361.35pt x 361.35pt
+<../figures/detect_pow_2080bal5050_var2_site05.pdf, id=363, 361.35pt x 361.35pt
 >
 File: ../figures/detect_pow_2080bal5050_var2_site05.pdf Graphic file (type pdf)
 
@@ -964,7 +960,7 @@ Overfull \hbox (0.98857pt too wide) in paragraph at lines 727--729
  []|  [][][][] 
  []
 
-<../figures/prop_2080subj_7030.pdf, id=361, 144.54pt x 144.54pt>
+<../figures/prop_2080subj_7030.pdf, id=364, 144.54pt x 144.54pt>
 File: ../figures/prop_2080subj_7030.pdf Graphic file (type pdf)
 
 <use ../figures/prop_2080subj_7030.pdf>
@@ -972,14 +968,14 @@ Package pdftex.def Info: ../figures/prop_2080subj_7030.pdf used on input line 7
 40.
 (pdftex.def)             Requested size: 65.55084pt x 65.54965pt.
 
-<../figures/detect_pow_2080bal7030_var0_site0.pdf, id=362, 361.35pt x 361.35pt>
+<../figures/detect_pow_2080bal7030_var0_site0.pdf, id=365, 361.35pt x 361.35pt>
 File: ../figures/detect_pow_2080bal7030_var0_site0.pdf Graphic file (type pdf)
 <use ../figures/detect_pow_2080bal7030_var0_site0.pdf>
 Package pdftex.def Info: ../figures/detect_pow_2080bal7030_var0_site0.pdf used 
 on input line 741.
 (pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
 
-<../figures/detect_pow_2080bal7030_var0_site05.pdf, id=363, 361.35pt x 361.35pt
+<../figures/detect_pow_2080bal7030_var0_site05.pdf, id=366, 361.35pt x 361.35pt
 >
 File: ../figures/detect_pow_2080bal7030_var0_site05.pdf Graphic file (type pdf)
 
@@ -988,14 +984,14 @@ Package pdftex.def Info: ../figures/detect_pow_2080bal7030_var0_site05.pdf used
  on input line 742.
 (pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
 
-<../figures/detect_pow_2080bal7030_var2_site0.pdf, id=364, 361.35pt x 361.35pt>
+<../figures/detect_pow_2080bal7030_var2_site0.pdf, id=367, 361.35pt x 361.35pt>
 File: ../figures/detect_pow_2080bal7030_var2_site0.pdf Graphic file (type pdf)
 <use ../figures/detect_pow_2080bal7030_var2_site0.pdf>
 Package pdftex.def Info: ../figures/detect_pow_2080bal7030_var2_site0.pdf used 
 on input line 744.
 (pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
 
-<../figures/detect_pow_2080bal7030_var2_site05.pdf, id=365, 361.35pt x 361.35pt
+<../figures/detect_pow_2080bal7030_var2_site05.pdf, id=368, 361.35pt x 361.35pt
 >
 File: ../figures/detect_pow_2080bal7030_var2_site05.pdf Graphic file (type pdf)
 
@@ -1008,7 +1004,7 @@ Overfull \hbox (0.98857pt too wide) in paragraph at lines 743--745
  []|  [][][][] 
  []
 
-<../figures/prop_8020subj_7030.pdf, id=366, 144.54pt x 144.54pt>
+<../figures/prop_8020subj_7030.pdf, id=369, 144.54pt x 144.54pt>
 File: ../figures/prop_8020subj_7030.pdf Graphic file (type pdf)
 
 <use ../figures/prop_8020subj_7030.pdf>
@@ -1016,14 +1012,14 @@ Package pdftex.def Info: ../figures/prop_8020subj_7030.pdf used on input line 7
 55.
 (pdftex.def)             Requested size: 65.55084pt x 65.54965pt.
 
-<../figures/detect_pow_8020bal7030_var0_site0.pdf, id=367, 361.35pt x 361.35pt>
+<../figures/detect_pow_8020bal7030_var0_site0.pdf, id=370, 361.35pt x 361.35pt>
 File: ../figures/detect_pow_8020bal7030_var0_site0.pdf Graphic file (type pdf)
 <use ../figures/detect_pow_8020bal7030_var0_site0.pdf>
 Package pdftex.def Info: ../figures/detect_pow_8020bal7030_var0_site0.pdf used 
 on input line 756.
 (pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
 
-<../figures/detect_pow_8020bal7030_var0_site05.pdf, id=368, 361.35pt x 361.35pt
+<../figures/detect_pow_8020bal7030_var0_site05.pdf, id=371, 361.35pt x 361.35pt
 >
 File: ../figures/detect_pow_8020bal7030_var0_site05.pdf Graphic file (type pdf)
 
@@ -1032,14 +1028,14 @@ Package pdftex.def Info: ../figures/detect_pow_8020bal7030_var0_site05.pdf used
  on input line 757.
 (pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
 
-<../figures/detect_pow_8020bal7030_var2_site0.pdf, id=369, 361.35pt x 361.35pt>
+<../figures/detect_pow_8020bal7030_var2_site0.pdf, id=372, 361.35pt x 361.35pt>
 File: ../figures/detect_pow_8020bal7030_var2_site0.pdf Graphic file (type pdf)
 <use ../figures/detect_pow_8020bal7030_var2_site0.pdf>
 Package pdftex.def Info: ../figures/detect_pow_8020bal7030_var2_site0.pdf used 
 on input line 759.
 (pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
 
-<../figures/detect_pow_8020bal7030_var2_site05.pdf, id=370, 361.35pt x 361.35pt
+<../figures/detect_pow_8020bal7030_var2_site05.pdf, id=373, 361.35pt x 361.35pt
 >
 File: ../figures/detect_pow_8020bal7030_var2_site05.pdf Graphic file (type pdf)
 
@@ -1054,7 +1050,7 @@ Overfull \hbox (0.98857pt too wide) in paragraph at lines 758--760
 
 
 <../figures/detect_pow_rndsubj0215_50sites_rndbal1090_var0_siternd0005.pdf, id=
-371, 361.35pt x 361.35pt>
+374, 361.35pt x 361.35pt>
 File: ../figures/detect_pow_rndsubj0215_50sites_rndbal1090_var0_siternd0005.pdf
  Graphic file (type pdf)
 
@@ -1064,7 +1060,7 @@ ar0_siternd0005.pdf used on input line 768.
 (pdftex.def)             Requested size: 134.54979pt x 134.54652pt.
 
 <../figures/detect_pow_rndsubj0215_50sites_rndbal1090_varrnd02_siternd0005.pdf,
- id=372, 361.35pt x 361.35pt>
+ id=375, 361.35pt x 361.35pt>
 File: ../figures/detect_pow_rndsubj0215_50sites_rndbal1090_varrnd02_siternd0005
 .pdf Graphic file (type pdf)
 
@@ -1469,12 +1465,7 @@ Package natbib Warning: There were undefined citations.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 898.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 898.
-(./multisite.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
+(./multisite.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 898.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 898.
 Package rerunfilecheck Info: File `multisite.out' has not changed.
@@ -1491,11 +1482,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 898.
 Here is how much of TeX's memory you used:
  10430 strings out of 495032
  158126 string characters out of 6181719
- 268965 words of memory out of 5000000
+ 269120 words of memory out of 5000000
  13299 multiletter control sequences out of 15000+600000
  13813 words of font info for 52 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 44i,10n,47p,2028b,536s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,10n,47p,2028b,533s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.7} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1537,9 +1528,9 @@ ype1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmti7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmtt8.pfb>
-Output written on multisite.pdf (25 pages, 1919336 bytes).
+Output written on multisite.pdf (25 pages, 1919739 bytes).
 PDF statistics:
- 2116 PDF objects out of 2487 (max. 8388607)
+ 2118 PDF objects out of 2487 (max. 8388607)
  160 named destinations out of 1000 (max. 500000)
  278 words of extra memory for PDF output out of 10000 (max. 10000000)
 
