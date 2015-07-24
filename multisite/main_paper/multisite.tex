@@ -88,85 +88,27 @@ multisite \sep multiprotocol \sep bias \sep statistical power \sep sample size \
 \end{itemize}
 
 \section{Introduction}
-%Resting-state (RS) connectivity in fMRI is a promising biomarker for a variety of neurological diseases. Typically, in a clinical trial, a large cohort is recruited and evaluated at multiple sites spread over countries or even continents. In academia the budget allowed per investigator for scanning is generally of the order of 30 to 50 subjects leading to small cohorts, one problem with small sample size is the difficulty to detect small and consistent effect (differences) between groups. A solution that can help on this front is to increase the number of subject by pooling small RS cohorts acquired on the same scanner or on different scanners, this approach is referred to has multisite acquisition.
-
 
 % Magic paragraph
-Resting-state (RS) connectivity in fMRI is a promising biomarker for a variety of neurological diseases. Although, there is increasing concern about the reliability and reproducibility of scientific research and findings. One major source of concern within neuroscience is the low statistical power of many published studies, given that this increases the proportion of published findings that are false and can create unwanted biases or difficulty to detect small and consistent effect (differences) between groups. These worries have increased pressure to amass larger samples, but in many cases this is not feasible due to recruitment constraints (for example, when the number of subjects with a particular disorder in any geographical area is limited) or financial limitations. A solution to that problem is to increase the number of subject by pooling small RS cohorts acquired on the same scanner or on different scanners, this approach is referred to has multisite acquisition. Multi-site study are more and more common in fMRI and a lot of initiative have started to emerge to provide public data acquired at multiple sites. Has reported by \cite{Cheng2015} there is an urgent need to use methods that will allow large-scale pooling of data to both reduce the impact of heterogeneity between studies and allow the study of stratified subgroups. Nevertheless, multi-centric studies come with there share of advantages and disadvantages. The main advantages are the rapid recruitment of large sample-size across multiple sites and potentially distant geographically. This parallel recruitment provide better generalization due to more diversity in the scanners used although result in potential new sources of variance. This bias in measurement originating from the various acquisitions sites may decrease the benefit of a large sample-size due to the added variability in the data. We are therefore taking advantage of a public fMRI resource that incorporate these kind of variabilities to address this question and several others.
+\paragraph{Main objective}
+Studies collecting brain images at multiple sites are becoming increasingly common in resting-state functional magnetic resonance imaging (rs-fMRI). In particular, some consortia have retrospectively shared rs-fMRI data from multiple independent studies of comparable populations, with the objective of dramatically increasing the sample size at the cost of increased sample homogeneity, e.g. normal controls in the 1000 functional connectome project (FCP) \citep{Biswal2010}, children and adolescents suffering from attention deficit hyperactivity disorder from the ADHD200 (REF), or individual diagnosed with autism spectrum disorder in ABIDE (REF). Recruitment of patient populations in a limited time frame may also require acquisitions at multiple sites, e.g. the Alzheimer’s disease neuroimaging initiative (ADNI) \citep{Mueller2005} (REF2) fBIRN, which is a common practice in pharmaceutical clinical trials at phase II and III (REF?). An important benefit of multisite acquisitions is to offer improved generalization compared to single site studies, due to more diversity in scanners and populations. These additional sources of variance may however decrease the statistical power, and somewhat mitigate the benefits of having a large sample size. In this work, our main objective was to quantitatively assess the impact of inter-site variability on statistical power, for rs-fMRI group comparison.
 
-% Poldrack
-%Reducing the cost of doing science. Making data available can greatly reduce the cost of scientific research when those data are relevant to new questions. Not all questions of interest can be answered using existing data sets, but to the degree that they can, the use of these shared data instead of collecting redundant new data could be a significant source of savings for researchers, allowing more money to be spent on personnel involved in data analysis.
-\paragraph{Mutisite}
-In most experiments conducted in neuroimaging, the main factors that influence power are: (1) the size of the effect, determined by the difference of the mean connectivity of one group versus a control group and the variability of this difference across subjects and groups; and (2) the sample size, i.e. the number of subjects in the study \citep{Desmond2002}. This last factor is usually the only one controlled by the investigator, hence why an increasing number of researchers share data. Multisite studies can be classified in two categories, the first one is independent studies that we would like to pool together even though the acquisition protocol are heterogeneous like the 1000 functional connectome project. The second category is the standardised studies across multiple sites, were a strict protocol is in place to harmonize the sites and an effort to homogenize the scanner parameters et acquisition protocols as been done like the ADNI dataset. Various reasons can justify multisite analysis, in research it is very difficult to obtain a grant large enough to scan a cohort larger than ~80 subjects, therefore researcher and consortium initiatives have started to pool their resources together to make initiative composed of publicly available large cohorts of subjects like the 1000 functional connectome \citep{Biswal2010}, ADNI \citep{Mueller2005}, among 
-others. In clinical trial the justification for multicentric acquisition is more of a logistical one then a financial reason; they need to recruit a large amount of subject in a short period of time. In order to achieve this goal they mandate the recruitment to multiple clinical centers across the globe which accelerate the evaluation time of a drug. Although these centers may be similar by their scanner protocols, scanners will have difference in their software version, specific add-on to the scanners, and, most importantly, vendors (even field strength may differ in some cases). Unfortunately between studies, MR acquisition methodologies are among the most commonly cited sources of measurement variation \citep{Friedman2006}. This is why it is important to assess if multi-site resting-state connectivity analysis are feasible (we can combine the data from multiple sources while introducing a reasonable amount of variance which is still acceptable to detect effects in the data) and what corrective measure on the data should be applied to reduce the bias introduced by multisite analysis. 
+\paragraph{Statistical power}
+A simple and popular measure of individual resting-state connectivity is the Pearson’s correlation coefficient between the average temporal rs-fMRI fluctuations of two brain parcels. To compare two groups, a general linear model (GLM) is typically used to establish statistical difference in average connectivity between the groups, while accounting for possible confounding variables such as age, sex or the amount of head motion during the scan. Based on the parameters estimated by the GLM, a p-value is generated for each connection to quantify the probability that the difference in average connectivity is significantly distant from zero (Worsley and Friston, 1995). If the estimated p-value is smaller than a prescribed false-positive rate, say $\alpha=0.05$, then the difference in connectivity is deemed significant. Although in classical statistical testing the statistical decision is made purely based on the p-value, or type I errors, the statistical power is as critical as it controls for type II errors, i.e. failing to detect true differences. The statistical power is defined as the probability of finding a significant difference, when there is indeed a true difference. In the GLM, the statistical power in addition to sample size \citep{Desmond2002}: (1) the sample size; (2) the absolute size of the effect, i.e. the difference in mean connectivity between groups; and, (3) the variability of measures. 
+The careful design of a study typically involves selecting the sample size in order to achieve a reasonable statistical power, say larger than $80\%$. But the choice of a multisite vs monosite study design may also impact statistical power by increasing the variability of measures. The recent work of \cite{Yang2014} have shown the presence of a significant bias in rs-fMRI measures between site, yet, to the best of our knowledge, the amplitude of this bias and its implications for statistical power calculation are not currently documented in the literature. 
 
-%grosse etude multicentrique pour les grosse étude 
-%CORR, ADHD200, INDI 
-%(1000 functional connectome project, CORR, ABIDE, ...)
-%datasharing d'étude multiple 
+\paragraph{Sources of variance in rs-fMRI}
+The variability of rs-fMRI connectivity measures has both physiological and instrumental origins. Some sources of variability are shared by monosite and multisite studies, while others are specific of multisite studies. We can first note that rs-fMRI connectivity only has moderate-to-good test-rest reliability, when the measure is repeated for the same subjects in the same scanner \citep{Shehzad2009}. Many physiological factors likely contribute to these variations, such as the cognitive state of the subject, the level of alertness/drowsiness, circadian rhythm, hunger, medical regimen, potential neurostimulants, amongst others. There is also an instrumental variability even within subject and within scanner. The thermal noise in rs-fMRI only has a small amplitude (REF), but there are non-uniformity artefacts which have a strong impact on the signal, and will vary from session to session with the positioning of subjects as well as the adjustment of shimming (REF). Another source of within-site variations is the difference in connectivity across subjects. These variations are substantial and have been associated to a myriad of variables and clinical conditions (REF review). Taken together, the combination of within- and between-subjects variance is expected to have a large amplitude even at a single site. Multisite studies will add additional sources of physiological variations, as populations at different sites may substantially differ in terms of ethnicity, language, diet, socioeconomic status, exposure to pollutants, typical medication, quality of health services, etc. Some of these factors will be present even if stringent and harmonized inclusion/exclusion criteria are applied, e.g. diet or language. In terms of instrumentation, the fMRI measurements across sites can be affected by the scanner make and model \citep{Friedman2006}, sequence parameters such as repetition time, flip angle, or acquisition volume \citep{Friedman2006a}, experimental design such as eyes-open/eyes-closed \citep{Yan2009} or experiment duration \citep{VanDijk2010}, and scanning environment such as sound attenuation measures \citep{Elliott1999}, room temperature \citep{Vanhoutte2006}, or head-motion restraint techniques \citep{Edward2000}. Many of these parameters can be harmonized to some extent, but some differences may always remain, e.g. even identical scanners may have different software versions or upgrades.
 
-
-%\textbf{Difficulty of increasing the sample size}
-%\begin{itemize}
-%\item Collecting a large sample size is very expensive.
-%\item Recruitment may be difficult at a single site.
-%\item Large sample size can be achieved in multisite study.
-%\item Multisite studies come with problems of their own.
-%\end{itemize}
-
-
-\paragraph{Sources of variance across sites}
-%%\frametitle{Source of variance across sites}
-%\begin{itemize}
-%\item \textbf{Inclusion/exclusion criteria.}
-%\item \textbf{Socio-cultural characteristics of recruiting sites} \\(e.g., ethnicity, language, diet, socioeconomic status).
-%\item \textbf{Acquisition-related factors} \\(e.g., scanner make and model, sequence type, coil type, repetition time, flip angle, acquisition volume, etc).
-%\item \textbf{Experimental design-related variations} \\(e.g., eyes-open/closed, experiment duration, instruction to participant).
-%\item \textbf{Environmental-related variations} \\(e.g., sound, room temperature, head-motion restraint).
-%\end{itemize}
-%
-%
-%\textit{
-%\begin{enumerate}
-%\item Acquisition-related variations:
-%\begin{enumerate}
-%\item Scanner make and model \citep{Friedman2006}
-%\item Sequence type (spiral vs. echo planar; single-echo vs. multi-echo) \citep{Klarhoefer2002}, parallel vs. conventional acquisition \citep{Feinberg2010} \citep{Lin2005}
-%\item Coil type (surface vs. volume, number of channels, orientation).
-%\item Acquisition parameters: repetition time, number of repetitions, flip angle, echo time, and acquisition volume (field of view, voxel size, slice thickness/gaps, slice prescription) \citep{Friedman2006a}.
-%\end{enumerate}
-%\item Experimental-related variations: 
-%\begin{enumerate}
-%\item Participant instructions \citep{Hartstra2011}, eyes-open/eyes-closed \citep{Yan2009} \citep{Yang2007}, visual displays, experiment duration \citep{Fang2007} \citep{VanDijk2010}.
-%\end{enumerate}
-%\item Environment-related variations: 
-%\begin{enumerate}
-%\item Sound attenuation measures \citep{Cho1998} \citep{Elliott1999}.
-%\item Attempts to improve participant comfort during scans (e.g., music, videos) \citep{Cullen2009}.
-%\item Head-motion restraint techniques (e.g., vacuum pad, foam pad, bite-bar, plaster cast head holder) \citep{Edward2000} \citep{Menon1997}.
-%\item Room temperature and moisture \citep{Vanhoutte2006}.
-%\end{enumerate}
-%\end{enumerate}
-%}
-
-% Sources of variance
-Beyond small sample sizes resulting in low statistical power \citep{Kelly2012a} and inconsistency in the results, there are other methodological differences that may compromise the comparison of results across independent studies. For example, the criteria for recruiting subjects may differ among studies. Different study samples may also reflect different socio-cultural characteristics of recruiting sites, e.g., ethnicity, language, diet, socioeconomic status. The fMRI measurements themselves can also be affected by differences in details of the image acquisition such as scanner make and model \citep{Friedman2006}, sequence parameters such as repetition time, flip angle, or acquisition volume \citep{Friedman2006a}, experimental design such as eyes-open/eyes-closed \citep{Yan2009} or experiment duration \citep{VanDijk2010}, and scanning environment such as sound attenuation measures \citep{Elliott1999}, room temperature \citep{Vanhoutte2006}, or head-motion restraint techniques \citep{Edward2000}. 
-% Transition to the main question and the dataset used
-Knowing that there is several sources of variance, the question is how much do they affect our analysis and does the trade-off of pooling datasets in exchange for increase variance and sample size worth it. Fortunately some resources exist that allow us to evaluate this question  empirically. 
-
-\paragraph{Evaluation dataset} In 2009, the publicly released 1000 Functional Connectomes Project (FCP) and International Neuroimaging Data-sharing Initiative (INDI) provided a glimpse of the variability in imaging methodologies employed by the neuroimaging field. The dataset includes rs-fMRI samples independently collected at imaging sites around the world. A noteworthy aspect of this dataset is the variation in almost every parameter of the imaging acquisition methodologies, while the majority of subject-related variables are not reported (due in most cases, to the fact that they were not thoroughly recorded). 
-Despite justifiable scepticism, feasibility analyses demonstrated that meaningful explorations of the aggregate dataset, composed of 24 imaging sites for a grand total of 1093 subjects, could be performed \citep{Biswal2010}. Although no explicit correction for multi-site variability was used, they only use global signal correction (GSC) to normalize subjects which may introduce anti-correlation in the data \citep{Fox2009, Murphy2009, Saad2012, Carbonell2014, Power2014}. After accounting for site-related differences, the analysis showed brain-behaviour relationships with phenotypic variables such as age, gender, and diagnostic label, and confirmed a variety of prior hypotheses \citep{Biswal2010, Fair2012, Tomasi2010, Zuo2012}. While encouraging, many uncontrolled and unknown factors in the 1000 FCP remain a source of concern, as they spread beyond simple site effects and can limit the datasets utility as highlighted by \cite{Yan2013}. An other compelling proof of multi-site bias is the study reported by \cite{Nielsen2013} where they did an analysis on a single site dataset and a multi-site dataset of subject with autism and concluded that the multi-site autism study classification accuracy significantly outperformed chance but was much lower for multi-site prediction than for previous single site results \citep{Nielsen2013}. We therefore need to keep in mind that the site effect must be taken in account in the analysis or we may reduce our detection power.
-
-
-\paragraph{Specific objectives} 
-The main potential issue with that approach is the lack of consistency in the multisite RS connectivity acquisitions that may obscure clinically relevant information. Therefore the aims of the study were to: (1) characterize the amplitude of the intra-site and inter-site connectivity bias, i.e. the systematic differences in rs-fMRI connectivity across different acquisition sites; (2) Quantify the impact of the inter-site variance on the detection power of a rs-fMRI effect. More specifically how sample size, group balancing and interaction of site-pathology in multi-centric topology impact sensitivity.
+\paragraph{Specific objectives}
+To establish the impact of multisite acquisitions on statistical power in rs-fMRI, we first specifically aimed at characterizing the amplitude of the inter-site bias in real rs-fMRI measures, relative to intra-site variance. We based our evaluation on N=345 young healthy participants from the 1000 Functional Connectomes Project (FCP), including rs-fMRI samples independently collected at 8 imaging sites with 3T scanners in Europe and the USA. Datasets in this study were shared retrospectively and every documented parameters of image acquisition varied across studies. This data sample thus represents a worst-case-scenario in terms of 3T instrumental inter-site variations. Our second specific aim was to evaluate the impact of such inter-site bias on the detection power of rs-fMRI group comparison, in relation with sample size, group balancing and interaction between sites and group differences. We implemented for this purpose a series of simulation, mixing synthetic data with real data from the 1000 FCP. One of the particularity of the 1000 FCP is the presence of one large site of $\sim200$ subjects and 7 small sites of $\sim20$ subjects per site. We were therefore able to implement realistic scenarios following either a monosite or a multisite design, with the same total sample size.
 
 \section{Method}
 
 \subsection{Data samples} 
 
 \paragraph{Participants}
-The paper studies 345 cognitively normal young adults (CNY) from the 1000 functional connectome project\footnote{\url{http://fcon_1000.projects.nitrc.org/}} (150 males, age range = 18-46 yrs) as a reference dataset. One of the particularity of this dataset is the presence of one large site of $\sim200$ subjects and 7 small sites of $\sim20$ subjects per site. We are therefore able to simulate realistic scenarios where we model the variability of a real monosite and the variability introduce by combining small sites into a large sample of the same total sample size, see Table \ref{table_dataset} for more details on each site. The experimental protocols for all datasets were approved by there respective ethic boards.
+The paper studies 345 cognitively normal young adults (CNY) from the 1000 functional connectome project\footnote{\url{http://fcon_1000.projects.nitrc.org/}} (150 males, age range = 18-46 yrs) as a reference dataset. One of the particularity of this dataset is the presence of one large site of $\sim200$ subjects and 7 small sites of $\sim20$ subjects per site. We are therefore able to simulate realistic scenarios where we model the variability of a real monosite and the variability introduced by combining small sites into a large sample of the same total sample size, see Table \ref{table_dataset} for more details on each site. The experimental protocols for all datasets were approved by there respective ethic boards.
 
 
 \begin{table}[tbp]
@@ -228,6 +170,9 @@ In order to simulate various scenarios within the context of a multi-site settin
 The following data generation model was used to test our hypothesis and estimate how the connectivity bias affect our ability to detect effects at the group level.
 A sub-sampling procedure was performed on the datasets (monosite and multisite) previously described to obtain multiple samples ($B=10^3$ random samples). For each of the sample a Monte-Carlo simulation was implemented to evaluate the power of a resting-state multi-site study. For each site and each sample, a ratio $W$ of subjects were randomly assigned to a 'treatment' group, this ratio $W$ is referred to as the allocation ratio of participants. For the subjects in this group, a value was added to achieve a given relative effect size (Cohen's d, i.e. the mean of the two groups divided by the standard deviation of all sites, see Equation \ref{eq_cohen} for more details).
 
+%Using sub-sampling it is possible to obtain an estimate of the mean statistical power over all samples which is call the detection power. These parameter estimates can then be used in simulation experiments to generate power curves.
+%The detection power quantitatively express the reproducibility of the findings and we can therefore choose a sample size to achieve the desired detection power for a given probability of rejecting the null hypothesis.
+
 \paragraph{Effect size (cohen's d)}
 The normalized Cohen's d was used to estimate the effect size and it is defined as the difference between two means $\bar{x_{1}},\bar{x_{2}}$ divided by a standard deviation from the data $s$.
 
@@ -273,7 +218,7 @@ We relied on the following parametric assumptions on the noise E (1) that its ro
 
 The sensitivity of the test was evaluated by the average detection performance of all the samples (see Equation \ref{eq_sensitivity}). For each sample $b$, we have a $p$-value $p^{*}_b$ and the detection sensitivity is estimated by the probability of $p^{*}_b$ being inferior to $0.001$.
 
-\begin{equation}\label{Detection power}  
+\begin{equation}
     \frac{1}{B}\sum\limits_{b=1}^B\left(p^{*}_b\leq0.001\right).
     \label{eq_sensitivity}
 \end{equation}
@@ -283,9 +228,9 @@ The sensitivity of the test was evaluated by the average detection performance o
 % The scenarios and the 3 sections
 \paragraph{Simulations scenarios}
 
-We first evaluated if a bias can be detected between sites. To do so we have computed the average connectome of each site along with the standard deviation matrix for each site. We then obatined the a mask of the significant differences between each sites (Student $t-test$ corrected for multiple comparison using FDR $\alpha=0.05$) to have an idea of the size and spread of the functional bias.
+We first evaluated if a bias can be detected between sites. To do so we have computed the average connectome of each site along with the standard deviation matrix for each site. We then obtained a mask of the significant differences between each sites (Student $t-test$ corrected for multiple comparison using FDR $\alpha=0.05$) to have an idea of the size and spread of the functional bias.
 
-For each experiment using real data, all effect size in the range 0 to 1.5 with a step of 0.01 were considered. The simulation were perfomed on 11 connections based on the literature review previously described in (TODO: cite the NATURE paper of Orban2015) reporting reproducible pair of regions reported to be affected by Alzheimer disease progression and displayed connectivity changes between cognitively normal subjects and patient with dementia of the Alzheimer type. We implemented a series of experiments:
+For each experiment using real data, all effect size in the range 0 to 1.5 with a step of 0.01 were considered. The simulation were performed on 11 connections based on the literature review previously described in (TODO: cite the NATURE paper of Orban2015) reporting reproducible pair of regions reported to be affected by Alzheimer disease progression and displayed connectivity changes between cognitively normal subjects and patient with dementia of the Alzheimer type. We implemented a series of experiments:
 
 \begin{itemize}
   \item We first checked how the total number of subject impact sensitivity using 3 different sample size (40, 80, 120) for an allocation ratio of $W=0.5$,
@@ -298,7 +243,7 @@ For each experiment using real data, all effect size in the range 0 to 1.5 with 
 fully simulated data
 In order to obtain more control on each of the parameter of the simulation and simulate some configuration that were not possible to do with the real data (like the simulation of 2 medium size sites of of 40 and 60 subjects per site, and the size of the site effect) we have therefore used a synthetic model using only synthetic data and the average standard deviation of the Cambridge site connectivity.
 
-For each experiment using synthetic data, all effect size in the range 0 to 1.5 with a step of 0.01 were considered. The simulation were perfomed using randomly generated values. All experiments show four scenarios,  
+For each experiment using synthetic data, all effect size in the range 0 to 1.5 with a step of 0.01 were considered. The simulation were performed using randomly generated values. All experiments show four scenarios,  
 
 For each experiment, all combinations of effect size in
 the grid {without site-effect and with site-effect} and the grid {without interaction site-pathology and with interaction site-pathology} were considered. We implemented a series of experiments:
@@ -309,7 +254,7 @@ the grid {without site-effect and with site-effect} and the grid {without intera
   \item We checked how 2 sites (one small of 20 subjects and one large of 80 subjects) with an allocation ratio of $W=0.5$ in both sites are impacted in the 4 scenarios in term of sensitivity,
   \item We checked how 2 sites (one small of 20 subjects and one large of 80 subjects) with an allocation ratio of $W=0.7$ for the first site and $W=0.3$ for the second site are impacted in the 4 scenarios in term of sensitivity,
    \item We checked how 2 sites (one small of 20 subjects and one large of 80 subjects) with an allocation ratio of $W=0.7$ for the first site and $W=0.3$ for the second site are impacted in the 4 scenarios in term of sensitivity,
-   \item We checked how 50 sites (with a number of sumbject per site randomly assigned between 2 and 15) with an allocation ratio $W$ randomly assigned between 0.1 and 0.9 for each sites are impacted in term of sensitivity for 2 scenarios (without and with interaction site pathology),
+   \item We checked how 50 sites (with a number of subject per site randomly assigned between 2 and 15) with an allocation ratio $W$ randomly assigned between 0.1 and 0.9 for each sites are impacted in term of sensitivity for 2 scenarios (without and with interaction site pathology),
 \end{itemize}
  
  
@@ -327,6 +272,9 @@ The first assessment perform on the dataset was to verify the distribution of th
 }
 \label{fig_site_variability}
 \end{figure}
+
+
+
 
 In order to verify how spatial structure vary across sites the average standard deviation and the average connectivity map of the DMN were extracted for each site and reported in Figure \ref{fig_DMN_variability}. As we can see in the intersection between two sites the difference in average connectivity between-sites is illustrated (red set of brain cuts). First the mean DMN at each site is consistent with the expected spatial distribution reported in other studies \citep{Damoiseaux2006,Dansereau2014,Yan2013a}. The most salient changes between-sites are located in the mesio-frontal region associated with the anterior part of the DMN. In order to verify if significant changes are not only found in the DMN we have computed the entier connectome in order to obtain the other connectivity patterns and the findings can be generalized to the full connectome see Figure \ref{fig_connectome_variability}.
 
@@ -369,7 +317,7 @@ Connexions pair based on a literature review.
 \end{figure}
 
 
-In Figure \ref{fig_real_sim_samplesize} we show the effect of the sample size on the detection power. As expected we are able to detect smaller and smaller effect size as we increase the sample size. For an effect size of 1 which is considered a large effect we are able to detect significant changes in only 20\% of the cases at 40 subjects, 80\% at 80 subjects and almost 95\% at 120\% subjects.
+In Figure \ref{fig_real_sim_samplesize} we show the effect of the sample size on the detection power. As expected we are able to detect smaller and smaller effect size as we increase the sample size. For an effect size of 1 which is considered a large effect we are able to detect significant changes in only 20\% of the cases at 40 subjects, 80\% at 80 subjects and almost 95\% at 120\% subjects. The statistical power is at p<0.001.
 
 %\frametitle{Effect of sample size: \\real data 50\%-50\% debalancing}
 \begin{figure}[tbp]
@@ -386,6 +334,19 @@ Simulation on real data, detection power of two groups balanced 50\%-50\% betwee
 }
 \label{fig_real_sim_samplesize}
 \end{figure}
+
+In Figure \ref{fig_sampeffect_curves_alpha001} show the sample-size in function of the effect-size for a detection power of 80\%. A threshold on the statistical power of each test is applied at three alpha values: 0.001, (see alpha of 0.01 and 0.05 in supplementary material \ref{fig_sampeffect_curves_alpha01},\ref{fig_sampeffect_curves_alpha01}). We are reporting the parametric curve and the points obtained using our simulations for the monosite and the multisite. As we can see the monosite is concordant with the parametric estimation and the multisite is offset of approximately 20 subjects more for the same effect-size.
+
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.5\textwidth]{../figures/samplesize_effectsize_pow80_alpha001.pdf}
+\caption[]{
+Sample-size in function of the effect-size for a detection power of 80\% and alpha of 0.001.
+}
+\label{fig_sampeffect_curves_alpha001}
+\end{figure}
+
 
 Figure \ref{fig_real_sim_debalancing} show the effect of debalancing the two groups at various ratio (50\%-50\% , 30\%-70\% and 15\%-85\%) for a total sample size of 120 subjects. Has the debalancing increase our ability to detect effect is diminished. As an example for an effect size of 1 we would detect the effect in 95\% of the cases in a 50 balanced scenario, this would go down to 90\% in a 30\%-70\% scenario and to 60\% in a 15\%-85\% debalancing. 
 
@@ -553,12 +514,19 @@ Connectivity bias that can impact interpretation.\\
 
 Type of scanner most of them are Siemens we may have more variability if combining various brand\\
 
+
 Talk about the impact in small acquisition 40 subjects total and the importance of pooling data among PI.\\
+Choosing the right sample size for a given detection power to obtain reproducible results.
 
 Talk about the impact in clinical trial and best practice.\\
 	most of the time we cannot correct for site with one population only or with too few subjects per site. Although these kind of multisite studies generally sum-up to large dataset of more than 200 subjects. has we demonstrated in the synthetic simulation such configuration are comparable to single site analysis for this range of sample size.
 
 It is better to have interaction of various amplitude across small sites than an average interaction on one large site\\
+
+talk about the reduction of the bias of the simulation compared to the fully parametric estimate as we increase the sample size. The estimation is more realistic over 80 subjects and overestimate the detection power at low sample-size.
+
+% can be use for other multisite study...
+Despite justifiable scepticism, feasibility analyses demonstrated that meaningful explorations of the aggregate dataset, composed of 24 imaging sites for a grand total of 1093 subjects, could be performed \citep{Biswal2010}. Although no explicit correction for multi-site variability was used, they only use global signal correction (GSC) to normalize subjects which may introduce anti-correlation in the data \citep{Fox2009, Murphy2009, Saad2012, Carbonell2014, Power2014}. After accounting for site-related differences, the analysis showed brain-behaviour relationships with phenotypic variables such as age, gender, and diagnostic label, and confirmed a variety of prior hypotheses \citep{Biswal2010, Fair2012, Tomasi2010, Zuo2012}. While encouraging, many uncontrolled and unknown factors in the 1000 FCP remain a source of concern, as they spread beyond simple site effects and can limit the datasets utility as highlighted by \cite{Yan2013}. Another compelling proof of multisite bias is the study reported by \cite{Nielsen2013} where they did an analysis on a single site dataset and a multi-site dataset of subject with autism and concluded that the multi-site autism study classification accuracy significantly outperformed chance but was much lower for multi-site prediction than for previous single site results \citep{Nielsen2013}. We therefore need to keep in mind that the site effect must be taken in account in the analysis or we may reduce our detection power.
 
 \section{Conclusion}
 
@@ -660,7 +628,22 @@ For all questions regarding the paper, please address correspondence to Pierre B
 % \label{tab_fdr}
 % \end{table}
 
-
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.32\textwidth]{../figures/samplesize_effectsize_pow80_alpha01.pdf}
+\caption[]{
+Sample-size in function of the effect-size for a detection power of 80\% and alpha of 0.001.
+}
+\label{fig_sampeffect_curves_alpha01}
+\end{figure}
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.32\textwidth]{../figures/samplesize_effectsize_pow80_alpha05.pdf}
+\caption[]{
+Sample-size in function of the effect-size for a detection power of 80\% and alpha of 0.001.
+}
+\label{fig_sampeffect_curves_alpha05}
+\end{figure}
 
 \end{document}
 
