@@ -1,4 +1,4 @@
-\begin{thebibliography}{48}
+\begin{thebibliography}{47}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{\texttt{#1}}\fi
@@ -51,16 +51,6 @@ Carbonell, F., Bellec, P., Shmuel, A., Feb 2014. Quantification of the impact
   of a confounding variable on functional connectivity confirms anti-correlated
   networks in the resting-state. Neuroimage 86, 343--353.
 \newline\urlprefix\url{http://dx.doi.org/10.1016/j.neuroimage.2013.10.013}
-
-\bibitem[{Cheng et~al.(2015)Cheng, Palaniyappan, Li, Kendrick, Zhang, Luo, Liu,
-  Yu, Deng, Wang, Ma, Guo, Francis, Liddle, Mayer, Schumann, Li, and
-  Feng}]{Cheng2015}
-Cheng, W., Palaniyappan, L., Li, M., Kendrick, K.~M., Zhang, J., Luo, Q., Liu,
-  Z., Yu, R., Deng, W., Wang, Q., Ma, X., Guo, W., Francis, S., Liddle, P.,
-  Mayer, A.~R., Schumann, G., Li, T., Feng, J., May 2015. Voxel-based,
-  brain-wide association study of aberrant functional connectivity in
-  schizophrenia implicates thalamocortical circuitry. Npj Schizophrenia 1, --.
-\newline\urlprefix\url{http://dx.doi.org/10.1038/npjschz.2015.16}
 
 \bibitem[{Collins et~al.(1998)Collins, Zijdenbos, Kollokian, Sled, Kabani,
   Holmes, and Evans}]{Collins1998}
@@ -186,13 +176,6 @@ Jafri, M. J.~J., Pearlson, G. D.~D., Stevens, M., Calhoun, V. D.~D., Nov. 2007.
   resting-state components in schizophrenia.} Neuroimage.
 \newline\urlprefix\url{http://dx.doi.org/10.1016/j.neuroimage.2007.11.001}
 
-\bibitem[{Kelly et~al.(2012)Kelly, Biswal, Craddock, Castellanos, and
-  Milham}]{Kelly2012a}
-Kelly, C., Biswal, B., Craddock, C., Castellanos, X., Milham, M., Mar. 2012.
-  Characterizing variation in the functional connectome: promise and pitfalls.
-  Trends in Cognitive Sciences 16~(3), 181--188.
-\newline\urlprefix\url{http://dx.doi.org/10.1016/j.tics.2012.02.001}
-
 \bibitem[{Lu et~al.(2003)Lu, Jiang, and Zang}]{Lu2003}
 Lu, Y., Jiang, T., Zang, Y., Sep. 2003. {Region growing method for the analysis
   of functional MRI data}. NeuroImage 20~(1), 455--465.
@@ -262,6 +245,15 @@ Saad, Z.~S., Gotts, S.~J., Murphy, K., Chen, G., Jo, H. J.~J., Martin, A., Cox,
   become distorted after global signal regression.} Brain connectivity 2~(1),
   25--32.
 \newline\urlprefix\url{http://dx.doi.org/10.1089/brain.2012.0080}
+
+\bibitem[{Shehzad et~al.(2009)Shehzad, Kelly, Reiss, Gee, Gotimer, Uddin, Lee,
+  Margulies, Roy, Biswal, Petkova, Castellanos, and Milham}]{Shehzad2009}
+Shehzad, Z., Kelly, C.~M., Reiss, P.~T., Gee, D.~G., Gotimer, K., Uddin, L.~Q.,
+  Lee, S. H.~H., Margulies, D.~S., Roy, A. K.~K., Biswal, B.~B., Petkova, E.,
+  Castellanos, F.~X., Milham, M.~P., Oct. 2009. {The resting brain:
+  unconstrained yet reliable.} Cerebral cortex (New York, N.Y. : 1991) 19~(10),
+  2209--2229.
+\newline\urlprefix\url{http://dx.doi.org/10.1093/cercor/bhn256}
 
 \bibitem[{Thirion et~al.(2006)Thirion, Dodel, and Poline}]{Thirion2006}
 Thirion, B., Dodel, S., Poline, J.~B., Jan. 2006. {Detection of signal

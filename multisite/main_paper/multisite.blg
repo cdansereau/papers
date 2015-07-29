@@ -3,48 +3,49 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: multisite.aux
 The style file: elsarticle-harv.bst
 Database file #1: cdansereau.bib
+Warning--I didn't find a database entry for "Yang2014"
 Warning--I didn't find a database entry for "Craddock2012"
 Warning--I didn't find a database entry for "Dansereau2013a"
 Warning--I didn't find a database entry for "Dansereau2013b"
-You've used 48 entries,
+You've used 47 entries,
             2821 wiz_defined-function locations,
-            1017 strings with 22856 characters,
-and the built_in function-call counts, 33578 in all, are:
-= -- 2990
-> -- 2847
+            1010 strings with 22448 characters,
+and the built_in function-call counts, 32814 in all, are:
+= -- 2928
+> -- 2764
 < -- 4
-+ -- 1070
-- -- 1014
-* -- 3647
-:= -- 6203
-add.period$ -- 143
-call.type$ -- 48
-change.case$ -- 577
-chr.to.int$ -- 46
-cite$ -- 48
-duplicate$ -- 856
-empty$ -- 1620
-format.name$ -- 1162
-if$ -- 6272
++ -- 1039
+- -- 984
+* -- 3562
+:= -- 6054
+add.period$ -- 140
+call.type$ -- 47
+change.case$ -- 562
+chr.to.int$ -- 45
+cite$ -- 47
+duplicate$ -- 838
+empty$ -- 1594
+format.name$ -- 1129
+if$ -- 6135
 int.to.chr$ -- 3
 int.to.str$ -- 1
-missing$ -- 46
-newline$ -- 197
-num.names$ -- 192
-pop$ -- 540
+missing$ -- 45
+newline$ -- 193
+num.names$ -- 188
+pop$ -- 526
 preamble$ -- 1
-purify$ -- 530
+purify$ -- 516
 quote$ -- 0
-skip$ -- 538
+skip$ -- 527
 stack$ -- 0
-substring$ -- 1608
-swap$ -- 145
+substring$ -- 1596
+swap$ -- 142
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 432
+type$ -- 423
 warning$ -- 0
-while$ -- 224
+while$ -- 219
 width$ -- 0
-write$ -- 574
-(There were 3 warnings)
+write$ -- 562
+(There were 4 warnings)
