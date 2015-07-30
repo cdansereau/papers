@@ -105,16 +105,16 @@ To establish the impact of multisite acquisitions on statistical power in rs-fMR
 
 \section{Method}
 
-\subsection{Data samples} 
+
+\subsection{Data samples}
 
 \paragraph{Participants}
-The paper studies 345 cognitively normal young adults (CNY) from the 1000 functional connectome project\footnote{\url{http://fcon_1000.projects.nitrc.org/}} (150 males, age range = 18-46 yrs) as a reference dataset. One of the particularity of this dataset is the presence of one large site of $\sim200$ subjects and 7 small sites of $\sim20$ subjects per site. We are therefore able to simulate realistic scenarios where we model the variability of a real monosite and the variability introduced by combining small sites into a large sample of the same total sample size, see Table \ref{table_dataset} for more details on each site. The experimental protocols for all datasets were approved by there respective ethic boards.
-
+The paper studies 345 cognitively normal young adults (CNY) from a subset of subjects from the 1000 functional connectome project\footnote{\url{http://fcon_1000.projects.nitrc.org/}}. Only 3 tesla scanners from the following geographical locations: Germany, the United Kingdom, Australia and the United States of America were used, with a minimum of 15 subjects / site, including male and female representation. The sample was restricted to sites with full brain coverage in term of their field of view and a minimum of 50 functional volumes / run after high-motion censoring. From the 345 subjects (150 males, age range = 18-46 yrs) the total time of acquisition ranged between 6 and 7.5 min / run. The average age of the pooled dataset is 23.8 $\pm$5.14 years old with a male ratio of 41\% across all sites, see Table \ref{table_dataset} for more details on each site selected in the study. The experimental protocols for all datasets were approved by their respective ethic boards.  
 
 \begin{table}[tbp]
 \resizebox{\columnwidth}{!}{%
 \begin{tabular}{lllllllllll}
-\textbf{Site}         & \textbf{Magnet} & \textbf{Scaner brand} & \textbf{Channels} & \textbf{N} & \textbf{N final} & \textbf{Sex} & \textbf{Age} & \textbf{TR} & \textbf{\# Slices} & \textbf{\# Frames} \\
+\textbf{Site}         & \textbf{Magnet} & \textbf{Scanner make} & \textbf{Channels} & \textbf{N} & \textbf{N final} & \textbf{Sex} & \textbf{Age} & \textbf{TR} & \textbf{\# Slices} & \textbf{\# Frames} \\
 Baltimore, USA        & 3T              & N/A                   & N/A               & 23   & 21         & 8M/15F       & 20-40        & 2.5         & 47                 & 123                \\
 Berlin, Germany       & 3T              & Siemens Tim Trio      & 12                & 26   & 26         & 13M/13F      & 23-44        & 2.3         & 34                 & 195                \\
 Cambridge, USA        & 3T              & Siemens Tim Trio      & 12                & 198  & 195        & 75M/123F     & 18-30        & 3           & 47                 & 119                \\
@@ -122,140 +122,125 @@ Newark, USA           & 3T              & N/A                   & N/A           
 NewYork\_b, USA       & 3T              & Siemens               & N/A               & 20   & 18         & 8M/12F       & 18-46        & 2           & 33                 & 175                \\
 Oxford, UK            & 3T              & Siemens Tim Trio      & 12                & 22   & 20         & 12M/10F      & 20-35        & 2           & 34                 & 175                \\
 Queensland, Australia & 4T              & Bruker                & 1                 & 19   & 17         & 11M/8F       & 20-34        & 2.1         & 36                 & 190                \\
-SaintLouis, USA       & 3T              & Siemens Tim Trio      & 12                & 31   & 31         & 14M/17F      & 21-29        & 2.5         & 32                 & 127               
+SaintLouis, USA       & 3T              & Siemens Tim Trio      & 12                & 31   & 31         & 14M/17F      & 21-29        & 2.5         & 32                 & 127              
 \end{tabular}
 }
-\caption{Site selected from the 1000 functional connectome dataset.} 
+\caption{Sites selected from the 1000 Functional Connectome Project.}
 \label{table_dataset}
 \end{table}
 
-\paragraph{Acquisition} %Resting-state scans were acquired on a 3T Siemens TrioTim for all datasets. One single run was obtained per subject for either the SCHIZO or BLIND dataset while two runs were acquired in each subject for the MOTOR dataset, one immediately preceding and one following the practice on a motor task. 
-%For the 1000 functional connectom dataset, 150 EPI volumes were recorded in 6 mins 40 s (TR = 2.65s, TE = 30ms, FA = 90\textdegree, 43 slices, voxel size = 3.4x3.4x3 mm$^3$, gap = 10\%, matrix size = 64x64, FOV = 220x220 mm$^2$), and a structural image was acquired using a MPRAGE sequence (TR = 2.3~s, TE = 2.98~ms, FA = 9\textdegree, 176 slices, voxel size = 1x1x1 mm$^3$, matrix size = 256x256, FOV = 256x256 mm$^2$).
-
-We need to discuss how to present this data (I don't have the details for each site...)
-
-\subsection{Preprocessing}\label{Preprocessing}
-The datasets were analysed using the NeuroImaging Analysis Kit (NIAK\footnote{\url{http://www.nitrc.org/projects/niak/}}) version 0.12.14, under CentOS version 6.3 with Octave\footnote{\url{http://gnu.octave.org}} version 3.8.1 and the Minc toolkit\footnote{\url{http://www.bic.mni.mcgill.ca/ServicesSoftware/ServicesSoftwareMincToolKit}} version 0.3.18. Analyses were executed in parallel on the "Mammouth" supercomputer\footnote{\url{http://www.calculquebec.ca/index.php/en/resources/compute-servers/mammouth-parallele-ii}}, using the pipeline system for Octave and Matlab \citep{Bellec2010}, version 1.0.2. Brain map visualizations were created using MRICron software \cite{Rorden2007}. Each fMRI dataset was corrected of inter-slice difference in acquisition time and the parameters of a rigid-body motion was estimated for each time frame. Rigid-body motion was estimated within as well as between runs, using the median volume of the first run as a target. The median volume of one selected fMRI run for each subject 
-was 
-coregistered with a T1 individual scan using Minctracc \citep{Collins1998}, which was itself non-linearly transformed to the Montreal Neurological Institute (MNI) template \citep{Fonov2011} using the CIVET pipeline \citep{Zijdenbos2002}. The MNI symmetric template was generated from the ICBM152 sample of 152 young adults, after 40 iterations of non-linear coregistration. The rigid-body transform, fMRI-to-T1 transform and T1-to-stereotaxic transform were all combined, and the functional volumes were resampled in the MNI space at a 3 mm isotropic resolution. A censoring method described in \citep{Power2012} called "scrubbing" was used to remove the volumes with excessive motion using a cut-off value of $FD\geq0.5$. A minimum number of 50 unscrubbed volumes per run, corresponding to $\sim 125$ s of acquisition for a TR of 2.5 seconds, was then required for further analysis. The following nuisance parameters were regressed out from the time series at each voxel: slow time drifts (basis of discrete cosines 
-with a 0.01 Hz high-pass cut-off), average signals in conservative masks of the white matter and the lateral ventricles as well as the first principal components (95\% energy) of the six rigid-body motion parameters and their squares \citep{Lund2006},\citep{Giove2009}. The fMRI volumes were finally spatially smoothed with a 6 mm isotropic Gaussian blurring kernel. 
+\subsection{Computational environment}
+All experiments were performed using the NeuroImaging Analysis Kit (NIAK\footnote{\url{http://simexp.github.io/niak/}} ) (Bellec et al., 2011) version 0.12.18, under CentOS version 6.3 with Octave\footnote{\url{http://gnu.octave.org/}} version 3.8.1 and the Minc toolkit\footnote{\url{http://www.bic.mni.mcgill.ca/ServicesSoftware/ServicesSoftwareMincToolKit}} version 0.3.18. Analyses were executed in parallel on the ”Mammouth” supercomputer\footnote{\url{http://www.calculquebec.ca/index.php/en/resources/compute-servers/mammouth-serie-ii}} , using the pipeline system for Octave and Matlab \citep{Bellec2012}, version 1.0.2. The scripts used for processing can be found on Github\footnote{\url{http://www.calculquebec.ca/index.php/en/resources/compute-servers/mammouth-serie-ii}}. For visualization Python 2.7.9 from the Anaconda 2.2.0\footnote{\url{http://docs.continuum.io/anaconda/index}} distribution were used along with Matplotlib\footnote{\url{http://matplotlib.org/}} \citep{matplotlib}, Seaborn\footnote{\url{http://stanford.edu/~mwaskom/software/seaborn/index.html}} and Nilearn\footnote{\url{http://nilearn.github.io/}} for brain map visualizations.
 
 
-\subsection{Functional networks}
+\subsection{Preprocessing}
+Each fMRI dataset was corrected for slice timing; a rigid-body motion was then estimated for each time frame, both within and between runs, as well as between one fMRI run and the T1 scan for each subject \citep{Collins1997}. The T1 scan was itself non-linearly co-registered to the Montreal Neurological Institute (MNI) ICBM152 stereotaxic symmetric template \citep{Fonov2011}, using the CIVET pipeline (Ad-Dab’bagh et al., 2006). The rigid-body, fMRI-to-T1 and T1-to-stereotaxic transformations were all combined to resample the fMRI in MNI space at a 3 mm isotropic resolution. To minimize artifacts due to excessive motion, all time frames showing a displacement greater than 0.5 mm were removed \citep{Power2012}. A minimum of 50 unscrubbed volumes per run was required for further analysis (13 subjects were rejected). The following nuisance covariates were regressed out from fMRI time series: slow time drifts (basis of discrete cosines with a 0.01 Hz highpass cut-off), average signals in conservative masks of the white matter and the lateral ventricles as well as the first principal components (accounting for 95\% variance) of the six rigid-body motion parameters and their squares \citep{Giove2009,Lund2006}. The fMRI volumes were finally spatially smoothed with a 6 mm isotropic Gaussian blurring kernel. A more detailed description of the pipeline can be found on the NIAK website\footnote{\url{http://niak.simexp-lab.org/pipe_preprocessing.html}} and Github\footnote{\url{https://github.com/SIMEXP/multisite}}.
 
-\paragraph{Functional parcellation}
-Regions are routinely defined using an anatomical parcellation \citep{He2009}, such as the AAL template \citep{Tzourio-Mazoyer2002}. Anatomical parcels may however not well match the brain functional organization. In this work, we used functional brain parcellations, aimed at defining groups of brain regions with homogeneous time series. A number of algorithms have been proposed with additional spatial constraints, to ensure that the resulting parcels are spatially connected \citep{Lu2003,Thirion2006,Craddock2012}. We can achieve this aim and reduce the computational burden of the analysis using a region-growing algorithm \cite{Bellec2006},  resulting in more homogeneous regions composed of temporally similar and contiguous voxels. The spatial dimension was selected arbitrarily by setting the size where the growing process stopped (a threshold of 1000 mm3 resulted into R=957 regions) from a reference dataset of healthy adults from the 1000 functional connectome project (Cambridge cohort \citep{Biswal2010}, parcellation available here \ref{}). The regions were built to maximize the homogeneity of the time series within the region, i.e. the average correlation between the time series associated with any pair of voxels of the region. The region growing was applied on the time series concatenated across all subjects (after correction to zero mean and unit variance), such that the homogeneity was maximized on average for all subjects, and the small homogeneous regions are identical for all subjects. Because of the temporal concatenation of time series, we had to limit the memory demand, and the region-growing was thus applied independently in each of the 116 areas of the AAL template \citep{Tzourio-Mazoyer2002}. See \cite{Bellec2006} for more details regarding the implementation of the region-growing algorithm. Overall, this process reduced the dataset of each subject into a (T x R) data array, where T is the number of time samples and R is the number of regions.
+\subsection{Inter-site bias in resting-state connectivity}
+We first compared the functional connectivity measures derived from different sites of the 1000 FCP. The connectivity measures were obtained from the Pearson’s correlation coefficient between the average temporal rs-fMRI fluctuations of a given pair of brain parcels. $R=100$ parcels were obtained from a brain parcellation described in \cite{Orban2015}, and generated using a bootstrap analysis of stable clusters \citep{Bellec2010c} from the Cambridge cohort of the 1000 FCP. For each subject, a $100 \times 100$ functional connectome matrix was generated including all parcel-to-parcel connections. 
 
-\paragraph{Functional network decomposition}
-From a pure functional viewpoint, the spatial constraint seems somewhat arbitrary, as functional units in the brain at low resolution encompass distributed networks of brain regions with homotopic regions often being part of a single parcel \citep{DeLuca2006,Damoiseaux2006}. Some works have thus used distributed parcels as the spatial units to measure functional brain connectivity, e.g. \citep{Jafri2007,Marrelec2008}. We relied on a recent method called “Bootstrap Analysis of Stable Clusters” (BASC), which can identify consistent functional networks for a group of subjects \citep{Biswal2010}. using a hierarchical cluster with Ward’s criterion both at the individual and the group levels. The functional networks can be generated at any arbitrary scale (within the range of the fMRI resolution), and we considered only networks generated at the group level, which were non-overlapping and not necessarily spatially contiguous. In the present work we generated a BASC decomposition in 100 networks.
+To quantify the inter-site bias we proposed to calculate the difference between the intra-site variability and the inter-site variability, we first obtained the intra-site variance for each site by computing the standard deviation (STD) distribution across-connections. In a second step we obtained the inter-site variance distribution by computing the STD across-site for each average connection of the connectivity matrix.
 
-TODO: cite the NATURE paper of Pierre Orban for parcelation and connections selection.
-
-\paragraph{Functional connectome}
-Using a brain partition of $R$ networks obtain from BASC procedure described in \cite{Bellec2010c}, and taking each pair of distinct networks $i$ and $j$, the between-network connectivity $y_{i,j}$ is measured by the Fisher transform of the Pearson's correlation between the average time series of the network. The within-network connectivity $y_{i,i}$ is the Fisher transform of the average correlation between time series of every pair of distinct voxels inside network $i$. The connectome $\mathbf{Y}=(y_{i,j})_{i,j=1}^R$ is thus a $R\times R$ matrix. Each column $j$ (or row, as the matrix is symmetric) codes for the connectivity between network $j$ and all other brain networks (full brain functional connectivity map). For a scale with $R$ parcels, there are exactly $L=R(R+1)/2$ distinct elements in an individual connectome $\mathbf{Y}$.
-
-
-
-
-
-
-
+In order to quantify if the functional connectivity differences were significative between sites, we used a  general linear model (GLM). The age, sex and frame displacement (FD) confounding variables were included in the model.  The variables were corrected to have a zero mean across subjects, and an intercept (i.e. a column filled with 1) was added to capture the inter-site global average. A p-value was generated for each connection to quantify the probability that the difference in average connectivity was significantly distant from zero \citep{Worsley1995}. The number of false discovery was also controlled ($\alpha=0.05$) using a Benjamini–Hochberg false discovery rate (FDR) procedure \citep{Benjamini1995}.
 
 
 \subsection{Simulations}
-
-In order to simulate various scenarios within the context of a multi-site setting, a cohort of subjects acquired at a single-site was selected to act as our reference dataset and for the multi-site configuration a cohort from a collection of small sites, roughly totalling the same sample size as the reference dataset, was used. The simulation was based on a scenario with 8 sites for a total of 345 subjects, and no homogenization of acquisition protocol whatsoever. The multi-site (with correction) is based on 150 subjects from 7 sites and the monosite is based on one site of 195 subjects.  
-
 \paragraph{Data generation process}
-The following data generation model was used to test our hypothesis and estimate how the connectivity bias affect our ability to detect effects at the group level.
-A sub-sampling procedure was performed on the datasets (monosite and multisite) previously described to obtain multiple samples ($B=10^3$ random samples). For each of the sample a Monte-Carlo simulation was implemented to evaluate the power of a resting-state multi-site study. For each site and each sample, a ratio $W$ of subjects were randomly assigned to a 'treatment' group, this ratio $W$ is referred to as the allocation ratio of participants. For the subjects in this group, a value was added to achieve a given relative effect size (Cohen's d, i.e. the mean of the two groups divided by the standard deviation of all sites, see Equation \ref{eq_cohen} for more details).
 
-%Using sub-sampling it is possible to obtain an estimate of the mean statistical power over all samples which is call the detection power. These parameter estimates can then be used in simulation experiments to generate power curves.
-%The detection power quantitatively express the reproducibility of the findings and we can therefore choose a sample size to achieve the desired detection power for a given probability of rejecting the null hypothesis.
+We implemented Monte-Carlo simulations based on the 1000 FCP sample, with 8 sites for a total of 345 subjects. The multisite simulations were based on 7 sites, totaling 150 subjects, and the monosite simulations were based on the Cambridge site, with 195 subjects. The following data generation model was used to simulate tests of group difference. A subsample of subjects of fixed size was first selected randomly at each site. For each site, a ratio $W$ of the selected subjects were randomly assigned to a 'treatment' group. For the subjects in the treatment group, a fixed value was added to achieve a given relative effect size (Cohen's $d$, see Section below) to 11 connections, previously described in \cite{Orban2015}. \cite{Orban2015} first selected from a literature review the pairs of regions believed to be affected in Alzheimer disease progression due to their difference in connectivity between cognitively normal subjects and patient with dementia of the Alzheimer type. Second, from that selection a subset of candidate pairs was retained based on their reproducibility score at a test-retest experiment conducted using the NYU TRT dataset \citep{Zuo2010} (a dataset where each subject is scan 3 times, across 3 sessions).  
 
-\paragraph{Effect size (cohen's d)}
-The normalized Cohen's d was used to estimate the effect size and it is defined as the difference between two means $\bar{x_{1}},\bar{x_{2}}$ divided by a standard deviation from the data $s$.
+In summary, the simulations had the following parameters:
+
+\begin{itemize}
+ \item $W$: The allocation ratio of participants,
+ \item $d$ effect size (Cohen’s $d$),
+ \item $di=0.5$ interaction site-pathology effect,
+ \item $B=10^3$ number of simulations,
+ \item $s$ average standard deviation from the reference dataset,
+ \item $\alpha=0.001$ threshold of false-positive rate,
+\end{itemize}
+
+%The detection power quantitatively express the reproducibility of the findings and we can therefore choose a sample size to achieve the desired detection power for a given probability of rejecting the null hypothesis $alpha$.
+
+\paragraph{Effect size (Cohen's $d$)}
+The normalized Cohen's $d$ was used to estimate the effect size and it is defined as the difference between two means $\bar{x_{1}},\bar{x_{2}}$ divided by a standard deviation from the data $s$.
 
 For each site an effect is added to the connectivity of $W$ of the subjects, selected randomly ("pathological" group):
 \begin{equation}
 	y_{i,j} = y_{i,j} + \mu.
 \end{equation}
 
-The parameter $\mu$ is chosen to obtain a particular effect size (measured by the Cohen $d$)
-%The normalized Cohen's d was used to estimate the effect size and it is defined as the difference between two means $\bar{x_{1}},\bar{x_{2}}$ divided by a standard deviation from the data $s$.
+The parameter $\mu$ is chosen to obtain a particular effect size (expressed as the $d$ of Cohen)
 \begin{equation}
 \label{eq_cohen}
-    \begin{array}{l l}
-      d = \frac{\mu}{s_{i,j}},      
-    \end{array}
+   \begin{array}{l l}
+     d = \frac{\mu}{s_{i,j}},     
+   \end{array}
 \end{equation}
-where $s_{i,j}$ is the standard deviation between region $i$ and $j$ for the reference population (mono-site). The significance of the difference between the control and 'treatment' group was assessed by a $t$-test in a linear model, including a covariate to model the motion. The study was repeated for various effect sizes (0 to 0.8 with a step of 0.01) with a $p$-value threshold of $0.001$ on the $t$-test.
+where $s_{i,j}$ is the standard deviation between region $i$ and $j$ for the reference population (mono-site). 
 
-In order to introduce the same effect-size across the single-site and multi-site dataset we are taking the standard deviation from the single-site cohort as the reference.  The connection $y_{i,j}$ of the randomly affected subjects ("treatment" group) are therefore calculated $y_{i,j} = y_{i,j} + d\times s_{i,j}$. 
+In order to introduce the same effect-size across the monosite and multisite datasets we are taking the standard deviation from the previously mentioned Cambridge cohort as the reference.  The connection $y_{i,j}$ of the randomly affected subjects ("treatment" group) are therefore calculated $y_{i,j} = y_{i,j} + d\times s_{i,j}$.
 
-\paragraph{GLM model} 
-In order to detec changes on each connection pair between groups artificialy created population in each simulation, a general linear model (GLM) was performed and the following confounding variables were modelled in the analysis: age, sex and frame displacement (FD). To account for site-specific bias $S-1$ dummy-variables (binary vectors $1\times S$) were added to the model with $S$ being the total number of sites used in the study. The variables are corrected to have a zero mean across subjects, and an intercept (i.e. a column filled with 1) is added to $\mathbf{X}$ to capture the global average. The GLM relies on the following stochastic model Equation\ref{eq_glm_dummy}.
+\paragraph{GLM model}
+In order to detect changes on each connection pair between the artificially created groups, a general linear model (GLM) was applied and the following confounding variables were modelled in the analysis: age, sex and frame displacement (FD). To account for site-specific bias $S-1$ dummy-variables (binary vectors $1\times S$) were added to the model with $S$ being the total number of sites used in the study. The variables are corrected to have a zero mean across subjects, and an intercept (i.e. a column filled with 1) is added to $\mathbf{X}$ to capture the global average. The GLM relies on the following stochastic model Equation\ref{eq_glm_dummy}.
 
 \begin{equation}
- \label{eq_glm_dummy}
-  \mathbf{Y} = \mathbf{X}\mathbf{\beta} + \mathbf{V}\mathbf{\gamma}+ \mathbf{E},
+\label{eq_glm_dummy}
+ \mathbf{Y} = \mathbf{X}\mathbf{\beta} + \mathbf{V}\mathbf{\gamma}+ \mathbf{E},
 \end{equation}
 \begin{itemize}
-  \item $\mathbf{Y}$: $N\times 1$, connectivity value for the pair ($i,j$),
-  \item $\mathbf{X}$: $N\times K$, explainable variables,
-  \item $\mathbf{\beta}$: $1 \times K$, regression values for each explainable variable,
-  \item $\mathbf{V}$: $N\times S$, each column code for a site (0/1),
-  \item $\mathbf{\gamma}$: $1\times S$, site average connectivity,
-  \item $\mathbf{E}$: $N\times 1$, residual values from the regression,
+ \item $\mathbf{Y}$: $N\times 1$, connectivity value for the pair ($i,j$),
+ \item $\mathbf{X}$: $N\times K$, explainable variables,
+ \item $\mathbf{\beta}$: $1 \times K$, regression values for each explainable variable,
+ \item $\mathbf{V}$: $N\times S$, each column code for a site (0/1),
+ \item $\mathbf{\gamma}$: $1\times S$, site average connectivity,
+ \item $\mathbf{E}$: $N\times 1$, residual values from the regression,
 \end{itemize}
- 
 with $N$ the number of subjects, $K$ the number of explainable variables and $S$ the number of sites. Where $\mathbf{\beta}$ is an unknown $1\times K$ vector of linear regression coefficients, $\mathbf{\gamma}$ is a $1\times S$ vector of linear regression coefficients representing the contribution of each site and $\mathbf{E}$ is a $N\times 1$ random (noise) multivariate Gaussian variable. As data generated from different subjects are statistically independent, and under an homoscedasticity assumption, the regression coefficients $\mathbf{\beta}$ can be estimated with ordinary least squares.
 
 % statistical detection and sensitivity
 \paragraph{Statistical detection and sensitivity}
+We relied on the following parametric assumptions on the noise $\mathbf{E}$ (1) that its rows are independent; (2) that each element follows a normal distribution with zero mean, and (3) that the variance of all elements are constant within a column, also called the homoscedasticity assumptions. As the data generated from different subjects are statistically independent the first assumption is reasonable. We tested the normality and homoscedasticity assumptions on real datasets. Under these parametric assumptions, the regression coefficients $\mathbf{\beta}$ and $\mathbf{\gamma}$ can be estimated with ordinary least squares and, for a given “contrast” (difference between the control and 'treatment' group) the significance of the contrast is assessed by a Student $t$-test.
 
-We relied on the following parametric assumptions on the noise E (1) that its rows are independent; (2) that each element follows a normal distribution with zero mean, and (3) that the variance of all elements are constant within a column, also called the homoscedasticity assumptions. As the data generated from different subjects are statistically independent the first assumption is reasonable. We tested the normality and homoscedasticity assumptions on real datasets. Under these parametric assumptions, the regression coefficients $\mathbf{\beta}$ and $\mathbf{\gamma}$ can be estimated with ordinary least squares and, for a given “contrast” (difference between the control and 'treatment' group) the significance of the contrast is assessed by a Student $t$-test.
-
-The sensitivity of the test was evaluated by the average detection performance of all the samples (see Equation \ref{eq_sensitivity}). For each sample $b$, we have a $p$-value $p^{*}_b$ and the detection sensitivity is estimated by the probability of $p^{*}_b$ being inferior to $0.001$.
+The sensitivity of the test was evaluated by the average detection performance of all the samples (see Equation \ref{eq_sensitivity}). For each sample $b$, we have a $p$-value $p^{*}_b$ and the detection sensitivity is estimated by the probability of $p^{*}_b$ being inferior or equal to $\alpha=0.001$.
 
 \begin{equation}
-    \frac{1}{B}\sum\limits_{b=1}^B\left(p^{*}_b\leq0.001\right).
-    \label{eq_sensitivity}
+   \frac{1}{B}\sum\limits_{b=1}^B\left(p^{*}_b\leq0.001\right).
+   \label{eq_sensitivity}
 \end{equation}
 
+%Using sub-sampling it is possible to obtain an estimate of the mean statistical power over all samples which is call the detection power. These parameter estimates can then be used in simulation experiments to generate power curves.
 
-
-% The scenarios and the 3 sections
-\paragraph{Simulations scenarios}
-
-We first evaluated if a bias can be detected between sites. To do so we have computed the average connectome of each site along with the standard deviation matrix for each site. We then obtained a mask of the significant differences between each sites (Student $t-test$ corrected for multiple comparison using FDR $\alpha=0.05$) to have an idea of the size and spread of the functional bias.
-
-For each experiment using real data, all effect size in the range 0 to 1.5 with a step of 0.01 were considered. The simulation were performed on 11 connections based on the literature review previously described in (TODO: cite the NATURE paper of Orban2015) reporting reproducible pair of regions reported to be affected by Alzheimer disease progression and displayed connectivity changes between cognitively normal subjects and patient with dementia of the Alzheimer type. We implemented a series of experiments:
+% The simulation scenarios
+\paragraph{Simulation scenarios}
+For each experiment using real data, all effect size in the range 0 to 2 Cohen’s $d$ with a step of 0.01 were considered. For each experiment we performed $B=10^3$ simulations using 80\% subsampling and the reported allocation ratio of participants $W$ and its inverse $1-W$ was attributed randomly to the treatment population for each site. We implemented the following experiments:
 
 \begin{itemize}
-  \item We first checked how the total number of subject impact sensitivity using 3 different sample size (40, 80, 120) for an allocation ratio of $W=0.5$,
-  \item We then checked how the allocation ratio of participants $W$ impact sensitivity using 3 different ratio ($W=0.5,0.3,0.15$) for a total sample size of 120,
-  \item We checked how the allocation ratio of participants $W$ impact sensitivity using 3 different ratio ($W=0.5,0.3,0.15$) for a total sample size of 120, including an interaction site-pathology effect of $d=0.5$,
-  \item We checked how the allocation ratio of participants $W=0.3$ impact sensitivity using only 2 sites one large (80 subjects) and one small ($\sim20$ subjects) instead of the 7 sites previously used,
+ \item We first checked how the total number of subject impact sensitivity using 3 different sample size (40, 80, 120) for an allocation ratio of $W=0.5$,
+ \item We then checked how the allocation ratio of participants $W$ impact sensitivity using 3 different ratio ($W=0.5,0.3,0.15$) for a total sample size of 120,
+ \item Including an interaction site-pathology effect of $d=0.5$, we checked how the allocation ratio of participants $W$ impact sensitivity using 3 different ratio ($W=0.5,0.3,0.15$) for a total sample size of 120,
+ \item We checked how the allocation ratio of participants $W=0.3$ impact sensitivity using only 2 sites one large (80 subjects) and one small ($\sim20$ subjects) instead of the 7 sites previously used,
 \end{itemize}
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-fully simulated data
+% Fully simulated data
 In order to obtain more control on each of the parameter of the simulation and simulate some configuration that were not possible to do with the real data (like the simulation of 2 medium size sites of of 40 and 60 subjects per site, and the size of the site effect) we have therefore used a synthetic model using only synthetic data and the average standard deviation of the Cambridge site connectivity.
 
-For each experiment using synthetic data, all effect size in the range 0 to 1.5 with a step of 0.01 were considered. The simulation were performed using randomly generated values. All experiments show four scenarios,  
+For each experiment using synthetic data, all effect size in the range 0 to 1.5 with a step of 0.01 were considered. The simulation were performed using randomly generated values. All experiments show four scenarios, 
 
 For each experiment, all combinations of effect size in
 the grid {without site-effect and with site-effect} and the grid {without interaction site-pathology and with interaction site-pathology} were considered. We implemented a series of experiments:
 
 \begin{itemize}
-  \item We first checked how 2 sites with respectively 50 subjects in each site with an allocation ratio of $W=0.5$ in both sites are impacted in the 4 scenarios in term of sensitivity,
-  \item We then checked how 2 sites with respectively 50 subjects in each site with an allocation ratio of $W=0.7$ for the first site and $W=0.3$ for the second site are impacted in the 4 scenarios in term of sensitivity,
-  \item We checked how 2 sites (one small of 20 subjects and one large of 80 subjects) with an allocation ratio of $W=0.5$ in both sites are impacted in the 4 scenarios in term of sensitivity,
+ \item We first checked how 2 sites with respectively 50 subjects in each site with an allocation ratio of $W=0.5$ in both sites are impacted in the 4 scenarios in term of sensitivity,
+ \item We then checked how 2 sites with respectively 50 subjects in each site with an allocation ratio of $W=0.7$ for the first site and $W=0.3$ for the second site are impacted in the 4 scenarios in term of sensitivity,
+ \item We checked how 2 sites (one small of 20 subjects and one large of 80 subjects) with an allocation ratio of $W=0.5$ in both sites are impacted in the 4 scenarios in term of sensitivity,
+ \item We checked how 2 sites (one small of 20 subjects and one large of 80 subjects) with an allocation ratio of $W=0.7$ for the first site and $W=0.3$ for the second site are impacted in the 4 scenarios in term of sensitivity,
   \item We checked how 2 sites (one small of 20 subjects and one large of 80 subjects) with an allocation ratio of $W=0.7$ for the first site and $W=0.3$ for the second site are impacted in the 4 scenarios in term of sensitivity,
-   \item We checked how 2 sites (one small of 20 subjects and one large of 80 subjects) with an allocation ratio of $W=0.7$ for the first site and $W=0.3$ for the second site are impacted in the 4 scenarios in term of sensitivity,
-   \item We checked how 50 sites (with a number of subject per site randomly assigned between 2 and 15) with an allocation ratio $W$ randomly assigned between 0.1 and 0.9 for each sites are impacted in term of sensitivity for 2 scenarios (without and with interaction site pathology),
+  \item We checked how 50 sites (with a number of subject per site randomly assigned between 2 and 15) with an allocation ratio $W$ randomly assigned between 0.1 and 0.9 for each sites are impacted in term of sensitivity for 2 scenarios (without and with interaction site pathology),
 \end{itemize}
+
  
  
 \section{Results}
@@ -510,6 +495,8 @@ Figure \ref{fig_full_sim_50sites_rnd_debalancing} show a more realistic case in 
 
 \section{Discussion}
 
+This work confirm the existence of an inter-site connectivity bias and compared it to the intra-site bias.\\
+ 
 Connectivity bias that can impact interpretation.\\
 
 Type of scanner most of them are Siemens we may have more variability if combining various brand\\

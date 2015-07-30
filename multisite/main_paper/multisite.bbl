@@ -1,27 +1,28 @@
-\begin{thebibliography}{49}
+\begin{thebibliography}{41}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{\texttt{#1}}\fi
 \expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
 
-\bibitem[{Bellec(2006)}]{Bellec2006}
-Bellec, P., Feb. 2006. {Longitudinal study of large-scale networks in the human
-  brain using fMRI : Methods and application to motor skill learning}. Ph.D.
-  thesis, Universit\'{e} Paris XI, Orsay, Paris.
-\newline\urlprefix\url{http://exocet.imed.jussieu.fr/\~{}pbellec/data/these\_bellec.pdf}
+\bibitem[{Bellec et~al.(2012)Bellec, Lavoie-Courchesne, Dickinson, Lerch,
+  Zijdenbos, and Evans}]{Bellec2012}
+Bellec, P., Lavoie-Courchesne, S., Dickinson, P., Lerch, J.~P., Zijdenbos,
+  A.~P., Evans, A.~C., 2012. {The pipeline system for Octave and Matlab (PSOM):
+  a lightweight scripting framework and execution engine for scientific
+  workflows.} Frontiers in neuroinformatics 6.
+\newline\urlprefix\url{http://dx.doi.org/10.3389/fninf.2012.00007}
 
-\bibitem[{Bellec et~al.(2010{\natexlab{a}})Bellec, Carbonell, Perlbarg, and
-  Evans}]{Bellec2010}
-Bellec, P., Carbonell, F., Perlbarg, V., Evans, A.~C., 2010{\natexlab{a}}. {A
-  neuroimaging analysis kit for Octave and Matlab}.
-\newline\urlprefix\url{http://code.google.com/p/niak/}
-
-\bibitem[{Bellec et~al.(2010{\natexlab{b}})Bellec, Rosa-Neto, Lyttelton,
-  Benali, and Evans}]{Bellec2010c}
+\bibitem[{Bellec et~al.(2010)Bellec, Rosa-Neto, Lyttelton, Benali, and
+  Evans}]{Bellec2010c}
 Bellec, P., Rosa-Neto, P., Lyttelton, O.~C., Benali, H., Evans, A.~C., Jul.
-  2010{\natexlab{b}}. {Multi-level bootstrap analysis of stable clusters in
-  resting-state fMRI.} NeuroImage 51~(3), 1126--1139.
+  2010. {Multi-level bootstrap analysis of stable clusters in resting-state
+  fMRI.} NeuroImage 51~(3), 1126--1139.
 \newline\urlprefix\url{http://dx.doi.org/10.1016/j.neuroimage.2010.02.082}
+
+\bibitem[{Benjamini and Hochberg(1995)}]{Benjamini1995}
+Benjamini, Y., Hochberg, Y., 1995. {Controlling the false-discovery rate: a
+  practical and powerful approach to multiple testing.} J. Roy. Statist. Soc.
+  Ser. B 57, 289--300.
 
 \bibitem[{Biswal et~al.(2010)Biswal, Mennes, Zuo, Gohel, Kelly, Smith,
   Beckmann, Adelstein, Buckner, Colcombe, Dogonowski, Ernst, Fair, Hampson,
@@ -52,13 +53,6 @@ Carbonell, F., Bellec, P., Shmuel, A., Feb 2014. Quantification of the impact
   networks in the resting-state. Neuroimage 86, 343--353.
 \newline\urlprefix\url{http://dx.doi.org/10.1016/j.neuroimage.2013.10.013}
 
-\bibitem[{Collins et~al.(1998)Collins, Zijdenbos, Kollokian, Sled, Kabani,
-  Holmes, and Evans}]{Collins1998}
-Collins, D.~L., Zijdenbos, A.~P., Kollokian, V., Sled, J.~G., Kabani, N.~J.,
-  Holmes, C.~J., Evans, A.~C., Jun. 1998. {Design and construction of a
-  realistic digital brain phantom.} IEEE Trans Med Imaging 17~(3), 463--468.
-\newline\urlprefix\url{http://view.ncbi.nlm.nih.gov/pubmed/9735909}
-
 \bibitem[{Damoiseaux et~al.(2012)Damoiseaux, Prater, Miller, and
   Greicius}]{Damoiseaux2012}
 Damoiseaux, J.~S., Prater, K.~E., Miller, B.~L., Greicius, M.~D., Apr. 2012.
@@ -81,14 +75,6 @@ Dansereau, C., Bellec, P., Lee, K., Pittau, F., Gotman, J., Grova, C., 2014.
   from focal epilepsy: An initial step toward individual connectivity
   assessment. Frontiers in Neuroscience 8~(419).
 \newline\urlprefix\url{http://www.frontiersin.org/brain_imaging_methods/10.3389/fnins.2014.00419/abstract}
-
-\bibitem[{De~Luca et~al.(2006)De~Luca, Beckmann, De~Stefano, Matthews, and
-  Smith}]{DeLuca2006}
-De~Luca, M., Beckmann, C.~F., De~Stefano, N., Matthews, P.~M., Smith, S.~M.,
-  Feb. 2006. {fMRI resting state networks define distinct modes of
-  long-distance interactions in the human brain}. NeuroImage 29~(4),
-  1359--1367.
-\newline\urlprefix\url{http://dx.doi.org/10.1016/j.neuroimage.2005.08.035}
 
 \bibitem[{Desmond and Glover(2002)}]{Desmond2002}
 Desmond, J., Glover, G., Aug. 2002. Estimating sample size in functional mri
@@ -164,36 +150,15 @@ Goveas, J.~S., Xie, C., Ward, B.~D., Wu, Z., Li, W., Franczak, M., Jones,
   fMRI.} Journal of magnetic resonance imaging : JMRI 34~(4), 764--773.
 \newline\urlprefix\url{http://dx.doi.org/10.1002/jmri.22662}
 
-\bibitem[{He et~al.(2009)He, Chen, Gong, and Evans}]{He2009}
-He, Y., Chen, Z., Gong, G., Evans, A., Aug. 2009. {Neuronal networks in
-  Alzheimer's disease.} The Neuroscientist : a review journal bringing
-  neurobiology, neurology and psychiatry 15~(4), 333--350.
-\newline\urlprefix\url{http://dx.doi.org/10.1177/1073858409334423}
-
-\bibitem[{Jafri et~al.(2007)Jafri, Pearlson, Stevens, and Calhoun}]{Jafri2007}
-Jafri, M. J.~J., Pearlson, G. D.~D., Stevens, M., Calhoun, V. D.~D., Nov. 2007.
-  {A method for functional network connectivity among spatially independent
-  resting-state components in schizophrenia.} Neuroimage.
-\newline\urlprefix\url{http://dx.doi.org/10.1016/j.neuroimage.2007.11.001}
-
-\bibitem[{Lu et~al.(2003)Lu, Jiang, and Zang}]{Lu2003}
-Lu, Y., Jiang, T., Zang, Y., Sep. 2003. {Region growing method for the analysis
-  of functional MRI data}. NeuroImage 20~(1), 455--465.
-\newline\urlprefix\url{http://dx.doi.org/10.1016/S1053-8119(03)00352-5}
+\bibitem[{Hunter(2007)}]{matplotlib}
+Hunter, J.~D., 2007. Matplotlib: A 2d graphics environment. Computing In
+  Science \& Engineering 9~(3), 90--95.
 
 \bibitem[{Lund et~al.(2006)Lund, Madsen, Sidaros, Luo, and Nichols}]{Lund2006}
 Lund, T.~E., Madsen, K.~H., Sidaros, K., Luo, W.-L., Nichols, T.~E., Jan. 2006.
   {Non-white noise in fMRI: does modelling have an impact?} NeuroImage 29~(1),
   54--66.
 \newline\urlprefix\url{http://dx.doi.org/10.1016/j.neuroimage.2005.07.005}
-
-\bibitem[{Marrelec et~al.(2008)Marrelec, Bellec, Krainik, Duffau,
-  P\'{e}l\'{e}grini-Issac, Leh\'{e}ricy, Benali, and Doyon}]{Marrelec2008}
-Marrelec, G., Bellec, P., Krainik, A., Duffau, H., P\'{e}l\'{e}grini-Issac, M.,
-  Leh\'{e}ricy, S., Benali, H., Doyon, J., Feb. 2008. {Regions, systems, and
-  the brain: Hierarchical measures of functional integration in fMRI.} Medical
-  image analysis.
-\newline\urlprefix\url{http://dx.doi.org/10.1016/j.media.2008.02.002}
 
 \bibitem[{Milham et~al.(2012)Milham, Fair, Mennes, and Mostofsky}]{ADHD200}
 Milham, M.~P., Fair, D., Mennes, M., Mostofsky, S.~H., 2012. The adhd-200
@@ -239,11 +204,6 @@ Power, J.~D., Mitra, A., Laumann, T.~O., Snyder, A.~Z., Schlaggar, B.~L.,
   motion artifact in resting state fMRI}. NeuroImage 84, 320--341.
 \newline\urlprefix\url{http://dx.doi.org/10.1016/j.neuroimage.2013.08.048}
 
-\bibitem[{Rorden et~al.(2007)Rorden, Karnath, and Bonilha}]{Rorden2007}
-Rorden, C., Karnath, H.-O., Bonilha, L., Jul 2007. Improving lesion-symptom
-  mapping. J Cogn Neurosci 19~(7), 1081--1088.
-\newline\urlprefix\url{http://dx.doi.org/10.1162/jocn.2007.19.7.1081}
-
 \bibitem[{Saad et~al.(2012)Saad, Gotts, Murphy, Chen, Jo, Martin, and
   Cox}]{Saad2012}
 Saad, Z.~S., Gotts, S.~J., Murphy, K., Chen, G., Jo, H. J.~J., Martin, A., Cox,
@@ -261,24 +221,10 @@ Shehzad, Z., Kelly, C.~M., Reiss, P.~T., Gee, D.~G., Gotimer, K., Uddin, L.~Q.,
   2209--2229.
 \newline\urlprefix\url{http://dx.doi.org/10.1093/cercor/bhn256}
 
-\bibitem[{Thirion et~al.(2006)Thirion, Dodel, and Poline}]{Thirion2006}
-Thirion, B., Dodel, S., Poline, J.~B., Jan. 2006. {Detection of signal
-  synchronizations in resting-state fMRI datasets.} Neuroimage 29~(1),
-  321--327.
-\newline\urlprefix\url{http://dx.doi.org/10.1016/j.neuroimage.2005.06.054}
-
 \bibitem[{Tomasi and Volkow(2010)}]{Tomasi2010}
 Tomasi, D., Volkow, N.~D., May 2010. {Functional connectivity density mapping}.
   Proceedings of the National Academy of Sciences 107~(21), 9885--9890.
 \newline\urlprefix\url{http://dx.doi.org/10.1073/pnas.1001414107}
-
-\bibitem[{Tzourio-Mazoyer et~al.(2002)Tzourio-Mazoyer, Landeau, Papathanassiou,
-  Crivello, Etard, Delcroix, Mazoyer, and Joliot}]{Tzourio-Mazoyer2002}
-Tzourio-Mazoyer, N., Landeau, B., Papathanassiou, D., Crivello, F., Etard, O.,
-  Delcroix, N., Mazoyer, B., Joliot, M., Jan. 2002. {Automated anatomical
-  labeling of activations in SPM using a macroscopic anatomical parcellation of
-  the MNI MRI single-subject brain.} NeuroImage 15~(1), 273--289.
-\newline\urlprefix\url{http://dx.doi.org/10.1006/nimg.2001.0978}
 
 \bibitem[{Van~Dijk et~al.(2010)Van~Dijk, Hedden, Venkataraman, Evans, Lazar,
   and Buckner}]{VanDijk2010}
@@ -354,11 +300,13 @@ Zhang, H., Zuo, X.-N., Ma, S.-Y., Zang, Y.-F., Milham, M.~P., Zhu, C.-Z., Mar.
   Analysis}. NeuroImage.
 \newline\urlprefix\url{http://dx.doi.org/10.1016/j.neuroimage.2010.03.039}
 
-\bibitem[{Zijdenbos et~al.(2002)Zijdenbos, Forghani, and Evans}]{Zijdenbos2002}
-Zijdenbos, A.~P., Forghani, R., Evans, A.~C., Oct. 2002. {Automatic "pipeline"
-  analysis of 3-D MRI data for clinical trials: application to multiple
-  sclerosis}. IEEE Transactions on Medical Imaging 21~(10), 1280--1291.
-\newline\urlprefix\url{http://dx.doi.org/10.1109/TMI.2002.806283}
+\bibitem[{Zuo et~al.(2010)Zuo, Kelly, Adelstein, Klein, Castellanos, and
+  Milham}]{Zuo2010}
+Zuo, X.-N., Kelly, C., Adelstein, J.~S., Klein, D.~F., Castellanos, F.~X.,
+  Milham, M.~P., Feb. 2010. {Reliable intrinsic connectivity networks:
+  Test--retest evaluation using ICA and dual regression approach}. NeuroImage
+  49~(3), 2163--2177.
+\newline\urlprefix\url{http://dx.doi.org/10.1016/j.neuroimage.2009.10.080}
 
 \bibitem[{Zuo et~al.(2012)Zuo, Xu, Jiang, Yang, Cao, He, Zang, Castellanos, and
   Milham}]{Zuo2012}
