@@ -1,4 +1,4 @@
-\begin{thebibliography}{41}
+\begin{thebibliography}{35}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{\texttt{#1}}\fi
@@ -52,13 +52,6 @@ Carbonell, F., Bellec, P., Shmuel, A., Feb 2014. Quantification of the impact
   of a confounding variable on functional connectivity confirms anti-correlated
   networks in the resting-state. Neuroimage 86, 343--353.
 \newline\urlprefix\url{http://dx.doi.org/10.1016/j.neuroimage.2013.10.013}
-
-\bibitem[{Damoiseaux et~al.(2012)Damoiseaux, Prater, Miller, and
-  Greicius}]{Damoiseaux2012}
-Damoiseaux, J.~S., Prater, K.~E., Miller, B.~L., Greicius, M.~D., Apr. 2012.
-  {Functional connectivity tracks clinical deterioration in Alzheimer's
-  disease}. Neurobiology of Aging 33~(4), 828.e19--828.e30.
-\newline\urlprefix\url{http://dx.doi.org/10.1016/j.neurobiolaging.2011.06.024}
 
 \bibitem[{Damoiseaux et~al.(2006)Damoiseaux, Rombouts, Barkhof, Scheltens,
   Stam, Smith, and Beckmann}]{Damoiseaux2006}
@@ -140,15 +133,6 @@ Giove, F., Gili, T., Iacovella, V., Macaluso, E., Maraviglia, B., Oct. 2009.
   functional connectivity studies.} Magnetic resonance imaging 27~(8),
   1058--1064.
 \newline\urlprefix\url{http://dx.doi.org/10.1016/j.mri.2009.06.004}
-
-\bibitem[{Goveas et~al.(2011)Goveas, Xie, Ward, Wu, Li, Franczak, Jones,
-  Antuono, and Li}]{Goveas2011}
-Goveas, J.~S., Xie, C., Ward, B.~D., Wu, Z., Li, W., Franczak, M., Jones,
-  J.~L., Antuono, P.~G., Li, S.-J.~J., Oct. 2011. {Recovery of hippocampal
-  network connectivity correlates with cognitive improvement in mild
-  Alzheimer's disease patients treated with donepezil assessed by resting-state
-  fMRI.} Journal of magnetic resonance imaging : JMRI 34~(4), 764--773.
-\newline\urlprefix\url{http://dx.doi.org/10.1002/jmri.22662}
 
 \bibitem[{Hunter(2007)}]{matplotlib}
 Hunter, J.~D., 2007. Matplotlib: A 2d graphics environment. Computing In
@@ -241,21 +225,6 @@ Vanhoutte, G., Verhoye, M., der Linden, A.~V., May 2006. Changing body
   activity. Magn Reson Med 55~(5), 1006--1012.
 \newline\urlprefix\url{http://dx.doi.org/10.1002/mrm.20861}
 
-\bibitem[{Wang et~al.(2007)Wang, Liang, Wang, Tian, Zhang, Li, and
-  Jiang}]{Wang2007a}
-Wang, K., Liang, M., Wang, L., Tian, L., Zhang, X., Li, K., Jiang, T., Oct.
-  2007. {Altered functional connectivity in early Alzheimer's disease: a
-  resting-state fMRI study.} Human brain mapping 28~(10), 967--978.
-\newline\urlprefix\url{http://dx.doi.org/10.1002/hbm.20324}
-
-\bibitem[{Wang et~al.(2006)Wang, Zang, He, Liang, Zhang, Tian, Wu, Jiang, and
-  Li}]{Wang2006a}
-Wang, L., Zang, Y., He, Y., Liang, M., Zhang, X., Tian, L., Wu, T., Jiang, T.,
-  Li, K., Jun. 2006. {Changes in hippocampal connectivity in the early stages
-  of Alzheimer's disease: evidence from resting state fMRI.} NeuroImage 31~(2),
-  496--504.
-\newline\urlprefix\url{http://dx.doi.org/10.1016/j.neuroimage.2005.12.033}
-
 \bibitem[{Worsley and Friston(1995)}]{Worsley1995}
 Worsley, K.~J., Friston, K.~J., Sep. 1995. {Analysis of fMRI Time-Series
   Revisited---Again}. NeuroImage 2~(3), 173--181.
@@ -285,20 +254,6 @@ Yan, C.-G.~G., Craddock, C.~C., Zuo, X.-N.~N., Zang, Y.-F.~F., Milham, M.~P.,
   measurement of inter-individual variation in 1000 functional connectomes.}
   NeuroImage 80, 246--262.
 \newline\urlprefix\url{http://view.ncbi.nlm.nih.gov/pubmed/23631983}
-
-\bibitem[{Zhang et~al.(2009)Zhang, Wang, Xing, Liu, Ma, Yang, Zhang, and
-  Teng}]{Zhang2009a}
-Zhang, H., Wang, S., Xing, J., Liu, B., Ma, Z., Yang, M., Zhang, Z., Teng, G.,
-  Jan. 2009. {Detection of PCC functional connectivity characteristics in
-  resting-state fMRI in mild Alzheimer's disease}. Behavioural Brain Research
-  197~(1), 103--108.
-\newline\urlprefix\url{http://dx.doi.org/10.1016/j.bbr.2008.08.012}
-
-\bibitem[{Zhang et~al.(2010)Zhang, Zuo, Ma, Zang, Milham, and Zhu}]{Zhang2010}
-Zhang, H., Zuo, X.-N., Ma, S.-Y., Zang, Y.-F., Milham, M.~P., Zhu, C.-Z., Mar.
-  2010. {Subject Order-Independent Group ICA (SOI-GICA) for Functional MRI Data
-  Analysis}. NeuroImage.
-\newline\urlprefix\url{http://dx.doi.org/10.1016/j.neuroimage.2010.03.039}
 
 \bibitem[{Zuo et~al.(2010)Zuo, Kelly, Adelstein, Klein, Castellanos, and
   Milham}]{Zuo2010}
