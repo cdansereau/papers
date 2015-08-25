@@ -1,8 +1,17 @@
-\begin{thebibliography}{35}
+\begin{thebibliography}{37}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{\texttt{#1}}\fi
 \expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+
+\bibitem[{Ad-Dab'bagh et~al.(2006)Ad-Dab'bagh, Einarson, Lyttelton, Muehlboeck,
+  Mok, Ivanov, Vincent, Lepage, Lerch, Fombonne, and Evans}]{Ad-Dab'bagh2006}
+Ad-Dab'bagh, Y., Einarson, D., Lyttelton, O., Muehlboeck, J.~S., Mok, K.,
+  Ivanov, O., Vincent, R.~D., Lepage, C., Lerch, J., Fombonne, E., Evans,
+  A.~C., 2006. The {CIVET} {Image-Processing} environment: A fully automated
+  comprehensive pipeline for anatomical neuroimaging research. In: Corbetta, M.
+  (Ed.), Proceedings of the 12th Annual Meeting of the Human Brain Mapping
+  Organization. Neuroimage, Florence, Italy.
 
 \bibitem[{Bellec et~al.(2012)Bellec, Lavoie-Courchesne, Dickinson, Lerch,
   Zijdenbos, and Evans}]{Bellec2012}
@@ -52,6 +61,12 @@ Carbonell, F., Bellec, P., Shmuel, A., Feb 2014. Quantification of the impact
   of a confounding variable on functional connectivity confirms anti-correlated
   networks in the resting-state. Neuroimage 86, 343--353.
 \newline\urlprefix\url{http://dx.doi.org/10.1016/j.neuroimage.2013.10.013}
+
+\bibitem[{Collins et~al.(1994)Collins, Neelin, Peters, and Evans}]{Collins1994}
+Collins, D.~L., Neelin, P., Peters, T.~M., Evans, A.~C., 1994. {Automatic 3D
+  intersubject registration of MR volumetric data in standardized Talairach
+  space.} Journal of computer assisted tomography 18~(2), 192--205.
+\newline\urlprefix\url{http://view.ncbi.nlm.nih.gov/pubmed/8126267}
 
 \bibitem[{Damoiseaux et~al.(2006)Damoiseaux, Rombouts, Barkhof, Scheltens,
   Stam, Smith, and Beckmann}]{Damoiseaux2006}
