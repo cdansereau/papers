@@ -50,6 +50,8 @@
 \author[a,b]{Christian~Dansereau}
 \author[c]{Celine~Risterucci}
 \author[c]{Emilio~Merlo Pich}
+\author[a]{Yassine~Benhajali}
+\author[a]{Pierre~Orban}
 \author[d]{Douglas~Arnold}
 \author[a,b]{Pierre~Bellec\corref{cor1}}
 \ead{pierre.bellec@criugm.qc.ca}
@@ -115,6 +117,7 @@ The paper studies 345 cognitively normal young adults (CNY) from a subset of sub
 \resizebox{\columnwidth}{!}{%
 \begin{tabular}{lllllllllll}
 \textbf{Site}         & \textbf{Magnet} & \textbf{Scanner make} & \textbf{Channels} & \textbf{N} & \textbf{N final} & \textbf{Sex} & \textbf{Age} & \textbf{TR} & \textbf{\# Slices} & \textbf{\# Frames} \\
+\hline
 Baltimore, USA        & 3T              & N/A                   & N/A               & 23   & 21         & 8M/15F       & 20-40        & 2.5         & 47                 & 123                \\
 Berlin, Germany       & 3T              & Siemens Tim Trio      & 12                & 26   & 26         & 13M/13F      & 23-44        & 2.3         & 34                 & 195                \\
 Cambridge, USA        & 3T              & Siemens Tim Trio      & 12                & 198  & 195        & 75M/123F     & 18-30        & 3           & 47                 & 119                \\
@@ -241,13 +244,9 @@ the grid (without site-effect and with site-effect) and the grid (without intera
   \item We checked how 50 sites (with a number of subject per site randomly assigned between 2 and 15) with an allocation ratio $W$ randomly assigned between 0.1 and 0.9 for each sites are impacted in term of sensitivity for 2 scenarios (without and with interaction site pathology),
 \end{itemize}
 
- 
- 
 \section{Results}
 
 \subsection{Additive bias in multi-centric resting-state fMRI connectivity measures}
-Our first aim was to assess empirically the amplitude of a possible additive bias in resting-state connectivity measures generated at different sites. For each selected site of the 1000 FCP, and each pair of the 100 parcels in the Cambridge functional atlas, The standard deviation of connectivity measures across subjects within one site was compared the absolute difference in connectivity measures derived at two different sites.  shows the distribution of the standard deviation in connectivity across subjects (the distribution is over the full brain connectome, with several 1000s connections) for the 8 sites against the inter-sites standard deviation of connectomes averaged at each site. The first observation is the consistency across site in term of there STD. Secondly the inter-site (between-site) variability is smaller than the intra-site (between subjects) variability, in fact the amplitude of inter-site bias ($\sim 0.06$) is about 3-fold smaller than the within-site standard deviation ($\sim 0.18$).
-
 \begin{figure}[tbp]
 \begin{center}
 \includegraphics[width=\linewidth]{../figures/inter_vs_intra_3tonly.png}
@@ -258,9 +257,11 @@ Our first aim was to assess empirically the amplitude of a possible additive bia
 \label{fig_site_variability}
 \end{figure}
 
+\paragraph{Overall distribution across the connectome} Our first aim was to assess the amplitude of inter-site bias in resting-state connectivity measures. For each pair of parcels in the Cambridge functional atlas, and each pair of sites in the 1000 FCP, the absolute difference in connectivity, averaged across subjects, was derived between the two sites. The right boxplot in Figure \ref{fig_site_variability} shows the distribution (mean, std) of this inter-site measurement bias, across all possible connections and all possible pairs of sites. We observed that the amplitude of additive bias in group average connectivity measures was relatively small, with an average of about $0.05$. As a point of reference, the standard deviation (std) of functional connectivity measures was derived across all subjects. Figure \ref{fig_site_variability} shows the distribution (mean, std) of these intra-site std across all possible connections. The amplitude of intra-site std in connectivity across subjects was rather consistent across sites, with an average located in the 0.15 to 0.2 range. The amplitude of additive bias in group average connectivity measures was thus markedly smaller than the inter-subject, intra-site std (roughly 3-fold smaller, on the averages).
 
-In order to verify how spatial structure vary across sites the average standard deviation and the average connectivity map of the DMN were extracted for each site and reported in Figure \ref{fig_DMN_variability}. At the intersection between two sites the difference in average connectivity is illustrated (red set of brain cuts). First the mean DMN at each site is consistent with the expected spatial distribution reported in other studies \citep{Damoiseaux2006,Dansereau2014,Yan2013a}. The most salient changes between-sites are located in the mesio-frontal region associated with the anterior part of the DMN. In order to verify if significant changes are not only found in the DMN we have computed the entire connectome to obtain the other connectivity patterns and the findings can be generalized to the full connectome as illustraded in Figure \ref{fig_connectome_variability}.
+\paragraph{Connection-wise tests in the default-mode network} The distributions presented above agregated results across all possible brain connections in the Cambridge brain parcellation. To further clarify how the inter-site bias was distributed across connections, we first focused on the connections associated with a seed region located in the precuneus (PCC), a key node of the DMN \citep{Greicius2004}. The average connectivity map of the PCC was first extracted for each site, Figure \ref{fig_DMN_variability}. Qualitatively, the average PCC connectivity maps identified a network of regions consistent across sites and matching the distribution of the DMN, as reported in other studies \citep{Damoiseaux2006,Dansereau2014,Yan2013a}. At the intersection between two sites the difference in average connectivity is illustrated (red set of brain cuts). First The most salient changes between-sites are located in the mesio-frontal region associated with the anterior part of the DMN. In order to verify if significant changes are not only found in the DMN we have computed the entire connectome to obtain the other connectivity patterns and the findings can be generalized to the full connectome as illustraded in Figure \ref{fig_connectome_variability}.
 
+\paragraph{Connectome-wide bias}
 \begin{figure}[tbp]
 \begin{center}
 \includegraphics[width=\linewidth]{../figures/pccmap_multisite.png}
@@ -282,10 +283,8 @@ Average functional connectome of 8 sites (Baltimore, Newark, Berlin, Cambridge, 
 \label{fig_connectome_variability}
 \end{figure}
 
-\subsection{Simulation on real data}
-In order to evaluate the impact of a multisite setup on our ability to detect changes in rs-functional connectivity studies we performed various simulation on real fMRI data. For each site and each sub-sample, $W$ of the subjects were randomly assigned to a 'treatment' group. For the subjects in this group, a value was added to achieve a given relative effect size expressed in Cohen's $d$. In order to detect changes on each connection pair between the artificially created groups, a general linear model (GLM) was applied and the following confounding variables were modelled in the analysis: age, sex and frame displacement (FD).
-
-In Figure \ref{fig_real_sim_samplesize} we show the effect of the sample size on the detection power. As expected we are able to detect smaller and smaller effect size as we increase the sample size. For an effect size of 1 which is considered a large effect we are able to detect significant changes in only 20\% of the cases at 40 subjects, 80\% at 80 subjects and almost 95\% at 120\% subjects.
+\subsection{Monte-Carlo simulations of statistical power}
+We evaluated the statistical power of a test of group difference in rs-fMRI connectivity, with either a single or multiple sites of data collection. In Figure \ref{fig_real_sim_samplesize} we show the effect of the sample size on the detection power. As expected we are able to detect smaller and smaller effect size as we increase the sample size. For an effect size of 1 which is considered a large effect we are able to detect significant changes in only 20\% of the cases at 40 subjects, 80\% at 80 subjects and almost 95\% at 120\% subjects.
 
 %\frametitle{Effect of sample size: \\real data 50\%-50\% debalancing}
 \begin{figure}[tbp]
