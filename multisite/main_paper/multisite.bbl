@@ -1,4 +1,4 @@
-\begin{thebibliography}{37}
+\begin{thebibliography}{38}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{\texttt{#1}}\fi
@@ -148,6 +148,14 @@ Giove, F., Gili, T., Iacovella, V., Macaluso, E., Maraviglia, B., Oct. 2009.
   functional connectivity studies.} Magnetic resonance imaging 27~(8),
   1058--1064.
 \newline\urlprefix\url{http://dx.doi.org/10.1016/j.mri.2009.06.004}
+
+\bibitem[{Greicius et~al.(2004)Greicius, Srivastava, Reiss, and
+  Menon}]{Greicius2004}
+Greicius, M.~D., Srivastava, G., Reiss, A.~L., Menon, V., Mar. 2004.
+  {Default-mode network activity distinguishes Alzheimer's disease from healthy
+  aging: Evidence from functional MRI}. Proceedings of the National Academy of
+  Sciences of the United States of America 101~(13), 4637--4642.
+\newline\urlprefix\url{http://dx.doi.org/10.1073/pnas.0308627101}
 
 \bibitem[{Hunter(2007)}]{matplotlib}
 Hunter, J.~D., 2007. Matplotlib: A 2d graphics environment. Computing In
