@@ -245,8 +245,8 @@ the grid (without site-effect and with site-effect) and the grid (without intera
  
 \section{Results}
 
-\subsection{Inter-site bias}
-The first assessment perform on the dataset was to verify the distribution of the intra-site and inter-site functional connectivity variance to assess the magnitude of the bias. This analysis of Figure \ref{fig_site_variability} shows the distribution of the standard deviation in connectivity across subjects (the distribution is over the full brain connectome, with several 1000s connections) for the 8 sites against the inter-sites standard deviation of connectomes averaged at each site. The first observation is the consistency across site in term of there STD. Secondly the inter-site (between-site) variability is smaller than the intra-site (between subjects) variability, in fact the amplitude of inter-site bias ($\sim 0.06$) is about 3-fold smaller than the within-site standard deviation ($\sim 0.18$).
+\subsection{Additive bias in multi-centric resting-state fMRI connectivity measures}
+Our first aim was to assess empirically the amplitude of a possible additive bias in resting-state connectivity measures generated at different sites. For each selected site of the 1000 FCP, and each pair of the 100 parcels in the Cambridge functional atlas, The standard deviation of connectivity measures across subjects within one site was compared the absolute difference in connectivity measures derived at two different sites.  shows the distribution of the standard deviation in connectivity across subjects (the distribution is over the full brain connectome, with several 1000s connections) for the 8 sites against the inter-sites standard deviation of connectomes averaged at each site. The first observation is the consistency across site in term of there STD. Secondly the inter-site (between-site) variability is smaller than the intra-site (between subjects) variability, in fact the amplitude of inter-site bias ($\sim 0.06$) is about 3-fold smaller than the within-site standard deviation ($\sim 0.18$).
 
 \begin{figure}[tbp]
 \begin{center}
@@ -487,11 +487,17 @@ Figure \ref{fig_full_sim_50sites_rnd_debalancing} show a more realistic case in 
 
 \section{Discussion}
 
-This work confirm the existence of an inter-site connectivity bias and compared it to the intra-site bias.\\
- 
-Connectivity bias that can impact interpretation.\\
+An important benefit of multisite acquisitions is to offer improved generalization compared to single site studies, due to more diversity in scanners and populations. These additional sources of variance may however decrease the statistical power, and somewhat mitigate the benefits of having a large sample size. In this work, our main objective was to quantitatively assess the impact of inter-site variability on statistical power, for rs-fMRI group comparison.
 
-Type of scanner most of them are Siemens we may have more variability if combining various brand\\
+
+To establish the impact of multisite acquisitions on statistical power in rs-fMRI, we first specifically aimed at characterizing the amplitude of the inter-site bias in real rs-fMRI measures, relative to intra-site variance. We based our evaluation on N=345 young healthy participants from the 1000 Functional Connectomes Project (FCP), including rs-fMRI samples independently collected at 8 imaging sites with 3T scanners in Germany, the United Kingdom, Australia and the United States of America. Datasets in this study were shared retrospectively and every documented parameters of image acquisition varied across studies. This data sample thus represents a worst-case-scenario in terms of 3T instrumental inter-site variations. Our second specific aim was to evaluate the impact of such inter-site bias on the detection power of rs-fMRI group comparison, in relation with sample size, group balancing and interaction between sites and group differences. We implemented for this purpose a series of simulation, mixing synthetic data with real data from the 1000 FCP. One of the particularity of the 1000 FCP is the presence of one large site of $\sim200$ subjects and 7 small sites of $\sim20$ subjects per site. We were therefore able to implement realistic scenarios following either a monosite or a multisite design, with the same total sample size.
+
+This work therefore confirm the existence of an inter-site connectivity bias and compared it to the intra-site bias.\\
+The contribution of the intra and inter-subject variability is about 3 fold greater than the inter-site contribution.\\
+ 
+Connectivity bias can impact interpretation.\\
+
+In this study the great majority of scanner were Siemens,and therefore more variability may be found using various brands unfortunatly this avenue was not testable in using this dataset.\\
 
 
 Talk about the impact in small acquisition 40 subjects total and the importance of pooling data among PI.\\
