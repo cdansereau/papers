@@ -230,15 +230,7 @@ For each experiment using real data, all effect size in the range 0 to 2 Cohenâ€
 \section{Results}
 
 \subsection{Additive bias in multi-centric resting-state fMRI connectivity measures}
-\begin{figure}[tbp]
-\begin{center}
-\includegraphics[width=\linewidth]{../figures/inter_vs_intra_3tonly.png}
-\end{center}
-\caption[inter vs. intra site variability]{
- Distribution of intra-site (between-subject) standard deviation vs. inter-site (between-site) standard deviation, based on the standard deviation of the connectivity matrices from a subset of 8 sites from the 1000 functional connectome dataset.
-}
-\label{fig_site_variability}
-\end{figure}
+
 
 \paragraph{Overall distribution across the connectome} Our first aim was to assess the amplitude of inter-site bias in resting-state connectivity measures. For each pair of parcels in the Cambridge functional atlas, and each pair of sites in the 1000 FCP, the absolute difference in connectivity, averaged across subjects, was derived between the two sites. The right boxplot in Figure \ref{fig_site_variability} shows the distribution (mean, std) of this inter-site measurement bias, across all possible connections and all possible pairs of sites. We observed that the amplitude of additive bias in group average connectivity measures was relatively small, with an average of about $0.05$. As a point of reference, the standard deviation (std) of functional connectivity measures was derived across all subjects. Figure \ref{fig_site_variability} shows the distribution (mean, std) of these intra-site std across all possible connections. The amplitude of intra-site std in connectivity across subjects was rather consistent across sites, with an average located in the 0.15 to 0.2 range. The amplitude of additive bias in group average connectivity measures was thus markedly smaller than the inter-subject, intra-site std (roughly 3-fold smaller, on the averages).
 
@@ -271,16 +263,7 @@ Average functional connectivity maps of the default-mode network at on 8 sites (
 \begin{center}
 \includegraphics[width=0.7\linewidth]{../figures/dmn_reference.png}
 \end{center}
-\caption[]{
-}
-\label{fig_dmn_ref}
-\end{figure}
-
-\begin{figure}[tbp]
-\begin{center}
-\includegraphics[width=0.7\linewidth]{../figures/boxplot_intrasite_var.png}
-\end{center}
-\caption[]{
+\caption[]{Average significant regions affected in a multisite configuration ... . The map is threshold to 0.1
 }
 \label{fig_dmn_ref}
 \end{figure}
@@ -288,20 +271,24 @@ Average functional connectivity maps of the default-mode network at on 8 sites (
 
 \begin{figure}[tbp]
 \begin{center}
-\includegraphics[width=0.7\linewidth]{../figures/boxplot_inter_var.png}
+\includegraphics[width=0.7\linewidth]{../figures/alldiff_multisite.png}
 \end{center}
 \caption[]{
 }
-\label{fig_dmn_ref}
+\label{fig_alldiff_map}
 \end{figure}
+
+
+
 
 \begin{figure}[tbp]
 \begin{center}
-\includegraphics[width=0.7\linewidth]{../figures/boxplot_intra_inter_var.png}
+\includegraphics[width=\linewidth]{../figures/boxplot_intra_inter_var.png}
 \end{center}
-\caption[]{
+\caption[inter vs. intra site variability]{
+ Distribution of intra-site (between-subject) standard deviation vs. inter-site (between-site) standard deviation, based on the standard deviation of the connectivity matrices from a subset of 8 sites from the 1000 functional connectome dataset.
 }
-\label{fig_dmn_ref}
+\label{fig_site_variability}
 \end{figure}
 
 
