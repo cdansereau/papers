@@ -216,15 +216,14 @@ The sensitivity of the test was evaluated by the average detection performance o
 
 % The simulation scenarios
 \paragraph{Simulation scenarios}
-For each experiment using real data, all effect size in the range 0 to 2 Cohen’s $d$ with a step of 0.01 were considered. For each experiment we performed $B=10^3$ simulations using 80\% subsampling and the reported allocation ratio of participants $W$ and its inverse $1-W$ was attributed randomly to the treatment population for each site. We implemented the following experiments:
+For each experiment using real data, all effect size in the range 0 to 2 Cohen’s $d$ with a step of 0.01 were considered. For each experiment we performed $B=10^3$ simulations using subsampling and the reported allocation ratio of participants $W$ and its inverse $1-W$ was attributed randomly to the treatment population for each site. The subsampling scheme used was obtainned by calulating the sampling ratio desiered sample size / total subject available from all sites. We then extracted a random sample of each site based on this ratio. We implemented the following experiments:
 
 \begin{itemize}
- \item We first checked how the total number of subject impact sensitivity using 3 different sample size (40, 80, 120) for an allocation ratio of $W=0.5$,
- \item We then checked how the allocation ratio of participants $W$ impact sensitivity using 3 different ratio ($W=0.5,0.3,0.15$) for a total sample size of 120,
- \item Including an interaction site-pathology effect of $d=0.5$, we checked how the allocation ratio of participants $W$ impact sensitivity using 3 different ratio ($W=0.5,0.3,0.15$) for a total sample size of 120,
- \item We checked how the allocation ratio of participants $W=0.3$ impact sensitivity using only 2 sites one large (80 subjects) and one small ($\sim20$ subjects) instead of the 7 sites previously used,
+ \item We first looked how the total number of subject impact sensitivity using 3 different sample size (40, 80, 120) for an allocation ratio of $W=0.5$,
+ \item We then looked how the allocation ratio of participants $W$ impact sensitivity using 3 different ratio ($W=0.5,0.3,0.15$) for a total sample size of 120,
+ \item Including an interaction site-pathology effect of $d=0.5$, we looked how the allocation ratio of participants $W$ impact sensitivity using 3 different ratio ($W=0.5,0.3,0.15$) for a total sample size of 120,
+ \item We looked how the allocation ratio of participants $W=0.3$ impact sensitivity using only 2 sites one large (80 subjects) and one small ($\sim20$ subjects) instead of the 7 sites previously used,
 \end{itemize}
-
 
 
 \section{Results}
@@ -237,7 +236,7 @@ For each experiment using real data, all effect size in the range 0 to 2 Cohen�
 
 \begin{figure}[tbp]
 \begin{center}
-\includegraphics[width=\linewidth]{../figures/connectome_multisite.png}
+\includegraphics[width=0.75\linewidth]{../figures/connectome_multisite.png}
 \end{center}
 \caption[Connectome variability across sites]{
 Average functional connectome of 8 sites (Baltimore, Newark, Berlin, Cambridge, New-Yorkb, Oxford, Queenland and SaintLouis) are shown on the diagonal. The standard deviation across subjects and within site is shown on the first column. Each off-diagonal block represent the significant differences between the average functional connectome of two sites (called the inter-site bias). Statistical differences are obtained using a GLM procedure include age, sex and FD for each subject with an FDR correction procedure ($\alpha=0.05$).
@@ -263,7 +262,7 @@ Average functional connectivity maps of the default-mode network at on 8 sites (
 \begin{center}
 \includegraphics[width=0.7\linewidth]{../figures/dmn_reference.png}
 \end{center}
-\caption[]{Average significant regions affected in a multisite configuration ... . The map is threshold to 0.1
+\caption[]{Reference map of the default mode network (DMN). With labels for principal structures of the DMN.
 }
 \label{fig_dmn_ref}
 \end{figure}
@@ -273,7 +272,7 @@ Average functional connectivity maps of the default-mode network at on 8 sites (
 \begin{center}
 \includegraphics[width=0.7\linewidth]{../figures/alldiff_multisite.png}
 \end{center}
-\caption[]{
+\caption[]{Regions identified to display significant inter-site differences across all sites and for the whole connectome. The map is threshold to 0.1
 }
 \label{fig_alldiff_map}
 \end{figure}
@@ -286,7 +285,7 @@ Average functional connectivity maps of the default-mode network at on 8 sites (
 \includegraphics[width=\linewidth]{../figures/boxplot_intra_inter_var.png}
 \end{center}
 \caption[inter vs. intra site variability]{
- Distribution of intra-site (between-subject) standard deviation vs. inter-site (between-site) standard deviation, based on the standard deviation of the connectivity matrices from a subset of 8 sites from the 1000 functional connectome dataset.
+ Distribution of intra-site (between-subject) standard deviation vs. inter-site (between-site) standard deviation, based on the standard deviation of the connectivity matrices from a subset of 8 sites from the 1000 functional connectome dataset. A) The average intra-site vs. inter-site bias distribution. B) Detailled intra-site standard deviation for each site. C) Detailled inter-site absolute bias for each site.
 }
 \label{fig_site_variability}
 \end{figure}
@@ -351,36 +350,33 @@ Using these Monte-Carlo simulations we have shown that the power of detecting an
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Discussion}
+This study evaluated the impact of multisite rs-fMRI acquisitions on the statistical power compared to equivalent single site studies, for rs-fMRI group comparison.\\
 
-An important benefit of multisite acquisitions is to offer improved generalization compared to single site studies, due to more diversity in scanners and populations. These additional sources of variance may however decrease the statistical power, and somewhat mitigate the benefits of having a large sample size. In this work, our main objective was to quantitatively assess the impact of inter-site variability on statistical power, for rs-fMRI group comparison.
+We first specifically aimed at characterizing the amplitude of the inter-site bias in real rs-fMRI measures, relative to intra-site variance. We based our evaluation on N=345 young healthy participants from the 1000 Functional Connectomes Project (FCP), including rs-fMRI samples independently collected at 8 imaging sites with 3T scanners in Germany, the United Kingdom, Australia and the United States of America. Datasets in this study were shared retrospectively and every documented parameters of image acquisition varied across studies. This data sample thus represents a worst-case-scenario in terms of 3T instrumental inter-site variations.\\
 
+Second we evaluated the impact of such inter-site bias on the detection power of rs-fMRI group comparison, in relation with sample size, group balancing and interaction between sites and group differences. We implemented for this purpose a series of simulation, mixing synthetic data with real data from the 1000 FCP. One of the particularity of the current dataset is the presence of one large site of $\sim200$ subjects and 7 small sites of $\sim20$ subjects per site. We were therefore able to implement realistic scenarios following either a monosite or a multisite design, with the same total sample size.\\
 
-To establish the impact of multisite acquisitions on statistical power in rs-fMRI, we first specifically aimed at characterizing the amplitude of the inter-site bias in real rs-fMRI measures, relative to intra-site variance. We based our evaluation on N=345 young healthy participants from the 1000 Functional Connectomes Project (FCP), including rs-fMRI samples independently collected at 8 imaging sites with 3T scanners in Germany, the United Kingdom, Australia and the United States of America. Datasets in this study were shared retrospectively and every documented parameters of image acquisition varied across studies. This data sample thus represents a worst-case-scenario in terms of 3T instrumental inter-site variations. Our second specific aim was to evaluate the impact of such inter-site bias on the detection power of rs-fMRI group comparison, in relation with sample size, group balancing and interaction between sites and group differences. We implemented for this purpose a series of simulation, mixing synthetic data with real data from the 1000 FCP. One of the particularity of the 1000 FCP is the presence of one large site of $\sim200$ subjects and 7 small sites of $\sim20$ subjects per site. We were therefore able to implement realistic scenarios following either a monosite or a multisite design, with the same total sample size.
-
-This work therefore confirm the existence of an inter-site connectivity bias and compared it to the intra-site bias.\\
-The contribution of the intra and inter-subject variability is about 3 fold greater than the inter-site contribution.\\
- 
-Connectivity bias can impact interpretation.\\
-
-In this study the great majority of scanner were Siemens,and therefore more variability may be found using various brands unfortunatly this avenue was not testable in using this dataset.\\
-
+Typical networks were reliably found accross sites like the default mode network (DMN) although we found that significant differences exist that could undermind the interpretation of the results. This work therefore confirm the existence of an inter-site connectivity bias and compared it to the intra-site bias. The inter-subject (intra-site) contribution in term of variance was found to be 3 fold greater than the inter-site contribution. A reassuring finding in favor of multisite pooling. Although a word of caution should me made regarding the fact that the great majority of scanner were Siemens, and therefore more variability may be found using various brands unfortunatly this avenue was not testable using this dataset.\\
 
 Talk about the impact in small acquisition 40 subjects total and the importance of pooling data among PI.\\
 Choosing the right sample size for a given detection power to obtain reproducible results.
 
 Talk about the impact in clinical trial and best practice.\\
-	most of the time we cannot correct for site with one population only or with too few subjects per site. Although these kind of multisite studies generally sum-up to large dataset of more than 200 subjects. has we demonstrated in the synthetic simulation such configuration are comparable to single site analysis for this range of sample size.
 
 It is better to have interaction of various amplitude across small sites than an average interaction on one large site\\
 
-The number of subject / site will impact the bias between multisite and monosite (like in the example of 2 sites the diff is marginal). Resulting in the following conclusion combining large site (e.g greater than 50 subjects) may results in low bias compared to very small sites.
+%The number of subject / site will impact the bias between multisite and monosite (like in the example of 2 sites the difference between monosite and multisite is marginal). Resulting in the following conclusion combining large site (e.g greater than 50 subjects) may results in low bias compared to very small sites.
 
-talk about the reduction of the bias of the simulation compared to the fully parametric estimate as we increase the sample size. The estimation is more realistic over 80 subjects and overestimate the detection power at low sample-size.
+%talk about the reduction of the bias of the simulation compared to the fully parametric estimate as we increase the sample size. The estimation is more realistic over 80 subjects and overestimate the detection power at low sample-size.
 
-% can be use for other multisite study...
-Despite justifiable scepticism, feasibility analyses demonstrated that meaningful explorations of the aggregate dataset, composed of 24 imaging sites for a grand total of 1093 subjects, could be performed \citep{Biswal2010}. Although no explicit correction for multi-site variability was used, they only use global signal correction (GSC) to normalize subjects which may introduce anti-correlation in the data \citep{Fox2009, Murphy2009, Saad2012, Carbonell2014, Power2014}. After accounting for site-related differences, the analysis showed brain-behaviour relationships with phenotypic variables such as age, gender, and diagnostic label, and confirmed a variety of prior hypotheses \citep{Biswal2010, Fair2012, Tomasi2010, Zuo2012}. While encouraging, many uncontrolled and unknown factors in the 1000 FCP remain a source of concern, as they spread beyond simple site effects and can limit the datasets utility as highlighted by \cite{Yan2013}. Another compelling proof of multisite bias is the study reported by \cite{Nielsen2013} where they did an analysis on a single site dataset and a multi-site dataset of subject with autism and concluded that the multi-site autism study classification accuracy significantly outperformed chance but was much lower for multi-site prediction than for previous single site results \citep{Nielsen2013}. We therefore need to keep in mind that the site effect must be taken in account in the analysis or we may reduce our detection power.
+Looking at the delta between the multisite power curve and the monosite power curve, we can see that the multisite studies at 7 sites show consistently greater discrepency to the monosite then the multisite using only 2 sites. It is therefore better to have a few large sites then a large number of small sites.\\
+
+%Despite justifiable scepticism, feasibility analyses demonstrated that meaningful explorations of the aggregate dataset, composed of 8 scanning sites, could be performed. 
+
+After accounting for site-related differences (explicit correction for multi-site variability using dummy variables) in order to have an unbiased estimate of the detection power, the analysis showed similar detection power altough slightly lower for the multisite configuration. Another compelling proof of multisite bias is the study reported by \cite{Nielsen2013} where they did an analysis on a single site dataset and a multi-site dataset of subject with autism and concluded that the multi-site autism study classification accuracy significantly outperformed chance but was much lower for multi-site prediction than for previous single site results, a result concordant with our findings. We therefore need to keep in mind that the site effect must be taken in account in the analysis and that we may loose around 10\% in detection power for a given effect-size in a multisite configuration compared to an equal size monosite study.
 
 \section{Conclusion}
+In summary the difference in our ability to detect effec-size using a multisite configuration compared to a monosite configuration diminish with the total sample size...
 
 
 \section{Acknowledgments}
