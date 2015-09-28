@@ -228,34 +228,25 @@ For each experiment using real data, all effect size in the range 0 to 2 Cohenâ€
 
 \section{Results}
 
-\subsection{Additive bias in multi-centric resting-state fMRI connectivity measures}
+\subsection{Site bias in fMRI connectivity}
 
+\paragraph{The default-mode network} We first focused on the connections associated with a seed region located in the precuneus (PCC), a key node of the DMN and one of the most widely studied resting-state network \citep{Greicius2004}. The connections were based on the Cambridge 100 parcellation, and were represented as a connectivity map, Figure \ref{fig_DMN_variability}. Panel Figure \ref{fig_DMN_variability}A shows the posterior cingulate cortex (PCC) connectivity map, averaged across all subjects and all sites. The key regions of the DMN are easily identifiable, and include the PCC, precuneus, inferior parietal lobule, anterior cingulate cortex, medial frontal cortex (posterior, anterior and ventral), superior frontal gyri and the medial temporal lobe \citep{Damoiseaux2006,Dansereau2014,Yan2013a}. The average connectivity map of the DMN was then extracted for each site, Figure \ref{fig_DMN_variability}B. Qualitatively, the site-specific DMN maps were very consistent, as expected based on the literature. We then tested for the significance of the site bias, i.e. the difference in average connectivity at a given site and the average connectivity at all remaining sites (FDR corrected for multiple comparisons across the brain, q<0.05). A significant bias for at least one region could be identified for every site, without exception, Figure \ref{fig_DMN_variability}B. Figure \ref{fig_DMN_variability}D shows how reproducible were the significant bias in connectivity across the brain and sites. The identified location were quite variable, most of them identified at less than three sites, yet the regions of highest consistency largely overlapped with the distribution of the DMN itself. 
 
-\paragraph{Overall distribution across the connectome} Our first aim was to assess the amplitude of inter-site bias in resting-state connectivity measures. For each pair of parcels in the Cambridge functional atlas, and each pair of sites in the 1000 FCP, the absolute difference in connectivity, averaged across subjects, was derived between the two sites. The right boxplot in Figure \ref{fig_site_variability} shows the distribution (mean, std) of this inter-site measurement bias, across all possible connections and all possible pairs of sites. We observed that the amplitude of additive bias in group average connectivity measures was relatively small, with an average of about $0.05$. As a point of reference, the standard deviation (std) of functional connectivity measures was derived across all subjects. Figure \ref{fig_site_variability} shows the distribution (mean, std) of these intra-site std across all possible connections. The amplitude of intra-site std in connectivity across subjects was rather consistent across sites, with an average located in the 0.15 to 0.2 range. The amplitude of additive bias in group average connectivity measures was thus markedly smaller than the inter-subject, intra-site std (roughly 3-fold smaller, on the averages).
+\paragraph{Overall distribution across the connectome} In order to extend these observations outside of the DMN, we derived the entire connectome using the Cambridge 100 parcellation. Figure \ref{fig_connectome_variability}A shows the average connectome, pooling all subjects and sites together. The regions have been re-ordered based on a hierarchical clustering (with Ward criterion). A network structure is clearly visible as squares of high connectivity on the diagonal of the connectome. A partition into 7 networks are presented in Figure \ref{fig_connectome_variability}B, in line with prior works \citep{Heuvel2008, Bellec2010, Yeo2011, Power2011}. The networks  and include well known networks including the 
 
+Our first aim was to assess the amplitude of inter-site bias in resting-state connectivity measures. For each pair of parcels in the functional atlas, and each pair of sites in the 1000 FCP, the absolute difference in connectivity, averaged across subjects, was derived between the two sites. The right boxplot in Figure \ref{fig_site_variability} shows the distribution (mean, std) of this inter-site measurement bias, across all possible connections and all possible pairs of sites. We observed that the amplitude of additive bias in group average connectivity measures was relatively small, with an average of about $0.05$. As a point of reference, the standard deviation (std) of functional connectivity measures was derived across all subjects. Figure \ref{fig_site_variability} shows the distribution (mean, std) of these intra-site std across all possible connections. The amplitude of intra-site std in connectivity across subjects was rather consistent across sites, with an average located in the 0.15 to 0.2 range. The amplitude of additive bias in group average connectivity measures was thus markedly smaller than the inter-subject, intra-site std (roughly 3-fold smaller, on the averages).
 
-\begin{figure}[tbp]
-\begin{center}
-\includegraphics[width=0.75\linewidth]{../figures/connectome_multisite.png}
-\end{center}
-\caption[Connectome variability across sites]{
-Average functional connectome of 8 sites (Baltimore, Newark, Berlin, Cambridge, New-Yorkb, Oxford, Queenland and SaintLouis) are shown on the diagonal. The standard deviation across subjects and within site is shown on the first column. Each off-diagonal block represent the significant differences between the average functional connectome of two sites (called the inter-site bias). Statistical differences are obtained using a GLM procedure include age, sex and FD for each subject with an FDR correction procedure ($\alpha=0.05$).
-}
-\label{fig_connectome_variability}
-\end{figure}
-
-\paragraph{Connection-wise tests in the default-mode network} The distributions presented above agregated results across all possible brain connections in the Cambridge brain parcellation. To further clarify how the inter-site bias was distributed across connections, we first focused on the connections associated with a seed region located in the precuneus (PCC), a key node of the DMN \citep{Greicius2004}. The average connectivity map of the PCC was first extracted for each site, Figure \ref{fig_DMN_variability}. Qualitatively, the average PCC connectivity maps identified a network of regions consistent across sites and matching the distribution of the DMN, as reported in other studies \citep{Damoiseaux2006,Dansereau2014,Yan2013a}. At the intersection between two sites the difference in average connectivity is illustrated (red set of brain cuts). First The most salient changes between-sites are located in the mesio-frontal region associated with the anterior part of the DMN. In order to verify if significant changes are not only found in the DMN we have computed the entire connectome to obtain the other connectivity patterns and the findings can be generalized to the full connectome as illustraded in Figure \ref{fig_connectome_variability}.
-
-\paragraph{Connectome-wide bias}
 \begin{figure}[tbp]
 \begin{center}
 \includegraphics[width=\linewidth]{../figures/pccmap_multisite.png}
 \end{center}
 \caption[DMN variability across sites]{
-Average functional connectivity maps of the default-mode network at on 8 sites (Baltimore, Newark, Berlin, Cambridge, New-Yorkb, Oxford, Queenland and SaintLouis). The average connectivity map are shown on the diagonal. The standard deviation across subjects and within site is shown on the first column. Each off-diagonal block represent the significant differences between the average functional connectivity maps of two sites (called the inter-site bias). Statistical differences are obtained using a GLM procedure include age, sex and FD for each subject with an FDR correction procedure ($\alpha=0.05$).
+Average functional connectivity maps of the default-mode network at 8 sites (Baltimore, Newark, Berlin, Cambridge, New-Yorkb, Oxford, Queenland and SaintLouis). Each off-diagonal block represent the significant differences between the average functional connectivity maps of two sites (called the inter-site bias). Statistical differences are obtained using a GLM procedure include age, sex and FD for each subject with an FDR correction procedure ($\alpha=0.05$).
 }
 \label{fig_DMN_variability}
 \end{figure}
+
+The DMN standard deviation across subjects for each site is shown in supplementary material (see \ref{fig_std_DMNs}) 
 
 
 \begin{figure}[tbp]
@@ -266,6 +257,25 @@ Average functional connectivity maps of the default-mode network at on 8 sites (
 }
 \label{fig_dmn_ref}
 \end{figure}
+
+
+
+\paragraph{Connectome-wide bias}
+
+
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=0.75\linewidth]{../figures/connectome_multisite.png}
+\end{center}
+\caption[Connectome variability across sites]{
+Average functional connectome of 8 sites (Baltimore, Newark, Berlin, Cambridge, New-Yorkb, Oxford, Queenland and SaintLouis) are shown in B along side the significant area significantly different from the rest of the sites. Each off-diagonal block represent the significant differences between the average functional connectome of two sites (called the inter-site bias). Statistical differences are obtained using a GLM procedure include age, sex and FD for each subject with an FDR correction procedure ($\alpha=0.05$).
+}
+\label{fig_connectome_variability}
+\end{figure}
+
+The connectome standard deviation across subjects for each site is shown in supplementary material (see \ref{fig_std_connectomes}).
+
+The standard deviation across subjects and within site is shown on the first column
 
 
 \begin{figure}[tbp]
@@ -285,7 +295,7 @@ Average functional connectivity maps of the default-mode network at on 8 sites (
 \includegraphics[width=\linewidth]{../figures/boxplot_intra_inter_var.png}
 \end{center}
 \caption[inter vs. intra site variability]{
- Distribution of intra-site (between-subject) standard deviation vs. inter-site (between-site) standard deviation, based on the standard deviation of the connectivity matrices from a subset of 8 sites from the 1000 functional connectome dataset. A) The average intra-site vs. inter-site bias distribution. B) Detailled intra-site standard deviation for each site. C) Detailled inter-site absolute bias for each site.
+Distribution of intra-site (between-subject) standard deviation vs. inter-site (between-site) standard deviation, based on the standard deviation of the connectivity matrices from a subset of 8 sites from the 1000 functional connectome dataset. A) Detailed intra-site standard deviation for each site. B) Detailed inter-site absolute bias for each site. C) The average intra-site vs. inter-site bias distribution. 
 }
 \label{fig_site_variability}
 \end{figure}
@@ -348,6 +358,7 @@ Using these Monte-Carlo simulations we have shown that the power of detecting an
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % END of results section                    %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \section{Discussion}
 This study evaluated the impact of multisite rs-fMRI acquisitions on the statistical power compared to equivalent single site studies, for rs-fMRI group comparison.\\
@@ -429,11 +440,29 @@ Sample-size in function of the effect-size for a detection power of 80\% using a
 \end{figure}
 \begin{figure}[tbp]
 \centering
-\includegraphics[width=0.50\textwidth]{../figures/samplesize_effectsize_pow80_alpha05.png}
+\includegraphics[width=0.65\textwidth]{../figures/samplesize_effectsize_pow80_alpha05.png}
 \caption[]{
 Sample-size in function of the effect-size for a detection power of 80\% using a threshold on the probability of having false-positive rate ($\alpha=0.05$) on a balanced dataset using an allocation ratio $W$ of 50\%.
 }
 \label{fig_sampeffect_curves_alpha05}
+\end{figure}
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.75\textwidth]{../figures/dmn_stdmultisite.png}
+\caption[]{
+Overlay of the standard deviation of the DMN for each site on the MNI152 template.
+}
+\label{fig_std_DMNs}
+\end{figure}
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.50\textwidth]{../figures/connectome_std_multisite2.png}
+\caption[]{
+The standard deviation of the connectome for each site.
+}
+\label{fig_std_connectomes}
 \end{figure}
 
 \end{document}
