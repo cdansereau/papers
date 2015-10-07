@@ -1,49 +1,49 @@
-This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: scrubbing.aux
 The style file: elsarticle-harv.bst
 Database file #1: cdansereau.bib
-Warning--I didn't find a database entry for "Bell"
 Warning--I didn't find a database entry for "Rorden2007"
 Warning--I didn't find a database entry for "?"
-You've used 28 entries,
+You've used 29 entries,
             2821 wiz_defined-function locations,
-            864 strings with 14914 characters,
-and the built_in function-call counts, 20205 in all, are:
-= -- 1791
-> -- 1715
+            868 strings with 15095 characters,
+and the built_in function-call counts, 20666 in all, are:
+= -- 1832
+> -- 1750
 < -- 2
-+ -- 640
-- -- 612
-* -- 2215
-:= -- 3718
-add.period$ -- 84
-call.type$ -- 28
-change.case$ -- 344
++ -- 654
+- -- 624
+* -- 2262
+:= -- 3805
+add.period$ -- 86
+call.type$ -- 29
+change.case$ -- 352
 chr.to.int$ -- 28
-cite$ -- 28
-duplicate$ -- 499
-empty$ -- 982
-format.name$ -- 696
-if$ -- 3773
-int.to.chr$ -- 1
+cite$ -- 29
+duplicate$ -- 517
+empty$ -- 1005
+format.name$ -- 711
+if$ -- 3857
+int.to.chr$ -- 2
 int.to.str$ -- 1
 missing$ -- 27
-newline$ -- 119
-num.names$ -- 112
-pop$ -- 321
+newline$ -- 123
+num.names$ -- 116
+pop$ -- 332
 preamble$ -- 1
-purify$ -- 316
+purify$ -- 324
 quote$ -- 0
-skip$ -- 313
+skip$ -- 321
 stack$ -- 0
-substring$ -- 1031
-swap$ -- 84
+substring$ -- 1042
+swap$ -- 88
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 252
+type$ -- 261
 warning$ -- 0
-while$ -- 133
+while$ -- 136
 width$ -- 0
-write$ -- 339
-(There were 3 warnings)
+write$ -- 349
+(There were 2 warnings)

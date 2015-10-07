@@ -1,4 +1,4 @@
-\begin{thebibliography}{28}
+\begin{thebibliography}{29}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{\texttt{#1}}\fi
@@ -21,14 +21,19 @@ Behzadi, Y., Restom, K., Liau, J., Liu, T.~T., Aug. 2007. {A component based
 Bellec, P., Feb. 2006. {Longitudinal study of large-scale networks in the human
   brain using fMRI : Methods and application to motor skill learning}. Ph.D.
   thesis, Universit\'{e} Paris XI, Orsay, Paris.
-\newline\urlprefix\url{http://exocet.imed.jussieu.fr/\~{}pbellec/data/these\_b%
-ellec.pdf}
+\newline\urlprefix\url{http://exocet.imed.jussieu.fr/\~{}pbellec/data/these\_bellec.pdf}
 
-\bibitem[{Bellec et~al.(2010)Bellec, Rosa-Neto, Lyttelton, Benali, and
-  Evans}]{Bellec2010c}
+\bibitem[{Bellec et~al.(2010{\natexlab{a}})Bellec, Carbonell, Perlbarg, and
+  Evans}]{Bellec2010}
+Bellec, P., Carbonell, F., Perlbarg, V., Evans, A.~C., 2010{\natexlab{a}}. {A
+  neuroimaging analysis kit for Octave and Matlab}.
+\newline\urlprefix\url{http://code.google.com/p/niak/}
+
+\bibitem[{Bellec et~al.(2010{\natexlab{b}})Bellec, Rosa-Neto, Lyttelton,
+  Benali, and Evans}]{Bellec2010c}
 Bellec, P., Rosa-Neto, P., Lyttelton, O.~C., Benali, H., Evans, A.~C., Jul.
-  2010. {Multi-level bootstrap analysis of stable clusters in resting-state
-  fMRI.} NeuroImage 51~(3), 1126--1139.
+  2010{\natexlab{b}}. {Multi-level bootstrap analysis of stable clusters in
+  resting-state fMRI.} NeuroImage 51~(3), 1126--1139.
 \newline\urlprefix\url{http://dx.doi.org/10.1016/j.neuroimage.2010.02.082}
 
 \bibitem[{Biswal et~al.(2010)Biswal, Mennes, Zuo, Gohel, Kelly, Smith,
