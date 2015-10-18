@@ -305,6 +305,19 @@ Sample-size in function of the effect-size for a detection power of 80\% using a
 \paragraph{Detectable effect size, as a function of sample size} To summarise the previous findings plot of the sample-size in function of the effect-size for a detection power of 80\% is shown in Figure \ref{fig_sampeffect_curves_alpha001}.As we can see the parametric estimation follow nicely the monosite estimation although a bit underestimated on small sample-size. This is also the case for multisite estimation where a delta of 0.25 Cohen's $d$ was found at 40 subjects. This delta diminish inversely proportional to the sample-size to reach a delta of around 0.1 at 120 subjects. The Cohens's $d$ achieve for a given sample-size is also more variable among connections with 40 subjects (std=0.05) compared to 120 subjects (std=0.025). As previously noted the lowest detectable effect size for a sensitivity of 80\% is about 0.8, at a single site with 120 subjects. At this sample size, the difference between single and multiste studies appear to be marginal only, with only a few percent of difference in detectable effect sizes. 
 
 
+Figure \ref{fig_real_sim_debalancing_2sites} show a scenario of two sites one large (80 subjects) and one small ($\sim20$ subjects) unbalanced at an allocation ratio $W$ of 30\% and the inverse ($W=$70\%) with an interaction site-pathology (an effect of 0.5 Cohen's $d$ added to the model of half the sites). As we can see the multisite configuration is as good as the monosite and the variance between connection is of the same order for the monosite and multisite.
+
+\begin{figure}[tbp]
+\centering
+\captionsetup[subfloat]{labelformat=empty}
+\includegraphics[width=.75\textwidth]{../figures/simulations_real_2sites.png}
+\caption{
+Simulation on real data, detection power of two groups for a total of 100 subjects between 2 sites with a randomly attributed site-pathology interaction obtained from a gaussian ditribution (mu=0, std=0.2) express in Cohen’s $d$, one small site of 20 subjects and one large of 80 subjects. Every plot show two scenarios, 1) monosite and 2) multisite 2 sites with correction for multisite differences using dummy variables. Each plot show the detection power in function of the effect-size for 2 different allocation ratio $W$ of 30\% and 70\% between 2 sites.
+}
+\label{fig_real_sim_debalancing_2sites}
+\end{figure}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % END of results section                    %
