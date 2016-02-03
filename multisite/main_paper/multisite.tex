@@ -220,6 +220,9 @@ The sensitivity of the test was evaluated by the average detection performance o
 
 %Using sub-sampling it is possible to obtain an estimate of the mean statistical power over all samples which is call the detection power. These parameter estimates can then be used in simulation experiments to generate power curves.
 
+\paragraph{Prediction accuracy using a multivariate method}
+We used a multivariate approach called a linear SVM (support vector machine) \citep{Cortes1995} to the same generative model used for the GLM approach with the exception that we used all the connections from the connectivity matrix and we apply the additive effect on a certain percentage of the connections denoted as $\pi_1$. Using 10-fold cross-validation we optimize the hyper-parameter C for each of the $B$ simulation. 148 subjects randomly selected were used from that sample 120 were used for training the model and the remaining 28 subjects were kept for testing.
+
 % The simulation scenarios
 \paragraph{Simulation scenarios}
 For each experiment using real data, all effect size in the range 0 to 2 Cohen’s $d$ with a step of 0.01 were considered. For each experiment we performed $B=10^3$ simulations using sub-sampling and the reported allocation ratio of participants $W$ and its inverse $1-W$ was attributed randomly to the treatment population for each site. The sub-sampling scheme used was obtained by calculating the sampling ratio desired sample size / total subject available from all sites. We then extracted a random sample of each site based on this ratio. We implemented the following experiments:
@@ -315,7 +318,25 @@ The monosite performance in red and the multisite in blue. In black the dotted l
 
 \paragraph{Detectable effect size, as a function of sample size} To summarize the previous findings plot of the sample-size in function of the effect-size for a detection power of 80\% is shown in Figure \ref{fig_sampeffect_curves_alpha001}.As we can see the parametric estimation follow nicely the monosite estimation although a bit underestimated on small sample-size. This is also the case for multisite estimation where a delta of 0.25 Cohen's $d$ was found at 40 subjects. This delta diminish inversely proportional to the sample-size to reach a delta of around 0.1 at 120 subjects. The Cohen's $d$ achieve for a given sample-size is also more variable among connections with 40 subjects (std=0.05) compared to 120 subjects (std=0.025). As previously noted the lowest detectable effect size for a sensitivity of 80\% is about 0.8, at a single site with 120 subjects. At this sample size, the difference between single and multisite studies appear to be marginal only, with only a few percent of difference in detectable effect sizes. 
 
+\subsection{Effect on prediction}
 
+\begin{figure}[tbp]
+\centering
+\captionsetup[subfloat]{labelformat=empty}
+{\includegraphics[width=\textwidth]{../figures/prediction_01pct.png}}
+\caption{
+Simulation on real data, average accuracy of two groups with an allocation ratio $W$ of 50\% between the 7 sites. Every plot show three scenarios: 1) monosite 2) multisite 7 sites with no correction for multisite differences and 3) multisite 7 sites with correction for multisite differences using dummy variables. Each plot show the average accuracy in function of the effect-size. The training of the SVM model is performed on 120 randomly selected subjects and validated on the remaining 28 subjects.  The experiment is repeated 1000 time for each effect-size and for 3 different percentage of affected connections $\pi_1$ A) 0.1\%, B) 1\% and C) 5\%.
+}
+\label{fig_prediction_sampeffect}
+\end{figure}
+
+\paragraph{Prediction accuracy affected by effect size, as a function of the number of connections}
+At 0.1\% (around 5 connections) the accuracy level was at the level of chance, starting at $\pi_1=1\%$ the 
+- comparing the monosite and the multisite we have a sentential drop of accuracy from monosite to multisite but this will be to the benefit of generalization, which is an acceptable drawback. an other point is the fact that to achieve a 95\% accuracy both monosite and multisite need the same size of effect. The monosote is more linear in it's relationship to effect-size and the multisite in behaving more like a sigmoidal curve reaching the same level of accuracy as the monosite at hight accuracy level.
+- As expected the model require a minimum of connection that depict the effect in order to be detectable 
+- it also need a larger effect size to to achieve a classification accuracy in the range of 90\%
+-Correcting for site-effect by regressing the out the dummy variable do not make a difference for multivariate analysis as compared to univariate analysis who do not control correctly for false positive.
+Figure \ref{fig_prediction_sampeffect}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % END of results section                    %
@@ -338,7 +359,10 @@ An observation promoting the use of large sample-size ($>100$ subjects) for mult
 %\par
 %\emph{At this stage, you are done discussing your findings in direct relationship with your objectives. Now is time to discuss limitations, implications and also potential avenues of future work}. 
 
-\paragraph{Statistical power and sample size} For an effect size considered as medium, e.g. 0.5, the sensitivity was low (below 20\%), even for monosite simulations with 120 subjects (Figure \ref{fig_real_sim}A). This is a sobering reminder that with the low false-positive rate typically used in rs-fMRI studies, resulting from correction for multiple comparisons, the sensitivity is quite limited even for over 100 subjects. In particular, our results suggest that resting-state studies based on 40 subjects or less, even at a single site, may be seriously under-powered, unless the effect under investigation were extremely large (Cohen's $d$ greater than 1.5). Also in both cases (monosite and multisite) the effect of unbalancing the two populations may greatly reduce our capacity to detect changes e.g. for an effect size of 1 the detection power goes from 95\% in a balanced case to 65\% for an unbalanced dataset (allocation ratio W=15\%). We therefore recommend to favor balanced dataset when pooling them in order to reduce the variance.
+\paragraph{Statistical power and sample size} For an effect size considered as medium, e.g. 0.5, the sensitivity was low (below 20\%), even for monosite simulations with 120 subjects (Figure \ref{fig_real_sim}A). This is a sobering reminder that with the low false-positive rate typically used in rs-fMRI studies, resulting from correction for multiple comparisons, the sensitivity is quite limited even for over 100 subjects. In particular, our results suggest that resting-state studies based on 40 subjects or less, even at a single site, may be seriously under-powered, unless the effect under investigation were extremely large (Cohen's $d$ greater than 1.5). Also in both cases (monosite and multisite) the effect of unbalancing the two populations may greatly reduce our capacity to detect changes e.g. for an effect size of 1 the detection power goes from 95\% in a balanced case to 65\% for an unbalanced dataset (allocation ratio W=15\%). We therefore recommend to favour balanced dataset when pooling them in order to reduce the variance.
+
+\paragraph{Prediction}
+One of the main and most interesting finding for the prediction simulation is the fact that multivariate analysis seams to  require no linear correction for site-effect before training.
 
 \paragraph{Underlying causes of the site bias}
 
