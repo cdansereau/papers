@@ -69,10 +69,10 @@
 
 \textit{Purpose:} Studies collecting brain images at multiple sites are becoming increasingly common in resting-state functional magnetic resonance imaging (rs-fMRI) an imaging modality looking at the functional brain dynamics. Some initiative have already started to share rs-fMRI data from multiple independent studies of comparable populations, with the objective of dramatically increasing the sample size at the cost of decreased sample homogeneity. We propose to quantify the size of the difference in average connectivity (bias) introduce by the pooling of multiple sites and its impact on our capacity to detect effects in rs-functional connectivity measures.\\
 \textit{Materials and Methods:} We investigated real fMRI datasets collected across eight scanning sites with 3T scanners and heterogeneous scanning protocols, drawn from the 1000 functional connectome project. We first used this sample to characterize the amplitude of site bias in connectivity measures, as well as how this bias was distributed across brain networks. We then implemented a series of Monte-Carlo simulations, based on real data, to evaluate the impact of multisite bias on statistical power in statistical tests comparing two groups with a general linear model. As a reference, we also implemented the same simulations with fMRI data collected at a single site using a sample size equivalent to all the multisite data combined.\\
-\textit{Results:} Inter-site absolute bias in connectivity was found to be 2 times smaller than the inter-subject standard deviation. Simulations revealed that using a heterogeneous sites slightly decrease our ability to detect changes compared to a monosite study of equivalent sample-size although this difference tend to diminish as we increase the total sample-size to a point where the difference between a monosite and a multisite dataset are negligible.\\
+\textit{Results:} The effect size of the inter-site absolute bias in connectivity was found to be of 0.33 express in Cohen's $d$. Simulations revealed that using a heterogeneous sites slightly decrease our ability to detect changes compared to a monosite study of equivalent sample-size although this difference tend to diminish as we increase the total sample-size to a point where the difference between a monosite and a multisite dataset are negligible.\\
 \textit{Conclusion:} Typical functional network were reliably found in all the sites and we found that these results support the feasibility of multisite study in rs-fMRI and in particular of pooled datasets from heterogeneous nature. We also found that the size of the site effect was deemed small-to-moderate, which suggests that the impact of additive inter-site bias on statistical tests will be limited.
 
-%\emph{I think it's great to have a ``big picture'' summary at the end of the abstract. But this is too vague. ``the feasibility of multisite dataset'' for example means that you are able to collect data at multiple sites. This is not what you actually mean here. Please rephrase, keep it general but make it accurate}.
+
 \end{abstract}
 
 %-- 
@@ -95,7 +95,8 @@ multisite \sep multiprotocol \sep bias \sep statistical power \sep sample-size \
 \item Quantify the spatial distribution of the site variance.
 \item Site effect decrease with sample-size to a point of marginality.
 \item Debalancing sites are not more affected in multisite than monosite studies.
-\item The inter-subject contribution in term of variance was found to be 2 fold greater than the inter-site contribution.
+\item The inter-subject contribution in term of effect-size was found to be of 0.33 Cohen's $d$ compared to the inter-site contribution.
+\item Multivariate analysis learn to be invariant to multisite effect.
 \end{itemize}
 
 \section{Introduction}
@@ -281,6 +282,18 @@ Distribution of intra-site (between-subject) standard deviation vs. inter-site (
 \label{fig_site_variability}
 \end{figure}
 
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=\linewidth]{../figures/boxplot_intra_inter_var_seeds.png}
+\end{center}
+\caption[inter vs. intra site variability]{
+Distribution of intra-site (between-subject) standard deviation vs. inter-site (between-site) standard deviation, from a subset of 8 sites from the 1000 functional connectome dataset for the selected 10 seeds. A) Detailed intra-site standard deviation for each site. B) Detailed inter-site absolute bias for each site. C) The average intra-site vs. inter-site bias distribution. 
+}
+\label{fig_site_variability_varseeds}
+\end{figure}
+
+
+
 \paragraph{Site bias vs within-site variations across subjects} In order to assess how severe was the amplitude of inter-site bias in resting-state connectivity measures, we compared these measures with the variations across subject within site. This is a standard approach: the Cohen's $d$ measure of effect size \citep{Cohen1992} precisely measures the ratio between the difference in mean between two populations (sites) and the standard deviation of the measure, assumed to be identical in the two populations (sites). Figure \ref{fig_site_variability}A presents violin plots of the distribution of the standard deviation across subjects and all pairs of connections in the Cambridge parcellation, for each site. This distribution was very consistent across sites with a median value near 0.2 and 5\% and 95\% percentiles around 0.1 to 0.3 respectively. Note that the region-to-region maps of within-site across-subjects std are presented for the DMN in Supplementary Figure \ref{fig_std_DMNs}, and for the entire connectome in the Supplementary Material \ref{fig_std_connectomes}. Figure \ref{fig_site_variability}B presents a violin plot of the inter-site bias across all subjects and connections, defined as the absolute difference in mean connectivity between a particular site and the average connectivity across all remaining sites. Again, the distributions were mostly consistent across sites, with a median around 0.5, 5\% percentile near 0 and 95\% percentiles in the 0.2-0.3 range. The median bias across sites was about 0.07, about 3-fold smaller of the median within-site std across participants, which was about 0.2. This effect size would be deemed small-to-moderate, which suggests that the impact of additive inter-site bias on statistical tests will be limited. We then proceeded to formally test this hypothesis using Monte-Carlo simulations. 
 
 \subsection{Simulation of multisite fMRI connectivity}
@@ -323,7 +336,7 @@ The monosite performance in red and the multisite in blue. In black the dotted l
 \begin{figure}[tbp]
 \centering
 \captionsetup[subfloat]{labelformat=empty}
-{\includegraphics[width=\textwidth]{../figures/prediction_01pct.png}}
+{\includegraphics[width=\textwidth]{../figures/prediction_effectsize.png}}
 \caption{
 Simulation on real data, average accuracy of two groups with an allocation ratio $W$ of 50\% between the 7 sites. Every plot show three scenarios: 1) monosite 2) multisite 7 sites with no correction for multisite differences and 3) multisite 7 sites with correction for multisite differences using dummy variables. Each plot show the average accuracy in function of the effect-size. The training of the SVM model is performed on 120 randomly selected subjects and validated on the remaining 28 subjects.  The experiment is repeated 1000 time for each effect-size and for 3 different percentage of affected connections $\pi_1$ A) 0.1\%, B) 1\% and C) 5\%.
 }
