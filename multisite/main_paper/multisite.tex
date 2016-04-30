@@ -170,7 +170,7 @@ Each fMRI dataset was corrected for slice timing; a rigid-body motion was then e
 
 \paragraph{Data generation process}
 
-We implemented Monte-Carlo simulations to assess the sensitivity of detection of group differences in multisite rs-fMRI connectivity. The simulations were based on the 1000 FCP sample, with 8 sites totalling 345 subjects. The multisite simulations were sampled from 148 subjects, available across 7 sites. The monosite simulations were sampled from $195$ subjects available at the Cambridge site. For each simulation, a subset of subject of a given size $N$ was selected randomly and stratified by site. For each site, a ratio $W$ of the selected subjects were randomly assigned to a ``patient'' group. We ran simulations on 11 connections likely impacted by Alzheimer's disease and with a fair to good test-retest reliability, see \cite{Orban2015} for details. For each connection, a ``pathology'' effect was added to the connectivity measures of the subjects belonging to the ``patient'' group. This additive shift in connectivity for ``patients'' was selected as to achive a specified effect size, defined below. 
+We implemented Monte-Carlo simulations to assess the sensitivity of detection of group differences rs-fMRI connectivity. The simulations were based on the 1000 FCP sample, with 8 sites totalling 345 subjects. The multisite simulations were sampled from 148 subjects, available across $S=7$ sites. The monosite simulations were sampled from $195$ subjects available at $S=1$ site (Cambridge). For each simulation, a subset of subject of a given size $N$ was selected randomly and stratified by site. For each site, a ratio $W$ of the selected subjects were randomly assigned to a ``patient'' group. We ran simulations on 11 connections likely impacted by Alzheimer's disease and with a fair to good test-retest reliability, see \cite{Orban2015} for details. For each connection, a ``pathology'' effect was added to the connectivity measures of the subjects belonging to the ``patient'' group. This additive shift in connectivity for ``patients'' was selected as to achive a specified effect size, defined below. 
 
 % \paragraph{Simulation parameters}
 % 
@@ -198,12 +198,27 @@ In order to detect changes between the simulated groups at each pair of connecti
 In addition to mass univariate GLM tests, we also investigated a linear SVM \citep{Cortes1995} using a Monte Carlo simulation framework similar to that described above. For SVM simulations, all possible connections between the 100 brain parcels were used simultaneously to predict the presence of the simulated pathology in a given subject. For a participant assigned to the ``patient'' group, a ``pathology'' effect was only simulated in a set percentage of connections, randomly selected. The proportion of connections with a non-null effect was denoted as $\pi_1$. For a given simulation at sample size $N$, the SVM model was trained on $N$ subjects selected randomly and stratified by site. The accuracy of the model was evaluated on a separate simulation implemented with the remaning subjects, unused during training. For example, for a multisite simulation with $N=80$ subjects for SVM training, the model accuracy was estimated on $68$ subjects: $148$ (available subjects) minus $80$ (subjects in the training set). During training, a 10-fold cross-validation was used to optimize the hyper-parameters of the SVM independently for each simulation. The mean and standard deviation of accuracy scores across all simulation was derived for a particular simulation scenario.
 
 % The simulation scenarios
-\paragraph{Simulation scenarios}
-For each experiment using real data, all effect size in the range 0 to 2 Cohen’s $d$ with a step of 0.01 were considered. For each experiment we performed $B=10^3$ simulations using sub-sampling and the reported allocation ratio of participants $W$ and its inverse $1-W$ was attributed randomly to the ``patient'' population for each site. The sub-sampling scheme used was obtained by calculating the sampling ratio desired sample-size / total subject available from all sites. We then extracted a random sample of each site based on this ratio. We implemented the following experiments:
+\paragraph{Simulation experiments}
+
+All the simulation parameters have been summarized below: 
+\begin{itemize}
+ \item Sample size $N$. 
+ \item Patient allocation ratio $W$. 
+ \item Number of sites $S$. 
+ \item The type of detection method, either GLM or SVM. 
+ \item For GLM tests, the false-positive rate $\alpha$. 
+ \item For SVM tests, the proportion of ``pathological'' connections $\pi_1$.
+ \item The effect size $d$. 
+\end{itemize}
+
+For a given set of simulation parameters, we generated $B=10^3$ Monte-Carlo samples to estimate either the sensitivity (for GLM test) or the accuracy (for SVM prediction) of the method. We implemented the following experiments:
+
+\emph{Please list below all experiments, giving them names like $(\mathcal{E}_1)$, $(\mathcal{E}_2)$, etc. For each experiment, list all parameters in a compact manner, e.g. $N\in\{80,120\}$. NO NEED TO REDEFINE NOTATIONS. Just state the purpose of the experiment (e.g. test the impact of the sample size on GLM) and the parameters that have been tested. If some parameter grids are common to all experiments, list the grid as a separate item, e.g. ``For all experiments, we investigated effect sizes $d$ in the range 0 to 2 with a step of 0.01.''}
 
 \begin{itemize}
- \item We first looked how the total number of subject impact sensitivity using 3 different sample-size (40, 80, 120) for an allocation ratio of $W=0.5$,
- \item We then looked how the allocation ratio of participants $W$ impact sensitivity using 3 different ratio ($W=0.5,0.3,0.15$) for a total sample-size of 120,
+ \item various effect sizes (Cohen’s $d$ ) were tested, in the range 0 to 2 with a step of 0.01.
+ \item We first investigated the impact of $N\in \{40, 80, 120\}$, with a fixed allocation ratio $W=0.5$,
+ \item We then investigated the impact of $W\in\{0.5,0.3,0.15\}$ for a fixed $N=120$,
  \item Including an interaction site-pathology effect of $d=0.5$, we looked how the allocation ratio of participants $W$ impact sensitivity using 3 different ratio ($W=0.5,0.3,0.15$) for a total sample-size of 120,
  \item We looked how the allocation ratio of participants $W=0.3$ impact sensitivity using only 2 sites one large (80 subjects) and one small ($\sim20$ subjects) instead of the 7 sites previously used,
  \item For the prediction scenario we used a range of $\pi_1$ from 0.1\% to 5\%, 148 subjects randomly selected were used, from that sample 120 subjects for training and the rest for test (28 subjects).
