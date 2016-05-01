@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2014)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Dansereau_prni2016.aux
 The style file: IEEEtran.bst
@@ -13,48 +13,46 @@ Database file #3: cdansereau.bib
 -- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
-Warning--empty journal in Bellec2010a
 
 Done.
-You've used 10 entries,
+You've used 9 entries,
             4024 wiz_defined-function locations,
-            1258 strings with 17046 characters,
-and the built_in function-call counts, 9507 in all, are:
-= -- 777
-> -- 274
+            1252 strings with 16926 characters,
+and the built_in function-call counts, 9151 in all, are:
+= -- 751
+> -- 265
 < -- 90
-+ -- 149
-- -- 49
-* -- 503
-:= -- 1429
-add.period$ -- 21
-call.type$ -- 10
-change.case$ -- 12
++ -- 145
+- -- 47
+* -- 488
+:= -- 1364
+add.period$ -- 19
+call.type$ -- 9
+change.case$ -- 11
 chr.to.int$ -- 204
-cite$ -- 11
-duplicate$ -- 639
-empty$ -- 662
-format.name$ -- 59
-if$ -- 2153
+cite$ -- 9
+duplicate$ -- 606
+empty$ -- 629
+format.name$ -- 56
+if$ -- 2078
 int.to.chr$ -- 0
-int.to.str$ -- 10
-missing$ -- 114
-newline$ -- 65
-num.names$ -- 12
-pop$ -- 240
+int.to.str$ -- 9
+missing$ -- 108
+newline$ -- 62
+num.names$ -- 11
+pop$ -- 221
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 715
+skip$ -- 689
 stack$ -- 0
-substring$ -- 486
-swap$ -- 585
+substring$ -- 485
+swap$ -- 569
 text.length$ -- 22
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 10
-warning$ -- 1
-while$ -- 43
-width$ -- 12
-write$ -- 142
-(There was 1 warning)
+type$ -- 9
+warning$ -- 0
+while$ -- 42
+width$ -- 10
+write$ -- 135

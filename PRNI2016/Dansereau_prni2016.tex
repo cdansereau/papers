@@ -523,7 +523,7 @@ E-mail: christiandansereau@gmail.com}% <-this % stops a space
 \IEEEcompsoctitleabstractindextext{%
 \begin{abstract}
 %\boldmath
-In this paper we explore the classification of two clinical population namely a control population and subject with Schizophrenia. We want to explore the difficulty of the classification task and how it would apply in the context of functional imaging. During the project we have explored normalization procedure and the proper pipeline to identify the right model and parameters. We propose two new pipelines on top of the more standard ones. A multiscale bagging method to take in account the functional information at different level of abstraction and finally we explore if feature selection based on a margin maximization criteria would improve the performance of a classification model applied on neuro-imaging data.
+Obtaining good prediction accuracy of schizophrenia status using functional connectivity is a difficult task and this is likely explained by the heterogeneity of symptoms observed in this mental disease. We propose an approach to tackle this heterogeneity by functionally subtyping the population. We also propose a two-stage classification framework to identify subtypes associated with good vs poor prediction accuracy. Using the degree of association of each subject functional maps to those subtypes we were able to 1) effectively compress complex spatio-temporal information while being significantly associated with the pathology 2)
 
 \end{abstract}
 % IEEEtran.cls defaults to using nonbold math in the Abstract.
@@ -607,7 +607,9 @@ Schizophrenia, classification, multiscale, feature selection, SVM, margin optimi
 
 
 
-\IEEEPARstart{S}{chizophrenia} has been defined as a disconnection syndrome, which is characterized by aberrant functional brain connectivity. Schizophrenia is also a very heterogeneous clinical entity, with marked variations in both the symptoms experienced by patients and their response to treatments. This variability is most likely associated with heterogeneous neurobiological aberrations. We hypothesized that this neurobiological heterogeneity would be reflected in patterns of full brain functional connectivity (FC) in fMRI, and that specific subtypes of FC would be much more amenable than others to predict clinical symptoms.
+\IEEEPARstart{S}{chizophrenia} has been defined as a disconnection syndrome, which is characterized by aberrant functional brain connectivity. Schizophrenia is also a very heterogeneous clinical entity, with marked variations in both the symptoms experienced by patients and their response to treatments. This variability is most likely associated with heterogeneous neurobiological aberrations. This heterogeneity can also be found in the so-called 'normal' population resulting in a lot of variations that is not accounted for with the current labels. We hypothesized that this neurobiological heterogeneity would be reflected in patterns of full brain functional connectivity (FC) in fMRI, and that specific subtypes of FC would be much more amenable than others to predict clinical symptoms.
+
+Regarding the current clinical labels use in classification problems they are most likely poorly defined and therefore it is not possible to expect a reasonable prediction accuracy when training a classification model on those ill-defined labels.
 
 % You must have at least 2 lines in the paragraph with the drop letter
 % (should never be an issue)
@@ -616,7 +618,7 @@ Schizophrenia, classification, multiscale, feature selection, SVM, margin optimi
 %\hfill January 11, 2015
 
 \subsection{Objectives}
-Our goals for this study were therefore 1) to identify subtypes of functional connectivity, in a sample mixing patients diagnosed with schizophrenia and healthy controls, 2) to show that subtypes can predict some “easy cases”, i.e. a subgroup of subjects that can be accurately diagnosed based on FC.
+Our goals for this study were therefore 1) to identify subtypes of functional connectivity, in a sample mixing patients diagnosed with schizophrenia and healthy controls, 2) Since prediction accuracy does not  perform well with poorly defined labels, show that subtypes can predict more accurately a subgroup of the population by identifying “easy cases”, i.e. a subgroup of subjects that can be accurately diagnosed based on FC.
 
 \subsection{Public code and data}
 The code used in this experiment is available on a 
@@ -723,13 +725,14 @@ A multi-echo MPRAGE (MEMPR) sequence was used with the following parameters: TR/
 
 Resting state data was collected with single-shot full k-space echo-planar imaging (EPI) with ramp sampling correction using the intercomissural line (AC-PC) as a reference (TR: 2 s, TE: 29 ms, matrix size: 64x64, 32 slices, voxel size: 3x3x4 mm3).
 
-We selected subjects matched for age, gender and motion for a total of 187 subjects (mean age 32.5, SD 10.3). 101 subjects were drawn from the COBRE study (resting-state fMRI, [1]), while 86 subjects were scanned in Montreal (emotional memory task fMRI, [2]). Individual fMRI scans were preprocessed using the NIAK pipeline [3]. We identified 12 functional brain networks using a Bootstrap Analysis of Stable Clusters (BASC [4]) on a separate dataset [5]. These networks were used as seeds to generate FC maps for each subject.
+We selected subjects matched for age, gender and motion for a total of 101 subjects (mean age 32.5, SD 10.3). 101 subjects were drawn from the COBRE study (resting-state fMRI, [1]), while 86 subjects were scanned in Montreal (emotional memory task fMRI, [2]). Individual fMRI scans were preprocessed using the NIAK pipeline [3]. We identified 12 functional brain networks using a Bootstrap Analysis of Stable Clusters (BASC [4]) on a separate dataset [5]. These networks were used as seeds to generate FC maps for each subject.
 
 \subsection{Preprocessing and feature extraction}
 Each fMRI dataset was corrected for slice timing; a rigid-body motion was then estimated for each time frame, both within and between runs, as well as between one fMRI run and the T1 scan for each subject \cite{Collins1994}. The T1 scan was itself non-linearly co-registered to the Montreal Neurological Institute (MNI) ICBM152 stereotaxic symmetric template \cite{Fonov2011}, using the CIVET pipeline \cite{Ad-Dab'bagh2006}. The rigid-body, fMRI-to-T1 and T1-to-stereotaxic transformations were all combined to resample the fMRI in MNI space at a 3 mm isotropic resolution. To minimize artifacts due to excessive motion, all time frames showing a displacement greater than 0.5 mm were removed \cite{Power2012}. A minimum of 50 unscrubbed volumes per run was required for further analysis (13 subjects were rejected). The following nuisance covariates were regressed out from fMRI time series: slow time drifts (basis of discrete cosines with a 0.01 Hz highpass cut-off), average signals in conservative masks of the white matter and the lateral ventricles as well as the first principal components (accounting for 95\% variance) of the six rigid-body motion parameters and their squares \cite{Giove2009,Lund2006}. The fMRI volumes were finally spatially smoothed with a 6 mm isotropic Gaussian blurring kernel. A more detailed description of the pipeline can be found on the NIAK website\footnote{\url{http://niak.simexp-lab.org/pipe_preprocessing.html}} and Github\footnote{\url{https://github.com/SIMEXP/multisite}}.
 
+\subsection{functional connectivity maps}
 % note describe the 
-Functional connectivity matrices were obtained from 9 scales using a functional template based on an independent dataset of $\sim 200$ subjects form the 1000 functional connectome project (Cambridge dataset). The 9 scales were obtain using the BASC pipeline \cite{Bellec2010a} which is a unsupervised bootstrap clustering procedure for automatic detection of functional scales based on a stability criteria. resulting in 9 partitions of the brain in 7, 12, 20, 36, 64, 122, 197, 325, 444 networks see Figure \ref{fig_connectomes3x3} for an example of the the resulting connectome of one subject.
+functional connectomes were obtained using seed-based FC maps from an atlas of 12 networks and resolution of the maps were computed at the region-level (444 regions covering all the brain) instead of the voxel-level. Resulting in connectomes of size 12x444. The two atlases were obtained using a functional template based on an independent dataset of $\sim 200$ subjects form the 1000 functional connectome project (Cambridge dataset) REF.
 
 \begin{figure}[h]
 \centering
@@ -738,27 +741,29 @@ Functional connectivity matrices were obtained from 9 scales using a functional 
 \label{fig_rec_connectome_12x444}
 \end{figure}
 
+\subsection{Cross-validation}
+A nested cross-validation was performed for accuracy estimation and parameters optimization using leave-one out cross validation in order to estimate the generalizability of the model.
 
-\subsection{Subtypes weights}
+\subsection{Subtypes}
 Instead of performing our classification on a correlation matrix we introduce a new metric called subtype weights that is computed as follow:
 For each network, we identified 10 subgroups by grouping subjects with similar FC maps through hierarchical agglomerative clustering resulting in subtypes template. We then derived subtype weights for each individual using the spatial correlation of the individual FC map and each subtype template. This dimensionality reduction show the degree of association for an individual connectivity map with the corresponding subtypes templates.
 
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{figures/connectivity_matrix_12x444.png}
+\caption{Caption}
+\label{fig_subtypes_framework}
+\end{figure}
 
-\subsection{Subtypes associated with the pathology}
-To identify the subtype weights significantly associated with the pathology, we used a GLM including age, sex and frame displacement (FD) as covariates (corrected to have a zero mean across subjects). A p-value was generated for each subtype to quantify the probability that the difference between the control subjects and the patient with Schizophrenia was significant \cite{Worsley1995}. The number of false discovery was also controlled ($\alpha=0.05$) using a Benjamini–Hochberg false discovery rate (FDR) procedure \cite{Benjamini1995}.
+\subsection{Feature selection}
+To identify the subtype weights significantly associated with the pathology, we used a GLM including age, gender and frame displacement (FD) as covariates (corrected to have a zero mean across subjects). A p-value was generated for each subtype to quantify the probability that the difference between the control subjects and the patient with schizophrenia was significant \cite{Worsley1995}. The number of false discovery was also controlled ($\alpha=0.01$) using a Benjamini–Hochberg false discovery rate (FDR) procedure \cite{Benjamini1995}.
 
-\subsection{Highly classifiable subjects (HCS)}
-In order to evaluate the predictive value of the subtypes we used the following framework. First a nested cross-validation was performed for accuracy estimation and parameters optimization using leave-one out cross validation in order to estimate the generalizability of the model.From that training set we regressed out the confounds was estimated on each connection pair from the training set.
-
-Using the training set 
-Regression confounds was estimated on each connection pair from the training set.
-
-gender, age, average motion (frame displacement)
-
-We used these subtype weights to train a logistic regression (LR) model \cite{Fan2008} for the classification of our clinical labels (LRC). Finally, we trained a logistic regression algorithm to predict the hit (correct classification) and miss (incorrect classification) labels from the LRC (LRHE), using subtype weights as an input. Using the output of the LRHE, we were able to separate the discovery set into a subgroup of “easy cases” (where the logistic regression predicts a hit) and a complementary subgroup of “difficult cases” (where the logistic regression predicts a miss).
-he remaining subjects from the test set were used as a validation set to obtain unbiased accuracy scores for putative “easy” and “difficult” cases, as predicted by the logistic regression. Specifically, for each individual in the validation set, a subtype weight was estimated from subtype templates generated in the discovery set. These weights were entered in the LRHE (using the parameters learned in the discovery set), in order to predict the “easy” and “difficult” cases. Finally, the LRC (with parameters learned on the discovery set) was applied to predict clinical status for all subjects in the validation set, and an accuracy score was derived separately for the “easy” and “difficult” cases.
+\subsection{Two-steps classification}
+Using the training set from the previously generated subtype weights, we first trained a logistic regression (LR) model \cite{Fan2008} for the classification of the clinical labels (LRC). Second, an other logistic regression model (LRHM) was trained to predict the hit (correct classification) and miss (incorrect classification) labels from the LRC, using the subtype weights as an input. We then used the test set to evaluate the prediction accuracy of the two subgroups (easy and hard to classify subjects) by deriving the accuracy score separately for the “easy” and “difficult” cases.
 
 
+%Using the output of the LRHM, we were able to separate the discovery set into a subgroup of “easy cases” (where the LRHM predicts a hit) and a complementary subgroup of “difficult cases” (where the LRHM predicts a miss).
+%The remaining subjects from the test set were used as a validation set to obtain unbiased accuracy scores for putative “easy” and “difficult” cases, as predicted by the logistic regression. Specifically, for each individual in the validation set, a subtype weight was estimated from subtypes generated in the training set. These weights were entered in the LRHM (using the parameters learned in the training set), in order to predict the “easy” and “difficult” cases. Finally, the LRC (with parameters learned on the training set) was applied to predict clinical status for all subjects in the validation set, and an accuracy score was derived separately for the “easy” and “difficult” cases.
 
 
 \begin{figure}[h]
@@ -767,24 +772,6 @@ he remaining subjects from the test set were used as a validation set to obtain 
 \caption{Caption}
 \label{fig_model_schematic}
 \end{figure}
-
-
-\subsection{Calibrating the problem}
-As a first step we need to assess the difficulty of the classification task at hand and to do so we are throwing our problem to a simple off the shelf model with the default parameters. This will define the complexity of the problem. In our case we have used scales 64 which will give us a good reference point in term of the problem complexity. The initial classifier model used was a linear SVM with parameter fixed to $C=1$ (the default value). In all the subsequent analysis we are performing a stratified 10-fold cross-validation and include a parameter in the SVM classifier to account for the unbalance dataset by automatically re-weight each class by the inverse of its frequency.
-
-The next step is to find the most adapted hyper-parameters (C and Gamma if using Gaussian kernel) for our classification problem we choose to use a grid search approach. The grid search was parametrized as follow for C ($10^-2$ to $10^3$) and for Gamma ($10^-5$ to $10^1$).
-
-
-\subsection{Preprocessing and confounds regression}
-
-SVM are not scale invariant it is therefore very important to apply normalization on the data. We therefore normalize the connectivity features of each subject to zero mean and unit variance. Since some bias can be introduce by confounding factors we account for them by regressing the age and gender contribution based on the training set.
-
-
-\subsection{Optimal functional scale}
-The fact that we are looking at various level of data abstraction due to the clustering process of BASC in functional scales, we may be more sensitive at some particular scale than other for a given pathology. We have therefore tested the model for each of the 9 scales.
-
-\subsection{Multiscale bagging predictions}
-The idea in this case was to combine the votes of the classifier at each scale using a bagging approach. This ensemble approach combine the predictor of each scale in a bagging procedure as illustrated in Figure \ref{fig_bagging_multiscale}. We simply take a majority vote from all the classifiers. Contrary to most ensemble methods this variant may be sensitive to the choice of the scales, particularly scales that do not have sufficient information to yield a good prediction. We therefore took a subset of the scales based on the individual performance obtain in Figure \ref{fig_scale_svm}.
 
 
 \section{Results}

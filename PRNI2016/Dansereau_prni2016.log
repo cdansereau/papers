@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.2.19)  4 MAR 2016 18:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  6 MAR 2016 14:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **Dansereau_prni2016.tex
 (./Dansereau_prni2016.tex
-LaTeX2e <2011/06/27>
-Babel <3.9h> and hyphenation patterns for 78 languages loaded.
+LaTeX2e <2014/05/01>
+Babel <3.9k> and hyphenation patterns for 78 languages loaded.
 (./IEEEtran.cls
 Document Class: IEEEtran 2012/11/21 V1.8c by Harald Hanche-Olsen and Anders Chr
 istensen
@@ -20,7 +20,7 @@ istensen
 -- Using IEEE Computer Society mode.
 LaTeX Font Info:    Try loading font information for OT1+ppl on input line 373.
 
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ppl.fd
+(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 -- Using 8.5in x 11in (letter) paper.
@@ -89,14 +89,14 @@ LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <24> not available
 \@IEEEtmpitemindent=\dimen116
 \c@IEEEbiography=\count90
 \@IEEEtranrubishbin=\box26
-) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
 
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
@@ -137,29 +137,29 @@ Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
 \KV@toks@=\toks15
 )
-(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen117
 \Hy@linkcounter=\count91
 \Hy@pagecounter=\count92
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count93
 
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4443.
@@ -171,7 +171,7 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count94
 
-(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -196,22 +196,22 @@ LaTeX Info: Redefining \pageref on input line 6369.
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 \Fld@listcount=\count99
 \c@bookmark@seq@number=\count100
 
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip44
 )
-(/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/algorithms/algorithmic.sty
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \c@ALC@unique=\count101
@@ -221,14 +221,14 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 \ALC@tlm=\skip45
 \algorithmicindent=\skip46
 )
-(/usr/share/texlive/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
 Package: algorithm2e 2013/01/06 v5.00 algorithms environments
 \c@AlgoLine=\count105
 
-(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
 ********************************************************
@@ -271,10 +271,10 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 \c@algocf=\count108
 \algocf@algoframe=\box33
 \algocf@algobox=\box34
-) (/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/subfig/subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
 \captionmargin=\dimen127
@@ -301,21 +301,21 @@ Package caption Info: Unknown document class (or package),
 \sf@top=\skip66
 \sf@bottom=\skip67
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/etc/texmf/tex/latex/config/graphics.cfg
-File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 \Gread@gobject=\count116
 ))
@@ -348,10 +348,10 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 428.
 LaTeX Font Info:    ... okay on input line 428.
 \AtBeginShipoutBox=\box35
 Package hyperref Info: Link coloring OFF on input line 428.
- (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count117
@@ -368,7 +368,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count118
 \scratchdimen=\dimen137
@@ -381,10 +381,25 @@ Package caption Info: End \AtBeginDocument code.
 \MPnumerator=\count122
 \makeMPintoPDFobject=\count123
 \everyMPtoPDFconversion=\toks17
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 )
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 LaTeX Font Info:    Try loading font information for OT1+phv on input line 545.
 
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9> not available
@@ -398,7 +413,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 545.
 LaTeX Font Info:    Try loading font information for U+pzd on input line 545.
 
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/upzd.fd
+(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -412,59 +427,63 @@ LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14> not available
 LaTeX Font Info:    Font shape `OT1/phv/bx/sc' in size <14> not available
 (Font)              Font shape `OT1/phv/b/sc' tried instead on input line 571.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 618.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 620.
 Missing character: There is no ‚ in font pplr7t!
 Missing character: There is no Ä in font pplr7t!
 Missing character: There is no ú in font pplr7t!
 Missing character: There is no ‚ in font pplr7t!
 Missing character: There is no Ä in font pplr7t!
 Missing character: There is no ù in font pplr7t!
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 623.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 623.
 
-Underfull \hbox (badness 10000) in paragraph at lines 623--623
+Underfull \vbox (badness 1281) has occurred while \output is active []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 625.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 625.
+
+Underfull \hbox (badness 10000) in paragraph at lines 625--625
 [][][][][]$\OT1/ppl/m/n/9 https : / / github . com / cdansereau / vision[]or / 
 tree / master /
  []
 
+[1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]
 Missing character: There is no ¬ in font pplr7t!
 Missing character: There is no ∞ in font pplr7t!
 
-Underfull \hbox (badness 3884) in paragraph at lines 722--723
+Underfull \hbox (badness 3884) in paragraph at lines 724--725
 \OT1/ppl/m/n/12 was used with the fol-low-ing pa-ram-e-ters:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 722--723
+Underfull \hbox (badness 10000) in paragraph at lines 724--725
 \OT1/ppl/m/n/12 TR/TE/TI = 2530/[1.64, 3.5, 5.36, 7.22,
  []
 
 
-Underfull \hbox (badness 2197) in paragraph at lines 722--723
+Underfull \hbox (badness 2197) in paragraph at lines 724--725
 \OT1/ppl/m/n/12 mm, Slab thick-ness = 176 mm, Ma-trix =
  []
 
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-
-]
-
-LaTeX Warning: Reference `fig_connectomes3x3' on page 2 undefined on input line
- 732.
-
-<figures/connectivity_matrix_12x444.png, id=96, 214.6419pt x 65.043pt>
+<figures/connectivity_matrix_12x444.png, id=88, 214.6419pt x 65.043pt>
 File: figures/connectivity_matrix_12x444.png Graphic file (type png)
 
 <use figures/connectivity_matrix_12x444.png>
 Package pdftex.def Info: figures/connectivity_matrix_12x444.png used on input l
-ine 736.
+ine 739.
+(pdftex.def)             Requested size: 253.04987pt x 76.68158pt.
+ [2 <./figures/connectivity_matrix_12x444.png>]
+File: figures/connectivity_matrix_12x444.png Graphic file (type png)
+ <use figures/connectivity_matrix_12x444.png>
+Package pdftex.def Info: figures/connectivity_matrix_12x444.png used on input l
+ine 753.
 (pdftex.def)             Requested size: 253.04987pt x 76.68158pt.
 Missing character: There is no ‚ in font pplr7t!
 Missing character: There is no Ä in font pplr7t!
 Missing character: There is no ì in font pplr7t!
- [2 <./figures/connectivity_matrix_12x444.png>]
 Missing character: There is no ‚ in font pplr7t!
 Missing character: There is no Ä in font pplr7t!
 Missing character: There is no ú in font pplr7t!
@@ -477,97 +496,49 @@ Missing character: There is no ú in font pplr7t!
 Missing character: There is no ‚ in font pplr7t!
 Missing character: There is no Ä in font pplr7t!
 Missing character: There is no ù in font pplr7t!
-Missing character: There is no ‚ in font pplr7t!
-Missing character: There is no Ä in font pplr7t!
-Missing character: There is no ú in font pplr7t!
-Missing character: There is no ‚ in font pplr7t!
-Missing character: There is no Ä in font pplr7t!
-Missing character: There is no ù in font pplr7t!
-Missing character: There is no ‚ in font pplr7t!
-Missing character: There is no Ä in font pplr7t!
-Missing character: There is no ú in font pplr7t!
-Missing character: There is no ‚ in font pplr7t!
-Missing character: There is no Ä in font pplr7t!
-Missing character: There is no ù in font pplr7t!
-Missing character: There is no ‚ in font pplr7t!
-Missing character: There is no Ä in font pplr7t!
-Missing character: There is no ú in font pplr7t!
-Missing character: There is no ‚ in font pplr7t!
-Missing character: There is no Ä in font pplr7t!
-Missing character: There is no ù in font pplr7t!
-Missing character: There is no ‚ in font pplr7t!
-Missing character: There is no Ä in font pplr7t!
-Missing character: There is no ú in font pplr7t!
-Missing character: There is no ‚ in font pplr7t!
-Missing character: There is no Ä in font pplr7t!
-Missing character: There is no ù in font pplr7t!
-Missing character: There is no ‚ in font pplr7t!
-Missing character: There is no Ä in font pplr7t!
-Missing character: There is no ú in font pplr7t!
-Missing character: There is no ‚ in font pplr7t!
-Missing character: There is no Ä in font pplr7t!
-Missing character: There is no ù in font pplr7t!
-Missing character: There is no ‚ in font pplr7t!
-Missing character: There is no Ä in font pplr7t!
-Missing character: There is no ú in font pplr7t!
-Missing character: There is no ‚ in font pplr7t!
-Missing character: There is no Ä in font pplr7t!
-Missing character: There is no ù in font pplr7t!
- <figures/full_model.png, id=119, 437.59485pt x 164.0529pt>
+
+<figures/full_model.png, id=109, 437.59485pt x 164.0529pt>
 File: figures/full_model.png Graphic file (type png)
 
 <use figures/full_model.png>
-Package pdftex.def Info: figures/full_model.png used on input line 766.
+Package pdftex.def Info: figures/full_model.png used on input line 771.
 (pdftex.def)             Requested size: 253.04987pt x 94.86537pt.
 
-Underfull \hbox (badness 2142) in paragraph at lines 775--776
-\OT1/ppl/m/n/12 hyper-parameters (C and Gamma if us-ing
- []
-
-[3 <./figures/full_model.png>]
-
-LaTeX Warning: Reference `fig_bagging_multiscale' on page 4 undefined on input 
-line 787.
-
-
-LaTeX Warning: Reference `fig_scale_svm' on page 4 undefined on input line 787.
-
-
-<figures/site1_reg_confounds_main_result.png, id=132, 578.16pt x 397.485pt>
+<figures/site1_reg_confounds_main_result.png, id=110, 578.16pt x 397.485pt>
 File: figures/site1_reg_confounds_main_result.png Graphic file (type png)
 
 <use figures/site1_reg_confounds_main_result.png>
 Package pdftex.def Info: figures/site1_reg_confounds_main_result.png used on in
-put line 795.
+put line 782.
 (pdftex.def)             Requested size: 253.04987pt x 173.97203pt.
 
-<figures/f1_regular_hm_cobre.png, id=133, 578.16pt x 397.485pt>
+<figures/f1_regular_hm_cobre.png, id=111, 578.16pt x 397.485pt>
 File: figures/f1_regular_hm_cobre.png Graphic file (type png)
 
 <use figures/f1_regular_hm_cobre.png>
-Package pdftex.def Info: figures/f1_regular_hm_cobre.png used on input line 802
+Package pdftex.def Info: figures/f1_regular_hm_cobre.png used on input line 789
 .
 (pdftex.def)             Requested size: 253.04987pt x 173.97203pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/coeffs_bargraph.png, id=134, 578.16pt x 397.485pt>
+<figures/coeffs_bargraph.png, id=112, 578.16pt x 397.485pt>
 File: figures/coeffs_bargraph.png Graphic file (type png)
 
 <use figures/coeffs_bargraph.png>
-Package pdftex.def Info: figures/coeffs_bargraph.png used on input line 809.
+Package pdftex.def Info: figures/coeffs_bargraph.png used on input line 796.
 (pdftex.def)             Requested size: 253.04987pt x 173.97203pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/st_main_cobre_selected.png, id=135, 777.26385pt x 321.24014pt>
+<figures/st_main_cobre_selected.png, id=113, 777.26385pt x 321.24014pt>
 File: figures/st_main_cobre_selected.png Graphic file (type png)
 
 <use figures/st_main_cobre_selected.png>
 Package pdftex.def Info: figures/st_main_cobre_selected.png used on input line 
-816.
+803.
 (pdftex.def)             Requested size: 253.04987pt x 104.58316pt.
 
 
@@ -577,10 +548,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Reference `fig_svc_norm' on page 4 undefined on input line 854.
+LaTeX Warning: Reference `fig_svc_norm' on page 3 undefined on input line 841.
 
-
-Underfull \hbox (badness 3343) in paragraph at lines 863--864
+[3 <./figures/full_model.png> <./figures/site1_reg_confounds_main_result.png>]
+Underfull \hbox (badness 3343) in paragraph at lines 850--851
 []\OT1/ppl/m/n/12 we found sub-types as-so-ci-ated with the
  []
 
@@ -590,24 +561,33 @@ Missing character: There is no ú in font pplr7t!
 Missing character: There is no ‚ in font pplr7t!
 Missing character: There is no Ä in font pplr7t!
 Missing character: There is no ù in font pplr7t!
-[4 <./figures/site1_reg_confounds_main_result.png> <./figures/f1_regular_hm_cob
-re.png> <./figures/coeffs_bargraph.png>] (./Dansereau_prni2016.bbl
-Underfull \hbox (badness 5893) in paragraph at lines 43--49
+(./Dansereau_prni2016.bbl [4 <./figures/f1_regular_hm_cobre.png> <./figures/coe
+ffs_bargraph.png> <./figures/st_main_cobre_selected.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 43--49
 []\OT1/ppl/m/n/9 Y. Ad-Dab'bagh, D. Einar-son, O. Lyt-tel-ton, J. S.
  []
 
-[5 <./figures/st_main_cobre_selected.png>])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1006.
- [6
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--49
+\OT1/ppl/m/n/9 Image-Processing en-vi-ron-ment: A fully au-to-mated
+ []
+
+
+Underfull \hbox (badness 2790) in paragraph at lines 43--49
+\OT1/ppl/m/n/9 com-pre-hen-sive pipeline for anatom-i-cal neu-roimag-ing
+ []
+
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 993.
+ [5
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1006.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 993.
  (./Dansereau_prni2016.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1006.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1006.
-
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 993.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 993.
 Package rerunfilecheck Info: File `Dansereau_prni2016.out' has not changed.
-(rerunfilecheck)             Checksum: AF1C6B11432C5D5E8D8664806A4FB4B2;1060.
+(rerunfilecheck)             Checksum: F64E530AF53476BABB7D152A99FE5788;848.
 
 
 LaTeX Warning: There were undefined references.
@@ -615,31 +595,31 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1006.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 993.
  ) 
 Here is how much of TeX's memory you used:
- 8078 strings out of 493308
- 124126 string characters out of 6140092
- 235048 words of memory out of 5000000
- 11420 multiletter control sequences out of 15000+600000
+ 8183 strings out of 493117
+ 126574 string characters out of 6135433
+ 235868 words of memory out of 5000000
+ 11523 multiletter control sequences out of 15000+600000
  47791 words of font info for 98 fonts, out of 8000000 for 9000
- 960 hyphenation exceptions out of 8191
- 36i,7n,38p,1563b,460s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhv
-b8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/urw/palatino/uplri8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/urw/zapfding/uzdr.pfb>
-Output written on Dansereau_prni2016.pdf (6 pages, 761887 bytes).
+ 1144 hyphenation exceptions out of 8191
+ 36i,7n,38p,1563b,466s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texl
+ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
+ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive
+/2014/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2014/t
+exmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2014/texmf-di
+st/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2014/texmf-dist/font
+s/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1
+/urw/palatino/uplri8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/z
+apfding/uzdr.pfb>
+Output written on Dansereau_prni2016.pdf (5 pages, 722392 bytes).
 PDF statistics:
- 221 PDF objects out of 1000 (max. 8388607)
- 46 named destinations out of 1000 (max. 500000)
- 159 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 204 PDF objects out of 1000 (max. 8388607)
+ 173 compressed objects within 2 object streams
+ 43 named destinations out of 1000 (max. 500000)
+ 143 words of extra memory for PDF output out of 10000 (max. 10000000)
 
