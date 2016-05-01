@@ -210,18 +210,14 @@ All the simulation parameters have been summarized below:
  \item The effect size $d$. 
 \end{itemize}
 
-For a given set of simulation parameters, we generated $B=10^3$ Monte-Carlo samples to estimate either the sensitivity (for GLM test) or the accuracy (for SVM prediction) of the method. We implemented the following experiments:
+For a given set of simulation parameters, we generated $B=10^3$ Monte-Carlo samples to estimate either the sensitivity (for GLM test) or the accuracy (for SVM prediction) of the method. For all experiments, we investigated effect sizes $d$ in the range 0 to 2 with a step of $0.01$. We implemented the following experiments:
 
-\emph{Please list below all experiments, giving them names like $(\mathcal{E}_1)$, $(\mathcal{E}_2)$, etc. For each experiment, list all parameters in a compact manner, e.g. $N\in\{80,120\}$. NO NEED TO REDEFINE NOTATIONS. Just state the purpose of the experiment (e.g. test the impact of the sample size on GLM) and the parameters that have been tested. If some parameter grids are common to all experiments, list the grid as a separate item, e.g. ``For all experiments, we investigated effect sizes $d$ in the range 0 to 2 with a step of 0.01.''}
 
 \begin{itemize}
- \item various effect sizes (Cohen’s $d$ ) were tested, in the range 0 to 2 with a step of 0.01.
- \item We first investigated the impact of $N\in \{40, 80, 120\}$, with a fixed allocation ratio $W=0.5$,
- \item We then investigated the impact of $W\in\{0.5,0.3,0.15\}$ for a fixed $N=120$,
- \item Including an interaction site-pathology effect of $d=0.5$, we looked how the allocation ratio of participants $W$ impact sensitivity using 3 different ratio ($W=0.5,0.3,0.15$) for a total sample-size of 120,
- \item We looked how the allocation ratio of participants $W=0.3$ impact sensitivity using only 2 sites one large (80 subjects) and one small ($\sim20$ subjects) instead of the 7 sites previously used,
- \item For the prediction scenario we used a range of $\pi_1$ from $0.1\%$ to $5\%$, $148$ subjects randomly selected were used, from that sample $120$ subjects for training and the rest for test ($28$ subjects).
- \item The same prediction analysis was perform although only training on $n_{training}=80$ subjects and testing on the rest of the $148$ subjects ($n_{testing}=68$ subjects).
+ \item $(\mathcal{E}_1)$ Test the impact of the sample size on GLM $N\in\{40,80,120\}$, with a fixed allocation ratio $W=0.5$,
+ \item $(\mathcal{E}_2)$ Test the impact of the allocation ratio on GLM $W\in\{0.5,0.3,0.15\}$ for a fixed sample size $N=120$,
+ \item $(\mathcal{E}_3)$ Test the impact of multisite modelization and affected connection volume ($\pi_1$) on the prediction accuracy, For the prediction scenario we used a range of $\pi_1\in\{0.1,1,5\%\}$, $n_{training}=120,n_{testing}=28$,
+  \item $(\mathcal{E}_4)$ Test the impact of multisite modelization and affected connection volume ($\pi_1$) on the prediction accuracy, For the prediction scenario we used a range of $\pi_1\in\{0.1,1,5\%\}$,  $n_{training}=80,n_{testing}=68$,
 \end{itemize}
 
 
