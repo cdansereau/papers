@@ -210,13 +210,13 @@ All the simulation parameters have been summarized below:
  \item The effect size $d$. 
 \end{itemize}
 
-For a given set of simulation parameters, we generated $B=10^3$ Monte-Carlo samples to estimate either the sensitivity (for GLM test) or the accuracy (for SVM prediction) of the method. For all experiments, we investigated effect sizes $d$ in the range 0 to 2 with a step of $0.01$. We implemented the following experiments:
+For a given set of simulation parameters, we generated $B=10^3$ Monte-Carlo samples to estimate either the sensitivity (for GLM test) or the accuracy (for SVM prediction) of the method. For all experiments, we investigated effect sizes $d\in\{0,2\}$ with a step of $0.01$ and $\alpha\in\{0.001,0.01,0.05\}$. The number of site was $S=1$ for the monosite and $S=7$ for multisite. We implemented the following experiments:
 
 \begin{itemize}
  \item $(\mathcal{E}_1)$ Test the impact of the sample size on GLM $N\in\{40,80,120\}$, with a fixed allocation ratio $W=0.5$.
  \item $(\mathcal{E}_2)$ Test the impact of the allocation ratio on GLM $W\in\{0.5,0.3,0.15\}$ for a fixed sample size $N=120$.
- \item $(\mathcal{E}_3)$ Test the impact of multisite modelization and affected connection volume ($\pi_1$) on the prediction accuracy, For the prediction scenario we used a range of $\pi_1\in\{0.1,1,5\%\}$, $120$ subjects for training and $28$ for testing.
-  \item $(\mathcal{E}_4)$ Test the impact of multisite modelization and affected connection volume ($\pi_1$) on the prediction accuracy, For the prediction scenario we used a range of $\pi_1\in\{0.1,1,5\%\}$, $80$ subjects for training and $68$ for testing.
+ \item $(\mathcal{E}_3)$ Test the impact of multisite modelization and affected connection volume ($\pi_1$) on the prediction accuracy, For the prediction scenario we used a range of $\pi_1\in\{0.1,1,5\%\}$, $N=120$ subjects for training and model accuracy was estimated on $28$.
+  \item $(\mathcal{E}_4)$ Test the impact of multisite modelization and affected connection volume ($\pi_1$) on the prediction accuracy, For the prediction scenario we used a range of $\pi_1\in\{0.1,1,5\%\}$, $N=80$ subjects for training and model accuracy was estimated on $68$.
 \end{itemize}
 
 
@@ -230,7 +230,7 @@ For a given set of simulation parameters, we generated $B=10^3$ Monte-Carlo samp
 \includegraphics[width=\linewidth]{../figures/dmn_multisite.png}
 \end{center}
 \caption[DMN variability across sites]{
-Panel A: map of the default mode network (DMN) obtained using a seed in the posterior cingulate cortex (PCC) \emph{on which sample?}. Panels B,C:  The first column show the average functional connectivity maps of the default-mode network at 8 sites. The second column show the significant differences between the average functional connectivity maps of one site versus all the others. Panel D shows the number of sites with a significant inter-site difference for each brain region.
+Panel A: map of the default mode network (DMN) obtained using a seed in the posterior cingulate cortex (PCC) from the average connectomes of all the sites. Panels B,C:  The first column show the average functional connectivity maps of the default-mode network at 8 sites. The second column show the significant differences between the average functional connectivity maps of one site versus all the others. Panel D shows the number of sites with a significant inter-site difference for each brain region.
 }
 \label{fig_DMN_variability}
 \end{figure}
