@@ -223,7 +223,7 @@ For a given set of simulation parameters, we generated $B=10^3$ Monte-Carlo samp
 
 \section{Results}
 
-\subsection{Site bias in fMRI connectivity}
+\subsection{Inter-site bias in fMRI connectivity}
 
 
 \begin{figure}[tbp]
@@ -231,24 +231,20 @@ For a given set of simulation parameters, we generated $B=10^3$ Monte-Carlo samp
 \includegraphics[width=\linewidth]{../figures/dmn_multisite.png}
 \end{center}
 \caption[DMN variability across sites]{
-A) Reference map of the default mode network (DMN) obtained using a seed in the posterior cingulate cortex (PCC). With labels for principal structures of the DMN.
-B,C) The first column show the average functional connectivity maps of the default-mode network at 8 sites (Baltimore, Newark, Berlin, Cambridge, New-Yorkb, Oxford, Queensland and SaintLouis). The second column show the significant differences between the average functional connectivity maps of one site versus all the other (called the inter-site bias), and the statistically significant differences were obtained using a GLM procedure with covariates coding for age, sex and FD for each subject and the p-values were corrected using a FDR procedure ($q=0.05$).
+Panel A: map of the default mode network (DMN) obtained using a seed in the posterior cingulate cortex (PCC) \emph{on which sample?}. Panels B,C:  The first column show the average functional connectivity maps of the default-mode network at 8 sites (Baltimore, Newark, Berlin, Cambridge, New-Yorkb, Oxford, Queensland and SaintLouis). The second column show the significant differences between the average functional connectivity maps of one site versus all the other (called the inter-site bias), and the statistically significant differences were obtained using a GLM procedure with covariates coding for age, sex and FD for each subject and the p-values were corrected using a FDR procedure ($q=0.05$).
 D) Show a summary of the number of sites showing a significant inter-site difference in the DMN for each region.
 }
 \label{fig_DMN_variability}
 \end{figure}
 
-\paragraph{Site bias in the default-mode network} We first focused on the connections associated with a seed region located in the precuneus (PCC), a key node of the DMN and one of the most widely studied resting-state network \citep{Greicius2004}. The connections were based on the Cambridge $100$ parcellation, and were represented as a connectivity map, Figure \ref{fig_DMN_variability}. Panel Figure \ref{fig_DMN_variability}A shows the posterior cingulate cortex (PCC) connectivity map, averaged across all subjects and all sites. The key regions of the DMN are easily identifiable, and include the PCC, precuneus, inferior parietal lobule, anterior cingulate cortex, medial pre-frontal cortex (dorsal, anterior and ventral), superior frontal gyri and the medial temporal lobe \citep{Damoiseaux2006,Dansereau2014,Yan2013a}. The average connectivity map of the DMN was then extracted for each site, Figure \ref{fig_DMN_variability}B,C. Qualitatively, the site-specific DMN maps were very consistent, as expected based on the literature. We then tested for the significance of the site bias, i.e. the difference in average connectivity at a given site and the average connectivity at all remaining sites (FDR corrected for multiple comparisons across the brain, $q<0.05$). A significant bias for at least one region could be identified for every site, without exception, Figure \ref{fig_DMN_variability}B,C. Figure \ref{fig_DMN_variability}D shows how reproducible were the significant bias in connectivity across the brain and sites. The identified location were quite variable, most of them identified at less than three sites.
+\paragraph{Site bias in the default-mode network} We first focused on the connections associated with a seed region located in the precuneus (PCC), a key node of the DMN and one of the most widely studied resting-state network \citep{Greicius2004}. The connections were based on the Cambridge $100$ parcellation, and were represented as a connectivity map, Figure \ref{fig_DMN_variability}. Panel Figure \ref{fig_DMN_variability}A shows the posterior cingulate cortex (PCC) connectivity map, averaged across all subjects and all sites. The key regions of the DMN are easily identifiable, and include the PCC, precuneus, inferior parietal lobule, anterior cingulate cortex, medial pre-frontal cortex (dorsal, anterior and ventral), superior frontal gyri and the medial temporal lobe \citep{Damoiseaux2006,Dansereau2014,Yan2013a}. Using a GLM, the average connectivity map of the DMN was then extracted for each site, Figure \ref{fig_DMN_variability}B,C. Qualitatively, the DMN maps were consistent across sites, as expected based on the literature. We then tested for the significance of the site bias, i.e. the difference in average connectivity at a given site and the average connectivity at all remaining sites (FDR corrected for multiple comparisons across the brain, $q<0.05$). A significant bias for at least one connection could be identified for every site, without exception, Figure \ref{fig_DMN_variability}B,C. Figure \ref{fig_DMN_variability}D shows how reproducible were the significant bias in connectivity across the brain and sites. The identified connections were quite variable, most of them identified at less than three sites.
 
 \begin{figure}[tbp]
 \begin{center}
 \includegraphics[width=\linewidth]{../figures/connectome_multisite.png}
 \end{center}
 \caption[Connectome variability across sites]{
-A) Average functional connectome of 8 sites (Baltimore, Newark, Berlin, Cambridge, New-Yorkb, Oxford, Queensland and Saint-Louis), On the left and top of the matrix a partition in 7 network is color-coded, and the corresponding networks are mapped in B.
-B) Partition in 7 networks obtained from a hierarchical clustering (Ward criterion) of the connectome in A. The name of each network is also identified.
-C) Average individual site connectomes are shown along side the area significantly different from the rest of the sites.
-D)Sum of the significant changes in C. Statistical differences are obtained using a GLM procedure accounting for age, sex and FD and correcting for multiple comparisons using a FDR procedure ($q=0.05$).
+Panel A shows the average functional connectomes for 8 sites of the 1000 FCP. Colors next to the $x$ and $y$ axis correspond to different networks in a 7-cluster solution of the matrix, obtained from a hierarchical clustering (Ward criterion). Panel B presents the corresponding 7 brain networks, along with labels. Panel C shows average connectomes for individual sites, as well as connections with a significant site bias. Panel D shows the number of sites at which a given connection was detected as significanlty biased. 
 }
 \label{fig_connectome_variability}
 \end{figure}
@@ -262,7 +258,7 @@ D)Sum of the significant changes in C. Statistical differences are obtained usin
 \includegraphics[width=\linewidth]{../figures/boxplot_intra_inter_var.png}
 \end{center}
 \caption[inter site variability]{
-Effect size of the inter-site bias from a subset of 8 sites from the 1000 functional connectome dataset for all functional connections. A) distribution of absolute effect for each connections B) distribution of effect size for each connections expressed in Cohen's $d$ (absolute effect divided by the standard deviation of the noise).
+Effect size of the inter-site bias from a subset of 8 sites from the 1000 FCP. Panel A shows the distribution of absolute difference in functional connectivity across all brain connections. Panel B shows the distribution of effect size for each connections expressed in Cohen's $d$ (absolute effect divided by the standard deviation of the noise).
 }
 \label{fig_site_variability}
 \end{figure}
