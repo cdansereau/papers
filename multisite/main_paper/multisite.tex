@@ -281,25 +281,19 @@ Monte-Carlo simulation of detection power as a function of the effect size $d\in
 \end{figure}
 
 \paragraph{Statistical power and effect size} Figure \ref{fig_real_sim}A shows the relationship between effect size and a GLM detection power in experiment $(\mathcal{E}_1)$, i.e. for a fixed allocation ratio ($W=50\%$) and three different sample sizes, $N\in\{40, 80, 120\}$. The average and std of detection power was plotted across the 11 selected connections. As expected, the sensitivity increased with sample size, quite markedly. In multisite simulations ($S=7$), for a large effect size ($d=1$), the detection power was $20\%$ with 40 subjects , $80\%$ with 80 subjects and $95\%$ with $120\%$ subjects. The sensitivity was larger with a single site than multisite sample, yet the difference between the two decreased when the sample-size increased. With $N=40$ and $d=1$, the detection power was close to $30\%$ for a single site sampe, compared to $20\%$ for the multisite sample. With $N=120$ and $d=1$, the difference in sensitivity was only a few percents. The same trend was apparent for all tested effect sizes, and also $\alpha\in\{0.01,0.05\}$ (not shown). 
-
-\paragraph{Statistical power and group allocation ratio} Figure \ref{fig_real_sim}B shows the relationship between effect size and a GLM detection power in experiment $(\mathcal{E}_2)$, i.e. for a fixed sample size ($N=120\%$) and three different patient allocation ratio, $W\in \{15\%, 30\%,50\%\}$. Overall, we found that the detection power increased with $W$. For example, with $d=1$, the detection power was $65\%$ for $W=15\%$, and increased to $90\%$ with $W=30\%$, and finally $95\%$ for $W=50\%$. The impact of $W$ was observed in both monosite and multisite samples, with an optimal allocation ratio of $W=50\%$ for both. This observation was also made for $\alpha\in\{0.01,0.05\}$ (not shown). 
-
-
-
-\begin{figure}[tbp]
-\centering
+\par
+\begin{figure}[htbp]\centering
 \includegraphics[width=\textwidth]{../figures/samplesize_x_effectsize.png}
 \caption[]{
-Sample-size in function of the effect size for a detection power of 80\%
-A) using a threshold on the probability of having false-positive rate ($\alpha=0.05$) on a balanced dataset using an allocation ratio $W$ of $50\%$.
-B) using a threshold on the probability of having false-positive rate ($\alpha=0.01$) on a balanced dataset using an allocation ratio $W$ of $50\%$.
-C) using a threshold on the probability of having false-positive rate ($\alpha=0.001$) on a balanced dataset using an allocation ratio $W$ of $50\%$.
-The monosite performance in red and the multisite in blue. In black the dotted line show the parametric estimation of the effect size for the given sample-size.
+Effect size detectable at 80\% sensitivity as a function of sample size, for different false-positive rate $\alpha\in \{0.05,0.01,0.001\}$ (experiment $(\mathcal{E}_1)$). All simulations used a balanced patient allocation ratio $W=50\%$. The monosite performance is in red and the multisite in blue. The dotted black line shows the detectable effect size for a classical parametric $t$-test. 
 }
 \label{fig_sampeffect_curves_alpha001}
 \end{figure}
 
-\paragraph{Detectable effect size, as a function of sample-size} To summarize the previous findings plot of the sample-size in function of the effect size for a detection power of $80\%$ is shown in Figure \ref{fig_sampeffect_curves_alpha001}. As we can see the parametric estimation follow nicely the monosite estimation although a bit underestimated on small sample-size. This is also the case for multisite estimation where a delta of 0.25 Cohen's $d$ was found at $40$ subjects. This delta diminish inversely proportional to the sample-size to reach a delta of around 0.1 at $120$ subjects. The Cohen's $d$ achieve for a given sample-size is also more variable among connections with $40$ subjects (std=0.05) compared to $120$ subjects (std=0.025). As previously noted the lowest detectable effect size for a sensitivity of $80\%$ is about 0.8, at a single site with 120 subjects. At this sample-size, the difference between single and multisite studies appear to be marginal only, with only a few percent of difference in detectable effect sizes. 
+\paragraph{Statistical power and group allocation ratio} Figure \ref{fig_real_sim}B shows the relationship between effect size and a GLM detection power in experiment $(\mathcal{E}_2)$, i.e. for a fixed sample size ($N=120\%$) and three different patient allocation ratio, $W\in \{15\%, 30\%,50\%\}$. Overall, we found that the detection power increased with $W$. For example, with $d=1$, the detection power was $65\%$ for $W=15\%$, and increased to $90\%$ with $W=30\%$, and finally $95\%$ for $W=50\%$. The impact of $W$ was observed in both monosite and multisite samples, with an optimal allocation ratio of $W=50\%$ for both. This observation was also made for $\alpha\in\{0.01,0.05\}$ (not shown). 
+
+\paragraph{Detectable effect size, as a function of sample size} An alternative summary of experiment $(\mathcal{E}_1)$ is to represent the effect size that can be detected with 80\% sensitivity, as a function of sample size for monosite and multisite configurations, see Figure \ref{fig_sampeffect_curves_alpha001}. As a reference, we computed the same curve for parametric $t$-test comparisons, under assumptions of normality. As exepcted, the detectable effect size for parametric $t$-tests closely followed the monosite estimation, with the notable expection of small sample sizes ($N-=40$. For small sample size ($N=40$), the detectable effect size was notably larger in multisite configuration than in monosite configuration (difference of about 0.25 in Cohen's $d$ for $\alpha=0.001$. However, the difference decreased for large sample size to become smaller than 0.1 with $N=120$ and $\alpha=0.001$. The lowest detectable effect size for a sensitivity of $80\%$ at $\alpha=0.05$ is about $d=0.8$, achieved in monosite configuration with $N=120$. At this sample-size, the difference between single and multisite configurations is marginal, with only a few percent of difference in detectable effect sizes. 
+
 
 \subsection{Effect on prediction}
 
