@@ -334,7 +334,8 @@ Visually, consistent with our previous observations in the DMN, the organization
 of the average connectome into large-scale resting-state networks was preserved
 across all sites. 
 %Some significant site effects were still detected in the connectivity both within each network, as well as in the off-diagonal rectangles highlighting between-network connectivity. By counting the frequency of sites showing a significant effect across sites, it was apparent that significant site effects were quite variable in their localization and spread across the full connectome.
-Some significant site effects were still detected in the connectivity both within each network, as well as between networks. By counting the number of sites showing a significant effect for each pair of region, it was apparent that significant site effects were quite variable in their localization and spread across the full connectome (Figure \ref{fig_connectome_variability}D).  
+Some significant site effects were still detected in the connectivity both within each network, as well as between networks. By counting the number of sites showing a significant effect for each pair of region, it was apparent that significant site effects were quite variable in their localization and spread across the full connectome (Figure \ref{fig_connectome_variability}D). 
+Concerning the association with the other confounding variables in the model (sex, age and motion) many connections were found to be significantly associated with age and motion, see Supplementary Material Figure \ref{fig_connectome_variability_age},\ref{fig_connectome_variability_motion}, although very few connections were found to be significantly associated with the sex, see Supplementary Material Figure \ref{fig_connectome_variability_sex} this finding justify to put those variables in the model in order remove their confounding effect with the site effect.
 
 % The connectome standard deviation across subjects for each site is shown in supplementary material (see \ref{fig_std_connectomes}).
 
@@ -474,8 +475,7 @@ Not all sites seemed to be equally biased, with sites like Berlin or Saint-Louis
 \section{Acknowledgments}
 Parts of this work were presented at the 2013 annual meeting of the Organization for Human Brain Mapping, as well as the 2013 Alzheimer's Association International Conference (AAIC) \citep{Dansereau2013b}. The authors are grateful to the members of the 1000 functional connectome consortium for publicly releasing their datasets. The computational resources used to perform the data analysis were provided by ComputeCanada\footnote{\url{https://computecanada.org/}} and CLUMEQ\footnote{\url{http://www.clumeq.mcgill.ca/}}, which is funded in part by NSERC (MRS), FQRNT, and McGill University. This project was funded by NSERC grant number RN000028 and the Canadian
 Consortium on Neurodegeneration in Aging (CCNA), through a grant from
-the Canadian Institute of Health Research and funding from several
-partners. PB is supported by a salary award from ``Fonds de recherche du Qu\'ebec -- Sant\'e'' and the Courtois Foundation.
+the Canadian Institute of Health Research and funding from several partners including SANOFI-ADVENTIS R\&D. PB is supported by a salary award from ``Fonds de recherche du Qu\'ebec -- Sant\'e'' and the Courtois Foundation.
 
 \section*{References}
 
@@ -547,6 +547,36 @@ Simulation on real data, detection power of two groups for a total of 100 subjec
 \label{fig_real_sim_debalancing_2sites}
 \end{figure}
 
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=\linewidth]{../figures/connectome_multisite2_sex.png}
+\end{center}
+\caption[Connectome variability across sites]{
+The figure shows average connectomes for individual sites, as well as connections with a significant sex bias.
+}
+\label{fig_connectome_variability_sex}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=\linewidth]{../figures/connectome_multisite2_age.png}
+\end{center}
+\caption[Connectome variability across sites]{
+The figure shows average connectomes for individual sites, as well as connections with a significant age bias.
+}
+\label{fig_connectome_variability_age}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=\linewidth]{../figures/connectome_multisite2_fd.png}
+\end{center}
+\caption[Connectome variability across sites]{
+The figure shows average connectomes for individual sites, as well as connections with a significant motion bias.
+}
+\label{fig_connectome_variability_motion}
+\end{figure}
 
 \end{document}
 
