@@ -58,7 +58,7 @@
 \ead{pierre.bellec@criugm.qc.ca}
 \cortext[cor1]{Corresponding author: pierre.bellec@criugm.qc.ca}
 \address[a]{Centre de Recherche de l'Institut Universitaire de G\'eriatrie de Montr\'eal, Montr\'eal, CA}
-\address[b]{D\'epartement d'Informatique et de recherche op\'erationnelle, Universit\'e de Montr\'eal, Montr\'eal, CA}
+\address[b]Department of Computer Science and Operations Research, University of Montreal, Montreal, CA
 \address[c]{D\'epartement d'anthropologie, Universit\' de Montr\'eal, Montr\'eal, CA}
 \address[d]{Clinical Imaging, pRED, F.Hoffman-La Roche, Basel, CH}
 \address[e]{NeuroRx inc., Montr\'eal, CA}
@@ -336,7 +336,7 @@ of the average connectome into large-scale resting-state networks was preserved
 across all sites. 
 %Some significant site effects were still detected in the connectivity both within each network, as well as in the off-diagonal rectangles highlighting between-network connectivity. By counting the frequency of sites showing a significant effect across sites, it was apparent that significant site effects were quite variable in their localization and spread across the full connectome.
 Some significant site effects were still detected in the connectivity both within each network, as well as between networks. By counting the number of sites showing a significant effect for each pair of region, it was apparent that significant site effects were quite variable in their localization and spread across the full connectome (Figure \ref{fig_connectome_variability}D). 
-Concerning the association with the other confounding variables in the model (sex, age and motion) many connections were found to be significantly associated with age and motion, see Supplementary Material Figure \ref{fig_connectome_variability_age},\ref{fig_connectome_variability_motion}, although very few connections were found to be significantly associated with the sex, see Supplementary Material Figure \ref{fig_connectome_variability_sex}. This finding supports the inclusions of age, sex and FD in a GLM in order remove their confounding effects in addition to site effects.
+Concerning the association with the other confounding variables in the model (sex, age and motion) many connections were found to be significantly associated with motion, see Supplementary Material Figure \ref{fig_connectome_variability_motion}, although very few connections were found to be significantly associated with the sex and age, see Supplementary Material Figure \ref{fig_connectome_variability_sex} and \ref{fig_connectome_variability_age}. This finding supports the inclusions of age, sex and FD in a GLM in order remove their confounding effects in addition to site effects.
 
 % The connectome standard deviation across subjects for each site is shown in supplementary material (see \ref{fig_std_connectomes}).
 
@@ -379,7 +379,7 @@ Monte-Carlo simulation of detection power as a function of the effect size $d\in
 \label{fig_real_sim}
 \end{figure}
 
-\paragraph{Statistical power and effect size} Figure \ref{fig_real_sim}A shows the relationship between effect size and a GLM detection power in experiment $(\mathcal{E}_1)$, i.e. for a fixed allocation ratio ($W=50\%$) and three different sample sizes, $N\in\{40, 80, 120\}$. The average and std of detection power was plotted across the 11 selected connections. As expected, the sensitivity increased with sample size, quite markedly. In multisite simulations ($S=7$), for a large effect size ($d=1$), the detection power was $20\%$ with 40 subjects , $80\%$ with 80 subjects and $95\%$ with $120$ subjects. The sensitivity was larger with a single site than multisite sample, yet the difference between the two decreased as sample size increased. With $N=40$ and $d=1$, the detection power was close to $30\%$ for a single site sample, compared to $20\%$ for the multisite sample. With $N=120$ and $d=1$, the difference in sensitivity was only of a few percent. The same trend was apparent for all tested effect sizes as well as for $\alpha\in\{0.01,0.05\}$ (not shown). The effect size was adjusted for each connection based on the reference site standard deviations (monosite). We therefore obtained slightly more detection variance between connection for the multisite simulations.
+\paragraph{Statistical power and effect size} Figure \ref{fig_real_sim}A shows the relationship between effect size and a GLM detection power in experiment $(\mathcal{E}_1)$, i.e. for a fixed allocation ratio ($W=50\%$) and three different sample sizes, $N\in\{40, 80, 120\}$. The average and std of detection power was plotted across the 11 selected connections. The variations of statistical power across connections were very small for monosite simulations, as the effect size was adjusted based on the standard deviation of each connection within that sample. As expected, the sensitivity increased with sample size, quite markedly. In multisite simulations ($S=7$), for a large effect size ($d=1$), the detection power was $20\%$ with 40 subjects , $80\%$ with 80 subjects and $95\%$ with $120$ subjects. The sensitivity was larger with a single site than multisite sample, yet the difference between the two decreased as sample size increased. With $N=40$ and $d=1$, the detection power was close to $30\%$ for a single site sample, compared to $20\%$ for the multisite sample. With $N=120$ and $d=1$, the difference in sensitivity was only of a few percent. The same trend was apparent for all tested effect sizes as well as for $\alpha\in\{0.01,0.05\}$ (not shown).
 \par
 \begin{figure}[htbp]\centering
 \includegraphics[width=\textwidth]{../figures/samplesize_x_effectsize.png}
@@ -518,9 +518,20 @@ The standard deviation of the connectome for each site.
 \label{fig_std_connectomes}
 \end{figure}
 
+
 \begin{figure}[htbp]
 \begin{center}
-\includegraphics[width=\linewidth]{../figures/connectome_multisite2_sex.png}
+\includegraphics[width=\linewidth]{../figures/effect_motion.png}
+\end{center}
+\caption[Connectome variability across sites]{
+The figure shows average connectomes for individual sites, as well as connections with a significant motion bias.
+}
+\label{fig_connectome_variability_motion}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=\linewidth]{../figures/effect_sex.png}
 \end{center}
 \caption[Connectome variability across sites]{
 The figure shows average connectomes for individual sites, as well as connections with a significant sex bias.
@@ -530,7 +541,7 @@ The figure shows average connectomes for individual sites, as well as connection
 
 \begin{figure}[htbp]
 \begin{center}
-\includegraphics[width=\linewidth]{../figures/connectome_multisite2_age.png}
+\includegraphics[width=\linewidth]{../figures/effect_age.png}
 \end{center}
 \caption[Connectome variability across sites]{
 The figure shows average connectomes for individual sites, as well as connections with a significant age bias.
@@ -538,15 +549,6 @@ The figure shows average connectomes for individual sites, as well as connection
 \label{fig_connectome_variability_age}
 \end{figure}
 
-\begin{figure}[htbp]
-\begin{center}
-\includegraphics[width=\linewidth]{../figures/connectome_multisite2_fd.png}
-\end{center}
-\caption[Connectome variability across sites]{
-The figure shows average connectomes for individual sites, as well as connections with a significant motion bias.
-}
-\label{fig_connectome_variability_motion}
-\end{figure}
 
 \end{document}
 
