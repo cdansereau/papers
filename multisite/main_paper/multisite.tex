@@ -112,20 +112,25 @@ quantitatively assess the impact of site effects on group comparisons in rs-fMRI
 connectivity.
 
 \paragraph{Group comparison in rs-fMRI connectivity}
-We focused in this work on the most common measure of individual functional connectivity, which is the Pearson's correlation coefficient between the average rs-fMRI time series of two brain regions. To compare two groups, a general linear model (GLM) is typically used to establish the statistical significance of the difference in average connectivity between the groups. Finally a $p$-value is generated for each connection to quantify the probability that the difference in average connectivity is significantly different from zero \citep{Worsley1995}. If the estimated $p$-value is smaller than a prescribed tolerable level of false-positive findings, generally adjusted for the number of tests performed across connections, say $\alpha=0.001$, then the difference in connectivity is deemed significant. 
+We focused in this work on the most common measure of individual functional connectivity, which is the Pearson's correlation coefficient between the average rs-fMRI time series of two brain regions. To compare two groups, a general linear model (GLM) is typically used to establish the statistical significance of the difference in average connectivity between the groups. Finally a $p$-value is generated for each connection to quantify the probability that the difference in average connectivity is significantly different from zero \citep{Worsley1995,Yang}. If the estimated $p$-value is smaller than a prescribed tolerable level of false-positive findings, generally adjusted for the number of tests performed across connections, say $\alpha=0.001$, then the difference in connectivity is deemed significant. 
 
 \paragraph{Statistical power in group comparisons at multiple sites}
 The statistical power of a group comparison study is the probability of finding
 a significant difference, when there is indeed a true difference. A careful study design involves to selecting a sample-size large enough to reach a given
  level of statistical power, e.g. $80\%$. In the GLM, the statistical power
-actually depends on a series of parameters \citep{Desmond2002}: (1) the sample
+actually depends on a series of parameters \citep{Desmond2002,Durnez2014}: (1) the sample
 size (the larger the better); (2) the absolute size of the group difference (the
 larger the better), and, (3) the intrinsic variability of measurements (the
-smaller the better).
-In a multisite (or multi-protocol) setting, differences in imaging or study parameters may add variance to rs-fMRI measures, e.g. the scanner make and model \citep{Friedman2006,Friedman2008}, repetition time, flip angle, voxel resolution or acquisition volume \citep{Friedman2006a}, experimental design such as eyes-open/eyes-closed \citep{Yan2009}, experiment duration \citep{VanDijk2010}, and scanning environment such as sound attenuation measures \citep{Elliott1999}, or head-motion restraint techniques \citep{Edward2000,VanDijk2012}, amongst others. These parameters can be harmonized to some extent, but differences are unavoidable in large multisite studies. The recent work of \cite{Yan2013h} has indeed demonstrated the presence of a significant effects in rs-fMRI measures between sites in the 1000 FCP. Site effects will increase the variability of measures, and thus decrease statistical power. To the best of our knowledge, it is not yet known how important this decrease in statistical power may be. 
+smaller the better) (4) the rejection threshold $alpha$ for the null hypothesis.
 
-\paragraph{Sources of variance in rs-fMRI}
-The relative importance of site effects in rs-fMRI connectivity depends on the amplitude of the many other sources of variance. First, rs-fMRI connectivity only has moderate-to-good test-retest reliability using standard 10-minute imaging protocols \citep{Shehzad2009}, even when using a single scanner and imaging session. Differences in functional connectivity across subjects are also known to correlate with a myriad of behavioural and demographic subject characteristics \citep{Anand2007,Sheline2010,Kilpatrick2006}. Taken together, these sources of variance reflect a fundamental volatility of human physiological signals. In addition to physiology, some imaging artefacts will vary systematically from session to session, even at a single site. For example, intensity non-uniformities across the brain depend on the positioning of subjects \citep{Caramanos2010}. Room temperature has also been shown to impact MRI measures \citep{Vanhoutte2006}. Given the good consistency of key findings in resting-state connectivity across sites, such as the organization of distributed brain networks \citep{Biswal2010}, it is reasonable to hypothesize that site effects will be small compared to the combination of physiological and within-site imaging variance.
+\paragraph{Sources of variability: factors inherent to the scanning protocol}
+In a multisite (or multi-protocol) setting, differences in imaging or study parameters may add variance to rs-fMRI measures, e.g. the scanner make and model \citep{Friedman2006,Friedman2008}, repetition time, flip angle, voxel resolution or acquisition volume \citep{Friedman2006a}, experimental design such as eyes-open/eyes-closed \citep{Yan2009}, experiment duration \citep{VanDijk2010}, and scanning environment such as sound attenuation measures \citep{Elliott1999}, or head-motion restraint techniques \citep{Edward2000,VanDijk2012}, amongst others. These parameters can be harmonized to some extent, but differences are unavoidable in large multisite studies. The recent work of \cite{Yan2013a} has indeed demonstrated the presence of a significant effects in rs-fMRI measures between sites in the 1000 FCP. Site effects will increase the variability of measures, and thus decrease statistical power. To the best of our knowledge, it is not yet known how important this decrease in statistical power may be. 
+
+\paragraph{Sources of variability: within-subject variations}
+The relative importance of site effects in rs-fMRI connectivity depends on the amplitude of the many other sources of variance. First, rs-fMRI connectivity only has moderate-to-good test-retest reliability using standard 10-minute imaging protocols \citep{Shehzad2009}, even when using a single scanner and imaging session. Differences in functional connectivity across subjects are also known to correlate with a myriad of behavioural and demographic subject characteristics \citep{Anand2007,Sheline2010,Kilpatrick2006}. Taken together, these sources of variance reflect a fundamental volatility of human physiological signals. 
+
+\paragraph{Sources of variability: factors inherent to the site}
+In addition to physiology, some imaging artefacts will vary systematically from session to session, even at a single site. For example, intensity non-uniformities across the brain depend on the positioning of subjects \citep{Caramanos2010}. Room temperature has also been shown to impact MRI measures \citep{Vanhoutte2006}. Given the good consistency of key findings in resting-state connectivity across sites, such as the organization of distributed brain networks \citep{Biswal2010}, it is reasonable to hypothesize that site effects will be small compared to the combination of physiological and within-site imaging variance.
 
 \paragraph{Multivariate analysis}
 Another important consideration regarding the impact of site effects on group comparison in rs-fMRI connectivity is the type of method used to identify differences. The concept of statistical power is very well established in the GLM framework, which tests one brain connection at a time (mass univariate testing). However, multivariate methods that combine several or all connectivity values in a single prediction are also widely used and likely affected by the site effects. A popular multivariate technique in rs-fMRI is support-vector machine (SVM) \citep{Cortes1995}. In this approach, the group sample is split into a training set and a test set. The SVM is trained to predict group labels on the training set, and the accuracy of the prediction is evaluated independently on the test set. Because SVM has the ability to combine measures across connections, unlike univariate GLM tests, we hypothesized that the GLM and SVM will be impacted differently by site effects. 
@@ -145,7 +150,7 @@ data in the 1000 FCP sample. One unusual feature of the the "1000 FCP" dataset i
 \section{Method}
 
 \subsection{Imaging sample characteristics}
-The full 1000 FCP sample includes 1082 subjects, with images acquired over 33 sites spread across North America, Europe, Australia and China. As the 1000 FCP is a retrospective study, no effort was made to harmonize population characteristics or imaging acquisition parameters. Many sites thus featured some outliers characteristics within the sample, such as images acquired at 1.5T or 4T field strengths (5 sites), a population composed mainly of older (4 sites) or Asian (6 sites) participants, samples composed almost exclusively of male or females (8 sites), or partial brain coverage in rs-fMRI. To avoid possible site effects in rs-fMRI measures related to such outliers characteristics, a subset of sites was selected based on the following harmonization criteria: (1) 3T scanner field strength, (2) full brain coverage for the rs-fMRI scan, and, (3) a minimum of 15 young or middle aged adult participants, with a mixture of males and females (4) samples drawn from a population with a predominant Caucasian ethnicity. In addition, only young and middle aged participants (18-46 years old) were included in the study, and we further excluded subjects with excessive motion (see next Section). The final sample for our study thus included 345 cognitively normal young adults (150 males, age range: 18-46 years, mean$\pm$std: 23.8 $\pm$5.14) with images acquired across 8 sites located in Germany, the United Kingdom, Australia and the United States of America. The total time of available rs-fMRI data for these subjects ranged between 6 and 7.5 min and only one run was available. See Table \ref{table_dataset} for more details on the demographics and imaging parameters at each site selected in the study.  The experimental protocols for all datasets as well as data sharing in the 1000 FCP were approved by the respective ethics committee of each site. This secondary analysis of the 1000 FCP sample was approved by the local ethics committee at CRIUGM, University of Montreal, QC, Canada.
+The full 1000 FCP sample includes 1082 subjects, with images acquired over 33 sites spread across North America, Europe, Australia and China. As the 1000 FCP is a retrospective study, no effort was made to harmonize population characteristics or imaging acquisition parameters \citep{Biswal2010}. A subset of sites was selected based on the following harmonization criteria: (1) 3T scanner field strength, (2) full brain coverage for the rs-fMRI scan, and, (3) a minimum of 15 young or middle aged adult participants, with a mixture of males and females (4) samples drawn from a population with a predominant Caucasian ethnicity. In addition, only young and middle aged participants (18-46 years old) were included in the study, and we further excluded subjects with excessive motion (see next Section). The final sample for our study thus included 345 cognitively normal young adults (150 males, age range: 18-46 years, mean$\pm$std: 23.8 $\pm$5.14) with images acquired across 8 sites located in Germany, the United Kingdom, Australia and the United States of America. The total time of available rs-fMRI data for these subjects ranged between 6 and 7.5 min and only one run was available. See Table \ref{table_dataset} for more details on the demographics and imaging parameters at each site selected in the study.  The experimental protocols for all datasets as well as data sharing in the 1000 FCP were approved by the respective ethics committee of each site. This secondary analysis of the 1000 FCP sample was approved by the local ethics committee at CRIUGM, University of Montreal, QC, Canada.
 
  
 
@@ -212,22 +217,18 @@ In order to detect changes between the simulated groups at each pair of connecti
 
 \paragraph{Prediction accuracy}
 In addition to mass univariate GLM tests, we also investigated a linear SVM
-\citep{Cortes1995} using a Monte Carlo simulation framework similar to the one
-described above. For SVM simulations, all possible connections between the 100
+\citep{Cortes1995} using a Monte-Carlo simulation of cross-validation (a framework similar to the one described above). For SVM simulations, all possible connections between the 100
 brain regions were used simultaneously to predict the presence of the simulated
 pathology in a given subject. For a participant assigned to the ``patient''
 group, a ``pathology'' effect was only simulated in a set percentage of
 connections, which were randomly selected. The proportion of connections with a
 non-null effect was denoted as $\pi_1$. For a given simulation at sample size
 $N$, the SVM model was trained on $N$ subjects selected randomly and stratified
-by site. The accuracy of the model was evaluated on a separate simulation
-implemented with the remaining subjects, unused during training. For example,
-for a multisite simulation with $N=80$ subjects for SVM training, the model
-accuracy was estimated on $68$ subjects: $148$ (available subjects) minus $80$
-(subjects in the training set). During training, a 10-fold cross-validation was
-used to optimize the hyper-parameters of the SVM independently for each
+by site. The accuracy of the model was evaluated on a separate sample consisting of the remaining subjects, unused during training. For example, for a multisite simulation with $N=80$ subjects for training, the model accuracy was tested on the remaining $68$ subjects: $148$ (available subjects) minus $80$ (subjects in the training set). During training, a 10-fold cross-validation was used to optimize the hyper-parameters of the SVM independently for each
 simulation. The mean and standard deviation of accuracy scores across all
 samples were derived for each simulation scenario.
+
+We implement a Monte-Carlo simulation of cross-validation
 
 % The simulation scenarios
 \paragraph{Simulation experiments}
@@ -255,7 +256,7 @@ multisite analysis. We implemented the following experiments:
 $N\in\{40,80,120\}$, with a fixed allocation ratio $W=0.5$.
 \item $(\mathcal{E}_2)$ Test the impact of the allocation ratio on GLM
 $W\in\{0.5,0.3,0.15\}$ for a fixed sample size $N=120$.
-\item $(\mathcal{E}_3)$ Test the impact of multisite correction and affected
+\item $(\mathcal{E}_3)$ Test the impact of multisite correction (regressing out the site effects using dummy variables coding for each site) and affected
 connection volume ($\pi_1$) on the prediction accuracy. For the prediction
 scenario, we used a range of $\pi_1\in\{0.1,1,5\%\}$, and two sample sizes
 $N\in\{80,120\}$ subjects for training, with model accuracy estimated on $N=68$
@@ -288,7 +289,7 @@ connectivity map, averaged across all subjects and all sites. The key regions of
 the DMN are easily identifiable, and include the posterior cingulate cortex, precuneus, inferior
 parietal lobule, anterior cingulate cortex, medial pre-frontal cortex (dorsal,
 anterior and ventral), superior frontal gyri and the medial temporal lobe
-\citep{Damoiseaux2006,Dansereau2014,Yan2013a}. Using a GLM, the average
+\citep{Damoiseaux2006,Dansereau2014,Yan2013a}. The average
 connectivity map of the DMN was then extracted for each site, Figure
 \ref{fig_DMN_variability}B. Qualitatively, the DMN maps were consistent across
 sites, as expected based on the literature. We then tested for the significance
