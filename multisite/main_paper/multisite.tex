@@ -112,7 +112,7 @@ quantitatively assess the impact of site effects on group comparisons in rs-fMRI
 connectivity.
 
 \paragraph{Group comparison in rs-fMRI connectivity}
-We focused in this work on the most common measure of individual functional connectivity, which is the Pearson's correlation coefficient between the average rs-fMRI time series of two brain regions. To compare two groups, a general linear model (GLM) is typically used to establish the statistical significance of the difference in average connectivity between the groups. Finally a $p$-value is generated for each connection to quantify the probability that the difference in average connectivity is significantly different from zero \citep{Worsley1995,Yang}. If the estimated $p$-value is smaller than a prescribed tolerable level of false-positive findings, generally adjusted for the number of tests performed across connections, say $\alpha=0.001$, then the difference in connectivity is deemed significant. 
+We focused in this work on the most common measure of individual functional connectivity, which is the Pearson's correlation coefficient between the average rs-fMRI time series of two brain regions. To compare two groups, a general linear model (GLM) is typically used to establish the statistical significance of the difference in average connectivity between the groups. Finally a $p$-value is generated for each connection to quantify the probability that the difference in average connectivity is significantly different from zero \citep{Worsley1995,Yan2013a}. If the estimated $p$-value is smaller than a prescribed tolerable level of false-positive findings, generally adjusted for the number of tests performed across connections, say $\alpha=0.001$, then the difference in connectivity is deemed significant. 
 
 \paragraph{Statistical power in group comparisons at multiple sites}
 The statistical power of a group comparison study is the probability of finding
@@ -133,13 +133,13 @@ The relative importance of site effects in rs-fMRI connectivity depends on the a
 In addition to physiology, some imaging artefacts will vary systematically from session to session, even at a single site. For example, intensity non-uniformities across the brain depend on the positioning of subjects \citep{Caramanos2010}. Room temperature has also been shown to impact MRI measures \citep{Vanhoutte2006}. Given the good consistency of key findings in resting-state connectivity across sites, such as the organization of distributed brain networks \citep{Biswal2010}, it is reasonable to hypothesize that site effects will be small compared to the combination of physiological and within-site imaging variance.
 
 \paragraph{Multivariate analysis}
-Another important consideration regarding the impact of site effects on group comparison in rs-fMRI connectivity is the type of method used to identify differences. The concept of statistical power is very well established in the GLM framework, which tests one brain connection at a time (mass univariate testing). However, multivariate methods that combine several or all connectivity values in a single prediction are also widely used and likely affected by the site effects. A popular multivariate technique in rs-fMRI is support-vector machine (SVM) \citep{Cortes1995}. In this approach, the group sample is split into a training set and a test set. The SVM is trained to predict group labels on the training set, and the accuracy of the prediction is evaluated independently on the test set. Because SVM has the ability to combine measures across connections, unlike univariate GLM tests, we hypothesized that the GLM and SVM will be impacted differently by site effects. 
+Another important consideration regarding the impact of site effects on group comparison in rs-fMRI connectivity is the type of method used to identify differences. The concept of statistical power is very well established in the GLM framework, which tests one brain connection at a time (mass univariate testing). However, multivariate methods that combine several or all connectivity values in a single prediction are also widely used and likely affected by the site effects. A popular multivariate technique in rs-fMRI is support-vector machine (SVM) \citep{Cortes1995}. In this approach, the group sample is split into a training set and a test set. The SVM is trained to predict group labels on the training set, and the accuracy of the prediction is evaluated independently on the test set.  The accuracy levels of the SVM could be seen as an omnibus test: it tries to predict clinical labels but does not explicitly tell which feature is critical for the prediction. The accuracy score can be seen as a “separability index” in high dimensional space. Altogether, the objectives and measures of statistical risk for SVM and GLM are quite different. Because SVM has the ability to combine measures across connections, unlike univariate GLM tests, we hypothesized that the GLM and SVM will be impacted differently by site effects. 
 
 \paragraph{Specific objectives}
 Our first objective was to characterize, using real data, the amplitude of
 systematic site effects in rs-fMRI connectivity measures across sites, as a function
 of within-site variance. We based our evaluation on images generated from
-independent groups at 8 sites equipped with 3T scanners, in a harmonized subset
+independent groups at 8 sites equipped with 3T scanners, in a subset
 ($N=345$) of the 1000 FCP. Our second objective was to evaluate the impact of
 site effects on the detection power of group differences in rs-fMRI
 connectivity, as a function of the amplitude of the group difference, sample
@@ -150,7 +150,7 @@ data in the 1000 FCP sample. One unusual feature of the the "1000 FCP" dataset i
 \section{Method}
 
 \subsection{Imaging sample characteristics}
-The full 1000 FCP sample includes 1082 subjects, with images acquired over 33 sites spread across North America, Europe, Australia and China. As the 1000 FCP is a retrospective study, no effort was made to harmonize population characteristics or imaging acquisition parameters \citep{Biswal2010}. A subset of sites was selected based on the following harmonization criteria: (1) 3T scanner field strength, (2) full brain coverage for the rs-fMRI scan, and, (3) a minimum of 15 young or middle aged adult participants, with a mixture of males and females (4) samples drawn from a population with a predominant Caucasian ethnicity. In addition, only young and middle aged participants (18-46 years old) were included in the study, and we further excluded subjects with excessive motion (see next Section). The final sample for our study thus included 345 cognitively normal young adults (150 males, age range: 18-46 years, mean$\pm$std: 23.8 $\pm$5.14) with images acquired across 8 sites located in Germany, the United Kingdom, Australia and the United States of America. The total time of available rs-fMRI data for these subjects ranged between 6 and 7.5 min and only one run was available. See Table \ref{table_dataset} for more details on the demographics and imaging parameters at each site selected in the study.  The experimental protocols for all datasets as well as data sharing in the 1000 FCP were approved by the respective ethics committee of each site. This secondary analysis of the 1000 FCP sample was approved by the local ethics committee at CRIUGM, University of Montreal, QC, Canada.
+The full 1000 FCP sample includes 1082 subjects, with images acquired over 33 sites spread across North America, Europe, Australia and China. As the 1000 FCP is a retrospective study, no effort was made to harmonize population characteristics or imaging acquisition parameters \citep{Biswal2010}. A subset of sites was selected based on the following criteria: (1) 3T scanner field strength, (2) full brain coverage for the rs-fMRI scan, and, (3) a minimum of 15 young or middle aged adult participants, with a mixture of males and females (4) samples drawn from a population with a predominant Caucasian ethnicity. In addition, only young and middle aged participants (18-46 years old) were included in the study, and we further excluded subjects with excessive motion (see next Section). The final sample for our study thus included 345 cognitively normal young adults (150 males, age range: 18-46 years, mean$\pm$std: 23.8 $\pm$5.14) with images acquired across 8 sites located in Germany, the United Kingdom, Australia and the United States of America. The total time of available rs-fMRI data for these subjects ranged between 6 and 7.5 min and only one run was available. See Table \ref{table_dataset} for more details on the demographics and imaging parameters at each site selected in the study.  The experimental protocols for all datasets as well as data sharing in the 1000 FCP were approved by the respective ethics committee of each site. This secondary analysis of the 1000 FCP sample was approved by the local ethics committee at CRIUGM, University of Montreal, QC, Canada.
 
  
 
@@ -271,10 +271,10 @@ and $N=28$, respectively.
 
 \begin{figure}[htbp]
 \begin{center}
-\includegraphics[width=\linewidth]{../figures/dmn_multisite.png}
+\includegraphics[width=0.8\linewidth]{../figures/dmn_multisite.png}
 \end{center}
 \caption[DMN variability across sites]{
-Panel A: map of the DMN obtained using a seed in the posterior cingulate cortex, averaging all subjects and sites together. Panels B:  The first column shows the average functional connectivity maps of the DMN at 8 sites. The second column shows the significant differences between the average functional connectivity maps of one site versus all the others. Panel C shows the number of sites with a significant inter-site difference for each brain region.
+Panel A: map of the DMN obtained using a seed in the posterior cingulate cortex, averaging all subjects and sites together for the first row and then the average functional connectivity maps of the DMN for each of the 8 sites. Panel B shows on the first row the number of sites with a significant inter-site difference for each brain region and the subsequent rows shows the significant differences between the average functional connectivity maps of one site versus all the others.
 }
 \label{fig_DMN_variability}
 \end{figure}
@@ -291,16 +291,16 @@ parietal lobule, anterior cingulate cortex, medial pre-frontal cortex (dorsal,
 anterior and ventral), superior frontal gyri and the medial temporal lobe
 \citep{Damoiseaux2006,Dansereau2014,Yan2013a}. The average
 connectivity map of the DMN was then extracted for each site, Figure
-\ref{fig_DMN_variability}B. Qualitatively, the DMN maps were consistent across
+\ref{fig_DMN_variability}A. Qualitatively, the DMN maps were consistent across
 sites, as expected based on the literature. We then tested for the significance
-of the site effects, i.e. the difference in average connectivity at a given site
+of the site effects (Figure \ref{fig_DMN_variability}B), i.e. the difference in average connectivity at a given site
 and the average connectivity at all remaining sites. The statistical maps were
 corrected for multiple comparisons across the brain with FDR at $q\leq 0.05$
 \citep{Benjamini1995}. A significant site effects for at least one connection could be
 identified for every site, without exception, Figure
 \ref{fig_DMN_variability}B. Figure \ref{fig_DMN_variability}C shows how
-reproducible were the significant site effects in connectivity across the brain and
-sites. The identified significant connections locations were quite variable across sites, most of them being
+reproducible the significant site effects in connectivity across the brain and
+sites were. The identified significant connections locations were quite variable across sites, most of them being
 identified at less than three sites.
 
 \begin{figure}[htbp]
@@ -335,7 +335,7 @@ of the average connectome into large-scale resting-state networks was preserved
 across all sites. 
 %Some significant site effects were still detected in the connectivity both within each network, as well as in the off-diagonal rectangles highlighting between-network connectivity. By counting the frequency of sites showing a significant effect across sites, it was apparent that significant site effects were quite variable in their localization and spread across the full connectome.
 Some significant site effects were still detected in the connectivity both within each network, as well as between networks. By counting the number of sites showing a significant effect for each pair of regions, it was apparent that significant site effects were quite variable in their localization and spread across the full connectome (Figure \ref{fig_connectome_variability}D). 
-Concerning the association with the other confounding variables in the model (sex, age and motion) many connections were found to be significantly associated with motion, see Supplementary Material Figure \ref{fig_connectome_variability_motion}, although very few connections were found to be significantly associated with the sex and age, see Supplementary Material Figure \ref{fig_connectome_variability_sex} and \ref{fig_connectome_variability_age}. This finding supports the inclusions of age, sex and motion parameters in a GLM in order remove their confounding effects in addition to site effects.
+Concerning the association with the other confounding variables in the model (sex, age and motion) many connections were found to be significantly associated with motion, see Supplementary Material Figure \ref{fig_connectome_variability_motion}, although very few connections were found to be significantly associated with the sex and age, see Supplementary Material Figure \ref{fig_connectome_variability_sex} and \ref{fig_connectome_variability_age}. We also made sure that large Cambridge site did not bias the results by running the same analysis excluding that site, and it did not change the results see Supplementary Material Figure \ref{fig_connectome_variability_no_cambridge}.This finding supports the inclusions of age, sex and motion parameters in a GLM in order remove their confounding effects in addition to site effects.
 
 % The connectome standard deviation across subjects for each site is shown in supplementary material (see \ref{fig_std_connectomes}).
 
@@ -358,14 +358,25 @@ simulations (Figure \ref{fig_site_variability}C,D). For absolute differences, th
 median around 0.06, $5\%$ percentile near 0 and $95\%$ percentiles in the 0.08-
 0.1 range. For Cohen's $d$, the distributions were also consistent across sites, with a
 median around 0.33, $5\%$ percentile near 0 and $95\%$ percentiles in the 0.4-
-0.6 range. This effect size would be deemed small-to-moderate, which suggests that the impact of additive inter-site effects on
-statistical tests will be limited. Similar findings were observed across all possible connections, or across the 11 pairs of
+0.6 range. This effect size would be deemed small-to-moderate \citep{Cohen1992}, although such qualitative assessments need to be refined based on each application, which suggests that the impact of additive inter-site effects on statistical tests will be limited. Similar findings were observed across all possible connections, or across the 11 pairs of
 connections selected in the simulation study. The region-to-region maps of within-site, across-subjects standard
 deviations are presented for the DMN in Supplementary Figure \ref{fig_std_DMNs},
 and for the entire connectome in the Supplementary Material
-\ref{fig_std_connectomes}. 
+\ref{fig_std_connectomes}. Moreover the individual sites do not differ in the voxel-wise time series noise since there standard deviation is in the same range see Supplementary Figure \ref{fig_std_connectomes_distribution}.
+
 
 \subsection{Multisite Monte-Carlo simulations}
+
+\begin{figure}[tbp]
+\centering
+{\includegraphics[width=\textwidth]{../figures/h0_results.png}}
+
+\caption{
+Monte-Carlo simulation of the false positives (H0) for all effect size $d\in[0,2]$, either for a monosite ($S=1$, left distribution), a multisite ($S=7$, middle distribution) with site correction (adding covariates coding for each site in the model) or a multisite without site correction ($S=7$, right distribution). In panel A, three different $\alpha$ values have been tested, $\alpha\in \{0.001, 0.01, 0.05\}$ with a fix sample size and patient allocation ratio ($N=120,W=50\%$). In panel B, three different sample sizes have been tested, $N\in \{40, 80, 120\}$ with a fix patient allocation ratio ($W=50\%$) (Experiment $(\mathcal{E}_1)$). In panel C, three different patient allocation ratios have been tested, $W\in \{50\%, 30\%, 15\%\}$ with a fix sample size ($N=120$) (Experiment $(\mathcal{E}_2)$).}
+\label{fig_h0}
+\end{figure}
+
+\paragraph{Control of false positives} Figure \ref{fig_h0}A good control of the false positives at the specified thresholds $\alpha\in \{0.001, 0.01, 0.05\}$, the only sample that is too conservative for a $W=50\%$ is multisite without site correction. Figure \ref{fig_h0}B shows, for a fixed allocation ratio ($W=50\%$) and three different sample sizes, $N\in\{40, 80, 120\}$, that across sample size the method hold perfectly on the expected false positive range except for multisite without site correction that present a more conservative false positives detection at $W=50\%$ (experiment $(\mathcal{E}_1)$). Although when we change the allocation ratio like in Figure \ref{fig_h0}C, $W\in \{50\%, 30\%, 15\%\}$ with a fix sample size ($N=120$) (Experiment $(\mathcal{E}_2)$), the monosite and multisite with site correction behave correctly but the multisite without site correction show drastic increase of the false positives as we unbalance the allocation ratio $W$.
 
 \begin{figure}[tbp]
 \centering
@@ -424,7 +435,7 @@ twice as large as the inter-site absolute effect, on average across brain connec
 
 %\paragraph{Spatial distribution of connectivity bias} We found that the brain connections exhibiting a significant inter-site bias were quite variable, with most of them being identified in less than one fourth of the sites. This suggests that there are no large network-specific inter-site bias or that the statistical power for detecting bias with the employed site sample size was limited. Looking at the spatial location of the site bias with respect to a brain parcellation with 7 networks, we noticed that the DMN and the dATT networks were less affected by site bias then the cerebellar, mesolimbic and sensorimotor networks \emph{did we really observe that? CD: Yes looking at the matrix of figure2D I could observe a bit more difference from one network to the other I can compute the average of the value in each network that would give use a cleaner picture... }. This last finding may be associated with the fact that those network are located on the periphery of the brain and may be more sensitive to motion artifacts. 
 
-\paragraph{Statistical power and multisite rs-fMRI} After accounting for site-related additive effects in a GLM, the multisite simulation pooling 7 sites together showed detection power close to that of a monosite simulation with equivalent sample size. The difference was noticeable for small sample size (total $N=40$), and became very small for a sample size $N=120$. Another observation was that, for a given detection power, the lowest effect size that we were able to detect was more variable across connections for a low sample size. Taken together, these observations suggest to use sample size larger than $100$ subjects for GLM multisite studies. A limitation of this conclusion is that it is likely dependent on the number of sites pooled in the study and the actual number of subjects in each of those sites. 
+\paragraph{Statistical power and multisite rs-fMRI} After accounting for site-related additive effects in a GLM, the multisite simulation pooling 7 sites together showed detection power close to that of a monosite simulation with equivalent sample size. The difference was noticeable for small sample size (total $N=40$), and became very small for a sample size $N=120$. Another observation was that, for a given detection power, the lowest effect size that we were able to detect was more variable across connections for a low sample size. In line with \cite{Eklund2016} we have shown that false positives detection is well controlled when correcting for site in the model although without site correction a large number of false positives emerge when faced with unbalanced samples. Taken together, these observations suggest to use sample size larger than $100$ subjects for GLM multisite studies. A limitation of this conclusion is that it is likely dependent on the number of sites pooled in the study and the actual number of subjects in each of those sites. 
 
 \paragraph{Statistical power and sample size} For a medium effect size, e.g. $d=0.5$, the sensitivity was low (below $20\%$), even for monosite simulations with $N=120$ subjects. This sobering result supports the current trend in the literature to pool multiple data samples to increase sample size, at the cost of decreased homogeneity. We also found that resting-state studies based on 40 subjects or less, even at a single site, are seriously underpowered, except for extremely large effect sizes (Cohen's $d$ greater than 1.5). Finally, unbalanced patient allocation ratio in site samples greatly reduces sensitivity, even in monosite studies. Balanced datasets, i.e. with equal numbers of patients and controls at each site, should therefore be favored. 
 
@@ -500,7 +511,7 @@ For all questions regarding the paper, please address correspondence to Pierre B
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.75\textwidth]{../figures/dmn_stdmultisite.pdf}
+\includegraphics[width=0.75\textwidth]{../figures/dmn_stdmultisite.png}
 \caption[]{
 Overlay of the standard deviation of the DMN for each site on the MNI152 template.
 }
@@ -509,12 +520,25 @@ Overlay of the standard deviation of the DMN for each site on the MNI152 templat
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.50\textwidth]{../figures/connectome_std_multisite2.pdf}
+\includegraphics[width=0.50\textwidth]{../figures/connectome_std_multisite2.png}
 \caption[]{
 The standard deviation of the connectome for each site.
 }
 \label{fig_std_connectomes}
 \end{figure}
+
+
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.75\linewidth]{../figures/multisite_std_distribution.png}
+\end{center}
+\caption[Standard deviation of the connections across sites]{
+The figure shows standard deviation of all the connection for each site.
+}
+\label{fig_std_connectomes_distribution}
+\end{figure}
+
 
 
 \begin{figure}[htbp]
@@ -546,6 +570,18 @@ The figure shows average connectomes across all sites, as well as connections wi
 }
 \label{fig_connectome_variability_age}
 \end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=\linewidth]{../figures/connectome_multisite_no_cambridge.png}
+\end{center}
+\caption[]{
+Figure shows average connectomes for individual sites, as well as connections with a significant site effects with the exception that we remove the cambridge site from the analysis.
+}
+\label{fig_connectome_variability_no_cambridge}
+\end{figure}
+
+
 
 
 \end{document}
