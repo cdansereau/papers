@@ -34,9 +34,21 @@
 %\usepackage{subcaption}
 \usepackage{setspace}
 \usepackage{lineno}
+\usepackage{multirow}
+\usepackage{array}
 % Unique number for each line
 \linenumbers
 %\listoftodos
+\newcommand\MyBox[2]{
+  \fbox{\lower0.75cm
+    \vbox to 1.7cm{\vfil
+      \hbox to 1.7cm{\hfil\parbox{1.4cm}{#1\\#2}\hfil}
+      \vfil}%
+  }%
+}
+
+\renewcommand\arraystretch{1.5}
+\setlength\tabcolsep{0pt}
 
 \begin{document}
 
@@ -112,16 +124,29 @@ quantitatively assess the impact of site effects on group comparisons in rs-fMRI
 connectivity.
 
 \paragraph{Group comparison in rs-fMRI connectivity}
-We focused in this work on the most common measure of individual functional connectivity, which is the Pearson's correlation coefficient between the average rs-fMRI time series of two brain regions. To compare two groups, a general linear model (GLM) is typically used to establish the statistical significance of the difference in average connectivity between the groups. Finally a $p$-value is generated for each connection to quantify the probability that the difference in average connectivity is significantly different from zero \citep{Worsley1995,Yan2013a}. If the estimated $p$-value is smaller than a prescribed tolerable level of false-positive findings, generally adjusted for the number of tests performed across connections, say $\alpha=0.001$, then the difference in connectivity is deemed significant. 
+We focused in this work on the most common measure of individual functional connectivity, which is the Pearson's correlation coefficient between the average rs-fMRI time series of two brain regions. To compare two groups, a general linear model (GLM) is typically used to establish the statistical significance of the difference in average connectivity between the groups. Finally a $p$-value is generated for each connection to quantify the probability that the difference in average connectivity is significantly different from zero \citep{Worsley1995,Yan2013a}. If the estimated $p$-value is smaller than a prescribed tolerable level of false-positive findings (see for more detail \ref{confusion_matrix}), generally adjusted for the number of tests performed across connections, say $\alpha=0.001$, then the difference in connectivity is deemed significant. 
+
+\begin{table}[tbp]
+\centering
+\resizebox{0.35\columnwidth}{!}{%
+\begin{tabular}{c >{\bfseries}r @{\hspace{0.7em}}c @{\hspace{0.4em}}c @{\hspace{0.7em}}l}
+  \multirow{10}{*}{\parbox{1.1cm}{\bfseries\raggedleft Actual\\ value}} & 
+    & \multicolumn{2}{c}{\bfseries Detected value} & \\
+  & & \bfseries patho & \bfseries no patho & \\
+  & \rotatebox[origin=c]{90}{patho} & \MyBox{True}{Positive} & \MyBox{False}{Negative} &\\[2.4em]
+  & \rotatebox[origin=c]{90}{no patho} & \MyBox{\bf False}{\bf Positive} & \MyBox{True}{Negative} &\\
+
+\end{tabular}
+}
+\caption{Confusion matrix.}
+\label{confusion_matrix}
+\end{table}
 
 \paragraph{Statistical power in group comparisons at multiple sites}
 The statistical power of a group comparison study is the probability of finding
-a significant difference, when there is indeed a true difference. A careful study design involves to selecting a sample-size large enough to reach a given
- level of statistical power, e.g. $80\%$. In the GLM, the statistical power
-actually depends on a series of parameters \citep{Desmond2002,Durnez2014}: (1) the sample
-size (the larger the better); (2) the absolute size of the group difference (the
-larger the better), and, (3) the intrinsic variability of measurements (the
-smaller the better) (4) the rejection threshold $alpha$ for the null hypothesis.
+a significant difference, when there is indeed a true difference. A careful study design involves to selecting a sample-size large enough to reach a given level of statistical power, e.g. $80\%$. In the GLM, the statistical power actually depends on a series of parameters \citep{Desmond2002,Durnez2014}: (1) the sample size (the larger the better); (2) the absolute size of the group difference (the larger the better), and, (3) the intrinsic variability of measurements (the smaller the better) (4) the rejection threshold $alpha$ for the null hypothesis.
+
+
 
 \paragraph{Sources of variability: factors inherent to the scanning protocol}
 In a multisite (or multi-protocol) setting, differences in imaging or study parameters may add variance to rs-fMRI measures, e.g. the scanner make and model \citep{Friedman2006,Friedman2008}, repetition time, flip angle, voxel resolution or acquisition volume \citep{Friedman2006a}, experimental design such as eyes-open/eyes-closed \citep{Yan2009}, experiment duration \citep{VanDijk2010}, and scanning environment such as sound attenuation measures \citep{Elliott1999}, or head-motion restraint techniques \citep{Edward2000,VanDijk2012}, amongst others. These parameters can be harmonized to some extent, but differences are unavoidable in large multisite studies. The recent work of \cite{Yan2013a} has indeed demonstrated the presence of a significant effects in rs-fMRI measures between sites in the 1000 FCP. Site effects will increase the variability of measures, and thus decrease statistical power. To the best of our knowledge, it is not yet known how important this decrease in statistical power may be. 
@@ -152,17 +177,17 @@ data in the 1000 FCP sample. One unusual feature of the the "1000 FCP" dataset i
 \subsection{Imaging sample characteristics}
 The full 1000 FCP sample includes 1082 subjects, with images acquired over 33 sites spread across North America, Europe, Australia and China. As the 1000 FCP is a retrospective study, no effort was made to harmonize population characteristics or imaging acquisition parameters \citep{Biswal2010}. A subset of sites was selected based on the following criteria: (1) 3T scanner field strength, (2) full brain coverage for the rs-fMRI scan, and, (3) a minimum of 15 young or middle aged adult participants, with a mixture of males and females (4) samples drawn from a population with a predominant Caucasian ethnicity. In addition, only young and middle aged participants (18-46 years old) were included in the study, and we further excluded subjects with excessive motion (see next Section). The final sample for our study thus included 345 cognitively normal young adults (150 males, age range: 18-46 years, mean$\pm$std: 23.8 $\pm$5.14) with images acquired across 8 sites located in Germany, the United Kingdom, Australia and the United States of America. The total time of available rs-fMRI data for these subjects ranged between 6 and 7.5 min and only one run was available. See Table \ref{table_dataset} for more details on the demographics and imaging parameters at each site selected in the study.  The experimental protocols for all datasets as well as data sharing in the 1000 FCP were approved by the respective ethics committee of each site. This secondary analysis of the 1000 FCP sample was approved by the local ethics committee at CRIUGM, University of Montreal, QC, Canada.
 
- 
+
 
 \begin{table}[tbp]
 \resizebox{\columnwidth}{!}{%
 \begin{tabular}{lllllllllll}
 \textbf{Site}         & \textbf{Magnet} & \textbf{Scanner make} & \textbf{Channels} & \textbf{N} & \textbf{N final} & \textbf{Sex} & \textbf{Age} & \textbf{TR} & \textbf{\# Slices} & \textbf{\# Frames} \\
 \hline
-Baltimore, USA        & 3T              & N/A                   & N/A               & 23   & 21         & 8M/15F       & 20-40        & 2.5         & 47                 & 123                \\
+Baltimore, USA        & 3T              & Philips Achieva       & 8                 & 23   & 21         & 8M/15F       & 20-40        & 2.5         & 47                 & 123                \\
 Berlin, Germany       & 3T              & Siemens Tim Trio      & 12                & 26   & 26         & 13M/13F      & 23-44        & 2.3         & 34                 & 195                \\
 Cambridge, USA        & 3T              & Siemens Tim Trio      & 12                & 198  & 195        & 75M/123F     & 18-30        & 3           & 47                 & 119                \\
-Newark, USA           & 3T              & N/A                   & N/A               & 19   & 17         & 9M/10F       & 21-39        & 2           & 32                 & 135                \\
+Newark, USA           & 3T              & Siemens Allegra       & 12                & 19   & 17         & 9M/10F       & 21-39        & 2           & 32                 & 135                \\
 NewYork\_b, USA       & 3T              & Siemens Allegra       & 1                 & 20   & 18         & 8M/12F       & 18-46        & 2           & 33                 & 175                \\
 Oxford, UK            & 3T              & Siemens Tim Trio      & 12                & 22   & 20         & 12M/10F      & 20-35        & 2           & 34                 & 175                \\
 Queensland, Australia & 3T              & Bruker                & 1                 & 19   & 17         & 11M/8F       & 20-34        & 2.1         & 36                 & 190                \\
@@ -363,6 +388,27 @@ connections selected in the simulation study. The region-to-region maps of withi
 deviations are presented for the DMN in Supplementary Figure \ref{fig_std_DMNs},
 and for the entire connectome in the Supplementary Material
 \ref{fig_std_connectomes}. Moreover the individual sites do not differ in the voxel-wise time series noise since there standard deviation is in the same range see Supplementary Figure \ref{fig_std_connectomes_distribution}.
+
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.5\linewidth]{../figures/hetero_test.png}
+\end{center}
+\caption[]{
+Test of heteroscedasticity. 
+}
+\label{fig_hetero}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=\linewidth]{../figures/abs_std_diff.png}
+\end{center}
+\caption[]{
+Absolute standard deviation difference. 
+}
+\label{fig_site_variability_abs_std_diff}
+\end{figure}
 
 
 \subsection{Multisite Monte-Carlo simulations}
