@@ -2878,8 +2878,8 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="153.18953"
-     inkscape:cy="1458.1479"
+     inkscape:cx="-107.12124"
+     inkscape:cy="1589.2861"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -2896,23 +2896,23 @@
      inkscape:guide-bbox="true">
     <sodipodi:guide
        orientation="1,0"
-       position="391.99999,396.73146"
+       position="391.99999,396.73143"
        id="guide4439" />
     <sodipodi:guide
        orientation="1,0"
-       position="499.70572,-181.19303"
+       position="499.70572,-181.19306"
        id="guide4631" />
     <sodipodi:guide
        orientation="1,0"
-       position="56.24874,323.88326"
+       position="56.248735,323.88323"
        id="guide4633" />
     <sodipodi:guide
        orientation="1,0"
-       position="441.11687,254.18272"
+       position="441.11687,254.18269"
        id="guide4635" />
     <sodipodi:guide
        orientation="1,0"
-       position="35.723074,147.04739"
+       position="35.723069,147.04736"
        id="guide4648" />
   </sodipodi:namedview>
   <metadata
@@ -3169,25 +3169,25 @@
        xml:space="preserve"
        style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
        x="275.66071"
-       y="-1642.5818"
+       y="-1660.5818"
        id="text2996-80-2-7-2"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan2998-5-2-2-9"
          x="275.66071"
-         y="-1642.5818"
+         y="-1660.5818"
          style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Sans;-inkscape-font-specification:Sans">B</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
        x="-189.40878"
-       y="-1642.5818"
+       y="-1660.5818"
        id="text2996-80-2-1"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan2998-5-2-1"
          x="-189.40878"
-         y="-1642.5818"
+         y="-1660.5818"
          style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Sans;-inkscape-font-specification:Sans">A</tspan></text>
     <image
        y="-1476.3516"
@@ -11390,5 +11390,16 @@ v78/kUgkJC4ujsjl8kXrZ/8PZDjss1CGwxrIcFgDGQ5rIMNhDWQ4rIEMhzWQ4bAGMhzWQIbzf5Q3
 "
        height="58"
        width="112" />
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-158.78181"
+       y="-1659.9666"
+       id="text4650"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4652"
+         x="-158.78181"
+         y="-1659.9666">Site average</tspan></text>
   </g>
 </svg>

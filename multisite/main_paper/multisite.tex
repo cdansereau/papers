@@ -390,25 +390,9 @@ and for the entire connectome in the Supplementary Material
 \ref{fig_std_connectomes}. Moreover the individual sites do not differ in the voxel-wise time series noise since there standard deviation is in the same range see Supplementary Figure \ref{fig_std_connectomes_distribution}.
 
 
-\begin{figure}[htbp]
-\begin{center}
-\includegraphics[width=0.5\linewidth]{../figures/hetero_test.png}
-\end{center}
-\caption[]{
-Test of heteroscedasticity. 
-}
-\label{fig_hetero}
-\end{figure}
-
-\begin{figure}[htbp]
-\begin{center}
-\includegraphics[width=\linewidth]{../figures/abs_std_diff.png}
-\end{center}
-\caption[]{
-Absolute standard deviation difference. 
-}
-\label{fig_site_variability_abs_std_diff}
-\end{figure}
+\paragraph{Parametric model validity} 
+We tested the model for heteroscedasticity and unsurprisingly we found that some connections are found to be significant when we perform a White test on them. 
+see in Supplementary Material \ref{fig_hetero}.
 
 
 \subsection{Multisite Monte-Carlo simulations}
@@ -625,6 +609,17 @@ The figure shows average connectomes across all sites, as well as connections wi
 Figure shows average connectomes for individual sites, as well as connections with a significant site effects with the exception that we remove the cambridge site from the analysis.
 }
 \label{fig_connectome_variability_no_cambridge}
+\end{figure}
+
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=\linewidth]{../figures/hetero.png}
+\end{center}
+\caption[]{
+Panel A show test of heteroscedasticity. Panel B show the size of the average absolute standard deviation difference between sites, and Panle C show the normalized diference also refered has the effect size. 
+}
+\label{fig_hetero}
 \end{figure}
 
 
