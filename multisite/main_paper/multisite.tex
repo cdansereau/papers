@@ -83,7 +83,6 @@
 % Please keep the abstract between 250 and 300 words
 \begin{abstract}
 Connectivity studies using resting-state functional magnetic resonance imaging are increasingly pooling data acquired at multiple sites. While this may allow investigators to speed up recruitment or increase sample size, multisite studies also potentially introduce systematic biases in connectivity measures across sites. In this work, we measure the inter-site effect in connectivity and its impact on our ability to detect individual and group differences. Our study was based on real multisite fMRI datasets collected in $N=345$ young, healthy subjects across 8 scanning sites with 3T scanners and heterogeneous scanning protocols, drawn from the 1000 functional connectome project. We first empirically show that typical functional networks were reliably found at the group level in all sites, and that the amplitude of the inter-site effects was small to moderate, with a Cohen's effect size below 0.5 on average across brain connections. We then implemented a series of Monte-Carlo simulations, based on real data, to evaluate the impact of the multisite effects on detection power in statistical tests comparing two groups (with and without the effect) using a general linear model, as well as on the prediction of group labels with a support-vector machine. As a reference, we also implemented the same simulations with fMRI data collected at a single site using an identical sample size. Simulations revealed that using data from heterogeneous sites only slightly decreased our ability to detect changes compared to a monosite study with the GLM, and had a more serious impact on prediction accuracy. However, the deleterious effect of multisite data pooling tended to decrease as the total sample size increased, to a point where differences between monosite and multisite simulations were small with $N=120$ subjects. Taken together, our results support the feasibility of multisite studies in rs-fMRI provided sample size is large enough.
-%and suggest to use a total sample size larger than $N=100$.
 \end{abstract}
 
 %-- 
@@ -215,30 +214,15 @@ the sample size and $K$ the number of covariates in the model. As secondary anal
 
 \paragraph{Data generation process}
 We implemented Monte-Carlo simulations to assess the detection sensitivity of group differences in rs-fMRI connectivity. The simulations were based on the 1000 FCP sample, with 8 sites totaling $345$ subjects. The multisite simulations were sampled from $148$ subjects, available across $S=7$ sites. The monosite simulations were sampled from $195$ subjects available at $S=1$ site (Cambridge). For each simulation, a subset of subjects of a given size $N$ was selected randomly and stratified by site. For each site, a ratio $W$ of the selected subjects were randomly assigned to a so-called  ``patient'' group. 
-%We ran simulations on 11 connections likely impacted by Alzheimer's disease and showing a fair-to-good test-retest reliability
 We focus our analysis on connections showing a fair-to-good test-retest reliability based on a previous study reporting 11 connections likely impacted by Alzheimer's disease, see \cite{Orban2015} for details. For each connection, a ``pathology'' effect was added to the connectivity measures of the subjects belonging to the ``patient'' group. This additive shift in connectivity for ``patients'' was selected as to achieve a specified effect size, defined below. 
 
-% \paragraph{Simulation parameters}
-% 
-% In summary, the simulations had the following parameters:
-% 
-% \begin{itemize}
-%  \item $W$: The allocation ratio of participants to the treatment group,
-%  \item $d$ effect size (Cohen’s $d$),
-%  \item $B=10^3$ number of simulations,
-%  \item $s$ average standard deviation from the reference dataset,
-%  \item $q=0.001$ threshold of false-positive rate,
-% \end{itemize}
-
-%The detection power quantitatively express the reproducibility of the findings and we can therefore choose a sample-size to achieve the desired detection power for a given probability of rejecting the null hypothesis $alpha$.
 
 \paragraph{Effect size (Cohen's $d$)}
 The Cohen's $d$ was used to quantify the effect size. For a group comparison, Cohen's $d$ is defined as the difference $\mu$ between the means of the two groups, divided by the standard deviation of the measures within each group, here assumed to be equal. For a given connection between brain regions $i$ and $j$, let $y_{i,j}$ be the functional connectivity measure for a particular subject of the 1000 FCP sample. If the subject was assigned to the ``patient'' group in a particular simulation, an effect was added to generate a simulated connectivity measure $y_{i,j}^*$ equal to $y_{i,j} + \mu$. For a specified effect size $d$, the parameter $\mu$ was set to $d\times s_{i,j}$, where $s_{i,j}$ is the standard deviation of connectivity between region $i$ and $j$. The parameter $s_{i,j}$ was estimated as the standard deviation of connectivity measures across subjects in the mono-site sample (Cambridge), without any ``pathological'' effect simulated.
 
 \paragraph{GLM tests}
-In order to detect changes between the simulated groups at each pair of connection, a GLM was estimated from the simulated data, using age, sex and frame displacement as confounds (corrected to have a zero mean across subjects). To account for site-specific effects, $S-1$ dummy variables (binary vectors coding for each site) were added to the model, with $S$ being the total number of sites used in the study, in addition to an intercept accounting for the global average. Finally, one dummy variable coded for the ``patient'' group. The regression coefficients of the linear model were estimated with ordinary least squares, and a $t$-test, with associated $p$-value, was calculated for the coefficient of the ``patient'' variable. A significant pathology effect was detected if the $p$ value was smaller than a prescribed $\alpha$ level. The $\alpha$ level needs to be adjusted for multiple comparisons (in our case 11 connections, but this would depend on the number of connections selected in a particular study), which can be done in an adaptive manner using FDR. We tested different typical values for $\alpha$ in $\{0.001,0.01,0.05\}$. For each simulation sample $b$ and each connection, we derived a $p$-value $p^{(*b)}$, and the effect was deemed detected if $p^{*b}$ was less than $\alpha$. The sensitivity of the test for a particular connection was evaluated by the frequency of positive detections over all simulation samples.
+In order to detect changes between the simulated groups at each pair of connection, a GLM was estimated from the simulated data, using age, sex and frame displacement as confounds (corrected to have a zero mean across subjects). To account for site-specific effects, $S-1$ dummy variables (binary vectors coding for each site) were added to the model, with $S$ being the total number of sites used in the study, in addition to an intercept accounting for the global average. Finally, one dummy variable coded for the ``patient'' group. The regression coefficients of the linear model were estimated with ordinary least squares, and a $t$-test, with associated $p$-value, was calculated for the coefficient of the ``patient'' variable. A significant pathology effect was detected if the $p$ value was smaller than a prescribed $\alpha$ level. The $\alpha$ level needs to be adjusted for multiple comparisons (in our case 11 connections, but this would depend on the number of connections selected in a particular study), which can be done in an adaptive manner using FDR. For discovery analyses or when connections are pre-specified, such as in e.g. \cite{Wang2012}, a more liberal threshold can be applied. In our case since we wanted to have a constant behavior independent of the effect size we tested different typical values for $\alpha$ in $\{0.001,0.01,0.05\}$. For each simulation sample $b$ and each connection, we derived a $p$-value $p^{(*b)}$, and the effect was deemed detected if $p^{*b}$ was less than $\alpha$. The sensitivity of the test for a particular connection was evaluated by the frequency of positive detections over all simulation samples.
 
-%Using sub-sampling it is possible to obtain an estimate of the mean statistical power over all samples which is call the detection power. These parameter estimates can then be used in simulation experiments to generate power curves.
 
 \paragraph{Prediction accuracy}
 In addition to mass univariate GLM tests, we also investigated a linear SVM
@@ -358,11 +342,9 @@ site as well as significant differences with the average of the remaining sites
 Visually, consistent with our previous observations in the DMN, the organization
 of the average connectome into large-scale resting-state networks was preserved
 across all sites. 
-%Some significant site effects were still detected in the connectivity both within each network, as well as in the off-diagonal rectangles highlighting between-network connectivity. By counting the frequency of sites showing a significant effect across sites, it was apparent that significant site effects were quite variable in their localization and spread across the full connectome.
+
 Some significant site effects were still detected in the connectivity both within each network, as well as between networks. By counting the number of sites showing a significant effect for each pair of regions, it was apparent that significant site effects were quite variable in their localization and spread across the full connectome (Figure \ref{fig_connectome_variability}D). 
 Concerning the association with the other confounding variables in the model (sex, age and motion) many connections were found to be significantly associated with motion, see Supplementary Material Figure \ref{fig_connectome_variability_motion}, although very few connections were found to be significantly associated with the sex and age, see Supplementary Material Figure \ref{fig_connectome_variability_sex} and \ref{fig_connectome_variability_age}. We also made sure that large Cambridge site did not bias the results by running the same analysis excluding that site, and it did not change the results see Supplementary Material Figure \ref{fig_connectome_variability_no_cambridge}.This finding supports the inclusions of age, sex and motion parameters in a GLM in order remove their confounding effects in addition to site effects.
-
-% The connectome standard deviation across subjects for each site is shown in supplementary material (see \ref{fig_std_connectomes}).
 
 \begin{figure}[htbp]
 \begin{center}
@@ -373,9 +355,6 @@ Effect size of the inter-site effects from a subset of 8 sites from the 1000 FCP
 }
 \label{fig_site_variability}
 \end{figure}
-%Distribution of intra-site (between-subject) standard deviation vs. inter-site (between-site) standard deviation, from a subset of 8 sites from the 1000 FCP dataset. A) Intra-site standard deviation for each site. B) Inter-site effect size expressed in Cohen's $d$ for each site.
-
-
 
 
 \paragraph{Site effects vs. within-site variations across subjects} We measured the amplitude of inter-site effects, represented as violin plots across connections using either the absolute difference in average connectivity (Figure \ref{fig_site_variability}A,C) or Cohen's $d$ effect size measures (Figure \ref{fig_site_variability}B,D). The violin plots include either every pair of connections from the BASC Cambridge parcellation (Figure \ref{fig_site_variability}A,B), or only the 11 connections selected for Monte-Carlo
@@ -390,14 +369,9 @@ and for the entire connectome in the Supplementary Material
 \ref{fig_std_connectomes}. Moreover the individual sites do not differ in the voxel-wise time series noise since there standard deviation is in the same range see Supplementary Figure \ref{fig_std_connectomes_distribution}.
 
 
-\paragraph{Parametric model validity} 
-We tested the model for heteroscedasticity and unsurprisingly we found that some connections are found to be significant when we perform a White test on them. 
-see in Supplementary Material \ref{fig_hetero}.
-
-
 \subsection{Multisite Monte-Carlo simulations}
 
-\begin{figure}[tbp]
+\begin{figure}[htbp]
 \centering
 {\includegraphics[width=\textwidth]{../figures/h0_results.png}}
 
@@ -408,7 +382,7 @@ Monte-Carlo simulation of the false positives (H0) for all effect size $d\in[0,2
 
 \paragraph{Control of false positives} Figure \ref{fig_h0}A good control of the false positives at the specified thresholds $\alpha\in \{0.001, 0.01, 0.05\}$, the only sample that is too conservative for a $W=50\%$ is multisite without site correction. Figure \ref{fig_h0}B shows, for a fixed allocation ratio ($W=50\%$) and three different sample sizes, $N\in\{40, 80, 120\}$, that across sample size the method hold perfectly on the expected false positive range except for multisite without site correction that present a more conservative false positives detection at $W=50\%$ (experiment $(\mathcal{E}_1)$). Although when we change the allocation ratio like in Figure \ref{fig_h0}C, $W\in \{50\%, 30\%, 15\%\}$ with a fix sample size ($N=120$) (Experiment $(\mathcal{E}_2)$), the monosite and multisite with site correction behave correctly but the multisite without site correction show drastic increase of the false positives as we unbalance the allocation ratio $W$.
 
-\begin{figure}[tbp]
+\begin{figure}[htbp]
 \centering
 {\includegraphics[width=\textwidth]{../figures/simulations_real_7sites.png}}
 
@@ -454,8 +428,6 @@ In experiment $(\mathcal{E}_3)$, we examined the impact of effect size and the v
 
 \section{Discussion and conclusions}
 
-% What is a reasonable alpha value?
-
 \paragraph{Inter-site effects in rs-fMRI connectivity} Typical resting-state networks, such as the DMN, the attentional, visual and sensorimotor networks, were reliably found across sites. This was strongly expected given the relative consistency of their distribution across individuals, studies, preprocessing approaches or even methods used to extract networks \citep[e.g.][]{Damoiseaux2006,Heuvel2008,Bellec2010c,Yeo2011,Power2011}. We however found that significant differences
 in average connectivity existed between sites, as previously
 reported by \cite{Yan2013a}. This site effects in connectivity may undermine the
@@ -463,9 +435,11 @@ generalization of the results derived at a single site. The inter-subject
 (intra-site) standard deviation of the connections was found to be more than
 twice as large as the inter-site absolute effect, on average across brain connections. This effect size measured in Cohen's d would be deemed small-to-moderate, which suggests that the impact of additive inter-site effects on statistical tests will be limited. This is a reassuring finding supporting the feasibility of statistical tests pooling fMRI data across multiple sites. Previous studies \citep{Sutton2008,Brown2011} had reported inter-site variance up to 10 times smaller than inter-subject variability, but these studies had much more homogeneous scanning environments than ours and also used different fMRI outcome measures. In our case, we still investigated only 3T scanners, mostly Siemens, and inter-site effects may be larger when considering other manufacturers or field strengths.\\
 
-%\paragraph{Spatial distribution of connectivity bias} We found that the brain connections exhibiting a significant inter-site bias were quite variable, with most of them being identified in less than one fourth of the sites. This suggests that there are no large network-specific inter-site bias or that the statistical power for detecting bias with the employed site sample size was limited. Looking at the spatial location of the site bias with respect to a brain parcellation with 7 networks, we noticed that the DMN and the dATT networks were less affected by site bias then the cerebellar, mesolimbic and sensorimotor networks \emph{did we really observe that? CD: Yes looking at the matrix of figure2D I could observe a bit more difference from one network to the other I can compute the average of the value in each network that would give use a cleaner picture... }. This last finding may be associated with the fact that those network are located on the periphery of the brain and may be more sensitive to motion artifacts. 
-
 \paragraph{Statistical power and multisite rs-fMRI} After accounting for site-related additive effects in a GLM, the multisite simulation pooling 7 sites together showed detection power close to that of a monosite simulation with equivalent sample size. The difference was noticeable for small sample size (total $N=40$), and became very small for a sample size $N=120$. Another observation was that, for a given detection power, the lowest effect size that we were able to detect was more variable across connections for a low sample size. In line with \cite{Eklund2016} we have shown that false positives detection is well controlled when correcting for site in the model although without site correction a large number of false positives emerge when faced with unbalanced samples. Taken together, these observations suggest to use sample size larger than $100$ subjects for GLM multisite studies. A limitation of this conclusion is that it is likely dependent on the number of sites pooled in the study and the actual number of subjects in each of those sites. 
+
+\paragraph{Validity of parametric model} In order to test the possible violations of the assumption of homoscedasticity exist over centers we performed a White test over each connection pair to make sure that the standard errors are not biased by heteroscedastic connections. Because the standard error is central to conducting significance tests and calculating confidence intervals, biased standard errors lead to incorrect conclusions about the significance of the regression coefficients. We found that some connections were rejecting the heteroscedastic hypothesis with an effect size between 0.12 and 0.22 for an average of 0.19 (for more details see Supplementary Material \ref{fig_hetero}), this effect size would be deemed small-to-moderate \citep{Cohen1992}. Although as shown in Figure \ref{fig_h0} the false positive were controled perfectly under the null hypothesis, therefore the p-values shown in this study are valid and well controlled, even though some connections were found to be heteroscedastic. Overall, the violation of the homoscedasticity assumption must be quite severe in order to present a major problem given the robust nature of ordinary least-squares regression.   
+
+\paragraph{Other parametric models} Other models could have been used that may be more robust to heteroscedasticity like weighted least squares regression or linear mixed-effects modeling \citep{Chen2013} but for the sake of simplicity we evaluated the site effect with two simple models: one univariate (ordinary least squared regression) and one multivariate (SVM) since the heteroscedasticity is not large enought to cause problem in false discovery those simple models are safe to use.
 
 \paragraph{Statistical power and sample size} For a medium effect size, e.g. $d=0.5$, the sensitivity was low (below $20\%$), even for monosite simulations with $N=120$ subjects. This sobering result supports the current trend in the literature to pool multiple data samples to increase sample size, at the cost of decreased homogeneity. We also found that resting-state studies based on 40 subjects or less, even at a single site, are seriously underpowered, except for extremely large effect sizes (Cohen's $d$ greater than 1.5). Finally, unbalanced patient allocation ratio in site samples greatly reduces sensitivity, even in monosite studies. Balanced datasets, i.e. with equal numbers of patients and controls at each site, should therefore be favored. 
 
