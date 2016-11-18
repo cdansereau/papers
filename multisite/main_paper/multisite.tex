@@ -143,7 +143,7 @@ We focused in this work on the most common measure of individual functional conn
 
 \paragraph{Statistical power in group comparisons at multiple sites}
 The statistical power of a group comparison study is the probability of finding
-a significant difference, when there is indeed a true difference. A careful study design involves to selecting a sample-size large enough to reach a given level of statistical power, e.g. $80\%$. In the GLM, the statistical power actually depends on a series of parameters \citep{Desmond2002,Durnez2014}: (1) the sample size (the larger the better); (2) the absolute size of the group difference (the larger the better), and, (3) the intrinsic variability of measurements (the smaller the better) (4) the rejection threshold $alpha$ for the null hypothesis.
+a significant difference, when there is indeed a true difference. A careful study design involves to selecting a sample-size large enough to reach a given level of statistical power, e.g. $80\%$. In the GLM, the statistical power actually depends on a series of parameters \citep{Desmond2002,Durnez2014}: (1) the sample size (the larger the better); (2) the absolute size of the group difference (the larger the better), and, (3) the intrinsic variability of measurements (the smaller the better) (4) the rejection threshold $\alpha$ for the null hypothesis.
 
 
 
@@ -221,7 +221,7 @@ We focus our analysis on connections showing a fair-to-good test-retest reliabil
 The Cohen's $d$ was used to quantify the effect size. For a group comparison, Cohen's $d$ is defined as the difference $\mu$ between the means of the two groups, divided by the standard deviation of the measures within each group, here assumed to be equal. For a given connection between brain regions $i$ and $j$, let $y_{i,j}$ be the functional connectivity measure for a particular subject of the 1000 FCP sample. If the subject was assigned to the ``patient'' group in a particular simulation, an effect was added to generate a simulated connectivity measure $y_{i,j}^*$ equal to $y_{i,j} + \mu$. For a specified effect size $d$, the parameter $\mu$ was set to $d\times s_{i,j}$, where $s_{i,j}$ is the standard deviation of connectivity between region $i$ and $j$. The parameter $s_{i,j}$ was estimated as the standard deviation of connectivity measures across subjects in the mono-site sample (Cambridge), without any ``pathological'' effect simulated.
 
 \paragraph{GLM tests}
-In order to detect changes between the simulated groups at each pair of connection, a GLM was estimated from the simulated data, using age, sex and frame displacement as confounds (corrected to have a zero mean across subjects). To account for site-specific effects, $S-1$ dummy variables (binary vectors coding for each site) were added to the model, with $S$ being the total number of sites used in the study, in addition to an intercept accounting for the global average. Finally, one dummy variable coded for the ``patient'' group. The regression coefficients of the linear model were estimated with ordinary least squares, and a $t$-test, with associated $p$-value, was calculated for the coefficient of the ``patient'' variable. A significant pathology effect was detected if the $p$ value was smaller than a prescribed $\alpha$ level. The $\alpha$ level needs to be adjusted for multiple comparisons (in our case 11 connections, but this would depend on the number of connections selected in a particular study), which can be done in an adaptive manner using FDR. For discovery analyses or when connections are pre-specified, such as in e.g. \cite{Wang2012}, a more liberal threshold can be applied. In our case since we wanted to have a constant behavior independent of the effect size we tested different typical values for $\alpha$ in $\{0.001,0.01,0.05\}$. For each simulation sample $b$ and each connection, we derived a $p$-value $p^{(*b)}$, and the effect was deemed detected if $p^{*b}$ was less than $\alpha$. The sensitivity of the test for a particular connection was evaluated by the frequency of positive detections over all simulation samples.
+In order to detect changes between the simulated groups at each pair of connection, a GLM was estimated from the simulated data, using age, sex and frame displacement as confounds (corrected to have a zero mean across subjects). To account for site-specific effects, $S-1$ dummy variables (binary vectors coding for each site) were added to the model, with $S$ being the total number of sites used in the study, in addition to an intercept accounting for the global average. Finally, one dummy variable coded for the ``patient'' group. The regression coefficients of the linear model were estimated with ordinary least squares, and a $t$-test, with associated $p$-value, was calculated for the coefficient of the ``patient'' variable. A significant pathology effect was detected if the $p$ value was smaller than a prescribed $\alpha$ level. The $\alpha$ level needs to be adjusted for multiple comparisons (in our case 11 connections, but this would depend on the number of connections selected in a particular study), which can be done in an adaptive manner using FDR. For discovery analyses or when connections are pre-specified, such as in e.g. \cite{Wang2012}, a more liberal threshold can be applied. In our case, since we wanted to have a constant behavior independent of the effect size, we tested different typical values for $\alpha$ in $\{0.001,0.01,0.05\}$. For each simulation sample $b$ and each connection, we derived a $p$-value $p^{(*b)}$, and the effect was deemed detected if $p^{*b}$ was less than $\alpha$. The sensitivity of the test for a particular connection was evaluated by the frequency of positive detections over all simulation samples.
 
 
 \paragraph{Prediction accuracy}
@@ -236,8 +236,6 @@ $N$, the SVM model was trained on $N$ subjects selected randomly and stratified
 by site. The accuracy of the model was evaluated on a separate sample consisting of the remaining subjects, unused during training. For example, for a multisite simulation with $N=80$ subjects for training, the model accuracy was tested on the remaining $68$ subjects: $148$ (available subjects) minus $80$ (subjects in the training set). During training, a 10-fold cross-validation was used to optimize the hyper-parameters of the SVM independently for each
 simulation. The mean and standard deviation of accuracy scores across all
 samples were derived for each simulation scenario.
-
-We implement a Monte-Carlo simulation of cross-validation
 
 % The simulation scenarios
 \paragraph{Simulation experiments}
@@ -283,7 +281,7 @@ and $N=28$, respectively.
 \includegraphics[width=0.8\linewidth]{../figures/dmn_multisite.png}
 \end{center}
 \caption[DMN variability across sites]{
-Panel A: map of the DMN obtained using a seed in the posterior cingulate cortex, averaging all subjects and sites together for the first row and then the average functional connectivity maps of the DMN for each of the 8 sites. Panel B shows on the first row the number of sites with a significant inter-site difference for each brain region and the subsequent rows shows the significant differences between the average functional connectivity maps of one site versus all the others.
+Panel A: map of the DMN obtained using a seed in the posterior cingulate cortex, averaging all subjects and sites together (first row) and then averaging all subjects for each of the 8 sites (subsequent rows). Panel B shows the number of sites with a significant inter-site difference for each brain region (first row) and the significant differences between the average functional connectivity maps of one site versus all the others (subsequent rows).
 }
 \label{fig_DMN_variability}
 \end{figure}
@@ -308,8 +306,8 @@ corrected for multiple comparisons across the brain with FDR at $q\leq 0.05$
 \citep{Benjamini1995}. A significant site effects for at least one connection could be
 identified for every site, without exception, Figure
 \ref{fig_DMN_variability}B. Figure \ref{fig_DMN_variability}C shows how
-reproducible the significant site effects in connectivity across the brain and
-sites were. The identified significant connections locations were quite variable across sites, most of them being
+reproducible were the significant site effects in connectivity across the brain and
+sites. The identified significant connections locations were quite variable across sites, most of them being
 identified at less than three sites.
 
 \begin{figure}[htbp]
@@ -344,7 +342,7 @@ of the average connectome into large-scale resting-state networks was preserved
 across all sites. 
 
 Some significant site effects were still detected in the connectivity both within each network, as well as between networks. By counting the number of sites showing a significant effect for each pair of regions, it was apparent that significant site effects were quite variable in their localization and spread across the full connectome (Figure \ref{fig_connectome_variability}D). 
-Concerning the association with the other confounding variables in the model (sex, age and motion) many connections were found to be significantly associated with motion, see Supplementary Material Figure \ref{fig_connectome_variability_motion}, although very few connections were found to be significantly associated with the sex and age, see Supplementary Material Figure \ref{fig_connectome_variability_sex} and \ref{fig_connectome_variability_age}. We also made sure that large Cambridge site did not bias the results by running the same analysis excluding that site, and it did not change the results see Supplementary Material Figure \ref{fig_connectome_variability_no_cambridge}.This finding supports the inclusions of age, sex and motion parameters in a GLM in order remove their confounding effects in addition to site effects.
+Concerning the association with the other confounding variables in the model (sex, age and motion) many connections were found to be significantly associated with motion, see Supplementary Material Figure \ref{fig_connectome_variability_motion}, although very few connections were found to be significantly associated with the sex and age, see Supplementary Material Figure \ref{fig_connectome_variability_sex} and \ref{fig_connectome_variability_age}. We also checked whether the analysis was predominantly driven by the larger Cambridge site. We thus ran the same analysis excluding that site, and found that it did not change the results substantially, see Supplementary Material Figure \ref{fig_connectome_variability_no_cambridge}. This finding supports the inclusion of age, sex and motion parameters in a GLM in order to remove their confounding effects in addition to site effects.
 
 \begin{figure}[htbp]
 \begin{center}
@@ -362,12 +360,13 @@ simulations (Figure \ref{fig_site_variability}C,D). For absolute differences, th
 median around 0.06, $5\%$ percentile near 0 and $95\%$ percentiles in the 0.08-
 0.1 range. For Cohen's $d$, the distributions were also consistent across sites, with a
 median around 0.33, $5\%$ percentile near 0 and $95\%$ percentiles in the 0.4-
-0.6 range. This effect size would be deemed small-to-moderate \citep{Cohen1992}, although such qualitative assessments need to be refined based on each application, which suggests that the impact of additive inter-site effects on statistical tests will be limited. Similar findings were observed across all possible connections, or across the 11 pairs of
-connections selected in the simulation study. The region-to-region maps of within-site, across-subjects standard
-deviations are presented for the DMN in Supplementary Figure \ref{fig_std_DMNs},
-and for the entire connectome in the Supplementary Material
-\ref{fig_std_connectomes}. Moreover the individual sites do not differ in the voxel-wise time series noise since there standard deviation is in the same range see Supplementary Figure \ref{fig_std_connectomes_distribution}.
+0.6 range. These effect sizes are typically deemed small-to-moderate \citep{Cohen1992}, although such qualitative assessment needs to be refined based on each application. This result thus suggests that the impact of additive inter-site effects on statistical tests will be limited. Similar findings were observed across all possible connections, or across the 11 pairs of
+connections selected in the simulation study. 
 
+\paragraph{Differences in standard deviation across sites} We also investigated the site differences in standard
+deviation of connectivity across subjects, see Supplementary Figure \ref{fig_std_DMNs} for the DMN,
+Supplementary Material
+\ref{fig_std_connectomes} for the connectomes. The standard group GLM assumes equal variance of resting-state connectivity across all subjects, or ``homoscedasticity''. Significant differences in across-subject standard deviation between sites violates the homoscedastic assumption, and may jeopardize the validity of the false-positive rates of the model. Qualitatively, we first observed that the standard deviation across subjects did not differ substantially across individual sites, on average across brain connections, see Supplementary Figure \ref{fig_std_connectomes_distribution}. We then ran a White's test aimed at rejecting homoscedasticity at each connection, independently. The White's tests resulted into a family of p-value, which was corrected for multiple comparisons using FDR ($q<0.05$). The homoscedastic hypothesis was rejected in a large portion of connections. This was expected due to the large overall number of subjects and consequently large statistical power of White's procedure. However, despite reaching significance, the absolute difference in the average standard deviation between two sites was 19\% of the grand average standard deviation, on average across pairs of sites. Such small departure from homoscedasticity likely has only mild impact on the GLM, which we formally investigated using Monte-Carlo simulations. 
 
 \subsection{Multisite Monte-Carlo simulations}
 
@@ -376,11 +375,11 @@ and for the entire connectome in the Supplementary Material
 {\includegraphics[width=\textwidth]{../figures/h0_results.png}}
 
 \caption{
-Monte-Carlo simulation of the false positives (H0) for all effect size $d\in[0,2]$, either for a monosite ($S=1$, left distribution), a multisite ($S=7$, middle distribution) with site correction (adding covariates coding for each site in the model) or a multisite without site correction ($S=7$, right distribution). In panel A, three different $\alpha$ values have been tested, $\alpha\in \{0.001, 0.01, 0.05\}$ with a fix sample size and patient allocation ratio ($N=120,W=50\%$). In panel B, three different sample sizes have been tested, $N\in \{40, 80, 120\}$ with a fix patient allocation ratio ($W=50\%$) (Experiment $(\mathcal{E}_1)$). In panel C, three different patient allocation ratios have been tested, $W\in \{50\%, 30\%, 15\%\}$ with a fix sample size ($N=120$) (Experiment $(\mathcal{E}_2)$).}
+Monte-Carlo simulation of the false positive rate in the absence of group differences ($d=0$), either for a monosite ($S=1$, left), a multisite ($S=7$) with (middle) or without (right) site covariates included in the GLM. In panel A, three different $\alpha$ values have been tested, $\alpha\in \{0.001, 0.01, 0.05\}$ with a fixed sample size and patient allocation ratio ($N=120,W=50\%$). In panel B, three different sample sizes have been tested, $N\in \{40, 80, 120\}$ with a fixed patient allocation ratio ($W=50\%$) (Experiment $(\mathcal{E}_1)$). In panel C, three different patient allocation ratios have been tested, $W\in \{50\%, 30\%, 15\%\}$ with a fixed sample size ($N=120$) (Experiment $(\mathcal{E}_2)$).}
 \label{fig_h0}
 \end{figure}
 
-\paragraph{Control of false positives} Figure \ref{fig_h0}A good control of the false positives at the specified thresholds $\alpha\in \{0.001, 0.01, 0.05\}$, the only sample that is too conservative for a $W=50\%$ is multisite without site correction. Figure \ref{fig_h0}B shows, for a fixed allocation ratio ($W=50\%$) and three different sample sizes, $N\in\{40, 80, 120\}$, that across sample size the method hold perfectly on the expected false positive range except for multisite without site correction that present a more conservative false positives detection at $W=50\%$ (experiment $(\mathcal{E}_1)$). Although when we change the allocation ratio like in Figure \ref{fig_h0}C, $W\in \{50\%, 30\%, 15\%\}$ with a fix sample size ($N=120$) (Experiment $(\mathcal{E}_2)$), the monosite and multisite with site correction behave correctly but the multisite without site correction show drastic increase of the false positives as we unbalance the allocation ratio $W$.
+\paragraph{Validity of the control of false positives in the GLM} An excellent control of the false positive rate was observed at all nominal levels $\alpha\in \{0.001, 0.01, 0.05\}$, both in monosite simulations or in multisite simulations, when site covariates were included in the GLM, see Figure~\ref{fig_h0}. This means that the nominal, user-specified, false positive rate matched precisely with the effect false positive rate measured in the simulations. This observation held for any combination of allocation ratio, $W\in\{15\%,30\%,50\%$\}, and sample size, $N\in\{40, 80, 120\}$. By contrast, when no site covariates were included in the GLM, the false positive rate was not controlled appropriately, sometimes by a wide margin. In the absence of site covariates, the procedure was sometimes too conservative, e.g. $W=50\%$, and sometimes very liberal, e.g. $N=120, W=15\%$. This experiment showed that, despite the mild departure from homoscedasticity reported above, the GLM does control for false-positive rate at each connection very precisely, if and only if site covariates are included in the model.
 
 \begin{figure}[htbp]
 \centering
@@ -435,11 +434,9 @@ generalization of the results derived at a single site. The inter-subject
 (intra-site) standard deviation of the connections was found to be more than
 twice as large as the inter-site absolute effect, on average across brain connections. This effect size measured in Cohen's d would be deemed small-to-moderate, which suggests that the impact of additive inter-site effects on statistical tests will be limited. This is a reassuring finding supporting the feasibility of statistical tests pooling fMRI data across multiple sites. Previous studies \citep{Sutton2008,Brown2011} had reported inter-site variance up to 10 times smaller than inter-subject variability, but these studies had much more homogeneous scanning environments than ours and also used different fMRI outcome measures. In our case, we still investigated only 3T scanners, mostly Siemens, and inter-site effects may be larger when considering other manufacturers or field strengths.\\
 
-\paragraph{Statistical power and multisite rs-fMRI} After accounting for site-related additive effects in a GLM, the multisite simulation pooling 7 sites together showed detection power close to that of a monosite simulation with equivalent sample size. The difference was noticeable for small sample size (total $N=40$), and became very small for a sample size $N=120$. Another observation was that, for a given detection power, the lowest effect size that we were able to detect was more variable across connections for a low sample size. In line with \cite{Eklund2016} we have shown that false positives detection is well controlled when correcting for site in the model although without site correction a large number of false positives emerge when faced with unbalanced samples. Taken together, these observations suggest to use sample size larger than $100$ subjects for GLM multisite studies. A limitation of this conclusion is that it is likely dependent on the number of sites pooled in the study and the actual number of subjects in each of those sites. 
+\paragraph{Statistical power and multisite rs-fMRI} After accounting for site-related additive effects in a GLM, the multisite simulation pooling 7 sites together showed detection power close to that of a monosite simulation with equivalent sample size. The difference was noticeable for small sample size (total $N=40$), and became very small for a sample size $N=120$. Another observation was that, for a given detection power, the lowest effect size that we were able to detect was more variable across connections for a low sample size. We demonstrated that a parametric group GLM does control precisely for the rate of false positive discoveries, even in multisite settings, as long as site covariates are included in the model. Taken together, these observations suggest to use sample size larger than $100$ subjects for GLM multisite studies. This conclusion may depend on the number of sites pooled in the study and the actual number of subjects in each of those sites, which we could not test in this work due to the size of the available sample. 
 
-\paragraph{Validity of parametric model} In order to test the possible violations of the assumption of homoscedasticity exist over centers we performed a White test over each connection pair to make sure that the standard errors are not biased by heteroscedastic connections. Because the standard error is central to conducting significance tests and calculating confidence intervals, biased standard errors lead to incorrect conclusions about the significance of the regression coefficients. We found that some connections were rejecting the heteroscedastic hypothesis with an effect size between 0.12 and 0.22 for an average of 0.19 (for more details see Supplementary Material \ref{fig_hetero}), this effect size would be deemed small-to-moderate \citep{Cohen1992}. Although as shown in Figure \ref{fig_h0} the false positive were controled perfectly under the null hypothesis, therefore the p-values shown in this study are valid and well controlled, even though some connections were found to be heteroscedastic. Overall, the violation of the homoscedasticity assumption must be quite severe in order to present a major problem given the robust nature of ordinary least-squares regression.   
-
-\paragraph{Other parametric models} Other models could have been used that may be more robust to heteroscedasticity like weighted least squares regression or linear mixed-effects modeling \citep{Chen2013} but for the sake of simplicity we evaluated the site effect with two simple models: one univariate (ordinary least squared regression) and one multivariate (SVM) since the heteroscedasticity is not large enought to cause problem in false discovery those simple models are safe to use.
+\paragraph{Site heteroscedasticity} We observed mild heteroscedasticity across sites. Our simulations showed that this does not compromise the control of false positive rate in the GLM, even under homoscedastic assumptions, with the range of contrasts we investigated. Regression models more robust to heteroscedasticity may be investigated in the future, e.g. weighted least squares regression or linear mixed-effects modeling \citep{Chen2013}.
 
 \paragraph{Statistical power and sample size} For a medium effect size, e.g. $d=0.5$, the sensitivity was low (below $20\%$), even for monosite simulations with $N=120$ subjects. This sobering result supports the current trend in the literature to pool multiple data samples to increase sample size, at the cost of decreased homogeneity. We also found that resting-state studies based on 40 subjects or less, even at a single site, are seriously underpowered, except for extremely large effect sizes (Cohen's $d$ greater than 1.5). Finally, unbalanced patient allocation ratio in site samples greatly reduces sensitivity, even in monosite studies. Balanced datasets, i.e. with equal numbers of patients and controls at each site, should therefore be favored. 
 
@@ -463,7 +460,7 @@ affected by a disease impacts as much accuracy as the effect size per
 connection. This suggests that feature reduction and/or selection is a very
 important step to improve sensitivity to small effect sizes.
 
-\paragraph{Beyond additive effect} An important limitation to our study is that we only investigated the impact of additive effect in brain connectivity across sites. Areas of future works include interactions between site effects and pathology, possibly in the form of polynomial and non-linear interactions. We hope that, in the future, fMRI data acquired on clinical cohorts at tens of sites will become available, which will enable researchers to test empirically the presence of such interaction effects. 
+\paragraph{Beyond additive site effect} An important limitation to our study is that we only investigated the impact of additive effect in brain connectivity across sites. Areas of future works include interactions between site effects and pathology, possibly in the form of polynomial and non-linear interactions. We hope that, in the future, fMRI data acquired on clinical cohorts at tens of sites will become available, which will enable researchers to test empirically the presence of such interaction effects. 
 
 \paragraph{Other types of multisite data} Another limitation of our study is that we only investigated multisite data featuring roughly equal sample sizes with fairly balanced patient allocation ratios at each site. Multisite studies including a very large number of sites with sometimes only a few subjects per site are however quite common, e.g. the Alzheimer's disease neuroimaging initiative (ADNI) \citep{Mueller2005} and many pharmaceutical clinical trials at phase II and III \footnote{\url{http://www.rochetrials.com/trialDetailsGet.action?studyNumber=BP28248}}. In this type of design, the multisite effect may play a much more pronounced role than in our simulations as it cannot be modeled in the GLM, and will become an intrinsic added source of inter-subject variance. Unfortunately, this type of design could no be tested with the current dataset due to the limited number of sites available. This represents an important avenue of future work. 
 
@@ -517,7 +514,7 @@ For all questions regarding the paper, please address correspondence to Pierre B
 \centering
 \includegraphics[width=0.75\textwidth]{../figures/dmn_stdmultisite.png}
 \caption[]{
-Overlay of the standard deviation of the DMN for each site on the MNI152 template.
+Standard deviation of resting-state connectivity across subjects, in the DMN, for each site, superimposed on the MNI152 template.
 }
 \label{fig_std_DMNs}
 \end{figure}
@@ -526,7 +523,7 @@ Overlay of the standard deviation of the DMN for each site on the MNI152 templat
 \centering
 \includegraphics[width=0.50\textwidth]{../figures/connectome_std_multisite2.png}
 \caption[]{
-The standard deviation of the connectome for each site.
+Standard deviation of resting-state connectivity across subjects, for the full connectome and each site.
 }
 \label{fig_std_connectomes}
 \end{figure}
@@ -537,13 +534,22 @@ The standard deviation of the connectome for each site.
 \begin{center}
 \includegraphics[width=0.75\linewidth]{../figures/multisite_std_distribution.png}
 \end{center}
-\caption[Standard deviation of the connections across sites]{
-The figure shows standard deviation of all the connection for each site.
+\caption[]{
+Standard deviation of resting-state connectivity across subjects, average across all connections, at each site.
 }
 \label{fig_std_connectomes_distribution}
 \end{figure}
 
 
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=\linewidth]{../figures/hetero.png}
+\end{center}
+\caption[]{
+Panel A shows the results of a White test for homoscedasticity, across sites. Panel B show the average absolute difference in standard deviation between any pair of sites, and Panel C show the same difference, relative to the average of the standard deviation at the two sites. 
+}
+\label{fig_hetero}
+\end{figure}
 
 \begin{figure}[htbp]
 \begin{center}
@@ -580,21 +586,12 @@ The figure shows average connectomes across all sites, as well as connections wi
 \includegraphics[width=\linewidth]{../figures/connectome_multisite_no_cambridge.png}
 \end{center}
 \caption[]{
-Figure shows average connectomes for individual sites, as well as connections with a significant site effects with the exception that we remove the cambridge site from the analysis.
+Average connectomes for individual sites, as well as connections with a significant site effects. This Figure is identical to Figure 2 in the paper, with the difference that the cambridge site was excluded from the analysis.
 }
 \label{fig_connectome_variability_no_cambridge}
 \end{figure}
 
 
-\begin{figure}[htbp]
-\begin{center}
-\includegraphics[width=\linewidth]{../figures/hetero.png}
-\end{center}
-\caption[]{
-Panel A show test of heteroscedasticity. Panel B show the size of the average absolute standard deviation difference between sites, and Panle C show the normalized diference also refered has the effect size. 
-}
-\label{fig_hetero}
-\end{figure}
 
 
 
