@@ -179,23 +179,30 @@ The full 1000 FCP sample includes 1082 subjects, with images acquired over 33 si
 
 
 \begin{table}[tbp]
+%\begin{sidewaystable}
+%\rotatebox{90}{%
 \resizebox{\columnwidth}{!}{%
-\begin{tabular}{lllllllllll}
-\textbf{Site}         & \textbf{Magnet} & \textbf{Scanner make} & \textbf{Channels} & \textbf{N} & \textbf{N final} & \textbf{Sex} & \textbf{Age} & \textbf{TR} & \textbf{\# Slices} & \textbf{\# Frames} \\
+%\resizebox{\paperwidth}{!}{%
+%\centering
+\begin{tabular}{lclcccccccc}
+\textbf{Site}         & \textbf{Magnet } & \textbf{Scanner } & \textbf{Channels } & \textbf{N } & \textbf{Nfinal } & \textbf{Sex } & \textbf{Age } & \textbf{TR } & \textbf{\#Slices } & \textbf{\#Frames} \\
 \hline
 Baltimore, USA        & 3T              & Philips Achieva       & 8                 & 23   & 21         & 8M/15F       & 20-40        & 2.5         & 47                 & 123                \\
-Berlin, Germany       & 3T              & Siemens Tim Trio      & 12                & 26   & 26         & 13M/13F      & 23-44        & 2.3         & 34                 & 195                \\
+Berlin, DE            & 3T              & Siemens Tim Trio      & 12                & 26   & 26         & 13M/13F      & 23-44        & 2.3         & 34                 & 195                \\
 Cambridge, USA        & 3T              & Siemens Tim Trio      & 12                & 198  & 195        & 75M/123F     & 18-30        & 3           & 47                 & 119                \\
 Newark, USA           & 3T              & Siemens Allegra       & 12                & 19   & 17         & 9M/10F       & 21-39        & 2           & 32                 & 135                \\
 NewYork\_b, USA       & 3T              & Siemens Allegra       & 1                 & 20   & 18         & 8M/12F       & 18-46        & 2           & 33                 & 175                \\
 Oxford, UK            & 3T              & Siemens Tim Trio      & 12                & 22   & 20         & 12M/10F      & 20-35        & 2           & 34                 & 175                \\
-Queensland, Australia & 3T              & Bruker                & 1                 & 19   & 17         & 11M/8F       & 20-34        & 2.1         & 36                 & 190                \\
+Queensland, AU        & 3T              & Bruker                & 1                 & 19   & 17         & 11M/8F       & 20-34        & 2.1         & 36                 & 190                \\
 SaintLouis, USA       & 3T              & Siemens Tim Trio      & 12                & 31   & 31         & 14M/17F      & 21-29        & 2.5         & 32                 & 127              
-\end{tabular}
+\end{tabular}%
 }
+%}
+%\end{sidewaystable}
 \caption{Sites selected from the 1000 Functional Connectome Project.}
 \label{table_dataset}
 \end{table}
+
 
 \subsection{Computational environment}
 All experiments were performed using the NeuroImaging Analysis Kit, NIAK\footnote{\url{http://simexp.github.io/niak/}} \citep{Bellec2011} version 0.12.18, under CentOS version 6.3 with Octave\footnote{\url{http://gnu.octave.org/}} version 3.8.1 and the Minc toolkit\footnote{\url{http://www.bic.mni.mcgill.ca/ServicesSoftware/ServicesSoftwareMincToolKit}} version 0.3.18. Analyses were executed in parallel on the ”Mammouth” supercomputer\footnote{\url{http://www.calculquebec.ca/index.php/en/resources/compute-servers/mammouth-serie-ii}} , using the pipeline system for Octave and Matlab, PSOM \citep{Bellec2012} version 1.0.2. The scripts used for processing can be found on Github\footnote{\url{https://github.com/SIMEXP/Projects/tree/master/multisite}}. Prediction was performed using the LibSVM library \citep{Chang2011}. Visualization was implemented using Python 2.7.9 from the Anaconda 2.2.0\footnote{\url{http://docs.continuum.io/anaconda/index}} distribution, along with Matplotlib\footnote{\url{http://matplotlib.org/}} \citep{matplotlib}, Seaborn\footnote{\url{http://stanford.edu/~mwaskom/software/seaborn/index.html}} and Nilearn\footnote{\url{http://nilearn.github.io/}} for brain map visualizations.
@@ -328,7 +335,7 @@ average connectome, pooling all subjects and sites together. The regions have
 been re-ordered based on a hierarchical clustering with Ward criterion. A
 network structure is clearly visible as squares of high connectivity on the
 diagonal of the connectome (as outlined by black lines). Each diagonal square
-corresponds to the intra-network connectivity for a partition into 7 networks (Figure \ref{fig_connectome_variability}A). These 7 networks were
+corresponds to the intra-network connectivity for a partition into 7 networks (Figure \ref{fig_connectome_variability}A). These 7 networks\footnote{\url{http://neurovault.org/images/39184/}} were
 consistent with the major resting-state networks reported using a cluster
 analysis in previous works \citep[e.g.][]{Heuvel2008, Bellec2010, Yeo2011,
 Power2011}: the DMN, visual, sensorimotor, dorsal and ventral attentional
@@ -495,7 +502,7 @@ the Canadian Institute of Health Research and funding from several partners incl
 \renewcommand{\thetable}{S\arabic{table}}
 \setcounter{figure}{0}
 \begin{center}
-\emph{Supplementary Material {--} Statistical power and site effects measurement in multisite resting-state fMRI connectivity}\\
+\emph{Supplementary Material {--} Statistical power and prediction accuracy in multisite resting-state fMRI connectivity}\\
 
 \vspace{\baselineskip}Submitted to Neuroimage.\\
 
