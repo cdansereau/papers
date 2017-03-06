@@ -1088,17 +1088,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="-39.392895"
-     inkscape:cy="238.49876"
+     inkscape:zoom="1.4"
+     inkscape:cx="-95.637582"
+     inkscape:cy="225.25655"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1392"
-     inkscape:window-height="956"
-     inkscape:window-x="332"
-     inkscape:window-y="59"
-     inkscape:window-maximized="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1056"
+     inkscape:window-x="0"
+     inkscape:window-y="1104"
+     inkscape:window-maximized="1"
      inkscape:snap-grids="false"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -1112,7 +1112,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1922,44 +1922,6 @@
          inkscape:connector-curvature="0" />
     </g>
     <g
-       transform="translate(-332.23693,-35.429237)"
-       id="g5525-8-5-7-7-7"
-       style="fill:#3d0072;fill-opacity:1">
-      <circle
-         style="fill:#3d0072;fill-opacity:1"
-         r="5"
-         cy="23"
-         cx="48"
-         class="st0"
-         id="XMLID_3_-1-0-9-3-8-28"
-         transform="translate(541.97909,460.8188)" />
-      <path
-         style="fill:#3d0072;fill-opacity:1"
-         d="m 584.67909,489.9188 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
-         class="st0"
-         id="XMLID_4_-4-9-4-2-4-1"
-         inkscape:connector-curvature="0" />
-    </g>
-    <g
-       transform="translate(-317.79735,-9.423398)"
-       id="g5525-8-5-7-7-6"
-       style="fill:#702b95;fill-opacity:1">
-      <circle
-         style="fill:#702b95;fill-opacity:1"
-         r="5"
-         cy="23"
-         cx="48"
-         class="st0"
-         id="XMLID_3_-1-0-9-3-8-3"
-         transform="translate(541.97909,460.8188)" />
-      <path
-         style="fill:#702b95;fill-opacity:1"
-         d="m 584.67909,489.9188 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
-         class="st0"
-         id="XMLID_4_-4-9-4-2-4-14"
-         inkscape:connector-curvature="0" />
-    </g>
-    <g
        transform="translate(-353.12864,-58.076325)"
        id="g5525-8-5-7-7-9-4"
        style="fill:#702b95;fill-opacity:1">
@@ -1979,25 +1941,6 @@
          inkscape:connector-curvature="0" />
     </g>
     <g
-       transform="translate(-335.61171,5.8376687)"
-       id="g5525-8-5-7-7-9-4-3"
-       style="fill:#965bd2;fill-opacity:1">
-      <circle
-         style="fill:#965bd2;fill-opacity:1"
-         r="5"
-         cy="23"
-         cx="48"
-         class="st0"
-         id="XMLID_3_-1-0-9-3-8-2-5-7"
-         transform="translate(541.97909,460.8188)" />
-      <path
-         style="fill:#965bd2;fill-opacity:1"
-         d="m 584.67909,489.9188 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
-         class="st0"
-         id="XMLID_4_-4-9-4-2-4-7-9-5"
-         inkscape:connector-curvature="0" />
-    </g>
-    <g
        transform="translate(-360.77793,-18.011075)"
        id="g5525-8-5-7-7-7-9-1"
        style="fill:#965bd2;fill-opacity:1">
@@ -2014,177 +1957,6 @@
          d="m 584.67909,489.9188 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
          class="st0"
          id="XMLID_4_-4-9-4-2-4-1-9-8"
-         inkscape:connector-curvature="0" />
-    </g>
-    <g
-       transform="translate(-297.18829,-75.783845)"
-       id="g5525-8-5-7-7-7-9-7"
-       style="fill:#702b95;fill-opacity:1">
-      <circle
-         style="fill:#702b95;fill-opacity:1"
-         r="5"
-         cy="23"
-         cx="48"
-         class="st0"
-         id="XMLID_3_-1-0-9-3-8-28-2-8"
-         transform="translate(541.97909,460.8188)" />
-      <path
-         style="fill:#702b95;fill-opacity:1"
-         d="m 584.67909,489.9188 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
-         class="st0"
-         id="XMLID_4_-4-9-4-2-4-1-9-7"
-         inkscape:connector-curvature="0" />
-    </g>
-    <g
-       transform="translate(-273.81326,-88.096915)"
-       id="g5525-8-5-7-7-96"
-       style="fill:#3d0072;fill-opacity:1">
-      <circle
-         style="fill:#3d0072;fill-opacity:1"
-         r="5"
-         cy="23"
-         cx="48"
-         class="st0"
-         id="XMLID_3_-1-0-9-3-8-8"
-         transform="translate(541.97909,460.8188)" />
-      <path
-         style="fill:#3d0072;fill-opacity:1"
-         d="m 584.67909,489.9188 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
-         class="st0"
-         id="XMLID_4_-4-9-4-2-4-4"
-         inkscape:connector-curvature="0" />
-    </g>
-    <g
-       transform="translate(-282.75339,-53.947845)"
-       id="g5525-8-5-7-7-6-9-9"
-       style="fill:#965bd2;fill-opacity:1">
-      <circle
-         style="fill:#965bd2;fill-opacity:1"
-         r="5"
-         cy="23"
-         cx="48"
-         class="st0"
-         id="XMLID_3_-1-0-9-3-8-3-0-9"
-         transform="translate(541.97909,460.8188)" />
-      <path
-         style="fill:#965bd2;fill-opacity:1"
-         d="m 584.67909,489.9188 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
-         class="st0"
-         id="XMLID_4_-4-9-4-2-4-14-0-4"
-         inkscape:connector-curvature="0" />
-    </g>
-    <g
-       transform="translate(-279.49637,-26.045265)"
-       id="g5525-8-5-7-7-9-1"
-       style="fill:#3d0072;fill-opacity:1">
-      <circle
-         style="fill:#3d0072;fill-opacity:1"
-         r="5"
-         cy="23"
-         cx="48"
-         class="st0"
-         id="XMLID_3_-1-0-9-3-8-2-7"
-         transform="translate(541.97909,460.8188)" />
-      <path
-         style="fill:#3d0072;fill-opacity:1"
-         d="m 584.67909,489.9188 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
-         class="st0"
-         id="XMLID_4_-4-9-4-2-4-7-1"
-         inkscape:connector-curvature="0" />
-    </g>
-    <g
-       transform="translate(-228.53805,-70.097785)"
-       id="g5525-8-5-7-7-7-7"
-       style="fill:#3d0072;fill-opacity:1">
-      <circle
-         style="fill:#3d0072;fill-opacity:1"
-         r="5"
-         cy="23"
-         cx="48"
-         class="st0"
-         id="XMLID_3_-1-0-9-3-8-28-8"
-         transform="translate(541.97909,460.8188)" />
-      <path
-         style="fill:#3d0072;fill-opacity:1"
-         d="m 584.67909,489.9188 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
-         class="st0"
-         id="XMLID_4_-4-9-4-2-4-1-7"
-         inkscape:connector-curvature="0" />
-    </g>
-    <g
-       transform="translate(-214.09847,-44.091945)"
-       id="g5525-8-5-7-7-6-1"
-       style="fill:#702b95;fill-opacity:1">
-      <circle
-         style="fill:#702b95;fill-opacity:1"
-         r="5"
-         cy="23"
-         cx="48"
-         class="st0"
-         id="XMLID_3_-1-0-9-3-8-3-5"
-         transform="translate(541.97909,460.8188)" />
-      <path
-         style="fill:#702b95;fill-opacity:1"
-         d="m 584.67909,489.9188 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
-         class="st0"
-         id="XMLID_4_-4-9-4-2-4-14-6"
-         inkscape:connector-curvature="0" />
-    </g>
-    <g
-       transform="translate(-249.42976,-92.744875)"
-       id="g5525-8-5-7-7-9-4-2"
-       style="fill:#702b95;fill-opacity:1">
-      <circle
-         style="fill:#702b95;fill-opacity:1"
-         r="5"
-         cy="23"
-         cx="48"
-         class="st0"
-         id="XMLID_3_-1-0-9-3-8-2-5-8"
-         transform="translate(541.97909,460.8188)" />
-      <path
-         style="fill:#702b95;fill-opacity:1"
-         d="m 584.67909,489.9188 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
-         class="st0"
-         id="XMLID_4_-4-9-4-2-4-7-9-7"
-         inkscape:connector-curvature="0" />
-    </g>
-    <g
-       transform="translate(-231.91283,-28.830885)"
-       id="g5525-8-5-7-7-9-4-3-2"
-       style="fill:#965bd2;fill-opacity:1">
-      <circle
-         style="fill:#965bd2;fill-opacity:1"
-         r="5"
-         cy="23"
-         cx="48"
-         class="st0"
-         id="XMLID_3_-1-0-9-3-8-2-5-7-0"
-         transform="translate(541.97909,460.8188)" />
-      <path
-         style="fill:#965bd2;fill-opacity:1"
-         d="m 584.67909,489.9188 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
-         class="st0"
-         id="XMLID_4_-4-9-4-2-4-7-9-5-8"
-         inkscape:connector-curvature="0" />
-    </g>
-    <g
-       transform="translate(-257.07905,-52.679625)"
-       id="g5525-8-5-7-7-7-9-1-5"
-       style="fill:#965bd2;fill-opacity:1">
-      <circle
-         style="fill:#965bd2;fill-opacity:1"
-         r="5"
-         cy="23"
-         cx="48"
-         class="st0"
-         id="XMLID_3_-1-0-9-3-8-28-2-3-7"
-         transform="translate(541.97909,460.8188)" />
-      <path
-         style="fill:#965bd2;fill-opacity:1"
-         d="m 584.67909,489.9188 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
-         class="st0"
-         id="XMLID_4_-4-9-4-2-4-1-9-8-3"
          inkscape:connector-curvature="0" />
     </g>
     <g
@@ -4194,50 +3966,259 @@
       </g>
     </g>
     <g
-       id="g7678-8"
-       transform="matrix(0.61547553,0,0,0.61547553,374.59029,-265.20705)">
-      <g
-         id="g5525-4-08-04-0"
-         transform="translate(-389.92478,-817.74177)"
-         style="fill:#0089bd;fill-opacity:1">
-        <circle
-           transform="translate(541.97909,460.8188)"
-           id="XMLID_3_-1-4-85-2-8"
-           class="st0"
-           cx="48"
-           cy="23"
-           r="5"
-           style="fill:#0089bd;fill-opacity:1" />
-        <path
-           inkscape:connector-curvature="0"
-           id="XMLID_4_-4-0-0-9-1"
-           class="st0"
-           d="m 584.67909,489.9188 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
-           style="fill:#0089bd;fill-opacity:1" />
-      </g>
-      <g
-         id="g5529-3-9-6-0"
-         transform="translate(-434.37149,-815.72146)"
-         style="opacity:1;fill:#00ceff;fill-opacity:1">
-        <circle
-           transform="translate(610.66946,449.70713)"
-           id="XMLID_3_-1-1-4-6-10-2"
-           class="st0"
-           cx="48"
-           cy="23"
-           r="5"
-           style="fill:#00ceff;fill-opacity:1" />
-        <path
-           inkscape:connector-curvature="0"
-           id="XMLID_4_-4-6-4-3-4-2"
-           class="st0"
-           d="m 653.36946,478.80713 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
-           style="fill:#00ceff;fill-opacity:1" />
-      </g>
+       style="fill:#0089bd;fill-opacity:1"
+       transform="matrix(0.61547553,0,0,0.61547553,132.60113,-768.5071)"
+       id="g5525-4-08-04-0">
+      <circle
+         style="fill:#0089bd;fill-opacity:1"
+         r="5"
+         cy="23"
+         cx="48"
+         class="st0"
+         id="XMLID_3_-1-4-85-2-8"
+         transform="translate(541.97909,460.8188)" />
+      <path
+         style="fill:#0089bd;fill-opacity:1"
+         d="m 584.67909,489.9188 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
+         class="st0"
+         id="XMLID_4_-4-0-0-9-1"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       style="opacity:1;fill:#3d0072;fill-opacity:1"
+       transform="matrix(0.61547553,0,0,0.61547553,63.24527,-763.26365)"
+       id="g5529-3-9-6-0">
+      <circle
+         style="fill:#3d0072;fill-opacity:1"
+         r="5"
+         cy="23"
+         cx="48"
+         class="st0"
+         id="XMLID_3_-1-1-4-6-10-2"
+         transform="translate(610.66946,449.70713)" />
+      <path
+         style="fill:#3d0072;fill-opacity:1"
+         d="m 653.36946,478.80713 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
+         class="st0"
+         id="XMLID_4_-4-6-4-3-4-2"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       style="fill:#3d0072;fill-opacity:1"
+       transform="matrix(0.61547553,0,0,0.61547553,71.350094,-765.5333)"
+       id="g5533-4-8-2-3">
+      <circle
+         style="fill:#3d0072;fill-opacity:1"
+         r="5"
+         cy="23"
+         cx="48"
+         class="st0"
+         id="XMLID_3_-1-9-7-4-9-7"
+         transform="translate(647.03495,465.86957)" />
+      <path
+         style="fill:#3d0072;fill-opacity:1"
+         d="m 689.73495,494.96957 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
+         class="st0"
+         id="XMLID_4_-4-3-6-8-0-97"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       transform="matrix(0.61547553,0,0,0.61547553,84.471626,-751.5705)"
+       id="g5529-7-0-8-5-4-1"
+       style="fill:#b4b4b4;fill-opacity:1">
+      <circle
+         style="fill:#b4b4b4;fill-opacity:1"
+         r="5"
+         cy="23"
+         cx="48"
+         class="st0"
+         id="XMLID_3_-1-1-5-5-2-9-4-5"
+         transform="translate(610.66946,449.70713)" />
+      <path
+         style="fill:#b4b4b4;fill-opacity:1"
+         d="m 653.36946,478.80713 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
+         class="st0"
+         id="XMLID_4_-4-6-6-3-83-6-9-4"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       transform="matrix(0.61547553,0,0,0.61547553,68.245235,-752.59146)"
+       id="g5533-3-6-7-2-9-1"
+       style="fill:#702b95;fill-opacity:1">
+      <circle
+         style="fill:#702b95;fill-opacity:1"
+         r="5"
+         cy="23"
+         cx="48"
+         class="st0"
+         id="XMLID_3_-1-9-8-9-6-1-3-5"
+         transform="translate(647.03495,465.86957)" />
+      <path
+         style="opacity:1;fill:#702b95;fill-opacity:1"
+         d="m 689.73495,494.96957 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
+         class="st0"
+         id="XMLID_4_-4-3-3-2-9-7-6-5"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       style="fill:#0089bd;fill-opacity:1"
+       transform="matrix(0.61547553,0,0,0.61547553,121.34633,-736.49984)"
+       id="g5525-4-0-4-2-3">
+      <circle
+         style="fill:#0089bd;fill-opacity:1"
+         r="5"
+         cy="23"
+         cx="48"
+         class="st0"
+         id="XMLID_3_-1-4-8-1-9-8"
+         transform="translate(541.97909,460.8188)" />
+      <path
+         style="fill:#0089bd;fill-opacity:1"
+         d="m 584.67909,489.9188 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
+         class="st0"
+         id="XMLID_4_-4-0-7-8-4-5"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       style="fill:#965bd2;fill-opacity:1"
+       transform="matrix(0.61547553,0,0,0.61547553,71.608403,-739.91932)"
+       id="g5533-4-7-5-3-2">
+      <circle
+         style="fill:#965bd2;fill-opacity:1"
+         r="5"
+         cy="23"
+         cx="48"
+         class="st0"
+         id="XMLID_3_-1-9-7-2-9-5-2"
+         transform="translate(647.03495,465.86957)" />
+      <path
+         style="fill:#965bd2;fill-opacity:1"
+         d="m 689.73495,494.96957 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
+         class="st0"
+         id="XMLID_4_-4-3-6-3-7-17-2"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       style="fill:#965bd2;fill-opacity:1"
+       transform="matrix(0.61547553,0,0,0.61547553,76.360108,-759.98815)"
+       id="g5529-3-9-3-4-6">
+      <circle
+         style="fill:#965bd2;fill-opacity:1"
+         r="5"
+         cy="23"
+         cx="48"
+         class="st0"
+         id="XMLID_3_-1-1-4-6-1-6-3"
+         transform="translate(610.66946,449.70713)" />
+      <path
+         style="fill:#965bd2;fill-opacity:1"
+         d="m 653.36946,478.80713 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
+         class="st0"
+         id="XMLID_4_-4-6-4-3-1-9-6"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       style="opacity:1;fill:#0089bd;fill-opacity:1"
+       transform="matrix(0.61547553,0,0,0.61547553,109.71597,-763.2316)"
+       id="g5525-4-08-0-4-70">
+      <circle
+         style="fill:#0089bd;fill-opacity:1"
+         r="5"
+         cy="23"
+         cx="48"
+         class="st0"
+         id="XMLID_3_-1-4-85-8-3-3"
+         transform="translate(541.97909,460.8188)" />
+      <path
+         style="fill:#0089bd;fill-opacity:1"
+         d="m 584.67909,489.9188 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
+         class="st0"
+         id="XMLID_4_-4-0-0-1-1-4"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       transform="matrix(0.61547553,0,0,0.61547553,98.79459,-767.58366)"
+       id="g5525-8-4-8-0-4-3"
+       style="fill:#d674a3;fill-opacity:1">
+      <circle
+         style="fill:#d674a3;fill-opacity:1"
+         r="5"
+         cy="23"
+         cx="48"
+         class="st0"
+         id="XMLID_3_-1-0-0-56-3-2-3"
+         transform="translate(541.97909,460.8188)" />
+      <path
+         style="fill:#d674a3;fill-opacity:1"
+         d="m 584.67909,489.9188 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
+         class="st0"
+         id="XMLID_4_-4-9-2-1-4-2-4"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       style="fill:#ff61b6;fill-opacity:1"
+       transform="matrix(0.61547553,0,0,0.61547553,68.618417,-738.37417)"
+       id="g5529-3-3-4-6-9-8">
+      <circle
+         style="fill:#ff61b6;fill-opacity:1"
+         r="5"
+         cy="23"
+         cx="48"
+         class="st0"
+         id="XMLID_3_-1-1-4-78-7-4-2-9"
+         transform="translate(610.66946,449.70713)" />
+      <path
+         style="fill:#ff61b6;fill-opacity:1"
+         d="m 653.36946,478.80713 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
+         class="st0"
+         id="XMLID_4_-4-6-4-8-6-00-8-0"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       transform="matrix(0.61547553,0,0,0.61547553,53.586467,-746.295)"
+       id="g5529-7-0-8-5-6-8-6"
+       style="opacity:1;fill:#b4b4b4;fill-opacity:1">
+      <circle
+         style="fill:#b4b4b4;fill-opacity:1"
+         r="5"
+         cy="23"
+         cx="48"
+         class="st0"
+         id="XMLID_3_-1-1-5-5-2-9-7-3-5"
+         transform="translate(610.66946,449.70713)" />
+      <path
+         style="fill:#b4b4b4;fill-opacity:1"
+         d="m 653.36946,478.80713 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
+         class="st0"
+         id="XMLID_4_-4-6-6-3-83-6-5-8-7"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       transform="matrix(0.61547553,0,0,0.61547553,35.360076,-747.31596)"
+       id="g5533-3-6-7-2-69-3-13"
+       style="fill:#702b95;fill-opacity:1">
+      <circle
+         style="fill:#702b95;fill-opacity:1"
+         r="5"
+         cy="23"
+         cx="48"
+         class="st0"
+         id="XMLID_3_-1-9-8-9-6-1-8-3-3"
+         transform="translate(647.03495,465.86957)" />
+      <path
+         style="fill:#702b95;fill-opacity:1"
+         d="m 689.73495,494.96957 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
+         class="st0"
+         id="XMLID_4_-4-3-3-2-9-7-7-3-3"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g5206"
+       transform="translate(0,0.75654902)">
       <g
          style="opacity:1;fill:#1664cc;fill-opacity:1"
          id="g5525-8-4-8-2-9"
-         transform="translate(-414.16844,-824.81283)">
+         transform="matrix(0.61547553,0,0,0.61547553,29.34771,-770.85916)">
         <circle
            transform="translate(541.97909,460.8188)"
            id="XMLID_3_-1-0-0-56-2-7"
@@ -4254,85 +4235,9 @@
            style="fill:#1664cc;fill-opacity:1" />
       </g>
       <g
-         style="fill:#f74900;fill-opacity:1"
-         id="g5529-7-0-1-0-6"
-         transform="translate(-422.00939,-777.64516)">
-        <circle
-           transform="translate(610.66946,449.70713)"
-           id="XMLID_3_-1-1-5-5-5-5-4"
-           class="st0"
-           cx="48"
-           cy="23"
-           r="5"
-           style="fill:#f74900;fill-opacity:1" />
-        <path
-           inkscape:connector-curvature="0"
-           id="XMLID_4_-4-6-6-3-9-5-6"
-           class="st0"
-           d="m 653.36946,478.80713 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
-           style="fill:#f74900;fill-opacity:1" />
-      </g>
-      <g
-         id="g5533-4-8-2-3"
-         transform="translate(-489.44301,-812.91006)"
-         style="fill:#ffa100;fill-opacity:1">
-        <circle
-           transform="translate(647.03495,465.86957)"
-           id="XMLID_3_-1-9-7-4-9-7"
-           class="st0"
-           cx="48"
-           cy="23"
-           r="5"
-           style="fill:#ffa100;fill-opacity:1" />
-        <path
-           inkscape:connector-curvature="0"
-           id="XMLID_4_-4-3-6-8-0-97"
-           class="st0"
-           d="m 689.73495,494.96957 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
-           style="fill:#ffa100;fill-opacity:1" />
-      </g>
-      <g
-         style="fill:#f74900;fill-opacity:1"
-         id="g5533-3-6-1-2-4"
-         transform="translate(-481.18513,-800.45023)">
-        <circle
-           transform="translate(647.03495,465.86957)"
-           id="XMLID_3_-1-9-8-9-0-8-9"
-           class="st0"
-           cx="48"
-           cy="23"
-           r="5"
-           style="fill:#f74900;fill-opacity:1" />
-        <path
-           inkscape:connector-curvature="0"
-           id="XMLID_4_-4-3-3-2-3-3-1"
-           class="st0"
-           d="m 689.73495,494.96957 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
-           style="fill:#f74900;fill-opacity:1" />
-      </g>
-      <g
-         id="g5529-3-8-0-8-7"
-         transform="translate(-471.57848,-787.32467)"
-         style="fill:#f74900;fill-opacity:1">
-        <circle
-           transform="translate(610.66946,449.70713)"
-           id="XMLID_3_-1-1-4-7-44-0-0"
-           class="st0"
-           cx="48"
-           cy="23"
-           r="5"
-           style="fill:#f74900;fill-opacity:1" />
-        <path
-           inkscape:connector-curvature="0"
-           id="XMLID_4_-4-6-4-4-4-4-6"
-           class="st0"
-           d="m 653.36946,478.80713 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
-           style="fill:#f74900;fill-opacity:1" />
-      </g>
-      <g
          style="fill:#1664cc;fill-opacity:1"
          id="g5525-8-4-5-3-9-3"
-         transform="translate(-368.27552,-767.25288)">
+         transform="matrix(0.61547553,0,0,0.61547553,25.34771,-751.43242)">
         <circle
            transform="translate(541.97909,460.8188)"
            id="XMLID_3_-1-0-0-5-1-62-9"
@@ -4349,46 +4254,8 @@
            style="fill:#1664cc;fill-opacity:1" />
       </g>
       <g
-         style="fill:#b4b4b4;fill-opacity:1"
-         id="g5529-7-0-8-5-4-1"
-         transform="translate(-484.37127,-790.22386)">
-        <circle
-           transform="translate(610.66946,449.70713)"
-           id="XMLID_3_-1-1-5-5-2-9-4-5"
-           class="st0"
-           cx="48"
-           cy="23"
-           r="5"
-           style="fill:#b4b4b4;fill-opacity:1" />
-        <path
-           inkscape:connector-curvature="0"
-           id="XMLID_4_-4-6-6-3-83-6-9-4"
-           class="st0"
-           d="m 653.36946,478.80713 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
-           style="fill:#b4b4b4;fill-opacity:1" />
-      </g>
-      <g
-         style="fill:#00ceff;fill-opacity:1"
-         id="g5533-3-6-7-2-9-1"
-         transform="translate(-494.48766,-791.88268)">
-        <circle
-           transform="translate(647.03495,465.86957)"
-           id="XMLID_3_-1-9-8-9-6-1-3-5"
-           class="st0"
-           cx="48"
-           cy="23"
-           r="5"
-           style="fill:#00ceff;fill-opacity:1" />
-        <path
-           inkscape:connector-curvature="0"
-           id="XMLID_4_-4-3-3-2-9-7-6-5"
-           class="st0"
-           d="m 689.73495,494.96957 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
-           style="opacity:1;fill:#00ceff;fill-opacity:1" />
-      </g>
-      <g
          id="g5529-3-8-3-8-0-4"
-         transform="translate(-484.88101,-765.12006)"
+         transform="matrix(0.61547553,0,0,0.61547553,5.070468,-746.11972)"
          style="fill:#1664cc;fill-opacity:1">
         <circle
            transform="translate(610.66946,449.70713)"
@@ -4406,104 +4273,127 @@
            style="fill:#1664cc;fill-opacity:1" />
       </g>
       <g
-         id="g5525-4-0-4-2-3"
-         transform="translate(-401.71208,-765.73766)"
-         style="fill:#0089bd;fill-opacity:1">
+         style="opacity:1;fill:#1664cc;fill-opacity:1"
+         id="g5525-8-4-5-3-4-8-2"
+         transform="matrix(0.61547553,0,0,0.61547553,35.34771,-746.15692)">
         <circle
            transform="translate(541.97909,460.8188)"
-           id="XMLID_3_-1-4-8-1-9-8"
+           id="XMLID_3_-1-0-0-5-1-6-8-4"
            class="st0"
            cx="48"
            cy="23"
            r="5"
-           style="fill:#0089bd;fill-opacity:1" />
+           style="fill:#1664cc;fill-opacity:1" />
         <path
            inkscape:connector-curvature="0"
-           id="XMLID_4_-4-0-7-8-4-5"
+           id="XMLID_4_-4-9-2-4-7-2-6-7"
            class="st0"
            d="m 584.67909,489.9188 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
-           style="fill:#0089bd;fill-opacity:1" />
+           style="fill:#1664cc;fill-opacity:1" />
       </g>
       <g
-         id="g5533-4-7-5-3-2"
-         transform="translate(-482.52428,-771.29349)"
-         style="fill:#ffa100;fill-opacity:1">
-        <circle
-           transform="translate(647.03495,465.86957)"
-           id="XMLID_3_-1-9-7-2-9-5-2"
-           class="st0"
-           cx="48"
-           cy="23"
-           r="5"
-           style="fill:#ffa100;fill-opacity:1" />
-        <path
-           inkscape:connector-curvature="0"
-           id="XMLID_4_-4-3-6-3-7-17-2"
-           class="st0"
-           d="m 689.73495,494.96957 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
-           style="fill:#ffa100;fill-opacity:1" />
-      </g>
-      <g
-         id="g5525-4-08-0-4-70"
-         transform="translate(-456.35335,-809.17035)"
-         style="opacity:1;fill:#0089bd;fill-opacity:1">
-        <circle
-           transform="translate(541.97909,460.8188)"
-           id="XMLID_3_-1-4-85-8-3-3"
-           class="st0"
-           cx="48"
-           cy="23"
-           r="5"
-           style="fill:#0089bd;fill-opacity:1" />
-        <path
-           inkscape:connector-curvature="0"
-           id="XMLID_4_-4-0-0-1-1-4"
-           class="st0"
-           d="m 584.67909,489.9188 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
-           style="fill:#0089bd;fill-opacity:1" />
-      </g>
-      <g
-         id="g5529-3-9-3-4-6"
-         transform="translate(-500.80006,-807.15004)"
-         style="fill:#ffa100;fill-opacity:1">
+         id="g5529-3-8-3-8-2-8-8"
+         transform="matrix(0.61547553,0,0,0.61547553,-2.929532,-758.84423)"
+         style="fill:#1664cc;fill-opacity:1">
         <circle
            transform="translate(610.66946,449.70713)"
-           id="XMLID_3_-1-1-4-6-1-6-3"
+           id="XMLID_3_-1-1-4-7-4-5-8-0-5"
            class="st0"
            cx="48"
            cy="23"
            r="5"
-           style="fill:#ffa100;fill-opacity:1" />
+           style="fill:#1664cc;fill-opacity:1" />
         <path
            inkscape:connector-curvature="0"
-           id="XMLID_4_-4-6-4-3-1-9-6"
+           id="XMLID_4_-4-6-4-4-7-7-29-4-1"
            class="st0"
            d="m 653.36946,478.80713 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
-           style="fill:#ffa100;fill-opacity:1" />
+           style="fill:#1664cc;fill-opacity:1" />
       </g>
+    </g>
+    <g
+       style="fill:#d674a3;fill-opacity:1"
+       transform="matrix(0.61547553,0,0,0.61547553,104.46118,-736.81069)"
+       id="g5525-4-0-4-9-7-0">
+      <circle
+         style="fill:#d674a3;fill-opacity:1"
+         r="5"
+         cy="23"
+         cx="48"
+         class="st0"
+         id="XMLID_3_-1-4-8-1-6-6-8"
+         transform="translate(541.97909,460.8188)" />
+      <path
+         style="fill:#d674a3;fill-opacity:1"
+         d="m 584.67909,489.9188 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
+         class="st0"
+         id="XMLID_4_-4-0-7-8-0-8-7"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g5223"
+       transform="translate(0,-3.22508)">
       <g
-         style="fill:#009872;fill-opacity:1"
-         id="g5525-8-4-8-0-4-3"
-         transform="translate(-480.59701,-816.24141)">
+         style="fill:#f74900;fill-opacity:1"
+         id="g5529-7-0-1-0-6"
+         transform="matrix(0.61547553,0,0,0.61547553,137.71482,-753.16378)">
         <circle
-           transform="translate(541.97909,460.8188)"
-           id="XMLID_3_-1-0-0-56-3-2-3"
+           transform="translate(610.66946,449.70713)"
+           id="XMLID_3_-1-1-5-5-5-5-4"
            class="st0"
            cx="48"
            cy="23"
            r="5"
-           style="fill:#009872;fill-opacity:1" />
+           style="fill:#f74900;fill-opacity:1" />
         <path
            inkscape:connector-curvature="0"
-           id="XMLID_4_-4-9-2-1-4-2-4"
+           id="XMLID_4_-4-6-6-3-9-5-6"
            class="st0"
-           d="m 584.67909,489.9188 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
-           style="fill:#009872;fill-opacity:1" />
+           d="m 653.36946,478.80713 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
+           style="fill:#f74900;fill-opacity:1" />
+      </g>
+      <g
+         style="fill:#f74900;fill-opacity:1"
+         id="g5533-3-6-1-2-4"
+         transform="matrix(0.61547553,0,0,0.61547553,121.33275,-739.04417)">
+        <circle
+           transform="translate(647.03495,465.86957)"
+           id="XMLID_3_-1-9-8-9-0-8-9"
+           class="st0"
+           cx="48"
+           cy="23"
+           r="5"
+           style="fill:#f74900;fill-opacity:1" />
+        <path
+           inkscape:connector-curvature="0"
+           id="XMLID_4_-4-3-3-2-3-3-1"
+           class="st0"
+           d="m 689.73495,494.96957 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
+           style="fill:#f74900;fill-opacity:1" />
+      </g>
+      <g
+         id="g5529-3-8-0-8-7"
+         transform="matrix(0.61547553,0,0,0.61547553,147.71482,-760.03857)"
+         style="fill:#f74900;fill-opacity:1">
+        <circle
+           transform="translate(610.66946,449.70713)"
+           id="XMLID_3_-1-1-4-7-44-0-0"
+           class="st0"
+           cx="48"
+           cy="23"
+           r="5"
+           style="fill:#f74900;fill-opacity:1" />
+        <path
+           inkscape:connector-curvature="0"
+           id="XMLID_4_-4-6-4-4-4-4-6"
+           class="st0"
+           d="m 653.36946,478.80713 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
+           style="fill:#f74900;fill-opacity:1" />
       </g>
       <g
          style="opacity:1;fill:#f74900;fill-opacity:1"
          id="g5533-3-6-1-3-6-4"
-         transform="translate(-547.6137,-791.87881)">
+         transform="matrix(0.61547553,0,0,0.61547553,133.33275,-739.0026)">
         <circle
            transform="translate(647.03495,465.86957)"
            id="XMLID_3_-1-9-8-9-0-3-4-3"
@@ -4521,7 +4411,7 @@
       </g>
       <g
          id="g5529-3-8-0-0-2-7"
-         transform="translate(-538.00705,-778.75325)"
+         transform="matrix(0.61547553,0,0,0.61547553,157.71482,-754.68613)"
          style="fill:#f74900;fill-opacity:1">
         <circle
            transform="translate(610.66946,449.70713)"
@@ -4539,122 +4429,8 @@
            style="fill:#f74900;fill-opacity:1" />
       </g>
       <g
-         id="g5529-3-3-4-6-9-8"
-         transform="translate(-497.13085,-768.78299)"
-         style="fill:#ff61b6;fill-opacity:1">
-        <circle
-           transform="translate(610.66946,449.70713)"
-           id="XMLID_3_-1-1-4-78-7-4-2-9"
-           class="st0"
-           cx="48"
-           cy="23"
-           r="5"
-           style="fill:#ff61b6;fill-opacity:1" />
-        <path
-           inkscape:connector-curvature="0"
-           id="XMLID_4_-4-6-4-8-6-00-8-0"
-           class="st0"
-           d="m 653.36946,478.80713 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
-           style="fill:#ff61b6;fill-opacity:1" />
-      </g>
-      <g
-         style="opacity:1;fill:#1664cc;fill-opacity:1"
-         id="g5525-8-4-5-3-4-8-2"
-         transform="translate(-440.70409,-758.68146)">
-        <circle
-           transform="translate(541.97909,460.8188)"
-           id="XMLID_3_-1-0-0-5-1-6-8-4"
-           class="st0"
-           cx="48"
-           cy="23"
-           r="5"
-           style="fill:#1664cc;fill-opacity:1" />
-        <path
-           inkscape:connector-curvature="0"
-           id="XMLID_4_-4-9-2-4-7-2-6-7"
-           class="st0"
-           d="m 584.67909,489.9188 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
-           style="fill:#1664cc;fill-opacity:1" />
-      </g>
-      <g
-         style="opacity:1;fill:#b4b4b4;fill-opacity:1"
-         id="g5529-7-0-8-5-6-8-6"
-         transform="translate(-550.79984,-781.65244)">
-        <circle
-           transform="translate(610.66946,449.70713)"
-           id="XMLID_3_-1-1-5-5-2-9-7-3-5"
-           class="st0"
-           cx="48"
-           cy="23"
-           r="5"
-           style="fill:#b4b4b4;fill-opacity:1" />
-        <path
-           inkscape:connector-curvature="0"
-           id="XMLID_4_-4-6-6-3-83-6-5-8-7"
-           class="st0"
-           d="m 653.36946,478.80713 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
-           style="fill:#b4b4b4;fill-opacity:1" />
-      </g>
-      <g
-         style="fill:#009872;fill-opacity:1"
-         id="g5533-3-6-7-2-69-3-13"
-         transform="translate(-560.91623,-783.31126)">
-        <circle
-           transform="translate(647.03495,465.86957)"
-           id="XMLID_3_-1-9-8-9-6-1-8-3-3"
-           class="st0"
-           cx="48"
-           cy="23"
-           r="5"
-           style="fill:#009872;fill-opacity:1" />
-        <path
-           inkscape:connector-curvature="0"
-           id="XMLID_4_-4-3-3-2-9-7-7-3-3"
-           class="st0"
-           d="m 689.73495,494.96957 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
-           style="fill:#009872;fill-opacity:1" />
-      </g>
-      <g
-         id="g5529-3-8-3-8-2-8-8"
-         transform="translate(-551.30958,-756.54864)"
-         style="fill:#1664cc;fill-opacity:1">
-        <circle
-           transform="translate(610.66946,449.70713)"
-           id="XMLID_3_-1-1-4-7-4-5-8-0-5"
-           class="st0"
-           cx="48"
-           cy="23"
-           r="5"
-           style="fill:#1664cc;fill-opacity:1" />
-        <path
-           inkscape:connector-curvature="0"
-           id="XMLID_4_-4-6-4-4-7-7-29-4-1"
-           class="st0"
-           d="m 653.36946,478.80713 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
-           style="fill:#1664cc;fill-opacity:1" />
-      </g>
-      <g
-         id="g5525-4-0-4-9-7-0"
-         transform="translate(-468.14065,-757.16624)"
-         style="fill:#d674a3;fill-opacity:1">
-        <circle
-           transform="translate(541.97909,460.8188)"
-           id="XMLID_3_-1-4-8-1-6-6-8"
-           class="st0"
-           cx="48"
-           cy="23"
-           r="5"
-           style="fill:#d674a3;fill-opacity:1" />
-        <path
-           inkscape:connector-curvature="0"
-           id="XMLID_4_-4-0-7-8-0-8-7"
-           class="st0"
-           d="m 584.67909,489.9188 c -3.5,0 -6.4,2.9 -6.4,6.5 l 0,15.3 c 0,3 4.4,3 4.4,0 l 0,-14 1,0 0,38.3 c 0,4 5.8,3.9 5.8,0 l 0,-22.3 1,0 0,22.2 c 0,3.9 5.8,4 5.8,0 l 0,-38.3 1,0 0,14 c 0,3 4.3,3 4.3,0 l 0,-15.2 c 0,-3.3 -2.6,-6.5 -6.4,-6.5 l -10.5,0 z"
-           style="fill:#d674a3;fill-opacity:1" />
-      </g>
-      <g
          id="g5533-4-7-5-27-9-6"
-         transform="translate(-522.95285,-762.72207)"
+         transform="matrix(0.61547553,0,0,0.61547553,145.33275,-757.22424)"
          style="opacity:1;fill:#f74900;fill-opacity:1">
         <circle
            transform="translate(647.03495,465.86957)"
