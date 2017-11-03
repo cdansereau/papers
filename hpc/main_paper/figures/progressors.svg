@@ -16,7 +16,7 @@
    version="1.1"
    inkscape:version="0.48.4 r9939"
    sodipodi:docname="progressors.svg"
-   inkscape:export-filename="/home/cdansereau/git/papers/sbp/main_paper/figures/progressors.png"
+   inkscape:export-filename="/home/cdansereau/git/papers/hpc/main_paper/figures/progressors.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300">
   <defs
@@ -53,9 +53,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.90509675"
-     inkscape:cx="-74.874351"
-     inkscape:cy="119.98393"
+     inkscape:zoom="1.2800001"
+     inkscape:cx="212.93312"
+     inkscape:cy="333.01603"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -77,7 +77,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -396,7 +396,7 @@
          x="-571.93176"
          y="221.37996"
          id="tspan3863-6-1-0-2-2"
-         style="font-size:8.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#323232;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato">HPC subjects</tspan></text>
+         style="font-size:8.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#323232;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato">HPS subjects</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:8.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#323232;fill-opacity:1;stroke:none;font-family:Lato;-inkscape-font-specification:Lato"
@@ -629,7 +629,7 @@
          x="-443.48276"
          y="221.37996"
          id="tspan3861-3-5-8-5"
-         style="font-size:8.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#323232;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato">HPC MCI</tspan></text>
+         style="font-size:8.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#323232;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato">HPS MCI</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text3789-0-7-6"

@@ -17,7 +17,7 @@
    version="1.1"
    inkscape:version="0.48.4 r9939"
    sodipodi:docname="methods.svg"
-   inkscape:export-filename="/home/cdansereau/git/papers/sbp/main_paper/figures/methods.png"
+   inkscape:export-filename="/home/cdansereau/git/papers/hpc/main_paper/figures/methods.png"
    inkscape:export-xdpi="500"
    inkscape:export-ydpi="500">
   <defs
@@ -1829,7 +1829,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="2.1082228"
      inkscape:cx="379.07571"
-     inkscape:cy="149.962"
+     inkscape:cy="249.09763"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -1866,7 +1866,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1901,7 +1901,7 @@
          x="209.36797"
          y="843.34375"
          style="font-size:11.25px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#4b4b4b;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
-         id="tspan4229">Stage 1: Highly  predictable cases (HPC)</tspan></text>
+         id="tspan4229">Stage 1: Highly  predictive signature (HPS)</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:sans-serif"
@@ -1913,7 +1913,7 @@
          id="tspan4446-72"
          x="577.65839"
          y="843.20874"
-         style="font-size:11.25px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#4b4b4b;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato">Stage 2: learning HPC</tspan></text>
+         style="font-size:11.25px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#4b4b4b;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato">Stage 2: learning HPS</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:sans-serif"
@@ -1925,7 +1925,7 @@
          id="tspan4446-72-4-8"
          x="606.33246"
          y="884.82367"
-         style="font-size:11.25px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#4b4b4b;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato">HPC</tspan><tspan
+         style="font-size:11.25px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#4b4b4b;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato">HPS</tspan><tspan
          sodipodi:role="line"
          x="606.33246"
          y="898.88617"
@@ -3489,7 +3489,7 @@
          x="481.146"
          y="884.95868"
          style="font-size:11.25px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#4b4b4b;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
-         id="tspan6445">HPC</tspan><tspan
+         id="tspan6445">HPS</tspan><tspan
          sodipodi:role="line"
          x="481.146"
          y="899.02118"
@@ -3843,7 +3843,7 @@
          id="tspan4446-72-4-8-0"
          x="543.05548"
          y="884.82367"
-         style="font-size:11.25px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#4b4b4b;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato">HPC</tspan><tspan
+         style="font-size:11.25px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#4b4b4b;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato">HPS</tspan><tspan
          sodipodi:role="line"
          x="543.05548"
          y="898.88617"
@@ -4177,7 +4177,7 @@
            style="font-size:11.25000286px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#4b4b4b;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
            y="758.68835"
            x="1003.5166"
-           sodipodi:role="line">HPCL</tspan></text>
+           sodipodi:role="line">HPSL</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text4444-2-8-0-73-1-4-1-5-8"
@@ -4657,7 +4657,7 @@
            x="1085.7834"
            y="757.85699"
            style="font-size:9.00000286px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#4b4b4b;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
-           id="tspan3465-6-6-3-5-4">HPC</tspan></text>
+           id="tspan3465-6-6-3-5-4">HPS</tspan></text>
       <path
          sodipodi:open="true"
          sodipodi:end="5.0928952"
@@ -5246,7 +5246,7 @@
            y="1233.1666"
            x="527.81812"
            id="tspan4415-8-8-1"
-           sodipodi:role="line">HPC-AD</tspan></text>
+           sodipodi:role="line">HPS-AD</tspan></text>
     </g>
     <g
        id="g3946"
@@ -5282,7 +5282,7 @@
            y="1306.9556"
            x="527.81812"
            id="tspan4415-8-8-7"
-           sodipodi:role="line">HPC-CN</tspan></text>
+           sodipodi:role="line">HPS-CN</tspan></text>
     </g>
     <path
        sodipodi:nodetypes="cc"
@@ -5324,6 +5324,6 @@
          x="703.11639"
          y="898.8974"
          style="font-size:11.25000095px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#4b4b4b;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
-         id="tspan6862-2">HPC</tspan></text>
+         id="tspan6862-2">HPS</tspan></text>
   </g>
 </svg>
