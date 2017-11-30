@@ -1,0 +1,69 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: hps.aux
+The style file: elsarticle-harv.bst
+Database file #1: ../main_paper/biblio.bib
+Repeated entry---line 22028 of file ../main_paper/biblio.bib
+ : @article{moradi2015
+ :                    ,
+I'm skipping whatever remains of this entry
+Name 16 in "Orban, Pierre and Tam, Angela and Urchs, Sebastian and Savard, Melissa and Madjar, Cecile and Badhwar, AmanPreet and Dansereau, Christian and Vogel, Jacob and Shmuel, Amir and Dagher, Alain and Villeneuve, Sylvia and Poirier, Judes and Rosa-Neto, Pedro and Breitner, John and Bellec, Pierre and , and ," has a comma at the end for entry Orban2017c
+while executing---line 1443 of file elsarticle-harv.bst
+Name 17 in "Orban, Pierre and Tam, Angela and Urchs, Sebastian and Savard, Melissa and Madjar, Cecile and Badhwar, AmanPreet and Dansereau, Christian and Vogel, Jacob and Shmuel, Amir and Dagher, Alain and Villeneuve, Sylvia and Poirier, Judes and Rosa-Neto, Pedro and Breitner, John and Bellec, Pierre and , and ," has a comma at the end for entry Orban2017c
+while executing---line 1443 of file elsarticle-harv.bst
+Warning--empty pages in Ad-Dab'bagh2006
+Warning--empty pages in Ad-Dabbagh2006
+Name 16 in "Orban, Pierre and Tam, Angela and Urchs, Sebastian and Savard, Melissa and Madjar, Cecile and Badhwar, AmanPreet and Dansereau, Christian and Vogel, Jacob and Shmuel, Amir and Dagher, Alain and Villeneuve, Sylvia and Poirier, Judes and Rosa-Neto, Pedro and Breitner, John and Bellec, Pierre and , and ," has a comma at the end for entry Orban2017c
+while executing---line 1532 of file elsarticle-harv.bst
+Name 17 in "Orban, Pierre and Tam, Angela and Urchs, Sebastian and Savard, Melissa and Madjar, Cecile and Badhwar, AmanPreet and Dansereau, Christian and Vogel, Jacob and Shmuel, Amir and Dagher, Alain and Villeneuve, Sylvia and Poirier, Judes and Rosa-Neto, Pedro and Breitner, John and Bellec, Pierre and , and ," has a comma at the end for entry Orban2017c
+while executing---line 1532 of file elsarticle-harv.bst
+Name 17 in "Orban, Pierre and Tam, Angela and Urchs, Sebastian and Savard, Melissa and Madjar, Cecile and Badhwar, AmanPreet and Dansereau, Christian and Vogel, Jacob and Shmuel, Amir and Dagher, Alain and Villeneuve, Sylvia and Poirier, Judes and Rosa-Neto, Pedro and Breitner, John and Bellec, Pierre and , and ," has a comma at the end for entry Orban2017c
+while executing---line 1532 of file elsarticle-harv.bst
+Name 16 in "Orban, Pierre and Tam, Angela and Urchs, Sebastian and Savard, Melissa and Madjar, Cecile and Badhwar, AmanPreet and Dansereau, Christian and Vogel, Jacob and Shmuel, Amir and Dagher, Alain and Villeneuve, Sylvia and Poirier, Judes and Rosa-Neto, Pedro and Breitner, John and Bellec, Pierre and , and ," has a comma at the end for entry Orban2017c
+while executing---line 1532 of file elsarticle-harv.bst
+Name 17 in "Orban, Pierre and Tam, Angela and Urchs, Sebastian and Savard, Melissa and Madjar, Cecile and Badhwar, AmanPreet and Dansereau, Christian and Vogel, Jacob and Shmuel, Amir and Dagher, Alain and Villeneuve, Sylvia and Poirier, Judes and Rosa-Neto, Pedro and Breitner, John and Bellec, Pierre and , and ," has a comma at the end for entry Orban2017c
+while executing---line 1532 of file elsarticle-harv.bst
+Name 17 in "Orban, Pierre and Tam, Angela and Urchs, Sebastian and Savard, Melissa and Madjar, Cecile and Badhwar, AmanPreet and Dansereau, Christian and Vogel, Jacob and Shmuel, Amir and Dagher, Alain and Villeneuve, Sylvia and Poirier, Judes and Rosa-Neto, Pedro and Breitner, John and Bellec, Pierre and , and ," has a comma at the end for entry Orban2017c
+while executing---line 1532 of file elsarticle-harv.bst
+You've used 54 entries,
+            2821 wiz_defined-function locations,
+            1014 strings with 20986 characters,
+and the built_in function-call counts, 37008 in all, are:
+= -- 3324
+> -- 3121
+< -- 5
++ -- 1180
+- -- 1109
+* -- 3864
+:= -- 6902
+add.period$ -- 164
+call.type$ -- 54
+change.case$ -- 631
+chr.to.int$ -- 51
+cite$ -- 56
+duplicate$ -- 974
+empty$ -- 1831
+format.name$ -- 1276
+if$ -- 6982
+int.to.chr$ -- 4
+int.to.str$ -- 1
+missing$ -- 53
+newline$ -- 185
+num.names$ -- 220
+pop$ -- 564
+preamble$ -- 1
+purify$ -- 572
+quote$ -- 0
+skip$ -- 686
+stack$ -- 0
+substring$ -- 1733
+swap$ -- 115
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 486
+warning$ -- 2
+while$ -- 250
+width$ -- 0
+write$ -- 612
+(There were 9 error messages)

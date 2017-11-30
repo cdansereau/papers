@@ -1,0 +1,375 @@
+\begin{thebibliography}{54}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+
+\bibitem[{Abraham et~al.(2014)Abraham, Pedregosa, Eickenberg, Gervais, Mueller,
+  Kossaifi, Gramfort, Thirion, and Varoquaux}]{Abraham2014}
+Abraham, A., Pedregosa, F., Eickenberg, M., Gervais, P., Mueller, A., Kossaifi,
+  J., Gramfort, A., Thirion, B., Varoquaux, G., 2014. Machine learning for
+  neuroimaging with scikit-learn. Frontiers in Neuroinformatics 8, 14.
+\newline\urlprefix\url{http://journal.frontiersin.org/article/10.3389/fninf.2014.00014}
+
+\bibitem[{Ad-Dab'bagh et~al.(2006{\natexlab{a}})Ad-Dab'bagh, Einarson,
+  Lyttelton, Muehlboeck, Mok, Ivanov, Vincent, Lepage, Lerch, Fombonne, and
+  Evans}]{Ad-Dab'bagh2006}
+Ad-Dab'bagh, Y., Einarson, D., Lyttelton, O., Muehlboeck, J.~S., Mok, K.,
+  Ivanov, O., Vincent, R.~D., Lepage, C., Lerch, J., Fombonne, E., Evans,
+  A.~C., 2006{\natexlab{a}}. The {CIVET} {Image-Processing} environment: A
+  fully automated comprehensive pipeline for anatomical neuroimaging research.
+  In: Corbetta, M. (Ed.), Proceedings of the 12th Annual Meeting of the Human
+  Brain Mapping Organization. Neuroimage, Florence, Italy.
+
+\bibitem[{Ad-Dab'bagh et~al.(2006{\natexlab{b}})Ad-Dab'bagh, Einarson,
+  Lyttelton, Muehlboeck, Mok, Ivanov, Vincent, Lepage, Lerch, Fombonne, and
+  Evans}]{Ad-Dabbagh2006}
+Ad-Dab'bagh, Y., Einarson, D., Lyttelton, O., Muehlboeck, J.~S., Mok, K.,
+  Ivanov, O., Vincent, R.~D., Lepage, C., Lerch, J., Fombonne, E., Evans,
+  A.~C., 2006{\natexlab{b}}. {The CIVET Image-Processing Environment: A Fully
+  Automated Comprehensive Pipeline for Anatomical Neuroimaging Research}. In:
+  Corbetta, M. (Ed.), Proceedings of the 12th Annual Meeting of the Human Brain
+  Mapping Organization. Neuroimage, Florence, Italy.
+
+\bibitem[{Arbabshirani et~al.(2017)Arbabshirani, Plis, Sui, and
+  Calhoun}]{Arbabshirani2017}
+Arbabshirani, M.~R., Plis, S., Sui, J., Calhoun, V.~D., 2017. Single subject
+  prediction of brain disorders in neuroimaging: Promises and pitfalls.
+  NeuroImage 145, 137--165.
+
+\bibitem[{Au et~al.(2015)Au, Piers, and Lancashire}]{Au2015}
+Au, R., Piers, R.~J., Lancashire, L., 2015. Back to the future: Alzheimer's
+  disease heterogeneity revisited. Alzheimer's \& Dementia: Diagnosis,
+  Assessment \& Disease Monitoring 1~(3), 368.
+
+\bibitem[{Beach et~al.(2012)Beach, Monsell, Phillips, and Kukull}]{Beach2012}
+Beach, T.~G., Monsell, S.~E., Phillips, L.~E., Kukull, W., 2012. Accuracy of
+  the clinical diagnosis of alzheimer disease at national institute on aging
+  alzheimer disease centers, 2005--2010. Journal of neuropathology \&
+  experimental neurology 71~(4), 266--273.
+
+\bibitem[{Bellec et~al.(2015)Bellec, Benhajali, Carbonell, Dansereau, Albouy,
+  Pelland, Craddock, Collignon, Doyon, Stip, et~al.}]{Bellec2015}
+Bellec, P., Benhajali, Y., Carbonell, F., Dansereau, C., Albouy, G., Pelland,
+  M., Craddock, C., Collignon, O., Doyon, J., Stip, E., et~al., 2015. Impact of
+  the resolution of brain parcels on connectome-wide association studies in
+  fmri. NeuroImage 123, 212--228.
+
+\bibitem[{Bellec et~al.(2012)Bellec, Lavoie-Courchesne, Dickinson, Lerch,
+  Zijdenbos, and Evans}]{Bellec2012}
+Bellec, P., Lavoie-Courchesne, S., Dickinson, P., Lerch, J.~P., Zijdenbos,
+  A.~P., Evans, A.~C., 2012. {The pipeline system for Octave and Matlab (PSOM):
+  a lightweight scripting framework and execution engine for scientific
+  workflows.} Frontiers in neuroinformatics 6.
+\newline\urlprefix\url{http://dx.doi.org/10.3389/fninf.2012.00007}
+
+\bibitem[{Cheng et~al.(2015{\natexlab{a}})Cheng, Liu, Suk, Shen, Zhang,
+  Initiative, et~al.}]{Cheng2015multimodal}
+Cheng, B., Liu, M., Suk, H.-I., Shen, D., Zhang, D., Initiative, A. D.~N.,
+  et~al., 2015{\natexlab{a}}. Multimodal manifold-regularized transfer learning
+  for mci conversion prediction. Brain imaging and behavior 9~(4), 913--926.
+
+\bibitem[{Cheng et~al.(2015{\natexlab{b}})Cheng, Liu, Zhang, Munsell, and
+  Shen}]{Cheng2015domain}
+Cheng, B., Liu, M., Zhang, D., Munsell, B.~C., Shen, D., 2015{\natexlab{b}}.
+  Domain transfer learning for mci conversion prediction. IEEE Transactions on
+  Biomedical Engineering 62~(7), 1805--1817.
+
+\bibitem[{Collins et~al.(1994)Collins, Neelin, Peters, and Evans}]{Collins1994}
+Collins, D.~L., Neelin, P., Peters, T.~M., Evans, A.~C., 1994. {Automatic 3D
+  intersubject registration of MR volumetric data in standardized Talairach
+  space.} Journal of computer assisted tomography 18~(2), 192--205.
+\newline\urlprefix\url{http://view.ncbi.nlm.nih.gov/pubmed/8126267}
+
+\bibitem[{Cortes and Vapnik(1995)}]{Cortes1995}
+Cortes, C., Vapnik, V., Sep. 1995. {Support-vector networks}. Machine Learning
+  20~(3), 273--297.
+\newline\urlprefix\url{http://dx.doi.org/10.1007/BF00994018}
+
+\bibitem[{Dubois et~al.(2007)Dubois, Feldman, Jacova, Dekosky,
+  Barberger-Gateau, Cummings, Delacourte, Galasko, Gauthier, Jicha, Meguro,
+  O'brien, Pasquier, Robert, Rossor, Salloway, Stern, Visser, and
+  Scheltens}]{Dubois2007}
+Dubois, B., Feldman, H.~H., Jacova, C., Dekosky, S.~T., Barberger-Gateau, P.,
+  Cummings, J., Delacourte, A., Galasko, D., Gauthier, S., Jicha, G., Meguro,
+  K., O'brien, J., Pasquier, F., Robert, P., Rossor, M., Salloway, S., Stern,
+  Y., Visser, P.~J., Scheltens, P., Aug. 2007. {Research criteria for the
+  diagnosis of Alzheimer's disease: revising the NINCDS-ADRDA criteria.} Lancet
+  neurology 6~(8), 734--746.
+\newline\urlprefix\url{http://dx.doi.org/10.1016/S1474-4422(07)70178-3}
+
+\bibitem[{Eskildsen et~al.(2013)Eskildsen, Coup\'{e}, Garc'{\i}a-Lorenzo,
+  Fonov, Pruessner, and Collins}]{Eskildsen2013}
+Eskildsen, S.~F., Coup\'{e}, P., Garc'{\i}a-Lorenzo, D., Fonov, V., Pruessner,
+  J.~C., Collins, D.~L., Jan. 2013. {Prediction of Alzheimer's disease in
+  subjects with mild cognitive impairment from the ADNI cohort using patterns
+  of cortical thinning}. NeuroImage 65, 511--521.
+\newline\urlprefix\url{http://dx.doi.org/10.1016/j.neuroimage.2012.09.058}
+
+\bibitem[{Fan et~al.(2008{\natexlab{a}})Fan, Chang, Hsieh, Wang, and
+  Lin}]{Fan2008}
+Fan, R.-E., Chang, K.-W., Hsieh, C.-J., Wang, X.-R., Lin, C.-J.,
+  2008{\natexlab{a}}. Liblinear: A library for large linear classification. The
+  Journal of Machine Learning Research 9, 1871--1874.
+
+\bibitem[{Fan et~al.(2008{\natexlab{b}})Fan, Batmanghelich, Clark, Davatzikos,
+  Initiative, et~al.}]{Fan2008a}
+Fan, Y., Batmanghelich, N., Clark, C.~M., Davatzikos, C., Initiative, A. D.~N.,
+  et~al., 2008{\natexlab{b}}. Spatial patterns of brain atrophy in mci
+  patients, identified via high-dimensional pattern classification, predict
+  subsequent cognitive decline. Neuroimage 39~(4), 1731--1743.
+
+\bibitem[{Fodero-Tavoletti et~al.(2011)Fodero-Tavoletti, Okamura, Furumoto,
+  Mulligan, Connor, McLean, Cao, Rigopoulos, Cartwright, O’Keefe,
+  et~al.}]{Fodero2011}
+Fodero-Tavoletti, M.~T., Okamura, N., Furumoto, S., Mulligan, R.~S., Connor,
+  A.~R., McLean, C.~A., Cao, D., Rigopoulos, A., Cartwright, G.~A., O’Keefe,
+  G., et~al., 2011. 18f-thk523: a novel in vivo tau imaging ligand for
+  alzheimer’s disease. Brain 134~(4), 1089--1100.
+
+\bibitem[{Fonov et~al.(2011)Fonov, Evans, Botteron, Almli, McKinstry, Collins,
+  and {Brain Development Cooperative Group}}]{Fonov2011}
+Fonov, V., Evans, A.~C., Botteron, K., Almli, C.~R., McKinstry, R.~C., Collins,
+  D.~L., {Brain Development Cooperative Group}, Jan. 2011. {Unbiased average
+  age-appropriate atlases for pediatric studies.} NeuroImage 54~(1), 313--327.
+\newline\urlprefix\url{http://dx.doi.org/10.1016/j.neuroimage.2010.07.033}
+
+\bibitem[{Frisoni et~al.(2011)Frisoni, Redolfi, Manset, Rousseau, Toga, and
+  Evans}]{Frisoni2011}
+Frisoni, G.~B., Redolfi, A., Manset, D., Rousseau, M.-E., Toga, A., Evans,
+  A.~C., Jul. 2011. {Virtual imaging laboratories for marker discovery in
+  neurodegenerative diseases}. Nature Reviews Neurology 7~(8), 429--438.
+\newline\urlprefix\url{http://dx.doi.org/10.1038/nrneurol.2011.99}
+
+\bibitem[{Giove et~al.(2009)Giove, Gili, Iacovella, Macaluso, and
+  Maraviglia}]{Giove2009}
+Giove, F., Gili, T., Iacovella, V., Macaluso, E., Maraviglia, B., Oct. 2009.
+  {Images-based suppression of unwanted global signals in resting-state
+  functional connectivity studies.} Magnetic resonance imaging 27~(8),
+  1058--1064.
+\newline\urlprefix\url{http://dx.doi.org/10.1016/j.mri.2009.06.004}
+
+\bibitem[{Hwang et~al.(2015)Hwang, Kim, Jeon, Lee, Hong, Roh, and
+  Lee}]{Hwang2015}
+Hwang, J., Kim, C.~M., Jeon, S., Lee, J.~M., Hong, Y.~J., Roh, J.~H., Lee,
+  J.-H., 2015. Prediction of alzheimer’s disease pathophysiology based on
+  cortical thickness patterns. Alzheimer's \& Dementia: The Journal of the
+  Alzheimer's Association 11~(7), P541.
+
+\bibitem[{Im et~al.(2008)Im, Lee, Lyttelton, Kim, Evans, and Kim}]{Im2008}
+Im, K., Lee, J.-M., Lyttelton, O., Kim, S.~H., Evans, A.~C., Kim, S.~I., 2008.
+  Brain size and cortical structure in the adult human brain. Cerebral Cortex
+  18~(9), 2181--2191.
+
+\bibitem[{Jellinger et~al.(2014)}]{Jellinger2014}
+Jellinger, K.~A., et~al., 2014. Neuropathology of dementia disorders. J. Alz.
+  Dis. Parkinsonism 4, 135.
+
+\bibitem[{Jones et~al.(2001--)Jones, Oliphant, Peterson, et~al.}]{scipy}
+Jones, E., Oliphant, T., Peterson, P., et~al., 2001--. {SciPy}: Open source
+  scientific tools for {Python}. [Online; accessed <today>].
+\newline\urlprefix\url{http://www.scipy.org/}
+
+\bibitem[{Karas et~al.(2004)Karas, Scheltens, Rombouts, Visser, Van~Schijndel,
+  Fox, and Barkhof}]{Karas2004}
+Karas, G., Scheltens, P., Rombouts, S., Visser, P., Van~Schijndel, R., Fox, N.,
+  Barkhof, F., 2004. Global and local gray matter loss in mild cognitive
+  impairment and alzheimer's disease. Neuroimage 23~(2), 708--716.
+
+\bibitem[{Kim et~al.(2005)Kim, Singh, Lee, Lerch, Ad-Dab'bagh, MacDonald, Lee,
+  Kim, and Evans}]{Kim2005}
+Kim, J.~S., Singh, V., Lee, J.~K., Lerch, J., Ad-Dab'bagh, Y., MacDonald, D.,
+  Lee, J.~M., Kim, S.~I., Evans, A.~C., 2005. Automated 3-d extraction and
+  evaluation of the inner and outer cortical surfaces using a laplacian map and
+  partial volume effect classification. Neuroimage 27~(1), 210--221.
+
+\bibitem[{Korolev et~al.(2016)Korolev, Symonds, Bozoki, Initiative,
+  et~al.}]{Korolev2016}
+Korolev, I.~O., Symonds, L.~L., Bozoki, A.~C., Initiative, A. D.~N., et~al.,
+  2016. Predicting progression from mild cognitive impairment to alzheimer's
+  dementia using clinical, mri, and plasma biomarkers via probabilistic pattern
+  classification. PloS one 11~(2), e0138866.
+
+\bibitem[{Lerch et~al.(2005)Lerch, Pruessner, Zijdenbos, Hampel, Teipel, and
+  Evans}]{Lerch2005a}
+Lerch, J.~P., Pruessner, J.~C., Zijdenbos, A., Hampel, H., Teipel, S.~J.,
+  Evans, A.~C., Jul. 2005. {Focal Decline of Cortical Thickness in Alzheimer's
+  Disease Identified by Computational Neuroanatomy}. Cerebral Cortex 15~(7),
+  995--1001.
+\newline\urlprefix\url{http://dx.doi.org/10.1093/cercor/bhh200}
+
+\bibitem[{Lund et~al.(2006)Lund, Madsen, Sidaros, Luo, and Nichols}]{Lund2006}
+Lund, T.~E., Madsen, K.~H., Sidaros, K., Luo, W.-L., Nichols, T.~E., Jan. 2006.
+  {Non-white noise in fMRI: does modelling have an impact?} NeuroImage 29~(1),
+  54--66.
+\newline\urlprefix\url{http://dx.doi.org/10.1016/j.neuroimage.2005.07.005}
+
+\bibitem[{Lyttelton et~al.(2007)Lyttelton, Boucher, Robbins, and
+  Evans}]{Lyttelton2007}
+Lyttelton, O., Boucher, M., Robbins, S., Evans, A., 2007. An unbiased iterative
+  group registration template for cortical surface analysis. Neuroimage 34~(4),
+  1535--1544.
+
+\bibitem[{MacDonald et~al.(2000)MacDonald, Kabani, Avis, and
+  Evans}]{Macdonald2000}
+MacDonald, D., Kabani, N., Avis, D., Evans, A.~C., 2000. Automated 3-d
+  extraction of inner and outer surfaces of cerebral cortex from mri.
+  NeuroImage 12~(3), 340--356.
+
+\bibitem[{Marklund et~al.(2009)Marklund, Blennow, Zetterberg,
+  Ronne-Engstr{\"o}m, Enblad, and Hillered}]{Marklund2009}
+Marklund, N., Blennow, K., Zetterberg, H., Ronne-Engstr{\"o}m, E., Enblad, P.,
+  Hillered, L., Jun. 2009. Monitoring of brain interstitial total tau and beta
+  amyloid proteins by microdialysis in patients with traumatic brain injury. J.
+  Neurosurg. 110~(6), 1227--1237.
+
+\bibitem[{Mathotaarachchi et~al.(2017)Mathotaarachchi, Pascoal, Shin, Benedet,
+  Kang, Beaudry, Fonov, Gauthier, Rosa-Neto, Initiative,
+  et~al.}]{Mathotaarachchi2017}
+Mathotaarachchi, S., Pascoal, T.~A., Shin, M., Benedet, A.~L., Kang, M.~S.,
+  Beaudry, T., Fonov, V.~S., Gauthier, S., Rosa-Neto, P., Initiative, A. D.~N.,
+  et~al., 2017. Identifying incipient dementia individuals using machine
+  learning and amyloid imaging. Neurobiology of Aging.
+
+\bibitem[{McConathy and Sheline(2015)}]{Mcconathy2015}
+McConathy, J., Sheline, Y.~I., 2015. Imaging biomarkers associated with
+  cognitive decline: a review. Biological psychiatry 77~(8), 685--692.
+
+\bibitem[{McKhann et~al.(2011)McKhann, Knopman, Chertkow, Hyman, Jack, Kawas,
+  Klunk, Koroshetz, Manly, Mayeux, et~al.}]{Mckhann2011}
+McKhann, G.~M., Knopman, D.~S., Chertkow, H., Hyman, B.~T., Jack, C.~R., Kawas,
+  C.~H., Klunk, W.~E., Koroshetz, W.~J., Manly, J.~J., Mayeux, R., et~al.,
+  2011. The diagnosis of dementia due to alzheimer’s disease: Recommendations
+  from the national institute on aging-alzheimer’s association workgroups on
+  diagnostic guidelines for alzheimer's disease. Alzheimer's \& dementia 7~(3),
+  263--269.
+
+\bibitem[{Moradi et~al.(2015)Moradi, Pepe, Gaser, Huttunen, Tohka, Initiative,
+  et~al.}]{Moradi2015}
+Moradi, E., Pepe, A., Gaser, C., Huttunen, H., Tohka, J., Initiative, A. D.~N.,
+  et~al., 2015. Machine learning framework for early mri-based alzheimer's
+  conversion prediction in mci subjects. Neuroimage 104, 398--412.
+
+\bibitem[{Orban et~al.(2017)Orban, Tam, Urchs, Savard, Madjar, Badhwar,
+  Dansereau, Vogel, Shmuel, Dagher, Villeneuve, Poirier, Rosa-Neto, Breitner,
+  Bellec, , and }]{Orban2017c}
+Orban, P., Tam, A., Urchs, S., Savard, M., Madjar, C., Badhwar, A., Dansereau,
+  C., Vogel, J., Shmuel, A., Dagher, A., Villeneuve, S., Poirier, J.,
+  Rosa-Neto, P., Breitner, J., Bellec, P., , , 2017. Subtypes of functional
+  brain connectivity as early markers of neurodegeneration in
+  alzheimer{\textquoteright}s disease. bioRxiv.
+\newline\urlprefix\url{https://www.biorxiv.org/content/early/2017/09/28/195164}
+
+\bibitem[{Pedregosa et~al.(2011)Pedregosa, Varoquaux, Gramfort, Michel,
+  Thirion, Grisel, Blondel, Prettenhofer, Weiss, Dubourg, Vanderplas, Passos,
+  Cournapeau, Brucher, Perrot, and Duchesnay}]{scikit-learn}
+Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel,
+  O., Blondel, M., Prettenhofer, P., Weiss, R., Dubourg, V., Vanderplas, J.,
+  Passos, A., Cournapeau, D., Brucher, M., Perrot, M., Duchesnay, E., 2011.
+  Scikit-learn: Machine learning in {P}ython. Journal of Machine Learning
+  Research 12, 2825--2830.
+
+\bibitem[{Phipson and Smyth(2010)}]{Phipson2010}
+Phipson, B., Smyth, G.~K., 2010. Permutation p-values should never be zero:
+  calculating exact p-values when permutations are randomly drawn. Statistical
+  applications in genetics and molecular biology 9~(1).
+
+\bibitem[{Power et~al.(2012)Power, Barnes, Snyder, Schlaggar, and
+  Petersen}]{Power2012}
+Power, J.~D., Barnes, K.~A., Snyder, A.~Z., Schlaggar, B.~L., Petersen, S.~E.,
+  Feb. 2012. {Spurious but systematic correlations in functional connectivity
+  MRI networks arise from subject motion.} NeuroImage 59~(3), 2142--2154.
+\newline\urlprefix\url{http://dx.doi.org/10.1016/j.neuroimage.2011.10.018}
+
+\bibitem[{Querbes et~al.(2009)Querbes, Aubry, Pariente, Lotterie, D{\'e}monet,
+  Duret, Puel, Berry, Fort, Celsis, et~al.}]{Querbes2009}
+Querbes, O., Aubry, F., Pariente, J., Lotterie, J.-A., D{\'e}monet, J.-F.,
+  Duret, V., Puel, M., Berry, I., Fort, J.-C., Celsis, P., et~al., 2009. Early
+  diagnosis of alzheimer's disease using cortical thickness: impact of
+  cognitive reserve. Brain 132~(8), 2036--2047.
+
+\bibitem[{Rabinovici et~al.(2017)Rabinovici, Carrillo, Forman, DeSanti, Miller,
+  Kozauer, Petersen, Randolph, Knopman, Smith, et~al.}]{Rabinovici2017}
+Rabinovici, G.~D., Carrillo, M.~C., Forman, M., DeSanti, S., Miller, D.~S.,
+  Kozauer, N., Petersen, R.~C., Randolph, C., Knopman, D.~S., Smith, E.~E.,
+  et~al., 2017. Multiple comorbid neuropathologies in the setting of
+  alzheimer's disease neuropathology and implications for drug development.
+  Alzheimer's \& Dementia: Translational Research \& Clinical Interventions
+  3~(1), 83--91.
+
+\bibitem[{Rathore et~al.(2017)Rathore, Habes, Iftikhar, Shacklett, and
+  Davatzikos}]{Rathore2017review}
+Rathore, S., Habes, M., Iftikhar, M.~A., Shacklett, A., Davatzikos, C., 2017. A
+  review on neuroimaging-based classification studies and associated feature
+  extraction methods for alzheimer's disease and its prodromal stages.
+  NeuroImage.
+
+\bibitem[{Sled et~al.(1998)Sled, Zijdenbos, and Evans}]{Sled1998}
+Sled, J.~G., Zijdenbos, A.~P., Evans, A.~C., 1998. A nonparametric method for
+  automatic correction of intensity nonuniformity in mri data. IEEE
+  transactions on medical imaging 17~(1), 87--97.
+
+\bibitem[{Smith(2002)}]{Smith2002}
+Smith, S.~M., Nov. 2002. {Fast robust automated brain extraction}. Hum. Brain
+  Mapp. 17~(3), 143--155.
+\newline\urlprefix\url{http://dx.doi.org/10.1002/hbm.10062}
+
+\bibitem[{Sperling et~al.(2011)Sperling, Aisen, Beckett, Bennett, Craft, Fagan,
+  Iwatsubo, Jack, Kaye, Montine, Park, Reiman, Rowe, Siemers, Stern, Yaffe,
+  Carrillo, Thies, Morrison-Bogorad, Wagster, and Phelps}]{Sperling2011}
+Sperling, R.~A., Aisen, P.~S., Beckett, L.~A., Bennett, D.~A., Craft, S.,
+  Fagan, A.~M., Iwatsubo, T., Jack, C.~R., Kaye, J., Montine, T.~J., Park,
+  D.~C., Reiman, E.~M., Rowe, C.~C., Siemers, E., Stern, Y., Yaffe, K.,
+  Carrillo, M.~C., Thies, B., Morrison-Bogorad, M., Wagster, M.~V., Phelps,
+  C.~H., May 2011. {Toward defining the preclinical stages of Alzheimer's
+  disease: Recommendations from the National Institute on Aging-Alzheimer's
+  Association workgroups on diagnostic guidelines for Alzheimer's disease}.
+  Alzheimer's \& Dementia 7~(3), 280--292.
+\newline\urlprefix\url{http://dx.doi.org/10.1016/j.jalz.2011.03.003}
+
+\bibitem[{Tohka et~al.(2004)Tohka, Zijdenbos, and Evans}]{Tohka2004}
+Tohka, J., Zijdenbos, A., Evans, A., 2004. Fast and robust parameter estimation
+  for statistical partial volume models in brain mri. Neuroimage 23~(1),
+  84--97.
+
+\bibitem[{Toussaint et~al.(2012)Toussaint, Perlbarg, Bellec, Desarnaud,
+  Lacomblez, Doyon, Habert, and Benali}]{Toussaint2012}
+Toussaint, P.-J., Perlbarg, V., Bellec, P., Desarnaud, S., Lacomblez, L.,
+  Doyon, J., Habert, M.~O., Benali, H., 2012. Resting state fdg-pet functional
+  connectivity as an early biomarker of alzheimer's disease using conjoint
+  univariate and independent component analyses. NeuroImage 63 2, 936--46.
+
+\bibitem[{Walt et~al.(2011)Walt, Colbert, and Varoquaux}]{Walt2011numpy}
+Walt, S. v.~d., Colbert, S.~C., Varoquaux, G., 2011. The numpy array: a
+  structure for efficient numerical computation. Computing in Science \&
+  Engineering 13~(2), 22--30.
+
+\bibitem[{Woo et~al.(2017)Woo, Chang, Lindquist, and Wager}]{Woo2017}
+Woo, C.-W., Chang, L.~J., Lindquist, M.~A., Wager, T.~D., 2017. Building better
+  biomarkers: brain models in translational neuroimaging. Nature neuroscience
+  20~(3), 365--377.
+
+\bibitem[{Xu et~al.(2015)Xu, Wu, Chen, and Yao}]{Xu2015}
+Xu, L., Wu, X., Chen, K., Yao, L., 2015. Multi-modality sparse
+  representation-based classification for alzheimer's disease and mild
+  cognitive impairment. Computer methods and programs in biomedicine 122~(2),
+  182--190.
+
+\bibitem[{Zheng et~al.(2015)Zheng, Yao, Hu, Gao, Cai, and Moore}]{Zheng2015}
+Zheng, W., Yao, Z., Hu, B., Gao, X., Cai, H., Moore, P., 2015. Novel cortical
+  thickness pattern for accurate detection of alzheimer’s disease. Journal of
+  Alzheimer's Disease 48~(4), 995--1008.
+
+\bibitem[{Zhu et~al.(2014)Zhu, Suk, and Shen}]{Zhu2014}
+Zhu, X., Suk, H.-I., Shen, D., 2014. A novel matrix-similarity based loss
+  function for joint regression and classification in ad diagnosis. NeuroImage
+  100, 91--105.
+
+\bibitem[{Zu et~al.(2016)Zu, Jie, Liu, Chen, Shen, Zhang, Initiative,
+  et~al.}]{Zu2016}
+Zu, C., Jie, B., Liu, M., Chen, S., Shen, D., Zhang, D., Initiative, A. D.~N.,
+  et~al., 2016. Label-aligned multi-task feature learning for multimodal
+  classification of alzheimer’s disease and mild cognitive impairment. Brain
+  imaging and behavior 10~(4), 1148--1159.
+
+\end{thebibliography}
