@@ -184,10 +184,7 @@ Misra et al. (2009)                    & 76/27        & 67\%**   & 51\%**       
 
 \section{Discussion}
 
-The main goal of this work was to develop an imaging-based AD diagnosis model with high precision and specificity. The proposed HPS approach reached excellent performance in these respects: 100\% precision and specificity when distinguishing patients with AD dementia from CN participants and 90\% precision, 97\% specificity when predicting which MCI patients will progress to dementia, up to three years prior to onset (see Table \ref{tab_performance}). These results represent a substantial improvement in precision over the state-of-the-art on this task, see Table \ref{table_lit}. No data from MCI patients were used to train the model, which removes the possibility of a bias due to improper cross validation. The only HPS subject with MCI improperly classified as a progressor had a series of four notes attached to his visits in the ADNI database, reporting declining cognitive performance at each visit, with a  marked decline at the last visit. This decline was not severe enough for a diagnosis of AD dementia. The subject had no follow up available after 36 months, for unknown reasons.
-
-
-The high specificity of the HPS model came at the cost of a limited sensitivity: 38\% when distinguishing patients with AD dementia from CN participants, and 47\% when predicting which MCI patients would progress to dementia, which is significantly less than most recent published models, see Table \ref{table_lit}. The HPS model is not designed to be sensitive, as it is trained to recognize a particular, homogeneous brain signature present in only a fraction of the participants. The results of \citep{Beach2012} suggest that only about half of patients diagnosed with AD dementia have clear AD brain markers post-mortem. The observed sensitivity of 38\%- 47\% is thus consistent with the idea that the HPS model is picking on a typical brain presentation of AD that is already present at the prodromal stage of the disease. Note that there was no need for patients with MCI to have the same degree of atrophy as patients with AD dementia to be recognized as HPS, as long as these patients presented with a similar spatial distribution of the atrophy, relative to other brain regions. 
+The main goal of this work was to develop an imaging-based AD diagnosis and prognosis with high precision and specificity. The proposed HPS approach did reach excellent performance in these respects, with 100\% precision and specificity when distinguishing patients with AD dementia from CN participants and 90\% precision, 98\% specificity when predicting which MCI patients would progress to dementia, up to three years before onset (see Table \ref{tab_performance}). These results represent a sizable and significant improvement in precision and specificity over previous models on this task, see Table \ref{table_lit}. The high specificity of the HPS model came at the cost of a limited sensitivity, which is significantly less than most recent published models, see Table \ref{table_lit}. Previous models from the literature could likely be tuned to work in a regime of high specificity and precision as well as the one proposed here. Actually, the base SVM classifier can achieve a precision close to our two-stage model, when adjusting the decision threshold (see Supplementary Material \ref{fig_roc_ps}B for ROC curves). The main contribution of this work was to demonstrate using proper cross-validation that a model can be trained in this regime of high precision and specificity. The second contribution was to show that the subset of patients at high risk of progression can be identified using a limited set of easily interpretable ''subtypes´´, and that was made possible by the two-stage model. The results of \citep{Beach2012} suggest that only about half of patients diagnosed with AD dementia have clear AD brain markers post-mortem. The HPS was identified in 38\% of patients with AD dementia and 47\% of progressor MCI patients, which is consistent with the idea that the HPS model is picking on a typical brain presentation of AD that is already present at the prodromal stage of the disease.
 
 The anatomical features selected by the method were in line with recent subtyping works, e.g. \citep{Hwang2015}, showing predominant atrophy in the temporal lobe, as well as the temporo-parietal juncture, in particular. The functional maps were more difficult to interpret, and seemed to capture some noise pattern. They still made a significant improvement in the performance of the HPS model. Because of the regularization in the logistic regression used to build the HPS model, features coming from different modalities did compete to be selected in the model. If redundant features existed, the ones with largest predictive power were selected by the classifier. This may explain why the selected functional subtypes did not involve the regions showing atrophy in the structural subtypes. We hypothesized that the HPS inferred from the AD vs CN prediction would also be useful to predict if a subject at the prodromal stage (MCI) would progress to dementia. Our results did validate this logic, but alternative strategies may be investigated in the future, e.g. training a model directly on the progressor vs stable MCI. 
 
@@ -294,14 +291,19 @@ Modality & Algo & Contrast & Prec (\%)& Spec (\%)& Sens (\%)& N \\ \hline
 \end{tabular}
 \end{table}
 
-\begin{figure*}[ht]
+\begin{figure*}%[ht]
 \centering
 \includegraphics[width=0.5\linewidth]{figures/hit-proba_distribution.png}
 \caption{Hit-probability distribution obtained from replicating the SVM training 100 times from 80\% of the training set.}
 \label{fig_hitproba}
 \end{figure*}
-\end{document}
 
 
+\begin{figure*}%[ht]
+\centering
+\includegraphics[width=\linewidth]{figures/roc_ps.png}
+\caption{Panel A show the ROC curve of the base classifier and HPS classifier for the simulation example of Figure \ref{fig_biotype_modes_toy} and on the right the precision vs specificity curves. Panel B show the same curves for the MCI progressors task.}
+\label{fig_roc_ps}
+\end{figure*}
 
 \end{document}
