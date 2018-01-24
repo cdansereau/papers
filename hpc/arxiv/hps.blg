@@ -1,9 +1,9 @@
-This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: hps.aux
 The style file: elsarticle-harv.bst
-Database file #1: ../main_paper/biblio.bib
-Repeated entry---line 22028 of file ../main_paper/biblio.bib
+Database file #1: biblio.bib
+Repeated entry---line 22101 of file biblio.bib
  : @article{moradi2015
  :                    ,
 I'm skipping whatever remains of this entry
@@ -25,45 +25,45 @@ Name 17 in "Orban, Pierre and Tam, Angela and Urchs, Sebastian and Savard, Melis
 while executing---line 1532 of file elsarticle-harv.bst
 Name 17 in "Orban, Pierre and Tam, Angela and Urchs, Sebastian and Savard, Melissa and Madjar, Cecile and Badhwar, AmanPreet and Dansereau, Christian and Vogel, Jacob and Shmuel, Amir and Dagher, Alain and Villeneuve, Sylvia and Poirier, Judes and Rosa-Neto, Pedro and Breitner, John and Bellec, Pierre and , and ," has a comma at the end for entry Orban2017c
 while executing---line 1532 of file elsarticle-harv.bst
-You've used 54 entries,
+You've used 55 entries,
             2821 wiz_defined-function locations,
-            1014 strings with 20986 characters,
-and the built_in function-call counts, 37008 in all, are:
-= -- 3324
-> -- 3121
-< -- 5
-+ -- 1180
-- -- 1109
-* -- 3864
-:= -- 6902
-add.period$ -- 164
-call.type$ -- 54
-change.case$ -- 631
-chr.to.int$ -- 51
-cite$ -- 56
-duplicate$ -- 974
-empty$ -- 1831
-format.name$ -- 1276
-if$ -- 6982
-int.to.chr$ -- 4
+            1021 strings with 21341 characters,
+and the built_in function-call counts, 37839 in all, are:
+= -- 3395
+> -- 3196
+< -- 4
++ -- 1209
+- -- 1136
+* -- 3958
+:= -- 7056
+add.period$ -- 167
+call.type$ -- 55
+change.case$ -- 644
+chr.to.int$ -- 53
+cite$ -- 57
+duplicate$ -- 991
+empty$ -- 1872
+format.name$ -- 1304
+if$ -- 7136
+int.to.chr$ -- 3
 int.to.str$ -- 1
-missing$ -- 53
-newline$ -- 185
-num.names$ -- 220
-pop$ -- 564
+missing$ -- 54
+newline$ -- 189
+num.names$ -- 224
+pop$ -- 574
 preamble$ -- 1
-purify$ -- 572
+purify$ -- 584
 quote$ -- 0
-skip$ -- 686
+skip$ -- 702
 stack$ -- 0
-substring$ -- 1733
-swap$ -- 115
+substring$ -- 1786
+swap$ -- 113
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 486
+type$ -- 495
 warning$ -- 2
-while$ -- 250
+while$ -- 254
 width$ -- 0
-write$ -- 612
+write$ -- 624
 (There were 9 error messages)
