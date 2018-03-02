@@ -81,13 +81,13 @@
 
 % abstract typically 150 words
 \begin{abstract}
-Early prognosis of Alzheimer's dementia is hard. Mild cognitive impairment (MCI) typically precedes Alzheimer's dementia, yet only a fraction (30\%-50\%) of MCI individuals will progress to dementia. Even when a prognosis of dementia is established using machine learning models and biomarkers, the fraction of MCI progressors remain limited (50\%-75\%). Instead of aiming at precise diagnosis in large clinical cohorts known for their heterogeneity, we propose here to identify only a subset of individuals who share a common brain signature highly predictive of oncoming dementia. This signature was discovered using a machine learning model in a reference public sample (ADNI), where the model was trained to identify patterns of brain atrophy and functional dysconnectivity commonly seen in patients suffering from dementia ($N=24$), and not seen in cognitively normal individuals ($N=49$). The model then recognized the same brain signature in 10 MCI individuals, out of $N=56$, 90\% of which progressed to dementia within three years. This result is a marked improvement on the state-of-the-art in prognostic precision, while the brain signature still identified 47\% of all MCI progressors ($N=19$). We thus discovered a sizable MCI subpopulation with homogeneous brain abnormalities and highly predictable clinical trajectories, which may represent an excellent recruitment target for clinical trials at the prodromal stage of Alzheimer's disease.
+Early prognosis of Alzheimer's dementia is hard. Mild cognitive impairment (MCI) typically precedes Alzheimer's dementia, yet only a fraction of MCI individuals will progress to dementia, even when screened using biomarkers. We propose here to identify a subset of individuals who share a common brain signature highly predictive of oncoming dementia. This signature was composed of brain atrophy and functional dysconnectivity and discovered using a machine learning model in patients suffering from dementia. The model recognized the same brain signature in MCI individuals, 90\% of which progressed to dementia within three years. This result is a marked improvement on the state-of-the-art in prognostic precision, while the brain signature still identified 47\% of all MCI progressors. We thus discovered a sizable MCI subpopulation which represents an excellent recruitment target for clinical trials at the prodromal stage of Alzheimer's disease.
 \end{abstract}
 
 %-- 
-%\begin{keyword}
-%population enrichment \sep signature \sep Alzheimer's dementia
-%\end{keyword}
+\begin{keyword}
+Population enrichment \sep Alzheimer's dementia signature \sep machine learning
+\end{keyword}
 \end{frontmatter}
 
 \section{Introduction}
@@ -245,6 +245,8 @@ The code used in this experiment is available on a
 GitHub repository at the following URL\footnote{\url{https://github.com/cdansereau/HPS}}. An IPython Notebook is also provided with all of the figure generation scripts. Scikit-learn \cite{scikit-learn} version 0.18 was used for most of the machine learning algorithms and Nilearn \cite{Abraham2014} version 0.2.6 for visualization purposes.
 \subsection*{ADNI dataset}
 Data used in the preparation of this article were obtained from the Alzheimer's Disease Neuroimaging Initiative (ADNI) database (adni.loni.usc.edu). The ADNI was launched in 2003 as a public-private partnership, led by Principal Investigator Michael W. Weiner, MD. The primary goal of ADNI has been to test whether serial magnetic resonance imaging (MRI), positron emission tomography (PET), other biological markers, and clinical and neuropsychological assessment can be combined to measure the progression of mild cognitive impairment (MCI) and early Alzheimer's disease (AD).
+
+
 \section*{References}
 
 \bibliographystyle{elsarticle-harv}
