@@ -27,37 +27,37 @@ Name 17 in "Orban, Pierre and Tam, Angela and Urchs, Sebastian and Savard, Melis
 while executing---line 1532 of file elsarticle-harv.bst
 You've used 55 entries,
             2821 wiz_defined-function locations,
-            1021 strings with 21341 characters,
-and the built_in function-call counts, 37839 in all, are:
-= -- 3395
-> -- 3196
+            1020 strings with 21319 characters,
+and the built_in function-call counts, 37772 in all, are:
+= -- 3391
+> -- 3188
 < -- 4
-+ -- 1209
-- -- 1136
-* -- 3958
-:= -- 7056
++ -- 1206
+- -- 1133
+* -- 3946
+:= -- 7045
 add.period$ -- 167
 call.type$ -- 55
-change.case$ -- 644
+change.case$ -- 643
 chr.to.int$ -- 53
 cite$ -- 57
 duplicate$ -- 991
-empty$ -- 1872
-format.name$ -- 1304
-if$ -- 7136
+empty$ -- 1870
+format.name$ -- 1301
+if$ -- 7125
 int.to.chr$ -- 3
 int.to.str$ -- 1
 missing$ -- 54
-newline$ -- 189
+newline$ -- 188
 num.names$ -- 224
-pop$ -- 574
+pop$ -- 573
 preamble$ -- 1
-purify$ -- 584
+purify$ -- 583
 quote$ -- 0
-skip$ -- 702
+skip$ -- 704
 stack$ -- 0
-substring$ -- 1786
-swap$ -- 113
+substring$ -- 1780
+swap$ -- 112
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
@@ -65,5 +65,5 @@ type$ -- 495
 warning$ -- 2
 while$ -- 254
 width$ -- 0
-write$ -- 624
+write$ -- 623
 (There were 9 error messages)

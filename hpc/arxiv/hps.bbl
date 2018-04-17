@@ -235,14 +235,6 @@ Misra, C., Fan, Y., Davatzikos, C., 2009. Baseline and longitudinal patterns of
   brain atrophy in mci patients, and their use in prediction of short-term
   conversion to ad: results from adni. Neuroimage 44~(4), 1415--1422.
 
-\bibitem[{Mitchell et~al.(2009)Mitchell, Arnold, Dawson, Nestor, and
-  Hodges}]{Mitchell2009}
-Mitchell, J., Arnold, R., Dawson, K., Nestor, P.~J., Hodges, J.~R., Sep. 2009.
-  {Outcome in subgroups of mild cognitive impairment (MCI) is highly
-  predictable using a simple algorithm.} Journal of neurology 256~(9),
-  1500--1509.
-\newline\urlprefix\url{http://dx.doi.org/10.1007/s00415-009-5152-0}
-
 \bibitem[{Moradi et~al.(2015)Moradi, Pepe, Gaser, Huttunen, Tohka, Initiative,
   et~al.}]{Moradi2015}
 Moradi, E., Pepe, A., Gaser, C., Huttunen, H., Tohka, J., Initiative, A. D.~N.,
@@ -353,6 +345,12 @@ Urchs, S., Armoza, J., Benhajali, Y., St-Aubin, J., Orban, P., Bellec, P.,
 Walt, S. v.~d., Colbert, S.~C., Varoquaux, G., 2011. The numpy array: a
   structure for efficient numerical computation. Computing in Science \&
   Engineering 13~(2), 22--30.
+
+\bibitem[{Ward et~al.(2013)Ward, Tardiff, Dye, and Arrighi}]{Ward2013}
+Ward, A., Tardiff, S., Dye, C., Arrighi, H.~M., 2013. Rate of conversion from
+  prodromal alzheimer's disease to alzheimer's dementia: a systematic review of
+  the literature. Dementia and geriatric cognitive disorders extra 3~(1),
+  320--332.
 
 \bibitem[{Wee et~al.(2013)Wee, Yap, and Shen}]{Wee2013}
 Wee, C.-Y., Yap, P.-T., Shen, D., 2013. Prediction of alzheimer's disease and
