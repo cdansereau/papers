@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.12)  23 APR 2019 16:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.12)  23 APR 2019 18:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -492,7 +492,20 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \NC@list=\toks24
 \extratabsurround=\skip58
 \backup@length=\skip59
-) (./hps.aux)
+) (./hps.aux
+
+LaTeX Warning: Label `fig_hitproba' multiply defined.
+
+
+LaTeX Warning: Label `fig_hitproba' multiply defined.
+
+
+LaTeX Warning: Label `fig_hitproba' multiply defined.
+
+
+LaTeX Warning: Label `fig_hitproba' multiply defined.
+
+)
 \openout1 = `hps.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
@@ -509,8 +522,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
 LaTeX Font Info:    ... okay on input line 53.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 53.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 53.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 53.
@@ -710,34 +722,66 @@ File: figures/hit-proba_distribution.png Graphic file (type png)
 
 <use figures/hit-proba_distribution.png>
 Package pdftex.def Info: figures/hit-proba_distribution.png used on input line 
-296.
+300.
 (pdftex.def)             Requested size: 172.5pt x 127.06577pt.
 
-<figures/roc_ps.png, id=449, 401.5803pt x 392.9079pt>
+<figures/roc_ps.png, id=449, 661.7523pt x 664.1613pt>
 File: figures/roc_ps.png Graphic file (type png)
  <use figures/roc_ps.png>
-Package pdftex.def Info: figures/roc_ps.png used on input line 304.
-(pdftex.def)             Requested size: 345.0pt x 337.55847pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 310.
+Package pdftex.def Info: figures/roc_ps.png used on input line 308.
+(pdftex.def)             Requested size: 345.0pt x 346.24754pt.
 
-[25
+<figures/distribution_risk.png, id=452, 321.1197pt x 333.1647pt>
+File: figures/distribution_risk.png Graphic file (type png)
+
+<use figures/distribution_risk.png>
+Package pdftex.def Info: figures/distribution_risk.png used on input line 317.
+(pdftex.def)             Requested size: 345.0pt x 357.96713pt.
+
+<figures/figure_crosssec.png, id=453, 663.1977pt x 601.0455pt>
+File: figures/figure_crosssec.png Graphic file (type png)
+
+<use figures/figure_crosssec.png>
+Package pdftex.def Info: figures/figure_crosssec.png used on input line 324.
+(pdftex.def)             Requested size: 345.0pt x 312.66467pt.
+
+<figures/figure_longit.png, id=454, 685.6014pt x 747.7536pt>
+File: figures/figure_longit.png Graphic file (type png)
+
+<use figures/figure_longit.png>
+Package pdftex.def Info: figures/figure_longit.png used on input line 331.
+(pdftex.def)             Requested size: 345.0pt x 376.27193pt.
+
+<figures/prevalence.png, id=455, 657.07884pt x 260.8947pt>
+File: figures/prevalence.png Graphic file (type png)
+
+<use figures/prevalence.png>
+Package pdftex.def Info: figures/prevalence.png used on input line 338.
+(pdftex.def)             Requested size: 345.0pt x 136.9837pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 344.
+ [25
 
 
- <./figures/hit-proba_distribution.png>] [26 <./figures/roc_ps.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 310.
-
-(./hps.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 310.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 310.
+] [26 <./figures/hit-proba_distribution.png> <./figures/roc_ps.png>] [27 <./fig
+ures/distribution_risk.png>] [28 <./figures/figure_crosssec.png>] [29 <./figure
+s/figure_longit.png>] [30 <./figures/prevalence.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 344.
+ (./hps.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 344.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 344.
 Package rerunfilecheck Info: File `hps.out' has not changed.
 (rerunfilecheck)             Checksum: 601F7A9D222A99CB9218448176AF8D66;240.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 310.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 344.
  ) 
 Here is how much of TeX's memory you used:
- 10393 strings out of 494953
- 152000 string characters out of 6180976
- 253742 words of memory out of 5000000
- 13390 multiletter control sequences out of 15000+600000
+ 10421 strings out of 494953
+ 152655 string characters out of 6180976
+ 253638 words of memory out of 5000000
+ 13406 multiletter control sequences out of 15000+600000
  11550 words of font info for 45 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  44i,16n,42p,2265b,514s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -767,9 +811,9 @@ e/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmtt8.pfb>
-Output written on hps.pdf (26 pages, 4090375 bytes).
+Output written on hps.pdf (30 pages, 6122283 bytes).
 PDF statistics:
- 546 PDF objects out of 1000 (max. 8388607)
- 129 named destinations out of 1000 (max. 500000)
- 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 571 PDF objects out of 1000 (max. 8388607)
+ 137 named destinations out of 1000 (max. 500000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
 

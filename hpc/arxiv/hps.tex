@@ -273,21 +273,25 @@ Data used in the preparation of this article were obtained from the Alzheimer's 
 
 
 
-\begin{table}[htbp]
+\begin{table}%[htbp]
 \centering
-\caption{Performance of the models. Prec: precision, Spec: specificity, Sens: sensitivity and N: number of selected subjects.}
+\caption{Performance of the models. Prec: precision, Spec: specificity and Sens: sensitivity.}
 \label{tab_performance}
-\begin{tabular}{lllllll}
-Modality & Algo & Contrast & Prec (\%)& Spec (\%)& Sens (\%)& N \\ \hline
-\multirow{1}{*}{\begin{tabular}[c]{@{}l@{}}fMRI\end{tabular}} & \multirow{1}{*}{Base} & CN/AD & 38.10 & 46.94 & 66.67 & 42 \\
- & \multirow{1}{*}{HPS} & & 60 & 95.92 & 12.5 & 5 \\
-\multirow{1}{*}{\begin{tabular}[c]{@{}l@{}}sMRI\end{tabular}} & \multirow{1}{*}{Base} & & 66.67 & 83.67 & 66.67 & 24 \\
- & \multirow{1}{*}{HPS} & & 87.50 & 97.96 & 29.17 & 8 \\
-\multirow{1}{*}{\begin{tabular}[c]{@{}l@{}}fMRI+sMRI\end{tabular}} & \multirow{1}{*}{Base} & & 69.57 & 85.71 & 66.67 & 23 \\
- & \multirow{1}{*}{HPS} & & 100 & 100 & 37.50 & 9 \\
-\multirow{1}{*}{\begin{tabular}[c]{@{}l@{}}fMRI+sMRI\end{tabular}} & \multirow{1}{*}{Base}& sMCI/pMCI & 73.33 & 89.19 & 57.89 & 15 \\
+\begin{tabular}{llllll}
+Modality & Algo & Contrast & Prec (\%)& Spec (\%)& Sens (\%) \\ \hline
+\multirow{1}{*}{\begin{tabular}[c]{@{}l@{}}fMRI\end{tabular}} & \multirow{1}{*}{Base} & CN/AD & 51.36 & 69.88 & 53.4 \\
+ & \multirow{1}{*}{HPS} & & 44.77 & 90.37 & 19.33 \\
+\multirow{1}{*}{\begin{tabular}[c]{@{}l@{}}sMRI\end{tabular}} & \multirow{1}{*}{Base} & & 75.25 & 86.30 & 68.66 \\
+ & \multirow{1}{*}{HPS} & & 92.23 & 97.13 & 41.50\\
+\multirow{1}{*}{\begin{tabular}[c]{@{}l@{}}fMRI+sMRI\end{tabular}} & \multirow{1}{*}{Base} & & 65.14 & 79.22 & 61.60 \\
+ & \multirow{1}{*}{HPS} & & 74.08 & 94.75 & 21.13 \\
+\multirow{1}{*}{\begin{tabular}[c]{@{}l@{}}fMRI\end{tabular}} & \multirow{1}{*}{Base}& sMCI/pMCI & 34.62 & 46.88 & 64.29 \\
+ & \multirow{1}{*}{HPS}& & 40.00 & 90.62 & 14.29 \\
+\multirow{1}{*}{\begin{tabular}[c]{@{}l@{}}sMRI\end{tabular}} & \multirow{1}{*}{Base}& & 42.86 & 75.00 & 42.86 \\
+ & \multirow{1}{*}{HPS}& & 66.67 & 93.75 & 28.57 \\
+\multirow{1}{*}{\begin{tabular}[c]{@{}l@{}}fMRI+sMRI\end{tabular}} & \multirow{1}{*}{Base}& & 37.50 & 68.75 & 42.86 \\
+ & \multirow{1}{*}{HPS}& & 83.33 & 96.88 & 35.71
 
- & \multirow{1}{*}{HPS}& & 90 & 97.3 & 47.37 & 10
 \end{tabular}
 \end{table}
 
@@ -304,6 +308,36 @@ Modality & Algo & Contrast & Prec (\%)& Spec (\%)& Sens (\%)& N \\ \hline
 \includegraphics[width=\linewidth]{figures/roc_ps.png}
 \caption{Panel A show the ROC curve of the base classifier and HPS classifier for the simulation example of Figure \ref{fig_biotype_modes_toy} and on the right the precision vs specificity curves. Panel B show the same curves for the MCI progressors task.}
 \label{fig_roc_ps}
+\end{figure*}
+
+
+
+\begin{figure*}%[ht]
+\centering
+\includegraphics[width=\linewidth]{figures/distribution_risk.png}
+\caption{}
+\label{fig_hitproba}
+\end{figure*}
+
+\begin{figure*}%[ht]
+\centering
+\includegraphics[width=\linewidth]{figures/figure_crosssec.png}
+\caption{}
+\label{fig_hitproba}
+\end{figure*}
+
+\begin{figure*}%[ht]
+\centering
+\includegraphics[width=\linewidth]{figures/figure_longit.png}
+\caption{}
+\label{fig_hitproba}
+\end{figure*}
+
+\begin{figure*}%[ht]
+\centering
+\includegraphics[width=\linewidth]{figures/prevalence.png}
+\caption{}
+\label{fig_hitproba}
 \end{figure*}
 
 
