@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.12)  23 APR 2019 18:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.12)  30 APR 2019 17:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -631,7 +631,7 @@ Package pdftex.def Info: figures/confidence_features.png used on input line 147
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 156.
 
-<figures/progressors.png, id=235, 212.04018pt x 248.03064pt>
+<figures/progressors.png, id=236, 212.04018pt x 248.03064pt>
 File: figures/progressors.png Graphic file (type png)
 
 <use figures/progressors.png>
@@ -649,7 +649,7 @@ Overfull \hbox (46.45905pt too wide) in paragraph at lines 212--213
 bec.ca/en/resources/compute-
  []
 
-[13] <figures/methods.png, id=302, 583.2189pt x 440.99155pt>
+[13] <figures/methods.png, id=303, 583.2189pt x 440.99155pt>
 File: figures/methods.png Graphic file (type png)
 
 <use figures/methods.png>
@@ -738,19 +738,19 @@ File: figures/distribution_risk.png Graphic file (type png)
 Package pdftex.def Info: figures/distribution_risk.png used on input line 317.
 (pdftex.def)             Requested size: 345.0pt x 357.96713pt.
 
-<figures/figure_crosssec.png, id=453, 663.1977pt x 601.0455pt>
+<figures/figure_crosssec.png, id=453, 662.9568pt x 600.5637pt>
 File: figures/figure_crosssec.png Graphic file (type png)
 
 <use figures/figure_crosssec.png>
 Package pdftex.def Info: figures/figure_crosssec.png used on input line 324.
-(pdftex.def)             Requested size: 345.0pt x 312.66467pt.
+(pdftex.def)             Requested size: 345.0pt x 312.53317pt.
 
-<figures/figure_longit.png, id=454, 685.6014pt x 747.7536pt>
+<figures/figure_longit.png, id=454, 697.4055pt x 740.2857pt>
 File: figures/figure_longit.png Graphic file (type png)
 
 <use figures/figure_longit.png>
 Package pdftex.def Info: figures/figure_longit.png used on input line 331.
-(pdftex.def)             Requested size: 345.0pt x 376.27193pt.
+(pdftex.def)             Requested size: 345.0pt x 366.22229pt.
 
 <figures/prevalence.png, id=455, 657.07884pt x 260.8947pt>
 File: figures/prevalence.png Graphic file (type png)
@@ -780,7 +780,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 344.
 Here is how much of TeX's memory you used:
  10421 strings out of 494953
  152655 string characters out of 6180976
- 253638 words of memory out of 5000000
+ 252968 words of memory out of 5000000
  13406 multiletter control sequences out of 15000+600000
  11550 words of font info for 45 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -811,7 +811,7 @@ e/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmtt8.pfb>
-Output written on hps.pdf (30 pages, 6122283 bytes).
+Output written on hps.pdf (30 pages, 6723093 bytes).
 PDF statistics:
  571 PDF objects out of 1000 (max. 8388607)
  137 named destinations out of 1000 (max. 500000)
